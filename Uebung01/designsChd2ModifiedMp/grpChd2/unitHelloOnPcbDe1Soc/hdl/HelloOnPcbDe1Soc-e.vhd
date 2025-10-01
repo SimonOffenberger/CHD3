@@ -18,8 +18,8 @@ entity HelloOnPcbDe1Soc is
     CLOCK_50 : in  std_ulogic;
     KEY0     : in  std_ulogic;
     SW       : in  std_ulogic_vector(9 downto 0);
-    HEX0     : out std_ulogic_vector(6 downto 0);
-    HEX1     : out std_ulogic_vector(6 downto 0);
+    HEX4     : out std_ulogic_vector(6 downto 0);
+    HEX5     : out std_ulogic_vector(6 downto 0);
     LEDR     : out std_ulogic_vector(9 downto 0)
     );
 end HelloOnPcbDe1Soc;

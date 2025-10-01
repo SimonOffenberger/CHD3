@@ -11,20 +11,20 @@ SW[6] => hello:TheHelloDE1.iSW[6]
 SW[7] => hello:TheHelloDE1.iSW[7]
 SW[8] => hello:TheHelloDE1.iSW[8]
 SW[9] => hello:TheHelloDE1.iSW[9]
-HEX0[0] << hello:TheHelloDE1.o7SegCode0[0]
-HEX0[1] << hello:TheHelloDE1.o7SegCode0[1]
-HEX0[2] << hello:TheHelloDE1.o7SegCode0[2]
-HEX0[3] << hello:TheHelloDE1.o7SegCode0[3]
-HEX0[4] << hello:TheHelloDE1.o7SegCode0[4]
-HEX0[5] << hello:TheHelloDE1.o7SegCode0[5]
-HEX0[6] << hello:TheHelloDE1.o7SegCode0[6]
-HEX1[0] << hello:TheHelloDE1.o7SegCode1[0]
-HEX1[1] << hello:TheHelloDE1.o7SegCode1[1]
-HEX1[2] << hello:TheHelloDE1.o7SegCode1[2]
-HEX1[3] << hello:TheHelloDE1.o7SegCode1[3]
-HEX1[4] << hello:TheHelloDE1.o7SegCode1[4]
-HEX1[5] << hello:TheHelloDE1.o7SegCode1[5]
-HEX1[6] << hello:TheHelloDE1.o7SegCode1[6]
+HEX4[0] << hello:TheHelloDE1.o7SegCode0[0]
+HEX4[1] << hello:TheHelloDE1.o7SegCode0[1]
+HEX4[2] << hello:TheHelloDE1.o7SegCode0[2]
+HEX4[3] << hello:TheHelloDE1.o7SegCode0[3]
+HEX4[4] << hello:TheHelloDE1.o7SegCode0[4]
+HEX4[5] << hello:TheHelloDE1.o7SegCode0[5]
+HEX4[6] << hello:TheHelloDE1.o7SegCode0[6]
+HEX5[0] << hello:TheHelloDE1.o7SegCode1[0]
+HEX5[1] << hello:TheHelloDE1.o7SegCode1[1]
+HEX5[2] << hello:TheHelloDE1.o7SegCode1[2]
+HEX5[3] << hello:TheHelloDE1.o7SegCode1[3]
+HEX5[4] << hello:TheHelloDE1.o7SegCode1[4]
+HEX5[5] << hello:TheHelloDE1.o7SegCode1[5]
+HEX5[6] << hello:TheHelloDE1.o7SegCode1[6]
 LEDR[0] << hello:TheHelloDE1.oLed[0]
 LEDR[1] << hello:TheHelloDE1.oLed[1]
 LEDR[2] << hello:TheHelloDE1.oLed[2]
@@ -108,8 +108,9 @@ iSW[6] => hex2sevensegment:TheHex1.iHexValue[2]
 iSW[6] => oLed[6].DATAIN
 iSW[7] => hex2sevensegment:TheHex1.iHexValue[3]
 iSW[7] => oLed[7].DATAIN
-iSW[8] => ~NO_FANOUT~
-iSW[9] => ~NO_FANOUT~
+iSW[8] => oLed.IN1
+iSW[8] => oLed.IN1
+iSW[9] => oLed.IN1
 o7SegCode0[0] <= hex2sevensegment:TheHex0.o7SegCode[0]
 o7SegCode0[1] <= hex2sevensegment:TheHex0.o7SegCode[1]
 o7SegCode0[2] <= hex2sevensegment:TheHex0.o7SegCode[2]
@@ -132,8 +133,8 @@ oLed[4] <= iSW[4].DB_MAX_OUTPUT_PORT_TYPE
 oLed[5] <= iSW[5].DB_MAX_OUTPUT_PORT_TYPE
 oLed[6] <= iSW[6].DB_MAX_OUTPUT_PORT_TYPE
 oLed[7] <= iSW[7].DB_MAX_OUTPUT_PORT_TYPE
-oLed[8] <= <GND>
-oLed[9] <= led_status.DB_MAX_OUTPUT_PORT_TYPE
+oLed[8] <= oLed.DB_MAX_OUTPUT_PORT_TYPE
+oLed[9] <= oLed.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |HelloOnPcbDe1Soc|Hello:TheHelloDE1|Hex2SevenSegment:TheHex0

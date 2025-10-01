@@ -57,7 +57,11 @@ begin  -- Rtl
     end if;
   end process;
 
-  oLed(9) <= '1' when led_status else '0';
+  -- Assign led Status to the LEDs the led_status is only applied when Switch 9 is not
+  -- active. Therfore with switch 9 the LED can be deactivated
+  -- With Switch 8 the LED blinking can be switched between LED8 and 9.
+  oLed(8) <= '1' when (led_status and iSW(9)='0' and iSW(8)='0') else '0';
+  oLed(9) <= '1' when (led_status and iSW(9)='0' and iSW(8)='1') else '0';
 
 -- ---------------------------------------------------------------------------
 -- LEDS (0) to LEDS(7) show status of switches SW0-SW7

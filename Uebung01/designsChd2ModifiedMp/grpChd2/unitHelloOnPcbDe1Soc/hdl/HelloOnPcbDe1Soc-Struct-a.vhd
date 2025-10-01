@@ -35,7 +35,9 @@ begin
 -- ---------------------------------------------------------------------------
 -- Sevensegmentdisplays of DE1-SoC are low active.
 -- ---------------------------------------------------------------------------
-  HEX0 <= not HexA;
-  HEX1 <= not HexB;
+  
+-- Map the Seven Seg Output to 7 Seg 4 and 5 instead of 0 and 1
+  HEX4 <= not HexA;
+  HEX5 <= not HexB;
 
 end Struct;

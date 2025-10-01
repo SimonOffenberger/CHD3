@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "09/29/2025 13:41:08"
+-- DATE "10/01/2025 12:32:40"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -41,29 +41,27 @@ ENTITY 	HelloOnPcbDe1Soc IS
 	CLOCK_50 : IN std_logic;
 	KEY0 : IN std_logic;
 	SW : IN std_logic_vector(9 DOWNTO 0);
-	HEX0 : BUFFER std_logic_vector(6 DOWNTO 0);
-	HEX1 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX4 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX5 : BUFFER std_logic_vector(6 DOWNTO 0);
 	LEDR : BUFFER std_logic_vector(9 DOWNTO 0)
 	);
 END HelloOnPcbDe1Soc;
 
 -- Design Ports Information
--- SW[8]	=>  Location: PIN_AD10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- SW[9]	=>  Location: PIN_AE12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- HEX0[0]	=>  Location: PIN_AE26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX0[1]	=>  Location: PIN_AE27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX0[2]	=>  Location: PIN_AE28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX0[3]	=>  Location: PIN_AG27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX0[4]	=>  Location: PIN_AF28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX0[5]	=>  Location: PIN_AG28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX0[6]	=>  Location: PIN_AH28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX1[0]	=>  Location: PIN_AJ29,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX1[1]	=>  Location: PIN_AH29,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX1[2]	=>  Location: PIN_AH30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX1[3]	=>  Location: PIN_AG30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX1[4]	=>  Location: PIN_AF29,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX1[5]	=>  Location: PIN_AF30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
--- HEX1[6]	=>  Location: PIN_AD27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX4[0]	=>  Location: PIN_AA24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX4[1]	=>  Location: PIN_Y23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX4[2]	=>  Location: PIN_Y24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX4[3]	=>  Location: PIN_W22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX4[4]	=>  Location: PIN_W24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX4[5]	=>  Location: PIN_V23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX4[6]	=>  Location: PIN_W25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX5[0]	=>  Location: PIN_V25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX5[1]	=>  Location: PIN_AA28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX5[2]	=>  Location: PIN_Y27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX5[3]	=>  Location: PIN_AB27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX5[4]	=>  Location: PIN_AB26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX5[5]	=>  Location: PIN_AA26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+-- HEX5[6]	=>  Location: PIN_AA25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 -- LEDR[0]	=>  Location: PIN_V16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 -- LEDR[1]	=>  Location: PIN_W16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 -- LEDR[2]	=>  Location: PIN_V17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
@@ -82,6 +80,8 @@ END HelloOnPcbDe1Soc;
 -- SW[5]	=>  Location: PIN_AD12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- SW[6]	=>  Location: PIN_AE11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- SW[7]	=>  Location: PIN_AC9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- SW[8]	=>  Location: PIN_AD10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- SW[9]	=>  Location: PIN_AE12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- CLOCK_50	=>  Location: PIN_AF14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- KEY0	=>  Location: PIN_AA14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
@@ -99,14 +99,12 @@ SIGNAL ww_devpor : std_logic;
 SIGNAL ww_CLOCK_50 : std_logic;
 SIGNAL ww_KEY0 : std_logic;
 SIGNAL ww_SW : std_logic_vector(9 DOWNTO 0);
-SIGNAL ww_HEX0 : std_logic_vector(6 DOWNTO 0);
-SIGNAL ww_HEX1 : std_logic_vector(6 DOWNTO 0);
+SIGNAL ww_HEX4 : std_logic_vector(6 DOWNTO 0);
+SIGNAL ww_HEX5 : std_logic_vector(6 DOWNTO 0);
 SIGNAL ww_LEDR : std_logic_vector(9 DOWNTO 0);
-SIGNAL \SW[8]~input_o\ : std_logic;
-SIGNAL \SW[9]~input_o\ : std_logic;
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
-SIGNAL \SW[2]~input_o\ : std_logic;
 SIGNAL \SW[0]~input_o\ : std_logic;
+SIGNAL \SW[2]~input_o\ : std_logic;
 SIGNAL \SW[3]~input_o\ : std_logic;
 SIGNAL \SW[1]~input_o\ : std_logic;
 SIGNAL \TheHelloDE1|TheHex0|Mux6~0_combout\ : std_logic;
@@ -116,9 +114,9 @@ SIGNAL \TheHelloDE1|TheHex0|Mux3~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|TheHex0|Mux2~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|TheHex0|Mux1~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|TheHex0|Mux0~0_combout\ : std_logic;
+SIGNAL \SW[7]~input_o\ : std_logic;
 SIGNAL \SW[6]~input_o\ : std_logic;
 SIGNAL \SW[4]~input_o\ : std_logic;
-SIGNAL \SW[7]~input_o\ : std_logic;
 SIGNAL \SW[5]~input_o\ : std_logic;
 SIGNAL \TheHelloDE1|TheHex1|Mux6~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|TheHex1|Mux5~0_combout\ : std_logic;
@@ -129,8 +127,8 @@ SIGNAL \TheHelloDE1|TheHex1|Mux1~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|TheHex1|Mux0~0_combout\ : std_logic;
 SIGNAL \CLOCK_50~input_o\ : std_logic;
 SIGNAL \CLOCK_50~inputCLKENA0_outclk\ : std_logic;
-SIGNAL \TheHelloDE1|Add0~101_sumout\ : std_logic;
 SIGNAL \KEY0~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|Add0~101_sumout\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~102\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~97_sumout\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~98\ : std_logic;
@@ -176,102 +174,113 @@ SIGNAL \TheHelloDE1|Add0~50\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~65_sumout\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~66\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~61_sumout\ : std_logic;
-SIGNAL \TheHelloDE1|LessThan0~3_combout\ : std_logic;
-SIGNAL \TheHelloDE1|LessThan0~2_combout\ : std_logic;
-SIGNAL \TheHelloDE1|LessThan0~1_combout\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~62\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~1_sumout\ : std_logic;
+SIGNAL \TheHelloDE1|cnt[23]~DUPLICATE_q\ : std_logic;
+SIGNAL \TheHelloDE1|cnt[11]~DUPLICATE_q\ : std_logic;
+SIGNAL \TheHelloDE1|LessThan0~0_combout\ : std_logic;
+SIGNAL \TheHelloDE1|LessThan0~1_combout\ : std_logic;
+SIGNAL \TheHelloDE1|LessThan0~3_combout\ : std_logic;
+SIGNAL \TheHelloDE1|LessThan0~2_combout\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~2\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~73_sumout\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~74\ : std_logic;
 SIGNAL \TheHelloDE1|Add0~69_sumout\ : std_logic;
 SIGNAL \TheHelloDE1|LessThan0~4_combout\ : std_logic;
-SIGNAL \TheHelloDE1|cnt[12]~DUPLICATE_q\ : std_logic;
-SIGNAL \TheHelloDE1|LessThan0~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|LessThan0~5_combout\ : std_logic;
 SIGNAL \TheHelloDE1|led_status~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|led_status~q\ : std_logic;
+SIGNAL \SW[9]~input_o\ : std_logic;
+SIGNAL \SW[8]~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|oLed[8]~0_combout\ : std_logic;
+SIGNAL \TheHelloDE1|oLed[9]~1_combout\ : std_logic;
 SIGNAL \TheHelloDE1|cnt\ : std_logic_vector(25 DOWNTO 0);
 SIGNAL \TheHelloDE1|ALT_INV_cnt\ : std_logic_vector(25 DOWNTO 0);
-SIGNAL \TheHelloDE1|ALT_INV_LessThan0~2_combout\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_LessThan0~4_combout\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_LessThan0~5_combout\ : std_logic;
+SIGNAL \ALT_INV_SW[3]~input_o\ : std_logic;
 SIGNAL \TheHelloDE1|ALT_INV_LessThan0~0_combout\ : std_logic;
-SIGNAL \TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_LessThan0~4_combout\ : std_logic;
+SIGNAL \ALT_INV_SW[2]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[4]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[7]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[8]~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_LessThan0~2_combout\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_cnt[11]~DUPLICATE_q\ : std_logic;
 SIGNAL \TheHelloDE1|ALT_INV_LessThan0~1_combout\ : std_logic;
 SIGNAL \TheHelloDE1|ALT_INV_LessThan0~3_combout\ : std_logic;
-SIGNAL \TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_led_status~q\ : std_logic;
-SIGNAL \ALT_INV_SW[2]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[3]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[1]~input_o\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\ : std_logic;
-SIGNAL \ALT_INV_SW[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[4]~input_o\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_cnt[12]~DUPLICATE_q\ : std_logic;
-SIGNAL \ALT_INV_SW[5]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[6]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[7]~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_LessThan0~5_combout\ : std_logic;
+SIGNAL \ALT_INV_SW[1]~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \ALT_INV_SW[0]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[5]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[9]~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_led_status~q\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_cnt[23]~DUPLICATE_q\ : std_logic;
 
 BEGIN
 
 ww_CLOCK_50 <= CLOCK_50;
 ww_KEY0 <= KEY0;
 ww_SW <= SW;
-HEX0 <= ww_HEX0;
-HEX1 <= ww_HEX1;
+HEX4 <= ww_HEX4;
+HEX5 <= ww_HEX5;
 LEDR <= ww_LEDR;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\TheHelloDE1|ALT_INV_cnt\(11) <= NOT \TheHelloDE1|cnt\(11);
-\TheHelloDE1|ALT_INV_cnt\(10) <= NOT \TheHelloDE1|cnt\(10);
-\TheHelloDE1|ALT_INV_cnt\(19) <= NOT \TheHelloDE1|cnt\(19);
-\TheHelloDE1|ALT_INV_cnt\(16) <= NOT \TheHelloDE1|cnt\(16);
-\TheHelloDE1|ALT_INV_cnt\(8) <= NOT \TheHelloDE1|cnt\(8);
-\TheHelloDE1|ALT_INV_cnt\(17) <= NOT \TheHelloDE1|cnt\(17);
-\TheHelloDE1|ALT_INV_cnt\(18) <= NOT \TheHelloDE1|cnt\(18);
-\TheHelloDE1|ALT_INV_cnt\(14) <= NOT \TheHelloDE1|cnt\(14);
-\TheHelloDE1|ALT_INV_cnt\(13) <= NOT \TheHelloDE1|cnt\(13);
-\TheHelloDE1|ALT_INV_cnt\(20) <= NOT \TheHelloDE1|cnt\(20);
-\TheHelloDE1|ALT_INV_cnt\(15) <= NOT \TheHelloDE1|cnt\(15);
-\TheHelloDE1|ALT_INV_cnt\(9) <= NOT \TheHelloDE1|cnt\(9);
-\TheHelloDE1|ALT_INV_cnt\(23) <= NOT \TheHelloDE1|cnt\(23);
-\TheHelloDE1|ALT_INV_cnt\(12) <= NOT \TheHelloDE1|cnt\(12);
 \TheHelloDE1|ALT_INV_cnt\(22) <= NOT \TheHelloDE1|cnt\(22);
 \TheHelloDE1|ALT_INV_cnt\(21) <= NOT \TheHelloDE1|cnt\(21);
-\TheHelloDE1|ALT_INV_cnt\(24) <= NOT \TheHelloDE1|cnt\(24);
-\TheHelloDE1|ALT_INV_cnt\(7) <= NOT \TheHelloDE1|cnt\(7);
 \TheHelloDE1|ALT_INV_cnt\(25) <= NOT \TheHelloDE1|cnt\(25);
-\TheHelloDE1|ALT_INV_cnt\(2) <= NOT \TheHelloDE1|cnt\(2);
-\TheHelloDE1|ALT_INV_LessThan0~2_combout\ <= NOT \TheHelloDE1|LessThan0~2_combout\;
-\TheHelloDE1|ALT_INV_LessThan0~4_combout\ <= NOT \TheHelloDE1|LessThan0~4_combout\;
-\TheHelloDE1|ALT_INV_LessThan0~5_combout\ <= NOT \TheHelloDE1|LessThan0~5_combout\;
+\TheHelloDE1|ALT_INV_cnt\(24) <= NOT \TheHelloDE1|cnt\(24);
+\TheHelloDE1|ALT_INV_cnt\(4) <= NOT \TheHelloDE1|cnt\(4);
 \TheHelloDE1|ALT_INV_cnt\(6) <= NOT \TheHelloDE1|cnt\(6);
-\TheHelloDE1|ALT_INV_LessThan0~0_combout\ <= NOT \TheHelloDE1|LessThan0~0_combout\;
 \TheHelloDE1|ALT_INV_cnt\(5) <= NOT \TheHelloDE1|cnt\(5);
-\TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\ <= NOT \TheHelloDE1|TheHex0|Mux0~0_combout\;
-\TheHelloDE1|ALT_INV_cnt\(1) <= NOT \TheHelloDE1|cnt\(1);
+\TheHelloDE1|ALT_INV_cnt\(13) <= NOT \TheHelloDE1|cnt\(13);
+\TheHelloDE1|ALT_INV_cnt\(23) <= NOT \TheHelloDE1|cnt\(23);
+\TheHelloDE1|ALT_INV_cnt\(16) <= NOT \TheHelloDE1|cnt\(16);
+\TheHelloDE1|ALT_INV_cnt\(15) <= NOT \TheHelloDE1|cnt\(15);
+\TheHelloDE1|ALT_INV_cnt\(7) <= NOT \TheHelloDE1|cnt\(7);
+\TheHelloDE1|ALT_INV_cnt\(12) <= NOT \TheHelloDE1|cnt\(12);
+\TheHelloDE1|ALT_INV_cnt\(10) <= NOT \TheHelloDE1|cnt\(10);
+\TheHelloDE1|ALT_INV_cnt\(8) <= NOT \TheHelloDE1|cnt\(8);
+\TheHelloDE1|ALT_INV_cnt\(18) <= NOT \TheHelloDE1|cnt\(18);
+\TheHelloDE1|ALT_INV_cnt\(14) <= NOT \TheHelloDE1|cnt\(14);
+\TheHelloDE1|ALT_INV_cnt\(9) <= NOT \TheHelloDE1|cnt\(9);
+\TheHelloDE1|ALT_INV_cnt\(17) <= NOT \TheHelloDE1|cnt\(17);
+\TheHelloDE1|ALT_INV_cnt\(11) <= NOT \TheHelloDE1|cnt\(11);
+\TheHelloDE1|ALT_INV_cnt\(20) <= NOT \TheHelloDE1|cnt\(20);
+\TheHelloDE1|ALT_INV_cnt\(19) <= NOT \TheHelloDE1|cnt\(19);
+\ALT_INV_SW[3]~input_o\ <= NOT \SW[3]~input_o\;
+\TheHelloDE1|ALT_INV_LessThan0~0_combout\ <= NOT \TheHelloDE1|LessThan0~0_combout\;
+\TheHelloDE1|ALT_INV_LessThan0~4_combout\ <= NOT \TheHelloDE1|LessThan0~4_combout\;
+\ALT_INV_SW[2]~input_o\ <= NOT \SW[2]~input_o\;
+\ALT_INV_SW[4]~input_o\ <= NOT \SW[4]~input_o\;
+\TheHelloDE1|ALT_INV_cnt\(0) <= NOT \TheHelloDE1|cnt\(0);
+\TheHelloDE1|ALT_INV_cnt\(3) <= NOT \TheHelloDE1|cnt\(3);
+\ALT_INV_SW[7]~input_o\ <= NOT \SW[7]~input_o\;
+\ALT_INV_SW[8]~input_o\ <= NOT \SW[8]~input_o\;
+\TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[17]~DUPLICATE_q\;
+\TheHelloDE1|ALT_INV_LessThan0~2_combout\ <= NOT \TheHelloDE1|LessThan0~2_combout\;
+\TheHelloDE1|ALT_INV_cnt[11]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[11]~DUPLICATE_q\;
 \TheHelloDE1|ALT_INV_LessThan0~1_combout\ <= NOT \TheHelloDE1|LessThan0~1_combout\;
 \TheHelloDE1|ALT_INV_LessThan0~3_combout\ <= NOT \TheHelloDE1|LessThan0~3_combout\;
-\TheHelloDE1|ALT_INV_cnt\(3) <= NOT \TheHelloDE1|cnt\(3);
-\TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\ <= NOT \TheHelloDE1|TheHex1|Mux0~0_combout\;
-\TheHelloDE1|ALT_INV_cnt\(0) <= NOT \TheHelloDE1|cnt\(0);
-\TheHelloDE1|ALT_INV_led_status~q\ <= NOT \TheHelloDE1|led_status~q\;
-\TheHelloDE1|ALT_INV_cnt\(4) <= NOT \TheHelloDE1|cnt\(4);
-\ALT_INV_SW[2]~input_o\ <= NOT \SW[2]~input_o\;
-\ALT_INV_SW[3]~input_o\ <= NOT \SW[3]~input_o\;
-\ALT_INV_SW[1]~input_o\ <= NOT \SW[1]~input_o\;
-\TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[17]~DUPLICATE_q\;
-\ALT_INV_SW[0]~input_o\ <= NOT \SW[0]~input_o\;
-\ALT_INV_SW[4]~input_o\ <= NOT \SW[4]~input_o\;
-\TheHelloDE1|ALT_INV_cnt[12]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[12]~DUPLICATE_q\;
-\ALT_INV_SW[5]~input_o\ <= NOT \SW[5]~input_o\;
 \ALT_INV_SW[6]~input_o\ <= NOT \SW[6]~input_o\;
-\ALT_INV_SW[7]~input_o\ <= NOT \SW[7]~input_o\;
+\TheHelloDE1|ALT_INV_cnt\(2) <= NOT \TheHelloDE1|cnt\(2);
+\TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\ <= NOT \TheHelloDE1|TheHex0|Mux0~0_combout\;
+\TheHelloDE1|ALT_INV_cnt\(1) <= NOT \TheHelloDE1|cnt\(1);
+\TheHelloDE1|ALT_INV_LessThan0~5_combout\ <= NOT \TheHelloDE1|LessThan0~5_combout\;
+\ALT_INV_SW[1]~input_o\ <= NOT \SW[1]~input_o\;
+\TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\ <= NOT \TheHelloDE1|TheHex1|Mux0~0_combout\;
+\ALT_INV_SW[0]~input_o\ <= NOT \SW[0]~input_o\;
+\ALT_INV_SW[5]~input_o\ <= NOT \SW[5]~input_o\;
+\ALT_INV_SW[9]~input_o\ <= NOT \SW[9]~input_o\;
+\TheHelloDE1|ALT_INV_led_status~q\ <= NOT \TheHelloDE1|led_status~q\;
+\TheHelloDE1|ALT_INV_cnt[23]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[23]~DUPLICATE_q\;
 
--- Location: IOOBUF_X89_Y8_N39
-\HEX0[0]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y11_N45
+\HEX4[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -281,10 +290,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex0|Mux6~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX0(0));
+	o => ww_HEX4(0));
 
--- Location: IOOBUF_X89_Y11_N79
-\HEX0[1]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y13_N5
+\HEX4[1]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -294,10 +303,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex0|Mux5~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX0(1));
+	o => ww_HEX4(1));
 
--- Location: IOOBUF_X89_Y11_N96
-\HEX0[2]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y13_N22
+\HEX4[2]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -307,10 +316,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex0|Mux4~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX0(2));
+	o => ww_HEX4(2));
 
--- Location: IOOBUF_X89_Y4_N79
-\HEX0[3]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y8_N22
+\HEX4[3]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -320,10 +329,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex0|Mux3~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX0(3));
+	o => ww_HEX4(3));
 
--- Location: IOOBUF_X89_Y13_N56
-\HEX0[4]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y15_N22
+\HEX4[4]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -333,10 +342,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex0|Mux2~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX0(4));
+	o => ww_HEX4(4));
 
--- Location: IOOBUF_X89_Y13_N39
-\HEX0[5]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y15_N5
+\HEX4[5]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -346,10 +355,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex0|Mux1~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX0(5));
+	o => ww_HEX4(5));
 
--- Location: IOOBUF_X89_Y4_N96
-\HEX0[6]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y20_N45
+\HEX4[6]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -359,10 +368,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX0(6));
+	o => ww_HEX4(6));
 
--- Location: IOOBUF_X89_Y6_N39
-\HEX1[0]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y20_N62
+\HEX5[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -372,10 +381,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex1|Mux6~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX1(0));
+	o => ww_HEX5(0));
 
--- Location: IOOBUF_X89_Y6_N56
-\HEX1[1]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y21_N56
+\HEX5[1]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -385,10 +394,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex1|Mux5~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX1(1));
+	o => ww_HEX5(1));
 
--- Location: IOOBUF_X89_Y16_N39
-\HEX1[2]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y25_N22
+\HEX5[2]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -398,10 +407,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex1|Mux4~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX1(2));
+	o => ww_HEX5(2));
 
--- Location: IOOBUF_X89_Y16_N56
-\HEX1[3]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y23_N22
+\HEX5[3]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -411,10 +420,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex1|Mux3~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX1(3));
+	o => ww_HEX5(3));
 
--- Location: IOOBUF_X89_Y15_N39
-\HEX1[4]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y9_N56
+\HEX5[4]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -424,10 +433,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex1|Mux2~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX1(4));
+	o => ww_HEX5(4));
 
--- Location: IOOBUF_X89_Y15_N56
-\HEX1[5]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y23_N5
+\HEX5[5]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -437,10 +446,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex1|Mux1~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX1(5));
+	o => ww_HEX5(5));
 
--- Location: IOOBUF_X89_Y8_N56
-\HEX1[6]~output\ : cyclonev_io_obuf
+-- Location: IOOBUF_X89_Y9_N39
+\HEX5[6]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -450,7 +459,7 @@ GENERIC MAP (
 PORT MAP (
 	i => \TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\,
 	devoe => ww_devoe,
-	o => ww_HEX1(6));
+	o => ww_HEX5(6));
 
 -- Location: IOOBUF_X52_Y0_N2
 \LEDR[0]~output\ : cyclonev_io_obuf
@@ -565,7 +574,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \TheHelloDE1|oLed[8]~0_combout\,
 	devoe => ww_devoe,
 	o => ww_LEDR(8));
 
@@ -578,20 +587,9 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \TheHelloDE1|led_status~q\,
+	i => \TheHelloDE1|oLed[9]~1_combout\,
 	devoe => ww_devoe,
 	o => ww_LEDR(9));
-
--- Location: IOIBUF_X8_Y0_N35
-\SW[2]~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_SW(2),
-	o => \SW[2]~input_o\);
 
 -- Location: IOIBUF_X12_Y0_N18
 \SW[0]~input\ : cyclonev_io_ibuf
@@ -603,6 +601,17 @@ GENERIC MAP (
 PORT MAP (
 	i => ww_SW(0),
 	o => \SW[0]~input_o\);
+
+-- Location: IOIBUF_X8_Y0_N35
+\SW[2]~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_SW(2),
+	o => \SW[2]~input_o\);
 
 -- Location: IOIBUF_X4_Y0_N52
 \SW[3]~input\ : cyclonev_io_ibuf
@@ -626,111 +635,92 @@ PORT MAP (
 	i => ww_SW(1),
 	o => \SW[1]~input_o\);
 
--- Location: LABCELL_X88_Y4_N33
+-- Location: LABCELL_X88_Y12_N3
 \TheHelloDE1|TheHex0|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex0|Mux6~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (!\SW[2]~input_o\ & \SW[0]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[2]~input_o\ & \SW[0]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & 
--- ( !\SW[2]~input_o\ $ (!\SW[0]~input_o\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101010110101010000000000101010100000000000000000000000010101010",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ALT_INV_SW[2]~input_o\,
-	datad => \ALT_INV_SW[0]~input_o\,
-	datae => \ALT_INV_SW[3]~input_o\,
-	dataf => \ALT_INV_SW[1]~input_o\,
-	combout => \TheHelloDE1|TheHex0|Mux6~0_combout\);
-
--- Location: LABCELL_X88_Y4_N36
-\TheHelloDE1|TheHex0|Mux5~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \TheHelloDE1|TheHex0|Mux5~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (\SW[2]~input_o\) # (\SW[0]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (!\SW[0]~input_o\ & \SW[2]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & 
--- ( (!\SW[0]~input_o\ & \SW[2]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[0]~input_o\ & \SW[2]~input_o\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000010100000101000010100000101000001010000010100101111101011111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ALT_INV_SW[0]~input_o\,
-	datac => \ALT_INV_SW[2]~input_o\,
-	datae => \ALT_INV_SW[3]~input_o\,
-	dataf => \ALT_INV_SW[1]~input_o\,
-	combout => \TheHelloDE1|TheHex0|Mux5~0_combout\);
-
--- Location: LABCELL_X88_Y4_N45
-\TheHelloDE1|TheHex0|Mux4~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \TheHelloDE1|TheHex0|Mux4~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ & ( \SW[2]~input_o\ ) ) ) # ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (!\SW[2]~input_o\ & !\SW[0]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[2]~input_o\ & 
--- !\SW[0]~input_o\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000010101010000000010101010000000000101010101010101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ALT_INV_SW[2]~input_o\,
-	datad => \ALT_INV_SW[0]~input_o\,
-	datae => \ALT_INV_SW[3]~input_o\,
-	dataf => \ALT_INV_SW[1]~input_o\,
-	combout => \TheHelloDE1|TheHex0|Mux4~0_combout\);
-
--- Location: LABCELL_X88_Y4_N18
-\TheHelloDE1|TheHex0|Mux3~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \TheHelloDE1|TheHex0|Mux3~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ & ( !\SW[0]~input_o\ $ (\SW[2]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (\SW[0]~input_o\ & \SW[2]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & 
+-- \TheHelloDE1|TheHex0|Mux6~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (\SW[0]~input_o\ & !\SW[2]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[0]~input_o\ & \SW[2]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & 
 -- ( !\SW[0]~input_o\ $ (!\SW[2]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101101001011010000000000000000000000101000001011010010110100101",
+	lut_mask => "0101101001011010000001010000010100000000000000000101000001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ALT_INV_SW[0]~input_o\,
 	datac => \ALT_INV_SW[2]~input_o\,
+	datae => \ALT_INV_SW[3]~input_o\,
+	dataf => \ALT_INV_SW[1]~input_o\,
+	combout => \TheHelloDE1|TheHex0|Mux6~0_combout\);
+
+-- Location: LABCELL_X88_Y12_N6
+\TheHelloDE1|TheHex0|Mux5~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|TheHex0|Mux5~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (\SW[0]~input_o\) # (\SW[2]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (\SW[2]~input_o\ & !\SW[0]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & 
+-- ( (\SW[2]~input_o\ & !\SW[0]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[2]~input_o\ & \SW[0]~input_o\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000001100000011001100000011000000110000001100000011111100111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datab => \ALT_INV_SW[2]~input_o\,
+	datac => \ALT_INV_SW[0]~input_o\,
+	datae => \ALT_INV_SW[3]~input_o\,
+	dataf => \ALT_INV_SW[1]~input_o\,
+	combout => \TheHelloDE1|TheHex0|Mux5~0_combout\);
+
+-- Location: LABCELL_X88_Y12_N15
+\TheHelloDE1|TheHex0|Mux4~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|TheHex0|Mux4~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ & ( \SW[2]~input_o\ ) ) ) # ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (!\SW[0]~input_o\ & !\SW[2]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (!\SW[0]~input_o\ 
+-- & \SW[2]~input_o\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000010100000101010100000101000000000111100001111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ALT_INV_SW[0]~input_o\,
+	datac => \ALT_INV_SW[2]~input_o\,
+	datae => \ALT_INV_SW[3]~input_o\,
+	dataf => \ALT_INV_SW[1]~input_o\,
+	combout => \TheHelloDE1|TheHex0|Mux4~0_combout\);
+
+-- Location: LABCELL_X88_Y12_N48
+\TheHelloDE1|TheHex0|Mux3~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|TheHex0|Mux3~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ & ( !\SW[2]~input_o\ $ (\SW[0]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (\SW[2]~input_o\ & \SW[0]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & 
+-- ( !\SW[2]~input_o\ $ (!\SW[0]~input_o\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0011110000111100000000000000000000000011000000111100001111000011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datab => \ALT_INV_SW[2]~input_o\,
+	datac => \ALT_INV_SW[0]~input_o\,
 	datae => \ALT_INV_SW[3]~input_o\,
 	dataf => \ALT_INV_SW[1]~input_o\,
 	combout => \TheHelloDE1|TheHex0|Mux3~0_combout\);
 
--- Location: LABCELL_X88_Y4_N57
+-- Location: LABCELL_X88_Y12_N57
 \TheHelloDE1|TheHex0|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex0|Mux2~0_combout\ = ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( \SW[0]~input_o\ ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (!\SW[2]~input_o\ & \SW[0]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[0]~input_o\) 
--- # (\SW[2]~input_o\) ) ) )
+-- \TheHelloDE1|TheHex0|Mux2~0_combout\ = ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( \SW[0]~input_o\ ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[0]~input_o\ & !\SW[2]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[2]~input_o\) 
+-- # (\SW[0]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010111111111000000001010101000000000111111110000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ALT_INV_SW[2]~input_o\,
-	datad => \ALT_INV_SW[0]~input_o\,
-	datae => \ALT_INV_SW[3]~input_o\,
-	dataf => \ALT_INV_SW[1]~input_o\,
-	combout => \TheHelloDE1|TheHex0|Mux2~0_combout\);
-
--- Location: LABCELL_X88_Y4_N0
-\TheHelloDE1|TheHex0|Mux1~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \TheHelloDE1|TheHex0|Mux1~0_combout\ = ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (!\SW[2]~input_o\) # (\SW[0]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[0]~input_o\ & \SW[2]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ 
--- & ( (\SW[0]~input_o\ & !\SW[2]~input_o\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0101000001010000000001010000010111110101111101010000000000000000",
+	lut_mask => "0101111101011111010100000101000001010101010101010000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -738,26 +728,56 @@ PORT MAP (
 	datac => \ALT_INV_SW[2]~input_o\,
 	datae => \ALT_INV_SW[3]~input_o\,
 	dataf => \ALT_INV_SW[1]~input_o\,
+	combout => \TheHelloDE1|TheHex0|Mux2~0_combout\);
+
+-- Location: LABCELL_X88_Y12_N30
+\TheHelloDE1|TheHex0|Mux1~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|TheHex0|Mux1~0_combout\ = ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (!\SW[2]~input_o\) # (\SW[0]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (\SW[2]~input_o\ & \SW[0]~input_o\) ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ 
+-- & ( (!\SW[2]~input_o\ & \SW[0]~input_o\) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000110000001100000000110000001111001111110011110000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datab => \ALT_INV_SW[2]~input_o\,
+	datac => \ALT_INV_SW[0]~input_o\,
+	datae => \ALT_INV_SW[3]~input_o\,
+	dataf => \ALT_INV_SW[1]~input_o\,
 	combout => \TheHelloDE1|TheHex0|Mux1~0_combout\);
 
--- Location: LABCELL_X88_Y4_N6
+-- Location: LABCELL_X88_Y12_N36
 \TheHelloDE1|TheHex0|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex0|Mux0~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ ) ) # ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (!\SW[0]~input_o\) # (!\SW[2]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (!\SW[2]~input_o\) # (\SW[0]~input_o\) 
+-- \TheHelloDE1|TheHex0|Mux0~0_combout\ = ( \SW[3]~input_o\ & ( \SW[1]~input_o\ ) ) # ( !\SW[3]~input_o\ & ( \SW[1]~input_o\ & ( (!\SW[2]~input_o\) # (!\SW[0]~input_o\) ) ) ) # ( \SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( (!\SW[2]~input_o\) # (\SW[0]~input_o\) 
 -- ) ) ) # ( !\SW[3]~input_o\ & ( !\SW[1]~input_o\ & ( \SW[2]~input_o\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111111101011111010111111010111110101111111111111111",
+	lut_mask => "0011001100110011110011111100111111111100111111001111111111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_SW[0]~input_o\,
-	datac => \ALT_INV_SW[2]~input_o\,
+	datab => \ALT_INV_SW[2]~input_o\,
+	datac => \ALT_INV_SW[0]~input_o\,
 	datae => \ALT_INV_SW[3]~input_o\,
 	dataf => \ALT_INV_SW[1]~input_o\,
 	combout => \TheHelloDE1|TheHex0|Mux0~0_combout\);
+
+-- Location: IOIBUF_X4_Y0_N1
+\SW[7]~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_SW(7),
+	o => \SW[7]~input_o\);
 
 -- Location: IOIBUF_X4_Y0_N35
 \SW[6]~input\ : cyclonev_io_ibuf
@@ -781,17 +801,6 @@ PORT MAP (
 	i => ww_SW(4),
 	o => \SW[4]~input_o\);
 
--- Location: IOIBUF_X4_Y0_N1
-\SW[7]~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_SW(7),
-	o => \SW[7]~input_o\);
-
 -- Location: IOIBUF_X16_Y0_N18
 \SW[5]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -803,136 +812,136 @@ PORT MAP (
 	i => ww_SW(5),
 	o => \SW[5]~input_o\);
 
--- Location: LABCELL_X88_Y8_N3
+-- Location: LABCELL_X88_Y13_N33
 \TheHelloDE1|TheHex1|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex1|Mux6~0_combout\ = ( \SW[7]~input_o\ & ( \SW[5]~input_o\ & ( (!\SW[6]~input_o\ & \SW[4]~input_o\) ) ) ) # ( \SW[7]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & \SW[4]~input_o\) ) ) ) # ( !\SW[7]~input_o\ & ( !\SW[5]~input_o\ & 
--- ( !\SW[6]~input_o\ $ (!\SW[4]~input_o\) ) ) )
+-- \TheHelloDE1|TheHex1|Mux6~0_combout\ = ( \SW[4]~input_o\ & ( \SW[5]~input_o\ & ( (\SW[7]~input_o\ & !\SW[6]~input_o\) ) ) ) # ( \SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( !\SW[7]~input_o\ $ (\SW[6]~input_o\) ) ) ) # ( !\SW[4]~input_o\ & ( !\SW[5]~input_o\ & 
+-- ( (!\SW[7]~input_o\ & \SW[6]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101101001011010000001010000010100000000000000000000101000001010",
+	lut_mask => "0000101000001010101001011010010100000000000000000101000001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_SW[6]~input_o\,
-	datac => \ALT_INV_SW[4]~input_o\,
-	datae => \ALT_INV_SW[7]~input_o\,
+	dataa => \ALT_INV_SW[7]~input_o\,
+	datac => \ALT_INV_SW[6]~input_o\,
+	datae => \ALT_INV_SW[4]~input_o\,
 	dataf => \ALT_INV_SW[5]~input_o\,
 	combout => \TheHelloDE1|TheHex1|Mux6~0_combout\);
 
--- Location: LABCELL_X88_Y8_N6
+-- Location: LABCELL_X88_Y13_N36
 \TheHelloDE1|TheHex1|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex1|Mux5~0_combout\ = ( \SW[7]~input_o\ & ( \SW[5]~input_o\ & ( (\SW[6]~input_o\) # (\SW[4]~input_o\) ) ) ) # ( !\SW[7]~input_o\ & ( \SW[5]~input_o\ & ( (!\SW[4]~input_o\ & \SW[6]~input_o\) ) ) ) # ( \SW[7]~input_o\ & ( !\SW[5]~input_o\ & 
--- ( (!\SW[4]~input_o\ & \SW[6]~input_o\) ) ) ) # ( !\SW[7]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[4]~input_o\ & \SW[6]~input_o\) ) ) )
+-- \TheHelloDE1|TheHex1|Mux5~0_combout\ = ( \SW[4]~input_o\ & ( \SW[5]~input_o\ & ( \SW[7]~input_o\ ) ) ) # ( !\SW[4]~input_o\ & ( \SW[5]~input_o\ & ( \SW[6]~input_o\ ) ) ) # ( \SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & !\SW[7]~input_o\) ) ) 
+-- ) # ( !\SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & \SW[7]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001100000011000011000000110000001100000011000011111100111111",
+	lut_mask => "0000001100000011001100000011000000110011001100110000111100001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_SW[4]~input_o\,
-	datac => \ALT_INV_SW[6]~input_o\,
-	datae => \ALT_INV_SW[7]~input_o\,
+	datab => \ALT_INV_SW[6]~input_o\,
+	datac => \ALT_INV_SW[7]~input_o\,
+	datae => \ALT_INV_SW[4]~input_o\,
 	dataf => \ALT_INV_SW[5]~input_o\,
 	combout => \TheHelloDE1|TheHex1|Mux5~0_combout\);
 
--- Location: LABCELL_X88_Y8_N45
+-- Location: LABCELL_X88_Y13_N45
 \TheHelloDE1|TheHex1|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex1|Mux4~0_combout\ = ( \SW[7]~input_o\ & ( \SW[5]~input_o\ & ( \SW[6]~input_o\ ) ) ) # ( !\SW[7]~input_o\ & ( \SW[5]~input_o\ & ( (!\SW[6]~input_o\ & !\SW[4]~input_o\) ) ) ) # ( \SW[7]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & 
--- !\SW[4]~input_o\) ) ) )
+-- \TheHelloDE1|TheHex1|Mux4~0_combout\ = ( \SW[4]~input_o\ & ( \SW[5]~input_o\ & ( (\SW[7]~input_o\ & \SW[6]~input_o\) ) ) ) # ( !\SW[4]~input_o\ & ( \SW[5]~input_o\ & ( !\SW[7]~input_o\ $ (\SW[6]~input_o\) ) ) ) # ( !\SW[4]~input_o\ & ( !\SW[5]~input_o\ & 
+-- ( (\SW[7]~input_o\ & \SW[6]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000010100000101000010100000101000000101010101010101",
+	lut_mask => "0000010100000101000000000000000010100101101001010000010100000101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_SW[6]~input_o\,
-	datac => \ALT_INV_SW[4]~input_o\,
-	datae => \ALT_INV_SW[7]~input_o\,
+	dataa => \ALT_INV_SW[7]~input_o\,
+	datac => \ALT_INV_SW[6]~input_o\,
+	datae => \ALT_INV_SW[4]~input_o\,
 	dataf => \ALT_INV_SW[5]~input_o\,
 	combout => \TheHelloDE1|TheHex1|Mux4~0_combout\);
 
--- Location: LABCELL_X88_Y8_N18
+-- Location: LABCELL_X88_Y13_N18
 \TheHelloDE1|TheHex1|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex1|Mux3~0_combout\ = ( \SW[7]~input_o\ & ( \SW[5]~input_o\ & ( !\SW[4]~input_o\ $ (\SW[6]~input_o\) ) ) ) # ( !\SW[7]~input_o\ & ( \SW[5]~input_o\ & ( (\SW[4]~input_o\ & \SW[6]~input_o\) ) ) ) # ( !\SW[7]~input_o\ & ( !\SW[5]~input_o\ & 
--- ( !\SW[4]~input_o\ $ (!\SW[6]~input_o\) ) ) )
+-- \TheHelloDE1|TheHex1|Mux3~0_combout\ = ( \SW[4]~input_o\ & ( \SW[5]~input_o\ & ( \SW[6]~input_o\ ) ) ) # ( !\SW[4]~input_o\ & ( \SW[5]~input_o\ & ( (!\SW[6]~input_o\ & \SW[7]~input_o\) ) ) ) # ( \SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( (!\SW[6]~input_o\ & 
+-- !\SW[7]~input_o\) ) ) ) # ( !\SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & !\SW[7]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011110000111100000000000000000000000011000000111100001111000011",
+	lut_mask => "0011000000110000110000001100000000001100000011000011001100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_SW[4]~input_o\,
-	datac => \ALT_INV_SW[6]~input_o\,
-	datae => \ALT_INV_SW[7]~input_o\,
+	datab => \ALT_INV_SW[6]~input_o\,
+	datac => \ALT_INV_SW[7]~input_o\,
+	datae => \ALT_INV_SW[4]~input_o\,
 	dataf => \ALT_INV_SW[5]~input_o\,
 	combout => \TheHelloDE1|TheHex1|Mux3~0_combout\);
 
--- Location: LABCELL_X88_Y8_N54
+-- Location: LABCELL_X88_Y13_N54
 \TheHelloDE1|TheHex1|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex1|Mux2~0_combout\ = ( !\SW[7]~input_o\ & ( \SW[5]~input_o\ & ( \SW[4]~input_o\ ) ) ) # ( \SW[7]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[4]~input_o\ & !\SW[6]~input_o\) ) ) ) # ( !\SW[7]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\) 
--- # (\SW[4]~input_o\) ) ) )
+-- \TheHelloDE1|TheHex1|Mux2~0_combout\ = ( \SW[4]~input_o\ & ( \SW[5]~input_o\ & ( !\SW[7]~input_o\ ) ) ) # ( \SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( (!\SW[6]~input_o\) # (!\SW[7]~input_o\) ) ) ) # ( !\SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( 
+-- (\SW[6]~input_o\ & !\SW[7]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011111100111111001100000011000000110011001100110000000000000000",
+	lut_mask => "0011000000110000111111001111110000000000000000001111000011110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_SW[4]~input_o\,
-	datac => \ALT_INV_SW[6]~input_o\,
-	datae => \ALT_INV_SW[7]~input_o\,
+	datab => \ALT_INV_SW[6]~input_o\,
+	datac => \ALT_INV_SW[7]~input_o\,
+	datae => \ALT_INV_SW[4]~input_o\,
 	dataf => \ALT_INV_SW[5]~input_o\,
 	combout => \TheHelloDE1|TheHex1|Mux2~0_combout\);
 
--- Location: LABCELL_X88_Y8_N33
+-- Location: LABCELL_X88_Y13_N3
 \TheHelloDE1|TheHex1|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex1|Mux1~0_combout\ = ( !\SW[7]~input_o\ & ( \SW[5]~input_o\ & ( (!\SW[6]~input_o\) # (\SW[4]~input_o\) ) ) ) # ( \SW[7]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[6]~input_o\ & \SW[4]~input_o\) ) ) ) # ( !\SW[7]~input_o\ & ( !\SW[5]~input_o\ 
--- & ( (!\SW[6]~input_o\ & \SW[4]~input_o\) ) ) )
+-- \TheHelloDE1|TheHex1|Mux1~0_combout\ = ( \SW[4]~input_o\ & ( \SW[5]~input_o\ & ( !\SW[7]~input_o\ ) ) ) # ( !\SW[4]~input_o\ & ( \SW[5]~input_o\ & ( (!\SW[7]~input_o\ & !\SW[6]~input_o\) ) ) ) # ( \SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( !\SW[7]~input_o\ 
+-- $ (\SW[6]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000001010000001010000010110101111101011110000000000000000",
+	lut_mask => "0000000000000000101001011010010110100000101000001010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_SW[6]~input_o\,
-	datac => \ALT_INV_SW[4]~input_o\,
-	datae => \ALT_INV_SW[7]~input_o\,
+	dataa => \ALT_INV_SW[7]~input_o\,
+	datac => \ALT_INV_SW[6]~input_o\,
+	datae => \ALT_INV_SW[4]~input_o\,
 	dataf => \ALT_INV_SW[5]~input_o\,
 	combout => \TheHelloDE1|TheHex1|Mux1~0_combout\);
 
--- Location: LABCELL_X88_Y8_N36
+-- Location: LABCELL_X88_Y13_N6
 \TheHelloDE1|TheHex1|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|TheHex1|Mux0~0_combout\ = ( \SW[7]~input_o\ & ( \SW[5]~input_o\ ) ) # ( !\SW[7]~input_o\ & ( \SW[5]~input_o\ & ( (!\SW[4]~input_o\) # (!\SW[6]~input_o\) ) ) ) # ( \SW[7]~input_o\ & ( !\SW[5]~input_o\ & ( (!\SW[6]~input_o\) # (\SW[4]~input_o\) 
--- ) ) ) # ( !\SW[7]~input_o\ & ( !\SW[5]~input_o\ & ( \SW[6]~input_o\ ) ) )
+-- \TheHelloDE1|TheHex1|Mux0~0_combout\ = ( \SW[4]~input_o\ & ( \SW[5]~input_o\ & ( (!\SW[6]~input_o\) # (\SW[7]~input_o\) ) ) ) # ( !\SW[4]~input_o\ & ( \SW[5]~input_o\ ) ) # ( \SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( (\SW[7]~input_o\) # (\SW[6]~input_o\) ) 
+-- ) ) # ( !\SW[4]~input_o\ & ( !\SW[5]~input_o\ & ( !\SW[6]~input_o\ $ (!\SW[7]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000111100001111111100111111001111111100111111001111111111111111",
+	lut_mask => "0011110000111100001111110011111111111111111111111100111111001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_SW[4]~input_o\,
-	datac => \ALT_INV_SW[6]~input_o\,
-	datae => \ALT_INV_SW[7]~input_o\,
+	datab => \ALT_INV_SW[6]~input_o\,
+	datac => \ALT_INV_SW[7]~input_o\,
+	datae => \ALT_INV_SW[4]~input_o\,
 	dataf => \ALT_INV_SW[5]~input_o\,
 	combout => \TheHelloDE1|TheHex1|Mux0~0_combout\);
 
@@ -961,7 +970,34 @@ PORT MAP (
 	inclk => \CLOCK_50~input_o\,
 	outclk => \CLOCK_50~inputCLKENA0_outclk\);
 
--- Location: LABCELL_X42_Y2_N30
+-- Location: IOIBUF_X36_Y0_N1
+\KEY0~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_KEY0,
+	o => \KEY0~input_o\);
+
+-- Location: FF_X35_Y1_N41
+\TheHelloDE1|cnt[23]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~inputCLKENA0_outclk\,
+	d => \TheHelloDE1|Add0~1_sumout\,
+	clrn => \KEY0~input_o\,
+	sclr => \TheHelloDE1|LessThan0~5_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \TheHelloDE1|cnt\(23));
+
+-- Location: LABCELL_X35_Y2_N30
 \TheHelloDE1|Add0~101\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~101_sumout\ = SUM(( \TheHelloDE1|cnt\(0) ) + ( VCC ) + ( !VCC ))
@@ -979,18 +1015,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~101_sumout\,
 	cout => \TheHelloDE1|Add0~102\);
 
--- Location: IOIBUF_X36_Y0_N1
-\KEY0~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_KEY0,
-	o => \KEY0~input_o\);
-
--- Location: FF_X42_Y2_N32
+-- Location: FF_X35_Y2_N32
 \TheHelloDE1|cnt[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1006,7 +1031,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(0));
 
--- Location: LABCELL_X42_Y2_N33
+-- Location: LABCELL_X35_Y2_N33
 \TheHelloDE1|Add0~97\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~97_sumout\ = SUM(( \TheHelloDE1|cnt\(1) ) + ( GND ) + ( \TheHelloDE1|Add0~102\ ))
@@ -1015,16 +1040,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000101010101010101",
+	lut_mask => "0000000000000000111111111111111100000000000000000000111100001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \TheHelloDE1|ALT_INV_cnt\(1),
+	datac => \TheHelloDE1|ALT_INV_cnt\(1),
 	cin => \TheHelloDE1|Add0~102\,
 	sumout => \TheHelloDE1|Add0~97_sumout\,
 	cout => \TheHelloDE1|Add0~98\);
 
--- Location: FF_X42_Y2_N35
+-- Location: FF_X35_Y2_N34
 \TheHelloDE1|cnt[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1040,7 +1065,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(1));
 
--- Location: LABCELL_X42_Y2_N36
+-- Location: LABCELL_X35_Y2_N36
 \TheHelloDE1|Add0~93\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~93_sumout\ = SUM(( \TheHelloDE1|cnt\(2) ) + ( GND ) + ( \TheHelloDE1|Add0~98\ ))
@@ -1058,7 +1083,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~93_sumout\,
 	cout => \TheHelloDE1|Add0~94\);
 
--- Location: FF_X42_Y2_N38
+-- Location: FF_X35_Y2_N38
 \TheHelloDE1|cnt[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1074,7 +1099,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(2));
 
--- Location: LABCELL_X42_Y2_N39
+-- Location: LABCELL_X35_Y2_N39
 \TheHelloDE1|Add0~89\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~89_sumout\ = SUM(( \TheHelloDE1|cnt\(3) ) + ( GND ) + ( \TheHelloDE1|Add0~94\ ))
@@ -1092,7 +1117,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~89_sumout\,
 	cout => \TheHelloDE1|Add0~90\);
 
--- Location: FF_X42_Y2_N41
+-- Location: FF_X35_Y2_N41
 \TheHelloDE1|cnt[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1108,7 +1133,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(3));
 
--- Location: LABCELL_X42_Y2_N42
+-- Location: LABCELL_X35_Y2_N42
 \TheHelloDE1|Add0~85\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~85_sumout\ = SUM(( \TheHelloDE1|cnt\(4) ) + ( GND ) + ( \TheHelloDE1|Add0~90\ ))
@@ -1126,7 +1151,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~85_sumout\,
 	cout => \TheHelloDE1|Add0~86\);
 
--- Location: FF_X42_Y2_N43
+-- Location: FF_X35_Y2_N44
 \TheHelloDE1|cnt[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1142,7 +1167,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(4));
 
--- Location: LABCELL_X42_Y2_N45
+-- Location: LABCELL_X35_Y2_N45
 \TheHelloDE1|Add0~81\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~81_sumout\ = SUM(( \TheHelloDE1|cnt\(5) ) + ( GND ) + ( \TheHelloDE1|Add0~86\ ))
@@ -1160,7 +1185,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~81_sumout\,
 	cout => \TheHelloDE1|Add0~82\);
 
--- Location: FF_X42_Y2_N47
+-- Location: FF_X35_Y2_N47
 \TheHelloDE1|cnt[5]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1176,7 +1201,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(5));
 
--- Location: LABCELL_X42_Y2_N48
+-- Location: LABCELL_X35_Y2_N48
 \TheHelloDE1|Add0~77\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~77_sumout\ = SUM(( \TheHelloDE1|cnt\(6) ) + ( GND ) + ( \TheHelloDE1|Add0~82\ ))
@@ -1194,7 +1219,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~77_sumout\,
 	cout => \TheHelloDE1|Add0~78\);
 
--- Location: FF_X42_Y2_N50
+-- Location: FF_X35_Y2_N50
 \TheHelloDE1|cnt[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1210,7 +1235,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(6));
 
--- Location: LABCELL_X42_Y2_N51
+-- Location: LABCELL_X35_Y2_N51
 \TheHelloDE1|Add0~25\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~25_sumout\ = SUM(( \TheHelloDE1|cnt\(7) ) + ( GND ) + ( \TheHelloDE1|Add0~78\ ))
@@ -1228,7 +1253,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~25_sumout\,
 	cout => \TheHelloDE1|Add0~26\);
 
--- Location: FF_X42_Y2_N53
+-- Location: FF_X35_Y2_N53
 \TheHelloDE1|cnt[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1244,7 +1269,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(7));
 
--- Location: LABCELL_X42_Y2_N54
+-- Location: LABCELL_X35_Y2_N54
 \TheHelloDE1|Add0~21\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~21_sumout\ = SUM(( \TheHelloDE1|cnt\(8) ) + ( GND ) + ( \TheHelloDE1|Add0~26\ ))
@@ -1262,7 +1287,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~21_sumout\,
 	cout => \TheHelloDE1|Add0~22\);
 
--- Location: FF_X42_Y2_N56
+-- Location: FF_X35_Y2_N56
 \TheHelloDE1|cnt[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1278,7 +1303,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(8));
 
--- Location: LABCELL_X42_Y2_N57
+-- Location: LABCELL_X35_Y2_N57
 \TheHelloDE1|Add0~17\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~17_sumout\ = SUM(( \TheHelloDE1|cnt\(9) ) + ( GND ) + ( \TheHelloDE1|Add0~22\ ))
@@ -1296,7 +1321,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~17_sumout\,
 	cout => \TheHelloDE1|Add0~18\);
 
--- Location: FF_X42_Y2_N59
+-- Location: FF_X35_Y2_N59
 \TheHelloDE1|cnt[9]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1312,7 +1337,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(9));
 
--- Location: LABCELL_X42_Y1_N0
+-- Location: LABCELL_X35_Y1_N0
 \TheHelloDE1|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~13_sumout\ = SUM(( \TheHelloDE1|cnt\(10) ) + ( GND ) + ( \TheHelloDE1|Add0~18\ ))
@@ -1330,7 +1355,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~13_sumout\,
 	cout => \TheHelloDE1|Add0~14\);
 
--- Location: FF_X42_Y1_N1
+-- Location: FF_X35_Y1_N2
 \TheHelloDE1|cnt[10]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1346,7 +1371,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(10));
 
--- Location: LABCELL_X42_Y1_N3
+-- Location: LABCELL_X35_Y1_N3
 \TheHelloDE1|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~9_sumout\ = SUM(( \TheHelloDE1|cnt\(11) ) + ( GND ) + ( \TheHelloDE1|Add0~14\ ))
@@ -1364,7 +1389,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~9_sumout\,
 	cout => \TheHelloDE1|Add0~10\);
 
--- Location: FF_X42_Y1_N5
+-- Location: FF_X35_Y1_N5
 \TheHelloDE1|cnt[11]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1380,7 +1405,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(11));
 
--- Location: LABCELL_X42_Y1_N6
+-- Location: LABCELL_X35_Y1_N6
 \TheHelloDE1|Add0~5\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~5_sumout\ = SUM(( \TheHelloDE1|cnt\(12) ) + ( GND ) + ( \TheHelloDE1|Add0~10\ ))
@@ -1389,16 +1414,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000011001100110011",
+	lut_mask => "0000000000000000111111111111111100000000000000000000111100001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \TheHelloDE1|ALT_INV_cnt\(12),
+	datac => \TheHelloDE1|ALT_INV_cnt\(12),
 	cin => \TheHelloDE1|Add0~10\,
 	sumout => \TheHelloDE1|Add0~5_sumout\,
 	cout => \TheHelloDE1|Add0~6\);
 
--- Location: FF_X42_Y1_N8
+-- Location: FF_X35_Y1_N7
 \TheHelloDE1|cnt[12]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1414,7 +1439,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(12));
 
--- Location: LABCELL_X42_Y1_N9
+-- Location: LABCELL_X35_Y1_N9
 \TheHelloDE1|Add0~45\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~45_sumout\ = SUM(( \TheHelloDE1|cnt\(13) ) + ( GND ) + ( \TheHelloDE1|Add0~6\ ))
@@ -1423,16 +1448,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000101010101010101",
+	lut_mask => "0000000000000000111111111111111100000000000000000000111100001111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \TheHelloDE1|ALT_INV_cnt\(13),
+	datac => \TheHelloDE1|ALT_INV_cnt\(13),
 	cin => \TheHelloDE1|Add0~6\,
 	sumout => \TheHelloDE1|Add0~45_sumout\,
 	cout => \TheHelloDE1|Add0~46\);
 
--- Location: FF_X42_Y1_N10
+-- Location: FF_X35_Y1_N11
 \TheHelloDE1|cnt[13]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1448,7 +1473,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(13));
 
--- Location: LABCELL_X42_Y1_N12
+-- Location: LABCELL_X35_Y1_N12
 \TheHelloDE1|Add0~41\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~41_sumout\ = SUM(( \TheHelloDE1|cnt\(14) ) + ( GND ) + ( \TheHelloDE1|Add0~46\ ))
@@ -1466,7 +1491,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~41_sumout\,
 	cout => \TheHelloDE1|Add0~42\);
 
--- Location: FF_X42_Y1_N14
+-- Location: FF_X35_Y1_N14
 \TheHelloDE1|cnt[14]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1482,7 +1507,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(14));
 
--- Location: LABCELL_X42_Y1_N15
+-- Location: LABCELL_X35_Y1_N15
 \TheHelloDE1|Add0~57\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~57_sumout\ = SUM(( \TheHelloDE1|cnt\(15) ) + ( GND ) + ( \TheHelloDE1|Add0~42\ ))
@@ -1500,7 +1525,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~57_sumout\,
 	cout => \TheHelloDE1|Add0~58\);
 
--- Location: FF_X42_Y1_N17
+-- Location: FF_X35_Y1_N17
 \TheHelloDE1|cnt[15]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1516,7 +1541,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(15));
 
--- Location: LABCELL_X42_Y1_N18
+-- Location: LABCELL_X35_Y1_N18
 \TheHelloDE1|Add0~37\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~37_sumout\ = SUM(( \TheHelloDE1|cnt\(16) ) + ( GND ) + ( \TheHelloDE1|Add0~58\ ))
@@ -1534,7 +1559,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~37_sumout\,
 	cout => \TheHelloDE1|Add0~38\);
 
--- Location: FF_X42_Y1_N20
+-- Location: FF_X35_Y1_N20
 \TheHelloDE1|cnt[16]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1550,7 +1575,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(16));
 
--- Location: LABCELL_X42_Y1_N21
+-- Location: LABCELL_X35_Y1_N21
 \TheHelloDE1|Add0~33\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~33_sumout\ = SUM(( \TheHelloDE1|cnt[17]~DUPLICATE_q\ ) + ( GND ) + ( \TheHelloDE1|Add0~38\ ))
@@ -1568,7 +1593,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~33_sumout\,
 	cout => \TheHelloDE1|Add0~34\);
 
--- Location: FF_X42_Y1_N22
+-- Location: FF_X35_Y1_N22
 \TheHelloDE1|cnt[17]~DUPLICATE\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1584,7 +1609,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt[17]~DUPLICATE_q\);
 
--- Location: LABCELL_X42_Y1_N24
+-- Location: LABCELL_X35_Y1_N24
 \TheHelloDE1|Add0~29\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~29_sumout\ = SUM(( \TheHelloDE1|cnt\(18) ) + ( GND ) + ( \TheHelloDE1|Add0~34\ ))
@@ -1602,7 +1627,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~29_sumout\,
 	cout => \TheHelloDE1|Add0~30\);
 
--- Location: FF_X42_Y1_N26
+-- Location: FF_X35_Y1_N26
 \TheHelloDE1|cnt[18]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1618,7 +1643,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(18));
 
--- Location: LABCELL_X42_Y1_N27
+-- Location: LABCELL_X35_Y1_N27
 \TheHelloDE1|Add0~53\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~53_sumout\ = SUM(( \TheHelloDE1|cnt\(19) ) + ( GND ) + ( \TheHelloDE1|Add0~30\ ))
@@ -1636,7 +1661,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~53_sumout\,
 	cout => \TheHelloDE1|Add0~54\);
 
--- Location: FF_X42_Y1_N29
+-- Location: FF_X35_Y1_N29
 \TheHelloDE1|cnt[19]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1652,7 +1677,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(19));
 
--- Location: LABCELL_X42_Y1_N30
+-- Location: LABCELL_X35_Y1_N30
 \TheHelloDE1|Add0~49\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~49_sumout\ = SUM(( \TheHelloDE1|cnt\(20) ) + ( GND ) + ( \TheHelloDE1|Add0~54\ ))
@@ -1661,16 +1686,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000111100001111",
+	lut_mask => "0000000000000000111111111111111100000000000000000011001100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \TheHelloDE1|ALT_INV_cnt\(20),
+	datab => \TheHelloDE1|ALT_INV_cnt\(20),
 	cin => \TheHelloDE1|Add0~54\,
 	sumout => \TheHelloDE1|Add0~49_sumout\,
 	cout => \TheHelloDE1|Add0~50\);
 
--- Location: FF_X42_Y1_N31
+-- Location: FF_X35_Y1_N32
 \TheHelloDE1|cnt[20]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1686,7 +1711,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(20));
 
--- Location: LABCELL_X42_Y1_N33
+-- Location: LABCELL_X35_Y1_N33
 \TheHelloDE1|Add0~65\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~65_sumout\ = SUM(( \TheHelloDE1|cnt\(21) ) + ( GND ) + ( \TheHelloDE1|Add0~50\ ))
@@ -1704,7 +1729,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~65_sumout\,
 	cout => \TheHelloDE1|Add0~66\);
 
--- Location: FF_X42_Y1_N35
+-- Location: FF_X35_Y1_N35
 \TheHelloDE1|cnt[21]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1720,7 +1745,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(21));
 
--- Location: LABCELL_X42_Y1_N36
+-- Location: LABCELL_X35_Y1_N36
 \TheHelloDE1|Add0~61\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~61_sumout\ = SUM(( \TheHelloDE1|cnt\(22) ) + ( GND ) + ( \TheHelloDE1|Add0~66\ ))
@@ -1729,16 +1754,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000111100001111",
+	lut_mask => "0000000000000000111111111111111100000000000000000011001100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \TheHelloDE1|ALT_INV_cnt\(22),
+	datab => \TheHelloDE1|ALT_INV_cnt\(22),
 	cin => \TheHelloDE1|Add0~66\,
 	sumout => \TheHelloDE1|Add0~61_sumout\,
 	cout => \TheHelloDE1|Add0~62\);
 
--- Location: FF_X42_Y1_N38
+-- Location: FF_X35_Y1_N37
 \TheHelloDE1|cnt[22]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1754,79 +1779,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(22));
 
--- Location: LABCELL_X42_Y1_N51
-\TheHelloDE1|LessThan0~3\ : cyclonev_lcell_comb
--- Equation(s):
--- \TheHelloDE1|LessThan0~3_combout\ = ( !\TheHelloDE1|cnt\(21) & ( !\TheHelloDE1|cnt\(22) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1111111100000000111111110000000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \TheHelloDE1|ALT_INV_cnt\(22),
-	dataf => \TheHelloDE1|ALT_INV_cnt\(21),
-	combout => \TheHelloDE1|LessThan0~3_combout\);
-
--- Location: LABCELL_X42_Y1_N54
-\TheHelloDE1|LessThan0~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \TheHelloDE1|LessThan0~2_combout\ = ( \TheHelloDE1|cnt\(19) & ( \TheHelloDE1|cnt\(18) & ( \TheHelloDE1|cnt\(20) ) ) ) # ( \TheHelloDE1|cnt\(19) & ( !\TheHelloDE1|cnt\(18) & ( (\TheHelloDE1|cnt\(20) & (((\TheHelloDE1|cnt\(15)) # (\TheHelloDE1|cnt\(16))) # 
--- (\TheHelloDE1|cnt[17]~DUPLICATE_q\))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000101010101010100000000000000000101010101010101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \TheHelloDE1|ALT_INV_cnt\(20),
-	datab => \TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\,
-	datac => \TheHelloDE1|ALT_INV_cnt\(16),
-	datad => \TheHelloDE1|ALT_INV_cnt\(15),
-	datae => \TheHelloDE1|ALT_INV_cnt\(19),
-	dataf => \TheHelloDE1|ALT_INV_cnt\(18),
-	combout => \TheHelloDE1|LessThan0~2_combout\);
-
--- Location: FF_X42_Y1_N23
-\TheHelloDE1|cnt[17]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~inputCLKENA0_outclk\,
-	d => \TheHelloDE1|Add0~33_sumout\,
-	clrn => \KEY0~input_o\,
-	sclr => \TheHelloDE1|LessThan0~5_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \TheHelloDE1|cnt\(17));
-
--- Location: LABCELL_X42_Y1_N48
-\TheHelloDE1|LessThan0~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \TheHelloDE1|LessThan0~1_combout\ = ( !\TheHelloDE1|cnt\(18) & ( (!\TheHelloDE1|cnt\(13) & (!\TheHelloDE1|cnt\(14) & (!\TheHelloDE1|cnt\(16) & !\TheHelloDE1|cnt\(17)))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1000000000000000100000000000000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \TheHelloDE1|ALT_INV_cnt\(13),
-	datab => \TheHelloDE1|ALT_INV_cnt\(14),
-	datac => \TheHelloDE1|ALT_INV_cnt\(16),
-	datad => \TheHelloDE1|ALT_INV_cnt\(17),
-	dataf => \TheHelloDE1|ALT_INV_cnt\(18),
-	combout => \TheHelloDE1|LessThan0~1_combout\);
-
--- Location: LABCELL_X42_Y1_N39
+-- Location: LABCELL_X35_Y1_N39
 \TheHelloDE1|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~1_sumout\ = SUM(( \TheHelloDE1|cnt\(23) ) + ( GND ) + ( \TheHelloDE1|Add0~62\ ))
@@ -1844,8 +1797,8 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~1_sumout\,
 	cout => \TheHelloDE1|Add0~2\);
 
--- Location: FF_X42_Y1_N40
-\TheHelloDE1|cnt[23]\ : dffeas
+-- Location: FF_X35_Y1_N40
+\TheHelloDE1|cnt[23]~DUPLICATE\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1858,9 +1811,119 @@ PORT MAP (
 	sclr => \TheHelloDE1|LessThan0~5_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \TheHelloDE1|cnt\(23));
+	q => \TheHelloDE1|cnt[23]~DUPLICATE_q\);
 
--- Location: LABCELL_X42_Y1_N42
+-- Location: FF_X35_Y1_N4
+\TheHelloDE1|cnt[11]~DUPLICATE\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~inputCLKENA0_outclk\,
+	d => \TheHelloDE1|Add0~9_sumout\,
+	clrn => \KEY0~input_o\,
+	sclr => \TheHelloDE1|LessThan0~5_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \TheHelloDE1|cnt[11]~DUPLICATE_q\);
+
+-- Location: LABCELL_X35_Y2_N12
+\TheHelloDE1|LessThan0~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|LessThan0~0_combout\ = ( \TheHelloDE1|cnt\(8) & ( \TheHelloDE1|cnt\(7) & ( (\TheHelloDE1|cnt\(12) & (((\TheHelloDE1|cnt\(10) & \TheHelloDE1|cnt\(9))) # (\TheHelloDE1|cnt[11]~DUPLICATE_q\))) ) ) ) # ( !\TheHelloDE1|cnt\(8) & ( 
+-- \TheHelloDE1|cnt\(7) & ( (\TheHelloDE1|cnt\(12) & (((\TheHelloDE1|cnt\(10) & \TheHelloDE1|cnt\(9))) # (\TheHelloDE1|cnt[11]~DUPLICATE_q\))) ) ) ) # ( \TheHelloDE1|cnt\(8) & ( !\TheHelloDE1|cnt\(7) & ( (\TheHelloDE1|cnt\(12) & (((\TheHelloDE1|cnt\(10) & 
+-- \TheHelloDE1|cnt\(9))) # (\TheHelloDE1|cnt[11]~DUPLICATE_q\))) ) ) ) # ( !\TheHelloDE1|cnt\(8) & ( !\TheHelloDE1|cnt\(7) & ( (\TheHelloDE1|cnt[11]~DUPLICATE_q\ & \TheHelloDE1|cnt\(12)) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000001100000011000000110000011100000011000001110000001100000111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \TheHelloDE1|ALT_INV_cnt\(10),
+	datab => \TheHelloDE1|ALT_INV_cnt[11]~DUPLICATE_q\,
+	datac => \TheHelloDE1|ALT_INV_cnt\(12),
+	datad => \TheHelloDE1|ALT_INV_cnt\(9),
+	datae => \TheHelloDE1|ALT_INV_cnt\(8),
+	dataf => \TheHelloDE1|ALT_INV_cnt\(7),
+	combout => \TheHelloDE1|LessThan0~0_combout\);
+
+-- Location: FF_X35_Y1_N23
+\TheHelloDE1|cnt[17]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~inputCLKENA0_outclk\,
+	d => \TheHelloDE1|Add0~33_sumout\,
+	clrn => \KEY0~input_o\,
+	sclr => \TheHelloDE1|LessThan0~5_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \TheHelloDE1|cnt\(17));
+
+-- Location: LABCELL_X35_Y1_N48
+\TheHelloDE1|LessThan0~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|LessThan0~1_combout\ = ( !\TheHelloDE1|cnt\(13) & ( (!\TheHelloDE1|cnt\(18) & (!\TheHelloDE1|cnt\(14) & (!\TheHelloDE1|cnt\(16) & !\TheHelloDE1|cnt\(17)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1000000000000000100000000000000000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \TheHelloDE1|ALT_INV_cnt\(18),
+	datab => \TheHelloDE1|ALT_INV_cnt\(14),
+	datac => \TheHelloDE1|ALT_INV_cnt\(16),
+	datad => \TheHelloDE1|ALT_INV_cnt\(17),
+	dataf => \TheHelloDE1|ALT_INV_cnt\(13),
+	combout => \TheHelloDE1|LessThan0~1_combout\);
+
+-- Location: LABCELL_X35_Y1_N51
+\TheHelloDE1|LessThan0~3\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|LessThan0~3_combout\ = ( !\TheHelloDE1|cnt\(21) & ( !\TheHelloDE1|cnt\(22) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1111000011110000111100001111000000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datac => \TheHelloDE1|ALT_INV_cnt\(22),
+	dataf => \TheHelloDE1|ALT_INV_cnt\(21),
+	combout => \TheHelloDE1|LessThan0~3_combout\);
+
+-- Location: LABCELL_X35_Y1_N54
+\TheHelloDE1|LessThan0~2\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|LessThan0~2_combout\ = ( \TheHelloDE1|cnt\(19) & ( \TheHelloDE1|cnt[17]~DUPLICATE_q\ & ( \TheHelloDE1|cnt\(20) ) ) ) # ( \TheHelloDE1|cnt\(19) & ( !\TheHelloDE1|cnt[17]~DUPLICATE_q\ & ( (\TheHelloDE1|cnt\(20) & (((\TheHelloDE1|cnt\(15)) # 
+-- (\TheHelloDE1|cnt\(16))) # (\TheHelloDE1|cnt\(18)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000100110011001100000000000000000011001100110011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \TheHelloDE1|ALT_INV_cnt\(18),
+	datab => \TheHelloDE1|ALT_INV_cnt\(20),
+	datac => \TheHelloDE1|ALT_INV_cnt\(16),
+	datad => \TheHelloDE1|ALT_INV_cnt\(15),
+	datae => \TheHelloDE1|ALT_INV_cnt\(19),
+	dataf => \TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\,
+	combout => \TheHelloDE1|LessThan0~2_combout\);
+
+-- Location: LABCELL_X35_Y1_N42
 \TheHelloDE1|Add0~73\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~73_sumout\ = SUM(( \TheHelloDE1|cnt\(24) ) + ( GND ) + ( \TheHelloDE1|Add0~2\ ))
@@ -1878,7 +1941,7 @@ PORT MAP (
 	sumout => \TheHelloDE1|Add0~73_sumout\,
 	cout => \TheHelloDE1|Add0~74\);
 
--- Location: FF_X42_Y1_N44
+-- Location: FF_X35_Y1_N43
 \TheHelloDE1|cnt[24]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1894,7 +1957,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(24));
 
--- Location: LABCELL_X42_Y1_N45
+-- Location: LABCELL_X35_Y1_N45
 \TheHelloDE1|Add0~69\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|Add0~69_sumout\ = SUM(( \TheHelloDE1|cnt\(25) ) + ( GND ) + ( \TheHelloDE1|Add0~74\ ))
@@ -1910,7 +1973,7 @@ PORT MAP (
 	cin => \TheHelloDE1|Add0~74\,
 	sumout => \TheHelloDE1|Add0~69_sumout\);
 
--- Location: FF_X42_Y1_N47
+-- Location: FF_X35_Y1_N47
 \TheHelloDE1|cnt[25]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1926,7 +1989,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|cnt\(25));
 
--- Location: LABCELL_X42_Y2_N12
+-- Location: LABCELL_X35_Y2_N18
 \TheHelloDE1|LessThan0~4\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|LessThan0~4_combout\ = ( !\TheHelloDE1|cnt\(24) & ( !\TheHelloDE1|cnt\(25) ) )
@@ -1934,75 +1997,37 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1111000011110000111100001111000000000000000000000000000000000000",
+	lut_mask => "1111111111111111000000000000000000000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \TheHelloDE1|ALT_INV_cnt\(25),
-	dataf => \TheHelloDE1|ALT_INV_cnt\(24),
+	datae => \TheHelloDE1|ALT_INV_cnt\(24),
+	dataf => \TheHelloDE1|ALT_INV_cnt\(25),
 	combout => \TheHelloDE1|LessThan0~4_combout\);
 
--- Location: FF_X42_Y1_N7
-\TheHelloDE1|cnt[12]~DUPLICATE\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \CLOCK_50~inputCLKENA0_outclk\,
-	d => \TheHelloDE1|Add0~5_sumout\,
-	clrn => \KEY0~input_o\,
-	sclr => \TheHelloDE1|LessThan0~5_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \TheHelloDE1|cnt[12]~DUPLICATE_q\);
-
--- Location: LABCELL_X42_Y2_N6
-\TheHelloDE1|LessThan0~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \TheHelloDE1|LessThan0~0_combout\ = ( \TheHelloDE1|cnt\(9) & ( \TheHelloDE1|cnt\(10) & ( (\TheHelloDE1|cnt[12]~DUPLICATE_q\ & (((\TheHelloDE1|cnt\(8)) # (\TheHelloDE1|cnt\(11))) # (\TheHelloDE1|cnt\(7)))) ) ) ) # ( !\TheHelloDE1|cnt\(9) & ( 
--- \TheHelloDE1|cnt\(10) & ( (\TheHelloDE1|cnt\(11) & \TheHelloDE1|cnt[12]~DUPLICATE_q\) ) ) ) # ( \TheHelloDE1|cnt\(9) & ( !\TheHelloDE1|cnt\(10) & ( (\TheHelloDE1|cnt\(11) & \TheHelloDE1|cnt[12]~DUPLICATE_q\) ) ) ) # ( !\TheHelloDE1|cnt\(9) & ( 
--- !\TheHelloDE1|cnt\(10) & ( (\TheHelloDE1|cnt\(11) & \TheHelloDE1|cnt[12]~DUPLICATE_q\) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000110011000000000011001100000000001100110000000001111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \TheHelloDE1|ALT_INV_cnt\(7),
-	datab => \TheHelloDE1|ALT_INV_cnt\(11),
-	datac => \TheHelloDE1|ALT_INV_cnt\(8),
-	datad => \TheHelloDE1|ALT_INV_cnt[12]~DUPLICATE_q\,
-	datae => \TheHelloDE1|ALT_INV_cnt\(9),
-	dataf => \TheHelloDE1|ALT_INV_cnt\(10),
-	combout => \TheHelloDE1|LessThan0~0_combout\);
-
--- Location: LABCELL_X42_Y2_N18
+-- Location: LABCELL_X35_Y2_N24
 \TheHelloDE1|LessThan0~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TheHelloDE1|LessThan0~5_combout\ = ( \TheHelloDE1|cnt\(23) & ( \TheHelloDE1|LessThan0~0_combout\ & ( (!\TheHelloDE1|LessThan0~3_combout\) # ((!\TheHelloDE1|LessThan0~4_combout\) # (\TheHelloDE1|LessThan0~2_combout\)) ) ) ) # ( !\TheHelloDE1|cnt\(23) & ( 
--- \TheHelloDE1|LessThan0~0_combout\ & ( !\TheHelloDE1|LessThan0~4_combout\ ) ) ) # ( \TheHelloDE1|cnt\(23) & ( !\TheHelloDE1|LessThan0~0_combout\ & ( (!\TheHelloDE1|LessThan0~3_combout\) # ((!\TheHelloDE1|LessThan0~4_combout\) # 
--- ((\TheHelloDE1|LessThan0~2_combout\ & !\TheHelloDE1|LessThan0~1_combout\))) ) ) ) # ( !\TheHelloDE1|cnt\(23) & ( !\TheHelloDE1|LessThan0~0_combout\ & ( !\TheHelloDE1|LessThan0~4_combout\ ) ) )
+-- \TheHelloDE1|LessThan0~5_combout\ = ( \TheHelloDE1|LessThan0~2_combout\ & ( \TheHelloDE1|LessThan0~4_combout\ & ( (\TheHelloDE1|cnt[23]~DUPLICATE_q\ & (((!\TheHelloDE1|LessThan0~1_combout\) # (!\TheHelloDE1|LessThan0~3_combout\)) # 
+-- (\TheHelloDE1|LessThan0~0_combout\))) ) ) ) # ( !\TheHelloDE1|LessThan0~2_combout\ & ( \TheHelloDE1|LessThan0~4_combout\ & ( (\TheHelloDE1|cnt[23]~DUPLICATE_q\ & !\TheHelloDE1|LessThan0~3_combout\) ) ) ) # ( \TheHelloDE1|LessThan0~2_combout\ & ( 
+-- !\TheHelloDE1|LessThan0~4_combout\ ) ) # ( !\TheHelloDE1|LessThan0~2_combout\ & ( !\TheHelloDE1|LessThan0~4_combout\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1111111100000000111111111011101011111111000000001111111110111011",
+	lut_mask => "1111111111111111111111111111111101010101000000000101010101010001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \TheHelloDE1|ALT_INV_LessThan0~3_combout\,
-	datab => \TheHelloDE1|ALT_INV_LessThan0~2_combout\,
+	dataa => \TheHelloDE1|ALT_INV_cnt[23]~DUPLICATE_q\,
+	datab => \TheHelloDE1|ALT_INV_LessThan0~0_combout\,
 	datac => \TheHelloDE1|ALT_INV_LessThan0~1_combout\,
-	datad => \TheHelloDE1|ALT_INV_LessThan0~4_combout\,
-	datae => \TheHelloDE1|ALT_INV_cnt\(23),
-	dataf => \TheHelloDE1|ALT_INV_LessThan0~0_combout\,
+	datad => \TheHelloDE1|ALT_INV_LessThan0~3_combout\,
+	datae => \TheHelloDE1|ALT_INV_LessThan0~2_combout\,
+	dataf => \TheHelloDE1|ALT_INV_LessThan0~4_combout\,
 	combout => \TheHelloDE1|LessThan0~5_combout\);
 
--- Location: LABCELL_X42_Y2_N3
+-- Location: LABCELL_X35_Y2_N3
 \TheHelloDE1|led_status~0\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \TheHelloDE1|led_status~0_combout\ = ( !\TheHelloDE1|led_status~q\ & ( \TheHelloDE1|LessThan0~5_combout\ ) ) # ( \TheHelloDE1|led_status~q\ & ( !\TheHelloDE1|LessThan0~5_combout\ ) )
@@ -2018,7 +2043,7 @@ PORT MAP (
 	dataf => \TheHelloDE1|ALT_INV_LessThan0~5_combout\,
 	combout => \TheHelloDE1|led_status~0_combout\);
 
--- Location: FF_X42_Y2_N4
+-- Location: FF_X35_Y2_N5
 \TheHelloDE1|led_status\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2033,17 +2058,6 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TheHelloDE1|led_status~q\);
 
--- Location: IOIBUF_X4_Y0_N18
-\SW[8]~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_SW(8),
-	o => \SW[8]~input_o\);
-
 -- Location: IOIBUF_X2_Y0_N58
 \SW[9]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -2055,7 +2069,52 @@ PORT MAP (
 	i => ww_SW(9),
 	o => \SW[9]~input_o\);
 
--- Location: LABCELL_X11_Y31_N3
+-- Location: IOIBUF_X4_Y0_N18
+\SW[8]~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_SW(8),
+	o => \SW[8]~input_o\);
+
+-- Location: LABCELL_X35_Y2_N6
+\TheHelloDE1|oLed[8]~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|oLed[8]~0_combout\ = ( !\SW[8]~input_o\ & ( (\TheHelloDE1|led_status~q\ & !\SW[9]~input_o\) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100010001000100010001000100010000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \TheHelloDE1|ALT_INV_led_status~q\,
+	datab => \ALT_INV_SW[9]~input_o\,
+	dataf => \ALT_INV_SW[8]~input_o\,
+	combout => \TheHelloDE1|oLed[8]~0_combout\);
+
+-- Location: LABCELL_X35_Y2_N9
+\TheHelloDE1|oLed[9]~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \TheHelloDE1|oLed[9]~1_combout\ = ( \SW[8]~input_o\ & ( (\TheHelloDE1|led_status~q\ & !\SW[9]~input_o\) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000001000100010001000100010001000100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \TheHelloDE1|ALT_INV_led_status~q\,
+	datab => \ALT_INV_SW[9]~input_o\,
+	dataf => \ALT_INV_SW[8]~input_o\,
+	combout => \TheHelloDE1|oLed[9]~1_combout\);
+
+-- Location: MLABCELL_X21_Y56_N0
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb
 -- Equation(s):
 
