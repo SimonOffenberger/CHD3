@@ -1,3 +1,30 @@
+Übung 1 Aufgabe 2:
+Erweitern des Designs.
+
+a) 
+Für das verschieben der Hex Anzeige vom rechten auf das linken Paars der Anzeigen müssen zuerst
+die Pins für das linke Paar der Anzeigen in die QSF Datei hinzugefügt werden.
+Hier können auch gleich die Definitionen für die rechte Anzeige entfernt werden.
+Ist dies abgeschlossen muss nur mehr im PCB Adapter in der Entity statt HEX 0 bzw. 1 Hex 4 bzw. 5 eingefügt werden.
+
+b)
+Änderung von LED9 auf 8.
+Dies ist tiefer im Design verankert. In der Architekture der Hello unit muss hier das Blinken auf 
+vom 9. Element des Vektors auf das 8. gewechselt werden.
+
+c)
+Hierfür wird beim Conditional Concurrent Signal Assignment in der Condition noch der Taster SW9 ergänzt.
+Dieser muss zusätzlich noch den Wert '0' besitzen damit die LED aufleuchten darf.
+
+d)
+Als zusätzliche Änderung wurde noch implementiert, dass mittels Schalter SW8 das Blinken von LED8 auf 9
+gewechselt werden kann.
+Dies wurde analog zum Punkt d realisiert. 
+Hier wurde ebenfalls in die Condition des Signal Assignments die Abfrage nach SW8 hinzugefügt.
+Einmal mit Abfrage auf 1 und einmal mit Abfrage auf 0.
+Somit ist immer nur eine von beiden LED aktiv.
+
+
 Übung 1 Aufgabe 3:
 Schaltplan: Tasten und LEDs
 
@@ -35,7 +62,7 @@ Hier entsteht im Fehlerfall z.B. dass der Taster auf 3V3 geschalten ist und der 
 Strom durch den Widerstand: 3.3V / 120E (entnommen aus dem Schaltplan) = 27.5mA.
 D.h. Im Fehlerfall können 27.5mA sinked oder sourced werden.
 
-d) Aus dem Absolute Maximum Ratings des FPGA Chips vom Datenblatt kann entnommen werden,
+d) Aus dem Absolute Maximum Ratings des FPGA Chips vom Datenblatt kann entnommen werden, 
 dass ein Pin Maximal 25mA sinken und 40mA sourcen kann. 
 Aus dieser Information lässt sich schließen dass im Fehlerfall, indem der Pin auf GND geschalten wird und der Schalter auf 3V3 hängt, der FPGA Chip zerstört wird. 
 Wird jedoch der Pin auf 3V3 geschalten und der Schalter steht auf GND wird der FPGA nicht zerstört da der Strom unter der Maximalgrenze liegt. 
@@ -48,5 +75,4 @@ Um nun eine steile Flanke am FPGA Pin zu generieren wird diese langsame Flanke a
 Der 74HC245 erzeugt nun eine steile Flanke für den FPGA.
 Wichtig hierbei ist wichtig, dass die Zeitkonstante des RC-Glieds länger als die Prell-Zeit des Tasters ist.
 Ansonsten werden die Prell Impulse von Taster nicht geschluckt und der 74HC245 gibt diese am Ausgang wieder.
-
-
+Ansonsten werden die Prell Impulse von Taster nicht geschluckt und der 74HC245 gibt diese am Ausgang wieder.
