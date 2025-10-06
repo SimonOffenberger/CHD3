@@ -37,7 +37,6 @@ begin  -- Rtl
   TheHex1 : entity work.Hex2SevenSegment(Rtl)
     port map (iHexValue => nibble1,
               o7SegCode => o7SegCode1);
-
 -- ---------------------------------------------------------------------------
 -- Heartbeat : LED(9)
 -- ---------------------------------------------------------------------------
