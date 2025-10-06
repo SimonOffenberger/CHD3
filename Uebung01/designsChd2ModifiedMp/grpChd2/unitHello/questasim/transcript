@@ -13,200 +13,17 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-vlib work
-vmap work work
-# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
-# vmap work work 
-# Copying C:/intelFPGA/23.1lite/questa_fse/win64/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
-# Modified modelsim.ini
-# Modified modelsim.ini
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:07 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Hello
-# End time: 15:37:08 on Oct 02,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:08 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Rtl of Hello
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading entity Hello
-# ** Error: (vcom-11) Could not find work.hex2sevensegment.
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(33): (vcom-1195) Cannot find expanded name "work.Hex2SevenSegment".
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(33): Unknown expanded name.
-# ** Error: (vcom-11) Could not find work.hex2sevensegment.
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(37): (vcom-1195) Cannot find expanded name "work.Hex2SevenSegment".
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(37): Unknown expanded name.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(72): VHDL Compiler exiting
-# End time: 15:37:08 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-Bhv-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:08 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-Bhv-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Bhv of tbHello
-# ** Error: (vcom-11) Could not find work.tbhello.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-Bhv-a.vhd(13): VHDL Compiler exiting
-# End time: 15:37:08 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:08 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tbHello
-# End time: 15:37:08 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:15 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Hello
-# End time: 15:37:15 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:15 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tbHello
-# End time: 15:37:15 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:18 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Rtl of Hello
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading entity Hello
-# ** Error: (vcom-11) Could not find work.hex2sevensegment.
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(33): (vcom-1195) Cannot find expanded name "work.Hex2SevenSegment".
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(33): Unknown expanded name.
-# ** Error: (vcom-11) Could not find work.hex2sevensegment.
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(37): (vcom-1195) Cannot find expanded name "work.Hex2SevenSegment".
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(37): Unknown expanded name.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd(72): VHDL Compiler exiting
-# End time: 15:37:18 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:35 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHex2SevenSegment/hdl/Hex2SevenSegment-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Hex2SevenSegment
-# End time: 15:37:36 on Oct 02,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHex2SevenSegment/hdl/Hex2SevenSegment-Rtl-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:36 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHex2SevenSegment/hdl/Hex2SevenSegment-Rtl-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Rtl of Hex2SevenSegment
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading entity Hex2SevenSegment
-# End time: 15:37:36 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHex2SevenSegment/hdl/tbHex2SevenSegment-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:36 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHex2SevenSegment/hdl/tbHex2SevenSegment-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tbHex2SevenSegment
-# -- Compiling architecture Bhv of tbHex2SevenSegment
-# -- Loading entity Hex2SevenSegment
-# End time: 15:37:36 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:46 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Hello
-# End time: 15:37:46 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:46 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/Hello-Rtl-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Rtl of Hello
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading entity Hello
-# -- Loading entity Hex2SevenSegment
-# End time: 15:37:46 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-Bhv-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:46 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-Bhv-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Bhv of tbHello
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading entity tbHello
-# -- Loading entity Hello
-# End time: 15:37:47 on Oct 02,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 15:37:47 on Oct 02,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tbHello
-# End time: 15:37:47 on Oct 02,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 vsim -gui work.tbhello(bhv) -voptargs=+acc
 # vsim -gui work.tbhello(bhv) -voptargs="+acc" 
-# Start time: 15:38:36 on Oct 02,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Start time: 18:40:03 on Oct 02,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.tbhello(bhv)#1
 # Loading work.hello(rtl)#1
 # Loading work.hex2sevensegment(rtl)#1
-add wave -position end  sim:/tbhello/Clk
-add wave -position end  sim:/tbhello/nReset
-add wave -position end  sim:/tbhello/sw
-add wave -position end  sim:/tbhello/sevenSeg0
-add wave -position end  sim:/tbhello/sevenSeg1
 add wave -position end  sim:/tbhello/led
-run
-run
-run
 run
 run
 run
@@ -216,25 +33,5 @@ run
 # ** Failure: Stopping Clock-Generator!
 #    Time: 700 ns  Iteration: 0  Process: /tbhello/Stimul File: C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-Bhv-a.vhd
 # Break in Process Stimul at C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHello/hdl/tbHello-Bhv-a.vhd line 83
-run
-run
-run
-vsim -gui -voptargs=+acc work.tbhex2sevensegment(bhv)
-# End time: 15:39:39 on Oct 02,2025, Elapsed time: 0:01:03
-# Errors: 1, Warnings: 2
-# vsim -gui -voptargs="+acc" work.tbhex2sevensegment(bhv) 
-# Start time: 15:39:39 on Oct 02,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tbhex2sevensegment(bhv)#1
-# Loading work.hex2sevensegment(rtl)#1
-add wave -position end  sim:/tbhex2sevensegment/nibble
-add wave -position end  sim:/tbhex2sevensegment/sevenSegCode
-# End time: 15:40:02 on Oct 02,2025, Elapsed time: 0:00:23
-# Errors: 0, Warnings: 2
+# End time: 18:41:12 on Oct 02,2025, Elapsed time: 0:01:09
+# Errors: 1, Warnings: 0

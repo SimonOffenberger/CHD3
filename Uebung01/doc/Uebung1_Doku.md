@@ -2,9 +2,9 @@
 
 
 ### a) Verschieben der Hex-Anzeige  
-- Die **Pins** für das linke Paar der Anzeigen müssen in die **QSF-Datei** hinzugefügt werden.  
+- Die **Pins** für das linke Paar der Anzeige müssen in die **QSF-Datei** hinzugefügt werden.  
 - Die Definitionen für die rechte Anzeige können entfernt werden.  
-- Im **PCB Adapter** muss in der *Entity* statt `HEX0` bzw. `HEX1`  `HEX4` bzw. `HEX5` eingefügt werden.  
+- Im **PCB Adapter** muss in der Entity statt `HEX0` bzw. `HEX1`  `HEX4` bzw. `HEX5` eingefügt werden. Diese Änderung muss auch in der Architektur nachgezogen werden.
 ---
 
 ### b) Änderung von **LED9 auf LED8**  
@@ -107,7 +107,7 @@
 ### c) Konfliktfälle bei Schaltern 
 ![Schalter Konflikte](images/Switches.png)
 Durch Verwenden des Pins am Schalter als Output können hier Konflikte in den Pegel des Pins und dem des Schalters erzeugt werden. 
-Hier entsteht ein Fehlerfall z.B. dass der Taster auf 3V3 geschaltet ist und der Pin des FPGA auf GND. Somit liegt am Widerstand 3.3V an.
+Hier entsteht ein Fehlerfall wenn z.B. der Taster auf 3V3 geschaltet ist und der Pin des FPGA auf GND. Somit liegt am Widerstand 3.3V an.
 Strom durch den Widerstand: 3.3V / 120E (entnommen aus dem Schaltplan) = 27.5mA.
 D.h. Im Fehlerfall können 27.5mA sinked oder sourced werden, abhängig vom Fehlerfall.
 
@@ -115,7 +115,7 @@ D.h. Im Fehlerfall können 27.5mA sinked oder sourced werden, abhängig vom Fehler
 
 ### d) Belastungsgrenzen des FPGA  
 ![Absolute Maximum Ratings](images/Maximum%20Ratings%20Datenblatt.png)
-Aus dem Absolute Maximum Ratings des FPGA Chips vom Datenblatt kann entnommen werden, 
+Aus den Absolute Maximum Ratings des FPGA Chips vom Datenblatt kann entnommen werden, 
 dass ein Pin Maximal 25mA sinken und 40mA sourcen kann. 
 Aus dieser Information lässt sich schließen dass im Fehlerfall, indem der Pin auf GND geschaltet wird und der Schalter auf 3V3 hängt, der FPGA Chip zerstört wird. 
 Wird jedoch der Pin auf 3V3 geschaltet und der Schalter steht auf GND wird der FPGA nicht zerstört da der Strom unter der Maximalgrenze liegt. 
@@ -132,5 +132,5 @@ Um nun eine steile Flanke am FPGA Pin zu generieren wird diese langsame Flanke a
 Der 74HC245 erzeugt nun eine steile Flanke für den FPGA.
 Dies ist wichtig damit sich der Spannungswert am Pin nur für eine kurze Zeit im undefinierten Bereich befindent, also zwischen High und Low.
 Wichtig hierbei ist, dass die Zeitkonstante des RC-Glieds länger als die Prell-Zeit des Tasters ist.
-Ansonsten werden die Prell Impulse von Taster nicht geschluckt und der 74HC245 gibt diese am Ausgang wieder.
+Ansonsten werden die Prell Impulse vom Taster nicht geschluckt und der 74HC245 gibt diese am Ausgang wieder.
 ![Entprellschaltung](images/Entprellschaltung.png)

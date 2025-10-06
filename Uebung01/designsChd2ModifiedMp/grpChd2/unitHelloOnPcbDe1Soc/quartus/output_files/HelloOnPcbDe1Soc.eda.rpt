@@ -1,5 +1,5 @@
 EDA Netlist Writer report for HelloOnPcbDe1Soc
-Thu Oct  2 15:49:59 2025
+Mon Oct  6 11:30:42 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct  2 15:49:59 2025 ;
+; EDA Netlist Writer Status ; Successful - Mon Oct  6 11:30:42 2025 ;
 ; Revision Name             ; HelloOnPcbDe1Soc                      ;
 ; Top-level Entity Name     ; HelloOnPcbDe1Soc                      ;
 ; Family                    ; Cyclone V                             ;
@@ -82,14 +82,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Oct  2 15:49:57 2025
+    Info: Processing started: Mon Oct  6 11:30:41 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off HelloOnPcbDe1Soc -c HelloOnPcbDe1Soc
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
 Info (204019): Generated file HelloOnPcbDe1Soc.vho in folder "C:/HSD_SEM_3/CHD3/Uebung01/designsChd2ModifiedMp/grpChd2/unitHelloOnPcbDe1Soc/quartus/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4763 megabytes
-    Info: Processing ended: Thu Oct  2 15:49:59 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Mon Oct  6 11:30:42 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
