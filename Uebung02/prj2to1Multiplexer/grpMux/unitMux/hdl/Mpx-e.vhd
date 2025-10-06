@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+-- Title      : Technology independent top level entity
+-- Project    : Look for top directory in CVS entries
+-------------------------------------------------------------------------------
+-- Abstract: 
+-------------------------------------------------------------------------------
+-- University  : FH-Hagenberg/HSSE, Hagenberg/Austria
+--              Copyright (c) 2000
+-------------------------------------------------------------------------------
+-- Authors are:
+-- offenberger: Simon Offenberger
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+library work;
+use work.Global.all;
+
+entity Mpx is
+  port (iA    : in std_ulogic;    -- input A
+        iB    : in std_ulogic;    -- input B
+        iSel  : in std_ulogic;    -- input Sel
+        oY    : out std_ulogic);  -- output Y
+end Mpx;
+

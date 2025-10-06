@@ -1,0 +1,435 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:55:19 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Minterms of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(14): (vcom-1627) The sequence of  and  followed by  or  is illegal. Did you forget some parenthesis.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(15): (vcom-1627) The sequence of  or  followed by  and  is illegal. Did you forget some parenthesis.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(15): (vcom-1627) The sequence of  and  followed by  or  is illegal. Did you forget some parenthesis.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(16): (vcom-1627) The sequence of  or  followed by  and  is illegal. Did you forget some parenthesis.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(16): (vcom-1627) The sequence of  and  followed by  or  is illegal. Did you forget some parenthesis.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(17): (vcom-1627) The sequence of  or  followed by  and  is illegal. Did you forget some parenthesis.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(19): VHDL Compiler exiting
+# End time: 13:55:19 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:55:56 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Minterms of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 13:55:56 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:55:58 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Minterms of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 13:55:58 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:56:05 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Minterms of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 13:56:05 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:57:36 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImpl of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd(16): near "else": (vcom-1576) expecting ')'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd(18): VHDL Compiler exiting
+# End time: 13:57:37 on Oct 06,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:57:45 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImpl of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 13:57:46 on Oct 06,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:58:56 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImpl of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 13:58:56 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:59:03 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Struct of AllMpx
+# ** Error: (vcom-11) Could not find work.allmpx.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd(11): VHDL Compiler exiting
+# End time: 13:59:03 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:59:03 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(25): (vcom-1136) Unknown identifier "oYPrime".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(25): Bad resolution function (STD_ULOGIC) for type (error).
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(25): near ":": (vcom-1576) expecting ';' or ')'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(25): VHDL Compiler exiting
+# End time: 13:59:03 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:59:23 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): (vcom-1136) Unknown identifier "oYPrime".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): Bad resolution function (STD_ULOGIC) for type (error).
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): near ":": (vcom-1576) expecting ';' or ')'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): VHDL Compiler exiting
+# End time: 13:59:23 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:59:37 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): (vcom-1136) Unknown identifier "oYPrime".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): Bad resolution function (STD_ULOGIC) for type (error).
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): near ":": (vcom-1576) expecting ';' or ')'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): VHDL Compiler exiting
+# End time: 13:59:37 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:59:56 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpx
+# End time: 13:59:56 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:59:58 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Struct of AllMpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity AllMpx
+# -- Loading entity Mpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd(35): Labels do not match: 'Struct' and 'AllMpx'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd(35): VHDL Compiler exiting
+# End time: 13:59:58 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:00:10 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Struct of AllMpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity AllMpx
+# -- Loading entity Mpx
+# End time: 14:00:10 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:00:11 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Struct of AllMpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity AllMpx
+# -- Loading entity Mpx
+# End time: 14:00:11 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:00:17 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpx
+# -- Loading entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(38): near ")": syntax error
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(40): Statement cannot be labeled.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(44): near "1": syntax error
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): Labels do not match: 'testbench' and 'AllMpx'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): VHDL Compiler exiting
+# End time: 14:00:17 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:00:45 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpx
+# -- Loading entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(44): near "1": syntax error
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): Labels do not match: 'testbench' and 'AllMpx'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): VHDL Compiler exiting
+# End time: 14:00:45 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:01:03 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpx
+# -- Loading entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): Labels do not match: 'testbench' and 'AllMpx'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): VHDL Compiler exiting
+# End time: 14:01:03 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:01:04 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpx
+# -- Loading entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): Labels do not match: 'testbench' and 'AllMpx'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): VHDL Compiler exiting
+# End time: 14:01:04 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:01:11 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpx
+# -- Loading entity AllMpx
+# End time: 14:01:11 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.allmpxtb -voptargs=+acc
+# vsim -gui work.allmpxtb -voptargs="+acc" 
+# Start time: 14:01:28 on Oct 06,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Error: (vopt-13130) Failed to find design unit 'allmpxtb'.
+#         Searched libraries:
+#             work
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
+# Error loading design
+# End time: 14:01:29 on Oct 06,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:02:00 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 14:02:00 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc work.allmpxtb(testbench)
+# vsim -gui -voptargs="+acc" work.allmpxtb(testbench) 
+# Start time: 14:02:12 on Oct 06,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Error: (vopt-11) Could not find work.mpx(nandonly).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
+# Error loading design
+# End time: 14:02:13 on Oct 06,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:02:57 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Minterms of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 14:02:57 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:02:57 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity Mpx
+# End time: 14:02:57 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/NandOnly.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:02:57 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/NandOnly.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture NandOnly of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 14:02:57 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:02:57 on Oct 06,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImpl of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 14:02:57 on Oct 06,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc work.allmpxtb(testbench)
+# vsim -gui -voptargs="+acc" work.allmpxtb(testbench) 
+# Start time: 14:03:11 on Oct 06,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+add wave -position end  sim:/allmpxtb/A
+add wave -position end  sim:/allmpxtb/B
+add wave -position end  sim:/allmpxtb/Sel
+add wave -position end  sim:/allmpxtb/YMin
+add wave -position end  sim:/allmpxtb/YPrime
+add wave -position end  sim:/allmpxtb/YNand
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
