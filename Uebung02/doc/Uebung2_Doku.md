@@ -121,6 +121,22 @@ Es ist auch ersichtlich, dass die Architektures in ihrem Grundsätzlichem Aufbau,
 - Technologie Map Post Mapping
 ![Tech Map](/Uebung02/doc/images/Tech_Map1.png)
 - Technologie Map Post Fitting
-![Tech Map](/Uebung02/doc/images/Tech_Map1.png)
+![Tech Map](/Uebung02/doc/images/TechMap2.png)
+Unter genauer Betrachtung der Technologie Map der beiden Schritte Post Mapping und Post Fitting ist kein wesentlicher Unterschied zu erkennen.
+Der einzige Unterschied besteht darin, dass Quartus im unteren Bereich noch eine Logic_Cell_Comb kreiert hat. 
+Aus dieser Beobachtung lässt sich schließen, dass Quartus in der Synthese die Funktionalität des VHDL Codes ermittelt und diese dann möglichst effizient in die FPGA Hardware umsetzt. 
+Aus diesem Grund wird sehr wahrscheinlich durch die Synthese herausgefunden, dass alle 3 Multiplexer dieselbe Funktionalität implementieren.
+Dadurch kann die Funktionalität auch mit nur einem LUT in der ALM abgebildet werden. Dies ist im Technologie Map Viewer zu sehen.
+Dies wird auch unter der Betrachtung der Ressource Summery sichtbar.
+
+-Ressource Usage Analysis & Synthesis
+![Ressource Summery](/Uebung02/doc/images/Summery_Analysis.png)
+
+-Ressource Usage Fitter
+![Ressource Summery](/Uebung02/doc/images/Summery_Fitter.png)
+
+Aus dieser Ressource Summery wird die Vermutung bestätigt.
+Für die Realisierung der 3 Multiplexer wird nur 1 ALM und von dieser, ein 3-Input LUT verwendet. (MUX hat 3 Inputs und 1 Output)
+
 
 ###
