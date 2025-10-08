@@ -15,16 +15,19 @@ use ieee.numeric_std.all;
 use work.Global.all;
 
 architecture Struct of AllMuxesOnPCBDe1Soc is
+signal KeyPosLogic : std_ulogic_vector (1 downto 0);   
 begin 
 
 AllMpx : entity work.AllMpx(Struct)
 port map (
-    iAllMuxA        => KEY(0),
-    iAllMuxB        => KEY(1),
+    iAllMuxA        => KeyPosLogic(0),
+    iAllMuxB        => KeyPosLogic(1),
     iAllMuxSel      => SW,
     oYMin           => LEDR(2),
     oYPrime         => LEDR(1),
     oYNand          => LEDR(0)
 );
 
-end AllMuxesOnPCBDe1Soc; 
+KeyPosLogic <= not KEY;
+
+end Struct; 

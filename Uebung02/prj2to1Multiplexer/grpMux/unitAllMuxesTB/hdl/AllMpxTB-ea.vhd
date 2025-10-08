@@ -19,9 +19,9 @@ entity AllMpxTB is
 end AllMpxTB;
 
 architecture testbench of AllMpxTB is
-    signal A        : std_ulogic := '0';
-    signal B        : std_ulogic := '0';
-    signal Sel      : std_ulogic := '0';
+    signal A        : std_ulogic;
+    signal B        : std_ulogic;
+    signal Sel      : std_ulogic;
     signal YMin     : std_ulogic;
     signal YPrime   : std_ulogic;
     signal YNand    : std_ulogic;
@@ -39,19 +39,35 @@ port map (
 
 stimul: process is
 begin
-    A <= '1' after 10 ns,
+    A <= '0',
+         '1' after 10 ns,
          '0' after 30 ns,
          '1' after 50 ns,
          '0' after 70 ns;
 
-    B <= '1' after 20 ns,
+    B <= '0',
+         '1' after 20 ns,
          '0' after 40 ns,
          '1' after 60 ns;
 
-    Sel <= '1' after 40 ns;
+    Sel <= '0',
+           '1' after 40 ns;
     wait;
 end process stimul;
 
+verify: postponed process (A,B,Sel) is
+begin
 
+    if(Sel = '0') then
+        assert YMin = A   report "Muliplexer failure Minterms" severity error;
+        assert YPrime = A report "Muliplexer failure Prime Implicant" severity error;
+        assert YNand = A  report "Muliplexer failure Nand Only" severity error;
+    else 
+        assert YMin = B   report "Multiplexer failure Minterms" severity error;
+        assert YPrime = B report "Multiplexer failure Prime Implicant" severity error;
+        assert YNand = B  report "Multiplexer failure Nand Only" severity error;
+    end if;
+
+end process verify;
 
 end testbench;

@@ -16,4 +16,5 @@ oY <=   '1' when((iSel = cInactivated  and     iA = cActivated    and iB = cInac
                  (iSel = cActivated    and      iA = cActivated    and iB = cActivated)  or
                  (iSel = cActivated    and      iA = cInactivated  and iB = cActivated))
             else '0';
+               
 end Minterms;

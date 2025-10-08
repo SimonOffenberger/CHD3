@@ -13,320 +13,9 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:55:19 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Minterms of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(14): (vcom-1627) The sequence of  and  followed by  or  is illegal. Did you forget some parenthesis.
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(15): (vcom-1627) The sequence of  or  followed by  and  is illegal. Did you forget some parenthesis.
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(15): (vcom-1627) The sequence of  and  followed by  or  is illegal. Did you forget some parenthesis.
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(16): (vcom-1627) The sequence of  or  followed by  and  is illegal. Did you forget some parenthesis.
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(16): (vcom-1627) The sequence of  and  followed by  or  is illegal. Did you forget some parenthesis.
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(17): (vcom-1627) The sequence of  or  followed by  and  is illegal. Did you forget some parenthesis.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd(19): VHDL Compiler exiting
-# End time: 13:55:19 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:55:56 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Minterms of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# End time: 13:55:56 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:55:58 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Minterms of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# End time: 13:55:58 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:56:05 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Minterms of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# End time: 13:56:05 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:57:36 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture PrimImpl of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd(16): near "else": (vcom-1576) expecting ')'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd(18): VHDL Compiler exiting
-# End time: 13:57:37 on Oct 06,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:57:45 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture PrimImpl of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# End time: 13:57:46 on Oct 06,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:58:56 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture PrimImpl of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# End time: 13:58:56 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:59:03 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Struct of AllMpx
-# ** Error: (vcom-11) Could not find work.allmpx.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd(11): VHDL Compiler exiting
-# End time: 13:59:03 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:59:03 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(25): (vcom-1136) Unknown identifier "oYPrime".
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(25): Bad resolution function (STD_ULOGIC) for type (error).
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(25): near ":": (vcom-1576) expecting ';' or ')'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(25): VHDL Compiler exiting
-# End time: 13:59:03 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:59:23 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): (vcom-1136) Unknown identifier "oYPrime".
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): Bad resolution function (STD_ULOGIC) for type (error).
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): near ":": (vcom-1576) expecting ';' or ')'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): VHDL Compiler exiting
-# End time: 13:59:23 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:59:37 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): (vcom-1136) Unknown identifier "oYPrime".
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): Bad resolution function (STD_ULOGIC) for type (error).
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): near ":": (vcom-1576) expecting ';' or ')'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd(26): VHDL Compiler exiting
-# End time: 13:59:37 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:59:56 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpx
-# End time: 13:59:56 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 13:59:58 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Struct of AllMpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity AllMpx
-# -- Loading entity Mpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd(35): Labels do not match: 'Struct' and 'AllMpx'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd(35): VHDL Compiler exiting
-# End time: 13:59:58 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:00:10 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Struct of AllMpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity AllMpx
-# -- Loading entity Mpx
-# End time: 14:00:10 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:00:11 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Struct of AllMpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity AllMpx
-# -- Loading entity Mpx
-# End time: 14:00:11 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:00:17 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpxTB
-# -- Compiling architecture testbench of AllMpx
-# -- Loading entity AllMpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(38): near ")": syntax error
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(40): Statement cannot be labeled.
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(44): near "1": syntax error
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): Labels do not match: 'testbench' and 'AllMpx'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): VHDL Compiler exiting
-# End time: 14:00:17 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:00:45 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpxTB
-# -- Compiling architecture testbench of AllMpx
-# -- Loading entity AllMpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(44): near "1": syntax error
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): Labels do not match: 'testbench' and 'AllMpx'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): VHDL Compiler exiting
-# End time: 14:00:45 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:01:03 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpxTB
-# -- Compiling architecture testbench of AllMpx
-# -- Loading entity AllMpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): Labels do not match: 'testbench' and 'AllMpx'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): VHDL Compiler exiting
-# End time: 14:01:03 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:01:04 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpxTB
-# -- Compiling architecture testbench of AllMpx
-# -- Loading entity AllMpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): Labels do not match: 'testbench' and 'AllMpx'.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(57): VHDL Compiler exiting
-# End time: 14:01:04 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:01:11 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Compiling entity AllMpxTB
-# -- Compiling architecture testbench of AllMpx
-# -- Loading entity AllMpx
-# End time: 14:01:11 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -gui work.allmpxtb -voptargs=+acc
-# vsim -gui work.allmpxtb -voptargs="+acc" 
-# Start time: 14:01:28 on Oct 06,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Error: (vopt-13130) Failed to find design unit 'allmpxtb'.
-#         Searched libraries:
-#             work
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
-# Error loading design
-# End time: 14:01:29 on Oct 06,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 2
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:02:00 on Oct 06,2025
+# Start time: 19:20:50 on Oct 07,2025
 # vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -336,75 +25,45 @@ vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexe
 # -- Compiling entity AllMpxTB
 # -- Compiling architecture testbench of AllMpxTB
 # -- Loading entity AllMpx
-# End time: 14:02:00 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -gui -voptargs=+acc work.allmpxtb(testbench)
-# vsim -gui -voptargs="+acc" work.allmpxtb(testbench) 
-# Start time: 14:02:12 on Oct 06,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Error: (vopt-11) Could not find work.mpx(nandonly).
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
-# Error loading design
-# End time: 14:02:13 on Oct 06,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 2
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(59): (vcom-1136) Unknown identifier "Y".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(59): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(61): near "Y": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(66): VHDL Compiler exiting
+# End time: 19:20:50 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:02:57 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture Minterms of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# End time: 14:02:57 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:02:57 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# Start time: 19:22:28 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package Global
-# -- Compiling entity Mpx
-# End time: 14:02:57 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/NandOnly.vhd
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(63): near "YMin": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(70): VHDL Compiler exiting
+# End time: 19:22:28 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:02:57 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/NandOnly.vhd 
+# Start time: 19:22:44 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
 # -- Loading package STANDARD
-# -- Compiling architecture NandOnly of Mpx
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package Global
-# -- Loading entity Mpx
-# End time: 14:02:57 on Oct 06,2025, Elapsed time: 0:00:00
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:22:44 on Oct 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:02:57 on Oct 06,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture PrimImpl of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package Global
-# -- Loading entity Mpx
-# End time: 14:02:57 on Oct 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -gui -voptargs=+acc work.allmpxtb(testbench)
-# vsim -gui -voptargs="+acc" work.allmpxtb(testbench) 
-# Start time: 14:03:11 on Oct 06,2025
+vsim -gui work.allmpxtb(testbench) -voptargs=+acc
+# vsim -gui work.allmpxtb(testbench) -voptargs="+acc" 
+# Start time: 19:22:58 on Oct 07,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
@@ -426,10 +85,1446 @@ add wave -position end  sim:/allmpxtb/Sel
 add wave -position end  sim:/allmpxtb/YMin
 add wave -position end  sim:/allmpxtb/YPrime
 add wave -position end  sim:/allmpxtb/YNand
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Simon  Hostname: SIMONS-LAPTOP  ProcessID: 17452
+#           Attempting to use alternate WLF file "./wlft08x88y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft08x88y
+run
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 10 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 10 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 10 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 30 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 30 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 30 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 60 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 60 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 60 ns  Iteration: 0  Instance: /allmpxtb
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+step
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:24:33 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:24:33 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:24:39 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Struct of AllMpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity AllMpx
+# -- Loading entity Mpx
+# End time: 19:24:39 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:24:39 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpx
+# End time: 19:24:40 on Oct 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:24:47 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Minterms.-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Minterms of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 19:24:47 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:24:47 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity Mpx
+# End time: 19:24:47 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/NandOnly.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:24:47 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/NandOnly.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture NandOnly of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 19:24:47 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:24:47 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/PrimImpl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImpl of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity Mpx
+# End time: 19:24:47 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+step
+step
+step
+step
+# Next activity is in 10 ns.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:26:28 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:26:28 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+step
+step
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+run
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+# Next activity is in 10 ns.
+step
+step
+step
+step
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:30:36 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:30:36 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+drivers YMin
+# Drivers for /allmpxtb/YMin:
+#    U  : Signal /allmpxtb/YMin
+#      0 : Driver /allmpxtb/AllMpx/MpxMinTerms/line__14
+drivers oYMin
+# Drivers for oYMin:
+#    oYMin is not a signal, net, or port
+drivers YPrime
+# Drivers for /allmpxtb/YPrime:
+#    U  : Signal /allmpxtb/YPrime
+#      0 : Driver /allmpxtb/AllMpx/MpxPrimImplTerms/line__14
+step
+step
+step
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+# Next activity is in 10 ns.
+step
+step
+step
+step
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+# Next activity is in 10 ns.
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:37:03 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:37:03 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+step
+step
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 10 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 10 ns.
+step
+step
+step
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:40:27 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:40:27 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:42:05 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(55): (vcom-1226) A wait statement is illegal for a process with a sensitivity list.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(73): VHDL Compiler exiting
+# End time: 19:42:05 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:43:22 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:43:22 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 59
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 run
 run
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:43:58 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:43:58 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+step
+step
+step
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:45:23 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:45:23 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:46:56 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:46:56 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+step
+step
+step
+run
+# ** Error: Multiplexer failure Minterms
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+run
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:48:29 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:48:29 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+# ** Error: Multiplexer failure Minterms
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# Break in Process verify at C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd line 62
+quit -sim
+# End time: 19:48:54 on Oct 07,2025, Elapsed time: 0:25:56
+# Errors: 60, Warnings: 2
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:48:58 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:48:58 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:49:15 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:49:15 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc work.allmpxtb(testbench)
+# vsim -gui -voptargs="+acc" work.allmpxtb(testbench) 
+# Start time: 19:49:26 on Oct 07,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+add wave -position end  sim:/allmpxtb/A
+add wave -position end  sim:/allmpxtb/B
+add wave -position end  sim:/allmpxtb/Sel
+add wave -position end  sim:/allmpxtb/YMin
+add wave -position end  sim:/allmpxtb/YPrime
+add wave -position end  sim:/allmpxtb/YNand
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Simon  Hostname: SIMONS-LAPTOP  ProcessID: 17452
+#           Attempting to use alternate WLF file "./wlft58nhxa".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft58nhxa
+run
+# ** Error: Multiplexer failure Minterms
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 11 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 12 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 13 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 14 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 15 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 16 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 17 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 18 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 19 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 31 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 32 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 33 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 34 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 35 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 36 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 37 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 38 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 39 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 50 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 50 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 50 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 51 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 51 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 51 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 52 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 52 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 52 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 53 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 53 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 53 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 54 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 54 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 54 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 55 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 55 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 55 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 56 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 56 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 56 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 57 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 57 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 57 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 58 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 58 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 58 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 59 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 59 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 59 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 70 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 70 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 70 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 71 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 71 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 71 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 72 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 72 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 72 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 73 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 73 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 73 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 74 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 74 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 74 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 75 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 75 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 75 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 76 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 76 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 76 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 77 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 77 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 77 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 78 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 78 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 78 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 79 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 79 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 79 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 80 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 80 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 80 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 81 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 81 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 81 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 82 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 82 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 82 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 83 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 83 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 83 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 84 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 84 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 84 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 85 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 85 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 85 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 86 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 86 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 86 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 87 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 87 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 87 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 88 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 88 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 88 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 89 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 89 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 89 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 90 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 90 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 90 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 91 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 91 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 91 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 92 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 92 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 92 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 93 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 93 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 93 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 94 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 94 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 94 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 95 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 95 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 95 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 96 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 96 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 96 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 97 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 97 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 97 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 98 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 98 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 98 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Minterms
+#    Time: 99 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 99 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 99 ns  Iteration: 0  Instance: /allmpxtb
+quit -sim
+# End time: 19:50:56 on Oct 07,2025, Elapsed time: 0:01:30
+# Errors: 180, Warnings: 2
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:51:03 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:51:03 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc work.allmpxtb(testbench)
+# vsim -gui -voptargs="+acc" work.allmpxtb(testbench) 
+# Start time: 19:51:15 on Oct 07,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+add wave -position end  sim:/allmpxtb/A
+add wave -position end  sim:/allmpxtb/B
+add wave -position end  sim:/allmpxtb/Sel
+add wave -position end  sim:/allmpxtb/YMin
+add wave -position end  sim:/allmpxtb/YPrime
+add wave -position end  sim:/allmpxtb/YNand
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Simon  Hostname: SIMONS-LAPTOP  ProcessID: 17452
+#           Attempting to use alternate WLF file "./wlftdfhh7w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdfhh7w
+run
+# ** Error: Muliplexer failure Minterms
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Prime Implicant
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Error: Muliplexer failure Nand Only
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:53:30 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:53:30 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:53:31 on Oct 07,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 19:53:31 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+# End time: 20:17:46 on Oct 07,2025, Elapsed time: 0:26:31
+# Errors: 0, Warnings: 2

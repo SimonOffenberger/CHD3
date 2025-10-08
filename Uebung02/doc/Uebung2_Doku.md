@@ -53,4 +53,74 @@ Hier sieht der Syntax in der QSF Datei folgendermaßen aus:
 
 Dieses Assignment wird auf alle Elemente des Vektors HEX4 angewandt.
 
+## Aufgabe 3 Multiplexer
+Zur Implementierung der Multiplexer wird als erstes die Wertetabelle eines Multiplexers erstellt.
+Hierfür werden die Eingänge iA, iB, und iSel.
+Als Ausgang wird oY verwendet.
+
+| iA | iB | iSel | oY |
+|:--|:--:|--:|--:|
+|0|0|0|0|
+|1|0|0|1|
+|0|1|0|0|
+|1|1|0|1|
+|0|0|1|0|
+|1|0|1|0|
+|0|1|1|1|
+|1|1|1|1|
+
+### KV Diagramm
+
+| iA\iB        |  00 |  01 |  11 |  10 |
+| :----------- | :-: | :-: | :-: | :-: |
+| **iSel = 0** |  0  |  0  |  1  |  1  |
+| **iSel = 1** |  0  |  1  |  1  |  0  |
+
+
+Aus diesem KV Diagramm lassen sich nun die Terme für die Implementierung des Multiplexer mit allen Mintermen ablesen.
+Gleichung für Multiplexer Minterm:
+$$
+oY =
+(\overline{iSel} \cdot \overline{iB} \cdot iA)
++ (\overline{iSel} \cdot iB \cdot iA)
++ (iSel \cdot iB \cdot \overline{iA})
++ (iSel \cdot iB \cdot iA)
+$$
+
+Durch die Minimierung ergibt sich für den Muliplexer Prime Implicant folgenden Gleichung:
+$$
+oY = (\overline{iSel} \cdot iA) + (iSel \cdot iB)
+$$
+
+Durch das Anwenden des DeMorgen wird nun der letzte Multiplexer implementiert, dieser hat folgende Gleichung:
+$$
+oY = \overline{ \big( (\overline{\overline{iSel} \cdot iA}) \cdot (\overline{iSel \cdot iB}) \big) }
+$$
+
+### Simulation
+Für die Simulation wurde ein Simul-Process verwendet um die instanziierte Entity mit Testdaten zu versorgen.
+Ein Postponed Verify Process übernimmt hier die Aufgabe der Prüfung der Ausgänge der Multiplexer.
+
+In der folgenden Abbildung ist die Waveform zu sehen:
+![Wavefrom](/Uebung02/doc/images/Wave.png)
+
+### Warnings der Synthese
+![Warning](/Uebung02/doc/images/Warnings.png)
+In der obigen Grafik sind die Warnings der Synthese abgebildet. Hier tritt eine Warning mehrmals auf: Diese weist darauf hin, dass im gesamtem Projekt kein clock definiert ist. Dies ist so gewollt da es sich um ein rein kombinatorisches Design handelt.
+
+### Synthese RTL Viewer
+In der folgenden Grafik ist das Ergebnis der Synthese im RTL-Viewer abgebildet.
+
+![RTL-Viewer](/Uebung02/doc/images/RTL_Viewer.png)
+
+Hier ist klar ersichtlich, dass es sich um 3 unterschiedliche 
+Architektures in den Entities handelt.
+Es ist auch ersichtlich, dass die Architektures in ihrem Grundsätzlichem Aufbau, abgesehen von Optimierungen, nicht verändert wurden. In dieser Darstellung ist die Variante mit dem Prim-Implikanten mit den wenigsten Gatter realisiert worden.
+
+### Synthese Technologie Map 
+- Technologie Map Post Mapping
+![Tech Map](/Uebung02/doc/images/Tech_Map1.png)
+- Technologie Map Post Fitting
+![Tech Map](/Uebung02/doc/images/Tech_Map1.png)
+
 ###

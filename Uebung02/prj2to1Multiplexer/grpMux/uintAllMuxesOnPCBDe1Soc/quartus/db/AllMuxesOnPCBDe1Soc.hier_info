@@ -1,0 +1,54 @@
+|AllMuxesOnPCBDe1Soc
+KEY[0] => allmpx:AllMpx.iAllMuxA
+KEY[1] => allmpx:AllMpx.iAllMuxB
+SW => allmpx:AllMpx.iAllMuxSel
+LEDR[0] << allmpx:AllMpx.oYNand
+LEDR[1] << allmpx:AllMpx.oYPrime
+LEDR[2] << allmpx:AllMpx.oYMin
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx
+iAllMuxA => mpx:MpxMinTerms.iA
+iAllMuxA => mpx:MpxPrimImplTerms.iA
+iAllMuxA => mpx:MpxNandOnlyTerms.iA
+iAllMuxB => mpx:MpxMinTerms.iB
+iAllMuxB => mpx:MpxPrimImplTerms.iB
+iAllMuxB => mpx:MpxNandOnlyTerms.iB
+iAllMuxSel => mpx:MpxMinTerms.iSel
+iAllMuxSel => mpx:MpxPrimImplTerms.iSel
+iAllMuxSel => mpx:MpxNandOnlyTerms.iSel
+oYMin <= mpx:MpxMinTerms.oY
+oYPrime <= mpx:MpxPrimImplTerms.oY
+oYNand <= mpx:MpxNandOnlyTerms.oY
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxMinTerms
+iA => oY.IN0
+iA => oY.IN0
+iA => oY.IN0
+iB => oY.IN1
+iB => oY.IN1
+iB => oY.IN1
+iB => oY.IN1
+iSel => oY.IN1
+iSel => oY.IN1
+iSel => oY.IN1
+oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxPrimImplTerms
+iA => oY.IN0
+iB => oY.IN0
+iSel => oY.IN1
+iSel => oY.IN1
+oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxNandOnlyTerms
+iA => oY.IN0
+iB => oY.IN0
+iSel => oY.IN1
+iSel => oY.IN1
+oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
+
+
