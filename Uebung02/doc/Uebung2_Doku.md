@@ -53,10 +53,19 @@ Hier sieht der Syntax in der QSF Datei folgendermaßen aus:
 
 Dieses Assignment wird auf alle Elemente des Vektors HEX4 angewandt.
 
+### Warnings
+Die in der Übungsangabe gegebenen Anleitung und die Warning "EDA Netlist Writer Settings.." zu beheben funktioniert im Quartus Prime Light 24 nicht, da die beschriebene Einstellung nicht exakt exisitert.
+
+![Einstellung](/Uebung02/doc/images/Warnings_1.png)
+
+Die Warning ist noch immer vorhanden:
+
+![Warning](/Uebung02/doc/images/Warning2.png)
+
 ## Aufgabe 3 Multiplexer
 Zur Implementierung der Multiplexer wird als erstes die Wertetabelle eines Multiplexers erstellt.
-Hierfür werden die Eingänge iA, iB, und iSel.
-Als Ausgang wird oY verwendet.
+Hierfür werden die Eingänge iA, iB, und iSel verwendet.
+Als Ausgang wird oY benützt.
 
 | iA | iB | iSel | oY |
 |:--|:--:|--:|--:|
@@ -87,7 +96,7 @@ oY =
 + (iSel \cdot iB \cdot iA)
 $$
 
-Durch die Minimierung ergibt sich für den Muliplexer Prime Implicant folgenden Gleichung:
+Durch die Minimierung ergibt sich für den Muliplexer Prime Implicant folgende Gleichung:
 $$
 oY = (\overline{iSel} \cdot iA) + (iSel \cdot iB)
 $$
@@ -122,6 +131,7 @@ Es ist auch ersichtlich, dass die Architektures in ihrem Grundsätzlichem Aufbau,
 ![Tech Map](/Uebung02/doc/images/Tech_Map1.png)
 - Technologie Map Post Fitting
 ![Tech Map](/Uebung02/doc/images/TechMap2.png)
+
 Unter genauer Betrachtung der Technologie Map der beiden Schritte Post Mapping und Post Fitting ist kein wesentlicher Unterschied zu erkennen.
 Der einzige Unterschied besteht darin, dass Quartus im unteren Bereich noch eine Logic_Cell_Comb kreiert hat. 
 Aus dieser Beobachtung lässt sich schließen, dass Quartus in der Synthese die Funktionalität des VHDL Codes ermittelt und diese dann möglichst effizient in die FPGA Hardware umsetzt. 

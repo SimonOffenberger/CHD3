@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title      : Synthesis efficient architecture of SwellLed
+-- Title      : Entity and Architekture of the Testbench from the 2 to 1 Mux
 -------------------------------------------------------------------------------
 -- University : FH-Hagenberg/HSSE, Hagenberg/Austria
 --              Copyright (c) 2000
@@ -27,6 +27,7 @@ architecture testbench of AllMpxTB is
     signal YNand    : std_ulogic;
 begin 
 
+-- instanziate the entitiy with all the multiplexer
 AllMpx : entity work.AllMpx(Struct)
 port map (
     iAllMuxA        => A,
@@ -37,6 +38,7 @@ port map (
     oYNand          => YNand
 );
 
+-- Feed the testdata to the Entity of the Multiplexer
 stimul: process is
 begin
     A <= '0',
@@ -55,6 +57,7 @@ begin
     wait;
 end process stimul;
 
+-- process that verifies the result of the Multiplexer
 verify: postponed process (A,B,Sel) is
 begin
 

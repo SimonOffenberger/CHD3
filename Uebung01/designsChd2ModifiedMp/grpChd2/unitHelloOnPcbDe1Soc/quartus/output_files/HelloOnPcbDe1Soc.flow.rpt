@@ -1,33 +1,21 @@
 Flow report for HelloOnPcbDe1Soc
-Mon Oct  6 15:11:42 2025
+Wed Oct  8 18:26:39 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
-  1. EDA Netlist Writer Summary
-  2. Legal Notice
-  3. Flow Summary
-  4. Flow Settings
-  5. Flow Non-Default Global Settings
-  6. Flow Elapsed Time
-  7. Flow OS Summary
-  8. Flow Log
-  9. Flow Messages
- 10. Flow Suppressed Messages
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
 
-
-
-+-------------------------------------------------------------------+
-; EDA Netlist Writer Summary                                        ;
-+---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Oct  6 15:11:42 2025 ;
-; Revision Name             ; HelloOnPcbDe1Soc                      ;
-; Top-level Entity Name     ; HelloOnPcbDe1Soc                      ;
-; Family                    ; Cyclone V                             ;
-; Simulation Files Creation ; Successful                            ;
-+---------------------------+---------------------------------------+
 
 
 ----------------
@@ -53,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Mon Oct  6 15:11:42 2025          ;
+; Flow Status                     ; Successful - Wed Oct  8 18:26:39 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; HelloOnPcbDe1Soc                               ;
 ; Top-level Entity Name           ; HelloOnPcbDe1Soc                               ;
@@ -80,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/06/2025 15:10:56 ;
+; Start date & time ; 10/08/2025 18:25:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HelloOnPcbDe1Soc    ;
 +-------------------+---------------------+
@@ -91,8 +79,8 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                            ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                      ; 220228050115775.175975625602936        ; --            ; --          ; --             ;
-; EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT ; On                                     ; --            ; --          ; eda_simulation ;
+; COMPILER_SIGNATURE_ID                      ; 99839888086095.175994075525080         ; --            ; --          ; --             ;
+; EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT ; Off                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT                     ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                        ; Questa Intel FPGA (VHDL)               ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP                     ; 85                                     ; --            ; --          ; --             ;
@@ -114,12 +102,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4948 MB             ; 00:00:14                           ;
-; Fitter               ; 00:00:29     ; 1.0                     ; 7929 MB             ; 00:02:48                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 5219 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 5405 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4780 MB             ; 00:00:01                           ;
-; Total                ; 00:00:42     ; --                      ; --                  ; 00:03:10                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4956 MB             ; 00:00:12                           ;
+; Fitter               ; 00:00:27     ; 1.0                     ; 7932 MB             ; 00:02:46                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 5219 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 5408 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4763 MB             ; 00:00:01                           ;
+; Total                ; 00:00:40     ; --                      ; --                  ; 00:03:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

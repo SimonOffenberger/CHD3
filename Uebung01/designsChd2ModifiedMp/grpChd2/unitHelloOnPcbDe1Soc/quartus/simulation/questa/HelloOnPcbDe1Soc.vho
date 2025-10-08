@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "10/06/2025 15:11:42"
+-- DATE "10/08/2025 18:26:39"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -196,28 +196,28 @@ SIGNAL \TheHelloDE1|oLed[8]~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|oLed[9]~1_combout\ : std_logic;
 SIGNAL \TheHelloDE1|cnt\ : std_logic_vector(25 DOWNTO 0);
 SIGNAL \TheHelloDE1|ALT_INV_cnt\ : std_logic_vector(25 DOWNTO 0);
-SIGNAL \TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_LessThan0~3_combout\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_led_status~q\ : std_logic;
-SIGNAL \TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_LessThan0~4_combout\ : std_logic;
 SIGNAL \TheHelloDE1|ALT_INV_LessThan0~1_combout\ : std_logic;
 SIGNAL \TheHelloDE1|ALT_INV_LessThan0~2_combout\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_LessThan0~4_combout\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_LessThan0~5_combout\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_LessThan0~3_combout\ : std_logic;
+SIGNAL \TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\ : std_logic;
 SIGNAL \TheHelloDE1|ALT_INV_LessThan0~0_combout\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_led_status~q\ : std_logic;
+SIGNAL \TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\ : std_logic;
 SIGNAL \ALT_INV_SW[8]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[9]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[2]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[3]~input_o\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_cnt[23]~DUPLICATE_q\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_cnt[11]~DUPLICATE_q\ : std_logic;
-SIGNAL \TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\ : std_logic;
 SIGNAL \ALT_INV_SW[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[1]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[9]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[4]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[6]~input_o\ : std_logic;
-SIGNAL \ALT_INV_SW[5]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[7]~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_cnt[23]~DUPLICATE_q\ : std_logic;
+SIGNAL \ALT_INV_SW[2]~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_cnt[11]~DUPLICATE_q\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_LessThan0~5_combout\ : std_logic;
+SIGNAL \ALT_INV_SW[3]~input_o\ : std_logic;
+SIGNAL \ALT_INV_SW[6]~input_o\ : std_logic;
+SIGNAL \TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\ : std_logic;
+SIGNAL \ALT_INV_SW[5]~input_o\ : std_logic;
 
 BEGIN
 
@@ -231,53 +231,53 @@ ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 \TheHelloDE1|ALT_INV_cnt\(1) <= NOT \TheHelloDE1|cnt\(1);
-\TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\ <= NOT \TheHelloDE1|TheHex1|Mux0~0_combout\;
-\TheHelloDE1|ALT_INV_LessThan0~3_combout\ <= NOT \TheHelloDE1|LessThan0~3_combout\;
-\TheHelloDE1|ALT_INV_led_status~q\ <= NOT \TheHelloDE1|led_status~q\;
-\TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\ <= NOT \TheHelloDE1|TheHex0|Mux0~0_combout\;
-\TheHelloDE1|ALT_INV_LessThan0~1_combout\ <= NOT \TheHelloDE1|LessThan0~1_combout\;
-\TheHelloDE1|ALT_INV_LessThan0~2_combout\ <= NOT \TheHelloDE1|LessThan0~2_combout\;
-\TheHelloDE1|ALT_INV_LessThan0~4_combout\ <= NOT \TheHelloDE1|LessThan0~4_combout\;
-\TheHelloDE1|ALT_INV_LessThan0~5_combout\ <= NOT \TheHelloDE1|LessThan0~5_combout\;
-\TheHelloDE1|ALT_INV_LessThan0~0_combout\ <= NOT \TheHelloDE1|LessThan0~0_combout\;
 \TheHelloDE1|ALT_INV_cnt\(0) <= NOT \TheHelloDE1|cnt\(0);
-\ALT_INV_SW[8]~input_o\ <= NOT \SW[8]~input_o\;
-\ALT_INV_SW[9]~input_o\ <= NOT \SW[9]~input_o\;
-\ALT_INV_SW[2]~input_o\ <= NOT \SW[2]~input_o\;
-\ALT_INV_SW[3]~input_o\ <= NOT \SW[3]~input_o\;
-\TheHelloDE1|ALT_INV_cnt[23]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[23]~DUPLICATE_q\;
-\TheHelloDE1|ALT_INV_cnt[11]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[11]~DUPLICATE_q\;
-\TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[17]~DUPLICATE_q\;
-\ALT_INV_SW[0]~input_o\ <= NOT \SW[0]~input_o\;
-\ALT_INV_SW[1]~input_o\ <= NOT \SW[1]~input_o\;
-\ALT_INV_SW[4]~input_o\ <= NOT \SW[4]~input_o\;
-\ALT_INV_SW[6]~input_o\ <= NOT \SW[6]~input_o\;
-\ALT_INV_SW[5]~input_o\ <= NOT \SW[5]~input_o\;
-\ALT_INV_SW[7]~input_o\ <= NOT \SW[7]~input_o\;
-\TheHelloDE1|ALT_INV_cnt\(12) <= NOT \TheHelloDE1|cnt\(12);
-\TheHelloDE1|ALT_INV_cnt\(10) <= NOT \TheHelloDE1|cnt\(10);
-\TheHelloDE1|ALT_INV_cnt\(9) <= NOT \TheHelloDE1|cnt\(9);
-\TheHelloDE1|ALT_INV_cnt\(11) <= NOT \TheHelloDE1|cnt\(11);
-\TheHelloDE1|ALT_INV_cnt\(8) <= NOT \TheHelloDE1|cnt\(8);
-\TheHelloDE1|ALT_INV_cnt\(7) <= NOT \TheHelloDE1|cnt\(7);
-\TheHelloDE1|ALT_INV_cnt\(18) <= NOT \TheHelloDE1|cnt\(18);
-\TheHelloDE1|ALT_INV_cnt\(17) <= NOT \TheHelloDE1|cnt\(17);
-\TheHelloDE1|ALT_INV_cnt\(23) <= NOT \TheHelloDE1|cnt\(23);
-\TheHelloDE1|ALT_INV_cnt\(20) <= NOT \TheHelloDE1|cnt\(20);
-\TheHelloDE1|ALT_INV_cnt\(14) <= NOT \TheHelloDE1|cnt\(14);
-\TheHelloDE1|ALT_INV_cnt\(13) <= NOT \TheHelloDE1|cnt\(13);
 \TheHelloDE1|ALT_INV_cnt\(6) <= NOT \TheHelloDE1|cnt\(6);
-\TheHelloDE1|ALT_INV_cnt\(25) <= NOT \TheHelloDE1|cnt\(25);
-\TheHelloDE1|ALT_INV_cnt\(5) <= NOT \TheHelloDE1|cnt\(5);
 \TheHelloDE1|ALT_INV_cnt\(4) <= NOT \TheHelloDE1|cnt\(4);
 \TheHelloDE1|ALT_INV_cnt\(3) <= NOT \TheHelloDE1|cnt\(3);
-\TheHelloDE1|ALT_INV_cnt\(16) <= NOT \TheHelloDE1|cnt\(16);
+\TheHelloDE1|ALT_INV_cnt\(5) <= NOT \TheHelloDE1|cnt\(5);
 \TheHelloDE1|ALT_INV_cnt\(2) <= NOT \TheHelloDE1|cnt\(2);
-\TheHelloDE1|ALT_INV_cnt\(21) <= NOT \TheHelloDE1|cnt\(21);
-\TheHelloDE1|ALT_INV_cnt\(22) <= NOT \TheHelloDE1|cnt\(22);
+\TheHelloDE1|ALT_INV_LessThan0~4_combout\ <= NOT \TheHelloDE1|LessThan0~4_combout\;
+\TheHelloDE1|ALT_INV_LessThan0~1_combout\ <= NOT \TheHelloDE1|LessThan0~1_combout\;
+\TheHelloDE1|ALT_INV_LessThan0~2_combout\ <= NOT \TheHelloDE1|LessThan0~2_combout\;
+\TheHelloDE1|ALT_INV_LessThan0~3_combout\ <= NOT \TheHelloDE1|LessThan0~3_combout\;
+\TheHelloDE1|TheHex1|ALT_INV_Mux0~0_combout\ <= NOT \TheHelloDE1|TheHex1|Mux0~0_combout\;
+\TheHelloDE1|ALT_INV_LessThan0~0_combout\ <= NOT \TheHelloDE1|LessThan0~0_combout\;
+\TheHelloDE1|ALT_INV_led_status~q\ <= NOT \TheHelloDE1|led_status~q\;
+\TheHelloDE1|TheHex0|ALT_INV_Mux0~0_combout\ <= NOT \TheHelloDE1|TheHex0|Mux0~0_combout\;
+\TheHelloDE1|ALT_INV_cnt\(10) <= NOT \TheHelloDE1|cnt\(10);
+\TheHelloDE1|ALT_INV_cnt\(14) <= NOT \TheHelloDE1|cnt\(14);
+\TheHelloDE1|ALT_INV_cnt\(23) <= NOT \TheHelloDE1|cnt\(23);
 \TheHelloDE1|ALT_INV_cnt\(15) <= NOT \TheHelloDE1|cnt\(15);
-\TheHelloDE1|ALT_INV_cnt\(24) <= NOT \TheHelloDE1|cnt\(24);
+\TheHelloDE1|ALT_INV_cnt\(9) <= NOT \TheHelloDE1|cnt\(9);
+\TheHelloDE1|ALT_INV_cnt\(12) <= NOT \TheHelloDE1|cnt\(12);
+\TheHelloDE1|ALT_INV_cnt\(22) <= NOT \TheHelloDE1|cnt\(22);
+\TheHelloDE1|ALT_INV_cnt\(11) <= NOT \TheHelloDE1|cnt\(11);
+\TheHelloDE1|ALT_INV_cnt\(18) <= NOT \TheHelloDE1|cnt\(18);
 \TheHelloDE1|ALT_INV_cnt\(19) <= NOT \TheHelloDE1|cnt\(19);
+\TheHelloDE1|ALT_INV_cnt\(25) <= NOT \TheHelloDE1|cnt\(25);
+\TheHelloDE1|ALT_INV_cnt\(24) <= NOT \TheHelloDE1|cnt\(24);
+\TheHelloDE1|ALT_INV_cnt\(17) <= NOT \TheHelloDE1|cnt\(17);
+\TheHelloDE1|ALT_INV_cnt\(7) <= NOT \TheHelloDE1|cnt\(7);
+\TheHelloDE1|ALT_INV_cnt\(8) <= NOT \TheHelloDE1|cnt\(8);
+\TheHelloDE1|ALT_INV_cnt\(16) <= NOT \TheHelloDE1|cnt\(16);
+\TheHelloDE1|ALT_INV_cnt\(20) <= NOT \TheHelloDE1|cnt\(20);
+\TheHelloDE1|ALT_INV_cnt\(13) <= NOT \TheHelloDE1|cnt\(13);
+\TheHelloDE1|ALT_INV_cnt\(21) <= NOT \TheHelloDE1|cnt\(21);
+\ALT_INV_SW[8]~input_o\ <= NOT \SW[8]~input_o\;
+\ALT_INV_SW[0]~input_o\ <= NOT \SW[0]~input_o\;
+\ALT_INV_SW[9]~input_o\ <= NOT \SW[9]~input_o\;
+\ALT_INV_SW[4]~input_o\ <= NOT \SW[4]~input_o\;
+\ALT_INV_SW[1]~input_o\ <= NOT \SW[1]~input_o\;
+\ALT_INV_SW[7]~input_o\ <= NOT \SW[7]~input_o\;
+\TheHelloDE1|ALT_INV_cnt[23]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[23]~DUPLICATE_q\;
+\ALT_INV_SW[2]~input_o\ <= NOT \SW[2]~input_o\;
+\TheHelloDE1|ALT_INV_cnt[11]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[11]~DUPLICATE_q\;
+\TheHelloDE1|ALT_INV_LessThan0~5_combout\ <= NOT \TheHelloDE1|LessThan0~5_combout\;
+\ALT_INV_SW[3]~input_o\ <= NOT \SW[3]~input_o\;
+\ALT_INV_SW[6]~input_o\ <= NOT \SW[6]~input_o\;
+\TheHelloDE1|ALT_INV_cnt[17]~DUPLICATE_q\ <= NOT \TheHelloDE1|cnt[17]~DUPLICATE_q\;
+\ALT_INV_SW[5]~input_o\ <= NOT \SW[5]~input_o\;
 
 -- Location: IOOBUF_X89_Y11_N45
 \HEX4[0]~output\ : cyclonev_io_obuf

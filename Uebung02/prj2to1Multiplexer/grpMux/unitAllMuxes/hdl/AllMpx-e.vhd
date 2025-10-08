@@ -1,6 +1,5 @@
 -------------------------------------------------------------------------------
--- Title      : Technology independent top level entity
--- Project    : Look for top directory in CVS entries
+-- Title      : Entity that combines 3 Mux into one
 -------------------------------------------------------------------------------
 -- Abstract: 
 -------------------------------------------------------------------------------

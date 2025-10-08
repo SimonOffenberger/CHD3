@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title      : Synthesis efficient architecture of SwellLed
+-- Title      : Top Level Entity/ Board Adapter
 -------------------------------------------------------------------------------
 -- University : FH-Hagenberg/HSSE, Hagenberg/Austria
 --              Copyright (c) 2000
