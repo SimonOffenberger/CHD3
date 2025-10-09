@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AllMuxesOnPCBDe1Soc
-Thu Oct  9 15:55:04 2025
+Thu Oct  9 19:52:33 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct  9 15:55:04 2025          ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct  9 19:52:33 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; AllMuxesOnPCBDe1Soc                            ;
 ; Top-level Entity Name           ; AllMuxesOnPCBDe1Soc                            ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Oct  9 15:54:58 2025
+    Info: Processing started: Thu Oct  9 19:52:26 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AllMuxesOnPCBDe1Soc -c AllMuxesOnPCBDe1Soc
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung02/prj2to1multiplexer/grpmux/unitallmuxes/hdl/allmpx-struct-a.vhd
@@ -302,8 +302,8 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4932 megabytes
-    Info: Processing ended: Thu Oct  9 15:55:04 2025
-    Info: Elapsed time: 00:00:06
+    Info: Processing ended: Thu Oct  9 19:52:33 2025
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:14
 
 

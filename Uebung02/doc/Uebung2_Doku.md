@@ -101,7 +101,7 @@ $$
 oY = (\overline{iSel} \cdot iA) + (iSel \cdot iB)
 $$
 
-Durch das Anwenden des DeMorgen wird nun der letzte Multiplexer implementiert, dieser hat folgende Gleichung:
+Durch das Anwenden des DeMorgen wird nun der letzte Multiplexer  mit nur NAND Gatter implementiert, dieser hat folgende Gleichung:
 $$
 oY = \overline{ \big( (\overline{\overline{iSel} \cdot iA}) \cdot (\overline{iSel \cdot iB}) \big) }
 $$
@@ -133,11 +133,8 @@ Es ist auch ersichtlich, dass die Architektures in ihrem Grundsätzlichem Aufbau,
 ![Tech Map](./images/TechMap2.png)
 
 Unter genauer Betrachtung der Technologie Map der beiden Schritte Post Mapping und Post Fitting ist kein wesentlicher Unterschied zu erkennen.
-Der einzige Unterschied besteht darin, dass Quartus die Eingänge der Logic_Cell sich verändert haben. Dies lässt darauf schließen, dass der Fitter das Verbinden zwischen den Logic_Cells
-Aus dieser Beobachtung lässt sich schließen, dass Quartus in der Synthese die Funktionalität des VHDL Codes ermittelt und diese dann möglichst effizient in die FPGA Hardware umsetzt. 
-Aus diesem Grund wird sehr wahrscheinlich durch die Synthese herausgefunden, dass alle 3 Multiplexer dieselbe Funktionalität implementieren.
-Dadurch kann die Funktionalität auch mit nur einem LUT in der ALM abgebildet werden. Dies ist im Technologie Map Viewer zu sehen.
-Dies wird auch unter der Betrachtung der Ressource Summery sichtbar.
+Der einzige Unterschied besteht darin, dass Quartus die Eingänge der Logic_Cell verändert hat. Dies lässt darauf schließen, dass der Fitter das Verbinden zwischen den Logic_Cells realisiert bzw. optimiert. Außerdem ist aus der Betrachtung der Technologie Map ersichtlich, dass nur 1 Multiplexer realisiert wurde. Aus dieser Beobachtung lässt sich schließen, dass Quartus in der Synthese die Funktionalität des VHDL Codes ermittelt und diese dann möglichst effizient in die FPGA Hardware umsetzt. 
+Dadurch kann die Funktionalität auch mit nur einer ALM (Adaptive Logic Module) abgebildet werden. Dies wird auch unter der Betrachtung der Ressource Summery sichtbar.
 
 -Ressource Usage Analysis & Synthesis
 ![Ressource Summery](./images/Summery_Analysis.png)
@@ -146,7 +143,9 @@ Dies wird auch unter der Betrachtung der Ressource Summery sichtbar.
 ![Ressource Summery](./images/Summery_Fitter.png)
 
 Aus dieser Ressource Summery wird die Vermutung bestätigt.
-Für die Realisierung der 3 Multiplexer wird nur 1 ALM und von dieser, ein 3-Input LUT verwendet. (MUX hat 3 Inputs und 1 Output)
+Für die Realisierung der 3 Multiplexer wird nur 1 ALM verwendet.
+Weiters ist auch ersichtlich, dass die Ressource Usage Summery des Fitters eine genauere Auskunft darüber gibt wie viele Ressourcen des FPGAs noch zur Verfügung stehen und welche benötigt wurden. 
+Im unteren Bereich der Ressource Usage Summery des Fitters ist noch zu sehen, dass der Multiplexer mittels 2 ALUTs (Adaptive Look-Up Table)  innerhalb einer ALM realisiert wurde.
 
 
 ###
