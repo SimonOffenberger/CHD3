@@ -2,9 +2,9 @@
 KEY[0] => allmpx:AllMpx.iAllMuxA
 KEY[1] => allmpx:AllMpx.iAllMuxB
 SW => allmpx:AllMpx.iAllMuxSel
-LEDR[0] << allmpx:AllMpx.oYNand
-LEDR[1] << allmpx:AllMpx.oYPrime
-LEDR[2] << allmpx:AllMpx.oYMin
+LEDR[0] <= allmpx:AllMpx.oYNand
+LEDR[1] <= allmpx:AllMpx.oYPrime
+LEDR[2] <= allmpx:AllMpx.oYMin
 
 
 |AllMuxesOnPCBDe1Soc|AllMpx:AllMpx

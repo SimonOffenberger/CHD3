@@ -21,6 +21,8 @@ R0
 R1
 R0
 R1
+R0
+R1
 !s12c _opt
 R1
 !s11e vcom 2023.3 2023.07, Jul 17 2023
@@ -45,10 +47,10 @@ n@_opt
 Z8 OL;O;2023.3;77
 R2
 T_opt1
-!s110 1759941804
-VVV7mQ2]PbQKPe:ReKg>>41
+!s110 1760017722
+VS<?g1Pb9NFTk@Ni^HMQMj0
 R3
-=1-58cdc910746f-68e694ab-2e0-293c
+=1-ac1a3def3620-68e7bd3a-9e-328c
 R1
 R4
 R5
@@ -57,46 +59,47 @@ R7
 n@_opt1
 R8
 Eallmpx
-Z9 w1759753525
-Z10 DPx4 work 6 global 0 22 RgSScEEMlo<f93Vbk;R=>1
-Z11 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
-Z12 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
-Z13 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
-!i122 37
-Z14 dC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/questasim
+w1759942167
+Z9 DPx4 work 6 global 0 22 RgSScEEMlo<f93Vbk;R=>1
+Z10 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z11 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z12 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 41
+Z13 dC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/questasim
 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd
 l0
-Z15 L21 1
-V_2PPK=GBaX3L^6WEjXYVf3
-!s100 21NXhbabbedMOUi0Oh?<33
-Z16 OL;C;2023.3;77
+Z14 L20 1
+VEgi[KNeMNQbf2UinE^?UF1
+!s100 AF@6BPHYRg_gAn1]eRzY]2
+Z15 OL;C;2023.3;77
 32
-!s110 1759941777
+Z16 !s110 1760017703
 !i10b 1
-Z17 !s108 1759941777.000000
+Z17 !s108 1760017703.000000
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-e.vhd|
 !i113 0
 Z18 o-O0 -work work
 Z19 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
 Astruct
-Z20 DEx4 work 3 mpx 0 22 AId]U0i]4Q=g;^b8?CG]22
+w1759942222
+Z20 DEx4 work 3 mpx 0 22 DN0MTGi@ZGHKJbf4ja06O1
+R9
 R10
 R11
 R12
-R13
-Z21 DEx4 work 6 allmpx 0 22 _2PPK=GBaX3L^6WEjXYVf3
-!i122 38
+Z21 DEx4 work 6 allmpx 0 22 Egi[KNeMNQbf2UinE^?UF1
+!i122 42
 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd
 l12
-L11 25
-VLY7mGHG^9BW8:Z<GfgfgQ0
-!s100 VGYXeNK:I=B7W69=Xf9b?2
-R16
+L11 26
+VkWaMI3d=Ii[RS@m8Q4o=k0
+!s100 @A9BiGD:E8CINP?QzIzcb3
+R15
 32
-!s110 1759941778
+R16
 !i10b 1
 R17
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd|
@@ -106,11 +109,11 @@ R18
 R19
 Atestbench
 w1759752070
+R9
 R10
 R11
 R12
-R13
-R21
+DEx4 work 6 allmpx 0 22 _2PPK=GBaX3L^6WEjXYVf3
 !i122 11
 Z22 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
 Z23 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
@@ -118,7 +121,7 @@ l28
 L21 37
 VSQ3;`MZSf<6@gg_g_i_UH2
 !s100 mT8=i1XK>LD4J]XTDJ99g1
-R16
+R15
 32
 !s110 1759752071
 !i10b 1
@@ -129,24 +132,24 @@ Z25 !s107 C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hd
 R18
 R19
 Eallmpxtb
-Z26 w1759859603
+Z26 w1759942139
+R9
 R10
 R11
 R12
+!i122 42
 R13
-!i122 38
-R14
 R22
 R23
 l0
 L18 1
 V7n3WEm1JIZ0AEW5N>dGMG2
 !s100 jXD5zm579FjO5Um=j7R613
-R16
+R15
 32
-Z27 !s110 1759941789
+Z27 !s110 1760017710
 !i10b 1
-Z28 !s108 1759941789.000000
+Z28 !s108 1760017710.000000
 R24
 R25
 !i113 0
@@ -154,17 +157,17 @@ R18
 R19
 Atestbench
 R21
+R9
 R10
 R11
 R12
-R13
 DEx4 work 8 allmpxtb 0 22 7n3WEm1JIZ0AEW5N>dGMG2
-!i122 38
+!i122 42
 l28
-L21 53
-V;0;21AMzJF1AKRDMP?=>80
-!s100 WLl=GPI=0B3EbKJdJnSWA2
-R16
+L21 56
+Vom<`PYaneU?nDM1QW>f]G2
+!s100 @?b17zRSA`Re5R994`CHk0
+R15
 32
 R27
 !i10b 1
@@ -175,112 +178,114 @@ R25
 R18
 R19
 Pglobal
+R10
 R11
 R12
-R13
 !i122 35
-R9
-R14
-Z29 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpPackages/pkgGlobal/src/Global-p.vhd
-Z30 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpPackages/pkgGlobal/src/Global-p.vhd
+Z29 w1759753525
+R13
+Z30 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpPackages/pkgGlobal/src/Global-p.vhd
+Z31 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpPackages/pkgGlobal/src/Global-p.vhd
 l0
 L20 30
 VRgSScEEMlo<f93Vbk;R=>1
 !s100 7A09T:9Uak:PAF>DW4<aH0
-R16
+R15
 32
 b1
-Z31 !s110 1759941760
+Z32 !s110 1759941760
 !i10b 1
-Z32 !s108 1759941759.000000
-Z33 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpPackages/pkgGlobal/src/Global-p.vhd|
-Z34 !s107 C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpPackages/pkgGlobal/src/Global-p.vhd|
+Z33 !s108 1759941759.000000
+Z34 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpPackages/pkgGlobal/src/Global-p.vhd|
+Z35 !s107 C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpPackages/pkgGlobal/src/Global-p.vhd|
 !i113 0
 R18
 R19
 Bbody
+R9
 R10
 R11
 R12
-R13
 !i122 35
 l0
 L53 20
 V?2Yz3GQ6M;M5<zzZ=Bfn31
 !s100 bMin__gf>a8ZSLP=<L4kN1
-R16
+R15
 32
-R31
-!i10b 1
 R32
+!i10b 1
 R33
 R34
+R35
 !i113 0
 R18
 R19
 Empx
+w1759941994
 R9
 R10
 R11
 R12
+!i122 40
 R13
-!i122 36
-R14
 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
 l0
+R14
+VDN0MTGi@ZGHKJbf4ja06O1
+!s100 JDV]U0`Pl2b1EORXYbeV03
 R15
-VAId]U0i]4Q=g;^b8?CG]22
-!s100 a_g01XZAC2U<R;PW88kLb0
-R16
 32
-Z35 !s110 1759941767
+Z36 !s110 1760017696
 !i10b 1
-!s108 1759941766.000000
+Z37 !s108 1760017696.000000
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd|
 !i113 0
 R18
 R19
 Aprimimpl
+w1760017624
+R9
 R10
 R11
 R12
-R13
 R20
-!i122 37
+!i122 41
 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-PrimImpl-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-PrimImpl-a.vhd
 l12
-Z36 L11 8
-VA_deCngzG<ZNkkf<TmhM71
-!s100 ERkdY]ze1OQIWQ=TCM=Iz1
-R16
+L11 8
+VA9BRAlcOzSFfT=b95`6hN3
+!s100 g]REcYR:9i263B^c8SZBa2
+R15
 32
-R35
+R36
 !i10b 1
-Z37 !s108 1759941767.000000
+R37
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-PrimImpl-a.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-PrimImpl-a.vhd|
 !i113 0
 R18
 R19
 Anandonly
+w1760017691
+R9
 R10
 R11
 R12
-R13
 R20
-!i122 37
+!i122 41
 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-NandOnly-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-NandOnly-a.vhd
 l12
-R36
-Ve:M0CmB02RM>Aoe6RR1QH3
-!s100 A4_lHEVP`V?m_8d6fAM1=1
-R16
+L11 7
+V3gO`69Mia;g?6kWo=nA?J1
+!s100 2aD;ehQLCLIkEhM]Y^7K]1
+R15
 32
-R35
+R36
 !i10b 1
 R37
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-NandOnly-a.vhd|
@@ -289,22 +294,22 @@ R37
 R18
 R19
 Aminterms
-w1759859530
+w1760017542
+R9
 R10
 R11
 R12
-R13
 R20
-!i122 37
+!i122 41
 8C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-Minterms.-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-Minterms.-a.vhd
 l12
-L11 10
-VA?N4_U_N1K9iCz9a7g81l3
-!s100 4HZdH[XAQlE?o:0;ol08]0
-R16
+L11 9
+VJzGm[YR[G3iWQ9ejh8baT0
+!s100 IiiM?[TQ_0kj_F4kVaRhE1
+R15
 32
-R35
+R36
 !i10b 1
 R37
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-Minterms.-a.vhd|

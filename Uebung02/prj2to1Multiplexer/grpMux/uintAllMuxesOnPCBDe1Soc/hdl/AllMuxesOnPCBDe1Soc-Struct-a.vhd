@@ -8,12 +8,6 @@
 -- offenberger: Simon Offenberger
 -------------------------------------------------------------------------------
 
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-
-use work.Global.all;
-
 architecture Struct of AllMuxesOnPCBDe1Soc is
 signal KeyPosLogic : std_ulogic_vector (1 downto 0);   
 begin 

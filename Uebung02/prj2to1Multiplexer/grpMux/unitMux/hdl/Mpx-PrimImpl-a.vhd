@@ -12,8 +12,7 @@ architecture PrimImpl of Mpx is
 begin 
 
 
-oY <= '1' when ((iSel = cInactivated  and iA = cActivated) or
-                (iSel = cActivated    and iB = cActivated))
-          else '0';
+oY <=  (not(iSel)  and iA) or
+           (iSel   and iB);
 
 end PrimImpl;

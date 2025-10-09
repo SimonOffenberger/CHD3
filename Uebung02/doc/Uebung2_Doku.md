@@ -56,11 +56,11 @@ Dieses Assignment wird auf alle Elemente des Vektors HEX4 angewandt.
 ### Warnings
 Die in der Übungsangabe gegebenen Anleitung und die Warning "EDA Netlist Writer Settings.." zu beheben funktioniert im Quartus Prime Light 24 nicht, da die beschriebene Einstellung nicht exakt exisitert.
 
-![Einstellung](/Uebung02/doc/images/Warnings_1.png)
+![Einstellung](./images/Warnings_1.png)
 
 Die Warning ist noch immer vorhanden:
 
-![Warning](/Uebung02/doc/images/Warning2.png)
+![Warning](./images/Warning2.png)
 
 ## Aufgabe 3 Multiplexer
 Zur Implementierung der Multiplexer wird als erstes die Wertetabelle eines Multiplexers erstellt.
@@ -111,16 +111,16 @@ Für die Simulation wurde ein Simul-Process verwendet um die instanziierte Entity
 Ein Postponed Verify Process übernimmt hier die Aufgabe der Prüfung der Ausgänge der Multiplexer.
 
 In der folgenden Abbildung ist die Waveform zu sehen:
-![Wavefrom](/Uebung02/doc/images/Wave.png)
+![Wavefrom](./images/Wave.png)
 
 ### Warnings der Synthese
-![Warning](/Uebung02/doc/images/Warnings.png)
+![Warning](./images/Warnings.png)
 In der obigen Grafik sind die Warnings der Synthese abgebildet. Hier tritt eine Warning mehrmals auf: Diese weist darauf hin, dass im gesamtem Projekt kein clock definiert ist. Dies ist so gewollt da es sich um ein rein kombinatorisches Design handelt.
 
 ### Synthese RTL Viewer
 In der folgenden Grafik ist das Ergebnis der Synthese im RTL-Viewer abgebildet.
 
-![RTL-Viewer](/Uebung02/doc/images/RTL_Viewer.png)
+![RTL-Viewer](./images/RTL_Viewer.png)
 
 Hier ist klar ersichtlich, dass es sich um 3 unterschiedliche 
 Architektures in den Entities handelt.
@@ -128,22 +128,22 @@ Es ist auch ersichtlich, dass die Architektures in ihrem Grundsätzlichem Aufbau,
 
 ### Synthese Technologie Map 
 - Technologie Map Post Mapping
-![Tech Map](/Uebung02/doc/images/Tech_Map1.png)
+![Tech Map](./images/Tech_Map1.png)
 - Technologie Map Post Fitting
-![Tech Map](/Uebung02/doc/images/TechMap2.png)
+![Tech Map](./images/TechMap2.png)
 
 Unter genauer Betrachtung der Technologie Map der beiden Schritte Post Mapping und Post Fitting ist kein wesentlicher Unterschied zu erkennen.
-Der einzige Unterschied besteht darin, dass Quartus im unteren Bereich noch eine Logic_Cell_Comb kreiert hat. 
+Der einzige Unterschied besteht darin, dass Quartus die Eingänge der Logic_Cell sich verändert haben. Dies lässt darauf schließen, dass der Fitter das Verbinden zwischen den Logic_Cells
 Aus dieser Beobachtung lässt sich schließen, dass Quartus in der Synthese die Funktionalität des VHDL Codes ermittelt und diese dann möglichst effizient in die FPGA Hardware umsetzt. 
 Aus diesem Grund wird sehr wahrscheinlich durch die Synthese herausgefunden, dass alle 3 Multiplexer dieselbe Funktionalität implementieren.
 Dadurch kann die Funktionalität auch mit nur einem LUT in der ALM abgebildet werden. Dies ist im Technologie Map Viewer zu sehen.
 Dies wird auch unter der Betrachtung der Ressource Summery sichtbar.
 
 -Ressource Usage Analysis & Synthesis
-![Ressource Summery](/Uebung02/doc/images/Summery_Analysis.png)
+![Ressource Summery](./images/Summery_Analysis.png)
 
 -Ressource Usage Fitter
-![Ressource Summery](/Uebung02/doc/images/Summery_Fitter.png)
+![Ressource Summery](./images/Summery_Fitter.png)
 
 Aus dieser Ressource Summery wird die Vermutung bestätigt.
 Für die Realisierung der 3 Multiplexer wird nur 1 ALM und von dieser, ein 3-Input LUT verwendet. (MUX hat 3 Inputs und 1 Output)

@@ -14,9 +14,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-library work;
-use work.Global.all;
-
 entity AllMpx is
   port (iAllMuxA   : in std_ulogic;    -- input A
         iAllMuxB   : in std_ulogic;    -- input B

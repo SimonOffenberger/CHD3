@@ -11,10 +11,9 @@
 architecture Minterms of Mpx is
 begin 
 
-oY <=   '1' when((iSel = cInactivated  and     iA = cActivated    and iB = cInactivated) or
-                 (iSel = cInactivated  and      iA = cActivated    and iB = cActivated)  or
-                 (iSel = cActivated    and      iA = cActivated    and iB = cActivated)  or
-                 (iSel = cActivated    and      iA = cInactivated  and iB = cActivated))
-            else '0';
-               
+oY <=   (not(iSel)  and     iA  and not(iB)) or
+        (not(iSel)  and     iA  and     iB)  or
+        (   iSel    and     iA  and     iB)  or
+        (   iSel    and not(iA) and     iB);       
+
 end Minterms;

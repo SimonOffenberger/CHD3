@@ -11,8 +11,7 @@
 architecture NandOnly of Mpx is
 begin 
 
-oY <= '1' when (((iSel = cInactivated) nand (iA = cActivated)) nand 
-                ((iSel = cActivated) nand (iB = cActivated))) 
-          else '0';
+oY <= ((iSel nand iSel) nand (iA )) nand 
+      ((iSel)           nand (iB));
 
 end NandOnly;
