@@ -1,0 +1,268 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:33:01 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(50): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(50): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(56): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(56): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(62): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(62): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(68): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(68): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(74): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(74): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(80): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(80): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(86): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(86): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(92): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(92): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(98): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(98): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(104): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(104): (vcom-1136) Unknown identifier "iSel".
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd(131): VHDL Compiler exiting
+# End time: 13:33:01 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 20, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:33:25 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 13:33:26 on Oct 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:33:35 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxesTB/hdl/AllMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity AllMpx
+# End time: 13:33:35 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.allmpxtb(testbench) -voptargs=+acc
+# vsim -gui work.allmpxtb(testbench) -voptargs="+acc" 
+# Start time: 13:33:53 on Oct 13,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+# Loading work.mpx(structthenand2)#1
+# Loading work.thenand2(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+add wave -position end  sim:/allmpxtb/A
+add wave -position end  sim:/allmpxtb/B
+add wave -position end  sim:/allmpxtb/Sel
+add wave -position end  sim:/allmpxtb/YMin
+add wave -position end  sim:/allmpxtb/YPrime
+add wave -position end  sim:/allmpxtb/YNand
+add wave -position end  sim:/allmpxtb/YTheNand2
+add wave -position end  sim:/allmpxtb/YUsingCase
+add wave -position end  sim:/allmpxtb/YUsingIf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Simon  Hostname: SIMONS-LAPTOP  ProcessID: 17452
+#           Attempting to use alternate WLF file "./wlft723vn5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft723vn5
+run
+# ** Error: Multiplexer failure Minterms
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure TheNand2
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Using Case
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Using If
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure TheNand2
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Using Case
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Using If
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:37:41 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Mpx
+# End time: 13:37:41 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-Minterms-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:37:41 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-Minterms-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Minterms of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity Mpx
+# End time: 13:37:41 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-NandOnly-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:37:41 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-NandOnly-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture NandOnly of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity Mpx
+# End time: 13:37:41 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-PrimImpl-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:37:41 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-PrimImpl-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImpl of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity Mpx
+# End time: 13:37:41 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-StructTheNand2-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:37:41 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-StructTheNand2-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture StructTheNand2 of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity Mpx
+# -- Loading entity TheNand2
+# End time: 13:37:41 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:37:41 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity Mpx
+# End time: 13:37:41 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:37:41 on Oct 13,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity Mpx
+# End time: 13:37:41 on Oct 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.allmpx(struct)#1
+# Loading work.mpx(minterms)#1
+# Loading work.mpx(primimpl)#1
+# Loading work.mpx(nandonly)#1
+# Loading work.mpx(structthenand2)#1
+# Loading work.thenand2(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Error: Multiplexer failure Minterms
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure TheNand2
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Using Case
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Using If
+#    Time: 80 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Minterms
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Prime Implicant
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Nand Only
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure TheNand2
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Using Case
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+# ** Error: Multiplexer failure Using If
+#    Time: 90 ns  Iteration: 4  Instance: /allmpxtb
+run
+# End time: 13:38:48 on Oct 13,2025, Elapsed time: 0:04:55
+# Errors: 12, Warnings: 2
