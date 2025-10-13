@@ -17,10 +17,10 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "10/13/2025 13:39:48"
+-- DATE "10/13/2025 20:45:51"
 
 -- 
--- Device: Altera 5CSEMA5F31C6 Package FBGA896
+-- Device: Altera 5CSEMA5F31A7 Package FBGA896
 -- 
 
 -- 
@@ -36,9 +36,9 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	AllMuxesOnPCBDe1Soc IS
     PORT (
-	KEY : IN std_logic_vector(1 DOWNTO 0);
+	KEY : IN IEEE.STD_LOGIC_1164.std_ulogic_vector(1 DOWNTO 0);
 	SW : IN std_logic;
-	LEDR : BUFFER std_logic_vector(5 DOWNTO 0)
+	LEDR : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(5 DOWNTO 0)
 	);
 END AllMuxesOnPCBDe1Soc;
 
@@ -72,23 +72,23 @@ SIGNAL \SW~input_o\ : std_logic;
 SIGNAL \KEY[0]~input_o\ : std_logic;
 SIGNAL \KEY[1]~input_o\ : std_logic;
 SIGNAL \AllMpx|MpxUsingIf|oY~0_combout\ : std_logic;
-SIGNAL \AllMpx|MpxUsingIf|ALT_INV_oY~0_combout\ : std_logic;
-SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
 SIGNAL \ALT_INV_KEY[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW~input_o\ : std_logic;
+SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
+SIGNAL \AllMpx|MpxUsingIf|ALT_INV_oY~0_combout\ : std_logic;
 
 BEGIN
 
-ww_KEY <= KEY;
+ww_KEY <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(KEY);
 ww_SW <= SW;
-LEDR <= ww_LEDR;
+LEDR <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_LEDR);
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\AllMpx|MpxUsingIf|ALT_INV_oY~0_combout\ <= NOT \AllMpx|MpxUsingIf|oY~0_combout\;
-\ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
 \ALT_INV_KEY[1]~input_o\ <= NOT \KEY[1]~input_o\;
 \ALT_INV_SW~input_o\ <= NOT \SW~input_o\;
+\ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
+\AllMpx|MpxUsingIf|ALT_INV_oY~0_combout\ <= NOT \AllMpx|MpxUsingIf|oY~0_combout\;
 
 -- Location: IOOBUF_X52_Y0_N2
 \LEDR[0]~output\ : cyclonev_io_obuf

@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/HSD_SEM_3/CHD3/Uebung02/prj2to1Multiplexer/grpMux/uintAllMuxesOnPCBDe1Soc/quartus/output_files/") File("AllMuxesOnPCBDe1Soc.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/uintAllMuxesOnPCBDe1Soc/quartus/output_files/") File("AllMuxesOnPCBDe1Soc.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

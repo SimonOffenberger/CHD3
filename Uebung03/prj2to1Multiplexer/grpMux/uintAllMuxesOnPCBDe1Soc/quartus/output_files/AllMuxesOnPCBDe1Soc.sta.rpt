@@ -1,5 +1,5 @@
 Timing Analyzer report for AllMuxesOnPCBDe1Soc
-Mon Oct 13 13:39:47 2025
+Mon Oct 13 20:45:49 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -11,40 +11,40 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   3. Parallel Compilation
   4. SDC File List
   5. Clocks
-  6. Slow 1100mV 85C Model Fmax Summary
+  6. Slow 1100mV 125C Model Fmax Summary
   7. Timing Closure Recommendations
-  8. Slow 1100mV 85C Model Setup Summary
-  9. Slow 1100mV 85C Model Hold Summary
- 10. Slow 1100mV 85C Model Recovery Summary
- 11. Slow 1100mV 85C Model Removal Summary
- 12. Slow 1100mV 85C Model Minimum Pulse Width Summary
- 13. Slow 1100mV 85C Model Metastability Summary
- 14. Slow 1100mV 0C Model Fmax Summary
- 15. Slow 1100mV 0C Model Setup Summary
- 16. Slow 1100mV 0C Model Hold Summary
- 17. Slow 1100mV 0C Model Recovery Summary
- 18. Slow 1100mV 0C Model Removal Summary
- 19. Slow 1100mV 0C Model Minimum Pulse Width Summary
- 20. Slow 1100mV 0C Model Metastability Summary
- 21. Fast 1100mV 85C Model Setup Summary
- 22. Fast 1100mV 85C Model Hold Summary
- 23. Fast 1100mV 85C Model Recovery Summary
- 24. Fast 1100mV 85C Model Removal Summary
- 25. Fast 1100mV 85C Model Minimum Pulse Width Summary
- 26. Fast 1100mV 85C Model Metastability Summary
- 27. Fast 1100mV 0C Model Setup Summary
- 28. Fast 1100mV 0C Model Hold Summary
- 29. Fast 1100mV 0C Model Recovery Summary
- 30. Fast 1100mV 0C Model Removal Summary
- 31. Fast 1100mV 0C Model Minimum Pulse Width Summary
- 32. Fast 1100mV 0C Model Metastability Summary
+  8. Slow 1100mV 125C Model Setup Summary
+  9. Slow 1100mV 125C Model Hold Summary
+ 10. Slow 1100mV 125C Model Recovery Summary
+ 11. Slow 1100mV 125C Model Removal Summary
+ 12. Slow 1100mV 125C Model Minimum Pulse Width Summary
+ 13. Slow 1100mV 125C Model Metastability Summary
+ 14. Slow 1100mV -40C Model Fmax Summary
+ 15. Slow 1100mV -40C Model Setup Summary
+ 16. Slow 1100mV -40C Model Hold Summary
+ 17. Slow 1100mV -40C Model Recovery Summary
+ 18. Slow 1100mV -40C Model Removal Summary
+ 19. Slow 1100mV -40C Model Minimum Pulse Width Summary
+ 20. Slow 1100mV -40C Model Metastability Summary
+ 21. Fast 1100mV 125C Model Setup Summary
+ 22. Fast 1100mV 125C Model Hold Summary
+ 23. Fast 1100mV 125C Model Recovery Summary
+ 24. Fast 1100mV 125C Model Removal Summary
+ 25. Fast 1100mV 125C Model Minimum Pulse Width Summary
+ 26. Fast 1100mV 125C Model Metastability Summary
+ 27. Fast 1100mV -40C Model Setup Summary
+ 28. Fast 1100mV -40C Model Hold Summary
+ 29. Fast 1100mV -40C Model Recovery Summary
+ 30. Fast 1100mV -40C Model Removal Summary
+ 31. Fast 1100mV -40C Model Minimum Pulse Width Summary
+ 32. Fast 1100mV -40C Model Metastability Summary
  33. Multicorner Timing Analysis Summary
  34. Board Trace Model Assignments
  35. Input Transition Times
- 36. Signal Integrity Metrics (Slow 1100mv 0c Model)
- 37. Signal Integrity Metrics (Slow 1100mv 85c Model)
- 38. Signal Integrity Metrics (Fast 1100mv 0c Model)
- 39. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 36. Signal Integrity Metrics (Slow 1100mv n40c Model)
+ 37. Signal Integrity Metrics (Slow 1100mv 125c Model)
+ 38. Signal Integrity Metrics (Fast 1100mv n40c Model)
+ 39. Signal Integrity Metrics (Fast 1100mv 125c Model)
  40. Clock Transfers
  41. Report TCCS
  42. Report RSKM
@@ -84,7 +84,7 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
 ; Revision Name         ; AllMuxesOnPCBDe1Soc                                    ;
 ; Device Family         ; Cyclone V                                              ;
-; Device Name           ; 5CSEMA5F31C6                                           ;
+; Device Name           ; 5CSEMA5F31A7                                           ;
 ; Timing Models         ; Final                                                  ;
 ; Delay Model           ; Combined                                               ;
 ; Rise/Fall Delays      ; Enabled                                                ;
@@ -104,7 +104,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.7%      ;
+;     Processor 2            ;   1.5%      ;
 ;     Processors 3-16        ;   0.4%      ;
 +----------------------------+-------------+
 
@@ -114,7 +114,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------+--------+--------------------------+
 ; SDC File Path           ; Status ; Read at                  ;
 +-------------------------+--------+--------------------------+
-; AllMuxesOnPCBDe1Soc.sdc ; OK     ; Mon Oct 13 13:39:45 2025 ;
+; AllMuxesOnPCBDe1Soc.sdc ; OK     ; Mon Oct 13 20:45:47 2025 ;
 +-------------------------+--------+--------------------------+
 
 
@@ -124,9 +124,9 @@ https://fpgasoftware.intel.com/eula.
 No clocks to report.
 
 
---------------------------------------
-; Slow 1100mV 85C Model Fmax Summary ;
---------------------------------------
+---------------------------------------
+; Slow 1100mV 125C Model Fmax Summary ;
+---------------------------------------
 No paths to report.
 
 
@@ -136,153 +136,153 @@ No paths to report.
 HTML report is unavailable in plain text report export.
 
 
----------------------------------------
-; Slow 1100mV 85C Model Setup Summary ;
----------------------------------------
-No paths to report.
-
-
---------------------------------------
-; Slow 1100mV 85C Model Hold Summary ;
---------------------------------------
-No paths to report.
-
-
-------------------------------------------
-; Slow 1100mV 85C Model Recovery Summary ;
-------------------------------------------
-No paths to report.
-
-
------------------------------------------
-; Slow 1100mV 85C Model Removal Summary ;
------------------------------------------
-No paths to report.
-
-
------------------------------------------------------
-; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
------------------------------------------------------
-No paths to report.
-
-
------------------------------------------------
-; Slow 1100mV 85C Model Metastability Summary ;
------------------------------------------------
-No synchronizer chains to report.
-
-
--------------------------------------
-; Slow 1100mV 0C Model Fmax Summary ;
--------------------------------------
-No paths to report.
-
-
---------------------------------------
-; Slow 1100mV 0C Model Setup Summary ;
---------------------------------------
-No paths to report.
-
-
--------------------------------------
-; Slow 1100mV 0C Model Hold Summary ;
--------------------------------------
-No paths to report.
-
-
------------------------------------------
-; Slow 1100mV 0C Model Recovery Summary ;
------------------------------------------
-No paths to report.
-
-
 ----------------------------------------
-; Slow 1100mV 0C Model Removal Summary ;
+; Slow 1100mV 125C Model Setup Summary ;
 ----------------------------------------
 No paths to report.
 
 
-----------------------------------------------------
-; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
-----------------------------------------------------
+---------------------------------------
+; Slow 1100mV 125C Model Hold Summary ;
+---------------------------------------
 No paths to report.
 
 
-----------------------------------------------
-; Slow 1100mV 0C Model Metastability Summary ;
-----------------------------------------------
+-------------------------------------------
+; Slow 1100mV 125C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1100mV 125C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
+------------------------------------------------------
+; Slow 1100mV 125C Model Minimum Pulse Width Summary ;
+------------------------------------------------------
+No paths to report.
+
+
+------------------------------------------------
+; Slow 1100mV 125C Model Metastability Summary ;
+------------------------------------------------
 No synchronizer chains to report.
 
 
 ---------------------------------------
-; Fast 1100mV 85C Model Setup Summary ;
+; Slow 1100mV -40C Model Fmax Summary ;
 ---------------------------------------
 No paths to report.
 
 
---------------------------------------
-; Fast 1100mV 85C Model Hold Summary ;
---------------------------------------
+----------------------------------------
+; Slow 1100mV -40C Model Setup Summary ;
+----------------------------------------
+No paths to report.
+
+
+---------------------------------------
+; Slow 1100mV -40C Model Hold Summary ;
+---------------------------------------
+No paths to report.
+
+
+-------------------------------------------
+; Slow 1100mV -40C Model Recovery Summary ;
+-------------------------------------------
 No paths to report.
 
 
 ------------------------------------------
-; Fast 1100mV 85C Model Recovery Summary ;
+; Slow 1100mV -40C Model Removal Summary ;
 ------------------------------------------
 No paths to report.
 
 
------------------------------------------
-; Fast 1100mV 85C Model Removal Summary ;
------------------------------------------
+------------------------------------------------------
+; Slow 1100mV -40C Model Minimum Pulse Width Summary ;
+------------------------------------------------------
 No paths to report.
 
 
------------------------------------------------------
-; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
------------------------------------------------------
-No paths to report.
-
-
------------------------------------------------
-; Fast 1100mV 85C Model Metastability Summary ;
------------------------------------------------
+------------------------------------------------
+; Slow 1100mV -40C Model Metastability Summary ;
+------------------------------------------------
 No synchronizer chains to report.
 
 
---------------------------------------
-; Fast 1100mV 0C Model Setup Summary ;
---------------------------------------
-No paths to report.
-
-
--------------------------------------
-; Fast 1100mV 0C Model Hold Summary ;
--------------------------------------
-No paths to report.
-
-
------------------------------------------
-; Fast 1100mV 0C Model Recovery Summary ;
------------------------------------------
-No paths to report.
-
-
 ----------------------------------------
-; Fast 1100mV 0C Model Removal Summary ;
+; Fast 1100mV 125C Model Setup Summary ;
 ----------------------------------------
 No paths to report.
 
 
-----------------------------------------------------
-; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
-----------------------------------------------------
+---------------------------------------
+; Fast 1100mV 125C Model Hold Summary ;
+---------------------------------------
 No paths to report.
 
 
-----------------------------------------------
-; Fast 1100mV 0C Model Metastability Summary ;
-----------------------------------------------
+-------------------------------------------
+; Fast 1100mV 125C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast 1100mV 125C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
+------------------------------------------------------
+; Fast 1100mV 125C Model Minimum Pulse Width Summary ;
+------------------------------------------------------
+No paths to report.
+
+
+------------------------------------------------
+; Fast 1100mV 125C Model Metastability Summary ;
+------------------------------------------------
+No synchronizer chains to report.
+
+
+----------------------------------------
+; Fast 1100mV -40C Model Setup Summary ;
+----------------------------------------
+No paths to report.
+
+
+---------------------------------------
+; Fast 1100mV -40C Model Hold Summary ;
+---------------------------------------
+No paths to report.
+
+
+-------------------------------------------
+; Fast 1100mV -40C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast 1100mV -40C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
+------------------------------------------------------
+; Fast 1100mV -40C Model Minimum Pulse Width Summary ;
+------------------------------------------------------
+No paths to report.
+
+
+------------------------------------------------
+; Fast 1100mV -40C Model Metastability Summary ;
+------------------------------------------------
 No synchronizer chains to report.
 
 
@@ -322,58 +322,58 @@ No synchronizer chains to report.
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+; Signal Integrity Metrics (Slow 1100mv n40c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin     ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; LEDR[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.08 V              ; 5.04e-07 V          ; 0.041 V                              ; 0.003 V                              ; 3.21e-09 s                  ; 1.64e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 5.04e-07 V                  ; 3.08 V             ; 5.04e-07 V         ; 0.041 V                             ; 0.003 V                             ; 3.21e-09 s                 ; 1.64e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.64e-07 V                   ; 3.08 V              ; 3.64e-07 V          ; 0.04 V                               ; 0.004 V                              ; 2.97e-09 s                  ; 1.6e-09 s                   ; Yes                        ; Yes                        ; 3.08 V                      ; 3.64e-07 V                  ; 3.08 V             ; 3.64e-07 V         ; 0.04 V                              ; 0.004 V                             ; 2.97e-09 s                 ; 1.6e-09 s                  ; Yes                       ; Yes                       ;
-; LEDR[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.08 V              ; 5.04e-07 V          ; 0.041 V                              ; 0.003 V                              ; 3.21e-09 s                  ; 1.64e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 5.04e-07 V                  ; 3.08 V             ; 5.04e-07 V         ; 0.041 V                             ; 0.003 V                             ; 3.21e-09 s                 ; 1.64e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 5.04e-07 V                   ; 3.08 V              ; 5.04e-07 V          ; 0.041 V                              ; 0.003 V                              ; 3.21e-09 s                  ; 1.64e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 5.04e-07 V                  ; 3.08 V             ; 5.04e-07 V         ; 0.041 V                             ; 0.003 V                             ; 3.21e-09 s                 ; 1.64e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.64e-07 V                   ; 3.08 V              ; 3.64e-07 V          ; 0.04 V                               ; 0.004 V                              ; 2.97e-09 s                  ; 1.6e-09 s                   ; Yes                        ; Yes                        ; 3.08 V                      ; 3.64e-07 V                  ; 3.08 V             ; 3.64e-07 V         ; 0.04 V                              ; 0.004 V                             ; 2.97e-09 s                 ; 1.6e-09 s                  ; Yes                       ; Yes                       ;
-; LEDR[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.64e-07 V                   ; 3.08 V              ; 3.64e-07 V          ; 0.04 V                               ; 0.004 V                              ; 2.97e-09 s                  ; 1.6e-09 s                   ; Yes                        ; Yes                        ; 3.08 V                      ; 3.64e-07 V                  ; 3.08 V             ; 3.64e-07 V         ; 0.04 V                              ; 0.004 V                             ; 2.97e-09 s                 ; 1.6e-09 s                  ; Yes                       ; Yes                       ;
+; LEDR[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.51e-08 V                   ; 3.08 V              ; 2.51e-08 V          ; 0.009 V                              ; 0.003 V                              ; 3.01e-09 s                  ; 1.51e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.51e-08 V                  ; 3.08 V             ; 2.51e-08 V         ; 0.009 V                             ; 0.003 V                             ; 3.01e-09 s                 ; 1.51e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.8e-08 V                    ; 3.08 V              ; 1.8e-08 V           ; 0.008 V                              ; 0.003 V                              ; 2.78e-09 s                  ; 1.47e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 1.8e-08 V                   ; 3.08 V             ; 1.8e-08 V          ; 0.008 V                             ; 0.003 V                             ; 2.78e-09 s                 ; 1.47e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.51e-08 V                   ; 3.08 V              ; 2.51e-08 V          ; 0.009 V                              ; 0.003 V                              ; 3.01e-09 s                  ; 1.51e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.51e-08 V                  ; 3.08 V             ; 2.51e-08 V         ; 0.009 V                             ; 0.003 V                             ; 3.01e-09 s                 ; 1.51e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.51e-08 V                   ; 3.08 V              ; 2.51e-08 V          ; 0.009 V                              ; 0.003 V                              ; 3.01e-09 s                  ; 1.51e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.51e-08 V                  ; 3.08 V             ; 2.51e-08 V         ; 0.009 V                             ; 0.003 V                             ; 3.01e-09 s                 ; 1.51e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.8e-08 V                    ; 3.08 V              ; 1.8e-08 V           ; 0.008 V                              ; 0.003 V                              ; 2.78e-09 s                  ; 1.47e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 1.8e-08 V                   ; 3.08 V             ; 1.8e-08 V          ; 0.008 V                             ; 0.003 V                             ; 2.78e-09 s                 ; 1.47e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.8e-08 V                    ; 3.08 V              ; 1.8e-08 V           ; 0.008 V                              ; 0.003 V                              ; 2.78e-09 s                  ; 1.47e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 1.8e-08 V                   ; 3.08 V             ; 1.8e-08 V          ; 0.008 V                             ; 0.003 V                             ; 2.78e-09 s                 ; 1.47e-09 s                 ; Yes                       ; Yes                       ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+; Signal Integrity Metrics (Slow 1100mv 125c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin     ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; LEDR[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 4.11e-05 V                   ; 3.08 V              ; 4.11e-05 V          ; 0.272 V                              ; 0.014 V                              ; 3.84e-09 s                  ; 2.02e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 4.11e-05 V                  ; 3.08 V             ; 4.11e-05 V         ; 0.272 V                             ; 0.014 V                             ; 3.84e-09 s                 ; 2.02e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.17e-05 V                   ; 3.08 V              ; 3.17e-05 V          ; 0.275 V                              ; 0.011 V                              ; 3.61e-09 s                  ; 1.97e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.17e-05 V                  ; 3.08 V             ; 3.17e-05 V         ; 0.275 V                             ; 0.011 V                             ; 3.61e-09 s                 ; 1.97e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 4.11e-05 V                   ; 3.08 V              ; 4.11e-05 V          ; 0.272 V                              ; 0.014 V                              ; 3.84e-09 s                  ; 2.02e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 4.11e-05 V                  ; 3.08 V             ; 4.11e-05 V         ; 0.272 V                             ; 0.014 V                             ; 3.84e-09 s                 ; 2.02e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 4.11e-05 V                   ; 3.08 V              ; 4.11e-05 V          ; 0.272 V                              ; 0.014 V                              ; 3.84e-09 s                  ; 2.02e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 4.11e-05 V                  ; 3.08 V             ; 4.11e-05 V         ; 0.272 V                             ; 0.014 V                             ; 3.84e-09 s                 ; 2.02e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.17e-05 V                   ; 3.08 V              ; 3.17e-05 V          ; 0.275 V                              ; 0.011 V                              ; 3.61e-09 s                  ; 1.97e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.17e-05 V                  ; 3.08 V             ; 3.17e-05 V         ; 0.275 V                             ; 0.011 V                             ; 3.61e-09 s                 ; 1.97e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.17e-05 V                   ; 3.08 V              ; 3.17e-05 V          ; 0.275 V                              ; 0.011 V                              ; 3.61e-09 s                  ; 1.97e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.17e-05 V                  ; 3.08 V             ; 3.17e-05 V         ; 0.275 V                             ; 0.011 V                             ; 3.61e-09 s                 ; 1.97e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 0.000116 V                   ; 3.08 V              ; 0.000116 V          ; 0.477 V                              ; 0.064 V                              ; -                           ; 2.24e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 0.000116 V                  ; 3.08 V             ; 0.000116 V         ; 0.477 V                             ; 0.064 V                             ; -                          ; 2.24e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 9.26e-05 V                   ; 3.08 V              ; 9.26e-05 V          ; 0.484 V                              ; 0.05 V                               ; -                           ; 2.19e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 9.26e-05 V                  ; 3.08 V             ; 9.26e-05 V         ; 0.484 V                             ; 0.05 V                              ; -                          ; 2.19e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 0.000116 V                   ; 3.08 V              ; 0.000116 V          ; 0.477 V                              ; 0.064 V                              ; -                           ; 2.24e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 0.000116 V                  ; 3.08 V             ; 0.000116 V         ; 0.477 V                             ; 0.064 V                             ; -                          ; 2.24e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 0.000116 V                   ; 3.08 V              ; 0.000116 V          ; 0.477 V                              ; 0.064 V                              ; -                           ; 2.24e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 0.000116 V                  ; 3.08 V             ; 0.000116 V         ; 0.477 V                             ; 0.064 V                             ; -                          ; 2.24e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 9.26e-05 V                   ; 3.08 V              ; 9.26e-05 V          ; 0.484 V                              ; 0.05 V                               ; -                           ; 2.19e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 9.26e-05 V                  ; 3.08 V             ; 9.26e-05 V         ; 0.484 V                             ; 0.05 V                              ; -                          ; 2.19e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 9.26e-05 V                   ; 3.08 V              ; 9.26e-05 V          ; 0.484 V                              ; 0.05 V                               ; -                           ; 2.19e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 9.26e-05 V                  ; 3.08 V             ; 9.26e-05 V         ; 0.484 V                             ; 0.05 V                              ; -                          ; 2.19e-09 s                 ; Yes                       ; Yes                       ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+; Signal Integrity Metrics (Fast 1100mv n40c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin     ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; LEDR[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 7.16e-06 V                   ; 3.63 V              ; 7.16e-06 V          ; 0.012 V                              ; 0.005 V                              ; 3.2e-09 s                   ; 1.34e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 7.16e-06 V                  ; 3.63 V             ; 7.16e-06 V         ; 0.012 V                             ; 0.005 V                             ; 3.2e-09 s                  ; 1.34e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 5.06e-06 V                   ; 3.63 V              ; 5.06e-06 V          ; 0.011 V                              ; 0.004 V                              ; 2.95e-09 s                  ; 1.3e-09 s                   ; Yes                        ; Yes                        ; 3.63 V                      ; 5.06e-06 V                  ; 3.63 V             ; 5.06e-06 V         ; 0.011 V                             ; 0.004 V                             ; 2.95e-09 s                 ; 1.3e-09 s                  ; Yes                       ; Yes                       ;
-; LEDR[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 7.16e-06 V                   ; 3.63 V              ; 7.16e-06 V          ; 0.012 V                              ; 0.005 V                              ; 3.2e-09 s                   ; 1.34e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 7.16e-06 V                  ; 3.63 V             ; 7.16e-06 V         ; 0.012 V                             ; 0.005 V                             ; 3.2e-09 s                  ; 1.34e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 7.16e-06 V                   ; 3.63 V              ; 7.16e-06 V          ; 0.012 V                              ; 0.005 V                              ; 3.2e-09 s                   ; 1.34e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 7.16e-06 V                  ; 3.63 V             ; 7.16e-06 V         ; 0.012 V                             ; 0.005 V                             ; 3.2e-09 s                  ; 1.34e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 5.06e-06 V                   ; 3.63 V              ; 5.06e-06 V          ; 0.011 V                              ; 0.004 V                              ; 2.95e-09 s                  ; 1.3e-09 s                   ; Yes                        ; Yes                        ; 3.63 V                      ; 5.06e-06 V                  ; 3.63 V             ; 5.06e-06 V         ; 0.011 V                             ; 0.004 V                             ; 2.95e-09 s                 ; 1.3e-09 s                  ; Yes                       ; Yes                       ;
-; LEDR[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 5.06e-06 V                   ; 3.63 V              ; 5.06e-06 V          ; 0.011 V                              ; 0.004 V                              ; 2.95e-09 s                  ; 1.3e-09 s                   ; Yes                        ; Yes                        ; 3.63 V                      ; 5.06e-06 V                  ; 3.63 V             ; 5.06e-06 V         ; 0.011 V                             ; 0.004 V                             ; 2.95e-09 s                 ; 1.3e-09 s                  ; Yes                       ; Yes                       ;
+; LEDR[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 6.76e-07 V                   ; 3.63 V              ; 6.76e-07 V          ; 0.003 V                              ; 0.005 V                              ; 2.96e-09 s                  ; 1.16e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 6.76e-07 V                  ; 3.63 V             ; 6.76e-07 V         ; 0.003 V                             ; 0.005 V                             ; 2.96e-09 s                 ; 1.16e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.7e-07 V                    ; 3.63 V              ; 4.7e-07 V           ; 0.002 V                              ; 0.004 V                              ; 2.72e-09 s                  ; 1.13e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 4.7e-07 V                   ; 3.63 V             ; 4.7e-07 V          ; 0.002 V                             ; 0.004 V                             ; 2.72e-09 s                 ; 1.13e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 6.76e-07 V                   ; 3.63 V              ; 6.76e-07 V          ; 0.003 V                              ; 0.005 V                              ; 2.96e-09 s                  ; 1.16e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 6.76e-07 V                  ; 3.63 V             ; 6.76e-07 V         ; 0.003 V                             ; 0.005 V                             ; 2.96e-09 s                 ; 1.16e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 6.76e-07 V                   ; 3.63 V              ; 6.76e-07 V          ; 0.003 V                              ; 0.005 V                              ; 2.96e-09 s                  ; 1.16e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 6.76e-07 V                  ; 3.63 V             ; 6.76e-07 V         ; 0.003 V                             ; 0.005 V                             ; 2.96e-09 s                 ; 1.16e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.7e-07 V                    ; 3.63 V              ; 4.7e-07 V           ; 0.002 V                              ; 0.004 V                              ; 2.72e-09 s                  ; 1.13e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 4.7e-07 V                   ; 3.63 V             ; 4.7e-07 V          ; 0.002 V                             ; 0.004 V                             ; 2.72e-09 s                 ; 1.13e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.7e-07 V                    ; 3.63 V              ; 4.7e-07 V           ; 0.002 V                              ; 0.004 V                              ; 2.72e-09 s                  ; 1.13e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 4.7e-07 V                   ; 3.63 V             ; 4.7e-07 V          ; 0.002 V                             ; 0.004 V                             ; 2.72e-09 s                 ; 1.13e-09 s                 ; Yes                       ; Yes                       ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+; Signal Integrity Metrics (Fast 1100mv 125c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin     ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; LEDR[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000295 V                   ; 3.63 V              ; 0.000295 V          ; 0.177 V                              ; 0.01 V                               ; 3.75e-09 s                  ; 1.71e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000295 V                  ; 3.63 V             ; 0.000295 V         ; 0.177 V                             ; 0.01 V                              ; 3.75e-09 s                 ; 1.71e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000223 V                   ; 3.63 V              ; 0.000223 V          ; 0.177 V                              ; 0.005 V                              ; 3.5e-09 s                   ; 1.67e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000223 V                  ; 3.63 V             ; 0.000223 V         ; 0.177 V                             ; 0.005 V                             ; 3.5e-09 s                  ; 1.67e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000295 V                   ; 3.63 V              ; 0.000295 V          ; 0.177 V                              ; 0.01 V                               ; 3.75e-09 s                  ; 1.71e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000295 V                  ; 3.63 V             ; 0.000295 V         ; 0.177 V                             ; 0.01 V                              ; 3.75e-09 s                 ; 1.71e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000295 V                   ; 3.63 V              ; 0.000295 V          ; 0.177 V                              ; 0.01 V                               ; 3.75e-09 s                  ; 1.71e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000295 V                  ; 3.63 V             ; 0.000295 V         ; 0.177 V                             ; 0.01 V                              ; 3.75e-09 s                 ; 1.71e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000223 V                   ; 3.63 V              ; 0.000223 V          ; 0.177 V                              ; 0.005 V                              ; 3.5e-09 s                   ; 1.67e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000223 V                  ; 3.63 V             ; 0.000223 V         ; 0.177 V                             ; 0.005 V                             ; 3.5e-09 s                  ; 1.67e-09 s                 ; Yes                       ; Yes                       ;
-; LEDR[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000223 V                   ; 3.63 V              ; 0.000223 V          ; 0.177 V                              ; 0.005 V                              ; 3.5e-09 s                   ; 1.67e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000223 V                  ; 3.63 V             ; 0.000223 V         ; 0.177 V                             ; 0.005 V                             ; 3.5e-09 s                  ; 1.67e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[0] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.00102 V                    ; 3.63 V              ; 0.00102 V           ; 0.293 V                              ; 0.008 V                              ; 4.02e-09 s                  ; 1.89e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.00102 V                   ; 3.63 V             ; 0.00102 V          ; 0.293 V                             ; 0.008 V                             ; 4.02e-09 s                 ; 1.89e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[1] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000786 V                   ; 3.63 V              ; 0.000786 V          ; 0.295 V                              ; 0.007 V                              ; 3.78e-09 s                  ; 1.84e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000786 V                  ; 3.63 V             ; 0.000786 V         ; 0.295 V                             ; 0.007 V                             ; 3.78e-09 s                 ; 1.84e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[2] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.00102 V                    ; 3.63 V              ; 0.00102 V           ; 0.293 V                              ; 0.008 V                              ; 4.02e-09 s                  ; 1.89e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.00102 V                   ; 3.63 V             ; 0.00102 V          ; 0.293 V                             ; 0.008 V                             ; 4.02e-09 s                 ; 1.89e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[3] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.00102 V                    ; 3.63 V              ; 0.00102 V           ; 0.293 V                              ; 0.008 V                              ; 4.02e-09 s                  ; 1.89e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.00102 V                   ; 3.63 V             ; 0.00102 V          ; 0.293 V                             ; 0.008 V                             ; 4.02e-09 s                 ; 1.89e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[4] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000786 V                   ; 3.63 V              ; 0.000786 V          ; 0.295 V                              ; 0.007 V                              ; 3.78e-09 s                  ; 1.84e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000786 V                  ; 3.63 V             ; 0.000786 V         ; 0.295 V                             ; 0.007 V                             ; 3.78e-09 s                 ; 1.84e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR[5] ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000786 V                   ; 3.63 V              ; 0.000786 V          ; 0.295 V                              ; 0.007 V                              ; 3.78e-09 s                  ; 1.84e-09 s                  ; Yes                        ; Yes                        ; 3.63 V                      ; 0.000786 V                  ; 3.63 V             ; 0.000786 V         ; 0.295 V                             ; 0.007 V                             ; 3.78e-09 s                 ; 1.84e-09 s                 ; Yes                       ; Yes                       ;
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -465,12 +465,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Oct 13 13:39:44 2025
+    Info: Processing started: Mon Oct 13 20:45:46 2025
 Info: Command: quartus_sta AllMuxesOnPCBDe1Soc -c AllMuxesOnPCBDe1Soc
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
-Info (21077): Low junction temperature is 0 degrees C
-Info (21077): High junction temperature is 85 degrees C
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 125 degrees C
 Info (332104): Reading SDC File: 'AllMuxesOnPCBDe1Soc.sdc'
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
@@ -479,14 +479,14 @@ Warning (332068): No clocks defined in design.
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info (332159): No clocks to report
-Info: Analyzing Slow 1100mV 85C Model
+Info: Analyzing Slow 1100mV 125C Model
 Info (332140): No fmax paths to report
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
-Info: Analyzing Slow 1100mV 0C Model
+Info: Analyzing Slow 1100mV -40C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
@@ -499,7 +499,7 @@ Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
-Info: Analyzing Fast 1100mV 85C Model
+Info: Analyzing Fast 1100mV 125C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
@@ -511,7 +511,7 @@ Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
-Info: Analyzing Fast 1100mV 0C Model
+Info: Analyzing Fast 1100mV -40C Model
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
 Warning (332068): No clocks defined in design.
@@ -524,8 +524,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5389 megabytes
-    Info: Processing ended: Mon Oct 13 13:39:47 2025
+    Info: Peak virtual memory: 5405 megabytes
+    Info: Processing ended: Mon Oct 13 20:45:49 2025
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
