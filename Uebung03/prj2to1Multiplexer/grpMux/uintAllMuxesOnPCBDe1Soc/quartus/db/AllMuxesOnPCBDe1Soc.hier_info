@@ -2,12 +2,12 @@
 KEY[0] => allmpx:AllMpx.iAllMuxA
 KEY[1] => allmpx:AllMpx.iAllMuxB
 SW => allmpx:AllMpx.iAllMuxSel
-LEDR[0] <= allmpx:AllMpx.oYUsingIf
-LEDR[1] <= allmpx:AllMpx.oYUsingCase
-LEDR[2] <= allmpx:AllMpx.oYTheNand2
-LEDR[3] <= allmpx:AllMpx.oYNand
-LEDR[4] <= allmpx:AllMpx.oYPrime
-LEDR[5] <= allmpx:AllMpx.oYMin
+LEDR[0] << allmpx:AllMpx.oYUsingIf
+LEDR[1] << allmpx:AllMpx.oYUsingCase
+LEDR[2] << allmpx:AllMpx.oYTheNand2
+LEDR[3] << allmpx:AllMpx.oYNand
+LEDR[4] << allmpx:AllMpx.oYPrime
+LEDR[5] << allmpx:AllMpx.oYMin
 
 
 |AllMuxesOnPCBDe1Soc|AllMpx:AllMpx

@@ -1,5 +1,5 @@
 Fitter report for AllMuxesOnPCBDe1Soc
-Mon Oct 13 20:45:40 2025
+Tue Oct 14 13:51:37 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -57,12 +57,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Oct 13 20:45:40 2025          ;
+; Fitter Status                   ; Successful - Tue Oct 14 13:51:37 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; AllMuxesOnPCBDe1Soc                            ;
 ; Top-level Entity Name           ; AllMuxesOnPCBDe1Soc                            ;
 ; Family                          ; Cyclone V                                      ;
-; Device                          ; 5CSEMA5F31A7                                   ;
+; Device                          ; 5CSEMA5F31C6                                   ;
 ; Timing Models                   ; Final                                          ;
 ; Logic utilization (in ALMs)     ; 1 / 32,070 ( < 1 % )                           ;
 ; Total registers                 ; 0                                              ;
@@ -85,10 +85,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
 ; Option                                                             ; Setting                               ; Default Value                         ;
 +--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Device                                                             ; 5CSEMA5F31A7                          ;                                       ;
+; Device                                                             ; 5CSEMA5F31C6                          ;                                       ;
 ; Maximum processors allowed for parallel compilation                ; All                                   ;                                       ;
-; Minimum Core Junction Temperature                                  ; -40                                   ;                                       ;
-; Maximum Core Junction Temperature                                  ; 125                                   ;                                       ;
+; Minimum Core Junction Temperature                                  ; 0                                     ;                                       ;
+; Maximum Core Junction Temperature                                  ; 85                                    ;                                       ;
 ; Use smart compilation                                              ; Off                                   ; Off                                   ;
 ; Enable parallel Assembler and Timing Analyzer during compilation   ; On                                    ; On                                    ;
 ; Enable compact report table                                        ; Off                                   ; Off                                   ;
@@ -1570,8 +1570,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Setting                   ; Value  ;
 +---------------------------+--------+
 ; Nominal Core Voltage      ; 1.10 V ;
-; Low Junction Temperature  ; -40 °C ;
-; High Junction Temperature ; 125 °C ;
+; Low Junction Temperature  ; 0 °C   ;
+; High Junction Temperature ; 85 °C  ;
 +---------------------------+--------+
 
 
@@ -1579,9 +1579,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
-Info (119006): Selected device 5CSEMA5F31A7 for design "AllMuxesOnPCBDe1Soc"
-Info (21077): Low junction temperature is -40 degrees C
-Info (21077): High junction temperature is 125 degrees C
+Info (119006): Selected device 5CSEMA5F31C6 for design "AllMuxesOnPCBDe1Soc"
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Info (184020): Starting Fitter periphery placement operations
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
@@ -1609,7 +1609,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.25 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1617,10 +1617,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/HSD_SEM_3/CHD3/Uebung03/prj2to1Multiplexer/grpMux/uintAllMuxesOnPCBDe1Soc/quartus/output_files/AllMuxesOnPCBDe1Soc.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 7925 megabytes
-    Info: Processing ended: Mon Oct 13 20:45:41 2025
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:02:23
+    Info: Peak virtual memory: 7909 megabytes
+    Info: Processing ended: Tue Oct 14 13:51:37 2025
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:02:25
 
 
 +----------------------------+
