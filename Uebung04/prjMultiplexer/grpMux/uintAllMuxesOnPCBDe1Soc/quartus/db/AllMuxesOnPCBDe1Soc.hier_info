@@ -1,0 +1,73 @@
+|AllMuxesOnPCBDe1Soc
+KEY[0] => allmpx:AllMpx.iAllMuxSel[0]
+KEY[1] => allmpx:AllMpx.iAllMuxSel[1]
+KEY[2] => allmpx:AllMpx.iAllMuxSel[2]
+SW[0] => allmpx:AllMpx.iAllMuxA[0]
+SW[1] => allmpx:AllMpx.iAllMuxA[1]
+SW[2] => allmpx:AllMpx.iAllMuxA[2]
+SW[3] => allmpx:AllMpx.iAllMuxA[3]
+SW[4] => allmpx:AllMpx.iAllMuxA[4]
+SW[5] => allmpx:AllMpx.iAllMuxA[5]
+SW[6] => allmpx:AllMpx.iAllMuxA[6]
+SW[7] => allmpx:AllMpx.iAllMuxA[7]
+LEDR[0] << allmpx:AllMpx.oYUsingIf
+LEDR[1] << allmpx:AllMpx.oYUsingCase
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx
+iAllMuxA[0] => mpx:MpxUsingCase.iA[0]
+iAllMuxA[0] => mpxuni:MpxUniversal.iA[0]
+iAllMuxA[1] => mpx:MpxUsingCase.iA[1]
+iAllMuxA[1] => mpxuni:MpxUniversal.iA[1]
+iAllMuxA[2] => mpx:MpxUsingCase.iA[2]
+iAllMuxA[2] => mpxuni:MpxUniversal.iA[2]
+iAllMuxA[3] => mpx:MpxUsingCase.iA[3]
+iAllMuxA[3] => mpxuni:MpxUniversal.iA[3]
+iAllMuxA[4] => mpx:MpxUsingCase.iA[4]
+iAllMuxA[4] => mpxuni:MpxUniversal.iA[4]
+iAllMuxA[5] => mpx:MpxUsingCase.iA[5]
+iAllMuxA[5] => mpxuni:MpxUniversal.iA[5]
+iAllMuxA[6] => mpx:MpxUsingCase.iA[6]
+iAllMuxA[6] => mpxuni:MpxUniversal.iA[6]
+iAllMuxA[7] => mpx:MpxUsingCase.iA[7]
+iAllMuxA[7] => mpxuni:MpxUniversal.iA[7]
+iAllMuxSel[0] => mpx:MpxUsingCase.iSel[0]
+iAllMuxSel[0] => mpxuni:MpxUniversal.iSel[0]
+iAllMuxSel[1] => mpx:MpxUsingCase.iSel[1]
+iAllMuxSel[1] => mpxuni:MpxUniversal.iSel[1]
+iAllMuxSel[2] => mpx:MpxUsingCase.iSel[2]
+iAllMuxSel[2] => mpxuni:MpxUniversal.iSel[2]
+oYUsingCase <= mpx:MpxUsingCase.oY
+oYUsingIf <= mpxuni:MpxUniversal.oY
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxUsingCase
+iA[0] => Mux0.IN7
+iA[1] => Mux0.IN6
+iA[2] => Mux0.IN5
+iA[3] => Mux0.IN4
+iA[4] => Mux0.IN3
+iA[5] => Mux0.IN2
+iA[6] => Mux0.IN1
+iA[7] => Mux0.IN0
+iSel[0] => Mux0.IN10
+iSel[1] => Mux0.IN9
+iSel[2] => Mux0.IN8
+oY <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|MpxUni:MpxUniversal
+iA[0] => Mux0.IN7
+iA[1] => Mux0.IN6
+iA[2] => Mux0.IN5
+iA[3] => Mux0.IN4
+iA[4] => Mux0.IN3
+iA[5] => Mux0.IN2
+iA[6] => Mux0.IN1
+iA[7] => Mux0.IN0
+iSel[0] => Mux0.IN10
+iSel[1] => Mux0.IN9
+iSel[2] => Mux0.IN8
+oY <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
