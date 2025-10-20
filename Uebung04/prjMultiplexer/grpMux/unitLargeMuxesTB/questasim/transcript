@@ -1,0 +1,395 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vmap -del work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying modelsim.ini
+vlib work
+vmap work work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work work 
+# Modifying modelsim.ini
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:48:33 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:48:34 on Oct 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:48:34 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
+# End time: 14:48:34 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:48:34 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# End time: 14:48:34 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:49:57 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:49:57 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:49:57 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
+# End time: 14:49:57 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:49:57 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Warning: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(24): Nonresolved signal 'oY' may have multiple sources.
+#   Drivers:
+#     C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(34):Process line__34
+#        Driven at:
+#           C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(36)
+#     C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(17):Process line__17
+#        Driven at:
+#           C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(19)
+# End time: 14:49:57 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:50:58 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:50:58 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:50:58 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
+# End time: 14:50:59 on Oct 20,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:50:59 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(30): (vcom-1441) ELSIF GENERATE STATEMENT is not defined for this version of the language.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(55): VHDL Compiler exiting
+# End time: 14:50:59 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:15 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:51:16 on Oct 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:16 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
+# End time: 14:51:16 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:16 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(31): near "process": (vcom-1576) expecting IDENTIFIER or GENERATE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(34): VHDL Compiler exiting
+# End time: 14:51:16 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:28 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:51:28 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:28 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
+# End time: 14:51:29 on Oct 20,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:29 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(30): (vcom-1441) ELSE GENERATE STATEMENT is not defined for this version of the language.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(55): VHDL Compiler exiting
+# End time: 14:51:29 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Modified modelsim.ini
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:47 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:51:47 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:47 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# End time: 14:51:47 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:51:47 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# End time: 14:51:47 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:03 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:53:04 on Oct 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:04 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(23): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(59): VHDL Compiler exiting
+# End time: 14:53:04 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:04 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# End time: 14:53:04 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:23 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:53:23 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:23 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# End time: 14:53:23 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:23 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# End time: 14:53:23 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:30 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity Mpx
+# End time: 14:53:31 on Oct 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:31 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingCase of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# End time: 14:53:31 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:31 on Oct 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture UsingIf of Mpx
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity Mpx
+# End time: 14:53:31 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
