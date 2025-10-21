@@ -28,13 +28,6 @@ port map (
     iA         => iAllMuxA,
     iSel       => iAllMuxSel,
     oY         => oYUsingIf);
-
-    
-MpxUniversal : entity work.MpxUni(Uni)
-port map (
-    iA         => iAllMuxA,
-    iSel       => iAllMuxSel,
-    oY         => oYUniversal);
             
         
 end RTL;

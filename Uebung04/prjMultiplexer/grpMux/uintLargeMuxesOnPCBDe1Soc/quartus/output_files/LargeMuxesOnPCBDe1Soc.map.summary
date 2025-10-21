@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon Oct 20 19:57:32 2025
+Analysis & Synthesis Status : Successful - Tue Oct 21 18:12:03 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : LargeMuxesOnPCBDe1Soc
 Top-level Entity Name : LargeMuxesOnPCBDe1Soc
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 19
+Total pins : 18
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

@@ -14,14 +14,13 @@ begin
 -- Map Board Pin Naming to the internal naming
 AllMpx : entity work.LargeMuxes(RTL)
 generic map (
-    gLen => 8
+    gLen => 12
 )
 port map (
-    iAllMuxA        => GPIO_0(7 downto 0),
-    iAllMuxSel      => GPIO_0(14 downto 12),
-    oYUsingCase     => LEDR(2),
-    oYUsingIf       => LEDR(1),
-    oYUniversal     => LEDR(0)
+    iAllMuxA        => GPIO_0(11 downto 0),
+    iAllMuxSel      => GPIO_0(15 downto 12),
+    oYUsingCase     => LEDR(1),
+    oYUsingIf       => LEDR(0)
 );
 
 end Struct; 

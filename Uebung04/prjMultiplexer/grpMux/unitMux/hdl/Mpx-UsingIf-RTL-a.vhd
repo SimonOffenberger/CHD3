@@ -29,7 +29,7 @@ MPX: if gN=8 generate
         end if;
     end process;
 else generate
-        process (iA,iSel) is 
+    process (iA,iSel) is 
     begin
         if   (iSel = "0000") then oY <= iA(0);
         elsif(iSel = "0001") then oY <= iA(1);

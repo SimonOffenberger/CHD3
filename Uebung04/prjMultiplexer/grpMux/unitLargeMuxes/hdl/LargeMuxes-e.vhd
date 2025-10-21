@@ -22,8 +22,7 @@ entity LargeMuxes is
   port (iAllMuxA   : in std_ulogic_vector(gLen-1 downto 0);    -- input A
         iAllMuxSel : in std_ulogic_vector(natural(ceil(log2(real(gLen))))-1 downto 0);    -- input Sel
         oYUsingCase  : out std_ulogic;  -- output Y of Nand Only Mux
-        oYUsingIf  : out std_ulogic;  -- output Y of Nand Only Mux
-        oYUniversal  : out std_ulogic  -- output Y of Nand Only Mux
+        oYUsingIf  : out std_ulogic  -- output Y of Nand Only Mux
         );  
 end LargeMuxes;
 
