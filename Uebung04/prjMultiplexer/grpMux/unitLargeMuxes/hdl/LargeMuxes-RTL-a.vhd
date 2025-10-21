@@ -13,7 +13,7 @@ begin
 
 MpxUsingCase : entity work.Mpx(UsingCase)
 generic map (
-    n => 12
+    gN => glen
 )
 port map (
     iA         => iAllMuxA,
@@ -22,7 +22,7 @@ port map (
 
 MpxUsingIf : entity work.Mpx(UsingIf)
 generic map (
-    n=>12
+    gN=> glen
 )
 port map (
     iA         => iAllMuxA,

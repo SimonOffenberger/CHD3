@@ -11,10 +11,10 @@
 architecture UsingIf of Mpx is
 begin 
     -- make sure only supportet lengths are selcted
-    assert (n=8 or n=12) report "Length not supported" severity error;
+    assert (gN=8 or gN=12) report "Length not supported" severity error;
 
     -- generate the corrosponding process for selecting the input
-MPX: if n=8 generate
+MPX: if gN=8 generate
     process (iA,iSel) is 
     begin
         if   (iSel = "000") then oY <= iA(0);

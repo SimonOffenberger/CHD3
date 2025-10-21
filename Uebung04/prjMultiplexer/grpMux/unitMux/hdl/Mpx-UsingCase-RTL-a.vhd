@@ -12,10 +12,10 @@ architecture UsingCase of Mpx is
 begin 
 
     -- make sure only supported length are selected
-    assert (n=8 or n=12) report "Length not supported" severity error; 
+    assert (gN=8 or gN=12) report "Length not supported" severity error; 
 
     -- ether generate the statements for length 8 or for length 12
-MPX: if n=8 generate
+MPX: if gN=8 generate
     process (iA,iSel) is 
     begin
         case(iSel) is

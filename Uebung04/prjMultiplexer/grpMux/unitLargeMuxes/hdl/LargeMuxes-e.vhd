@@ -17,10 +17,10 @@ use ieee.math_real.all;
 
 entity LargeMuxes is
   generic (
-    n : natural
+    gLen : natural
   );
-  port (iAllMuxA   : in std_ulogic_vector(n-1 downto 0);    -- input A
-        iAllMuxSel : in std_ulogic_vector(natural(ceil(log2(real(n))))-1 downto 0);    -- input Sel
+  port (iAllMuxA   : in std_ulogic_vector(gLen-1 downto 0);    -- input A
+        iAllMuxSel : in std_ulogic_vector(natural(ceil(log2(real(gLen))))-1 downto 0);    -- input Sel
         oYUsingCase  : out std_ulogic;  -- output Y of Nand Only Mux
         oYUsingIf  : out std_ulogic;  -- output Y of Nand Only Mux
         oYUniversal  : out std_ulogic  -- output Y of Nand Only Mux
