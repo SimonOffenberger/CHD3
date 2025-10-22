@@ -1,0 +1,209 @@
+% ======================================================================
+%  Code Review Presentation Template – CHD3 (University)
+%  Author: Simon Offenberger
+%  Date: \today
+% ======================================================================
+
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% =======================
+%   THEMES & PACKAGES
+% =======================
+\usetheme{metropolis} % clean, professional theme
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% =======================
+%   DESIGN SETTINGS
+% =======================
+\definecolor{uniBlue}{RGB}{0,68,136}
+\definecolor{lightGray}{RGB}{245,245,245}
+\setbeamercolor{frametitle}{bg=uniBlue, fg=white}
+\setbeamercolor{title}{fg=uniBlue}
+\setbeamercolor{progress bar}{use=alerted text, fg=uniBlue}
+
+% =======================
+%   CODE LISTINGS STYLE
+% =======================
+\lstdefinestyle{codeStyle}{
+    backgroundcolor=\color{lightGray},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{uniBlue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{orange},
+    showstringspaces=false,
+    frame=single,
+    breaklines=true,
+    tabsize=2
+}
+\lstset{style=codeStyle}
+
+% =======================
+%   TITLE INFORMATION
+% =======================
+\title[CHD3 Übung 4]{Übung 4, Aufgabe 3}
+\subtitle{Analyse: Schaltplan des DE1 SOC Boards} 
+\author{Simon Offenberger S2410306027@fhooe.at} 
+\institute{FH Hagenberg}
+\date{\today}
+
+% =======================
+%   FOOTLINE ANPASSUNG
+% =======================
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.8\paperwidth,ht=2.5ex,dp=1.5ex,leftskip=1em]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.5ex,dp=1.5ex,rightskip=1em plus1fil]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertframenumber{} / \inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}
+
+\setbeamertemplate{navigation symbols}{} % entfernt die Navigationssymbole
+
+% =======================
+%   DOCUMENT
+% =======================
+\begin{document}
+
+% -----------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% -----------------------
+\begin{frame}{Agenda}
+    \begin{itemize}
+      \item Decoupling - Spannungsstabilisierung
+      \item GPIO-Schutzbeschaltung
+      \item IR-Emitter
+  \end{itemize}
+\end{frame}
+
+% -----------------------
+\begin{frame}{Decoupling - Spannungsstabilisierung}
+    \includegraphics[width=15cm]{Images/Decoupling.png}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{Decoupling - Spannungsstabilisierung}
+    \begin{columns}[T] % [T] = obere Ausrichtung
+    \column{0.5\textwidth}
+    \begin{itemize}
+      \item Warum so viele Kondensatoren parallel?
+      \begin{itemize}
+        \item Power Pins sind räumlich getrennt.
+      \end{itemize}
+      \item Reicht hier ein großer Kondensator?
+      \begin{itemize}
+        \item höherer ESR (Equivalent Series Resistance)
+        \item höhere ESL (Equivalent Series Inductance)
+        \item längere Leitungen zu den Power Pins.
+      \end{itemize}
+    \end{itemize}
+    \column{0.5\textwidth}
+      \centering
+      \includegraphics[height=7cm]{./../doc/images/Board.jpg}
+  \end{columns}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{Decoupling - Spannungsstabilisierung}
+      \includegraphics[width=15cm]{Images/Schematik_Decoupling.png}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{GPIO-Schutzbeschaltung}
+    \begin{columns}[T] % [T] = obere Ausrichtung
+    \column{0.3\textwidth}
+      \includegraphics[height=7cm]{./../doc/images/Schaltplan_Dioden.png}
+    \column{0.7\textwidth}
+      \centering
+      \includegraphics[width = 10cm]{./../doc/images/Schaltpan_R.png}
+  \end{columns}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{GPIO-Schutzbeschaltung Schutz vor Über- bzw. negativer Spannung}
+    \begin{columns}[T] % [T] = obere Ausrichtung
+    \column{0.5\textwidth}
+      \includegraphics[width=8cm]{./Images/GPIO_Schutz_pos.png}
+    \column{0.5\textwidth}
+      \centering
+      \includegraphics[width=8cm]{./Images/GPIO_Schutz_neg.png}
+  \end{columns}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{GPIO-Schutzbeschaltung Schutz vor Überstrom}
+      \includegraphics[width=8cm]{./Images/GPIO_Schutz_Kurzschluss.png}
+      \[
+      I_k = \dfrac{3.3\,\text{V}}{47\,\Omega} = 70mA
+      \]
+      \\
+      Absolute Maximum Pin Current : -25mA / 40mA
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{IR-Emitter Leistung an den Widerständen}
+    \begin{columns}[T] % [T] = obere Ausrichtung
+    \column{0.5\textwidth}
+\begin{align*}
+I &= \frac{V_{CC3P3} - V_f - V_{CE}}{R} \\
+  &= \frac{3.3\,\mathrm{V} - 1.7\,\mathrm{V} - 0.2\,\mathrm{V}}{2.5\,\Omega} \\
+  &= 560\,\mathrm{mA}
+\end{align*}
+
+\begin{align*}
+P_R &= R \cdot I^2\\
+    &= 2.5\,\Omega \times (0.56\,\mathrm{A})^2 \\
+    &= 0.784\,\mathrm{W}
+\end{align*}
+    $P_{R190} = P_{R191} = \frac{P_R}{2} = 0.392\,\mathrm{W}$
+      \column{0.5\textwidth}
+      \includegraphics[width=8cm]{./Images/IR-Emitter.png}
+  \end{columns}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{IR-Emitter Leistung an den Widerständen}
+  \begin{itemize}
+    \item Darf die LED dauerhaft eingeschaltet sein?
+  \end{itemize}
+  \begin{table}[h!]
+\centering
+\caption{Typische Nennleistungen von SMD-Widerständen}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Baugröße (imperial)} & \textbf{Nennleistung [W]} \\ \hline
+0201  & 0.05 \\ \hline
+0402  & 0.063 \\ \hline
+0603  & 0.10 \\ \hline
+0805  & 0.125 \\ \hline
+1206  & 0.25 \\ \hline
+1210  & 0.33 \\ \hline
+2010  & 0.50 \\ \hline
+2512  & 1.00 \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{IR-Emitter Leistung an der LED}
+  $P_{D} = V_f \cdot I = 1.7\,\mathrm{V} \times 560\,\mathrm{mA} = 0.952\,\mathrm{W}$
+\end{frame}
+% -----------------------
+\begin{frame}[standout]
+  Fragen?
+\end{frame}
+
+\end{document}
