@@ -17,6 +17,8 @@
 \usepackage{booktabs}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{pdfpages}
+
 
 % =======================
 %   DESIGN SETTINGS
@@ -200,6 +202,39 @@ P_R &= R \cdot I^2\\
 % -----------------------
 \begin{frame}{IR-Emitter Leistung an der LED}
   $P_{D} = V_f \cdot I = 1.7\,\mathrm{V} \times 560\,\mathrm{mA} = 0.952\,\mathrm{W}$
+  \begin{itemize}
+    \item Warum überhitzt die LED nicht?
+    \item pulsartige Ansteuerung -> meist für Datenübertragung
+    \item Wirkungsgrad von etwa 30\% -> Verlustleistung ca. 0.7W
+    \item Effiziente Wärmeableitung über Kupferfläche
+  \end{itemize}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{Spannungsversorgung - Verpolungsschutz}
+\includegraphics[width=13cm]{Images/ReversePolarity.png}
+\end{frame}
+% -----------------------
+% -----------------------
+\begin{frame}{Spannungsversorgung}
+\includegraphics[width=13cm]{Images/Switching Powersupply.png}
+\end{frame}
+% -----------------------
+
+\includepdf[pages=28-30]{C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf}
+
+% -----------------------
+\begin{frame}{Spannungsebenen am Board }
+\begin{itemize}
+  \item 1.1V / 8A
+  \item 3.3V / 5A
+  \item 2.5V / 3A
+  \item 1.5V / 3A
+  \item 9V / 0.5A
+  \item 1.2V / 1.1A
+  \item 1.8V / 1.1A
+  \item 1.5V -> DDR3
+\end{itemize}
 \end{frame}
 % -----------------------
 \begin{frame}[standout]

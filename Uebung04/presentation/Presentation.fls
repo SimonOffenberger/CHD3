@@ -356,6 +356,15 @@ INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.st
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\Presentation.aux
@@ -395,6 +404,12 @@ INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\translator\translat
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT .\Presentation.nav
 INPUT .\Presentation.nav
 INPUT Presentation.nav
@@ -509,6 +524,44 @@ INPUT .\Images\IR-Emitter.png
 INPUT .\Images\IR-Emitter.png
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1000.tfm
 INPUT C:\Users\Simon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1095.tfm
+INPUT .\Images\ReversePolarity.png
+INPUT .\Images\ReversePolarity.png
+INPUT .\Images\ReversePolarity.png
+INPUT .\Images\ReversePolarity.png
+INPUT .\Images\ReversePolarity.png
+INPUT .\Images\ReversePolarity.png
+INPUT .\Images\ReversePolarity.png
+INPUT .\Images\Switching Powersupply.png
+INPUT .\Images\Switching Powersupply.png
+INPUT .\Images\Switching Powersupply.png
+INPUT .\Images\Switching Powersupply.png
+INPUT .\Images\Switching Powersupply.png
+INPUT .\Images\Switching Powersupply.png
+INPUT .\Images\Switching Powersupply.png
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
+INPUT C:\HSD_SEM_3\CHD3\Uebung04\literature\terasic\DE1-SoC\DE1-SoC.pdf
 OUTPUT Presentation.nav
 OUTPUT Presentation.toc
 OUTPUT Presentation.snm

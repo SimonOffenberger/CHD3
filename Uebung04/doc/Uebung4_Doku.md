@@ -108,7 +108,7 @@ Leistungsumsatz in der LED:
 
 $P_{D} = V_f \cdot I = 1.7\,\mathrm{V} \times 560\,\mathrm{mA} = 0.952\,\mathrm{W}$
 
-Die Led überhitzt einerseits nicht weil sie typischerweise nur pulsweise eingeschaltet wird und andererseits durch ihren hohen Wirkungsgrad. Dies bedeutet, dass nur ein kleiner Teil der Leistung an der LED in Wärme umgesetzt wird.
+Die Led überhitzt einerseits nicht weil sie typischerweise nur pulsweise eingeschaltet wird. Eine IR-LED hat außerdem typischerweise einen Wirkungsgrad von etwa 30%. Also werden 70% der Leistung in Wärme umgesetzt. Dies entspricht hier etwa 0.7W. Ein dauerbetrieb der LED würde wahrscheinlich auch hier zu einer Überhitzung führen.
 
 ### Spannungsversorgung DE1 Soc
 Die Komponenten ab der Seite 27 dienen für die Bereitstellung der verschiedenen Spannungsebenen zu Versorgung des FPGAs und anderer Komponenten am Board. Hier werden auch Referenzspannungen, zB. für das DDR Interface erzeugt.
