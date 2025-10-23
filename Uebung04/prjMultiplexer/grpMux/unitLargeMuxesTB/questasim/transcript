@@ -18,230 +18,17 @@ vmap -del work
 # vmap -del work 
 # Removing reference to logical library work
 # Modifying modelsim.ini
+vdel -all -lib work
 vlib work
 vmap work work
 # Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
 # vmap work work 
 # Modifying modelsim.ini
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:48:33 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity Mpx
-# End time: 14:48:34 on Oct 20,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:48:34 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingCase of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
-# End time: 14:48:34 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:48:34 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingIf of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# End time: 14:48:34 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:49:57 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity Mpx
-# End time: 14:49:57 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:49:57 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingCase of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
-# End time: 14:49:57 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:49:57 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingIf of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Warning: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(24): Nonresolved signal 'oY' may have multiple sources.
-#   Drivers:
-#     C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(34):Process line__34
-#        Driven at:
-#           C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(36)
-#     C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(17):Process line__17
-#        Driven at:
-#           C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(19)
-# End time: 14:49:57 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:50:58 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity Mpx
-# End time: 14:50:58 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:50:58 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingCase of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
-# End time: 14:50:59 on Oct 20,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:50:59 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingIf of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(30): (vcom-1441) ELSIF GENERATE STATEMENT is not defined for this version of the language.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(55): VHDL Compiler exiting
-# End time: 14:50:59 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:15 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity Mpx
-# End time: 14:51:16 on Oct 20,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:16 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingCase of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
-# End time: 14:51:16 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:16 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingIf of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(31): near "process": (vcom-1576) expecting IDENTIFIER or GENERATE.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(34): VHDL Compiler exiting
-# End time: 14:51:16 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:28 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity Mpx
-# End time: 14:51:28 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:28 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingCase of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(19): (vcom-1014) Array type case expression must be of a locally static subtype.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(40): VHDL Compiler exiting
-# End time: 14:51:29 on Oct 20,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:29 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingIf of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(30): (vcom-1441) ELSE GENERATE STATEMENT is not defined for this version of the language.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd(55): VHDL Compiler exiting
-# End time: 14:51:29 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
 # Modified modelsim.ini
 # Modified modelsim.ini
 vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:47 on Oct 20,2025
+# Start time: 14:39:48 on Oct 23,2025
 # vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -249,11 +36,11 @@ vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/gr
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
 # -- Compiling entity Mpx
-# End time: 14:51:47 on Oct 20,2025, Elapsed time: 0:00:00
+# End time: 14:39:49 on Oct 23,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:47 on Oct 20,2025
+# Start time: 14:39:49 on Oct 23,2025
 # vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
 # -- Loading package STANDARD
 # -- Compiling architecture UsingCase of Mpx
@@ -262,11 +49,11 @@ vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/gr
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
 # -- Loading entity Mpx
-# End time: 14:51:47 on Oct 20,2025, Elapsed time: 0:00:00
+# End time: 14:39:49 on Oct 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:51:47 on Oct 20,2025
+# Start time: 14:39:49 on Oct 23,2025
 # vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
 # -- Loading package STANDARD
 # -- Compiling architecture UsingIf of Mpx
@@ -275,121 +62,956 @@ vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/gr
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
 # -- Loading entity Mpx
-# End time: 14:51:47 on Oct 20,2025, Elapsed time: 0:00:00
+# End time: 14:39:49 on Oct 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-e.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:03 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# Start time: 14:39:55 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-e.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
-# -- Compiling entity Mpx
-# End time: 14:53:04 on Oct 20,2025, Elapsed time: 0:00:01
+# -- Compiling entity LargeMuxes
+# End time: 14:39:56 on Oct 23,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:04 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# Start time: 14:39:56 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd 
 # -- Loading package STANDARD
-# -- Compiling architecture UsingCase of Mpx
+# -- Compiling architecture RTL of LargeMuxes
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
+# -- Loading entity LargeMuxes
 # -- Loading entity Mpx
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(23): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
-# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd(59): VHDL Compiler exiting
-# End time: 14:53:04 on Oct 20,2025, Elapsed time: 0:00:00
+# End time: 14:39:56 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:40:02 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(22): (vcom-1136) Unknown identifier "ceil".
+# -- Loading package MATH_REAL
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(43): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(43): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(47): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(47): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(47): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(48): Illegal target for signal assignment.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(48): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(48): (vcom-1136) Unknown identifier "iSel".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(63): VHDL Compiler exiting
+# End time: 14:40:02 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 16, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:40:24 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(22): (vcom-1136) Unknown identifier "ceil".
+# -- Loading package MATH_REAL
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(43): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(48): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(48): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(63): VHDL Compiler exiting
+# End time: 14:40:24 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:40:25 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(22): (vcom-1136) Unknown identifier "ceil".
+# -- Loading package MATH_REAL
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(43): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(48): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(48): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(57): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(63): VHDL Compiler exiting
+# End time: 14:40:25 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:40:54 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(45): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(64): VHDL Compiler exiting
+# End time: 14:40:54 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:40:54 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(45): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(64): VHDL Compiler exiting
+# End time: 14:40:54 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:41:42 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): Range expression must not be in parentheses.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): near "(": (vcom-1576) expecting ')'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(45): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(64): VHDL Compiler exiting
+# End time: 14:41:42 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:42:01 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): Range expression must not be in parentheses.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(44): near "(": (vcom-1576) expecting ')'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(45): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(64): VHDL Compiler exiting
+# End time: 14:42:02 on Oct 23,2025, Elapsed time: 0:00:01
+# Errors: 10, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:42:37 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(64): VHDL Compiler exiting
+# End time: 14:42:37 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:42:38 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(49): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(64): VHDL Compiler exiting
+# End time: 14:42:38 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:44:42 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1581) No feasible entries for infix operator '+'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oY".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "iA".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(64): VHDL Compiler exiting
+# End time: 14:44:42 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:45:10 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oYUsingCase".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(61): (vcom-1136) Unknown identifier "oYUsingIf".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(61): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(67): VHDL Compiler exiting
+# End time: 14:45:10 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:45:11 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): (vcom-1136) Unknown identifier "oYUsingCase".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(61): (vcom-1136) Unknown identifier "oYUsingIf".
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(61): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(67): VHDL Compiler exiting
+# End time: 14:45:11 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:45:17 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:45:17 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:45:17 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:45:17 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:45:18 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:45:18 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:45:18 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:45:18 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:46:17 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:46:17 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.allmpxtb(testbench) -voptargs=+acc
+# vsim -gui work.allmpxtb(testbench) -voptargs="+acc" 
+# Start time: 14:46:36 on Oct 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+add wave -position end  sim:/allmpxtb/A
+add wave -position end  sim:/allmpxtb/Sel
+add wave -position end  sim:/allmpxtb/YUsingCase
+add wave -position end  sim:/allmpxtb/YUsingIf
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 0 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 0 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 20 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 20 ns  Iteration: 1  Instance: /allmpxtb
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:47:49 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(46): near "Sel": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(74): VHDL Compiler exiting
+# End time: 14:47:49 on Oct 23,2025, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:04 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingIf of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# End time: 14:53:04 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:23 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# Start time: 14:48:03 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
-# -- Compiling entity Mpx
-# End time: 14:53:23 on Oct 20,2025, Elapsed time: 0:00:00
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:48:03 on Oct 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:23 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingCase of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# End time: 14:53:23 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:23 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
-# -- Loading package STANDARD
-# -- Compiling architecture UsingIf of Mpx
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# End time: 14:53:23 on Oct 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:30 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd 
+# Start time: 14:49:50 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
-# -- Compiling entity Mpx
-# End time: 14:53:31 on Oct 20,2025, Elapsed time: 0:00:01
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:49:50 on Oct 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+run
+# ** Fatal: (vsim-3734) Index value 12 is out of range 11 downto 0.
+#    Time: 110 ns  Iteration: 2  Process: /allmpxtb/verify File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Fatal error in Process verify at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd line 62
+# 
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 62 Process verify
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 62 Process verify
+# 
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:31 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd 
+# Start time: 14:51:01 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
 # -- Loading package STANDARD
-# -- Compiling architecture UsingCase of Mpx
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# End time: 14:53:31 on Oct 20,2025, Elapsed time: 0:00:00
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:51:01 on Oct 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+# Load canceled
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+run
+# ** Fatal: (vsim-3734) Index value 12 is out of range 11 downto 0.
+#    Time: 110 ns  Iteration: 2  Process: /allmpxtb/verify File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Fatal error in Process verify at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd line 62
+# 
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 62 Process verify
+# 
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 14:53:31 on Oct 20,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd 
+# Start time: 14:52:54 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
 # -- Loading package STANDARD
-# -- Compiling architecture UsingIf of Mpx
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
-# -- Loading entity Mpx
-# End time: 14:53:31 on Oct 20,2025, Elapsed time: 0:00:00
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:52:55 on Oct 23,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:52:56 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:52:56 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+run
+# ** Fatal: (vsim-3734) Index value 12 is out of range 11 downto 0.
+#    Time: 110 ns  Iteration: 2  Process: /allmpxtb/verify File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Fatal error in Process verify at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd line 62
+# 
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 62 Process verify
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 62 Process verify
+# 
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:53:44 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:53:44 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+run
+# ** Fatal: (vsim-3734) Index value 12 is out of range 11 downto 0.
+#    Time: 110 ns  Iteration: 2  Process: /allmpxtb/verify File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Fatal error in Process verify at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd line 62
+# 
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 62 Process verify
+# 
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:54:19 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:54:19 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 0 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 0 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 10 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 20 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 20 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 30 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 40 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 40 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 50 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 50 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 60 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 60 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 70 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 70 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 80 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 80 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 90 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 90 ns  Iteration: 1  Instance: /allmpxtb
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 100 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 100 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 110 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 110 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 120 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 120 ns  Iteration: 1  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 120 ns  Iteration: 1  Instance: /allmpxtb
+# ** Error: Mux malfunction
+#    Time: 120 ns  Iteration: 1  Instance: /allmpxtb
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:55:40 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(45): near "<=": (vcom-1576) expecting => or '|' or '!'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd(70): VHDL Compiler exiting
+# End time: 14:55:40 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:55:55 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:55:55 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+run
+# ** Fatal: (vsim-3734) Index value 12 is out of range 11 downto 0.
+#    Time: 120 ns  Iteration: 2  Process: /allmpxtb/verify File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Fatal error in Process verify at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd line 61
+# 
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 61 Process verify
+# 
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 14:59:41 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 14:59:41 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 15:00:19 on Oct 23,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity AllMpxTB
+# -- Compiling architecture testbench of AllMpxTB
+# -- Loading entity LargeMuxes
+# End time: 15:00:19 on Oct 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.allmpxtb(testbench)#1
+# Loading work.largemuxes(rtl)#1
+# Loading work.mpx(usingcase)#1
+# Loading work.mpx(usingif)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /allmpxtb
+run
+# End time: 15:10:31 on Oct 23,2025, Elapsed time: 0:23:55
+# Errors: 0, Warnings: 4

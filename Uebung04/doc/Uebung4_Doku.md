@@ -1,8 +1,58 @@
 # Übung 4 Simon Offenberger S2410306027  
 ## Aufgabe 1 Hierachie im Entwurf
 ### Design Partition
-??
-??
+Als erstes wurde alle Unterentities mittel der Anleitung fixiert.
+
+![Project Navigator](./images/AllFixedNav.png)
+
+Jetzt erscheint im Project Navigator hinter allen Entities das Symbol.
+Danach wurde die Synthese des Projects gestartet.
+
+![RTL_All_Fixed](./images/RTL-all-fixed.png)
+
+Durch den Vergleich des RTL-Viewers aus der vorigen Übung ist hier kein Unterschied zu erkennen.
+Dies macht auch, Sinn da die Optimierte Version erst durch den Technologie Map Viewer ersichtlich wurde.
+
+![Tech_Map](./images/TechMap-Fixed_all.png)
+
+In dieser Ansicht ist nun ein Unterschied zur vorherigen Übung zu erkennen.
+Hier wurden nun alle Implementationen vom Multiplexer Umgesetzt.
+Auch die Umsetzung des Nand Gatters mittels der Entitiy Nand 2 ist ersichtlich. 
+Dies liegt nahe, dass diese Option die Optimierungsgrenzen für das Design festlegen.
+Wenn hier alle Entities fixiert werden, kann nur das Verhalten innerhalb dieser Entity optimiert werden.
+
+![Ressource Usage](./images/Ressource_usage_all_fixed.png)
+
+Durch die Betrachtung der Ressource Usage im Fitter Report wird die Anzahl der benötigten ALMs angezeigt.
+Hier ist nun ein deutlich höherer Verbrauch zur vorigen Übung ersichtlich.
+Dies ist durch die Umsetzung von jeder Entity ersichtlich.
+
+![Timing](./images/Timing_fixed_slow.png)
+
+Hier beträgt die langsamste Zeit : 16.85 ns
+Zuvor aus der Übung 3 wurde die langsamste Zeit mit 14.416 ns festgestellt.
+
+Hier ist eine Verschlechterung der Propagation Delays ersichtlich.  
+
+
+### Experiment mit Design Partition
+
+Hier wurden alle Entities ausgewählt bis auf die Ebene mit den Nand2 Entities.
+
+Erwartet wird, dass nun der Technologie Map Viewer unterschiedlich ist.
+
+### RTL Viewer
+![RTL_View_Experiment](./images/RTL-Viewer.png)
+
+![Technologie Map Viewer](./images/TechMap_Nand_not_fixed.png)
+
+Hier ist ersichtlich, dass Innerhalb der Entity TheNand2 optimiert wurde.
+
+![Ressource Section ](./images/Ressource_nonFixed.png)
+
+Hier wird nun auch die Anzahl der verbrachten ALMs geringer, da die Optimierung auf der Ebene 
+vom TheNand2Only arbeiten kann.
+
 ### Warum gibt es diese Feature nur in der Standardversion?
 ### Incremental Compile
 Hierzu wurde im Internet auf der Webseite von Intel (Altera) nach dem Schlüsselwort **Incremental Compile** gesucht.
@@ -61,6 +111,13 @@ Durch den Vergleich der Timings der Variante mit **N=8** zu **N=12** ist nur ein
 Die langsamste Zeit bei N=8 beträgt 15.9ns und bei N=12 15.1ns.
 Die schnellste Zeit bei N=8 = 7.7ns und bei N=12 7.7ns.
 Trotz der Rückkopplung im Technology Map Viewers ergibt sich kein großer Unterschied zwischen den Timings!
+
+### Simulation mittels Testbench
+
+![Wavefomr](./images/Waveform.png)
+
+Hier wurde in der Testbench mittels Verify Process des Ergebnis des Multiplexers überprüft.
+Im Stimul Process werden die Waveforms für die Inputs erzeugt.
 
 ### Allgemeines Multiplexer Model
 Ein allgemeines Multiplexer Model lässt sich mittels if-elsif-else bzw. case nicht umsetzen, denn hier müsste man jede Kombination von der Select Leitung in einem Eigenen if bzw. when Zweig auffassen. Auch jede Bit Anzahl der Select Leitung müsste berücksichtigt werden. Dies führt mit Sicherheit zu Compile errors! (length missmatch).

@@ -1,6 +1,26 @@
 m255
 K4
 z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
 !s11e vcom 2023.3 2023.07, Jul 17 2023
 13
 !s112 1.1
@@ -8,76 +28,181 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitAllMuxesTB/questasim
+Z2 dC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/questasim
+T_opt
+!s110 1761224422
+VdVDf@LXzj=]o[[6>`5^Tn2
+04 8 9 work allmpxtb testbench 1
+=10-c84bd6cd0cef-68fa26e6-2a7-9624
+R1
+!s12b OEM100
+!s124 OEM10U4 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Eallmpxtb
+Z3 w1761224413
+Z4 DPx4 ieee 9 math_real 0 22 :8NNHF3SFI6^on5?4X[S`1
+Z5 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z6 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z7 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 30
+R2
+Z8 8C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+Z9 FC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd
+l0
+L17 1
+VBE>n2[YYE@WmfkAo2PQ8h3
+!s100 gI5W]MfiIT7>iDh]d?`lE2
+Z10 OL;C;2023.3;77
+33
+Z11 !s110 1761224419
+!i10b 1
+Z12 !s108 1761224419.000000
+Z13 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd|
+Z14 !s107 C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxesTB/hdl/LargeMpxTB-ea.vhd|
+!i113 0
+Z15 o-O0 -work work
+Z16 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
+Atestbench
+Z17 DEx4 work 10 largemuxes 0 22 me`o27AWHnGFkPR>3PLVi0
+R4
+R5
+R6
+R7
+DEx4 work 8 allmpxtb 0 22 BE>n2[YYE@WmfkAo2PQ8h3
+!i122 30
+l26
+L20 51
+VB2Pe]S=aE=@L?HB8[E7zG1
+!s100 SRS_kYhJZOKihT>YH8^c?0
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Elargemuxes
+Z18 w1761061279
+R4
+R5
+R6
+R7
+!i122 1
+R2
+8C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-e.vhd
+FC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-e.vhd
+l0
+Z19 L18 1
+Vme`o27AWHnGFkPR>3PLVi0
+!s100 B09NV>0oJgQi:dEeiZU3K1
+R10
+33
+Z20 !s110 1761223196
+!i10b 1
+!s108 1761223195.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-e.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-e.vhd|
+!i113 0
+R15
+R16
+Artl
+Z21 DEx4 work 3 mpx 0 22 VX9b?KLOf]VjN[^bIfBil0
+R4
+R5
+R6
+R7
+R17
+!i122 2
+8C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd
+l12
+L11 23
+V45l5b41YB<kSYhD47b1o`1
+!s100 8Ofa?2aTGJD2h3C7NDiY00
+R10
+33
+R20
+!i10b 1
+!s108 1761223196.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd|
+!i113 0
+R15
+R16
 Empx
-w1760951954
-Z1 DPx4 ieee 9 math_real 0 22 :8NNHF3SFI6^on5?4X[S`1
-Z2 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
-Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
-Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
-!i122 8
-R0
+Z22 w1761046950
+R4
+R5
+R6
+R7
+!i122 0
+R2
 8C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
 FC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd
 l0
-L18 1
-VDfY8Xch9EjR:^mDNFV^7Z1
-!s100 21SAI^O=h85mcQ=c=H4;;1
-Z5 OL;C;2023.3;77
+R19
+VVX9b?KLOf]VjN[^bIfBil0
+!s100 cbZ^Lc[fUCJD4GXlmBk>12
+R10
 33
-Z6 !s110 1760964811
+Z23 !s110 1761223189
 !i10b 1
-!s108 1760964810.000000
+!s108 1761223188.000000
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd|
 !i113 0
-Z7 o-O0 -work work
-Z8 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
+R15
+R16
 Ausingif
-Z9 w1760964716
-R1
-R2
-R3
+w1761063110
 R4
-Z10 DEx4 work 3 mpx 0 22 DfY8Xch9EjR:^mDNFV^7Z1
-!i122 9
-Z11 8C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
-Z12 FC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
-l12
-Z13 L11 44
-Z14 Vo7[b7kkAT3K@^zGOoD0<n2
-Z15 !s100 i_oPJD`FV4T=@c1iJJL`12
 R5
-33
 R6
-!i10b 1
-Z16 !s108 1760964811.000000
-Z17 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd|
-Z18 !s107 C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd|
-!i113 0
 R7
-R8
-Ausingcase
-w1760964800
-R1
-R2
-R3
-R4
+R21
+!i122 1
+8C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd
+l12
+Z24 L11 44
+V9>kGU2TnniTnh_ICXO`Yz2
+!s100 =oLBNJAUEk96o;XQ54f2@2
 R10
-!i122 9
+33
+R23
+!i10b 1
+Z25 !s108 1761223189.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd|
+!i113 0
+R15
+R16
+Ausingcase
+R4
+R5
+R6
+R7
+R21
+!i122 1
 8C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd
 l12
-L11 50
-V4LWiSghi^NL>ggiaU1eW50
-!s100 <aU=ezMaY>UcmLgAAm8cG2
-R5
+R24
+VZg_VJ0k_R?R2f_E?NCQU@2
+!s100 ?CIz2K`95bbO<GBlolg[j1
+R10
 33
-R6
+R23
 !i10b 1
-R16
+R25
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd|
 !i113 0
-R7
-R8
+R15
+R16

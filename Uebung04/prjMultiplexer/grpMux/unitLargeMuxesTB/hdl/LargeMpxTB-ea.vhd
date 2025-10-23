@@ -11,115 +11,62 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use ieee.math_real.all; -- library for math functions
 
 
 entity AllMpxTB is
 end AllMpxTB;
 
 architecture testbench of AllMpxTB is
-    signal A            : std_ulogic_vector;
-    signal Sel          : std_ulogic_vector;
+    constant Len        : natural := 12;
+    signal A            : std_ulogic_vector (Len-1 downto 0);
+    signal Sel          : std_ulogic_vector (natural(ceil(log2(real(Len))))-1 downto 0);
     signal YUsingCase    : std_ulogic;
-    signal YUsingIf    : std_ulogic;
+    signal YUsingIf      : std_ulogic;
 begin 
 
--- instanziate the entitiy with all the multiplexer
-AllMpx : entity work.AllMpx(Struct)
+-- Map Board Pin Naming to the internal naming
+AllMpx : entity work.LargeMuxes(RTL)
+generic map (
+    gLen => Len
+)
 port map (
     iAllMuxA        => A,
-    iAllMuxB        => B,
     iAllMuxSel      => Sel,
-    oYMin           => YMin,
-    oYPrime         => YPrime,
-    oYNand          => YNand,
-    oYTheNand2      => YTheNand2,
     oYUsingCase     => YUsingCase,
-    oYUsingIf     => YUsingIf
+    oYUsingIf       => YUsingIf
 );
 
 -- Feed the testdata to the Entity of the Multiplexer
 stimul: process is
 begin
-    A    <= '0';
-    B    <= '0';
-    Sel <= '0';
-
+    -- initialize the values of the Inputs
+    A<=(others => '0');
+    A(0) <= '1';
+    Sel <= (others => '0');
     wait for 10 ns;
 
-    A    <= '1';
-    B    <= '0';
-    Sel <= '0';
-
-    wait for 10 ns;
-
-    A    <= '1';
-    B    <= '1';
-    Sel <= '0';
-
-    wait for 10 ns;
-
-    A    <= '0';
-    B    <= '1';
-    Sel <= '0';
-
-    wait for 10 ns;
-
-    A    <= '0';
-    B    <= '0';
-    Sel <= '1';
-
-    wait for 10 ns;
-
-    A    <= '1';
-    B    <= '0';
-    Sel <= '1';
-
-    wait for 10 ns;
-
-    A    <= '1';
-    B    <= '1';
-    Sel <= '1';
-
-    wait for 10 ns;
-
-    A    <= '1';
-    B    <= '1';
-    Sel <= '1';
-
-    wait for 10 ns;
-
-    A    <= '1';
-    B    <= '0';
-    Sel <= 'U';
-
-    wait for 10 ns;
-
-    A    <= '1';
-    B    <= '0';
-    Sel <= 'X';
+    -- loop through all possiblities for Sel
+    -- and shift 1 through the bitvector A
+    for i in 1 to (len-1) loop
+        Sel <= std_ulogic_vector(unsigned(Sel) + 1);
+        A <= A sll 1;
+        wait for 10 ns;
+    end loop;
 
     wait;
 end process stimul;
 
 -- process that verifies the result of the Multiplexer
-verify: postponed process (A,B,Sel) is
+verify: postponed process (A,Sel) is
 begin
 
-    if(Sel = '0') then
-        assert YMin = A   report "Muliplexer failure Minterms" severity error;
-        assert YPrime = A report "Muliplexer failure Prime Implicant" severity error;
-        assert YNand = A  report "Muliplexer failure Nand Only" severity error;
-        assert YTheNand2 = A  report "Muliplexer failure TheNand2 Only" severity error;
-        assert YUsingCase = A  report "Muliplexer failure Using Case" severity error;
-        assert YUsingIf = A  report "Muliplexer failure Using IF" severity error;
-    else 
-        assert YMin = B   report "Multiplexer failure Minterms" severity error;
-        assert YPrime = B report "Multiplexer failure Prime Implicant" severity error;
-        assert YNand = B  report "Multiplexer failure Nand Only" severity error;
-        assert YTheNand2 = B  report "Multiplexer failure TheNand2" severity error;
-        assert YUsingCase = B  report "Multiplexer failure Using Case" severity error;
-        assert YUsingIf = B  report "Multiplexer failure Using If" severity error;
-    end if;
+    assert (YUsingCase = A(A'low + to_integer(unsigned(Sel))))
+    report "Mux malfunction" 
+    severity error;
+    assert (YUsingIf = A(A'low + to_integer(unsigned(Sel))))
+    report "Mux malfunction" 
+    severity error;
 
 end process verify;
 
