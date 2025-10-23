@@ -1,6 +1,6 @@
 Analysis & Synthesis report for LargeMuxesOnPCBDe1Soc
-Tue Oct 21 13:28:07 2025
-Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Standard Edition
+Wed Oct 22 12:10:54 2025
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Standard Edition
 
 
 ---------------------
@@ -27,44 +27,44 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Standard Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                          ;
-+---------------------------------+-----------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 21 13:28:07 2025               ;
-; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Standard Edition ;
-; Revision Name                   ; LargeMuxesOnPCBDe1Soc                               ;
-; Top-level Entity Name           ; LargeMuxesOnPCBDe1Soc                               ;
-; Family                          ; Cyclone V                                           ;
-; Logic utilization (in ALMs)     ; N/A                                                 ;
-; Total registers                 ; 0                                                   ;
-; Total pins                      ; 19                                                  ;
-; Total virtual pins              ; 0                                                   ;
-; Total block memory bits         ; 0                                                   ;
-; Total DSP Blocks                ; 0                                                   ;
-; Total HSSI RX PCSs              ; 0                                                   ;
-; Total HSSI PMA RX Deserializers ; 0                                                   ;
-; Total HSSI TX PCSs              ; 0                                                   ;
-; Total HSSI PMA TX Serializers   ; 0                                                   ;
-; Total PLLs                      ; 0                                                   ;
-; Total DLLs                      ; 0                                                   ;
-+---------------------------------+-----------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Oct 22 12:10:54 2025           ;
+; Quartus Prime Version           ; 18.1.1 Build 646 04/11/2019 SJ Standard Edition ;
+; Revision Name                   ; LargeMuxesOnPCBDe1Soc                           ;
+; Top-level Entity Name           ; LargeMuxesOnPCBDe1Soc                           ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 0                                               ;
+; Total pins                      ; 19                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
@@ -161,7 +161,7 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
+; Number detected on machine ; 6           ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -314,8 +314,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Standard Edition
-    Info: Processing started: Tue Oct 21 13:27:57 2025
+    Info: Version 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+    Info: Processing started: Wed Oct 22 12:10:40 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LargeMuxesOnPCBDe1Soc -c LargeMuxesOnPCBDe1Soc
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file //hagfsstud/homes/s2410306027/documents/github/chd3/uebung04/prjmultiplexer/grpmux/uintlargemuxesonpcbde1soc/hdl/largemuxesonpcbde1soc-struct-a.vhd
@@ -349,9 +349,9 @@ Info (21057): Implemented 24 device resources after synthesis - the final resour
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 5 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4948 megabytes
-    Info: Processing ended: Tue Oct 21 13:28:08 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Wed Oct 22 12:10:54 2025
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:21
 
 

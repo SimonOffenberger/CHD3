@@ -1,0 +1,260 @@
+Partition Merge report for AllMuxesOnPCBDe1Soc
+Wed Oct 22 12:38:59 2025
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Partition Statistics
+  5. Partition Merge Partition Pin Processing
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                           ;
++---------------------------------+-------------------------------------------------+
+; Partition Merge Status          ; Successful - Wed Oct 22 12:38:59 2025           ;
+; Quartus Prime Version           ; 18.1.1 Build 646 04/11/2019 SJ Standard Edition ;
+; Revision Name                   ; AllMuxesOnPCBDe1Soc                             ;
+; Top-level Entity Name           ; AllMuxesOnPCBDe1Soc                             ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 0                                               ;
+; Total pins                      ; 9                                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                                ;
++--------------------------------+----------------+-------------------+------------------------+------------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents                 ;
++--------------------------------+----------------+-------------------+------------------------+------------------------------------+
+; Top                            ; User-created   ; Source File       ; Source File            ;                                    ;
+; AllMpx:AllMpx                  ; User-created   ; Post-Synthesis    ; Post-Synthesis         ; AllMpx:AllMpx                      ;
+; Mpx:MpxMinTerms                ; User-created   ; Post-Synthesis    ; Post-Synthesis         ; AllMpx:AllMpx|Mpx:MpxMinTerms      ;
+; Mpx:MpxNandOnlyTerms           ; User-created   ; Post-Synthesis    ; Post-Synthesis         ; AllMpx:AllMpx|Mpx:MpxNandOnlyTerms ;
+; Mpx:MpxPrimImplTerms           ; User-created   ; Post-Synthesis    ; Post-Synthesis         ; AllMpx:AllMpx|Mpx:MpxPrimImplTerms ;
+; Mpx:MpxTheNand2Only            ; User-created   ; Post-Synthesis    ; Post-Synthesis         ; AllMpx:AllMpx|Mpx:MpxTheNand2Only  ;
+; Mpx:MpxUsingCase               ; User-created   ; Post-Synthesis    ; Post-Synthesis         ; AllMpx:AllMpx|Mpx:MpxUsingCase     ;
+; Mpx:MpxUsingIf                 ; User-created   ; Post-Synthesis    ; Post-Synthesis         ; AllMpx:AllMpx|Mpx:MpxUsingIf       ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst     ;
++--------------------------------+----------------+-------------------+------------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                                                                                                         ;
++---------------------------------------------+-----+---------------+-----------------+----------------------+----------------------+---------------------+------------------+----------------+--------------------------------+
+; Statistic                                   ; Top ; AllMpx:AllMpx ; Mpx:MpxMinTerms ; Mpx:MpxNandOnlyTerms ; Mpx:MpxPrimImplTerms ; Mpx:MpxTheNand2Only ; Mpx:MpxUsingCase ; Mpx:MpxUsingIf ; hard_block:auto_generated_inst ;
++---------------------------------------------+-----+---------------+-----------------+----------------------+----------------------+---------------------+------------------+----------------+--------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1   ; 0             ; 1               ; 1                    ; 1                    ; 1                   ; 1                ; 1              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; Combinational ALUT usage for logic          ; 2   ; 0             ; 1               ; 1                    ; 1                    ; 1                   ; 1                ; 1              ; 0                              ;
+;     -- 7 input functions                    ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- 6 input functions                    ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- 5 input functions                    ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- 4 input functions                    ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- <=3 input functions                  ; 2   ; 0             ; 1               ; 1                    ; 1                    ; 1                   ; 1                ; 1              ; 0                              ;
+; Memory ALUT usage                           ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- 64-address deep                      ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- 32-address deep                      ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; Dedicated logic registers                   ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; I/O pins                                    ; 9   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+; I/O registers                               ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+; Total block memory bits                     ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+; Total block memory implementation bits      ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; Connections                                 ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+;     -- Input Connections                    ; 6   ; 0             ; 3               ; 3                    ; 3                    ; 3                   ; 3                ; 3              ; 0                              ;
+;     -- Registered Input Connections         ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Output Connections                   ; 18  ; 0             ; 1               ; 1                    ; 1                    ; 1                   ; 1                ; 1              ; 0                              ;
+;     -- Registered Output Connections        ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; Internal Connections                        ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+;     -- Total Connections                    ; 35  ; 0             ; 4               ; 4                    ; 4                    ; 4                   ; 4                ; 4              ; 0                              ;
+;     -- Registered Connections               ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; External Connections                        ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+;     -- Top                                  ; 0   ; 0             ; 4               ; 4                    ; 4                    ; 4                   ; 4                ; 4              ; 0                              ;
+;     -- AllMpx:AllMpx                        ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Mpx:MpxMinTerms                      ; 4   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Mpx:MpxNandOnlyTerms                 ; 4   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Mpx:MpxPrimImplTerms                 ; 4   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Mpx:MpxTheNand2Only                  ; 4   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Mpx:MpxUsingCase                     ; 4   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Mpx:MpxUsingIf                       ; 4   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; Partition Interface                         ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+;     -- Input Ports                          ; 3   ; 3             ; 3               ; 3                    ; 3                    ; 3                   ; 3                ; 3              ; 0                              ;
+;     -- Output Ports                         ; 6   ; 6             ; 1               ; 1                    ; 1                    ; 1                   ; 1                ; 1              ; 0                              ;
+;     -- Bidir Ports                          ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; Registered Ports                            ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+;     -- Registered Input Ports               ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Registered Output Ports              ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;                                             ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+; Port Connectivity                           ;     ;               ;                 ;                      ;                      ;                     ;                  ;                ;                                ;
+;     -- Input Ports driven by GND            ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Input Ports with no Source           ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Output Ports with no Source          ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0   ; 0             ; 0               ; 0                    ; 0                    ; 0                   ; 0                ; 0              ; 0                              ;
++---------------------------------------------+-----+---------------+-----------------+----------------------+----------------------+---------------------+------------------+----------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                     ;
++----------------------------------------------+----------------------+---------------+----------+-------------+
+; Name                                         ; Partition            ; Type          ; Location ; Status      ;
++----------------------------------------------+----------------------+---------------+----------+-------------+
+; KEY[0]                                       ; Top                  ; Input Port    ; n/a      ;             ;
+;     -- KEY[0]                                ; Top                  ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[0]~input                          ; Top                  ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                              ;                      ;               ;          ;             ;
+; KEY[1]                                       ; Top                  ; Input Port    ; n/a      ;             ;
+;     -- KEY[1]                                ; Top                  ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[1]~input                          ; Top                  ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                              ;                      ;               ;          ;             ;
+; LEDR[0]                                      ; Top                  ; Output Port   ; n/a      ;             ;
+;     -- LEDR[0]                               ; Top                  ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[0]~output                        ; Top                  ; Output Buffer ; Unplaced ; Synthesized ;
+;     -- AllMpx:AllMpx|oYUsingIf               ; AllMpx:AllMpx        ; Output Port   ; n/a      ;             ;
+;     -- AllMpx:AllMpx|Mpx:MpxUsingIf|oY       ; Mpx:MpxUsingIf       ; Output Port   ; n/a      ;             ;
+;                                              ;                      ;               ;          ;             ;
+; LEDR[1]                                      ; Top                  ; Output Port   ; n/a      ;             ;
+;     -- LEDR[1]                               ; Top                  ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[1]~output                        ; Top                  ; Output Buffer ; Unplaced ; Synthesized ;
+;     -- AllMpx:AllMpx|oYUsingCase             ; AllMpx:AllMpx        ; Output Port   ; n/a      ;             ;
+;     -- AllMpx:AllMpx|Mpx:MpxUsingCase|oY     ; Mpx:MpxUsingCase     ; Output Port   ; n/a      ;             ;
+;                                              ;                      ;               ;          ;             ;
+; LEDR[2]                                      ; Top                  ; Output Port   ; n/a      ;             ;
+;     -- LEDR[2]                               ; Top                  ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[2]~output                        ; Top                  ; Output Buffer ; Unplaced ; Synthesized ;
+;     -- AllMpx:AllMpx|oYTheNand2              ; AllMpx:AllMpx        ; Output Port   ; n/a      ;             ;
+;     -- AllMpx:AllMpx|Mpx:MpxTheNand2Only|oY  ; Mpx:MpxTheNand2Only  ; Output Port   ; n/a      ;             ;
+;                                              ;                      ;               ;          ;             ;
+; LEDR[3]                                      ; Top                  ; Output Port   ; n/a      ;             ;
+;     -- LEDR[3]                               ; Top                  ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[3]~output                        ; Top                  ; Output Buffer ; Unplaced ; Synthesized ;
+;     -- AllMpx:AllMpx|oYNand                  ; AllMpx:AllMpx        ; Output Port   ; n/a      ;             ;
+;     -- AllMpx:AllMpx|Mpx:MpxNandOnlyTerms|oY ; Mpx:MpxNandOnlyTerms ; Output Port   ; n/a      ;             ;
+;                                              ;                      ;               ;          ;             ;
+; LEDR[4]                                      ; Top                  ; Output Port   ; n/a      ;             ;
+;     -- LEDR[4]                               ; Top                  ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[4]~output                        ; Top                  ; Output Buffer ; Unplaced ; Synthesized ;
+;     -- AllMpx:AllMpx|oYPrime                 ; AllMpx:AllMpx        ; Output Port   ; n/a      ;             ;
+;     -- AllMpx:AllMpx|Mpx:MpxPrimImplTerms|oY ; Mpx:MpxPrimImplTerms ; Output Port   ; n/a      ;             ;
+;                                              ;                      ;               ;          ;             ;
+; LEDR[5]                                      ; Top                  ; Output Port   ; n/a      ;             ;
+;     -- LEDR[5]                               ; Top                  ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[5]~output                        ; Top                  ; Output Buffer ; Unplaced ; Synthesized ;
+;     -- AllMpx:AllMpx|oYMin                   ; AllMpx:AllMpx        ; Output Port   ; n/a      ;             ;
+;     -- AllMpx:AllMpx|Mpx:MpxMinTerms|oY      ; Mpx:MpxMinTerms      ; Output Port   ; n/a      ;             ;
+;                                              ;                      ;               ;          ;             ;
+; SW                                           ; Top                  ; Input Port    ; n/a      ;             ;
+;     -- SW                                    ; Top                  ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW~input                              ; Top                  ; Input Buffer  ; Unplaced ; Synthesized ;
+;     -- AllMpx:AllMpx|iAllMuxSel              ; AllMpx:AllMpx        ; Input Port    ; n/a      ;             ;
+;                                              ;                      ;               ;          ;             ;
++----------------------------------------------+----------------------+---------------+----------+-------------+
+
+
++----------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                         ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimate of Logic utilization (ALMs needed) ; 4                ;
+;                                             ;                  ;
+; Combinational ALUT usage for logic          ; 8                ;
+;     -- 7 input functions                    ; 0                ;
+;     -- 6 input functions                    ; 0                ;
+;     -- 5 input functions                    ; 0                ;
+;     -- 4 input functions                    ; 0                ;
+;     -- <=3 input functions                  ; 8                ;
+;                                             ;                  ;
+; Dedicated logic registers                   ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 9                ;
+;                                             ;                  ;
+; Total DSP Blocks                            ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; KEY[0]~_wirecell ;
+; Maximum fan-out                             ; 6                ;
+; Total fan-out                               ; 35               ;
+; Average fan-out                             ; 1.35             ;
++---------------------------------------------+------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+    Info: Processing started: Wed Oct 22 12:38:56 2025
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off AllMuxesOnPCBDe1Soc -c AllMuxesOnPCBDe1Soc --merge=on
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "AllMpx:AllMpx" File: //hagfsstud/Homes/s2410306027/Documents/GitHub/CHD3/Uebung03/prj2to1Multiplexer/grpMux/uintAllMuxesOnPCBDe1Soc/hdl/AllMuxesOnPCBDe1Soc-Struct-a.vhd Line: 16
+Info (35007): Using synthesis netlist for partition "Mpx:MpxMinTerms" File: //hagfsstud/Homes/s2410306027/Documents/GitHub/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd Line: 15
+Info (35007): Using synthesis netlist for partition "Mpx:MpxNandOnlyTerms" File: //hagfsstud/Homes/s2410306027/Documents/GitHub/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd Line: 29
+Info (35007): Using synthesis netlist for partition "Mpx:MpxPrimImplTerms" File: //hagfsstud/Homes/s2410306027/Documents/GitHub/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd Line: 22
+Info (35007): Using synthesis netlist for partition "Mpx:MpxTheNand2Only" File: //hagfsstud/Homes/s2410306027/Documents/GitHub/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd Line: 36
+Info (35007): Using synthesis netlist for partition "Mpx:MpxUsingCase" File: //hagfsstud/Homes/s2410306027/Documents/GitHub/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd Line: 43
+Info (35007): Using synthesis netlist for partition "Mpx:MpxUsingIf" File: //hagfsstud/Homes/s2410306027/Documents/GitHub/CHD3/Uebung03/prj2to1Multiplexer/grpMux/unitAllMuxes/hdl/AllMpx-Struct-a.vhd Line: 50
+Info (35002): Resolved and merged 8 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Partition Merge was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Wed Oct 22 12:38:59 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

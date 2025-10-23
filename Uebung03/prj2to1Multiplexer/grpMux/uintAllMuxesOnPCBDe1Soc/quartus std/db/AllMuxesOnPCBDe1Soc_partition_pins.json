@@ -1,0 +1,99 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "AllMpx:AllMpx",
+			"pins" : []
+		},
+		{
+			"name" : "Mpx:MpxMinTerms",
+			"pins" : [
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SW",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "Mpx:MpxNandOnlyTerms",
+			"pins" : [
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "Mpx:MpxPrimImplTerms",
+			"pins" : [
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "Mpx:MpxTheNand2Only",
+			"pins" : [
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "Mpx:MpxUsingCase",
+			"pins" : [
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW",
+					"strict" : false
+				}
+			]
+		},
+		{
+			"name" : "Mpx:MpxUsingIf",
+			"pins" : [
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

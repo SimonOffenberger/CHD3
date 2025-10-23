@@ -1,0 +1,118 @@
+|AllMuxesOnPCBDe1Soc
+KEY[0] => allmpx:AllMpx.iAllMuxA
+KEY[1] => allmpx:AllMpx.iAllMuxB
+SW => allmpx:AllMpx.iAllMuxSel
+LEDR[0] << allmpx:AllMpx.oYUsingIf
+LEDR[1] << allmpx:AllMpx.oYUsingCase
+LEDR[2] << allmpx:AllMpx.oYTheNand2
+LEDR[3] << allmpx:AllMpx.oYNand
+LEDR[4] << allmpx:AllMpx.oYPrime
+LEDR[5] << allmpx:AllMpx.oYMin
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx
+iAllMuxA => mpx:MpxMinTerms.iA
+iAllMuxA => mpx:MpxPrimImplTerms.iA
+iAllMuxA => mpx:MpxNandOnlyTerms.iA
+iAllMuxA => mpx:MpxTheNand2Only.iA
+iAllMuxA => mpx:MpxUsingCase.iA
+iAllMuxA => mpx:MpxUsingIf.iA
+iAllMuxB => mpx:MpxMinTerms.iB
+iAllMuxB => mpx:MpxPrimImplTerms.iB
+iAllMuxB => mpx:MpxNandOnlyTerms.iB
+iAllMuxB => mpx:MpxTheNand2Only.iB
+iAllMuxB => mpx:MpxUsingCase.iB
+iAllMuxB => mpx:MpxUsingIf.iB
+iAllMuxSel => mpx:MpxMinTerms.iSel
+iAllMuxSel => mpx:MpxPrimImplTerms.iSel
+iAllMuxSel => mpx:MpxNandOnlyTerms.iSel
+iAllMuxSel => mpx:MpxTheNand2Only.iSel
+iAllMuxSel => mpx:MpxUsingCase.iSel
+iAllMuxSel => mpx:MpxUsingIf.iSel
+oYMin <= mpx:MpxMinTerms.oY
+oYPrime <= mpx:MpxPrimImplTerms.oY
+oYNand <= mpx:MpxNandOnlyTerms.oY
+oYTheNand2 <= mpx:MpxTheNand2Only.oY
+oYUsingCase <= mpx:MpxUsingCase.oY
+oYUsingIf <= mpx:MpxUsingIf.oY
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxMinTerms
+iA => oY.IN0
+iA => oY.IN0
+iA => oY.IN0
+iB => oY.IN1
+iB => oY.IN1
+iB => oY.IN1
+iB => oY.IN1
+iSel => oY.IN1
+iSel => oY.IN1
+iSel => oY.IN1
+oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxPrimImplTerms
+iA => oY.IN0
+iB => oY.IN0
+iSel => oY.IN1
+iSel => oY.IN1
+oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxNandOnlyTerms
+iA => oY.IN0
+iB => oY.IN0
+iSel => oY.IN1
+iSel => oY.IN1
+oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxTheNand2Only
+iA => thenand2:Nand2.iBNand
+iB => thenand2:Nand3.iBNand
+iSel => thenand2:Nand1.iANand
+iSel => thenand2:Nand1.iBNand
+iSel => thenand2:Nand3.iANand
+oY <= thenand2:Nand4.oYNand
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxTheNand2Only|TheNand2:Nand1
+iANand => oYNand.IN0
+iBNand => oYNand.IN1
+oYNand <= oYNand.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxTheNand2Only|TheNand2:Nand2
+iANand => oYNand.IN0
+iBNand => oYNand.IN1
+oYNand <= oYNand.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxTheNand2Only|TheNand2:Nand3
+iANand => oYNand.IN0
+iBNand => oYNand.IN1
+oYNand <= oYNand.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxTheNand2Only|TheNand2:Nand4
+iANand => oYNand.IN0
+iBNand => oYNand.IN1
+oYNand <= oYNand.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxUsingCase
+iA => oY.DATAB
+iB => oY.DATAA
+iSel => oY.OUTPUTSELECT
+oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AllMuxesOnPCBDe1Soc|AllMpx:AllMpx|Mpx:MpxUsingIf
+iA => oY.DATAB
+iA => oY.DATAA
+iB => oY.DATAB
+iSel => oY.OUTPUTSELECT
+iSel => oY.OUTPUTSELECT
+oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
+
+

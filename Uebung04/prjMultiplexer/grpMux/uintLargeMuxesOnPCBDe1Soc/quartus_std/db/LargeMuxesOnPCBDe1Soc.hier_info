@@ -15,9 +15,9 @@ GPIO_0[12] => largemuxes:AllMpx.iAllMuxSel[0]
 GPIO_0[13] => largemuxes:AllMpx.iAllMuxSel[1]
 GPIO_0[14] => largemuxes:AllMpx.iAllMuxSel[2]
 GPIO_0[15] => largemuxes:AllMpx.iAllMuxSel[3]
-LEDR[0] << largemuxes:AllMpx.oYUniversal
-LEDR[1] << largemuxes:AllMpx.oYUsingIf
-LEDR[2] << largemuxes:AllMpx.oYUsingCase
+LEDR[0] <= largemuxes:AllMpx.oYUniversal
+LEDR[1] <= largemuxes:AllMpx.oYUsingIf
+LEDR[2] <= largemuxes:AllMpx.oYUsingCase
 
 
 |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx
