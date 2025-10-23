@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LargeMuxesOnPCBDe1Soc
-Mon Oct 20 19:18:23 2025
+Tue Oct 21 18:12:03 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -47,14 +47,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 20 19:18:23 2025          ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 21 18:12:03 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; LargeMuxesOnPCBDe1Soc                          ;
 ; Top-level Entity Name           ; LargeMuxesOnPCBDe1Soc                          ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 19                                             ;
+; Total pins                      ; 18                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -172,21 +172,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
-+----------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                   ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                      ; Library ;
-+----------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; ../hdl/LargeMuxesOnPCBDe1Soc-Struct-a.vhd          ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/uintLargeMuxesOnPCBDe1Soc/hdl/LargeMuxesOnPCBDe1Soc-Struct-a.vhd ;         ;
-; ../hdl/LargeMuxesOnPCBDe1Soc-e.vhd                 ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/uintLargeMuxesOnPCBDe1Soc/hdl/LargeMuxesOnPCBDe1Soc-e.vhd        ;         ;
-; ../../unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd      ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd                          ;         ;
-; ../../unitLargeMuxes/hdl/LargeMuxes-e.vhd          ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-e.vhd                              ;         ;
-; ../../unitMuxUniversal/hdl/Mpx-Universal-RTL-a.vhd ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMuxUniversal/hdl/Mpx-Universal-RTL-a.vhd                     ;         ;
-; ../../unitMuxUniversal/hdl/Mpx-Universal-e.vhd     ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMuxUniversal/hdl/Mpx-Universal-e.vhd                         ;         ;
-; ../../unitMux/hdl/Mpx-UsingIf-RTL-a.vhd            ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd                                ;         ;
-; ../../unitMux/hdl/Mpx-UsingCase-RTL-a.vhd          ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd                              ;         ;
-; ../../unitMux/hdl/Mpx-e.vhd                        ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd                                            ;         ;
-+----------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
++-----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path              ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                      ; Library ;
++-----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; ../hdl/LargeMuxesOnPCBDe1Soc-Struct-a.vhd     ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/uintLargeMuxesOnPCBDe1Soc/hdl/LargeMuxesOnPCBDe1Soc-Struct-a.vhd ;         ;
+; ../hdl/LargeMuxesOnPCBDe1Soc-e.vhd            ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/uintLargeMuxesOnPCBDe1Soc/hdl/LargeMuxesOnPCBDe1Soc-e.vhd        ;         ;
+; ../../unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd                          ;         ;
+; ../../unitLargeMuxes/hdl/LargeMuxes-e.vhd     ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-e.vhd                              ;         ;
+; ../../unitMux/hdl/Mpx-UsingIf-RTL-a.vhd       ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingIf-RTL-a.vhd                                ;         ;
+; ../../unitMux/hdl/Mpx-UsingCase-RTL-a.vhd     ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-UsingCase-RTL-a.vhd                              ;         ;
+; ../../unitMux/hdl/Mpx-e.vhd                   ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitMux/hdl/Mpx-e.vhd                                            ;         ;
++-----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -205,27 +203,27 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                  ;
 ; Dedicated logic registers                   ; 0                ;
 ;                                             ;                  ;
-; I/O pins                                    ; 19               ;
+; I/O pins                                    ; 18               ;
 ;                                             ;                  ;
 ; Total DSP Blocks                            ; 0                ;
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; GPIO_0[12]~input ;
 ; Maximum fan-out                             ; 3                ;
-; Total fan-out                               ; 51               ;
-; Average fan-out                             ; 1.19             ;
+; Total fan-out                               ; 49               ;
+; Average fan-out                             ; 1.20             ;
 +---------------------------------------------+------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name           ; Library Name ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------------+--------------+
-; |LargeMuxesOnPCBDe1Soc      ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 19   ; 0            ; |LargeMuxesOnPCBDe1Soc                                       ; LargeMuxesOnPCBDe1Soc ; work         ;
-;    |LargeMuxes:AllMpx|      ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx                     ; LargeMuxes            ; work         ;
-;       |Mpx:MpxUsingIf|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|Mpx:MpxUsingIf      ; Mpx                   ; work         ;
-;       |MpxUni:MpxUniversal| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|MpxUni:MpxUniversal ; MpxUni                ; work         ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Entity Name           ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+-----------------------+--------------+
+; |LargeMuxesOnPCBDe1Soc     ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 18   ; 0            ; |LargeMuxesOnPCBDe1Soc                                    ; LargeMuxesOnPCBDe1Soc ; work         ;
+;    |LargeMuxes:AllMpx|     ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx                  ; LargeMuxes            ; work         ;
+;       |Mpx:MpxUsingCase|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|Mpx:MpxUsingCase ; Mpx                   ; work         ;
+;       |Mpx:MpxUsingIf|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|Mpx:MpxUsingIf   ; Mpx                   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -244,14 +242,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|MpxUni:MpxUniversal|Mux0 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|MpxUni:MpxUniversal|Mux0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|Mpx:MpxUsingIf|oY ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -259,7 +256,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+---------------------------------------+
 ; Parameter Name ; Value ; Type                                  ;
 +----------------+-------+---------------------------------------+
-; n              ; 12    ; Signed Integer                        ;
+; glen           ; 12    ; Signed Integer                        ;
 +----------------+-------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -269,7 +266,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                   ;
 +----------------+-------+--------------------------------------------------------+
-; n              ; 12    ; Signed Integer                                         ;
+; gn             ; 12    ; Signed Integer                                         ;
 +----------------+-------+--------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -279,7 +276,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                 ;
 +----------------+-------+------------------------------------------------------+
-; n              ; 12    ; Signed Integer                                       ;
+; gn             ; 12    ; Signed Integer                                       ;
 +----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -293,7 +290,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 5                           ;
 ;         5 data inputs ; 1                           ;
 ;         6 data inputs ; 4                           ;
-; boundary_port         ; 19                          ;
+; boundary_port         ; 18                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
 ; Average LUT depth     ; 1.90                        ;
@@ -315,7 +312,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Oct 20 19:18:17 2025
+    Info: Processing started: Tue Oct 21 18:11:57 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LargeMuxesOnPCBDe1Soc -c LargeMuxesOnPCBDe1Soc
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung04/prjmultiplexer/grpmux/uintlargemuxesonpcbde1soc/hdl/largemuxesonpcbde1soc-struct-a.vhd
@@ -340,18 +337,17 @@ Info (12127): Elaborating entity "LargeMuxesOnPCBDe1Soc" for the top level hiera
 Info (12129): Elaborating entity "LargeMuxes" using architecture "A:rtl" for hierarchy "LargeMuxes:AllMpx" File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/uintLargeMuxesOnPCBDe1Soc/hdl/LargeMuxesOnPCBDe1Soc-Struct-a.vhd Line: 15
 Info (12129): Elaborating entity "Mpx" using architecture "A:usingcase" for hierarchy "LargeMuxes:AllMpx|Mpx:MpxUsingCase" File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd Line: 14
 Info (12129): Elaborating entity "Mpx" using architecture "A:usingif" for hierarchy "LargeMuxes:AllMpx|Mpx:MpxUsingIf" File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd Line: 23
-Info (12129): Elaborating entity "MpxUni" using architecture "A:uni" for hierarchy "LargeMuxes:AllMpx|MpxUni:MpxUniversal" File: C:/HSD_SEM_3/CHD3/Uebung04/prjMultiplexer/grpMux/unitLargeMuxes/hdl/LargeMuxes-RTL-a.vhd Line: 33
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 3 output pins
+    Info (21059): Implemented 2 output pins
     Info (21061): Implemented 5 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4932 megabytes
-    Info: Processing ended: Mon Oct 20 19:18:23 2025
+    Info: Processing ended: Tue Oct 21 18:12:03 2025
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:15
 
 

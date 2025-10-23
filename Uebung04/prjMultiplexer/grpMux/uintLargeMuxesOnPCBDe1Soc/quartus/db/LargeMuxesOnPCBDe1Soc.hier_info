@@ -15,63 +15,45 @@ GPIO_0[12] => largemuxes:AllMpx.iAllMuxSel[0]
 GPIO_0[13] => largemuxes:AllMpx.iAllMuxSel[1]
 GPIO_0[14] => largemuxes:AllMpx.iAllMuxSel[2]
 GPIO_0[15] => largemuxes:AllMpx.iAllMuxSel[3]
-LEDR[0] << largemuxes:AllMpx.oYUniversal
-LEDR[1] << largemuxes:AllMpx.oYUsingIf
-LEDR[2] << largemuxes:AllMpx.oYUsingCase
+LEDR[0] << largemuxes:AllMpx.oYUsingIf
+LEDR[1] << largemuxes:AllMpx.oYUsingCase
 
 
 |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx
 iAllMuxA[0] => mpx:MpxUsingCase.iA[0]
 iAllMuxA[0] => mpx:MpxUsingIf.iA[0]
-iAllMuxA[0] => mpxuni:MpxUniversal.iA[0]
 iAllMuxA[1] => mpx:MpxUsingCase.iA[1]
 iAllMuxA[1] => mpx:MpxUsingIf.iA[1]
-iAllMuxA[1] => mpxuni:MpxUniversal.iA[1]
 iAllMuxA[2] => mpx:MpxUsingCase.iA[2]
 iAllMuxA[2] => mpx:MpxUsingIf.iA[2]
-iAllMuxA[2] => mpxuni:MpxUniversal.iA[2]
 iAllMuxA[3] => mpx:MpxUsingCase.iA[3]
 iAllMuxA[3] => mpx:MpxUsingIf.iA[3]
-iAllMuxA[3] => mpxuni:MpxUniversal.iA[3]
 iAllMuxA[4] => mpx:MpxUsingCase.iA[4]
 iAllMuxA[4] => mpx:MpxUsingIf.iA[4]
-iAllMuxA[4] => mpxuni:MpxUniversal.iA[4]
 iAllMuxA[5] => mpx:MpxUsingCase.iA[5]
 iAllMuxA[5] => mpx:MpxUsingIf.iA[5]
-iAllMuxA[5] => mpxuni:MpxUniversal.iA[5]
 iAllMuxA[6] => mpx:MpxUsingCase.iA[6]
 iAllMuxA[6] => mpx:MpxUsingIf.iA[6]
-iAllMuxA[6] => mpxuni:MpxUniversal.iA[6]
 iAllMuxA[7] => mpx:MpxUsingCase.iA[7]
 iAllMuxA[7] => mpx:MpxUsingIf.iA[7]
-iAllMuxA[7] => mpxuni:MpxUniversal.iA[7]
 iAllMuxA[8] => mpx:MpxUsingCase.iA[8]
 iAllMuxA[8] => mpx:MpxUsingIf.iA[8]
-iAllMuxA[8] => mpxuni:MpxUniversal.iA[8]
 iAllMuxA[9] => mpx:MpxUsingCase.iA[9]
 iAllMuxA[9] => mpx:MpxUsingIf.iA[9]
-iAllMuxA[9] => mpxuni:MpxUniversal.iA[9]
 iAllMuxA[10] => mpx:MpxUsingCase.iA[10]
 iAllMuxA[10] => mpx:MpxUsingIf.iA[10]
-iAllMuxA[10] => mpxuni:MpxUniversal.iA[10]
 iAllMuxA[11] => mpx:MpxUsingCase.iA[11]
 iAllMuxA[11] => mpx:MpxUsingIf.iA[11]
-iAllMuxA[11] => mpxuni:MpxUniversal.iA[11]
 iAllMuxSel[0] => mpx:MpxUsingCase.iSel[0]
 iAllMuxSel[0] => mpx:MpxUsingIf.iSel[0]
-iAllMuxSel[0] => mpxuni:MpxUniversal.iSel[0]
 iAllMuxSel[1] => mpx:MpxUsingCase.iSel[1]
 iAllMuxSel[1] => mpx:MpxUsingIf.iSel[1]
-iAllMuxSel[1] => mpxuni:MpxUniversal.iSel[1]
 iAllMuxSel[2] => mpx:MpxUsingCase.iSel[2]
 iAllMuxSel[2] => mpx:MpxUsingIf.iSel[2]
-iAllMuxSel[2] => mpxuni:MpxUniversal.iSel[2]
 iAllMuxSel[3] => mpx:MpxUsingCase.iSel[3]
 iAllMuxSel[3] => mpx:MpxUsingIf.iSel[3]
-iAllMuxSel[3] => mpxuni:MpxUniversal.iSel[3]
 oYUsingCase <= mpx:MpxUsingCase.oY
 oYUsingIf <= mpx:MpxUsingIf.oY
-oYUniversal <= mpxuni:MpxUniversal.oY
 
 
 |LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|Mpx:MpxUsingCase
@@ -152,25 +134,5 @@ iSel[3] => Equal8.IN3
 iSel[3] => Equal9.IN2
 iSel[3] => Equal10.IN2
 oY <= oY.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|LargeMuxesOnPCBDe1Soc|LargeMuxes:AllMpx|MpxUni:MpxUniversal
-iA[0] => Mux0.IN15
-iA[1] => Mux0.IN14
-iA[2] => Mux0.IN13
-iA[3] => Mux0.IN12
-iA[4] => Mux0.IN11
-iA[5] => Mux0.IN10
-iA[6] => Mux0.IN9
-iA[7] => Mux0.IN8
-iA[8] => Mux0.IN7
-iA[9] => Mux0.IN6
-iA[10] => Mux0.IN5
-iA[11] => Mux0.IN4
-iSel[0] => Mux0.IN19
-iSel[1] => Mux0.IN18
-iSel[2] => Mux0.IN17
-iSel[3] => Mux0.IN16
-oY <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

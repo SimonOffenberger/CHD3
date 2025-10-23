@@ -13,7 +13,7 @@ begin
 
 MpxUsingCase : entity work.Mpx(UsingCase)
 generic map (
-    n => 12
+    gN => glen
 )
 port map (
     iA         => iAllMuxA,
@@ -22,19 +22,12 @@ port map (
 
 MpxUsingIf : entity work.Mpx(UsingIf)
 generic map (
-    n=>12
+    gN=> glen
 )
 port map (
     iA         => iAllMuxA,
     iSel       => iAllMuxSel,
     oY         => oYUsingIf);
-
-    
-MpxUniversal : entity work.MpxUni(Uni)
-port map (
-    iA         => iAllMuxA,
-    iSel       => iAllMuxSel,
-    oY         => oYUniversal);
             
         
 end RTL;

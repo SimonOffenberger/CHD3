@@ -56,6 +56,7 @@ set_location_assignment PIN_AE16 -to GPIO_0[13]
 set_location_assignment PIN_AF16 -to GPIO_0[14]
 set_location_assignment PIN_AG17 -to GPIO_0[15]
 set_location_assignment PIN_Y17 -to GPIO_0[1]
+set_location_assignment PIN_AD17 -to GPIO_0[2]
 set_location_assignment PIN_Y18 -to GPIO_0[3]
 set_location_assignment PIN_AK16 -to GPIO_0[4]
 set_location_assignment PIN_AK18 -to GPIO_0[5]
@@ -63,6 +64,8 @@ set_location_assignment PIN_AK19 -to GPIO_0[6]
 set_location_assignment PIN_AJ19 -to GPIO_0[7]
 set_location_assignment PIN_AJ17 -to GPIO_0[8]
 set_location_assignment PIN_AJ16 -to GPIO_0[9]
+set_location_assignment PIN_V16 -to LEDR[0]
+set_location_assignment PIN_W16 -to LEDR[1]
 
 # Classic Timing Assignments
 # ==========================
