@@ -1,7 +1,7 @@
 # Übung 4 Simon Offenberger S2410306027  
 ## Aufgabe 1 Hierachie im Entwurf
 ### Design Partition
-Als erstes wurde alle Unterentities mittel der Anleitung fixiert.
+Als erstes wurden alle Unterentities mittels der Anleitung fixiert.
 
 ![Project Navigator](./images/AllFixedNav.png)
 
@@ -11,13 +11,13 @@ Danach wurde die Synthese des Projects gestartet.
 ![RTL_All_Fixed](./images/RTL-all-fixed.png)
 
 Durch den Vergleich des RTL-Viewers aus der vorigen Übung ist hier kein Unterschied zu erkennen.
-Dies macht auch, Sinn da die Optimierte Version erst durch den Technologie Map Viewer ersichtlich wurde.
+Dies macht auch Sinn, da die optimierte Version erst durch den Technologie Map Viewer ersichtlich wurde.
 
 ![Tech_Map](./images/TechMap-Fixed_all.png)
 
 In dieser Ansicht ist nun ein Unterschied zur vorherigen Übung zu erkennen.
-Hier wurden nun alle Implementationen vom Multiplexer Umgesetzt.
-Auch die Umsetzung des Nand Gatters mittels der Entitiy Nand 2 ist ersichtlich. 
+Hier wurden nun alle Implementationen vom Multiplexer umgesetzt.
+Auch die Umsetzung des Nand Gatters mittels der Entity Nand 2 ist ersichtlich. 
 Dies liegt nahe, dass diese Option die Optimierungsgrenzen für das Design festlegen.
 Wenn hier alle Entities fixiert werden, kann nur das Verhalten innerhalb dieser Entity optimiert werden.
 
@@ -25,7 +25,7 @@ Wenn hier alle Entities fixiert werden, kann nur das Verhalten innerhalb dieser 
 
 Durch die Betrachtung der Ressource Usage im Fitter Report wird die Anzahl der benötigten ALMs angezeigt.
 Hier ist nun ein deutlich höherer Verbrauch zur vorigen Übung ersichtlich.
-Dies ist durch die Umsetzung von jeder Entity ersichtlich.
+Dies ist durch die Umsetzung von jeder Entity entstanden.
 
 ![Timing](./images/Timing_fixed_slow.png)
 
@@ -44,16 +44,16 @@ Erwartet wird, dass nun der Technologie Map Viewer unterschiedlich ist.
 ### RTL Viewer
 ![RTL_View_Experiment](./images/RTL-Viewer.png)
 
+### Technologie Map
 ![Technologie Map Viewer](./images/TechMap_Nand_not_fixed.png)
 
 Hier ist ersichtlich, dass Innerhalb der Entity TheNand2 optimiert wurde.
 
 ![Ressource Section ](./images/Ressource_nonFixed.png)
 
-Hier wird nun auch die Anzahl der verbrachten ALMs geringer, da die Optimierung auf der Ebene 
-vom TheNand2Only arbeiten kann.
+Hier wird nun auch die Anzahl der verbrachten ALMs geringer, da die Optimierung auf der Ebene von TheNand2Only arbeiten kann.
 
-### Warum gibt es diese Feature nur in der Standardversion?
+### Warum gibt es dieses Feature nur in der Standardversion?
 ### Incremental Compile
 Hierzu wurde im Internet auf der Webseite von Intel (Altera) nach dem Schlüsselwort **Incremental Compile** gesucht.
 Hier wurde folgendes gefunden.
@@ -67,10 +67,10 @@ Dies lässt darauf schließen, dass diese Feature bei großen Designs einen Zeit
 
 Durch die Recherche wird klar, dass sich mit diesen Feature das Layout des Designs im Chip steuern lässt. Hier kann z.B. vorgegeben werden in welchem Bereich des Chips sich welche Komponenten des Designs befinden.
 
-Dies könnte von nutzen sein um sicherzustellen, dass Teile des Designs über mehrere Iterationen, also während des Designprozesses, sich an der gleichen stelle befinden.
+Dies könnte von nutzen sein um sicherzustellen, dass Teile des Designs über mehrere Iterationen, also während des Designprozesses, sich an der gleichen Stelle im Chip befinden.
 
 Hier vermute ich, dass dies für die Fixierung von Timings vonnöten sein kann. 
-Die Timings während meiner Meinung auch vom Layout im Chip beeinflusst.
+Die Timings werden meiner Meinung auch vom Layout im Chip beeinflusst.
 
 ## Functionality Sharing bei einem Multiplexer
 ### RTL Viewer N=8
@@ -116,14 +116,28 @@ Trotz der Rückkopplung im Technology Map Viewers ergibt sich kein großer Unter
 
 ![Wavefomr](./images/Waveform.png)
 
-Hier wurde in der Testbench mittels Verify Process des Ergebnis des Multiplexers überprüft.
+Hier wurde in der Testbench mittels Verify Process das Ergebnis des Multiplexers überprüft.
 Im Stimul Process werden die Waveforms für die Inputs erzeugt.
 
 ### Allgemeines Multiplexer Model
-Ein allgemeines Multiplexer Model lässt sich mittels if-elsif-else bzw. case nicht umsetzen, denn hier müsste man jede Kombination von der Select Leitung in einem Eigenen if bzw. when Zweig auffassen. Auch jede Bit Anzahl der Select Leitung müsste berücksichtigt werden. Dies führt mit Sicherheit zu Compile errors! (length missmatch).
+Ein allgemeines Multiplexer Model lässt sich mittels if-elsif-else bzw. case nicht umsetzen, denn hier müsste man jede Kombination von der Select Leitung in einem eigenen if bzw. when Zweig auffassen. Auch jede Bit Anzahl der Select Leitung müsste berücksichtigt werden. Dies führt mit Sicherheit zu Compile errors! (length missmatch).
 
 ### Allgemeine Version ohne IF / Case
 Dies ist in der Unit **MuxUniversal** zu finden!
+Hier ein Ausschnitt der Architektur.
+
+>architecture Uni of MpxUni is
+begin 
+assert(iSel'length = natural(ceil(log2(real(iA'length))))) report "Length Missmacht" severity error;
+  >
+>process (iA,iSel) is 
+begin
+>
+>    oY <= iA(iA'low + to_integer(unsigned(iSel)));
+>
+>end process;
+>
+>end Uni;
 
 ## Schaltplan DE1-SOC
 ### Decoupling
@@ -165,11 +179,12 @@ Leistungsumsatz in der LED:
 
 $P_{D} = V_f \cdot I = 1.7\,\mathrm{V} \times 560\,\mathrm{mA} = 0.952\,\mathrm{W}$
 
-Die Led überhitzt einerseits nicht weil sie typischerweise nur pulsweise eingeschaltet wird. Eine IR-LED hat außerdem typischerweise einen Wirkungsgrad von etwa 30%. Also werden 70% der Leistung in Wärme umgesetzt. Dies entspricht hier etwa 0.7W. Ein dauerbetrieb der LED würde wahrscheinlich auch hier zu einer Überhitzung führen.
+Die Led überhitzt einerseits nicht weil sie typischerweise nur pulsweise eingeschaltet wird. Eine IR-LED hat außerdem typischerweise einen Wirkungsgrad von etwa 30%. Also werden 70% der Leistung in Wärme umgesetzt. Dies entspricht hier etwa 0.7W. Ein dauerbetrieb der LED würde wahrscheinlich auch hier zu einer Überhitzung führen. 
+Weiters ist noch zu sagen, dass das Gehäuse der IR-LED aus einem keramischen Trägermaterial besteht und deshalb die Wärmeabfuhr gut über die Anschlusspins der LED abgeführt werden kann.
 
 ### Spannungsversorgung DE1 Soc
-Die Komponenten ab der Seite 27 dienen für die Bereitstellung der verschiedenen Spannungsebenen zu Versorgung des FPGAs und anderer Komponenten am Board. Hier werden auch Referenzspannungen, zB. für das DDR Interface erzeugt.
-Dies Spannungsversorgung wird mittels Schaltreger bzw. Linear Spannungsregler realisiert.
+Die Komponenten ab der Seite 27 dienen für die Bereitstellung der verschiedenen Spannungsebenen zur Versorgung des FPGAs und anderer Komponenten am Board. Hier werden auch Referenzspannungen, zB. für das DDR3 Interface erzeugt.
+Diese Spannungsversorgung wird mittels Schaltreger bzw. Linear Spannungsregler realisiert.
 Hier ist auffällig, dass die meisten dieser Spannnungsregler über einen PowerGood Output und einen Enable Input verfügen. 
 Mittels dieser Steuerleitungen werden die Spannungsebenen in einer speziellen Sequenz aktiviert. Dies ist wichtig um die Funktion des FPGAs zu gewährleisten.
 
