@@ -86,8 +86,9 @@
 \begin{frame}{Agenda}
     \begin{itemize}
       \item Decoupling - Spannungsstabilisierung
-      \item GPIO-Schutzbeschaltung
+      \item GPIO - Schutzbeschaltung
       \item IR-Emitter
+      \item Spannungsversorgung
   \end{itemize}
 \end{frame}
 
@@ -102,15 +103,14 @@
     \column{0.5\textwidth}
     \begin{itemize}
       \item Warum so viele Kondensatoren parallel?
-      \begin{itemize}
-        \item Power Pins sind räumlich getrennt
-      \end{itemize}
       \item Reicht hier ein großer Kondensator?
       \begin{itemize}
         \item höherer ESR (Equivalent Series Resistance)
         \item höhere ESL (Equivalent Series Inductance)
         \item längere Leitungen zu den Power Pins
       \end{itemize}
+      \vspace{0.5cm}
+      \includegraphics[height=2cm]{./Images/Kondensator_Ersatzschaltbild.png}
     \end{itemize}
     \column{0.5\textwidth}
       \centering

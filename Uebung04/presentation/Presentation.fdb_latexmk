@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761158235.3823 "c:/HSD_SEM_3/CHD3/Uebung04/presentation/Presentation.tex" "Presentation.pdf" "Presentation" 1761158238.26905 0
+["pdflatex"] 1761477375.91483 "c:/HSD_SEM_3/CHD3/Uebung04/presentation/Presentation.tex" "Presentation.pdf" "Presentation" 1761477377.87274 0
   "../doc/images/Board.jpg" 1761064242 404097 b6c7c6b5ddddda17b5baebcbdd7c17f8 ""
   "../doc/images/Schaltpan_R.png" 1761064682 28296 8d2b8b86703199350bd9a789095f3497 ""
   "../doc/images/Schaltplan_Dioden.png" 1761064673 59730 9bcc9f8fa83cfe0871e35977c36b1b78 ""
@@ -263,14 +263,15 @@
   "Images/GPIO_Schutz_neg.png" 1761111166 47959 e8007388e205da453296c4ddc7f51d81 ""
   "Images/GPIO_Schutz_pos.png" 1761111098 46341 1c8c025e3b7b5554ed6b2ca414449363 ""
   "Images/IR-Emitter.png" 1761112164 69840 ee26dfcace60b03d53d0c1624a168131 ""
+  "Images/Kondensator_Ersatzschaltbild.png" 1761477166 5634 38109fe5828f66b674f7179da1f222d5 ""
   "Images/ReversePolarity.png" 1761150574 60908 5009cbbfede055166835ab1b6635562b ""
   "Images/Schematik_Decoupling.png" 1761108968 14798 1da4b46ad296f86a5f9faee800bc4755 ""
   "Images/Switching Powersupply.png" 1761150598 428851 13e79522e9b269db1f7189e50c2aaa96 ""
-  "Presentation.aux" 1761158237 2467 508176986afdb7af27de9e9b3d5b9eed "pdflatex"
-  "Presentation.nav" 1761158237 1574 f40f3a87f706219d856741c5c118895c "pdflatex"
-  "Presentation.out" 1761158236 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Presentation.tex" 1761158233 7527 67ecd986f054cdaf9dfad0ad5f388874 ""
-  "c:/HSD_SEM_3/CHD3/Uebung04/presentation/Presentation.tex" 1761158233 7527 67ecd986f054cdaf9dfad0ad5f388874 ""
+  "Presentation.aux" 1761477377 2467 508176986afdb7af27de9e9b3d5b9eed "pdflatex"
+  "Presentation.nav" 1761477377 1574 f40f3a87f706219d856741c5c118895c "pdflatex"
+  "Presentation.out" 1761477376 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Presentation.tex" 1761477375 7569 f5d2c2e98d3f7f45d15fb5ccfe37527e ""
+  "c:/HSD_SEM_3/CHD3/Uebung04/presentation/Presentation.tex" 1761477375 7569 f5d2c2e98d3f7f45d15fb5ccfe37527e ""
   (generated)
   "Presentation.aux"
   "Presentation.log"

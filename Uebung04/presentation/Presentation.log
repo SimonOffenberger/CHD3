@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  22 OCT 2025 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  26 OCT 2025 12:16
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/HSD_SEM_3/CHD3/Uebung04/presentation/Presentation.tex
@@ -890,7 +890,7 @@ Overfull \vbox (31.31319pt too high) detected at line 83
 [1
 
 {C:/Users/Simon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 92.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 93.
  (C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [2
@@ -899,29 +899,34 @@ File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 <Images/Decoupling.png, id=31, 1166.85938pt x 594.72188pt>
 File: Images/Decoupling.png Graphic file (type png)
 <use Images/Decoupling.png>
-Package pdftex.def Info: Images/Decoupling.png  used on input line 97.
+Package pdftex.def Info: Images/Decoupling.png  used on input line 98.
 (pdftex.def)             Requested size: 426.79134pt x 217.52087pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 97--97
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 98--98
 [][]  
  []
 
 
-Overfull \vbox (9.58388pt too high) detected at line 97
+Overfull \vbox (9.58388pt too high) detected at line 98
  []
 
 [3
 
  <./Images/Decoupling.png>]
-<./../doc/images/Board.jpg, id=39, 1204.5pt x 1606.0pt>
+<./Images/Kondensator_Ersatzschaltbild.png, id=39, 642.4pt x 240.9pt>
+File: ./Images/Kondensator_Ersatzschaltbild.png Graphic file (type png)
+<use ./Images/Kondensator_Ersatzschaltbild.png>
+Package pdftex.def Info: ./Images/Kondensator_Ersatzschaltbild.png  used on input line 119.
+(pdftex.def)             Requested size: 151.7482pt x 56.9055pt.
+<./../doc/images/Board.jpg, id=40, 1204.5pt x 1606.0pt>
 File: ./../doc/images/Board.jpg Graphic file (type jpg)
 <use ./../doc/images/Board.jpg>
 Package pdftex.def Info: ./../doc/images/Board.jpg  used on input line 119.
 (pdftex.def)             Requested size: 149.36748pt x 199.16928pt.
  [4
 
- <./../doc/images/Board.jpg>]
-<Images/Schematik_Decoupling.png, id=46, 1027.84pt x 469.755pt>
+ <./Images/Kondensator_Ersatzschaltbild.png> <./../doc/images/Board.jpg>]
+<Images/Schematik_Decoupling.png, id=47, 1027.84pt x 469.755pt>
 File: Images/Schematik_Decoupling.png Graphic file (type png)
 <use Images/Schematik_Decoupling.png>
 Package pdftex.def Info: Images/Schematik_Decoupling.png  used on input line 124.
@@ -934,12 +939,12 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 124--124
 [5
 
  <./Images/Schematik_Decoupling.png>]
-<./../doc/images/Schaltplan_Dioden.png, id=53, 495.35063pt x 944.02687pt>
+<./../doc/images/Schaltplan_Dioden.png, id=54, 495.35063pt x 944.02687pt>
 File: ./../doc/images/Schaltplan_Dioden.png Graphic file (type png)
 <use ./../doc/images/Schaltplan_Dioden.png>
 Package pdftex.def Info: ./../doc/images/Schaltplan_Dioden.png  used on input line 135.
 (pdftex.def)             Requested size: 104.50288pt x 199.16928pt.
-<./../doc/images/Schaltpan_R.png, id=54, 691.08188pt x 191.21437pt>
+<./../doc/images/Schaltpan_R.png, id=55, 691.08188pt x 191.21437pt>
 File: ./../doc/images/Schaltpan_R.png Graphic file (type png)
 <use ./../doc/images/Schaltpan_R.png>
 Package pdftex.def Info: ./../doc/images/Schaltpan_R.png  used on input line 135.
@@ -952,7 +957,7 @@ Overfull \hbox (5.69177pt too wide) in paragraph at lines 135--135
 [6
 
  <./../doc/images/Schaltplan_Dioden.png> <./../doc/images/Schaltpan_R.png>]
-<./Images/GPIO_Schutz_pos.png, id=62, 1225.57875pt x 657.95813pt>
+<./Images/GPIO_Schutz_pos.png, id=63, 1225.57875pt x 657.95813pt>
 File: ./Images/GPIO_Schutz_pos.png Graphic file (type png)
 <use ./Images/GPIO_Schutz_pos.png>
 Package pdftex.def Info: ./Images/GPIO_Schutz_pos.png  used on input line 146.
@@ -962,7 +967,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 146--146
 [][]  
  []
 
-<./Images/GPIO_Schutz_neg.png, id=63, 1225.57875pt x 657.95813pt>
+<./Images/GPIO_Schutz_neg.png, id=64, 1225.57875pt x 657.95813pt>
 File: ./Images/GPIO_Schutz_neg.png Graphic file (type png)
 <use ./Images/GPIO_Schutz_neg.png>
 Package pdftex.def Info: ./Images/GPIO_Schutz_neg.png  used on input line 146.
@@ -975,7 +980,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 146--146
 [7
 
  <./Images/GPIO_Schutz_pos.png> <./Images/GPIO_Schutz_neg.png>]
-<./Images/GPIO_Schutz_Kurzschluss.png, id=72, 1195.46625pt x 645.91313pt>
+<./Images/GPIO_Schutz_Kurzschluss.png, id=73, 1195.46625pt x 645.91313pt>
 File: ./Images/GPIO_Schutz_Kurzschluss.png Graphic file (type png)
 <use ./Images/GPIO_Schutz_Kurzschluss.png>
 Package pdftex.def Info: ./Images/GPIO_Schutz_Kurzschluss.png  used on input line 156.
@@ -994,7 +999,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ) [8
 
  <./Images/GPIO_Schutz_Kurzschluss.png>]
-<./Images/IR-Emitter.png, id=83, 745.28438pt x 602.25pt>
+<./Images/IR-Emitter.png, id=84, 745.28438pt x 602.25pt>
 File: ./Images/IR-Emitter.png Graphic file (type png)
 <use ./Images/IR-Emitter.png>
 Package pdftex.def Info: ./Images/IR-Emitter.png  used on input line 177.
@@ -1011,7 +1016,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 177--177
 ] [11
 
 ]
-<Images/ReversePolarity.png, id=104, 1023.07219pt x 529.22719pt>
+<Images/ReversePolarity.png, id=105, 1023.07219pt x 529.22719pt>
 File: Images/ReversePolarity.png Graphic file (type png)
 <use Images/ReversePolarity.png>
 Package pdftex.def Info: Images/ReversePolarity.png  used on input line 216.
@@ -1019,7 +1024,7 @@ Package pdftex.def Info: Images/ReversePolarity.png  used on input line 216.
  [12
 
  <./Images/ReversePolarity.png>]
-<Images/Switching Powersupply.png, id=111, 1408.51219pt x 712.91344pt>
+<Images/Switching Powersupply.png, id=112, 1408.51219pt x 712.91344pt>
 File: Images/Switching Powersupply.png Graphic file (type png)
 <use Images/Switching Powersupply.png>
 Package pdftex.def Info: Images/Switching Powersupply.png  used on input line 221.
@@ -1027,12 +1032,12 @@ Package pdftex.def Info: Images/Switching Powersupply.png  used on input line 22
  [13
 
  <./Images/Switching Powersupply.png>]
-<C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, id=119, 845.1575pt x 597.45204pt>
+<C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, id=120, 845.1575pt x 597.45204pt>
 File: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf Graphic file (type pdf)
 <use C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf>
 Package pdftex.def Info: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf  used on input line 224.
 (pdftex.def)             Requested size: 845.15544pt x 597.45058pt.
-<C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, id=121, page=28, 845.1575pt x 597.45204pt>
+<C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, id=122, page=28, 845.1575pt x 597.45204pt>
 File: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf Graphic file (type pdf)
 <use C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, page 28>
 Package pdftex.def Info: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf , page28 used on input line 224.
@@ -1057,7 +1062,7 @@ Package pdftex.def Info: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/D
 
 
  <C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, page is rotated 90 degrees>]
-<C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, id=144, page=29, 845.1575pt x 597.45204pt>
+<C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, id=145, page=29, 845.1575pt x 597.45204pt>
 File: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf Graphic file (type pdf)
 <use C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, page 29>
 Package pdftex.def Info: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf , page29 used on input line 224.
@@ -1073,7 +1078,7 @@ Package pdftex.def Info: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/D
  [15
 
  <C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, page is rotated 90 degrees>]
-<C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, id=158, page=30, 845.1575pt x 597.45204pt>
+<C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, id=159, page=30, 845.1575pt x 597.45204pt>
 File: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf Graphic file (type pdf)
 <use C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf, page 30>
 Package pdftex.def Info: C:/HSD_SEM_3/CHD3/Uebung04/literature/terasic/DE1-SoC/DE1-SoC.pdf , page30 used on input line 224.
@@ -1109,17 +1114,17 @@ Package rerunfilecheck Info: File `Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28807 strings out of 474486
- 575038 string characters out of 5743755
+ 28814 strings out of 474486
+ 575373 string characters out of 5743755
  1935542 words of memory out of 5000000
- 50465 multiletter control sequences out of 15000+600000
+ 50472 multiletter control sequences out of 15000+600000
  575653 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,17n,123p,1947b,674s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1000.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk><C:/Users/Simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/Simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/Simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Presentation.pdf (18 pages, 1614004 bytes).
+Output written on Presentation.pdf (18 pages, 1619094 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
+ 511 PDF objects out of 1000 (max. 8388607)
  37 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
