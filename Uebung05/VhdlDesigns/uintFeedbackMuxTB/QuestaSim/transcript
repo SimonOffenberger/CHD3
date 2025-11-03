@@ -1,0 +1,480 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:42:54 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity FeedbackMuxTB
+# -- Compiling architecture testOnInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMux
+# -- Compiling architecture testMultiInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMuxTB
+# End time: 18:42:54 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:42:56 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity FeedbackMuxTB
+# -- Compiling architecture testOnInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMux
+# -- Compiling architecture testMultiInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMuxTB
+# End time: 18:42:56 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:43:00 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity FeedbackMuxTB
+# -- Compiling architecture testOnInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMux
+# -- Compiling architecture testMultiInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMuxTB
+# End time: 18:43:00 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:43:13 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity FeedbackMuxTB
+# -- Compiling architecture testOnInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMux
+# -- Compiling architecture testMultiInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMuxTB
+# End time: 18:43:13 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.feedbackmuxtb(testoninputswitch) -voptargs=+acc
+# vsim -gui work.feedbackmuxtb(testoninputswitch) -voptargs="+acc" 
+# Start time: 18:43:30 on Nov 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.feedbackmuxtb(testoninputswitch)#1
+# Loading work.feedbackmux(primimp)#1
+add wave -position end  sim:/feedbackmuxtb/En
+add wave -position end  sim:/feedbackmuxtb/Q
+add wave -position end  sim:/feedbackmuxtb/D
+run
+run
+run
+run
+add wave -position end  sim:/feedbackmuxtb/FBMux/Yc
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+# Can't move the Now cursor.
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:49:10 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity FeedbackMuxTB
+# -- Compiling architecture testOnInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMux
+# -- Compiling architecture testMultiInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMuxTB
+# End time: 18:49:10 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.feedbackmuxtb(testoninputswitch)#1
+# Loading work.feedbackmux(primimp)#1
+run
+add wave -position end  sim:/feedbackmuxtb/FBMux/Yc
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+run
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:52:49 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity FeedbackMuxTB
+# -- Compiling architecture testOnInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMux
+# -- Compiling architecture testMultiInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMuxTB
+# End time: 18:52:49 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+run
+run
+add wave -position end  sim:/feedbackmuxtb/FBMux/nEn
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:56:54 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity FeedbackMuxTB
+# -- Compiling architecture testOnInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMux
+# -- Compiling architecture testMultiInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMuxTB
+# End time: 18:56:54 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:57:05 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImp of FeedbackMux
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity FeedbackMux
+# End time: 18:57:05 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:57:05 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FeedbackMux
+# End time: 18:57:05 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+run
+add wave -position end  sim:/feedbackmuxtb/FBMux/Impl1
+add wave -position end  sim:/feedbackmuxtb/FBMux/Impl2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:01:35 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity FeedbackMuxTB
+# -- Compiling architecture testOnInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMux
+# -- Compiling architecture testMultiInputSwitch of FeedbackMuxTB
+# -- Loading entity FeedbackMuxTB
+# End time: 19:01:35 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.feedbackmuxtb(testoninputswitch)#1
+# Loading work.feedbackmux(primimp)#1
+run
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:03:06 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImp of FeedbackMux
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity FeedbackMux
+# End time: 19:03:06 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:03:06 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FeedbackMux
+# End time: 19:03:06 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.feedbackmuxtb(testoninputswitch)#1
+# Loading work.feedbackmux(primimp)#1
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+run
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:08:37 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImp of FeedbackMux
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity FeedbackMux
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd(37): near "transport": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd(41): VHDL Compiler exiting
+# End time: 19:08:37 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:08:37 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FeedbackMux
+# End time: 19:08:37 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:08:57 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImp of FeedbackMux
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity FeedbackMux
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd(37): near "transport": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd(41): VHDL Compiler exiting
+# End time: 19:08:57 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:08:57 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FeedbackMux
+# End time: 19:08:57 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:08:58 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImp of FeedbackMux
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity FeedbackMux
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd(37): near "transport": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd(41): VHDL Compiler exiting
+# End time: 19:08:58 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:08:58 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FeedbackMux
+# End time: 19:08:58 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:09:00 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImp of FeedbackMux
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity FeedbackMux
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd(37): near "transport": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd(41): VHDL Compiler exiting
+# End time: 19:09:00 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:09:00 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FeedbackMux
+# End time: 19:09:00 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:09:34 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImp of FeedbackMux
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity FeedbackMux
+# End time: 19:09:34 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:09:34 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FeedbackMux
+# End time: 19:09:34 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.feedbackmuxtb(testoninputswitch)#1
+# Loading work.feedbackmux(primimp)#1
+run
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:10:14 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture PrimImp of FeedbackMux
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity FeedbackMux
+# End time: 19:10:14 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:10:14 on Nov 03,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FeedbackMux
+# End time: 19:10:14 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.feedbackmuxtb(testoninputswitch)#1
+# Loading work.feedbackmux(primimp)#1
+run
+run
+# End time: 20:53:38 on Nov 03,2025, Elapsed time: 2:10:08
+# Errors: 0, Warnings: 2
