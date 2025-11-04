@@ -1,5 +1,220 @@
 # Übung 5 Simon Offenberger S2410306027  
 ## Aufgabe 1 
+Als erstes wurde die Entity nach ihrer Funktionalität analysiert.
+Hier fällt auf das das inertial Delay verwendet wird.
+
+- Code
+>architecture PrimImp of FeedbackMux is
+>
+>  signal Yc, Yn            : std_ulogic;
+>  signal nEn, Impl1, Impl2 : std_ulogic;
+>  
+>begin 
+>
+>  Yc <= Yn;
+>
+>  -- Model this:
+>  --  Yn <= (Yc and not(iEn)) or
+>  --        (iEn and iD);
+>  -- like this:
+>
+>  -- generate negated inputs
+>  nEn   <= not(iEn)       after 6 ns;
+>
+>  -- prime implicands
+>  Impl1 <= iEn and iD     after 5 ns;
+>  Impl2 <= Yc and nEn     after 5 ns;
+>
+>  -- combine prime implicands
+>  Yn    <= Impl1 or Impl2 after 5 ns;
+>
+>  oQ <= Yc;
+>  
+>end architecture PrimImp;
+
+Durch die Betrachtung des KV Diagramms und den wesentlichen Priminplikaten wird der kritische Übergang identifiziert.  
+
+| iEn \ (Yc,iD) | 00 | 01 | 11 | 10 |
+|:--------------:|:--:|:--:|:--:|:--:|
+| 0              | 0  | 0  | 1  | 1  |
+| 1              | 0  | 1  | 1  | 0  |
+
+
+\[
+Y_n = (Y_c \cdot \overline{iEn}) + (iEn \cdot iD)
+\]
+
+Hier wird klar, dass die Untere Zeile im KV Diagramm von einem Implikant und die obere Zeile von dem 2. Primimplikant.
+Nun wird klar, dass durch den Übergang vom Unteren in den Oberen Implikant es zu einem Hazard bzw. zu einer Fehlfunktion kommen kann.
+
+#### Testbench für Fehlfunktion.
+Aus diesem Grund wird in der Testbench dieser Übergang provoziert, somit sollte in der Waveform eine Fehlfunktion festgestellt werden können. Erwartet wird auch ein statischer Hazard im Ausgangssignal.
+
+![Wave Hazard 1](./image/Wave_OneComp%20(1).png)
+
+![Wave Hazard 2](./image/Wave_OneComp%20(2).png)
+
+Durch die Analyse der Waveforms wird festgestellt, dass kein statischer Hazard auftritt. Eine Fehlfunktion ist aber dennoch festzustellen. Hier wird durch den Übergang von EN=1 auf EN=0 auch Q auf 0 gesetzt, dies sollte aber laut KV-Diagramm nicht geschehen. Der Grund dafür liegt im interal Delay welches verwendet wird.
+
+![Driver Hazard](./image/Driver_Hazard.png)
+
+In der obigen Grafik werden die Driver für die Ausgänge der Gatter dargestellt. 
+Hier wird klar, dass der richtige Wert durch den Wechsel von Yn aus den Driver des Und rejected wird!
+Dadurch erscheint auch kein 1 mehr am Ausgang Q!
+
+#### Delay Impl1 > nEn
+Das Delay wurde auf folgendes geändert:
+
+> nEn   <= not(iEn)       after 5 ns;
+> Impl1 <= iEn and iD     after 7 ns;
+> Impl2 <= Yc and nEn     after 5 ns;
+> Yn    <= Impl1 or Impl2 after 5 ns;
+
+- Waveform
+  
+![Waveform](./image/Wave_Impl_m_NEN.png)
+
+- Driver 
+
+![Driver](./image/Driver_m.png)
+
+
+Durch die Betrachtung der Driver, wird klar warum es hier funktioniert.
+Der Hazard wird durch das initial Delay im Driver vom OR-Gatter verworfen.
+
+#### Delay Impl1 = nEn
+Das Delay wurde auf folgendes geändert:
+
+> nEn   <= not(iEn)       after 5 ns;
+> Impl1 <= iEn and iD     after 5 ns;
+> Impl2 <= Yc and nEn     after 5 ns;
+> Yn    <= Impl1 or Impl2 after 5 ns;
+
+- Waveform
+  
+![Waveform](./image/Wave_Impl_eq_NEN.png)
+
+- Driver 
+
+![Driver](./image/Driver_eq.png)
+
+Hier ist in der Waveform eine Oszilation zu sehen. 
+Diese hat dir Ursache, dass die Delays von NEN + folgenden AND und AND mit folgenden OR genau gleich ist. 
+
+- wird stattdessen das Timing so gewählt:
+
+>  nEn   <= not(iEn)       after 5 ns;
+  Impl1 <= iEn and iD     after 5 ns;
+  Impl2 <= Yc and nEn     after 5 ns;
+  Yn    <= Impl1 or Impl2 after 6 ns;
+
+- Waveform
+  
+![Waveform](./image/Wave_Impl_eq2_NEN.png)
+
+- Driver 
+
+![Driver](./image/Driver_eq2.png)
+
+Hier entsteht keine Oszillation mehr.
+Durch Betrachtung der Treiber wird dies auch klar, die Oszillation
+war nur durch die oben angeführte Bedingung Zustande gekommen.
+Nun gewinnt wieder die '1' am Ausgang
+
+
+#### Delay Impl1 < nEn
+Das Delay wurde auf folgendes geändert:
+
+> nEn   <= not(iEn)       after 7 ns;
+> Impl1 <= iEn and iD     after 5 ns;
+> Impl2 <= Yc and nEn     after 5 ns;
+> Yn    <= Impl1 or Impl2 after 5 ns;
+
+- Waveform
+  
+![Waveform](./image/Wave_Impl_lt_EN.png)
+
+- Driver 
+
+![Driver](./image/Driver_lt.png)
+
+Hier setzt sich die 0 durch, die ist auch schon im ersten Teil der Aufgabe gezeigt. 
+
+#### Delay Impl2 > Yn
+Das Delay wurde auf folgendes geändert:
+
+>  nEn   <= not(iEn)      after 6 ns;
+  Impl1 <= iEn and iD     after 5 ns;
+  Impl2 <= Yc and nEn     after 7 ns;
+  Yn    <= Impl1 or Impl2 after 5 ns;
+
+- Waveform
+  
+![Waveform](./image/Wave_Impl_m_Yn.png)
+
+- Driver 
+
+![Driver](./image/Driver2_m.png)
+
+
+Hier setzt sich die '0' durch, da die '1' im Driver vom unteren AND rejected wird.
+
+#### Delay Impl2 = Yn
+Das Delay wurde auf folgendes geändert:
+
+> nEn   <= not(iEn)       after 6 ns;
+> Impl1 <= iEn and iD     after 5 ns;
+> Impl2 <= Yc and nEn     after 5 ns;
+> Yn    <= Impl1 or Impl2 after 5 ns;
+
+- Waveform
+  
+![Waveform](./image/Wave_Impl_eq_Yn.png)
+
+- Driver 
+
+![Driver](./image/Driver2_eq.png)
+
+Hier zeigt sich das gleiche Fehlverhalten wie oben.
+
+
+#### Delay Impl2 < Yn
+Das Delay wurde auf folgendes geändert:
+
+> nEn   <= not(iEn)       after 6 ns;
+> Impl1 <= iEn and iD     after 5 ns;
+> Impl2 <= Yc and nEn     after 5 ns;
+> Yn    <= Impl1 or Impl2 after 7 ns;
+
+- Waveform
+  
+![Waveform](./image/Wave_Impl_lt_Yn.png)
+
+- Driver 
+
+![Driver](./image/Driver2_lt.png)
+
+Hier setzt sich die '1' durch, da die '0' im Driver von OR rejected wird.
+
+#### Hazardfree Architekture 
+
+Hier wird nun das Verhalten der Hazardfree Architektur mit kritischen Verzögerungszeiten untersucht.
+
+##### Delay Impl1 < nEN
+- Waveform
+  
+![Waveform](./image/Wave_Hazard_freeImpl_m_NEN.png)
+
+Hier zeigt sich ein Unterschied zwischen der Umsetzung mit den wesentlichen Primimplikanten und der Hazardfree Architektur.
+Mit der Hazardfree Architekure wurde die Fehlfunktion behoben!.
+
+##### Delay Impl2 > Yn
+- Waveform
+  
+![Waveform](./image/Wave_Hazard_freeImpl2_ge_iD.png)
+
+Auch in diesem Fall wurde die Fehlfunktion behoben, durch hinzufügen des 3. Primimplikanten.
+
 
 ## Aufgabe 2 
 
@@ -100,9 +315,9 @@ CONF DONE
 
 NSTATUS
 
--Funktion: Statusausgang und -eingang für Fehlererkennung und Reset.
+- Funktion: Statusausgang und -eingang für Fehlererkennung und Reset.
 
--Beschreibung: Nach dem Einschalten wird NSTATUS auf low gehalten, bis die Power-on-Reset-Phase abgeschlossen ist. Während der Konfiguration wird NSTATUS auf low gezogen, wenn ein Fehler auftritt. Ein externer low-Pegel an NSTATUS kann den Konfigurationsprozess neu starten. NSTATUS ist ebenfalls bidirektional und sollte mit einem externen 10-kΩ-Pull-up-Widerstand an VCCPGM verbunden werden.
+- Beschreibung: Nach dem Einschalten wird NSTATUS auf low gehalten, bis die Power-on-Reset-Phase abgeschlossen ist. Während der Konfiguration wird NSTATUS auf low gezogen, wenn ein Fehler auftritt. Ein externer low-Pegel an NSTATUS kann den Konfigurationsprozess neu starten. NSTATUS ist ebenfalls bidirektional und sollte mit einem externen 10-kΩ-Pull-up-Widerstand an VCCPGM verbunden werden.
 
 NCONFIG
 

@@ -12,10 +12,10 @@
 -- single gate. Implementation of the multiplexer by prime implicands only.
 -------------------------------------------------------------------------------
 
-architecture PrimImp of FeedbackMux is
+architecture Hazardfree of FeedbackMux is
 
-  signal Yc, Yn            : std_ulogic;
-  signal nEn, Impl1, Impl2 : std_ulogic;
+  signal Yc, Yn                   : std_ulogic;
+  signal nEn, Impl1, Impl2, Impl3 : std_ulogic;
   
 begin 
 
@@ -31,9 +31,13 @@ begin
   -- prime implicands
   Impl1 <= iEn and iD     after 5 ns;
   Impl2 <= Yc and nEn     after 7 ns;
+
+  -- additional Prime Implicant to avoid hazard
+  Impl3 <= Yc and iD    after 5 ns;
+
   -- combine prime implicands
-  Yn    <= Impl1 or Impl2 after 5 ns;
+  Yn    <= Impl1 or Impl2 or Impl3 after 5 ns;
 
   oQ <= Yc;
   
-end architecture PrimImp;
+end architecture Hazardfree;

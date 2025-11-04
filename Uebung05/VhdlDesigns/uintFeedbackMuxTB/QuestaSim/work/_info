@@ -25,6 +25,30 @@ R0
 R1
 R0
 R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
 !s11e vcom 2023.3 2023.07, Jul 17 2023
 13
 !s112 1.1
@@ -34,13 +58,13 @@ R1
 cModel Technology
 Z2 dC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/QuestaSim
 T_opt
-!s110 1762193418
-V>LOZVNnfC2Po9=1?hoL`i1
+!s110 1762286721
+V@L_5A27c<Y8dA12EKA0X01
 04 13 17 work feedbackmuxtb testoninputswitch 1
-=13-58cdc910746f-6908f009-3c6-3350
+=11-58cdc910746f-690a5c80-3db-9a50
 R1
 !s12b OEM100
-!s124 OEM10U2 
+!s124 OEM10U3 
 o-quiet -auto_acc_if_foreign -work work +acc
 tCvgOpt 0
 n@_opt
@@ -49,7 +73,7 @@ Efeedbackmux
 w1762021351
 Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
 Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
-!i122 34
+!i122 50
 R2
 8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
 FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
@@ -59,26 +83,48 @@ Vb0>2PWB=OS4n`QKhkQH1z0
 !s100 bc`Ng;UWaYhd3^oRlkONX1
 Z5 OL;C;2023.3;77
 33
-Z6 !s110 1762193414
+Z6 !s110 1762286718
 !i10b 1
-Z7 !s108 1762193414.000000
+Z7 !s108 1762286718.000000
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd|
 !i113 0
 Z8 o-O0 -work work
 Z9 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
-Aprimimp
-w1762193403
+Ahazardfree
+w1762286711
 R3
 R4
 Z10 DEx4 work 11 feedbackmux 0 22 b0>2PWB=OS4n`QKhkQH1z0
-!i122 34
+!i122 50
+8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-Hazardfree-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-Hazardfree-a.vhd
+l20
+L15 29
+VB8z8FBJ:MBCcV=F=AzAdX1
+!s100 ?UmV[C_E?kg3Lkl>g[:JV0
+R5
+33
+R6
+!i10b 1
+R7
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-Hazardfree-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-Hazardfree-a.vhd|
+!i113 0
+R8
+R9
+Aprimimp
+w1762286705
+R3
+R4
+R10
+!i122 50
 8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
 l20
-L15 27
-VCPBDc=ZzYj8DWXE:WLoFn3
-!s100 _eQm7CFREEzf?9EP_M0dg2
+L15 25
+Vol4<HFQO1Ajo6^A<_HR_a0
+!s100 fa<1jCCmNg^09fW2:Xa9i3
 R5
 33
 R6
@@ -90,12 +136,12 @@ R7
 R8
 R9
 Efeedbackmuxtb
-Z11 w1762192883
+Z11 w1762286241
 Z12 DPx4 ieee 9 math_real 0 22 :8NNHF3SFI6^on5?4X[S`1
 Z13 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
 R3
 R4
-!i122 27
+!i122 47
 R2
 Z14 8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
 Z15 FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
@@ -105,9 +151,9 @@ V64:n=R11kb7a=3zQ06KVF2
 !s100 >aECD]3z?kHe2738diJTd0
 R5
 33
-Z16 !s110 1762192895
+Z16 !s110 1762286244
 !i10b 1
-Z17 !s108 1762192895.000000
+Z17 !s108 1762286244.000000
 Z18 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd|
 Z19 !s107 C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd|
 !i113 0
@@ -119,11 +165,11 @@ R13
 R3
 R4
 Z20 DEx4 work 13 feedbackmuxtb 0 22 64:n=R11kb7a=3zQ06KVF2
-!i122 27
-l65
-L64 5
-VLTcgP<__cQ1@jZeUXA]`V3
-!s100 WezVJAiXYzWNRJAHTi=D21
+!i122 47
+l73
+L72 5
+VekZZBjRT<N?;Iz<4eCcgZ1
+!s100 NR7=Weo<5eR`NCLZ_5=[<0
 R5
 33
 R16
@@ -141,11 +187,11 @@ R13
 R3
 R4
 R20
-!i122 27
-l27
-L23 38
-V8lOkU725J?eUlJSdeHG]i3
-!s100 chGRVzmW[MD]DFYYzjG^63
+!i122 47
+l28
+L23 46
+ViC]<Rg_1V9SJHdYcPV7VP2
+!s100 fLAZbgGSng2K4g1k5N:Y31
 R5
 33
 R16

@@ -23,17 +23,23 @@ end FeedbackMuxTB;
 architecture testOnInputSwitch of FeedbackMuxTB is
     signal En : std_ulogic := '0';
     signal Q : std_ulogic := '0';
+    signal Q_Hfree : std_ulogic := '0';
     signal D : std_ulogic := '0';
 begin 
 
--- Instantiate Three Mux entities with different Architekures
+-- Mux with logic hazard
 FBMux : entity work.FeedbackMux(PrimImp)
 port map (
     iEn      => En,
     iD       => D,
     oQ       => Q);
 
-
+-- Hazardfree Mux
+FBMuxHfree : entity work.FeedbackMux(Hazardfree)
+port map (
+    iEn      => En,
+    iD       => D,
+    oQ       => Q_Hfree);
 
 
 stimul: process is
