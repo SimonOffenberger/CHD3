@@ -1,7 +1,7 @@
 m255
 K4
 z2
-Z0 !s12c _opt
+Z0 !s12c _opt1
 Z1 !s99 nomlopt
 R0
 R1
@@ -25,29 +25,65 @@ R0
 R1
 R0
 R1
-R0
+Z2 !s12c _opt
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
 R1
-R0
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
 R1
 !s11e vcom 2023.3 2023.07, Jul 17 2023
 13
@@ -56,46 +92,59 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z2 dC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/QuestaSim
+Z3 dC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/QuestaSim
 T_opt
-!s110 1762286721
-V@L_5A27c<Y8dA12EKA0X01
+!s110 1762325746
+VElnX6caH;N:Eogl5K]JU]2
 04 13 17 work feedbackmuxtb testoninputswitch 1
-=11-58cdc910746f-690a5c80-3db-9a50
+=6-58cdc910746f-690af4f1-344-5e98
 R1
-!s12b OEM100
-!s124 OEM10U3 
-o-quiet -auto_acc_if_foreign -work work +acc
-tCvgOpt 0
+Z4 !s12b OEM100
+Z5 !s124 OEM10U3 
+Z6 o-quiet -auto_acc_if_foreign -work work +acc
+Z7 tCvgOpt 0
 n@_opt
-OL;O;2023.3;77
+Z8 OL;O;2023.3;77
+R3
+T_opt1
+!s110 1762343131
+V?d2BUeQYP1=hd]AnIhzbT3
+04 13 20 work feedbackmuxtb testmultiinputswitch 1
+=4-58cdc910746f-690b38da-1b9-8d60
+R1
+R4
+R5
+R6
+R7
+n@_opt1
+R8
 Efeedbackmux
 w1762021351
-Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
-Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Z9 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z10 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
 !i122 50
-R2
+R3
 8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
 FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd
 l0
 L18 1
 Vb0>2PWB=OS4n`QKhkQH1z0
 !s100 bc`Ng;UWaYhd3^oRlkONX1
-Z5 OL;C;2023.3;77
+Z11 OL;C;2023.3;77
 33
-Z6 !s110 1762286718
+Z12 !s110 1762286718
 !i10b 1
-Z7 !s108 1762286718.000000
+Z13 !s108 1762286718.000000
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-e.vhd|
 !i113 0
-Z8 o-O0 -work work
-Z9 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
+Z14 o-O0 -work work
+Z15 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
 Ahazardfree
 w1762286711
-R3
-R4
-Z10 DEx4 work 11 feedbackmux 0 22 b0>2PWB=OS4n`QKhkQH1z0
+R9
+R10
+Z16 DEx4 work 11 feedbackmux 0 22 b0>2PWB=OS4n`QKhkQH1z0
 !i122 50
 8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-Hazardfree-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-Hazardfree-a.vhd
@@ -103,21 +152,21 @@ l20
 L15 29
 VB8z8FBJ:MBCcV=F=AzAdX1
 !s100 ?UmV[C_E?kg3Lkl>g[:JV0
-R5
+R11
 33
-R6
+R12
 !i10b 1
-R7
+R13
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-Hazardfree-a.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-Hazardfree-a.vhd|
 !i113 0
-R8
-R9
+R14
+R15
 Aprimimp
 w1762286705
-R3
-R4
+R9
 R10
+R16
 !i122 50
 8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd
@@ -125,80 +174,84 @@ l20
 L15 25
 Vol4<HFQO1Ajo6^A<_HR_a0
 !s100 fa<1jCCmNg^09fW2:Xa9i3
-R5
+R11
 33
-R6
+R12
 !i10b 1
-R7
+R13
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/unitFeedbackMux/src/FeedbackMux-PrimImp-a.vhd|
 !i113 0
-R8
-R9
+R14
+R15
 Efeedbackmuxtb
-Z11 w1762286241
-Z12 DPx4 ieee 9 math_real 0 22 :8NNHF3SFI6^on5?4X[S`1
-Z13 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z17 w1762343113
+Z18 DPx4 ieee 16 std_logic_textio 0 22 C8j>g0lzF^EAA]5<S6PY32
+Z19 DPx4 ieee 9 math_real 0 22 :8NNHF3SFI6^on5?4X[S`1
+Z20 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+R9
+R10
+!i122 125
 R3
-R4
-!i122 47
-R2
-Z14 8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
-Z15 FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+Z21 8C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
+Z22 FC:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd
 l0
 L19 1
-V64:n=R11kb7a=3zQ06KVF2
-!s100 >aECD]3z?kHe2738diJTd0
-R5
+Vi<6`g?l?35kfo:ieL2jDS3
+!s100 oG]ckmC3gYh8:dg136BJD2
+R11
 33
-Z16 !s110 1762286244
+Z23 !s110 1762343117
 !i10b 1
-Z17 !s108 1762286244.000000
-Z18 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd|
-Z19 !s107 C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd|
+Z24 !s108 1762343117.000000
+Z25 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd|
+Z26 !s107 C:/HSD_SEM_3/CHD3/Uebung05/VhdlDesigns/uintFeedbackMuxTB/src/FeedbackMuxTB-ea.vhd|
 !i113 0
-R8
-R9
+R14
+R15
 Atestmultiinputswitch
-R12
-R13
-R3
-R4
-Z20 DEx4 work 13 feedbackmuxtb 0 22 64:n=R11kb7a=3zQ06KVF2
-!i122 47
-l73
-L72 5
-VekZZBjRT<N?;Iz<4eCcgZ1
-!s100 NR7=Weo<5eR`NCLZ_5=[<0
-R5
-33
 R16
-!i10b 1
-R17
 R18
 R19
-!i113 0
-R8
-R9
-Atestoninputswitch
-R10
-R12
-R13
-R3
-R4
 R20
-!i122 47
-l28
-L23 46
-ViC]<Rg_1V9SJHdYcPV7VP2
-!s100 fLAZbgGSng2K4g1k5N:Y31
-R5
+R9
+R10
+Z27 DEx4 work 13 feedbackmuxtb 0 22 i<6`g?l?35kfo:ieL2jDS3
+!i122 125
+l76
+L70 94
+VPKKJ0?I:1OGeLeZOcg7kI2
+!s100 E]hOUDj[cnP7R]ZAX2_Z@0
+R11
 33
-R16
+R23
 !i10b 1
-R17
+R24
+R25
+R26
+!i113 0
+R14
+R15
+Atestoninputswitch
+R16
 R18
 R19
-!i113 0
-R8
+R20
 R9
+R10
+R27
+!i122 125
+l28
+L23 44
+VfTBIPVgA7REBN^GRb5h9>1
+!s100 `VFR]l>A4Lg41Xa0_MT<j0
+R11
+33
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R14
+R15
