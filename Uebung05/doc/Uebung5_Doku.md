@@ -216,7 +216,88 @@ Mit der Hazardfree Architekure wurde die Fehlfunktion behoben!.
 Auch in diesem Fall wurde die Fehlfunktion behoben, durch hinzufügen des 3. Primimplikanten.
 
 
-## Aufgabe 2 
+## Aufgabe 2 Mehrkomponenten Übergänge
+
+Für diese Aufgabe wurde eine weitere Architektur zur vorherigen Testbench hinzugefügt. In dieser Testbench werden alle wesentlichen Übergänge an den Eingängen der Entity **FeedbackMux** angelegt.
+Die relevanten Übergänge sind folgende:
+
+| iD | iEn |
+|:--: |:--:|
+| 1   | 1  | 
+| 0   | 0  | 
+| 0   | 1  | 
+| 1   | 0  | 
+| 1   | 1  | 
+| 1   | 0  | 
+| 0   | 1  | 
+| 0   | 0  | 
+
+Dies Übergänge werden mit verschiedensten Timings relativ zueinander and er Entity angelegt. 
+Hier soll die Auswirkung des Timings von Merkomponenten Übergänge analysiert werden.
+
+#### Simulationsergebnisse
+
+##### Relativ Timing -10 ns
+![Wave -10](./image/Aufgabe2/Wave_Aufgabe2%20(1).png)
+##### Relativ Timing -9 ns
+![Wave -9](./image/Aufgabe2/Wave_Aufgabe2%20(2).png)
+##### Relativ Timing -8 ns
+![Wave -8](./image/Aufgabe2/Wave_Aufgabe2%20(3).png)
+##### Relativ Timing -7 ns
+![Wave -7](./image/Aufgabe2/Wave_Aufgabe2%20(4).png)
+##### Relativ Timing -6 ns
+![Wave -6](./image/Aufgabe2/Wave_Aufgabe2%20(5).png)
+##### Relativ Timing -5 ns
+![Wave -5](./image/Aufgabe2/Wave_Aufgabe2%20(6).png)
+##### Relativ Timing -4 ns
+![Wave -4](./image/Aufgabe2/Wave_Aufgabe2%20(7).png)
+##### Relativ Timing -3 ns
+![Wave -3](./image/Aufgabe2/Wave_Aufgabe2%20(8).png)
+##### Relativ Timing -2 ns
+![Wave -2](./image/Aufgabe2/Wave_Aufgabe2%20(9).png)
+##### Relativ Timing -1 ns
+![Wave -1](./image/Aufgabe2/Wave_Aufgabe2%20(10).png)
+##### Relativ Timing 0 ns
+![Wave 0](./image/Aufgabe2/Wave_Aufgabe2%20(11).png)
+##### Relativ Timing +1 ns
+![Wave +1](./image/Aufgabe2/Wave_Aufgabe2%20(12).png)
+##### Relativ Timing +2 ns
+![Wave +2](./image/Aufgabe2/Wave_Aufgabe2%20(13).png)
+##### Relativ Timing +3 ns
+![Wave +3](./image/Aufgabe2/Wave_Aufgabe2%20(14).png)
+##### Relativ Timing +4 ns
+![Wave +4](./image/Aufgabe2/Wave_Aufgabe2%20(15).png)
+##### Relativ Timing +5 ns
+![Wave +5](./image/Aufgabe2/Wave_Aufgabe2%20(16).png)
+##### Relativ Timing +6 ns
+![Wave +6](./image/Aufgabe2/Wave_Aufgabe2%20(17).png)
+##### Relativ Timing +7 ns
+![Wave +7](./image/Aufgabe2/Wave_Aufgabe2%20(18).png)
+##### Relativ Timing +8 ns
+![Wave +8](./image/Aufgabe2/Wave_Aufgabe2_8.png)
+##### Relativ Timing +9 ns
+![Wave +9](./image/Aufgabe2/Wave_Aufgabe2%20(19).png)
+##### Relativ Timing +10 ns
+![Wave +10](./image/Aufgabe2/Wave_Aufgabe2%20(20).png)
+
+In den oben angeführten Waveforms sind alle Fehlfunktionen rot markiert.
+Dies ist auch in der Ausgabe der Check Variable zu sehen.
+Die Check Variable wird von einem Verify Process gebildet.
+Dort wird in ideales Modell des Feedback Mux berechnet und der Ausgabewert mit dem vom realen Mux verglichen.
+
+Aus den Waveforms lässt sich folgender Zusammenhang feststellen.
+
+Bei einem Timing von -5 bis -1 tritt ein Funktionshazard beim Übergang von 01 auf 10 (ID/EN) auf. Durch die Annahme, dass En den Clock input darstellt lässt sich hier die Setup Zeit ablesen. 
+Die Setupzeit beträgt hier 6 ns. (Setupzeit muss größer sein als die Zeit bei der Fehlfunktionen auftreten 5+1 = 6).
+
+Weiters tritt ein Funktionshazard im Bereich von 0ns bis 3ns auf.
+Jedoch ist hier der kritische Übergang 11 auf 00 (iD/EN).
+Hier lässt sich auf eine Holdzeit von 4ns schließen.
+
+#### Welcher Zusammenhang besteht zwischen der Verletzung dieser Zeiten und Mehr-komponenten Übergängen?
+Bei Verletzung der Setup bzw. Holdzeit führt ein Mehrkomponenten übergang zwischen En und Id zu einem Funktionshazard. 
+
+#### Handelte es sich beim kritischen Übergang, den Sie in der vorigen Aufgabe gefunden haben um einen Mehrkomponenten Übergang?
 
 ## Aufgabe 3 Schaltplan DE1-SOC
 ### Aufteilung des FPGA Chips im Schaltplan

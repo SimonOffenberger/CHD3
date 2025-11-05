@@ -142,7 +142,7 @@ begin
 end process stimul;
 
 
-verify: postponed process (En,D) is
+verify: process is
     variable expected : std_ulogic := '0';
     variable Yc : std_ulogic := '0';
     variable check : string(1 to 3) := "OK ";
@@ -157,7 +157,7 @@ verify: postponed process (En,D) is
     end if;
 
     Yc := expected;
-
+    wait for 1 ns;
 end process verify;
 
 end testMultiInputSwitch;
