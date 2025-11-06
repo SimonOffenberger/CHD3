@@ -1,5 +1,6 @@
 -------------------------------------------------------------------------------
--- Title      : Entity and Architekture of the Testbench from the 2 to 1 Mux
+-- Title      : Entity and Architekture of a Testbench for Analysing static Hazards
+-- Project    : Uebung05 - VHDL Designs
 -------------------------------------------------------------------------------
 -- University : FH-Hagenberg/HSSE, Hagenberg/Austria
 --              Copyright (c) 2000
@@ -8,13 +9,8 @@
 -- offenberger: Simon Offenberger
 -------------------------------------------------------------------------------
 
--- Hinweis 
-
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-use ieee.math_real.all; -- library for math functions
-use ieee.std_logic_textio.all;  -- oder ieee.numeric_std_unsigned, wenn nötig
 
 entity FeedbackMuxTB is
 end FeedbackMuxTB;
@@ -93,7 +89,7 @@ port map (
 
 
 stimul: process is
-variable transition : string(1 to 2); 
+variable vtransition : string(1 to 2); 
 begin
 
     D   <= '1';
@@ -103,35 +99,35 @@ begin
     for t in -10 to 10 loop
 
         t_delay <= t * 1 ns;
-        transition := "00";
+        vtransition := "00";
         D  <= '0' after (10 ns + 1 ns * t);
         En <= '0' after  10 ns;
         wait for 50 ns;
-        transition := "01";
-        D  <= '0' after (10 ns + 1 ns * t);
-        En <= '1' after  10 ns;
-        wait for 50 ns;
-        transition := "10";
-        D  <= '1' after (10 ns + 1 ns * t);
-        En <= '0' after  10 ns;
-        wait for 50 ns;
-        transition := "11";
-        D  <= '1' after (10 ns + 1 ns * t);
-        En <= '1' after  10 ns;
-        wait for 50 ns;
-        transition := "10";
-        D  <= '1' after (10 ns + 1 ns * t);
-        En <= '0' after  10 ns;
-        wait for 50 ns;
-        transition := "01";
+        vtransition := "01";
         D  <= '0' after (10 ns + 1 ns * t);
         En <= '1' after  10 ns;
         wait for 50 ns;
-        transition := "00";
+        vtransition := "10";
+        D  <= '1' after (10 ns + 1 ns * t);
+        En <= '0' after  10 ns;
+        wait for 50 ns;
+        vtransition := "11";
+        D  <= '1' after (10 ns + 1 ns * t);
+        En <= '1' after  10 ns;
+        wait for 50 ns;
+        vtransition := "10";
+        D  <= '1' after (10 ns + 1 ns * t);
+        En <= '0' after  10 ns;
+        wait for 50 ns;
+        vtransition := "01";
+        D  <= '0' after (10 ns + 1 ns * t);
+        En <= '1' after  10 ns;
+        wait for 50 ns;
+        vtransition := "00";
         D  <= '0' after (10 ns + 1 ns * t);
         En <= '0' after  10 ns;
         wait for 50 ns;
-        transition := "11";
+        vtransition := "11";
         D  <= '1' after (10 ns + 1 ns * t);
         En <= '1' after  10 ns;
         wait for 50 ns;
@@ -143,20 +139,20 @@ end process stimul;
 
 
 verify: process is
-    variable expected : std_ulogic := '0';
-    variable Yc : std_ulogic := '0';
-    variable check : string(1 to 3) := "OK ";
+    variable vexpected : std_ulogic := '0';
+    variable vYc : std_ulogic := '0';
+    variable vcheck : string(1 to 3) := "OK ";
     begin
 
-    expected := (En and D) or (Yc and (not En));
+    vexpected := (En and D) or (vYc and (not En));
 
-    if(expected = Q_Hfree) then 
-        check := "OK!";
+    if(vexpected = Q_Hfree) then 
+        vcheck := "OK!";
     else                    
-        check := "NOK";
+        vcheck := "NOK";
     end if;
 
-    Yc := expected;
+    vYc := vexpected;
     wait for 1 ns;
 end process verify;
 

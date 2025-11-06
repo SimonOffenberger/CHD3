@@ -2,7 +2,7 @@
 ## Aufgabe 1 
 Als erstes wurde die Entity nach ihrer Funktionalität analysiert.
 Hier fällt auf das das inertial Delay verwendet wird.
-
+Dies wird für die nachstehende Betrachtung noch wichtig!
 - Code
 >architecture PrimImp of FeedbackMux is
 >
@@ -44,10 +44,30 @@ Durch die Betrachtung des KV Diagramms und den wesentlichen Priminplikaten wird 
 Y_n = (Y_c \cdot \overline{iEn}) + (iEn \cdot iD)
 \]
 
-Hier wird klar, dass die Untere Zeile im KV Diagramm von einem Implikant und die obere Zeile von dem 2. Primimplikant.
-Nun wird klar, dass durch den Übergang vom Unteren in den Oberen Implikant es zu einem Hazard bzw. zu einer Fehlfunktion kommen kann.
+Hier wird klar, dass die untere Zeile im KV Diagramm von einem Implikant und die obere Zeile von dem 2. Primimplikant abgebildet wird.
+Nun wird klar, dass durch den Übergang vom unteren in den oberen Implikant es zu einem Hazard bzw. zu einer Fehlfunktion kommen kann.
 
 #### Testbench für Fehlfunktion.
+
+>stimul: process is
+> begin
+>
+>    wait for 30 ns;
+>    D <= '1';
+>    wait for 30 ns;  
+>    En <= '1';
+>    wait for 30 ns;  
+>    En <= '0';
+>    wait for 30 ns;
+>    En <= '1';
+>    wait for 30 ns;
+>    En <= '0';
+>    wait for 30 ns;
+>    En <= '1';
+>
+>    wait;
+> end process stimul;
+
 Aus diesem Grund wird in der Testbench dieser Übergang provoziert, somit sollte in der Waveform eine Fehlfunktion festgestellt werden können. Erwartet wird auch ein statischer Hazard im Ausgangssignal.
 
 ![Wave Hazard 1](./image/Wave_OneComp%20(1).png)
@@ -59,7 +79,7 @@ Durch die Analyse der Waveforms wird festgestellt, dass kein statischer Hazard a
 ![Driver Hazard](./image/Driver_Hazard.png)
 
 In der obigen Grafik werden die Driver für die Ausgänge der Gatter dargestellt. 
-Hier wird klar, dass der richtige Wert durch den Wechsel von Yn aus den Driver des Und rejected wird!
+Hier wird klar, dass der richtige Wert durch den Wechsel von Yn aus den Driver des **Und-Gatters** rejected wird!
 Dadurch erscheint auch kein 1 mehr am Ausgang Q!
 
 #### Delay Impl1 > nEn
@@ -99,7 +119,7 @@ Das Delay wurde auf folgendes geändert:
 ![Driver](./image/Driver_eq.png)
 
 Hier ist in der Waveform eine Oszilation zu sehen. 
-Diese hat dir Ursache, dass die Delays von NEN + folgenden AND und AND mit folgenden OR genau gleich ist. 
+Diese hat ihre Ursache darin, dass die Delays von NEN + folgenden AND und AND mit folgenden OR genau gleich ist. 
 
 - wird stattdessen das Timing so gewählt:
 
@@ -138,7 +158,7 @@ Das Delay wurde auf folgendes geändert:
 
 ![Driver](./image/Driver_lt.png)
 
-Hier setzt sich die 0 durch, die ist auch schon im ersten Teil der Aufgabe gezeigt. 
+Hier setzt sich die 0 durch, dies auch schon im ersten Teil der Aufgabe gezeigt. 
 
 #### Delay Impl2 > Yn
 Das Delay wurde auf folgendes geändert:
@@ -198,7 +218,7 @@ Hier setzt sich die '1' durch, da die '0' im Driver von OR rejected wird.
 
 #### Hazardfree Architekture 
 
-Hier wird nun das Verhalten der Hazardfree Architektur mit kritischen Verzögerungszeiten untersucht.
+Hier wird nun das Verhalten der Hazardfree Architektur mit kritischen Verzögerungszeiten aus der vorherigen Aufgabe untersucht.
 
 ##### Delay Impl1 < nEN
 - Waveform
@@ -221,6 +241,11 @@ Auch in diesem Fall wurde die Fehlfunktion behoben, durch hinzufügen des 3. Pri
 Für diese Aufgabe wurde eine weitere Architektur zur vorherigen Testbench hinzugefügt. In dieser Testbench werden alle wesentlichen Übergänge an den Eingängen der Entity **FeedbackMux** angelegt.
 Die relevanten Übergänge sind folgende:
 
+**Hinweis aus der Angabe:**
+>Da nur Falle interessant sind, bei denen eine Änderung von iEn vorliegt, kann man die Anzahl der zu
+simulierenden Falle gegen über diesen Möglichkeiten reduzieren.
+
+
 | iD | iEn |
 |:--: |:--:|
 | 1   | 1  | 
@@ -232,8 +257,8 @@ Die relevanten Übergänge sind folgende:
 | 0   | 1  | 
 | 0   | 0  | 
 
-Dies Übergänge werden mit verschiedensten Timings relativ zueinander and er Entity angelegt. 
-Hier soll die Auswirkung des Timings von Merkomponenten Übergänge analysiert werden.
+Dies Übergänge werden mit verschiedensten Timings relativ zueinander and der Entity angelegt. 
+Hier soll die Auswirkung des Timings von Merkomponenten Übergängen analysiert werden.
 
 #### Simulationsergebnisse
 
@@ -283,7 +308,7 @@ Hier soll die Auswirkung des Timings von Merkomponenten Übergänge analysiert w
 In den oben angeführten Waveforms sind alle Fehlfunktionen rot markiert.
 Dies ist auch in der Ausgabe der Check Variable zu sehen.
 Die Check Variable wird von einem Verify Process gebildet.
-Dort wird in ideales Modell des Feedback Mux berechnet und der Ausgabewert mit dem vom realen Mux verglichen.
+Dort wird ein ideales Modell des Feedback Mux berechnet und der Ausgabewert mit dem vom realen Mux verglichen.
 
 Aus den Waveforms lässt sich folgender Zusammenhang feststellen.
 
@@ -295,9 +320,21 @@ Jedoch ist hier der kritische Übergang 11 auf 00 (iD/EN).
 Hier lässt sich auf eine Holdzeit von 4ns schließen.
 
 #### Welcher Zusammenhang besteht zwischen der Verletzung dieser Zeiten und Mehr-komponenten Übergängen?
-Bei Verletzung der Setup bzw. Holdzeit führt ein Mehrkomponenten übergang zwischen En und Id zu einem Funktionshazard. 
+Bei Verletzung der Setup bzw. Holdzeit führt ein Mehrkomponenten-Übergang zwischen En und Id zu einem Funktionshazard. 
+
+Anders gesagt eine Verletzung der Setup- oder Holdzeit bedeutet, dass zwei Signale (z. B. Daten und Enable/Takt) nahezu gleichzeitig wechseln.
+Dadurch entsteht ein Mehrkomponenten-Übergang an den Eingängen der Schaltung, was zu einem Funktionshazard führen kann.
 
 #### Handelte es sich beim kritischen Übergang, den Sie in der vorigen Aufgabe gefunden haben um einen Mehrkomponenten Übergang?
+Nein! In der Aufgabe war explizit ein Einkomponenten Übergang gefordert. Wenn hier nur die Eingänge ins System beobachtet werden, also En und D wurde von außen nur En geändert.
+
+![Driver](./image/Driver_lt.png)
+
+Wenn man allerdings in die Schaltung hinein schaut fällt auf, dass diese Änderung von iEn bewirkt, dass sich Yc ändert. 
+Dies geschieht durch die Verzögerungszeit etwas später als der Wechsel vom Signal nEn. 
+Nun ändern sich die Signale nEn und Yc am And-Gatter.
+Wenn hier das Signal nEn als Takt betrachtet wird, wird durch die Änderung von Yc die Holdzeit verletzt. 
+Man könnte argumentieren, dass sich dadurch im Inneren Aufbau des Gatters ein Mehrkomponenten-Übergang als Folge eines Einkomponenten-Übergangs ergibt. 
 
 ## Aufgabe 3 Schaltplan DE1-SOC
 ### Aufteilung des FPGA Chips im Schaltplan
@@ -308,6 +345,7 @@ Der FPGA Chip ist im Schaltplan in folgende Gruppen aufgeteilt
 - Power Pins
 - HPS Power
 - Configuration
+  
 Der FPGA Chip wurde in Funktionale Gruppen aufgeteilt. Dies bewirkt eine bessere Lesbarkeit der Schematic. Hier wurden zb. Alle Versorgungs- und Gnd Pins auf ein Blatt dargestellt.
 Würde dies nicht gemacht werden wäre der Schaltplan unübersichtlich.
 
@@ -335,13 +373,17 @@ Außerdem verfügt der FPGA Chip über die höchste Leistungsaufnahme an Board.
 Unter der Betrachtung der beiden Kennlinien ist kein wesentlicher Unterschied der beiden Dioden zu erkennen. 
 Ein Unterschied scheint durch die Betrachtung der ersten Kennlinie der Leckstrom zu sein.
 
+Der Unterschied liegt im Einsatzgebiet der jeweiligen Diode:
+
 **Unterschied zur Zenerdiode**
 **Zweck**
-- **Transil:** Schutz vor kurzzeitigen Überspannungs-Impulsen (ESD, EFT, Surge) (Pulse aus der EMV Prüfung); ausgelegt auf sehr schnelle Reaktion und hohe Pulsleistung.  
+- **Transil:** Schutz vor kurzzeitigen Überspannungs-Impulsen (ESD, EFT, Surge) (Pulse aus der EMV Prüfung). Außerdem ist sie auf sehr schnelle Reaktion und hohe Pulsleistungen ausgelegt.  
 - **Zener:** Meist für Spannungsreferenz/-stabilisierung im Dauerbetrieb 
 
+In den Datenblättern werden auch unterschiedliche Kenngrößen spezifiziert.
+
 **Spezifikationen**
-- **Transil:** Spezifiziert mit *V<sub>RM</sub>*, *V<sub>BR</sub>* (bei kleinem Prüfstrom) und *V<sub>CL</sub>* bei definiertem Pulsstrom/Pulsform. Ersichtlich aus den im Datenblatt angeführten Werten
+- **Transil:** Spezifiziert eine Breakdown Spannung und eine Clamping Voltage. Also die Spannung auf der sie bei einem Störimpuls begrenzt.  
 - **Zener:** Spezifiziert mit Zenerspannung bei einem Teststrom (DC); nicht auf hohe Pulsleistungen ausgelegt.
 
 ### MOSFET FDV305N
@@ -356,8 +398,9 @@ Die Temperaturmessung könnte über einen internen Temperatursensor im FPGA bzw.
 Weiters könnte noch ein Temperatursensor mittels FPGA ausgelesen werden. z.B. über anstecken an den GPIO Header.
 
 ### Problem beim Einstecken des Lüfters
-Es könnte sein, dass beim Einstecken des Lüfters ein ESD Schlag von einem Aufgeladenen Benutzer auf den Connector überspringt.
-Diese ESD-Impuls muss nun vom Board abgefangen werden um sensible Bauteile zu schützen. Z.B. durch Transil Diode die das MOSFET Gate schützt.
+Es könnte sein, dass beim Einstecken des Lüfters ein ESD Schlag von einem aufgeladenen Benutzer auf den Connector überspringt.
+Dieser ESD-Impuls muss nun vom Board abgefangen werden um sensible Bauteile zu schützen. Z.B. durch Transil Diode die das MOSFET Gate schützt.
+Weiters kann der Lüfter nicht eingesteckt werden, da die Buchse nicht bestückt ist.
 
 ### DNI?
 **Do not Install**
@@ -365,7 +408,7 @@ Das bedeutet, dass dieses Modul auf dem PCB nicht bestückt ist.
 Also können auch keine ESD Events durch Einstecken des Lüfters entstehen.
 
 ### Configuration DIP-Switch
-Im folgenden Bild ist die Default Konfiguration des Dip Switches abgebildet. Hier ist unterhabl auch die Schaltung zusehen.
+Im folgenden Bild ist die Default Konfiguration des Dip Switches abgebildet. Hier ist unterhalb auch die Schaltung zusehen.
 ![DIP Switch](./image/Config.png)
 Durch Vergleich mit der Configuration am Board ist ersichtlich dass die Beschreibung am Schaltplan, **MSEL[4:0]=10010** nicht mit der am Board übereinstimmt. Die am Board eingestellte Stellung ist genau bitweise negiert! Dies impliziert, dass die Leitungen MSEL negative Logik haben, sie sind Low aktiv!
 Aus diesem Grund wird auch durch ON Schalten des Dip Schalters eine logische '0' am Pin angelegt. Ansonsten wird der Pegel 'H' am Pin angelegt. 
@@ -390,25 +433,25 @@ Auszug aus dem Cyclon V Handbook
 ![konfig Pins](./image/ConfPins.png)
 
 CONF DONE
-- Funktion: Statusausgang für den Konfigurationsprozess.
+-  Statusausgang für den Konfigurationsprozess.
 
-- Beschreibung: Während der Konfiguration wird CONF DONE auf low gezogen. Nach der Konfiguration wird CONF DONE auf high freigegeben. Dies signalisiert, dass die Konfiguration abgeschlossen ist und die Initialisierung beginnt.
+-  Während der Konfiguration wird CONF DONE auf low gezogen. Nach der Konfiguration wird CONF DONE auf high freigegeben. Dies signalisiert, dass die Konfiguration abgeschlossen ist und die Initialisierung beginnt.
 
 NSTATUS
 
-- Funktion: Statusausgang und -eingang für Fehlererkennung und Reset.
+-  Statusausgang und -eingang für Fehlererkennung und Reset.
 
-- Beschreibung: Nach dem Einschalten wird NSTATUS auf low gehalten, bis die Power-on-Reset-Phase abgeschlossen ist. Während der Konfiguration wird NSTATUS auf low gezogen, wenn ein Fehler auftritt. Ein externer low-Pegel an NSTATUS kann den Konfigurationsprozess neu starten. NSTATUS ist ebenfalls bidirektional und sollte mit einem externen 10-kΩ-Pull-up-Widerstand an VCCPGM verbunden werden.
+-  Nach dem Einschalten wird NSTATUS auf low gehalten, bis die Power-on-Reset-Phase abgeschlossen ist. Während der Konfiguration wird NSTATUS auf low gezogen, wenn ein Fehler auftritt. Ein externer low-Pegel an NSTATUS kann den Konfigurationsprozess neu starten.
 
 NCONFIG
 
-- Funktion: Eingang für das Starten oder Neustarten der Konfiguration.
+-  Eingang für das Starten oder Neustarten der Konfiguration.
 
-- Beschreibung: Ein low-Pegel an NCONFIG startet den Konfigurationsprozess neu.
+-  Ein low-Pegel an NCONFIG startet den Konfigurationsprozess neu.
 
     
 NCE
 
-- Funktion: Chip Enable-Eingang.
+-  Chip Enable-Eingang.
 
-- Beschreibung: Ein low-Pegel an NCE aktiviert das FPGA für die Konfiguration. In der Regel wird NCE auf low gehalten, um die Konfiguration zu ermöglichen.
+-  Ein low-Pegel an NCE aktiviert das FPGA für die Konfiguration. In der Regel wird NCE auf low gehalten, um die Konfiguration zu ermöglichen.
