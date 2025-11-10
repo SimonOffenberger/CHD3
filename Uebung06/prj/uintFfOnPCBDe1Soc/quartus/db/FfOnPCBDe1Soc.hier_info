@@ -1,0 +1,47 @@
+|FfOnPCBDe1Soc
+CLOCK_50 => fforlatch:Entity_FF_OR_Latch.iClk
+KEY[0] => fforlatch:Entity_FF_OR_Latch.iD
+LEDR[0] << fforlatch:Entity_FF_OR_Latch.oQ_A
+LEDR[1] << fforlatch:Entity_FF_OR_Latch.oQ_B
+LEDR[2] << fforlatch:Entity_FF_OR_Latch.oQ_C
+LEDR[3] << fforlatch:Entity_FF_OR_Latch.oQ_D
+LEDR[4] << fforlatch:Entity_FF_OR_Latch.oQ_E
+LEDR[5] << fforlatch:Entity_FF_OR_Latch.oQ_F
+LEDR[6] << fforlatch:Entity_FF_OR_Latch.oQ_G
+LEDR[7] << fforlatch:Entity_FF_OR_Latch.oQ_H
+LEDR[8] << fforlatch:Entity_FF_OR_Latch.oQ_I
+
+
+|FfOnPCBDe1Soc|FfOrLatch:Entity_FF_OR_Latch
+iD => oQ_A~reg0.DATAIN
+iD => oQ_B$latch.DATAIN
+iD => oQ_C~reg0.DATAIN
+iD => oQ_D~reg0.DATAIN
+iD => E.DATAIN
+iD => oQ_I~reg0.DATAIN
+iD => H.DATAIN
+iD => G.DATAIN
+iD => F.DATAIN
+iClk => oQ_I~reg0.CLK
+iClk => oQ_H~reg0.CLK
+iClk => H.CLK
+iClk => F.CLK
+iClk => oQ_F~reg0.CLK
+iClk => oQ_D~reg0.CLK
+iClk => oQ_C~reg0.CLK
+iClk => oQ_A~reg0.CLK
+iClk => oQ_G$latch.LATCH_ENABLE
+iClk => G.LATCH_ENABLE
+iClk => E.LATCH_ENABLE
+iClk => oQ_B$latch.LATCH_ENABLE
+oQ_A <= oQ_A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ_B <= oQ_B$latch.DB_MAX_OUTPUT_PORT_TYPE
+oQ_C <= oQ_C~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ_D <= oQ_D~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ_E <= E.DB_MAX_OUTPUT_PORT_TYPE
+oQ_F <= oQ_F~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ_G <= oQ_G$latch.DB_MAX_OUTPUT_PORT_TYPE
+oQ_H <= oQ_H~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ_I <= oQ_I~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
