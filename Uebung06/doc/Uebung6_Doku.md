@@ -184,6 +184,55 @@ In der Synthese entsteht ein Flipflop mit Inverter am Eingang.
 Weil process nur berechnet wenn iClock ein Event hat und der Wert 1 ist.
 Somit wird der Code innerhalb der If nur ausgeführt wenn eine Rising Edge am Clock auftritt.
 ## Aufgabe 1 Warnings und Critical Warnings
+![Warnings](./images/Warnings.png)
+Durch Analyse der Warnings, fällt auf, dass Quartus davor warnt dass bei der Synthese Latches aus den vhdl code erzeugt werden.
+>Warning (10631): VHDL Process Statement warning at FfOrLatch-Rtl-a.vhd(40): inferring latch(es) for signal or variable "oQ_B", which holds its previous value in one or more paths through the process
+
+Auch vom Timing Analyser wird eine Warnung ausgegeben, dass in der Beschreibung eine kombinatorische Schleife entstanden sind.
+
+>Warning (335093): The Timing Analyzer is analyzing 2 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+
+## rising_edge()
+Hier ist die Function rising edge aus den package std_logiv_1164 abgebildet.
+Hier wird der type std u logic zu einem Typ X01 gewandelt. 
+Hier wird geprüft ob der jetzige Wert 1 ist und ein event am Signal war und der letzte Wert des Signals 0 war.
+Hier besteht schon der Unterschied zur Implementierung mittels signal'event and signal = '1', hier erfüllt jeder Übergang des signals zu dem Wert 1 die Bedingung zb. 'U' -> '1'.
+Mit der Funktion rising_edge muss ein Übergang von '0' auf '1' geschehen um true zurückzugeben. 
+
+>  function rising_edge (signal s : STD_ULOGIC) return BOOLEAN is
+      -- Verific synthesizes this function from the native source code
+  begin
+    return (s'event and (To_X01(s) = '1') and
+            (To_X01(s'last_value) = '0'));
+  end function rising_edge;
+
+
+
+>  function To_X01 (s : STD_ULOGIC) return X01 is
+    VARIABLE result : X01 ;
+    ATTRIBUTE synthesis_return OF result:VARIABLE IS "FEED_THROUGH" ;
+  begin
+    result := (cvt_to_x01(s));
+    return result ;
+  end function To_X01;
+
+>  constant cvt_to_x01 : logic_x01_table := (
+    'X',                                -- 'U'
+    'X',                                -- 'X'
+    '0',                                -- '0'
+    '1',                                -- '1'
+    'X',                                -- 'Z'
+    'X',                                -- 'W'
+    '0',                                -- 'L'
+    '1',                                -- 'H'
+    'X'                                 -- '-'
+    );
+
+>  subtype X01 is resolved STD_ULOGIC range 'X' to '1';    -- ('X','0','1') 
+
+Durch Betrachtung der Funktion **To_X01** wird klar, dass hier der Wertebereich von STD_ulogic eingegrenzt wird. Hier wird zb. ein 'U' in ein 'X' umgewandelt. Diese Umwandlung ist in der Definition der Konstante cvt_to_x01 ersichtlich.
+
+
 
 
 

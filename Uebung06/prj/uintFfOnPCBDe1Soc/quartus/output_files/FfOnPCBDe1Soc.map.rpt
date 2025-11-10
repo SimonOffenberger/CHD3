@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FfOnPCBDe1Soc
-Mon Nov 10 15:16:42 2025
+Mon Nov 10 18:46:29 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 10 15:16:42 2025          ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 10 18:46:29 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; FfOnPCBDe1Soc                                  ;
 ; Top-level Entity Name           ; FfOnPCBDe1Soc                                  ;
@@ -293,7 +293,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Nov 10 15:16:36 2025
+    Info: Processing started: Mon Nov 10 18:46:23 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FfOnPCBDe1Soc -c FfOnPCBDe1Soc
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung06/prj/uintffonpcbde1soc/hdl/ffonpcbde1soc-struct-a.vhd
@@ -328,7 +328,7 @@ Info (21057): Implemented 20 device resources after synthesis - the final resour
     Info (21061): Implemented 9 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4956 megabytes
-    Info: Processing ended: Mon Nov 10 15:16:42 2025
+    Info: Processing ended: Mon Nov 10 18:46:29 2025
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 

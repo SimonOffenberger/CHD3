@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "11/10/2025 15:17:18"
+-- DATE "11/10/2025 18:47:03"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -89,10 +89,10 @@ SIGNAL \Entity_FF_OR_Latch|oQ_H~feeder_combout\ : std_logic;
 SIGNAL \Entity_FF_OR_Latch|oQ_H~q\ : std_logic;
 SIGNAL \Entity_FF_OR_Latch|oQ_I~feeder_combout\ : std_logic;
 SIGNAL \Entity_FF_OR_Latch|oQ_I~q\ : std_logic;
+SIGNAL \Entity_FF_OR_Latch|ALT_INV_oQ_G~combout\ : std_logic;
 SIGNAL \Entity_FF_OR_Latch|ALT_INV_oQ_B~combout\ : std_logic;
 SIGNAL \Entity_FF_OR_Latch|ALT_INV_F~q\ : std_logic;
 SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
-SIGNAL \Entity_FF_OR_Latch|ALT_INV_oQ_G~combout\ : std_logic;
 SIGNAL \ALT_INV_CLOCK_50~input_o\ : std_logic;
 
 BEGIN
@@ -103,10 +103,10 @@ LEDR <= ww_LEDR;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\Entity_FF_OR_Latch|ALT_INV_oQ_G~combout\ <= NOT \Entity_FF_OR_Latch|oQ_G~combout\;
 \Entity_FF_OR_Latch|ALT_INV_oQ_B~combout\ <= NOT \Entity_FF_OR_Latch|oQ_B~combout\;
 \Entity_FF_OR_Latch|ALT_INV_F~q\ <= NOT \Entity_FF_OR_Latch|F~q\;
 \ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
-\Entity_FF_OR_Latch|ALT_INV_oQ_G~combout\ <= NOT \Entity_FF_OR_Latch|oQ_G~combout\;
 \ALT_INV_CLOCK_50~input_o\ <= NOT \CLOCK_50~input_o\;
 
 -- Location: IOOBUF_X52_Y0_N2
