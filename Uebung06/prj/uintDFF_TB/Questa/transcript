@@ -1,0 +1,167 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vmap work work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work work 
+# Copying C:/intelFPGA/23.1lite/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Modified modelsim.ini
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintDFF/src/DFF-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:37:11 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintDFF/src/DFF-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DFF
+# End time: 18:37:11 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintDFF/src/DFF-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:37:11 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintDFF/src/DFF-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of DFF
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity DFF
+# End time: 18:37:11 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintDFF_TB/src/DFF_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:37:16 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintDFF_TB/src/DFF_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DFF_TB
+# -- Compiling architecture Testbench of DFF_TB
+# -- Loading entity DFF
+# End time: 18:37:16 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.dff_tb(testbench) -voptargs=+acc
+# vsim -gui work.dff_tb(testbench) -voptargs="+acc" 
+# Start time: 18:37:28 on Nov 11,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dff_tb(testbench)#1
+# Loading work.dff(rtl)#1
+add wave -position end  sim:/dff_tb/D
+add wave -position end  sim:/dff_tb/nResetAsync
+add wave -position end  sim:/dff_tb/Set
+add wave -position end  sim:/dff_tb/Enable
+add wave -position end  sim:/dff_tb/Q
+add wave -position end  sim:/dff_tb/nQ
+add wave -position end  sim:/dff_tb/Clk
+add wave -position end  /dff_tb/verify/vcheck
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintDFF_TB/src/DFF_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 18:40:06 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintDFF_TB/src/DFF_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DFF_TB
+# -- Compiling architecture Testbench of DFF_TB
+# -- Loading entity DFF
+# End time: 18:40:06 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dff_tb(testbench)#1
+# Loading work.dff(rtl)#1
+run
+run
+# End time: 20:03:25 on Nov 11,2025, Elapsed time: 1:25:57
+# Errors: 0, Warnings: 2

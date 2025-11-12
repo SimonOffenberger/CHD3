@@ -1,0 +1,20 @@
+|DFFOnPCBDe1Soc
+KEY[0] => d_ff:Entity_DFF.iD
+SW[0] => d_ff:Entity_DFF.iClk
+SW[1] => d_ff:Entity_DFF.inResetAsync
+SW[2] => d_ff:Entity_DFF.iSet
+SW[3] => d_ff:Entity_DFF.iEnable
+LEDR[0] << d_ff:Entity_DFF.oQ
+LEDR[1] << d_ff:Entity_DFF.onQ
+
+
+|DFFOnPCBDe1Soc|D_FF:Entity_DFF
+iD => oQ.DATAB
+iClk => oQ~reg0.CLK
+inResetAsync => oQ~reg0.ACLR
+iSet => oQ.OUTPUTSELECT
+iEnable => oQ.OUTPUTSELECT
+oQ <= oQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+onQ <= oQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

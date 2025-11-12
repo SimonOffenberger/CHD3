@@ -16,7 +16,7 @@ use ieee.numeric_std.all;
 entity FfOnPCBDe1Soc is
     port (
     CLOCK_50 : in std_ulogic;
-    KEY   : in std_ulogic_vector(0 downto 0);    -- input A
-    LEDR   : out std_ulogic_vector(8 downto 0)   -- output Y of Minterm Mux
+    KEY   : in std_ulogic_vector(0 downto 0);   
+    LEDR   : out std_ulogic_vector(8 downto 0)  
     );  
 end FfOnPCBDe1Soc;

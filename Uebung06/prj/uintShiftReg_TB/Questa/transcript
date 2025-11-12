@@ -1,0 +1,798 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vmap work work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work work 
+# Copying C:/intelFPGA/23.1lite/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Modified modelsim.ini
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:02 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): VHDL Compiler exiting
+# End time: 20:07:02 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:02 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:07:02 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:24 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): VHDL Compiler exiting
+# End time: 20:07:24 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:24 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:07:24 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:34 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): VHDL Compiler exiting
+# End time: 20:07:34 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:34 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:07:34 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:35 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): VHDL Compiler exiting
+# End time: 20:07:35 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:35 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:07:35 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:54 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): VHDL Compiler exiting
+# End time: 20:07:54 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:54 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:07:54 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:55 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): VHDL Compiler exiting
+# End time: 20:07:55 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:07:55 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:07:55 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:08:13 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): VHDL Compiler exiting
+# End time: 20:08:13 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:08:13 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:08:13 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:08:14 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd(23): VHDL Compiler exiting
+# End time: 20:08:14 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:08:14 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:08:14 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:08:55 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:08:56 on Nov 11,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:08:56 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:08:56 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:01 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:09:01 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:01 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of D_FF
+# ** Error: (vcom-11) Could not find work.d_ff.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(16): VHDL Compiler exiting
+# End time: 20:09:01 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:14 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:09:14 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:14 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(23): Attribute "range" returns type std.STANDARD.NATURAL; expecting type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(23): (vcom-1526) Illegal use of range.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(23): near "(": (vcom-1576) expecting ';'.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): Range expression must not be in parentheses.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): Range expression is type std.STANDARD.INTEGER; expecting type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): near "(": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(30): VHDL Compiler exiting
+# End time: 20:09:14 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:33 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:09:33 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:33 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): Range expression must not be in parentheses.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): Range expression is type std.STANDARD.INTEGER; expecting type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): near "(": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(30): VHDL Compiler exiting
+# End time: 20:09:33 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:46 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:09:46 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:46 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): Attribute "high" returns type std.STANDARD.NATURAL; expecting type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): near "downto": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(30): VHDL Compiler exiting
+# End time: 20:09:46 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:59 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:09:59 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:59 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# End time: 20:09:59 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:59 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:09:59 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:09:59 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# End time: 20:10:00 on Nov 11,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:10:10 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:10:10 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:10:10 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# End time: 20:10:10 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:10:19 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(40): near ")": syntax error
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(43): Statement cannot be labeled.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(57): VHDL Compiler exiting
+# End time: 20:10:20 on Nov 11,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:10:28 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(40): near ")": syntax error
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(43): Statement cannot be labeled.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(57): VHDL Compiler exiting
+# End time: 20:10:28 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:10:29 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(40): near ")": syntax error
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(43): Statement cannot be labeled.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(57): VHDL Compiler exiting
+# End time: 20:10:29 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:10:34 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(40): near ")": syntax error
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(43): Statement cannot be labeled.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(57): VHDL Compiler exiting
+# End time: 20:10:34 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:10:35 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(40): near ")": syntax error
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(43): Statement cannot be labeled.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd(57): VHDL Compiler exiting
+# End time: 20:10:35 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:11:16 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# End time: 20:11:16 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:11:17 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# End time: 20:11:17 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:11:17 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# End time: 20:11:17 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.shiftreg_tb(testbench) -voptargs=+acc
+# vsim -gui work.shiftreg_tb(testbench) -voptargs="+acc" 
+# Start time: 20:11:34 on Nov 11,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftreg_tb(testbench)#1
+# Loading work.shiftreg(rtl)#1
+add wave -position end  sim:/shiftreg_tb/D
+add wave -position end  sim:/shiftreg_tb/nResetAsync
+add wave -position end  sim:/shiftreg_tb/Q
+add wave -position end  sim:/shiftreg_tb/Clk
+run
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 9 (9 downto 1). Right is 10 (0 to 9).
+#    Time: 45 ns  Iteration: 0  Process: /shiftreg_tb/Entity_ShiftReg/line__20 File: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Fatal error in Process line__20 at C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd line 25
+# 
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 25 Process line__20
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 25 Process line__20
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 25 Process line__20
+# 
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:13:43 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:13:43 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:13:43 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): near "(": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(30): VHDL Compiler exiting
+# End time: 20:13:43 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:13:43 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:13:43 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:13:43 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): near "(": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(30): VHDL Compiler exiting
+# End time: 20:13:44 on Nov 11,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:14:08 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:14:08 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:14:08 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): near "(": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(30): VHDL Compiler exiting
+# End time: 20:14:09 on Nov 11,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:14:09 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:14:09 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:14:09 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# ** Error: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(25): near "(": (vcom-1576) expecting ';'.
+# ** Note: C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd(30): VHDL Compiler exiting
+# End time: 20:14:09 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:15:43 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:15:43 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:15:43 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# End time: 20:15:43 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:15:43 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:15:43 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:15:43 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# End time: 20:15:43 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftreg_tb(testbench)#1
+# Loading work.shiftreg(rtl)#1
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 80 ns  Iteration: 0  Instance: /shiftreg_tb
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:16:34 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftReg
+# End time: 20:16:34 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:16:34 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg/src/ShiftReg-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Rtl of ShiftReg
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity ShiftReg
+# End time: 20:16:34 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:16:39 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# End time: 20:16:39 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftreg_tb(testbench)#1
+# Loading work.shiftreg(rtl)#1
+run
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 200 ns  Iteration: 0  Instance: /shiftreg_tb
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:17:26 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# End time: 20:17:26 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftreg_tb(testbench)#1
+# Loading work.shiftreg(rtl)#1
+run
+run
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:18:07 on Nov 11,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung06/prj/uintShiftReg_TB/src/ShiftReg_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftReg_TB
+# -- Compiling architecture Testbench of ShiftReg_TB
+# -- Loading entity ShiftReg
+# End time: 20:18:08 on Nov 11,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftreg_tb(testbench)#1
+# Loading work.shiftreg(rtl)#1
+run
+# End time: 20:47:06 on Nov 11,2025, Elapsed time: 0:35:32
+# Errors: 0, Warnings: 2

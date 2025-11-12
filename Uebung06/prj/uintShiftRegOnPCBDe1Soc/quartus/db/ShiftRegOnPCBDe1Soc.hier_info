@@ -1,0 +1,46 @@
+|ShiftRegOnPCBDe1Soc
+KEY[0] => shiftreg:Entity_DFF.iClk
+KEY[1] => shiftreg:Entity_DFF.iD
+KEY[2] => shiftreg:Entity_DFF.inResetAsync
+LEDR[0] <= shiftreg:Entity_DFF.oQ[1]
+LEDR[1] <= shiftreg:Entity_DFF.oQ[2]
+LEDR[2] <= shiftreg:Entity_DFF.oQ[3]
+LEDR[3] <= shiftreg:Entity_DFF.oQ[4]
+LEDR[4] <= shiftreg:Entity_DFF.oQ[5]
+LEDR[5] <= shiftreg:Entity_DFF.oQ[6]
+LEDR[6] <= shiftreg:Entity_DFF.oQ[7]
+LEDR[7] <= shiftreg:Entity_DFF.oQ[8]
+LEDR[8] <= shiftreg:Entity_DFF.oQ[9]
+
+
+|ShiftRegOnPCBDe1Soc|ShiftReg:Entity_DFF
+iD => oQ[1]~reg0.DATAIN
+iClk => oQ[1]~reg0.CLK
+iClk => oQ[2]~reg0.CLK
+iClk => oQ[3]~reg0.CLK
+iClk => oQ[4]~reg0.CLK
+iClk => oQ[5]~reg0.CLK
+iClk => oQ[6]~reg0.CLK
+iClk => oQ[7]~reg0.CLK
+iClk => oQ[8]~reg0.CLK
+iClk => oQ[9]~reg0.CLK
+inResetAsync => oQ[1]~reg0.ACLR
+inResetAsync => oQ[2]~reg0.ACLR
+inResetAsync => oQ[3]~reg0.ACLR
+inResetAsync => oQ[4]~reg0.ACLR
+inResetAsync => oQ[5]~reg0.ACLR
+inResetAsync => oQ[6]~reg0.ACLR
+inResetAsync => oQ[7]~reg0.ACLR
+inResetAsync => oQ[8]~reg0.ACLR
+inResetAsync => oQ[9]~reg0.ACLR
+oQ[1] <= oQ[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[2] <= oQ[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[3] <= oQ[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[4] <= oQ[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[5] <= oQ[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[6] <= oQ[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[7] <= oQ[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[8] <= oQ[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[9] <= oQ[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
