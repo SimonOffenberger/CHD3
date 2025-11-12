@@ -1,7 +1,7 @@
-# Übung 5 Simon Offenberger S2410306027  
+# Übung 6 Simon Offenberger S2410306027  
 ## Aufgabe 1 Latches and Flip Flops
 ### Architektur A
-
+>```vhdl
 >  FF_or_Latch_A : process (iClk) is
 >  begin
 >    if (iClk = '1') then
@@ -16,11 +16,11 @@
 ![Tech Map Viewer](./images/ArchA/TechMap.png)
 
 Hier ist im der Technologie Map als auch im RTL-Viewer ein FlipFlop entstanden.
-In der Beschreibung ist dies auch verdeutlicht. Da der Process auf iClk sensitiv ist wird, dieser nur bei einem Event auf iClock aktiv. 
+In der Beschreibung ist dies auch verdeutlicht. Da der Process auf iClk sensitiv ist, wird dieser nur bei einem Event auf iClock aktiv. 
 Mit der Abfrage nach iClk = '1' wird die Steigende Flanke auf Clock dargestellt. Innerhalb vom IF wird nun der Wert von D nach Q übernommen. Aus diesen Gründen entsteht in der Synthese ein FlipFlop.
 
 ### Architektur B
-
+>```vhdl
 >  FF_or_Latch_B : process (iClk, iD) is
 >  begin
 >    if (iClk = '1') then
@@ -43,7 +43,7 @@ Denn in der Beschreibung wird auch der Wert von D übernommen wenn der Takt stat
 Somit stellt der Takteingang den Enable-Eingang des Latches dar.
 
 ### Architektur C
-
+>```vhdl
 >  FF_or_Latch_C : process (iClk) is
 >  begin
 >    if rising_edge(iClk) then
@@ -59,9 +59,9 @@ Somit stellt der Takteingang den Enable-Eingang des Latches dar.
 
 In der Architektur ist eine klassische Beschreibung eines FlipFlops zu sehen. 
 Aus diesen Grund überrascht auch nicht, dass dieses auch so in Hardware ein Flipflop ergibt.
-Denn es wird nur der Wert von D nach Q übernommen wenn eine Rising Edge am Takteingang vorliegt. Hier muss natürlich auch iClk in der Sensitivity Liste eingetragen ist.
+Denn es wird nur der Wert von D nach Q übernommen wenn eine Rising Edge am Takteingang vorliegt. Hier muss natürlich auch iClk in der Sensitivity Liste eingetragen sein.
 ### Architektur D
-
+>```vhdl
 >  FF_or_Latch_D : process (iClk) is
 >  begin
 >    if (iClk'event and iClk = '1') then
@@ -75,10 +75,10 @@ Denn es wird nur der Wert von D nach Q übernommen wenn eine Rising Edge am Takt
 #### Technologie Map
 ![Tech Map Viewer](./images/ArchD/TechMap.png)
 
-Hier ist im Grund die gleiche Implementierung wie in der Architektur C beschrieben. Nur hier wird für die Flankenüberprüfung nicht rising edge verwendet sondern explizit auf Event und Zustand 1 abgefragt. Stellt aber in der Synthese das gleiche Verhalten dar.
+Hier ist im Grunde die gleiche Implementierung wie in der Architektur C beschrieben. Nur hier wird für die Flankenüberprüfung nicht rising edge verwendet sondern explizit auf Event und Zustand 1 abgefragt. Stellt aber in der Synthese das gleiche Verhalten dar.
 
 ### Architektur E
-
+>```vhdl
 >  FF_or_Latch_E : process (iClk, iD) is
 >    
 >  begin
@@ -99,7 +99,7 @@ Da der Process auf iClk und iD sensitiv ist und in der IF Anweisung nur auf iClk
 Der Ausgang wird hier über den Umweg des Signals E an den Ausgang weitergegeben. Wobei der Wert von E auf Q erst bei dem nächsten Event auf Clk oder D übernommen wird.  Hier wird im Grunde die gleiche Funktionalität wie in der Architektur B beschrieben.
 Dies wird durch den Technologie Map Viewer auch ersichtlich. Denn die Synthese hat dies erkannt und für beide Architekturen nur eine Implementierung in Hardware umgesetzt. Dies ist ersichtlich, da die Ausgänge LEDR[1] und LEDR[4] den geleichen Output des Latches oQ_B verwenden.
 ### Architektur F
-
+>```vhdl
 >  FF_or_Latch_F : process (iClk) is
 >    
 >  begin
@@ -117,13 +117,11 @@ Dies wird durch den Technologie Map Viewer auch ersichtlich. Denn die Synthese h
 
 Hier entstehen 2 hintereinander geschaltete FlipFlops.
 Durch die Analyse des VHDL Codes wird dies auch verdeutlicht.
-Da in der Sensitivity Liste nur iClock vorhanden ist und in der If Anweisung auf IClk auf 1 geprüft wird.
-Deutet das auf ein Flipflop hin, denn das innerhalb der If wird nur ausgeführt wenn iclk ein event hat und der Wert 1 ist.
-Weiters wird innerhalb der IF Anweisung zuerst der Ausgang auf den Wert von F gesetzt und danach D nach F geschrieben. 
-Dies deutet darauf hin, dass der Wert ID erst nach 2 Taktflanken am Ausgang Q erscheint. Außerdem wird das Signal iD noch negiert.
+Da in der Sensitivity Liste nur iClock vorhanden ist und in der If Anweisung auf IClk auf 1 geprüft wird deutet das auf ein Flipflop hin, denn das innerhalb der If wird nur ausgeführt wenn iclk ein event hat und der Wert 1 ist.
+Weiters wird innerhalb der IF Anweisung zuerst der Ausgang auf den Wert von F gesetzt und danach D nach F geschrieben, dies deutet darauf hin, dass der Wert ID erst nach 2 Taktflanken am Ausgang Q erscheint. Außerdem wird das Signal iD noch negiert.
 Dadurch entstehen hier 2 Flipflops.
 ### Architektur G
-
+>```vhdl
 >  FF_or_Latch_G : process (iClk, iD) is
 >    
 >  begin
@@ -143,7 +141,7 @@ Hier entstehen 2 Latches hintereinander.
 Im Technologie Map-Viewer ist hier Functionality Sharing zu beobachten. Denn für die Umsetzung der 2 Latches erzeugt die Synthese nur 1 zusätliches Latch und benutzt für das 2. Lacht das Latch der Architektur B.
 Hier muss es sich um 2 Latches handeln, dann die beiden Zuweisungen D gets G und Q gets G sind nur aktiv wenn Clock = 1 ist, sprich das Enable beim Latch vorhanden ist. 
 ### Architektur H
-
+>```vhdl
 >  FF_or_Latch_H : process (iClk) is
 >    
 >  begin
@@ -152,7 +150,7 @@ Hier muss es sich um 2 Latches handeln, dann die beiden Zuweisungen D gets G und
 >      oQ_H    <= H;
 >    end if;
 >  end process FF_or_Latch_H; 
-
+>```
 #### RTL Viewer
 ![RTL Viewer](./images/ArchH/RTL.png)
 
@@ -164,7 +162,7 @@ Es werden 2 FlipFlops umgesetzt.
 Denn der Process ist nur auf Clock sensitiv und prüft in der IF nach einer Rising Edge am Clock.
 Der Wert von iD erscheint erst nach 2 steigenden Flanken am Ausgang -> dies gibt einen Hinweis warum hier 2 Flipflops umgesetzt werden.
 ### Architektur I
-
+>```vhdl
 >  FF_or_Latch_I : process (iClk) is
 >    
 >  begin
@@ -201,36 +199,38 @@ Hier wird der type std u logic zu einem Typ X01 gewandelt.
 Hier wird geprüft ob der jetzige Wert 1 ist und ein event am Signal war und der letzte Wert des Signals 0 war.
 Hier besteht schon der Unterschied zur Implementierung mittels signal'event and signal = '1', hier erfüllt jeder Übergang des signals zu dem Wert 1 die Bedingung zb. 'U' -> '1'.
 Mit der Funktion rising_edge muss ein Übergang von '0' auf '1' geschehen um true zurückzugeben. 
-
+>```vhdl
 >  function rising_edge (signal s : STD_ULOGIC) return BOOLEAN is
-      -- Verific synthesizes this function from the native source code
-  begin
-    return (s'event and (To_X01(s) = '1') and
-            (To_X01(s'last_value) = '0'));
-  end function rising_edge;
+>      -- Verific synthesizes this function from the native source code
+>  begin
+>    return (s'event and (To_X01(s) = '1') and
+>            (To_X01(s'last_value) = '0'));
+>  end function rising_edge;
 
 
-
+>```vhdl
 >  function To_X01 (s : STD_ULOGIC) return X01 is
-    VARIABLE result : X01 ;
-    ATTRIBUTE synthesis_return OF result:VARIABLE IS "FEED_THROUGH" ;
-  begin
-    result := (cvt_to_x01(s));
-    return result ;
-  end function To_X01;
+>    VARIABLE result : X01 ;
+>    ATTRIBUTE synthesis_return OF result:VARIABLE IS "FEED_THROUGH" ;
+>  begin
+>    result := (cvt_to_x01(s));
+>    return result ;
+>  end function To_X01;
 
+>```vhdl
 >  constant cvt_to_x01 : logic_x01_table := (
-    'X',                                -- 'U'
-    'X',                                -- 'X'
-    '0',                                -- '0'
-    '1',                                -- '1'
-    'X',                                -- 'Z'
-    'X',                                -- 'W'
-    '0',                                -- 'L'
-    '1',                                -- 'H'
-    'X'                                 -- '-'
-    );
+>    'X',                                -- 'U'
+>    'X',                                -- 'X'
+>    '0',                                -- '0'
+>    '1',                                -- '1'
+>    'X',                                -- 'Z'
+>    'X',                                -- 'W'
+>    '0',                                -- 'L'
+>    '1',                                -- 'H'
+>    'X'                                 -- '-'
+>    );
 
+>```vhdl
 >  subtype X01 is resolved STD_ULOGIC range 'X' to '1';    -- ('X','0','1') 
 
 Durch Betrachtung der Funktion **To_X01** wird klar, dass hier der Wertebereich von STD_ulogic eingegrenzt wird. Hier wird zb. ein 'U' in ein 'X' umgewandelt. Diese Umwandlung ist in der Definition der Konstante cvt_to_x01 ersichtlich.
@@ -238,7 +238,7 @@ Durch Betrachtung der Funktion **To_X01** wird klar, dass hier der Wertebereich 
 ## Aufgabe 2 D-FlipFlop
 
 Hier wurde wie in der Aufgabe beschrieben ein D-FF in VHDL beschrieben.
-
+>```vhdl
 >process (iClk,inResetAsync) is 
 >begin
 >  if(inResetAsync = not('1'))then
@@ -287,7 +287,7 @@ Jedoch ist diese Umsetzung auch OK, denn hier wird durch die Kombinatorik sicher
 Durch geschicktes umdesignen der Architektur kann das Verhalten mit nur einem FlipFlop abgebildet werden.
 Hier muss die Gegengleichheit von oQ und onQ außerhalb der Flanke behandelt werden.
 Ansonsten werden 2 FlipFlops in einem Process beschrieben.
-
+>```vhdl
 >process (iClk,inResetAsync) is 
 >begin
 >  if(inResetAsync = not('1'))then
@@ -303,7 +303,7 @@ Ansonsten werden 2 FlipFlops in einem Process beschrieben.
 >    end if;
 >  end if;
 >end process;
-  
+>
 >onQ <= not(oQ);
 
 Wird nun diese Beschreibung in die Synthese geschickt erhaltet man folgendes Ergebnis.
@@ -326,7 +326,7 @@ Mittags:ca 8 Hz
 Abends: ca 6 Hz
 
 #### Umstellung auf Fallende Flanke
-
+>```vhdl
 > process (iClk,inResetAsync) is 
 >begin
 >  if(inResetAsync = not('1'))then
@@ -360,7 +360,7 @@ Der Grund dafür liegt im prellen der Schalter.
 
 ## Aufgabe 3 Allflangengesteuertes D-FlipFlop
 Zur Lösung dieser Aufgabe wurde das D-FlipFlop folgendermaßen umgebaut:
-
+>```vhdl
 >process (iClk,inResetAsync) is 
 >begin
 >  if(inResetAsync = not('1'))then
@@ -389,7 +389,7 @@ Hier ändern sich nur die Fehlermeldungen die beim Synthetisieren ausgegeben wer
 ## Schieberegister
 
 Nun wurde die Architektur vom D-FlipFlop kopiert und erweitert damit dieses ein Shiftregister darstellt.
-
+>```vhdl
 >process (iClk,inResetAsync) is 
 >begin
 >  if(inResetAsync = not('1'))then
