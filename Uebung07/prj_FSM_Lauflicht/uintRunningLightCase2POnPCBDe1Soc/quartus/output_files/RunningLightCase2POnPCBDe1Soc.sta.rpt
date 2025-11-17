@@ -1,5 +1,5 @@
 Timing Analyzer report for RunningLightCase2POnPCBDe1Soc
-Mon Nov 17 14:23:15 2025
+Mon Nov 17 19:22:36 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -106,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.7%      ;
+;     Processor 2            ;   1.6%      ;
 ;     Processors 3-16        ;   0.4%      ;
 +----------------------------+-------------+
 
@@ -116,7 +116,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------+--------+--------------------------+
 ; SDC File Path                     ; Status ; Read at                  ;
 +-----------------------------------+--------+--------------------------+
-; RunningLightCase2POnPCBDe1Soc.sdc ; OK     ; Mon Nov 17 14:23:13 2025 ;
+; RunningLightCase2POnPCBDe1Soc.sdc ; OK     ; Mon Nov 17 19:22:34 2025 ;
 +-----------------------------------+--------+--------------------------+
 
 
@@ -513,7 +513,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Nov 17 14:23:12 2025
+    Info: Processing started: Mon Nov 17 19:22:33 2025
 Info: Command: quartus_sta RunningLightCase2POnPCBDe1Soc -c RunningLightCase2POnPCBDe1Soc
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
@@ -605,8 +605,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 5373 megabytes
-    Info: Processing ended: Mon Nov 17 14:23:15 2025
+    Info: Processing ended: Mon Nov 17 19:22:36 2025
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RunningLightCase2POnPCBDe1Soc
-Mon Nov 17 14:22:10 2025
+Mon Nov 17 19:21:20 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 17 14:22:10 2025          ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 17 19:21:20 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; RunningLightCase2POnPCBDe1Soc                  ;
 ; Top-level Entity Name           ; RunningLightCase2POnPCBDe1Soc                  ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Nov 17 14:22:04 2025
+    Info: Processing started: Mon Nov 17 19:21:13 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RunningLightCase2POnPCBDe1Soc -c RunningLightCase2POnPCBDe1Soc
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /hsd_sem_3/chd3/uebung07/prj_fsm_lauflicht/uintrunninglight/src/runninglight-e.vhd
@@ -295,8 +295,8 @@ Info (21057): Implemented 8 device resources after synthesis - the final resourc
     Info (21061): Implemented 3 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4957 megabytes
-    Info: Processing ended: Mon Nov 17 14:22:10 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Processing ended: Mon Nov 17 19:21:20 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:18
 
 

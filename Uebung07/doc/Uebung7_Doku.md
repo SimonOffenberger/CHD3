@@ -252,7 +252,7 @@ Hier wurde ein Fehler erzwungen.
 >EntityRunningLightHandmade : entity work.RunningLight(TwoProcessHandmade)
 >port map (
 >    iClk          => KeyPosLogic(0),         
->    inResetAsync  => KEY(1),                -- negativ Logic for Reset
+>    inResetAsync  => KeyPosLogic(1),  
 >    oState        => LEDR
 >);
 >
@@ -300,7 +300,7 @@ Hier entsteht auch die Warning dafür.
 >EntityRunningLightCase2P : entity work.RunningLight(TwoProcessWithCase)
 >port map (
 >    iClk          => KeyPosLogic(0),         
->    inResetAsync  => KEY(1),                -- negativ Logic for Reset
+>    inResetAsync  => KeyPosLogic(1), 
 >    oState        => LEDR
 >);
 >
@@ -339,7 +339,7 @@ Auch hier sind 3 Register für den State entstanden
 >EntityRunningLightCase2P : entity work.RunningLight(OneProcessWithCase)
 >port map (
 >    iClk          => KeyPosLogic(0),         
->    inResetAsync  => KEY(1),            -- negativ Logic for Reset
+>    inResetAsync  => KeyPosLogic(1),  
 >    oState        => LEDR
 >);
 >
@@ -370,8 +370,220 @@ Auch hier entsteht die gleiche Hardware wie in den anderen Beschreibungen.
 
 ## Aufgabe 2 Speed of Light
 
-### FMAX
+### F MAX Timing Analyzer
+Model Slow 85°C:
+
 ![Warnings](./images/2Case/FMax.png)
 
+Im Timing Analyzer unter Report Fmax Summery ist die maximale Taktfrequenz des Designs zu sehen.
+Hier wird eine Frequenz von 486Mhz angezeigt.
+Somit wäre ein Betrieb mit dem internen 50 Mhz Takt durchaus möglich.
 
+Die Periodendauer eines Taktes mit der Frequenz \( f = 50\,\text{MHz} \) beträgt
+
+\[
+T = \frac{1}{f}
+  = \frac{1}{50 \cdot 10^{6}\,\text{Hz}}
+  = \frac{1}{5 \cdot 10^{7}}\,\text{s}
+  = 0{,}2 \cdot 10^{-7}\,\text{s}
+  = 2 \cdot 10^{-8}\,\text{s}
+  = 20\,\text{ns}.
+\]
+
+Damit existiert jeder Zustand des Lauflichts nur für \(20\,\text{ns} \).
+
+Daraus resultiert, dass das Blinken der LEDs sehr sehr schnell wäre. Dies wurde mit dem Auge nicht mehr als Blinken zu erkennen. Man würde nur ein LED leuchten sehen. 
+
+## Aufgabe 3 Counter
+
+>```vhdl
+>architecture RTL of Counter is
+>begin
+>
+>process (iClk,inResetAsync) is 
+>begin
+>
+>  if(inResetAsync = not('1'))then
+>    oCount <= (others => '0');
+>  elsif(rising_edge(iClk)) then
+>    oCount <= (oCount + 1) mod (2**gCountBitWidth);
+>  end if;
+>
+>end process;
+>
+>end architecture RTL;
+
+Hier wurde ein Counter mittels einem Process beschrieben.
+Hier wird mittels mod Funktion, wie in der Angabe gefordert, der Überlauf von oCount verhindert.
+Weiters wurde noch ein Resetsignal implementiert welches den Counter auf 0 zurücksetzt.
+
+#### Berechnung der Bitbreite
+In der Angabe wird gefordert, dass ein Zustandswechsel des obersten Bits nicht häufiger als 1 mal pro Sekunde stattfindet.
+
+Gegeben ist ein Takt mit der Frequenz
+\[
+f_\text{clk} = 50\,\text{MHz} = 50 \cdot 10^{6}\,\text{Hz}.
+\]
+
+Das oberste Bit des Zählers soll nicht häufiger als einmal pro Sekunde den von 0 -> 1 bzw. von 1 -> 0 wechselt daher muss seine maximale Frequenz betragen:
+\[
+f_\text{MSB} \le 1\,\text{Hz}.
+\]
+
+Damit ergibt sich eine minimale Periodendauer des obersten Bits von
+\[
+T_\text{MSB} = \frac{1}{f_\text{MSB}}
+             = \frac{1}{1\,\text{Hz}}
+             = 1\,\text{s}.
+\]
+
+Die Anzahl der benötigten Zählerstände für eine Zeitdauer von \(2\,\text{s}\) beträgt
+\[
+N_\text{counts} = f_\text{clk} \cdot T_\text{MSB}
+                = 50 \cdot 10^{6} \cdot 1
+                = 50 \cdot 10^{6}.
+\]
+
+Gesucht ist nun die minimale Bitanzahl \(n\), mit der man mindestens den Zählerstand von \(50 \cdot 10^{6}\) darstellen kann.
+Dazu muss gelten:
+
+\[
+2^{n} \ge 50 \cdot 10^{6}.
+\]
+
+Da der Überlauf auch eine Taktperiode beansprucht fällt hier das -1 weg. 
+z.B. Counter mit Länge 1: maximaler Wert des Counter = 1;
+Zustände des Counters: 0->1->0 Aus diesem Zusammenhang wird klar, dass immer \(2^n\) Perioden bis zum Zählerwert 0 vergehen.
+
+Prüft man \(n = 26\), erhält man:
+\[
+2^{26} = 67\,108\,864 \ge 50\,000\,000.
+\]
+
+Damit ist die kleinste zulässige Bitbreite
+\[
+\boxed{n = 26}.
+\]
+
+Mit der Bitbreite von 26 ergibt sich eine Frequenz des MSB von:
+\[
+f_\text{MSB} = \frac{f_\text{clk}}{2^{n}}
+                =  \frac{50 \cdot 10^{6}}{2^{26}}
+                = 745 \text{mHz}.
+\]
+\[
+T_\text{MSB} = \frac{1}{f_\text{MSB}}
+             = \frac{1}{745\,\text{mHz}}
+             = 1,34\,\text{s}.
+\]
+
+Die genaue Periodendauer für das oberste Bit beträgt bei einer Bitbreite von 26 Bit 1.34s.
+
+### Simulation und Verifikation
+
+>```vhdl
+>architecture Testbench of Counter_TB is
+>    constant cBitWidth   : natural := 8; -- only for >Simulation
+>    signal Clk           : std_ulogic := '0';
+>    signal nResetAsync   : std_ulogic;
+>    signal Counter    : unsigned(cBitWidth downto 0);
+>begin
+>
+>Entity_Counter : entity work.Counter(RTL)
+>generic map (
+>    gCountBitWidth => cBitWidth
+>)
+>port map (
+>    iClk         => Clk,
+>    inResetAsync => nResetAsync,
+>    oCount     => Counter
+>);
+>
+>-- generate 50 Mhz Clock
+>clkgen: clk <= not clk after 10 ns;
+>  
+>stimul: process is 
+>begin
+>    nResetAsync <= '0';
+>    wait for 10 ns;
+>    nResetAsync <= '1';
+>    wait;
+>end process;
+>
+>end Testbench;
+
+Mittels dieser Testbench kann das Verhalten in der Waveform beobachtet werden.
+Auch die korrekte Funktion des Counters kann mittels der Wave geprüft werden. Hier wird zuerst die Funktion des Resets geprüft.
+
+#### Waveform
+Hier ist das Reset-Verhalten in der Wave zu sehen.
+![Wave](./images/Counter/Wave%20(1).png)
+
+Hier kann der Überlauf des 8Bit Counters zu sehen.
+![Wave](./images/Counter/Wave%20(2).png)
+
+In der Simulation wurde die Bitbreite des Counters auf 8 Bit reduziert, da sonst die Simulationsdauer enorm lange wäre.
+
+Für einen Simulationszeitschritt von 100ms benötigt Questasim auf meinem Laptop 26 Sekunden.
+Um einen Überlauf des Counter zu simulieren müssen 1.34 Sekunden simuliert werden. 
+Durch Hochrechnung wird hier von einer Rechenzeit der Simulation von 348 Sekunden also mehr als 5 Minuten!
+
+
+### PCB Adapter
+
+>```vhdl
+>architecture Struct of CounterOnPCBDe1Soc is
+>    constant cCounterWidth : natural := 26;
+>    signal KeyPosLogic : std_ulogic_vector(KEY'range);   
+>    signal Counter : unsigned(cCounterWidth downto 1);
+>begin 
+>
+>-- Instantiate Entity ShiftRegister
+>EntityCounter : entity work.Counter(RTL)
+>generic map (
+>    gCountBitWidth => cCounterWidth
+>)
+>port map (
+>    iClk          => CLOCK_50,         
+>    inResetAsync  => KeyPosLogic(0),   -- negativ Logic for Reset
+>    oCount        => Counter
+>);
+>
+>LEDR <= std_ulogic_vector(Counter(cCounterWidth downto >cCounterWidth-9));
+>
+>-- Convert Negative Logic from the board to pos logic
+>KeyPosLogic <= not KEY;
+>
+>end Struct; 
+
+Nun wird der Counter am Board mittels PCB Adapter realisiert.
+
+![Board](./images/Counter/Board.jpg)
+
+Das Design wurde nun aufs Board programmiert und mittels Stopuhr die Frequenz des MSB geprüft.
+
+### Anzahl der entstandenen FlipFlop
+
+Wird die folgende Option im QSF File auskommentiert entstehen bei der Synthese mehr Flipflops als wirklich benötigt werden.
+
+>set_global_assignment -name ALLOW_REGISTER_DUPLICATION OFF
+
+Der Grund dafür ist, dass defaultmäßig das Design auf einen Targetclock von 1GHz probiert wird zu synthetisiern. Aus diesem Grund werden Zusatz FlipFlops eingefügt um die Taktfrequenz zu erhöhen.
+
+![TechMap](./images/Counter/TechMapDup.png)
+
+![FMax](./images/Counter/FMaxDup.png)
+
+![Ressource Sum](./images/Counter/SummeryDup.png)
+
+Hier wurde festgestellt das 28 statt den wirklich benötigten 26 Flipflops erstellt werden.
+
+Wird die Option wieder aktiviert erhält man folgendes Ergebnis:
+
+![FMax](./images/Counter/FMax.png)
+
+![Ressource Sum](./images/Counter/Summery.png)
+
+Nun entstehen 26 FlipFlops.
+Jedoch ist auch die maximale Taktfrequenz geringfügig kleiner. Ca 600kHz weniger.
 

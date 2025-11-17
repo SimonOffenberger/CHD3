@@ -13,9 +13,10 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 
-entity RunningLightCase1POnPCBDe1Soc is
+entity CounterOnPCBDe1Soc is
     port (
-    KEY   : in std_ulogic_vector(1 downto 0); 
-    LEDR   : out std_ulogic_vector(2 downto 0)   
+    CLOCK_50 : in std_logic;
+    KEY   : in std_ulogic_vector(0 downto 0); 
+    LEDR   : out std_ulogic_vector(9 downto 0)   
     );  
-end RunningLightCase1POnPCBDe1Soc;
+end CounterOnPCBDe1Soc;

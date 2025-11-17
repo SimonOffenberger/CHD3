@@ -25,5 +25,5 @@ entity Counter is
   port (
   iClk         : in std_ulogic;
   inResetAsync   : in std_ulogic;
-  oCount       : out unsigned(gCountBitWidth downto 0));
+  oCount       : out unsigned(gCountBitWidth downto 1));
  end Counter;
