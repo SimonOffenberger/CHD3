@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+-- Title : Testbench for the Shiftregister
+-- Project : Chip Design
+-------------------------------------------------------------------------------
+-- Author : simon Offenberger
+-- Created : 2025-11-11
+-------------------------------------------------------------------------------
+-- Copyright (c) Hagenberg/Austria 2015
+-------------------------------------------------------------------------------
+-- Description:
+-------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+-- Entity 
+--------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity RunningLight_TB is
+end RunningLight_TB;
+
+architecture Testbench of RunningLight_TB is
+    signal Clk         : std_ulogic := '0';
+    signal A,B,C       : std_ulogic := '0';
+    signal nResetAsync : std_ulogic := '0';
+begin
+
+Entity_RunningLight1 : entity work.RunningLight(OneProcessHandmade)
+port map (
+    iClk         => Clk,
+    inResetAsync => nResetAsync,
+    oA           => A,
+    oB           => B,
+    oC           => C
+);
+
+clkgen: clk <= not clk after 2 ns;
+  
+stimul: process is 
+begin
+    nResetAsync <= '0';
+    wait for 10ns;
+    nResetAsync <= '1';
+    wait;
+end process;
+
+end Testbench;

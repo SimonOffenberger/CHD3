@@ -1,0 +1,20 @@
+|RunningLightHandmadeOnPCBDe1Soc
+KEY[0] => runninglight:EntityRunningLightHandmade.iClk
+KEY[1] => runninglight:EntityRunningLightHandmade.inResetAsync
+LEDR[0] << runninglight:EntityRunningLightHandmade.oState[0]
+LEDR[1] << runninglight:EntityRunningLightHandmade.oState[1]
+LEDR[2] << runninglight:EntityRunningLightHandmade.oState[2]
+
+
+|RunningLightHandmadeOnPCBDe1Soc|RunningLight:EntityRunningLightHandmade
+iClk => oState[0]~reg0.CLK
+iClk => oState[1]~reg0.CLK
+iClk => oState[2]~reg0.CLK
+inResetAsync => oState[0]~reg0.ACLR
+inResetAsync => oState[1]~reg0.ACLR
+inResetAsync => oState[2]~reg0.ACLR
+oState[0] <= oState[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oState[1] <= oState[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oState[2] <= oState[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
