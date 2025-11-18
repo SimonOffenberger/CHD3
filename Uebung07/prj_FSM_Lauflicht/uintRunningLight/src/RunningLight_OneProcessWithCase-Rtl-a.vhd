@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
--- Title : Shift Register
+-- Title : FSM For a running light using 1 Processes
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger
--- Created : 2025-11-11
+-- Created : 2025-11-18
 -------------------------------------------------------------------------------
 -- Copyright (c) Hagenberg/Austria 2015
 -------------------------------------------------------------------------------
@@ -13,11 +13,15 @@
 --------------------------------------------------------------------------------
 -- Architecure RTL 
 --------------------------------------------------------------------------------
-architecture OneProcessWithCase of RunningLight is
-  signal NextState : std_ulogic_vector(2 downto 0);
-  constant cStateAllOff : std_ulogic_vector(2 downto 0) := "000";
-begin
 
+architecture OneProcessWithCase of RunningLight is
+  signal NextState : std_ulogic_vector(oState'range);
+
+  -- init state 
+  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0') 
+  begin
+
+-- Stateregister and State Transfer Process
 process (iClk,inResetAsync,oState) is 
 begin
 

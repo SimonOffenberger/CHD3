@@ -25,7 +25,8 @@ port map (
     oCount        => Counter
 );
 
-LEDR <= std_ulogic_vector(Counter(cCounterWidth downto cCounterWidth-9));
+-- Assign the upper 10 bit of the Counter to the LEDs
+LEDR <= std_ulogic_vector(Counter(cCounterWidth downto cCounterWidth - LEDR'high));
 
 -- Convert Negative Logic from the board to pos logic
 KeyPosLogic <= not KEY;

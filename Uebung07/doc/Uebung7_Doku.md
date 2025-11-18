@@ -3,11 +3,13 @@
 ### Architecture TwoProcessHandmade
 
 >```vhdl
->>architecture TwoProcessHandmade of RunningLight is
-> signal NextState : std_ulogic_vector(2 downto 0);
-> constant cStateAllOff : std_ulogic_vector(2 downto 0) := "000";
+>architecture TwoProcessHandmade of RunningLight is
+>  signal NextState : std_ulogic_vector(oState'range);
+>  -- init state 
+>  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0') 
 >begin
 >
+>-- Stateregister
 >process (iClk,inResetAsync) is 
 >begin
 >  if(inResetAsync = not('1'))then
@@ -18,6 +20,7 @@
 >
 >end process;
 >
+>-- Statetransition Process
 >NextStateLogic: process (oState) is
 >begin
 >
@@ -43,10 +46,12 @@ Der untere Process ist ein rein kombinatorischer Process und dient zur Berechnun
 
 >```vhdl
 >architecture TwoProcessWithCase of RunningLight is
->  signal NextState : std_ulogic_vector(2 downto 0);
->  constant cStateAllOff : std_ulogic_vector(2 downto 0) := "000";
+>  signal NextState : std_ulogic_vector(oState'range);
+>  -- init state 
+>  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0') 
 >begin
 >
+>  -- State Register
 >process (iClk,inResetAsync) is 
 >begin
 >  if(inResetAsync = not('1'))then
@@ -56,7 +61,7 @@ Der untere Process ist ein rein kombinatorischer Process und dient zur Berechnun
 >  end if;
 >end process;
 >
->
+>-- State Transition Process
 >NextStateLogic: process (oState) is
 >begin
 >  case oState is 
@@ -72,17 +77,20 @@ Der untere Process ist ein rein kombinatorischer Process und dient zur Berechnun
 >
 >end architecture TwoProcessWithCase;
 
-Hier ist der erste Process gleich wie bei der andern Beschreibung.
+Hier ist der erste Process gleich wie in der ersten Beschreibung.
 Die Kombinatorik für die Berechnung des nächsten States wurde hier mittels eines Case Statement realisiert.
 
 ### Architektur OneProcessWithCase
 
 >```vhdl
 >architecture OneProcessWithCase of RunningLight is
->  signal NextState : std_ulogic_vector(2 downto 0);
->  constant cStateAllOff : std_ulogic_vector(2 downto 0) := "000";
->begin
+>  signal NextState : std_ulogic_vector(oState'range);
 >
+>  -- init state 
+>  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0') 
+>  begin
+>
+>-- Stateregister and State Transfer Process
 >process (iClk,inResetAsync,oState) is 
 >begin
 >
@@ -106,11 +114,11 @@ Die Kombinatorik für die Berechnung des nächsten States wurde hier mittels ein
 >
 >end architecture OneProcessWithCase;
 
+
 Hier wurde die Kombinatorik für die Stateüberführung in den Process des StateRegisters gegeben.
-Dies ist zulässig da NextState kein Output Port der Entity darstellt.
 Hier muss der Process allerdings auch auf oState Sensitiv sein, damit sobald eine Änderung von oState vorliegt, der neue Zustand berechnet wird.
 Persönlich finde ich die Beschreibung WithCase2Process am saubersten. 
-Da hier Stateregister un Kombinatorik klar getrennt sind.
+Da hier Stateregister und Kombinatorik klar getrennt sind.
 
 ### Simulation und Verifikation
 
@@ -230,7 +238,10 @@ Die Funktionalität der beschriebenen FSMs wurde mittels einer automatischen Tes
 >end Testbench;
 
 Hier wird das Ergebnis der einzelnen Statemachines durch die Verify Processes geprüft.
-Falls eine Fehlfunktion festgestellt wird, wird mittels der Assertion mittels severity failure abgebrochen.
+Falls eine Fehlfunktion festgestellt wird, wird mittels der Assertion severity failure abgebrochen.
+Die Verify Processes wurden nach Funktionalität bzw. nach den Entities aufgeteilt.
+Hier wird ein Process dazu verwendet, das Resetverhalten der FSMs zu kontrollieren.
+Die 3 anderen Processes überprüfen die Statetransitionen. 
 
 #### Waveform
 
@@ -238,7 +249,7 @@ Falls eine Fehlfunktion festgestellt wird, wird mittels der Assertion mittels se
 
 Da die Testbench nicht abgebrochen hat ist die Funktion gegeben.
 Im Vorhinein wurde die Funktion der Verify Processes überprüft.
-Hier wurde ein Fehler erzwungen.
+Hier wurde ein Fehler erzwungen um die Testbench zu testen
 
 ### Synthese TwoProcessHandmade
 
@@ -261,22 +272,20 @@ Hier wurde ein Fehler erzwungen.
 >
 >end Struct; 
 
-Hier wird als Takteingang der Taster 1 verwendet. 
-Für den Reset wird die negative Logik vom Taster beibehalten.
-Somit befindet sich das Design solange im Reset solange der Taster nicht gedrückt ist.
+Hier wird für Testzwecke als Takteingang der Taster 1 verwendet. 
 
 #### Compilation Report
 
 ![Compilation Report Handmade](./images/Handmade/Summery.png)
 
-Aus dem Compilation Report ist ersichtlich dass 3 Flipflops erzeugt wurden.
-Die 3 Flipflop durch die 3 Bits des State Signals entstanden und bilden das Stateregister. 
+Aus dem Compilation Report ist ersichtlich, dass 3 Flipflops erzeugt wurden.
+Die 3 Flipflop sind durch die 3 Bits des State Signals entstanden und bilden das Stateregister. 
 
 #### RTL
 
 ![RTL](./images/Handmade/RTL.png)
 
-#### Techmap
+#### Technologiemap
 
 ![TechMap](./images/Handmade/TechMap.png)
 
@@ -286,6 +295,7 @@ Die 3 Flipflop durch die 3 Bits des State Signals entstanden und bilden das Stat
 
 Bei den Warnings fällt auf, dass Quartus meldet, dass das vorgegebene Timing nicht erreicht wird.
 Dies ist auch klar denn als Takt wird ein Taster input verwendet. 
+Standardmäßig wird als Defaultwert des Target Taktes 1GHz verwendet! 
 Hier entsteht auch die Warning dafür.
 
 ### Synthese TwoProcessCase
@@ -323,6 +333,8 @@ Auch hier sind 3 Register für den State entstanden
 
 ![TechMap](./images/2Case/TechMap.png)
 
+In der Technologie Map fällt auf, dass für die Realisierung des Muliplexers MUX1 nur 2 Inputs des LUTs verwendet werden. Hier wird vermutlich durch die Beschreibung mittels Case besser optimiert. (when others => Nstate <= 'XXX')
+
 #### Warnings
 
 ![Warnings](./images/2Case/Warnings.png)
@@ -358,7 +370,7 @@ Auch hier sind 3 Register für den State entstanden
 
 ![RTL](./images/1Case/RTL.png)
 
-#### Techmap
+#### Technologiemap
 
 ![TechMap](./images/1Case/TechMap.png)
 
@@ -376,7 +388,7 @@ Model Slow 85°C:
 ![Warnings](./images/2Case/FMax.png)
 
 Im Timing Analyzer unter Report Fmax Summery ist die maximale Taktfrequenz des Designs zu sehen.
-Hier wird eine Frequenz von 486Mhz angezeigt.
+Hier wird eine Frequenz von 486Mhz angezeigt (Restricted FMAX).
 Somit wäre ein Betrieb mit dem internen 50 Mhz Takt durchaus möglich.
 
 Die Periodendauer eines Taktes mit der Frequenz \( f = 50\,\text{MHz} \) beträgt
@@ -393,6 +405,34 @@ T = \frac{1}{f}
 Damit existiert jeder Zustand des Lauflichts nur für \(20\,\text{ns} \).
 
 Daraus resultiert, dass das Blinken der LEDs sehr sehr schnell wäre. Dies wurde mit dem Auge nicht mehr als Blinken zu erkennen. Man würde nur ein LED leuchten sehen. 
+
+#### FMAX vs Restricted FMAX
+Da aus dem Kontext von Quartus nicht genau ermittelst werden kann wo hier der Unterschied zwischen den 2 FMAX Taktranten ist wurde hier eine Recherche vollzogen.
+
+##### FMAX
+Dies ist die maximal mögliche Taktrate, die sich ausschließlich aus den reinen Setup- und Hold-Pfad-Verzögerungen ergibt.
+
+- Es berücksichtigt nur die kombinatorische Logik zwischen Registern.
+
+##### FMAX Restricted 
+Dies ist die real zulässige maximale Frequenz, nachdem zusätzliche Timing-Beschränkungen berücksichtigt wurden, darunter:
+
+- Minimum pulse-width (t<sub>high</sub>, t<sub>low</sub>)
+- Clock jitter
+- Duty-Cycle-Beschränkungen
+- Clock transfer limitations
+
+#### Report Fmax Summary Quartus Doku
+
+In der Quartus Doku wurde folgendes gefunden:
+
+The Timing Analyzer's Reports > Datasheet > Report Fmax Summary command reports the maximum frequency of each clock in your design. The equivalent scripting command is report_clock_fmax_summary.
+
+The Timing Analyzer computes fMAX for all paths where the same clock drives the source and destination registers or ports. The Timing Analyzer ignores paths of different clocks and generated clocks. For paths between a clock and its inversion, the Timing Analyzer computes fMAX as if the rising and falling edges scale along with fMAX, such that the duty cycle (in terms of a percentage) is maintained. You must constrain all clocks for accurate timing analysis.
+
+The Restricted Fmax can indicate a "Limit due to hold check." Typically, hold checks do not limit the maximum frequency (fMAX) because these checks are for same-edge relationships, and therefore independent of clock frequency. An example of this occurs when launch equals zero and latch equals zero. However, with an inverted clock transfer, or a multicycle transfer (such as setup=2, hold=0), then the hold relationship is not a same-edge transfer and changes with the clock frequency.
+
+Dies gibt auch einen Hinweis wo der Unterschied zwischen den 2 Angaben liegt.
 
 ## Aufgabe 3 Counter
 
@@ -414,7 +454,7 @@ Daraus resultiert, dass das Blinken der LEDs sehr sehr schnell wäre. Dies wurde
 >end architecture RTL;
 
 Hier wurde ein Counter mittels einem Process beschrieben.
-Hier wird mittels mod Funktion, wie in der Angabe gefordert, der Überlauf von oCount verhindert.
+Mittels **mod** Funktion, wie in der Angabe gefordert, wird der Überlauf von oCount verhindert.
 Weiters wurde noch ein Resetsignal implementiert welches den Counter auf 0 zurücksetzt.
 
 #### Berechnung der Bitbreite
@@ -425,7 +465,7 @@ Gegeben ist ein Takt mit der Frequenz
 f_\text{clk} = 50\,\text{MHz} = 50 \cdot 10^{6}\,\text{Hz}.
 \]
 
-Das oberste Bit des Zählers soll nicht häufiger als einmal pro Sekunde den von 0 -> 1 bzw. von 1 -> 0 wechselt daher muss seine maximale Frequenz betragen:
+Das oberste Bit des Zählers soll nicht häufiger als einmal pro Sekunde von 0 -> 1 bzw. von 1 -> 0 wechseln, daher muss seine maximale Frequenz betragen:
 \[
 f_\text{MSB} \le 1\,\text{Hz}.
 \]
@@ -437,7 +477,7 @@ T_\text{MSB} = \frac{1}{f_\text{MSB}}
              = 1\,\text{s}.
 \]
 
-Die Anzahl der benötigten Zählerstände für eine Zeitdauer von \(2\,\text{s}\) beträgt
+Die Anzahl der benötigten Zählerstände für eine Zeitdauer von \(1\,\text{s}\) beträgt
 \[
 N_\text{counts} = f_\text{clk} \cdot T_\text{MSB}
                 = 50 \cdot 10^{6} \cdot 1
@@ -483,10 +523,10 @@ Die genaue Periodendauer für das oberste Bit beträgt bei einer Bitbreite von 2
 
 >```vhdl
 >architecture Testbench of Counter_TB is
->    constant cBitWidth   : natural := 8; -- only for >Simulation
+>    constant cBitWidth   : natural := 26;
 >    signal Clk           : std_ulogic := '0';
 >    signal nResetAsync   : std_ulogic;
->    signal Counter    : unsigned(cBitWidth downto 0);
+>    signal Counter       : unsigned(cBitWidth downto 1);
 >begin
 >
 >Entity_Counter : entity work.Counter(RTL)
@@ -496,7 +536,7 @@ Die genaue Periodendauer für das oberste Bit beträgt bei einer Bitbreite von 2
 >port map (
 >    iClk         => Clk,
 >    inResetAsync => nResetAsync,
->    oCount     => Counter
+>    oCount       => Counter
 >);
 >
 >-- generate 50 Mhz Clock
@@ -522,11 +562,11 @@ Hier ist das Reset-Verhalten in der Wave zu sehen.
 Hier kann der Überlauf des 8Bit Counters zu sehen.
 ![Wave](./images/Counter/Wave%20(2).png)
 
-In der Simulation wurde die Bitbreite des Counters auf 8 Bit reduziert, da sonst die Simulationsdauer enorm lange wäre.
+In der Simulation wurde die Bitbreite des Counters auf 8 Bit reduziert, da sonst die Simulationsdauer enorm lang wäre.
 
-Für einen Simulationszeitschritt von 100ms benötigt Questasim auf meinem Laptop 26 Sekunden.
+Für den 26 Bit Counter dauert ein Simulationszeitschritt von 100ms in Questasim auf meinem Laptop 26 Sekunden.
 Um einen Überlauf des Counter zu simulieren müssen 1.34 Sekunden simuliert werden. 
-Durch Hochrechnung wird hier von einer Rechenzeit der Simulation von 348 Sekunden also mehr als 5 Minuten!
+Durch Hochrechnung wird hier von einer Rechenzeit der Simulation von 348 Sekunden also mehr als 5 Minuten ausgegangen!
 
 
 ### PCB Adapter
@@ -545,11 +585,11 @@ Durch Hochrechnung wird hier von einer Rechenzeit der Simulation von 348 Sekunde
 >)
 >port map (
 >    iClk          => CLOCK_50,         
->    inResetAsync  => KeyPosLogic(0),   -- negativ Logic for Reset
+>    inResetAsync  => KeyPosLogic(0), 
 >    oCount        => Counter
 >);
->
->LEDR <= std_ulogic_vector(Counter(cCounterWidth downto >cCounterWidth-9));
+> -- Assign the upper 10 bit of the Counter to the LEDs
+>LEDR <= std_ulogic_vector(Counter(cCounterWidth downto cCounterWidth - LEDR'high));
 >
 >-- Convert Negative Logic from the board to pos logic
 >KeyPosLogic <= not KEY;
@@ -560,7 +600,7 @@ Nun wird der Counter am Board mittels PCB Adapter realisiert.
 
 ![Board](./images/Counter/Board.jpg)
 
-Das Design wurde nun aufs Board programmiert und mittels Stopuhr die Frequenz des MSB geprüft.
+Das Design wurde nun aufs Board transferiert und mittels Stoppuhr die Frequenz des MSB geprüft.
 
 ### Anzahl der entstandenen FlipFlop
 
@@ -568,7 +608,7 @@ Wird die folgende Option im QSF File auskommentiert entstehen bei der Synthese m
 
 >set_global_assignment -name ALLOW_REGISTER_DUPLICATION OFF
 
-Der Grund dafür ist, dass defaultmäßig das Design auf einen Targetclock von 1GHz probiert wird zu synthetisiern. Aus diesem Grund werden Zusatz FlipFlops eingefügt um die Taktfrequenz zu erhöhen.
+Der Grund dafür ist, dass defaultmäßig das Design auf einen Targetclock von 1GHz optimiert wird zu synthetisieren. Aus diesem Grund werden Zusatz FlipFlops eingefügt um die Taktfrequenz zu erhöhen.
 
 ![TechMap](./images/Counter/TechMapDup.png)
 

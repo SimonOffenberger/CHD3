@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title : Shift Register
+-- Title : FSM For a running light using 2 Processes
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger
@@ -14,10 +14,12 @@
 -- Architecure RTL 
 --------------------------------------------------------------------------------
 architecture TwoProcessWithCase of RunningLight is
-  signal NextState : std_ulogic_vector(2 downto 0);
-  constant cStateAllOff : std_ulogic_vector(2 downto 0) := "000";
+  signal NextState : std_ulogic_vector(oState'range);
+  -- init state 
+  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0') 
 begin
 
+  -- State Register
 process (iClk,inResetAsync) is 
 begin
   if(inResetAsync = not('1'))then
@@ -27,7 +29,7 @@ begin
   end if;
 end process;
 
-
+-- State Transition Process
 NextStateLogic: process (oState) is
 begin
   case oState is 
