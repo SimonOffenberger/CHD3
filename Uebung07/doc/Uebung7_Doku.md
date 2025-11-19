@@ -458,7 +458,7 @@ Mittels **mod** Funktion, wie in der Angabe gefordert, wird der Überlauf von oC
 Weiters wurde noch ein Resetsignal implementiert welches den Counter auf 0 zurücksetzt.
 
 #### Berechnung der Bitbreite
-In der Angabe wird gefordert, dass ein Zustandswechsel des obersten Bits nicht häufiger als 1 mal pro Sekunde stattfindet.
+In der Angabe wird gefordert, dass ein die Periodendauer des obersten Bits minimal 1 Sekunde lang dauert.
 
 Gegeben ist ein Takt mit der Frequenz
 \[
