@@ -13,12 +13,72 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Modified modelsim.ini
-# Modified modelsim.ini
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_OneProcessWithCase-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:35:42 on Nov 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_OneProcessWithCase-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture OneProcessWithCase of RunningLight
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity RunningLight
+# End time: 17:35:42 on Nov 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:35:42 on Nov 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture TwoProcessHandmade of RunningLight
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity RunningLight
+# End time: 17:35:42 on Nov 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessWithCase-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:35:42 on Nov 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessWithCase-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture TwoProcessWithCase of RunningLight
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity RunningLight
+# End time: 17:35:42 on Nov 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:35:42 on Nov 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RunningLight
+# End time: 17:35:42 on Nov 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:35:46 on Nov 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RunningLight_TB
+# -- Compiling architecture Testbench of RunningLight_TB
+# -- Loading entity RunningLight
+# End time: 17:35:47 on Nov 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 vsim -gui work.runninglight_tb(testbench) -voptargs=+acc
 # vsim -gui work.runninglight_tb(testbench) -voptargs="+acc" 
-# Start time: 13:36:35 on Nov 17,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 17:36:00 on Nov 20,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "RunningLight(OneProcessWithCase)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "RunningLight(TwoProcessWithCase)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -39,5 +99,9 @@ run
 run
 run
 run
-# End time: 13:44:11 on Nov 17,2025, Elapsed time: 0:07:36
-# Errors: 0, Warnings: 0
+run
+run
+run
+run
+# End time: 17:36:14 on Nov 20,2025, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 2

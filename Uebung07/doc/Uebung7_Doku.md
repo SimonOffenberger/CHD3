@@ -6,7 +6,7 @@
 >architecture TwoProcessHandmade of RunningLight is
 >  signal NextState : std_ulogic_vector(oState'range);
 >  -- init state 
->  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0') 
+>  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0');
 >begin
 >
 >-- Stateregister
@@ -48,7 +48,7 @@ Der untere Process ist ein rein kombinatorischer Process und dient zur Berechnun
 >architecture TwoProcessWithCase of RunningLight is
 >  signal NextState : std_ulogic_vector(oState'range);
 >  -- init state 
->  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0') 
+>  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0');
 >begin
 >
 >  -- State Register
@@ -404,7 +404,7 @@ T = \frac{1}{f}
 
 Damit existiert jeder Zustand des Lauflichts nur für \(20\,\text{ns} \).
 
-Daraus resultiert, dass das Blinken der LEDs sehr sehr schnell wäre. Dies wurde mit dem Auge nicht mehr als Blinken zu erkennen. Man würde nur ein LED leuchten sehen. 
+Daraus resultiert, dass das Blinken der LEDs sehr sehr schnell wäre. Dies wäre mit dem Auge nicht mehr als Blinken zu erkennen. Man würde nur ein LED leuchten sehen. 
 
 #### FMAX vs Restricted FMAX
 Da aus dem Kontext von Quartus nicht genau ermittelst werden kann wo hier der Unterschied zwischen den 2 FMAX Taktranten ist wurde hier eine Recherche vollzogen.
@@ -458,7 +458,10 @@ Mittels **mod** Funktion, wie in der Angabe gefordert, wird der Überlauf von oC
 Weiters wurde noch ein Resetsignal implementiert welches den Counter auf 0 zurücksetzt.
 
 #### Berechnung der Bitbreite
-In der Angabe wird gefordert, dass ein die Periodendauer des obersten Bits minimal 1 Sekunde lang dauert.
+In der Angabe wird gefordert, dass die Periodendauer des obersten Bits minimal 1 Sekunde lang dauert.
+
+![MSB_Freq](./images/MSB_Freq.png)
+
 
 Gegeben ist ein Takt mit der Frequenz
 \[

@@ -1,16 +1,16 @@
 |CounterOnPCBDe1Soc
 CLOCK_50 => counter:EntityCounter.iClk
 KEY[0] => counter:EntityCounter.inResetAsync
-LEDR[0] << counter:EntityCounter.oCount[17]
-LEDR[1] << counter:EntityCounter.oCount[18]
-LEDR[2] << counter:EntityCounter.oCount[19]
-LEDR[3] << counter:EntityCounter.oCount[20]
-LEDR[4] << counter:EntityCounter.oCount[21]
-LEDR[5] << counter:EntityCounter.oCount[22]
-LEDR[6] << counter:EntityCounter.oCount[23]
-LEDR[7] << counter:EntityCounter.oCount[24]
-LEDR[8] << counter:EntityCounter.oCount[25]
-LEDR[9] << counter:EntityCounter.oCount[26]
+LEDR[0] <= counter:EntityCounter.oCount[17]
+LEDR[1] <= counter:EntityCounter.oCount[18]
+LEDR[2] <= counter:EntityCounter.oCount[19]
+LEDR[3] <= counter:EntityCounter.oCount[20]
+LEDR[4] <= counter:EntityCounter.oCount[21]
+LEDR[5] <= counter:EntityCounter.oCount[22]
+LEDR[6] <= counter:EntityCounter.oCount[23]
+LEDR[7] <= counter:EntityCounter.oCount[24]
+LEDR[8] <= counter:EntityCounter.oCount[25]
+LEDR[9] <= counter:EntityCounter.oCount[26]
 
 
 |CounterOnPCBDe1Soc|Counter:EntityCounter

@@ -18,7 +18,7 @@ architecture OneProcessWithCase of RunningLight is
   signal NextState : std_ulogic_vector(oState'range);
 
   -- init state 
-  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0') 
+  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0');
   begin
 
 -- Stateregister and State Transfer Process

@@ -13,34 +13,20 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Modified modelsim.ini
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:22:40 on Nov 17,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Counter_TB
-# -- Compiling architecture Testbench of Counter_TB
-# -- Loading entity Counter
-# End time: 20:22:40 on Nov 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter/src/Counter-e.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:22:45 on Nov 17,2025
+# Start time: 17:52:24 on Nov 20,2025
 # vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter/src/Counter-e.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Counter
-# End time: 20:22:45 on Nov 17,2025, Elapsed time: 0:00:00
+# End time: 17:52:24 on Nov 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter/src/Counter-Rtl-a.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:22:45 on Nov 17,2025
+# Start time: 17:52:24 on Nov 20,2025
 # vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter/src/Counter-Rtl-a.vhd 
 # -- Loading package STANDARD
 # -- Compiling architecture RTL of Counter
@@ -48,26 +34,11 @@ vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintC
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading entity Counter
-# End time: 20:22:45 on Nov 17,2025, Elapsed time: 0:00:00
+# End time: 17:52:25 on Nov 20,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vsim -gui work.counter_tb(testbench) -voptargs=+acc
-# vsim -gui work.counter_tb(testbench) -voptargs="+acc" 
-# Start time: 20:22:58 on Nov 17,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Warning: (vopt-13) Recompile work.counter_tb(testbench) because work.counter has changed.
-# ** Error (suppressible): C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd(38): (vopt-1549) At instance Entity_Counter the actual expression and the port 'oCount' of entity 'work.Counter' have different sizes:  ([9,8]).
-#         Region: /Counter_TB/Entity_Counter
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=3.
-# Error loading design
-# End time: 20:22:59 on Nov 17,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 3
 vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:23:49 on Nov 17,2025
+# Start time: 17:52:29 on Nov 20,2025
 # vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -76,16 +47,12 @@ vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintC
 # -- Compiling entity Counter_TB
 # -- Compiling architecture Testbench of Counter_TB
 # -- Loading entity Counter
-# End time: 20:23:49 on Nov 17,2025, Elapsed time: 0:00:00
+# End time: 17:52:29 on Nov 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -gui -voptargs=+acc work.counter_tb(testbench)
-# vsim -gui -voptargs="+acc" work.counter_tb(testbench) 
-# Start time: 20:24:00 on Nov 17,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+vsim -gui work.counter_tb(testbench) -voptargs=+acc
+# vsim -gui work.counter_tb(testbench) -voptargs="+acc" 
+# Start time: 17:52:42 on Nov 20,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -95,175 +62,16 @@ vsim -gui -voptargs=+acc work.counter_tb(testbench)
 add wave -position end  sim:/counter_tb/Clk
 add wave -position end  sim:/counter_tb/nResetAsync
 add wave -position end  sim:/counter_tb/Counter
+add wave -position end  sim:/counter_tb/cBitWidth
 run
 run
 run
 run
 run
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:24:25 on Nov 17,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Counter_TB
-# -- Compiling architecture Testbench of Counter_TB
-# -- Loading entity Counter
-# End time: 20:24:26 on Nov 17,2025, Elapsed time: 0:00:01
+run
+run
+run
+run
+run
+# End time: 17:52:52 on Nov 20,2025, Elapsed time: 0:00:10
 # Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.counter_tb(testbench)#1
-# Loading work.counter(rtl)#1
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-run
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:29:40 on Nov 17,2025
-# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Counter_TB
-# -- Compiling architecture Testbench of Counter_TB
-# -- Loading entity Counter
-# End time: 20:29:40 on Nov 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.counter_tb(testbench)#1
-# Loading work.counter(rtl)#1
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-run
-run
-run
-# End time: 20:47:37 on Nov 17,2025, Elapsed time: 0:23:37
-# Errors: 0, Warnings: 2

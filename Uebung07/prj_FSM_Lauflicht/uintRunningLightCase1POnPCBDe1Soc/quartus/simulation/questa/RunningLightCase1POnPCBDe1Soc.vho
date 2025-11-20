@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "11/17/2025 15:01:06"
+-- DATE "11/20/2025 17:37:49"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -38,8 +38,8 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	RunningLightCase1POnPCBDe1Soc IS
     PORT (
-	KEY : IN IEEE.STD_LOGIC_1164.std_ulogic_vector(1 DOWNTO 0);
-	LEDR : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(2 DOWNTO 0)
+	KEY : IN std_logic_vector(1 DOWNTO 0);
+	LEDR : BUFFER std_logic_vector(2 DOWNTO 0)
 	);
 END RunningLightCase1POnPCBDe1Soc;
 
@@ -76,15 +76,15 @@ SIGNAL \ALT_INV_KEY[0]~inputCLKENA0_outclk\ : std_logic;
 
 BEGIN
 
-ww_KEY <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(KEY);
-LEDR <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_LEDR);
+ww_KEY <= KEY;
+LEDR <= ww_LEDR;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 \EntityRunningLightCase2P|ALT_INV_oState\(1) <= NOT \EntityRunningLightCase2P|oState\(1);
-\EntityRunningLightCase2P|ALT_INV_oState\(0) <= NOT \EntityRunningLightCase2P|oState\(0);
-\ALT_INV_KEY[0]~inputCLKENA0_outclk\ <= NOT \KEY[0]~inputCLKENA0_outclk\;
 \EntityRunningLightCase2P|ALT_INV_oState\(2) <= NOT \EntityRunningLightCase2P|oState\(2);
+\ALT_INV_KEY[0]~inputCLKENA0_outclk\ <= NOT \KEY[0]~inputCLKENA0_outclk\;
+\EntityRunningLightCase2P|ALT_INV_oState\(0) <= NOT \EntityRunningLightCase2P|oState\(0);
 
 -- Location: IOOBUF_X52_Y0_N2
 \LEDR[0]~output\ : cyclonev_io_obuf

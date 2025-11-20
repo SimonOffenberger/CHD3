@@ -3,6 +3,8 @@ K4
 z2
 Z0 !s12c _opt
 Z1 !s99 nomlopt
+R0
+R1
 !s12c _opt1
 R1
 R0
@@ -46,10 +48,10 @@ R1
 cModel Technology
 Z2 dC:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/Questa
 T_opt
-!s110 1763316044
-V`g>4GRO_5`3hjEzBE>J=O3
+!s110 1763656562
+VUzjY`=k34d@ld5ZHEI=;m1
 Z3 04 15 9 work runninglight_tb testbench 1
-=1-58cdc910746f-691a114b-3e5-5f54
+=1-58cdc910746f-691f4371-189-54b4
 R1
 Z4 !s12b OEM100
 Z5 !s124 OEM10U4 
@@ -71,10 +73,10 @@ n@_opt1
 R7
 R2
 Erunninglight
-Z8 w1763313715
-Z9 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
-Z10 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
-!i122 25
+w1763313715
+Z8 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z9 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 59
 R2
 8C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight-e.vhd
 FC:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight-e.vhd
@@ -82,143 +84,145 @@ l0
 L20 1
 V38FhkGM5FUZ=lGS[NN<>12
 !s100 Kga2?K]3b3=PWM?[5U2ke2
-Z11 OL;C;2023.3;77
+Z10 OL;C;2023.3;77
 33
-Z12 !s110 1763314633
+Z11 !s110 1763656542
 !i10b 1
-Z13 !s108 1763314633.000000
+Z12 !s108 1763656542.000000
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight-e.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight-e.vhd|
 !i113 0
-Z14 o-O0 -work work
-Z15 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
+Z13 o-O0 -work work
+Z14 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
 Atwoprocesswithcase
+w1763630334
+R8
 R9
-R10
-Z16 DEx4 work 12 runninglight 0 22 38FhkGM5FUZ=lGS[NN<>12
-!i122 25
+Z15 DEx4 work 12 runninglight 0 22 38FhkGM5FUZ=lGS[NN<>12
+!i122 59
 8C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessWithCase-Rtl-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessWithCase-Rtl-a.vhd
-l19
-L16 29
-V[0Azi<]]dgge]X8VG^lJg1
-!s100 :@K6[h=b92b:jN:g]TfgD1
-R11
+l20
+L16 31
+VB5BKZoYnVHOj`3BERb9Ol0
+!s100 `oZ3BN0BJANAfGP10z^FA0
+R10
 33
-R12
+R11
 !i10b 1
-R13
+R12
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessWithCase-Rtl-a.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessWithCase-Rtl-a.vhd|
 !i113 0
+R13
 R14
-R15
 Atwoprocesshandmade
-w1763313828
+w1763630329
+R8
 R9
-R10
-R16
-!i122 25
-Z17 8C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd
-Z18 FC:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd
-l20
-L16 39
-VQI<cgE11;D:>O80?:k:312
-!s100 >CiPJ_cgO`D3kI5XiVEPR3
-R11
-33
-R12
-!i10b 1
-Z19 !s108 1763314632.000000
-Z20 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd|
-Z21 !s107 C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd|
-!i113 0
-R14
 R15
-Aoneprocesswithcase
-R9
+!i122 59
+Z16 8C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd
+Z17 FC:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd
+l20
+L16 33
+VXWk_]OBX]gJ4AT5PF9kUK0
+!s100 cRNSzoJnXi^]KaV2MB_hN0
 R10
-R16
-!i122 25
+33
+R11
+!i10b 1
+R12
+Z18 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd|
+Z19 !s107 C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd|
+!i113 0
+R13
+R14
+Aoneprocesswithcase
+w1763630324
+R8
+R9
+R15
+!i122 59
 8C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_OneProcessWithCase-Rtl-a.vhd
 FC:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_OneProcessWithCase-Rtl-a.vhd
-l19
-L16 27
-V1`4NbhjDDgERjzN:Fi]1f2
-!s100 A=dK6lWXL3GgCoP?c_eN00
-R11
+l22
+L17 30
+VYYf@@kXYT7UQFaKQdPm5B3
+!s100 _Jg_YzUTne6WbiZ^oGDkk2
+R10
 33
-!s110 1763314632
+R11
 !i10b 1
-R19
+R12
 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_OneProcessWithCase-Rtl-a.vhd|
 !s107 C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_OneProcessWithCase-Rtl-a.vhd|
 !i113 0
+R13
 R14
-R15
 Aoneprocesshandmade
 w1763310533
+R8
 R9
-R10
 DEx4 work 12 runninglight 0 22 eX;5FogBPBAQWD2gk@kZZ0
 !i122 10
+R16
 R17
-R18
 l18
 L16 35
 V:`Kh1iMDk9DJ5PMKMzo1[1
 !s100 WP5N28W4?j2a>NlA[TFM12
-R11
+R10
 33
 !s110 1763312793
 !i10b 1
 !s108 1763312792.000000
-R20
-R21
+R18
+R19
 !i113 0
+R13
 R14
-R15
 Erunninglight_tb
-Z22 w1763315835
-Z23 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z20 w1763493209
+Z21 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+R8
 R9
-R10
-!i122 54
+!i122 60
 R2
-Z24 8C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd
-Z25 FC:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd
+Z22 8C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd
+Z23 FC:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd
 l0
 L21 1
 V:aRJJ1zeUAUcPAl]IdKgb3
 !s100 cK3hIa4iJk9hC:ClbEG;:2
-R11
-33
-Z26 !s110 1763316022
-!i10b 1
-Z27 !s108 1763316022.000000
-Z28 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd|
-Z29 !s107 C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd|
-!i113 0
-R14
-R15
-Atestbench
-R16
-R23
-R9
 R10
-DEx4 work 15 runninglight_tb 0 22 :aRJJ1zeUAUcPAl]IdKgb3
-!i122 54
-l30
-L24 109
-VW=ZbXXoI;6m[MO^E=m?693
-!s100 RK_@7mHANcNme]Ci<DQ=J3
-R11
 33
-R26
+Z24 !s110 1763656547
 !i10b 1
-R27
-R28
-R29
+Z25 !s108 1763656546.000000
+Z26 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd|
+Z27 !s107 C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight_TB/src/RunningLight_TB-ea.vhd|
 !i113 0
+R13
 R14
+Atestbench
 R15
+R21
+R8
+R9
+DEx4 work 15 runninglight_tb 0 22 :aRJJ1zeUAUcPAl]IdKgb3
+!i122 60
+l30
+L24 108
+Vz2a9n9NiHFminPR@AhXaI3
+!s100 MY>8R?>JV:^AgSg:h`SD70
+R10
+33
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R13
+R14

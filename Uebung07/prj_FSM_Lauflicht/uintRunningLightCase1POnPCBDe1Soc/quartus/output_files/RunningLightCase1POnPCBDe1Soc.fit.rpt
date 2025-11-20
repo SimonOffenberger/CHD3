@@ -1,5 +1,5 @@
 Fitter report for RunningLightCase1POnPCBDe1Soc
-Mon Nov 17 15:00:56 2025
+Thu Nov 20 17:37:40 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Nov 17 15:00:56 2025          ;
+; Fitter Status                   ; Successful - Thu Nov 20 17:37:40 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; RunningLightCase1POnPCBDe1Soc                  ;
 ; Top-level Entity Name           ; RunningLightCase1POnPCBDe1Soc                  ;
@@ -1656,7 +1656,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.41 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.39 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1665,9 +1665,9 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLightCase1POnPCBDe1Soc/quartus/output_files/RunningLightCase1POnPCBDe1Soc.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 8023 megabytes
-    Info: Processing ended: Mon Nov 17 15:00:56 2025
+    Info: Processing ended: Thu Nov 20 17:37:40 2025
     Info: Elapsed time: 00:00:53
-    Info: Total CPU time (on all processors): 00:06:07
+    Info: Total CPU time (on all processors): 00:06:06
 
 
 +----------------------------+

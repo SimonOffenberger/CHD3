@@ -1,9 +1,9 @@
 |RunningLightCase1POnPCBDe1Soc
 KEY[0] => runninglight:EntityRunningLightCase2P.iClk
 KEY[1] => runninglight:EntityRunningLightCase2P.inResetAsync
-LEDR[0] <= runninglight:EntityRunningLightCase2P.oState[0]
-LEDR[1] <= runninglight:EntityRunningLightCase2P.oState[1]
-LEDR[2] <= runninglight:EntityRunningLightCase2P.oState[2]
+LEDR[0] << runninglight:EntityRunningLightCase2P.oState[0]
+LEDR[1] << runninglight:EntityRunningLightCase2P.oState[1]
+LEDR[2] << runninglight:EntityRunningLightCase2P.oState[2]
 
 
 |RunningLightCase1POnPCBDe1Soc|RunningLight:EntityRunningLightCase2P

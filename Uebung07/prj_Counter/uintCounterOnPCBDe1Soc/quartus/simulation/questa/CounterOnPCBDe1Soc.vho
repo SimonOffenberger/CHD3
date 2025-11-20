@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "11/17/2025 20:59:10"
+-- DATE "11/20/2025 14:34:02"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -39,8 +39,8 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	CounterOnPCBDe1Soc IS
     PORT (
 	CLOCK_50 : IN std_logic;
-	KEY : IN std_logic_vector(0 DOWNTO 0);
-	LEDR : BUFFER std_logic_vector(9 DOWNTO 0)
+	KEY : IN IEEE.STD_LOGIC_1164.std_ulogic_vector(0 DOWNTO 0);
+	LEDR : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(9 DOWNTO 0)
 	);
 END CounterOnPCBDe1Soc;
 
@@ -133,38 +133,38 @@ SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
 BEGIN
 
 ww_CLOCK_50 <= CLOCK_50;
-ww_KEY <= KEY;
-LEDR <= ww_LEDR;
+ww_KEY <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(KEY);
+LEDR <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_LEDR);
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\EntityCounter|ALT_INV_oCount\(2) <= NOT \EntityCounter|oCount\(2);
-\EntityCounter|ALT_INV_oCount\(20) <= NOT \EntityCounter|oCount\(20);
-\EntityCounter|ALT_INV_oCount\(25) <= NOT \EntityCounter|oCount\(25);
 \EntityCounter|ALT_INV_oCount\(24) <= NOT \EntityCounter|oCount\(24);
-\EntityCounter|ALT_INV_oCount\(16) <= NOT \EntityCounter|oCount\(16);
-\EntityCounter|ALT_INV_oCount\(17) <= NOT \EntityCounter|oCount\(17);
-\EntityCounter|ALT_INV_oCount\(26) <= NOT \EntityCounter|oCount\(26);
-\EntityCounter|ALT_INV_oCount\(12) <= NOT \EntityCounter|oCount\(12);
-\EntityCounter|ALT_INV_oCount\(11) <= NOT \EntityCounter|oCount\(11);
-\EntityCounter|ALT_INV_oCount\(5) <= NOT \EntityCounter|oCount\(5);
-\EntityCounter|ALT_INV_oCount\(14) <= NOT \EntityCounter|oCount\(14);
-\EntityCounter|ALT_INV_oCount\(6) <= NOT \EntityCounter|oCount\(6);
-\EntityCounter|ALT_INV_oCount\(18) <= NOT \EntityCounter|oCount\(18);
+\EntityCounter|ALT_INV_oCount\(25) <= NOT \EntityCounter|oCount\(25);
 \EntityCounter|ALT_INV_oCount\(22) <= NOT \EntityCounter|oCount\(22);
-\EntityCounter|ALT_INV_oCount\(15) <= NOT \EntityCounter|oCount\(15);
-\EntityCounter|ALT_INV_oCount\(10) <= NOT \EntityCounter|oCount\(10);
-\EntityCounter|ALT_INV_oCount\(8) <= NOT \EntityCounter|oCount\(8);
-\EntityCounter|ALT_INV_oCount\(3) <= NOT \EntityCounter|oCount\(3);
-\ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
-\EntityCounter|ALT_INV_oCount\(9) <= NOT \EntityCounter|oCount\(9);
-\EntityCounter|ALT_INV_oCount\(21) <= NOT \EntityCounter|oCount\(21);
-\EntityCounter|ALT_INV_oCount\(13) <= NOT \EntityCounter|oCount\(13);
-\EntityCounter|ALT_INV_oCount\(7) <= NOT \EntityCounter|oCount\(7);
-\EntityCounter|ALT_INV_oCount\(1) <= NOT \EntityCounter|oCount\(1);
+\EntityCounter|ALT_INV_oCount\(26) <= NOT \EntityCounter|oCount\(26);
+\EntityCounter|ALT_INV_oCount\(17) <= NOT \EntityCounter|oCount\(17);
+\EntityCounter|ALT_INV_oCount\(18) <= NOT \EntityCounter|oCount\(18);
 \EntityCounter|ALT_INV_oCount\(19) <= NOT \EntityCounter|oCount\(19);
-\EntityCounter|ALT_INV_oCount\(4) <= NOT \EntityCounter|oCount\(4);
+\EntityCounter|ALT_INV_oCount\(20) <= NOT \EntityCounter|oCount\(20);
+\EntityCounter|ALT_INV_oCount\(21) <= NOT \EntityCounter|oCount\(21);
 \EntityCounter|ALT_INV_oCount\(23) <= NOT \EntityCounter|oCount\(23);
+\EntityCounter|ALT_INV_oCount\(15) <= NOT \EntityCounter|oCount\(15);
+\EntityCounter|ALT_INV_oCount\(16) <= NOT \EntityCounter|oCount\(16);
+\EntityCounter|ALT_INV_oCount\(10) <= NOT \EntityCounter|oCount\(10);
+\EntityCounter|ALT_INV_oCount\(3) <= NOT \EntityCounter|oCount\(3);
+\EntityCounter|ALT_INV_oCount\(11) <= NOT \EntityCounter|oCount\(11);
+\EntityCounter|ALT_INV_oCount\(6) <= NOT \EntityCounter|oCount\(6);
+\EntityCounter|ALT_INV_oCount\(7) <= NOT \EntityCounter|oCount\(7);
+\EntityCounter|ALT_INV_oCount\(12) <= NOT \EntityCounter|oCount\(12);
+\EntityCounter|ALT_INV_oCount\(4) <= NOT \EntityCounter|oCount\(4);
+\ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
+\EntityCounter|ALT_INV_oCount\(2) <= NOT \EntityCounter|oCount\(2);
+\EntityCounter|ALT_INV_oCount\(14) <= NOT \EntityCounter|oCount\(14);
+\EntityCounter|ALT_INV_oCount\(13) <= NOT \EntityCounter|oCount\(13);
+\EntityCounter|ALT_INV_oCount\(1) <= NOT \EntityCounter|oCount\(1);
+\EntityCounter|ALT_INV_oCount\(5) <= NOT \EntityCounter|oCount\(5);
+\EntityCounter|ALT_INV_oCount\(8) <= NOT \EntityCounter|oCount\(8);
+\EntityCounter|ALT_INV_oCount\(9) <= NOT \EntityCounter|oCount\(9);
 
 -- Location: IOOBUF_X52_Y0_N2
 \LEDR[0]~output\ : cyclonev_io_obuf

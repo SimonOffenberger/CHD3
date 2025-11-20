@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RunningLightCase2POnPCBDe1Soc
-Mon Nov 17 19:21:20 2025
+Thu Nov 20 17:40:49 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 17 19:21:20 2025          ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 20 17:40:49 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; RunningLightCase2POnPCBDe1Soc                  ;
 ; Top-level Entity Name           ; RunningLightCase2POnPCBDe1Soc                  ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Nov 17 19:21:13 2025
+    Info: Processing started: Thu Nov 20 17:40:43 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RunningLightCase2POnPCBDe1Soc -c RunningLightCase2POnPCBDe1Soc
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /hsd_sem_3/chd3/uebung07/prj_fsm_lauflicht/uintrunninglight/src/runninglight-e.vhd
@@ -279,7 +279,7 @@ Info (12021): Found 1 design units, including 0 entities, in source file /hsd_se
 Info (12021): Found 1 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung07/prj_fsm_lauflicht/uintrunninglight/src/runninglight_twoprocesshandmade-rtl-a.vhd
     Info (12022): Found design unit 1: RunningLight-TwoProcessHandmade File: C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_TwoProcessHandmade-Rtl-a.vhd Line: 16
 Info (12021): Found 1 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung07/prj_fsm_lauflicht/uintrunninglight/src/runninglight_oneprocesswithcase-rtl-a.vhd
-    Info (12022): Found design unit 1: RunningLight-OneProcessWithCase File: C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_OneProcessWithCase-Rtl-a.vhd Line: 16
+    Info (12022): Found design unit 1: RunningLight-OneProcessWithCase File: C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLight/src/RunningLight_OneProcessWithCase-Rtl-a.vhd Line: 17
 Info (12021): Found 1 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung07/prj_fsm_lauflicht/uintrunninglightcase2ponpcbde1soc/hdl/runninglightcase2ponpcbde1soc-struct-a.vhd
     Info (12022): Found design unit 1: RunningLightCase2POnPCBDe1Soc-Struct File: C:/HSD_SEM_3/CHD3/Uebung07/prj_FSM_Lauflicht/uintRunningLightCase2POnPCBDe1Soc/hdl/RunningLightCase2POnPCBDe1Soc-Struct-a.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file /hsd_sem_3/chd3/uebung07/prj_fsm_lauflicht/uintrunninglightcase2ponpcbde1soc/hdl/runninglightcase2ponpcbde1soc-e.vhd
@@ -294,9 +294,9 @@ Info (21057): Implemented 8 device resources after synthesis - the final resourc
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 3 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4957 megabytes
-    Info: Processing ended: Mon Nov 17 19:21:20 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4949 megabytes
+    Info: Processing ended: Thu Nov 20 17:40:49 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:13
 
 
