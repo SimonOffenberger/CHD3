@@ -1,0 +1,77 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter/src/Counter-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:52:24 on Nov 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter/src/Counter-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter
+# End time: 17:52:24 on Nov 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter/src/Counter-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:52:24 on Nov 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter/src/Counter-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture RTL of Counter
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity Counter
+# End time: 17:52:25 on Nov 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:52:29 on Nov 20,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/src/Counter_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter_TB
+# -- Compiling architecture Testbench of Counter_TB
+# -- Loading entity Counter
+# End time: 17:52:29 on Nov 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.counter_tb(testbench) -voptargs=+acc
+# vsim -gui work.counter_tb(testbench) -voptargs="+acc" 
+# Start time: 17:52:42 on Nov 20,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter_tb(testbench)#1
+# Loading work.counter(rtl)#1
+add wave -position end  sim:/counter_tb/Clk
+add wave -position end  sim:/counter_tb/nResetAsync
+add wave -position end  sim:/counter_tb/Counter
+add wave -position end  sim:/counter_tb/cBitWidth
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:52:52 on Nov 20,2025, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0

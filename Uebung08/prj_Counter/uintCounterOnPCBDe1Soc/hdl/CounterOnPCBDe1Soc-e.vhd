@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+-- Title      : Top Level Entity/ Board Adapter
+-------------------------------------------------------------------------------
+-- University : FH-Hagenberg/HSSE, Hagenberg/Austria
+--              Copyright (c) 2000
+-------------------------------------------------------------------------------
+-- Authors are:
+-- offenberger: Simon Offenberger
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity CounterOnPCBDe1Soc is
+    port (
+    CLOCK_50 : in std_logic;
+    KEY   : in std_ulogic_vector(0 downto 0); 
+    LEDR   : out std_ulogic_vector(9 downto 0)   
+    );  
+end CounterOnPCBDe1Soc;
