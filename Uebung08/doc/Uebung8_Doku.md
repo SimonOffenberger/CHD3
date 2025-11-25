@@ -277,3 +277,109 @@ Das Design wurde auf folgenden synchronen Entwurf geändert:
 
 Hier wurde die Funktionalität des Resets über den Port iKey in einem eigenen Process ausgelagert. In diesem Process wird auch die Berechnung des nächsten Zählerwerts vollzogen.
 
+## Aufgabe 3 Gated Clock
+
+Hier wurde folgenden Implementierung in der Aufgabenstellung bereitgestellt.
+Hierbei wird der Clock Eingang der Flipflops für das Einfrieren des Zählerwertes missbraucht.
+
+>```vhdl
+>library ieee;
+>use ieee.std_logic_1164.all;
+>use ieee.numeric_std.all;
+>
+>entity CounterGatedClk is
+>generic(
+>-- Clock: 50 MHz : 26 bits are needed to make the MSB cycle through its
+>-- pace in more than 1 s
+>gCounterBitLength : natural := 26);
+> port (
+> inResetAsync : in std_ulogic;
+> iClk : in std_ulogic;
+> iEnable : in std_ulogic;
+> oCountedTo : out unsigned(gCounterBitLength-1 downto 0));
+> end entity CounterGatedClk;
+
+>```vhdl
+>architecture Rtl of CounterGatedClk is
+>
+>signal Clk : std_ulogic;
+>signal Counter : unsigned(oCountedTo’range) := (others => ’0’);
+>
+>begin
+>
+>Clk <= iClk when iEnable = ’1’ else
+>’0’;
+>
+> process (Clk, inResetAsync) is
+> begin
+> if inResetAsync = not(’1’) then
+>
+> Counter <= (others => ’0’);
+> elsif rising_edge(Clk) then
+> Counter <= Counter+1 mod 2**gCounterBitLength;
+> end if;
+> end process;
+>
+> oCountedTo <= Counter;
+>
+> end architecture Rtl;
+
+### Synthese 
+Nun wurde das vorgegebene Design in die Synthese geschickt und das Ergebnis analysiert.
+
+### RTL Viewer
+
+![RTL](./images/GatedClock/RTL.png)
+
+### Technologie Map
+
+![TechMap](./images/GatedClock/TechMap.png)
+
+In den Ansichten des RTL Viewer und Technologie Map Viewer ist klar die Kombinatorische Verknüpfung zwischen iClk und iEnable zu beobachten.
+Die Steuerung des Clock Signals der Flip Flops wird in der Synthese mittels Multiplexer abgebildet.
+### Warnings
+
+Im folgenden Bild sind die von Quartus bei der Synthese generierten Warnings abgebildet.
+Hier wurde das Design ohne PCD Adapter synthetisiert, deswegen entstehen hier auch Warnings zu den nicht definierten Ports.
+
+Auffällig ist jedoch, dass Quartus keine Warning zum Clock Gating ausgibt!
+
+![Warnings](./images/GatedClock/Warnings.png)
+
+### Synchroner Enable
+
+Hier wurde die Architektur folgendermaßen umkonstruiert.
+
+>```vhdl
+>architecture Rtl of CounterSyncEn is
+>
+>  signal Counter : unsigned(oCountedTo'range) := (others => '0');
+>
+>begin
+>
+>
+>  process (iClk, inResetAsync) is
+>  begin
+>    if inResetAsync = not('1') then
+>      Counter <= (others => '0');
+>    elsif rising_edge(iClk) then
+>      if(iEnable = '1') then
+>        Counter <= Counter + 1 mod 2 ** gCounterBitLength;
+>      else
+>       Counter <= Counter;
+>      end if;
+>    end if;
+>  end process;
+>
+>  oCountedTo <= Counter;
+>
+>end architecture Rtl;
+
+Hier wird die Funktionalität des Enables mittels Zuweisung des aktuellen Zählerwerts, also einfrieren des Zählerwerts, oder mittels Zuweisung auf den nächsten Zählerwerts realisiert.
+
+### Synthese 
+
+![RTL](./images/SyncEnable/RTL.png)
+
+Im RTL Viewer ist zu erkennen, dass nun kein Gated Clock mehr verwendet wird.
+Die Realisierung des Enables erfolgt über den Enable Eingang der Flip Flops.
