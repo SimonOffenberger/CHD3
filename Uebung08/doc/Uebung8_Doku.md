@@ -16,7 +16,7 @@ Soll nun die Berechnung für die maximale Zeit zwischen zwei Flip Flop mit unter
 
 Die zwei Takte dürfen nicht völlig asynchron zueinander sein, ansonsten kann keine Aussage über eine maximale Durchlaufzeit einer Kombinatorik zwischen den 2 Flip Flops getroffen werden.
 
-Sind die Takte jedoch fix durch eine Phasenbedingung oder durch einen Faktor zueinander Synchron, kann für die kürzeste Zeit zwischen den beiden Taktflanken, die längste zulässige Zeit für den kombinatorischen Pfad bestimmt werden.
+Sind die Takte jedoch fix durch eine Phasenbedingung oder durch einen Faktor zueinander synchron, kann für die kürzeste Zeit zwischen den beiden Taktflanken, die längste zulässige Zeit für den kombinatorischen Pfad bestimmt werden.
 
 ### Counter: Timing Analyse 
 
