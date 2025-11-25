@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title : Testbench for the Counter with Asynchronous Zero Reset
+-- Title : Testbench for the Counter with Synchronized Zero Reset
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger

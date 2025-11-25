@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title : Counter with Asynchronous Zero Reset
+-- Title : Counter with Clock Gating
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger

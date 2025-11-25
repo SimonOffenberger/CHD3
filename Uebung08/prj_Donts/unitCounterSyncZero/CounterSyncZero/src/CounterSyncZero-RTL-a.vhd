@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title : Counter with Asynchronous Zero Reset
+-- Title : Counter with Sync Overflow
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger

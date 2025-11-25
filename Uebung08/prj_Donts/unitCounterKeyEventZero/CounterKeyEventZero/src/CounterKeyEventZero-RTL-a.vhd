@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title : Counter with Asynchronous Zero Reset
+-- Title : Counter with Key Event Reset
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger
