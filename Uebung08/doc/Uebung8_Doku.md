@@ -1,8 +1,8 @@
 # Übung 8 Simon Offenberger S2410306027  
 ## Aufgabe 1 Timing Analyse
-### Berechnung der maximalen Zeit mit gleichem Pfad Takte
+### Berechnung der maximalen Durchlaufzeit
 
-Für Berechnung des maximal zulässigen Taktpfades, muss von der Periodendauer des Taktes noch die Clock to Q Zeit und die Setup-Zeit abgezogen werden. 
+Für die Berechnung der maximalen Durchlaufzeit, muss von der Periodendauer des Taktes noch die Clock to Q Zeit und die Setup-Zeit abgezogen werden. 
 
 $$
 t_{\text{max}} = T_{\text{clk}} - t_{\text{clk}\rightarrow\text{Q}} - t_{\text{setup}}
@@ -12,31 +12,39 @@ Diese Bedienung gilt allerdings nur wenn der Takt an jeden Flipflop der gleiche 
 
 ### Berechnung der maximalen Zeit mit unterschiedlichen Takte
 
-Soll nun die Berechnung für die maximale Zeit zwischen zwei Flip Flop mit unterschiedlichen Takten vollzogen werden, müssen annahmen getroffen werden.
+Soll nun die Berechnung für die maximale Zeit zwischen zwei Flip Flop mit unterschiedlichen Takten vollzogen werden, müssen Annahmen getroffen werden.
 
 Die zwei Takte dürfen nicht völlig asynchron zueinander sein, ansonsten kann keine Aussage über eine maximale Durchlaufzeit einer Kombinatorik zwischen den 2 Flip Flops getroffen werden.
 
 Sind die Takte jedoch fix durch eine Phasenbedingung oder durch einen Faktor zueinander Synchron, kann für die kürzeste Zeit zwischen den beiden Taktflanken, die längste zulässige Zeit für den kombinatorischen Pfad bestimmt werden.
 
-### Counter Timing Analyser
+### Counter: Timing Analyse 
 
-Default mäßig wird von Quartus der Clock mit 1Ghz angenommen.
+Defaultmäßig wird von Quartus der Clock mit 1Ghz angenommen.
 Diese Taktfrequenz kann jedoch vom Cyclone 5 nicht erreicht werden.
+Dies ist im Fenster Clocks des Timing Analyzers zu sehen.
 
 ![FMax](./images/Counter/Clock_Default.png)
 
-Die Info über das nicht erreichen des Target Taktes wird in Form einer Critical Warning gemeldet.
+Die Info über das nicht Erreichen des Target Taktes wird in Form einer Critical Warning gemeldet.
 
 ![Warnings](./images/Counter/Warnings.png)
 
+![FMAX](./images/Counter/FMax.png)
 Die maximal erreichte Taktfrequenz kann im FMAX Summery abgelesen werden.
-Hier wird gemeldet, dass eine maximale Frequenz von 387.9 MHz erreicht werden.
-Dies ist die langsamste Zeit die im Model Slow angeführt wird.
+Hier wird gemeldet, dass eine maximale Frequenz von 387.9 MHz erreicht wird.
+
+Nun kann Quartus über das SDC File vorgegeben werden wie schnell der Takt im Design ist.
+Hier wird folgender Eintrag ins SDC File hinzugefügt:
+
+>```TCL
+>create_clock -name iClk -period 20 [get_ports {CLOCK_50}]
+>derive_clock_uncertainty
 
 ### Unconstrained Paths
 Nach einem weiteren Synthese-Durchlauf sind noch immer in Timing-Analyzer rot markierte Felder.
-Diese Fehler beziehen sich auf die unconstrained Paths in der Timing analyse.
-Durch aufklappen dieses Feldes lässt sich eine Zusammenfassung der unconstrained Paths anzeigen.
+Diese Fehler beziehen sich auf die unconstrained Paths in der Timinganalyse.
+Durch Aufklappen dieses Feldes lässt sich eine Zusammenfassung der unconstrained Paths anzeigen.
 
 ![unconst Paths Summery](./images/Counter/Unconstraint_Paths.png)
 
@@ -90,10 +98,10 @@ Folgende Implementierung war in der Aufgabenstellung vorgegeben:
 
 ### Mit welcher Rate (Anzahl pro Sekunden) tritt bei diesem Zähler der Wert 0 auf?
 
-Durch Analyse des VHDL Codes lassen sich folgende aussagen treffen:
+Durch Analyse des VHDL Codes lassen sich folgende Aussagen treffen:
 
-- **Maximaler Zählerstand** = gClkFrequency -1 (Da bei diesem Wert ohne Delay der Reset angewandt wird)
-- **Frequenz von iClk** lässt sich nicht eindeutig bestimmen, da der PCB Adapter nicht gegeben ist! Wird allerdings angenommen dass mit gClkFrequency die Frequenz von iClk gemeint ist so lässt sich diese auf den Wert 50MHz fixieren.
+- **Maximaler Zählerstand** = gClkFrequency -1 (Da bei gClkFrequency Wert ohne Delay der Reset angewandt wird)
+- **Frequenz von iClk** lässt sich nicht eindeutig bestimmen, da der PCB Adapter nicht gegeben ist! Wird allerdings angenommen dass mit gClkFrequency die Frequenz von iClk gemeint ist so lässt sich dieser Wert auf 50MHz fixieren.
 - **Reset Wert** = 0
 
 
@@ -119,7 +127,7 @@ Hier wird in der List View die Zustände des Counters aufgelistet, hier sind auc
 
 ![Overflow](./images/AsyncRst/Ueberlauf.png)
 
-Hier tritt der Zwischen Wert 50 000 000 auf.
+Hier tritt der Zwischenwert 50 000 000 auf.
 Dieser Wert existiert in der Simulation genau für einen Delta Cycle.
 In der Realität würde dieser Zwischenwert jedoch für die Verzögerungszeit der Zuweisung auftreten.
 
@@ -135,13 +143,13 @@ Also warnt hier Quartus nicht von dem Missbrauch des Reset Eingangs des Flipflop
 #### RTL Viewer
 ![RTL](./images/AsyncRst/RTL.png)
 
-Im RTL-Viewer ist klar zu erkennen, dass hier der CLRN Eingang der FlipFlops nichtnur durch das inResetAsync Signal beeinflusst wird sonder auch durch den Ausgang des Equal Blocks. Dieser Block stellt die in der IF eingefügte Bedingung des Rests dar.
+Im RTL-Viewer ist klar zu erkennen, dass hier der CLRN Eingang der FlipFlops nichtnur durch das inResetAsync Signal beeinflusst wird sondern auch durch den Ausgang des Equal Blocks. Dieser Block stellt die in der IF eingefügte Bedingung des Resets dar.
 
 #### Warum darf das Clear Signal am Eingang der FlipFlops keine statischen Hazards aufweisen?
 Durch einen statischen Hazard wurde z.B. der Clear Eingang der FlipFlops kurzzeitig aktiv werden und somit den Zählerstand wieder rücksetzen, obwohl dies nicht gefordert ist! Also wäre die Folge eine Fehlfunktion.
 
 #### Garantieren VHDL-Entwurf bzw. Synthese diese Bedingung?
-Damit diese Bedingung erfüllt ist müsste die Funktion Equal 0 frei von statischen Hazards sein. Dies kann jedoch nicht garantiert werden!
+Damit diese Bedingung erfüllt ist müsste der Ausgang von Equal 0 frei von statischen Hazards sein. Dies kann jedoch nicht garantiert werden!
 
 #### Timing Analyse
 
@@ -151,8 +159,8 @@ Die Timing Analyse git hier folgende Werte aus. Also kann der Timing Analyser di
 ![Timing](./images/AsyncRst/Timing%20(2).png)
 
 #### Synchroner Entwurf
-Nun wurde das Design von Vorhin umgeändert auf einem synchronen Entwurf.
-Hier wurde, das Rücksetzen das Zählerwerts Synchron zum Takt vollzogen.
+Nun wurde das Design von vorhin umgeändert auf einem synchronen Entwurf.
+Hier wurde das Rücksetzen das Zählerwerts Synchron zum Takt vollzogen.
 
 >```vhdl
 >architecture Rtl of CounterSyncZero is
@@ -277,7 +285,7 @@ Das Design wurde auf folgenden synchronen Entwurf geändert:
 
 Hier wurde die Funktionalität des Resets über den Port iKey in einem eigenen Process ausgelagert. In diesem Process wird auch die Berechnung des nächsten Zählerwerts vollzogen.
 
-## Aufgabe 3 Gated Clock
+## Aufgabe 4 Gated Clock
 
 Hier wurde folgenden Implementierung in der Aufgabenstellung bereitgestellt.
 Hierbei wird der Clock Eingang der Flipflops für das Einfrieren des Zählerwertes missbraucht.
@@ -335,12 +343,12 @@ Nun wurde das vorgegebene Design in die Synthese geschickt und das Ergebnis anal
 
 ![TechMap](./images/GatedClock/TechMap.png)
 
-In den Ansichten des RTL Viewer und Technologie Map Viewer ist klar die Kombinatorische Verknüpfung zwischen iClk und iEnable zu beobachten.
+In den Ansichten des RTL Viewer und Technologie Map Viewer ist klar die kombinatorische Verknüpfung zwischen iClk und iEnable zu beobachten.
 Die Steuerung des Clock Signals der Flip Flops wird in der Synthese mittels Multiplexer abgebildet.
 ### Warnings
 
 Im folgenden Bild sind die von Quartus bei der Synthese generierten Warnings abgebildet.
-Hier wurde das Design ohne PCD Adapter synthetisiert, deswegen entstehen hier auch Warnings zu den nicht definierten Ports.
+Hier wurde das Design ohne PCB Adapter synthetisiert, deswegen entstehen hier auch Warnings zu den nicht definierten Ports.
 
 Auffällig ist jedoch, dass Quartus keine Warning zum Clock Gating ausgibt!
 
