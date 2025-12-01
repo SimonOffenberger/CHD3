@@ -1,0 +1,6 @@
+|latch_or_ff
+iclk => iq$latch.LATCH_ENABLE
+id => iq$latch.DATAIN
+iq <= iq$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

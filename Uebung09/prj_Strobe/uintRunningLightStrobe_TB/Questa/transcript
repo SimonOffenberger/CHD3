@@ -1,0 +1,153 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintRunningLight/src/RunningLigh-RTl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:42:01 on Dec 01,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintRunningLight/src/RunningLigh-RTl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture RTL of RunningLight
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity RunningLight
+# End time: 20:42:01 on Dec 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintRunningLight/src/RunningLight-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:42:01 on Dec 01,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintRunningLight/src/RunningLight-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RunningLight
+# End time: 20:42:01 on Dec 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintStrobeGen/src/StrobeGen-e.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:42:12 on Dec 01,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintStrobeGen/src/StrobeGen-e.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Compiling entity StrobeGen
+# End time: 20:42:12 on Dec 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintStrobeGen/src/StrobeGen-Rtl-a.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:42:12 on Dec 01,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintStrobeGen/src/StrobeGen-Rtl-a.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture RTL of StrobeGen
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package Global
+# -- Loading entity StrobeGen
+# End time: 20:42:12 on Dec 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintRunningLightStrobe_TB/src/RunningLight_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:42:17 on Dec 01,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintRunningLightStrobe_TB/src/RunningLight_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RunningLight_TB
+# -- Compiling architecture Testbench of RunningLight_TB
+# -- Loading entity RunningLight
+# -- Loading package Global
+# -- Loading entity StrobeGen
+# End time: 20:42:17 on Dec 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.runninglight_tb(testbench) -voptargs=+acc
+# vsim -gui work.runninglight_tb(testbench) -voptargs="+acc" 
+# Start time: 20:42:32 on Dec 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.runninglight_tb(testbench)#1
+# Loading work.runninglight(rtl)#1
+# Loading work.strobegen(rtl)#1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/runninglight_tb/Clk
+add wave -position end  sim:/runninglight_tb/State_Case2P
+add wave -position end  sim:/runninglight_tb/nResetAsync
+add wave -position end  sim:/runninglight_tb/StrobeSignal
+vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintRunningLightStrobe_TB/src/RunningLight_TB-ea.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 20:45:52 on Dec 01,2025
+# vcom -reportprogress 300 -work work C:/HSD_SEM_3/CHD3/Uebung09/prj_Strobe/uintRunningLightStrobe_TB/src/RunningLight_TB-ea.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RunningLight_TB
+# -- Compiling architecture Testbench of RunningLight_TB
+# -- Loading entity RunningLight
+# -- Loading package Global
+# -- Loading entity StrobeGen
+# End time: 20:45:52 on Dec 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.runninglight_tb(testbench)#1
+# Loading work.runninglight(rtl)#1
+# Loading work.strobegen(rtl)#1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 21:39:15 on Dec 01,2025, Elapsed time: 0:56:43
+# Errors: 0, Warnings: 2

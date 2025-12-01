@@ -1,0 +1,83 @@
+|RunningLightWithStrobeOnPCBDe1Soc
+CLOCK_50 => strobegen:EntityStrobeGen.iClk
+CLOCK_50 => runninglight:EntityRunningLightCase2P.iClk
+KEY[0] => strobegen:EntityStrobeGen.inResetAsync
+KEY[0] => runninglight:EntityRunningLightCase2P.inResetAsync
+LEDR[0] <= runninglight:EntityRunningLightCase2P.oState[0]
+LEDR[1] <= runninglight:EntityRunningLightCase2P.oState[1]
+LEDR[2] <= runninglight:EntityRunningLightCase2P.oState[2]
+
+
+|RunningLightWithStrobeOnPCBDe1Soc|StrobeGen:EntityStrobeGen
+iClk => oStrobe~reg0.CLK
+iClk => Count[0].CLK
+iClk => Count[1].CLK
+iClk => Count[2].CLK
+iClk => Count[3].CLK
+iClk => Count[4].CLK
+iClk => Count[5].CLK
+iClk => Count[6].CLK
+iClk => Count[7].CLK
+iClk => Count[8].CLK
+iClk => Count[9].CLK
+iClk => Count[10].CLK
+iClk => Count[11].CLK
+iClk => Count[12].CLK
+iClk => Count[13].CLK
+iClk => Count[14].CLK
+iClk => Count[15].CLK
+iClk => Count[16].CLK
+iClk => Count[17].CLK
+iClk => Count[18].CLK
+iClk => Count[19].CLK
+iClk => Count[20].CLK
+iClk => Count[21].CLK
+iClk => Count[22].CLK
+iClk => Count[23].CLK
+iClk => Count[24].CLK
+iClk => Count[25].CLK
+inResetAsync => oStrobe~reg0.ACLR
+inResetAsync => Count[0].ACLR
+inResetAsync => Count[1].ACLR
+inResetAsync => Count[2].ACLR
+inResetAsync => Count[3].ACLR
+inResetAsync => Count[4].ACLR
+inResetAsync => Count[5].ACLR
+inResetAsync => Count[6].ACLR
+inResetAsync => Count[7].ACLR
+inResetAsync => Count[8].ACLR
+inResetAsync => Count[9].ACLR
+inResetAsync => Count[10].ACLR
+inResetAsync => Count[11].ACLR
+inResetAsync => Count[12].ACLR
+inResetAsync => Count[13].ACLR
+inResetAsync => Count[14].ACLR
+inResetAsync => Count[15].ACLR
+inResetAsync => Count[16].ACLR
+inResetAsync => Count[17].ACLR
+inResetAsync => Count[18].ACLR
+inResetAsync => Count[19].ACLR
+inResetAsync => Count[20].ACLR
+inResetAsync => Count[21].ACLR
+inResetAsync => Count[22].ACLR
+inResetAsync => Count[23].ACLR
+inResetAsync => Count[24].ACLR
+inResetAsync => Count[25].ACLR
+oStrobe <= oStrobe~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RunningLightWithStrobeOnPCBDe1Soc|RunningLight:EntityRunningLightCase2P
+iClk => oState[0]~reg0.CLK
+iClk => oState[1]~reg0.CLK
+iClk => oState[2]~reg0.CLK
+inResetAsync => oState[0]~reg0.ACLR
+inResetAsync => oState[1]~reg0.ACLR
+inResetAsync => oState[2]~reg0.ACLR
+iEnable => oState[2]~reg0.ENA
+iEnable => oState[1]~reg0.ENA
+iEnable => oState[0]~reg0.ENA
+oState[0] <= oState[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oState[1] <= oState[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oState[2] <= oState[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

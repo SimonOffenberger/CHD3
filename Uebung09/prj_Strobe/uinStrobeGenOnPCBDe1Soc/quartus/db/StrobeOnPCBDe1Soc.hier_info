@@ -1,0 +1,24 @@
+|StrobeOnPCBDe1Soc
+CLOCK_50 => strobegen:EntityStrobeGen.iClk
+KEY[0] => strobegen:EntityStrobeGen.inResetAsync
+LEDR[0] << strobegen:EntityStrobeGen.oStrobe
+
+
+|StrobeOnPCBDe1Soc|StrobeGen:EntityStrobeGen
+iClk => oStrobe~reg0.CLK
+iClk => Count[0].CLK
+iClk => Count[1].CLK
+iClk => Count[2].CLK
+iClk => Count[3].CLK
+iClk => Count[4].CLK
+iClk => Count[5].CLK
+inResetAsync => oStrobe~reg0.ACLR
+inResetAsync => Count[0].ACLR
+inResetAsync => Count[1].ACLR
+inResetAsync => Count[2].ACLR
+inResetAsync => Count[3].ACLR
+inResetAsync => Count[4].ACLR
+inResetAsync => Count[5].ACLR
+oStrobe <= oStrobe~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
