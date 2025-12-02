@@ -13,27 +13,20 @@
 --------------------------------------------------------------------------------
 -- Architecure RTL 
 --------------------------------------------------------------------------------
-architecture RTL of StrobeGen is
-  constant gCountBitWidth : natural := LogDualis(gNrClkCycles);
-  signal Count : unsigned(gCountBitWidth - 1 downto 0);
+architecture RTL of Sync is
+  signal MightMetha : std_ulogic_vector(gNumOfFFStages downto 1);
 begin
 
-  process (iClk, inResetAsync) is
+
+process (iClk, inResetAsync) is
   begin
     if (inResetAsync = not('1')) then
-      Count <= (others => '0');
-      oStrobe <= '0';
+      MightMetha <= (others => '0');
     elsif (rising_edge(iClk)) then
-      if (Count = gNrClkCycles - 1) then
-        Count <= (others => '0');
-        -- Generate strobe pulse
-        oStrobe <= '1';
-      else
-        Count <= Count + 1;
-        oStrobe <= '0';
-      end if;
+      MightMetha <= MightMetha(gNumOfFFStages-1 downto MightMetha'low) & iAsync;
     end if;
+end process;
 
-  end process;
+oSync <= MightMetha(MightMetha'high);
 
 end architecture RTL;

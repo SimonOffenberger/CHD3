@@ -49,6 +49,7 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 # Pin & Location Assignments
 # ==========================
 set_location_assignment PIN_AF14 -to CLOCK_50
+set_location_assignment PIN_AA15 -to KEY[1]
 set_location_assignment PIN_AA14 -to KEY[0]
 set_location_assignment PIN_V16 -to LEDR[0]
 set_location_assignment PIN_W16 -to LEDR[1]
@@ -155,6 +156,8 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 
 # end ENTITY(RunningLightWithStrobeOnPCBDe1Soc)
 # -------------------------------
+set_global_assignment -name VHDL_FILE "../../../prj_Sync/unitSync/src/Sync-RTL-a.vhd"
+set_global_assignment -name VHDL_FILE "../../../prj_Sync/unitSync/src/Sync-e.vhd"
 set_global_assignment -name VHDL_FILE "../../uintRunningLight/src/RunningLight-e.vhd"
 set_global_assignment -name VHDL_FILE "../../uintRunningLight/src/RunningLigh-RTl-a.vhd"
 set_global_assignment -name VHDL_FILE "../../../grpPackages/pkgGlobal/src/Global-p.vhd"

@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "oSync",
+					"strict" : false
+				},
+				{
+					"name" : "iClk",
+					"strict" : false
+				},
+				{
+					"name" : "inResetAsync",
+					"strict" : false
+				},
+				{
+					"name" : "iAsync",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,8 +1,11 @@
 |RunningLightWithStrobeOnPCBDe1Soc
 CLOCK_50 => strobegen:EntityStrobeGen.iClk
 CLOCK_50 => runninglight:EntityRunningLightCase2P.iClk
+CLOCK_50 => sync:EntitySync.iClk
 KEY[0] => strobegen:EntityStrobeGen.inResetAsync
 KEY[0] => runninglight:EntityRunningLightCase2P.inResetAsync
+KEY[0] => sync:EntitySync.inResetAsync
+KEY[1] => sync:EntitySync.iAsync
 LEDR[0] <= runninglight:EntityRunningLightCase2P.oState[0]
 LEDR[1] <= runninglight:EntityRunningLightCase2P.oState[1]
 LEDR[2] <= runninglight:EntityRunningLightCase2P.oState[2]
@@ -76,8 +79,19 @@ inResetAsync => oState[2]~reg0.ACLR
 iEnable => oState[2]~reg0.ENA
 iEnable => oState[1]~reg0.ENA
 iEnable => oState[0]~reg0.ENA
+iOnlyFirstFour => Mux1.IN7
+iOnlyFirstFour => Mux2.IN7
 oState[0] <= oState[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oState[1] <= oState[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oState[2] <= oState[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RunningLightWithStrobeOnPCBDe1Soc|Sync:EntitySync
+iClk => MightMetha[1].CLK
+iClk => MightMetha[2].CLK
+inResetAsync => MightMetha[1].ACLR
+inResetAsync => MightMetha[2].ACLR
+iAsync => MightMetha[1].DATAIN
+oSync <= MightMetha[2].DB_MAX_OUTPUT_PORT_TYPE
 
 

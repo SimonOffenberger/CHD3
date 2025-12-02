@@ -30,7 +30,7 @@ begin
   end process;
 
   -- State Transition Process
-  NextStateLogic : process (oState,iEnable) is
+  NextStateLogic : process (oState,iEnable,iOnlyFirstFour) is
   begin
 
     if (iEnable = '0') then
@@ -40,7 +40,12 @@ begin
         when "000" => NextState <= "100";
         when "100" => NextState <= "010";
         when "010" => NextState <= "001";
-        when "001" => NextState <= "011";
+        when "001" => 
+          if(iOnlyFirstFour = '1') then
+            NextState <= "000";
+          else
+            NextState <= "011";
+          end if;
         when "011" => NextState <= "111";
         when "111" => NextState <= "000";
         when others => NextState <= "XXX";

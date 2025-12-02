@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "12/01/2025 21:06:15"
+-- DATE "12/02/2025 09:13:39"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -39,7 +39,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	RunningLightWithStrobeOnPCBDe1Soc IS
     PORT (
 	CLOCK_50 : IN std_logic;
-	KEY : IN IEEE.STD_LOGIC_1164.std_ulogic_vector(0 DOWNTO 0);
+	KEY : IN IEEE.STD_LOGIC_1164.std_ulogic_vector(1 DOWNTO 0);
 	LEDR : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(2 DOWNTO 0)
 	);
 END RunningLightWithStrobeOnPCBDe1Soc;
@@ -50,6 +50,7 @@ END RunningLightWithStrobeOnPCBDe1Soc;
 -- LEDR[2]	=>  Location: PIN_V17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 -- CLOCK_50	=>  Location: PIN_AF14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- KEY[0]	=>  Location: PIN_AA14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- KEY[1]	=>  Location: PIN_AA15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF RunningLightWithStrobeOnPCBDe1Soc IS
@@ -63,13 +64,15 @@ SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
 SIGNAL ww_CLOCK_50 : std_logic;
-SIGNAL ww_KEY : std_logic_vector(0 DOWNTO 0);
+SIGNAL ww_KEY : std_logic_vector(1 DOWNTO 0);
 SIGNAL ww_LEDR : std_logic_vector(2 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 SIGNAL \CLOCK_50~input_o\ : std_logic;
 SIGNAL \CLOCK_50~inputCLKENA0_outclk\ : std_logic;
-SIGNAL \EntityRunningLightCase2P|Mux0~0_combout\ : std_logic;
+SIGNAL \KEY[1]~input_o\ : std_logic;
+SIGNAL \EntitySync|MightMetha[1]~0_combout\ : std_logic;
 SIGNAL \KEY[0]~input_o\ : std_logic;
+SIGNAL \EntityRunningLightCase2P|Mux0~0_combout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~5_sumout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~6\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~1_sumout\ : std_logic;
@@ -85,7 +88,6 @@ SIGNAL \EntityStrobeGen|Add0~90\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~85_sumout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~86\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~81_sumout\ : std_logic;
-SIGNAL \EntityStrobeGen|Equal0~3_combout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~82\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~77_sumout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~78\ : std_logic;
@@ -98,7 +100,6 @@ SIGNAL \EntityStrobeGen|Add0~66\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~61_sumout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~62\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~57_sumout\ : std_logic;
-SIGNAL \EntityStrobeGen|Equal0~2_combout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~58\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~53_sumout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~54\ : std_logic;
@@ -112,6 +113,8 @@ SIGNAL \EntityStrobeGen|Add0~37_sumout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~38\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~33_sumout\ : std_logic;
 SIGNAL \EntityStrobeGen|Equal0~1_combout\ : std_logic;
+SIGNAL \EntityStrobeGen|Equal0~2_combout\ : std_logic;
+SIGNAL \EntityStrobeGen|Equal0~3_combout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~34\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~29_sumout\ : std_logic;
 SIGNAL \EntityStrobeGen|Add0~30\ : std_logic;
@@ -131,13 +134,16 @@ SIGNAL \EntityRunningLightCase2P|Mux1~0_combout\ : std_logic;
 SIGNAL \EntityRunningLightCase2P|Mux2~0_combout\ : std_logic;
 SIGNAL \EntityStrobeGen|Count\ : std_logic_vector(25 DOWNTO 0);
 SIGNAL \EntityRunningLightCase2P|oState\ : std_logic_vector(2 DOWNTO 0);
+SIGNAL \EntitySync|MightMetha\ : std_logic_vector(2 DOWNTO 1);
 SIGNAL \EntityStrobeGen|ALT_INV_Count\ : std_logic_vector(25 DOWNTO 0);
 SIGNAL \EntityRunningLightCase2P|ALT_INV_oState\ : std_logic_vector(2 DOWNTO 0);
-SIGNAL \EntityStrobeGen|ALT_INV_Equal0~3_combout\ : std_logic;
-SIGNAL \EntityStrobeGen|ALT_INV_Equal0~2_combout\ : std_logic;
 SIGNAL \EntityStrobeGen|ALT_INV_Equal0~0_combout\ : std_logic;
 SIGNAL \EntityStrobeGen|ALT_INV_Equal0~1_combout\ : std_logic;
+SIGNAL \EntitySync|ALT_INV_MightMetha\ : std_logic_vector(2 DOWNTO 2);
+SIGNAL \EntityStrobeGen|ALT_INV_Equal0~3_combout\ : std_logic;
 SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
+SIGNAL \EntityStrobeGen|ALT_INV_Equal0~2_combout\ : std_logic;
+SIGNAL \ALT_INV_KEY[1]~input_o\ : std_logic;
 
 BEGIN
 
@@ -147,40 +153,42 @@ LEDR <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_LEDR);
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\EntityStrobeGen|ALT_INV_Count\(24) <= NOT \EntityStrobeGen|Count\(24);
-\EntityStrobeGen|ALT_INV_Count\(15) <= NOT \EntityStrobeGen|Count\(15);
-\EntityStrobeGen|ALT_INV_Count\(14) <= NOT \EntityStrobeGen|Count\(14);
-\EntityStrobeGen|ALT_INV_Count\(23) <= NOT \EntityStrobeGen|Count\(23);
-\EntityStrobeGen|ALT_INV_Count\(16) <= NOT \EntityStrobeGen|Count\(16);
-\EntityStrobeGen|ALT_INV_Count\(13) <= NOT \EntityStrobeGen|Count\(13);
-\EntityStrobeGen|ALT_INV_Count\(12) <= NOT \EntityStrobeGen|Count\(12);
-\EntityStrobeGen|ALT_INV_Count\(10) <= NOT \EntityStrobeGen|Count\(10);
-\EntityStrobeGen|ALT_INV_Count\(0) <= NOT \EntityStrobeGen|Count\(0);
-\EntityStrobeGen|ALT_INV_Count\(9) <= NOT \EntityStrobeGen|Count\(9);
-\EntityStrobeGen|ALT_INV_Count\(1) <= NOT \EntityStrobeGen|Count\(1);
-\EntityStrobeGen|ALT_INV_Count\(21) <= NOT \EntityStrobeGen|Count\(21);
-\EntityStrobeGen|ALT_INV_Count\(20) <= NOT \EntityStrobeGen|Count\(20);
-\EntityStrobeGen|ALT_INV_Count\(25) <= NOT \EntityStrobeGen|Count\(25);
-\EntityStrobeGen|ALT_INV_Count\(19) <= NOT \EntityStrobeGen|Count\(19);
-\EntityStrobeGen|ALT_INV_Count\(18) <= NOT \EntityStrobeGen|Count\(18);
-\EntityStrobeGen|ALT_INV_Count\(17) <= NOT \EntityStrobeGen|Count\(17);
-\EntityStrobeGen|ALT_INV_Count\(11) <= NOT \EntityStrobeGen|Count\(11);
 \EntityStrobeGen|ALT_INV_Count\(22) <= NOT \EntityStrobeGen|Count\(22);
-\EntityStrobeGen|ALT_INV_Count\(5) <= NOT \EntityStrobeGen|Count\(5);
-\EntityRunningLightCase2P|ALT_INV_oState\(1) <= NOT \EntityRunningLightCase2P|oState\(1);
-\EntityRunningLightCase2P|ALT_INV_oState\(2) <= NOT \EntityRunningLightCase2P|oState\(2);
-\EntityStrobeGen|ALT_INV_Count\(3) <= NOT \EntityStrobeGen|Count\(3);
+\EntityStrobeGen|ALT_INV_Count\(16) <= NOT \EntityStrobeGen|Count\(16);
+\EntityStrobeGen|ALT_INV_Count\(12) <= NOT \EntityStrobeGen|Count\(12);
+\EntityStrobeGen|ALT_INV_Count\(1) <= NOT \EntityStrobeGen|Count\(1);
+\EntityStrobeGen|ALT_INV_Count\(17) <= NOT \EntityStrobeGen|Count\(17);
+\EntityStrobeGen|ALT_INV_Count\(14) <= NOT \EntityStrobeGen|Count\(14);
+\EntityStrobeGen|ALT_INV_Count\(11) <= NOT \EntityStrobeGen|Count\(11);
+\EntityStrobeGen|ALT_INV_Count\(15) <= NOT \EntityStrobeGen|Count\(15);
+\EntityStrobeGen|ALT_INV_Count\(10) <= NOT \EntityStrobeGen|Count\(10);
+\EntityStrobeGen|ALT_INV_Count\(19) <= NOT \EntityStrobeGen|Count\(19);
+\EntityStrobeGen|ALT_INV_Count\(9) <= NOT \EntityStrobeGen|Count\(9);
+\EntityStrobeGen|ALT_INV_Count\(21) <= NOT \EntityStrobeGen|Count\(21);
+\EntityStrobeGen|ALT_INV_Count\(8) <= NOT \EntityStrobeGen|Count\(8);
+\EntityStrobeGen|ALT_INV_Count\(7) <= NOT \EntityStrobeGen|Count\(7);
+\EntityStrobeGen|ALT_INV_Count\(25) <= NOT \EntityStrobeGen|Count\(25);
+\EntityStrobeGen|ALT_INV_Count\(20) <= NOT \EntityStrobeGen|Count\(20);
+\EntityStrobeGen|ALT_INV_Count\(13) <= NOT \EntityStrobeGen|Count\(13);
 \EntityStrobeGen|ALT_INV_Count\(6) <= NOT \EntityStrobeGen|Count\(6);
 \EntityStrobeGen|ALT_INV_Count\(4) <= NOT \EntityStrobeGen|Count\(4);
 \EntityStrobeGen|ALT_INV_Count\(2) <= NOT \EntityStrobeGen|Count\(2);
-\EntityStrobeGen|ALT_INV_Count\(8) <= NOT \EntityStrobeGen|Count\(8);
-\EntityStrobeGen|ALT_INV_Count\(7) <= NOT \EntityStrobeGen|Count\(7);
+\EntityStrobeGen|ALT_INV_Count\(23) <= NOT \EntityStrobeGen|Count\(23);
+\EntityStrobeGen|ALT_INV_Count\(24) <= NOT \EntityStrobeGen|Count\(24);
+\EntityStrobeGen|ALT_INV_Count\(0) <= NOT \EntityStrobeGen|Count\(0);
+\EntityStrobeGen|ALT_INV_Count\(5) <= NOT \EntityStrobeGen|Count\(5);
+\EntityStrobeGen|ALT_INV_Count\(18) <= NOT \EntityStrobeGen|Count\(18);
+\EntityStrobeGen|ALT_INV_Count\(3) <= NOT \EntityStrobeGen|Count\(3);
 \EntityRunningLightCase2P|ALT_INV_oState\(0) <= NOT \EntityRunningLightCase2P|oState\(0);
-\EntityStrobeGen|ALT_INV_Equal0~3_combout\ <= NOT \EntityStrobeGen|Equal0~3_combout\;
-\EntityStrobeGen|ALT_INV_Equal0~2_combout\ <= NOT \EntityStrobeGen|Equal0~2_combout\;
+\EntityRunningLightCase2P|ALT_INV_oState\(1) <= NOT \EntityRunningLightCase2P|oState\(1);
 \EntityStrobeGen|ALT_INV_Equal0~0_combout\ <= NOT \EntityStrobeGen|Equal0~0_combout\;
 \EntityStrobeGen|ALT_INV_Equal0~1_combout\ <= NOT \EntityStrobeGen|Equal0~1_combout\;
+\EntitySync|ALT_INV_MightMetha\(2) <= NOT \EntitySync|MightMetha\(2);
+\EntityStrobeGen|ALT_INV_Equal0~3_combout\ <= NOT \EntityStrobeGen|Equal0~3_combout\;
 \ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
+\EntityStrobeGen|ALT_INV_Equal0~2_combout\ <= NOT \EntityStrobeGen|Equal0~2_combout\;
+\ALT_INV_KEY[1]~input_o\ <= NOT \KEY[1]~input_o\;
+\EntityRunningLightCase2P|ALT_INV_oState\(2) <= NOT \EntityRunningLightCase2P|oState\(2);
 
 -- Location: IOOBUF_X52_Y0_N2
 \LEDR[0]~output\ : cyclonev_io_obuf
@@ -246,22 +254,31 @@ PORT MAP (
 	inclk => \CLOCK_50~input_o\,
 	outclk => \CLOCK_50~inputCLKENA0_outclk\);
 
--- Location: LABCELL_X51_Y2_N3
-\EntityRunningLightCase2P|Mux0~0\ : cyclonev_lcell_comb
+-- Location: IOIBUF_X36_Y0_N18
+\KEY[1]~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_KEY(1),
+	o => \KEY[1]~input_o\);
+
+-- Location: MLABCELL_X52_Y2_N27
+\EntitySync|MightMetha[1]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityRunningLightCase2P|Mux0~0_combout\ = (!\EntityRunningLightCase2P|oState\(2) & (!\EntityRunningLightCase2P|oState\(0) $ (\EntityRunningLightCase2P|oState\(1))))
+-- \EntitySync|MightMetha[1]~0_combout\ = ( !\KEY[1]~input_o\ )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1010010100000000101001010000000010100101000000001010010100000000",
+	lut_mask => "1111111111111111111111111111111100000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \EntityRunningLightCase2P|ALT_INV_oState\(0),
-	datac => \EntityRunningLightCase2P|ALT_INV_oState\(1),
-	datad => \EntityRunningLightCase2P|ALT_INV_oState\(2),
-	combout => \EntityRunningLightCase2P|Mux0~0_combout\);
+	dataf => \ALT_INV_KEY[1]~input_o\,
+	combout => \EntitySync|MightMetha[1]~0_combout\);
 
 -- Location: IOIBUF_X36_Y0_N1
 \KEY[0]~input\ : cyclonev_io_ibuf
@@ -274,7 +291,55 @@ PORT MAP (
 	i => ww_KEY(0),
 	o => \KEY[0]~input_o\);
 
--- Location: LABCELL_X51_Y2_N30
+-- Location: FF_X52_Y2_N29
+\EntitySync|MightMetha[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~inputCLKENA0_outclk\,
+	d => \EntitySync|MightMetha[1]~0_combout\,
+	clrn => \ALT_INV_KEY[0]~input_o\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \EntitySync|MightMetha\(1));
+
+-- Location: FF_X52_Y2_N17
+\EntitySync|MightMetha[2]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \CLOCK_50~inputCLKENA0_outclk\,
+	asdata => \EntitySync|MightMetha\(1),
+	clrn => \ALT_INV_KEY[0]~input_o\,
+	sload => VCC,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \EntitySync|MightMetha\(2));
+
+-- Location: MLABCELL_X52_Y2_N6
+\EntityRunningLightCase2P|Mux0~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \EntityRunningLightCase2P|Mux0~0_combout\ = ( !\EntityRunningLightCase2P|oState\(2) & ( !\EntityRunningLightCase2P|oState\(1) $ (\EntityRunningLightCase2P|oState\(0)) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010010110100101000000000000000010100101101001010000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \EntityRunningLightCase2P|ALT_INV_oState\(1),
+	datac => \EntityRunningLightCase2P|ALT_INV_oState\(0),
+	datae => \EntityRunningLightCase2P|ALT_INV_oState\(2),
+	combout => \EntityRunningLightCase2P|Mux0~0_combout\);
+
+-- Location: MLABCELL_X52_Y2_N30
 \EntityStrobeGen|Add0~5\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~5_sumout\ = SUM(( \EntityStrobeGen|Count\(0) ) + ( VCC ) + ( !VCC ))
@@ -292,7 +357,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~5_sumout\,
 	cout => \EntityStrobeGen|Add0~6\);
 
--- Location: FF_X51_Y2_N32
+-- Location: FF_X52_Y2_N32
 \EntityStrobeGen|Count[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -308,7 +373,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(0));
 
--- Location: LABCELL_X51_Y2_N33
+-- Location: MLABCELL_X52_Y2_N33
 \EntityStrobeGen|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~1_sumout\ = SUM(( \EntityStrobeGen|Count\(1) ) + ( GND ) + ( \EntityStrobeGen|Add0~6\ ))
@@ -326,7 +391,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~1_sumout\,
 	cout => \EntityStrobeGen|Add0~2\);
 
--- Location: FF_X51_Y2_N35
+-- Location: FF_X52_Y2_N35
 \EntityStrobeGen|Count[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -342,7 +407,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(1));
 
--- Location: LABCELL_X51_Y2_N36
+-- Location: MLABCELL_X52_Y2_N36
 \EntityStrobeGen|Add0~101\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~101_sumout\ = SUM(( \EntityStrobeGen|Count\(2) ) + ( GND ) + ( \EntityStrobeGen|Add0~2\ ))
@@ -360,7 +425,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~101_sumout\,
 	cout => \EntityStrobeGen|Add0~102\);
 
--- Location: FF_X51_Y2_N38
+-- Location: FF_X52_Y2_N38
 \EntityStrobeGen|Count[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -376,7 +441,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(2));
 
--- Location: LABCELL_X51_Y2_N39
+-- Location: MLABCELL_X52_Y2_N39
 \EntityStrobeGen|Add0~97\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~97_sumout\ = SUM(( \EntityStrobeGen|Count\(3) ) + ( GND ) + ( \EntityStrobeGen|Add0~102\ ))
@@ -394,7 +459,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~97_sumout\,
 	cout => \EntityStrobeGen|Add0~98\);
 
--- Location: FF_X51_Y2_N41
+-- Location: FF_X52_Y2_N41
 \EntityStrobeGen|Count[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -410,7 +475,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(3));
 
--- Location: LABCELL_X51_Y2_N42
+-- Location: MLABCELL_X52_Y2_N42
 \EntityStrobeGen|Add0~93\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~93_sumout\ = SUM(( \EntityStrobeGen|Count\(4) ) + ( GND ) + ( \EntityStrobeGen|Add0~98\ ))
@@ -428,7 +493,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~93_sumout\,
 	cout => \EntityStrobeGen|Add0~94\);
 
--- Location: FF_X51_Y2_N44
+-- Location: FF_X52_Y2_N44
 \EntityStrobeGen|Count[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -444,7 +509,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(4));
 
--- Location: LABCELL_X51_Y2_N45
+-- Location: MLABCELL_X52_Y2_N45
 \EntityStrobeGen|Add0~89\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~89_sumout\ = SUM(( \EntityStrobeGen|Count\(5) ) + ( GND ) + ( \EntityStrobeGen|Add0~94\ ))
@@ -462,7 +527,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~89_sumout\,
 	cout => \EntityStrobeGen|Add0~90\);
 
--- Location: FF_X51_Y2_N47
+-- Location: FF_X52_Y2_N47
 \EntityStrobeGen|Count[5]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -478,7 +543,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(5));
 
--- Location: LABCELL_X51_Y2_N48
+-- Location: MLABCELL_X52_Y2_N48
 \EntityStrobeGen|Add0~85\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~85_sumout\ = SUM(( \EntityStrobeGen|Count\(6) ) + ( GND ) + ( \EntityStrobeGen|Add0~90\ ))
@@ -496,7 +561,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~85_sumout\,
 	cout => \EntityStrobeGen|Add0~86\);
 
--- Location: FF_X51_Y2_N50
+-- Location: FF_X52_Y2_N50
 \EntityStrobeGen|Count[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -512,7 +577,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(6));
 
--- Location: LABCELL_X51_Y2_N51
+-- Location: MLABCELL_X52_Y2_N51
 \EntityStrobeGen|Add0~81\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~81_sumout\ = SUM(( \EntityStrobeGen|Count\(7) ) + ( GND ) + ( \EntityStrobeGen|Add0~86\ ))
@@ -530,7 +595,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~81_sumout\,
 	cout => \EntityStrobeGen|Add0~82\);
 
--- Location: FF_X51_Y2_N53
+-- Location: FF_X52_Y2_N53
 \EntityStrobeGen|Count[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -546,27 +611,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(7));
 
--- Location: LABCELL_X51_Y2_N18
-\EntityStrobeGen|Equal0~3\ : cyclonev_lcell_comb
--- Equation(s):
--- \EntityStrobeGen|Equal0~3_combout\ = ( \EntityStrobeGen|Count\(5) & ( \EntityStrobeGen|Count\(6) & ( (\EntityStrobeGen|Count\(2) & (\EntityStrobeGen|Count\(3) & (!\EntityStrobeGen|Count\(7) & \EntityStrobeGen|Count\(4)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000000000000010000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \EntityStrobeGen|ALT_INV_Count\(2),
-	datab => \EntityStrobeGen|ALT_INV_Count\(3),
-	datac => \EntityStrobeGen|ALT_INV_Count\(7),
-	datad => \EntityStrobeGen|ALT_INV_Count\(4),
-	datae => \EntityStrobeGen|ALT_INV_Count\(5),
-	dataf => \EntityStrobeGen|ALT_INV_Count\(6),
-	combout => \EntityStrobeGen|Equal0~3_combout\);
-
--- Location: LABCELL_X51_Y2_N54
+-- Location: MLABCELL_X52_Y2_N54
 \EntityStrobeGen|Add0~77\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~77_sumout\ = SUM(( \EntityStrobeGen|Count\(8) ) + ( GND ) + ( \EntityStrobeGen|Add0~82\ ))
@@ -584,7 +629,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~77_sumout\,
 	cout => \EntityStrobeGen|Add0~78\);
 
--- Location: FF_X51_Y2_N56
+-- Location: FF_X52_Y2_N56
 \EntityStrobeGen|Count[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -600,7 +645,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(8));
 
--- Location: LABCELL_X51_Y2_N57
+-- Location: MLABCELL_X52_Y2_N57
 \EntityStrobeGen|Add0~73\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~73_sumout\ = SUM(( \EntityStrobeGen|Count\(9) ) + ( GND ) + ( \EntityStrobeGen|Add0~78\ ))
@@ -618,7 +663,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~73_sumout\,
 	cout => \EntityStrobeGen|Add0~74\);
 
--- Location: FF_X51_Y2_N59
+-- Location: FF_X52_Y2_N59
 \EntityStrobeGen|Count[9]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -634,7 +679,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(9));
 
--- Location: LABCELL_X51_Y1_N0
+-- Location: MLABCELL_X52_Y1_N0
 \EntityStrobeGen|Add0~69\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~69_sumout\ = SUM(( \EntityStrobeGen|Count\(10) ) + ( GND ) + ( \EntityStrobeGen|Add0~74\ ))
@@ -652,7 +697,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~69_sumout\,
 	cout => \EntityStrobeGen|Add0~70\);
 
--- Location: FF_X51_Y1_N2
+-- Location: FF_X52_Y1_N2
 \EntityStrobeGen|Count[10]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -668,7 +713,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(10));
 
--- Location: LABCELL_X51_Y1_N3
+-- Location: MLABCELL_X52_Y1_N3
 \EntityStrobeGen|Add0~65\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~65_sumout\ = SUM(( \EntityStrobeGen|Count\(11) ) + ( GND ) + ( \EntityStrobeGen|Add0~70\ ))
@@ -686,7 +731,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~65_sumout\,
 	cout => \EntityStrobeGen|Add0~66\);
 
--- Location: FF_X51_Y1_N5
+-- Location: FF_X52_Y1_N5
 \EntityStrobeGen|Count[11]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -702,7 +747,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(11));
 
--- Location: LABCELL_X51_Y1_N6
+-- Location: MLABCELL_X52_Y1_N6
 \EntityStrobeGen|Add0~61\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~61_sumout\ = SUM(( \EntityStrobeGen|Count\(12) ) + ( GND ) + ( \EntityStrobeGen|Add0~66\ ))
@@ -720,7 +765,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~61_sumout\,
 	cout => \EntityStrobeGen|Add0~62\);
 
--- Location: FF_X51_Y1_N8
+-- Location: FF_X52_Y1_N8
 \EntityStrobeGen|Count[12]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -736,7 +781,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(12));
 
--- Location: LABCELL_X51_Y1_N9
+-- Location: MLABCELL_X52_Y1_N9
 \EntityStrobeGen|Add0~57\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~57_sumout\ = SUM(( \EntityStrobeGen|Count\(13) ) + ( GND ) + ( \EntityStrobeGen|Add0~62\ ))
@@ -754,7 +799,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~57_sumout\,
 	cout => \EntityStrobeGen|Add0~58\);
 
--- Location: FF_X51_Y1_N11
+-- Location: FF_X52_Y1_N11
 \EntityStrobeGen|Count[13]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -770,27 +815,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(13));
 
--- Location: LABCELL_X50_Y1_N0
-\EntityStrobeGen|Equal0~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \EntityStrobeGen|Equal0~2_combout\ = ( !\EntityStrobeGen|Count\(10) & ( !\EntityStrobeGen|Count\(8) & ( (\EntityStrobeGen|Count\(12) & (!\EntityStrobeGen|Count\(9) & (!\EntityStrobeGen|Count\(11) & \EntityStrobeGen|Count\(13)))) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000001000000000000000000000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \EntityStrobeGen|ALT_INV_Count\(12),
-	datab => \EntityStrobeGen|ALT_INV_Count\(9),
-	datac => \EntityStrobeGen|ALT_INV_Count\(11),
-	datad => \EntityStrobeGen|ALT_INV_Count\(13),
-	datae => \EntityStrobeGen|ALT_INV_Count\(10),
-	dataf => \EntityStrobeGen|ALT_INV_Count\(8),
-	combout => \EntityStrobeGen|Equal0~2_combout\);
-
--- Location: LABCELL_X51_Y1_N12
+-- Location: MLABCELL_X52_Y1_N12
 \EntityStrobeGen|Add0~53\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~53_sumout\ = SUM(( \EntityStrobeGen|Count\(14) ) + ( GND ) + ( \EntityStrobeGen|Add0~58\ ))
@@ -808,7 +833,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~53_sumout\,
 	cout => \EntityStrobeGen|Add0~54\);
 
--- Location: FF_X51_Y1_N14
+-- Location: FF_X52_Y1_N14
 \EntityStrobeGen|Count[14]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -824,7 +849,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(14));
 
--- Location: LABCELL_X51_Y1_N15
+-- Location: MLABCELL_X52_Y1_N15
 \EntityStrobeGen|Add0~49\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~49_sumout\ = SUM(( \EntityStrobeGen|Count\(15) ) + ( GND ) + ( \EntityStrobeGen|Add0~54\ ))
@@ -842,7 +867,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~49_sumout\,
 	cout => \EntityStrobeGen|Add0~50\);
 
--- Location: FF_X51_Y1_N17
+-- Location: FF_X52_Y1_N17
 \EntityStrobeGen|Count[15]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -858,7 +883,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(15));
 
--- Location: LABCELL_X51_Y1_N18
+-- Location: MLABCELL_X52_Y1_N18
 \EntityStrobeGen|Add0~45\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~45_sumout\ = SUM(( \EntityStrobeGen|Count\(16) ) + ( GND ) + ( \EntityStrobeGen|Add0~50\ ))
@@ -876,7 +901,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~45_sumout\,
 	cout => \EntityStrobeGen|Add0~46\);
 
--- Location: FF_X51_Y1_N20
+-- Location: FF_X52_Y1_N20
 \EntityStrobeGen|Count[16]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -892,7 +917,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(16));
 
--- Location: LABCELL_X51_Y1_N21
+-- Location: MLABCELL_X52_Y1_N21
 \EntityStrobeGen|Add0~41\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~41_sumout\ = SUM(( \EntityStrobeGen|Count\(17) ) + ( GND ) + ( \EntityStrobeGen|Add0~46\ ))
@@ -910,7 +935,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~41_sumout\,
 	cout => \EntityStrobeGen|Add0~42\);
 
--- Location: FF_X51_Y1_N23
+-- Location: FF_X52_Y1_N23
 \EntityStrobeGen|Count[17]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -926,7 +951,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(17));
 
--- Location: LABCELL_X51_Y1_N24
+-- Location: MLABCELL_X52_Y1_N24
 \EntityStrobeGen|Add0~37\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~37_sumout\ = SUM(( \EntityStrobeGen|Count\(18) ) + ( GND ) + ( \EntityStrobeGen|Add0~42\ ))
@@ -944,7 +969,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~37_sumout\,
 	cout => \EntityStrobeGen|Add0~38\);
 
--- Location: FF_X51_Y1_N26
+-- Location: FF_X52_Y1_N26
 \EntityStrobeGen|Count[18]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -960,7 +985,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(18));
 
--- Location: LABCELL_X51_Y1_N27
+-- Location: MLABCELL_X52_Y1_N27
 \EntityStrobeGen|Add0~33\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~33_sumout\ = SUM(( \EntityStrobeGen|Count\(19) ) + ( GND ) + ( \EntityStrobeGen|Add0~38\ ))
@@ -978,7 +1003,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~33_sumout\,
 	cout => \EntityStrobeGen|Add0~34\);
 
--- Location: FF_X51_Y1_N29
+-- Location: FF_X52_Y1_N29
 \EntityStrobeGen|Count[19]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -994,10 +1019,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(19));
 
--- Location: LABCELL_X51_Y1_N54
+-- Location: MLABCELL_X52_Y1_N54
 \EntityStrobeGen|Equal0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityStrobeGen|Equal0~1_combout\ = ( \EntityStrobeGen|Count\(17) & ( !\EntityStrobeGen|Count\(18) & ( (\EntityStrobeGen|Count\(19) & (\EntityStrobeGen|Count\(14) & (!\EntityStrobeGen|Count\(16) & \EntityStrobeGen|Count\(15)))) ) ) )
+-- \EntityStrobeGen|Equal0~1_combout\ = ( \EntityStrobeGen|Count\(19) & ( !\EntityStrobeGen|Count\(18) & ( (\EntityStrobeGen|Count\(17) & (\EntityStrobeGen|Count\(14) & (!\EntityStrobeGen|Count\(16) & \EntityStrobeGen|Count\(15)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1006,15 +1031,55 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \EntityStrobeGen|ALT_INV_Count\(19),
+	dataa => \EntityStrobeGen|ALT_INV_Count\(17),
 	datab => \EntityStrobeGen|ALT_INV_Count\(14),
 	datac => \EntityStrobeGen|ALT_INV_Count\(16),
 	datad => \EntityStrobeGen|ALT_INV_Count\(15),
-	datae => \EntityStrobeGen|ALT_INV_Count\(17),
+	datae => \EntityStrobeGen|ALT_INV_Count\(19),
 	dataf => \EntityStrobeGen|ALT_INV_Count\(18),
 	combout => \EntityStrobeGen|Equal0~1_combout\);
 
 -- Location: LABCELL_X51_Y1_N30
+\EntityStrobeGen|Equal0~2\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \EntityStrobeGen|Equal0~2_combout\ = ( !\EntityStrobeGen|Count\(9) & ( !\EntityStrobeGen|Count\(8) & ( (!\EntityStrobeGen|Count\(11) & (!\EntityStrobeGen|Count\(10) & (\EntityStrobeGen|Count\(12) & \EntityStrobeGen|Count\(13)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001000000000000000000000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \EntityStrobeGen|ALT_INV_Count\(11),
+	datab => \EntityStrobeGen|ALT_INV_Count\(10),
+	datac => \EntityStrobeGen|ALT_INV_Count\(12),
+	datad => \EntityStrobeGen|ALT_INV_Count\(13),
+	datae => \EntityStrobeGen|ALT_INV_Count\(9),
+	dataf => \EntityStrobeGen|ALT_INV_Count\(8),
+	combout => \EntityStrobeGen|Equal0~2_combout\);
+
+-- Location: MLABCELL_X52_Y2_N18
+\EntityStrobeGen|Equal0~3\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \EntityStrobeGen|Equal0~3_combout\ = ( \EntityStrobeGen|Count\(2) & ( \EntityStrobeGen|Count\(3) & ( (\EntityStrobeGen|Count\(6) & (\EntityStrobeGen|Count\(5) & (!\EntityStrobeGen|Count\(7) & \EntityStrobeGen|Count\(4)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000000000000000000000000000000010000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \EntityStrobeGen|ALT_INV_Count\(6),
+	datab => \EntityStrobeGen|ALT_INV_Count\(5),
+	datac => \EntityStrobeGen|ALT_INV_Count\(7),
+	datad => \EntityStrobeGen|ALT_INV_Count\(4),
+	datae => \EntityStrobeGen|ALT_INV_Count\(2),
+	dataf => \EntityStrobeGen|ALT_INV_Count\(3),
+	combout => \EntityStrobeGen|Equal0~3_combout\);
+
+-- Location: MLABCELL_X52_Y1_N30
 \EntityStrobeGen|Add0~29\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~29_sumout\ = SUM(( \EntityStrobeGen|Count\(20) ) + ( GND ) + ( \EntityStrobeGen|Add0~34\ ))
@@ -1032,7 +1097,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~29_sumout\,
 	cout => \EntityStrobeGen|Add0~30\);
 
--- Location: FF_X51_Y1_N32
+-- Location: FF_X52_Y1_N32
 \EntityStrobeGen|Count[20]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1048,7 +1113,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(20));
 
--- Location: LABCELL_X51_Y1_N33
+-- Location: MLABCELL_X52_Y1_N33
 \EntityStrobeGen|Add0~25\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~25_sumout\ = SUM(( \EntityStrobeGen|Count\(21) ) + ( GND ) + ( \EntityStrobeGen|Add0~30\ ))
@@ -1066,7 +1131,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~25_sumout\,
 	cout => \EntityStrobeGen|Add0~26\);
 
--- Location: FF_X51_Y1_N35
+-- Location: FF_X52_Y1_N35
 \EntityStrobeGen|Count[21]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1082,7 +1147,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(21));
 
--- Location: LABCELL_X51_Y1_N36
+-- Location: MLABCELL_X52_Y1_N36
 \EntityStrobeGen|Add0~21\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~21_sumout\ = SUM(( \EntityStrobeGen|Count\(22) ) + ( GND ) + ( \EntityStrobeGen|Add0~26\ ))
@@ -1100,7 +1165,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~21_sumout\,
 	cout => \EntityStrobeGen|Add0~22\);
 
--- Location: FF_X51_Y1_N38
+-- Location: FF_X52_Y1_N38
 \EntityStrobeGen|Count[22]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1116,7 +1181,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(22));
 
--- Location: LABCELL_X51_Y1_N39
+-- Location: MLABCELL_X52_Y1_N39
 \EntityStrobeGen|Add0~17\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~17_sumout\ = SUM(( \EntityStrobeGen|Count\(23) ) + ( GND ) + ( \EntityStrobeGen|Add0~22\ ))
@@ -1134,7 +1199,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~17_sumout\,
 	cout => \EntityStrobeGen|Add0~18\);
 
--- Location: FF_X51_Y1_N41
+-- Location: FF_X52_Y1_N41
 \EntityStrobeGen|Count[23]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1150,7 +1215,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(23));
 
--- Location: LABCELL_X51_Y1_N42
+-- Location: MLABCELL_X52_Y1_N42
 \EntityStrobeGen|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~13_sumout\ = SUM(( \EntityStrobeGen|Count\(24) ) + ( GND ) + ( \EntityStrobeGen|Add0~18\ ))
@@ -1168,7 +1233,7 @@ PORT MAP (
 	sumout => \EntityStrobeGen|Add0~13_sumout\,
 	cout => \EntityStrobeGen|Add0~14\);
 
--- Location: FF_X51_Y1_N44
+-- Location: FF_X52_Y1_N44
 \EntityStrobeGen|Count[24]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1184,7 +1249,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(24));
 
--- Location: LABCELL_X51_Y1_N45
+-- Location: MLABCELL_X52_Y1_N45
 \EntityStrobeGen|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityStrobeGen|Add0~9_sumout\ = SUM(( \EntityStrobeGen|Count\(25) ) + ( GND ) + ( \EntityStrobeGen|Add0~14\ ))
@@ -1200,7 +1265,7 @@ PORT MAP (
 	cin => \EntityStrobeGen|Add0~14\,
 	sumout => \EntityStrobeGen|Add0~9_sumout\);
 
--- Location: FF_X51_Y1_N47
+-- Location: FF_X52_Y1_N47
 \EntityStrobeGen|Count[25]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1216,10 +1281,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|Count\(25));
 
--- Location: LABCELL_X51_Y1_N48
+-- Location: MLABCELL_X52_Y1_N48
 \EntityStrobeGen|Equal0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityStrobeGen|Equal0~0_combout\ = ( \EntityStrobeGen|Count\(25) & ( \EntityStrobeGen|Count\(23) & ( (\EntityStrobeGen|Count\(22) & (\EntityStrobeGen|Count\(20) & (\EntityStrobeGen|Count\(21) & !\EntityStrobeGen|Count\(24)))) ) ) )
+-- \EntityStrobeGen|Equal0~0_combout\ = ( \EntityStrobeGen|Count\(25) & ( \EntityStrobeGen|Count\(23) & ( (\EntityStrobeGen|Count\(21) & (\EntityStrobeGen|Count\(20) & (\EntityStrobeGen|Count\(22) & !\EntityStrobeGen|Count\(24)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1228,18 +1293,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \EntityStrobeGen|ALT_INV_Count\(22),
+	dataa => \EntityStrobeGen|ALT_INV_Count\(21),
 	datab => \EntityStrobeGen|ALT_INV_Count\(20),
-	datac => \EntityStrobeGen|ALT_INV_Count\(21),
+	datac => \EntityStrobeGen|ALT_INV_Count\(22),
 	datad => \EntityStrobeGen|ALT_INV_Count\(24),
 	datae => \EntityStrobeGen|ALT_INV_Count\(25),
 	dataf => \EntityStrobeGen|ALT_INV_Count\(23),
 	combout => \EntityStrobeGen|Equal0~0_combout\);
 
--- Location: LABCELL_X51_Y2_N15
+-- Location: MLABCELL_X52_Y2_N12
 \EntityStrobeGen|Equal0~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityStrobeGen|Equal0~4_combout\ = ( \EntityStrobeGen|Equal0~1_combout\ & ( \EntityStrobeGen|Equal0~0_combout\ & ( (\EntityStrobeGen|Equal0~3_combout\ & (\EntityStrobeGen|Equal0~2_combout\ & (\EntityStrobeGen|Count\(0) & \EntityStrobeGen|Count\(1)))) ) 
+-- \EntityStrobeGen|Equal0~4_combout\ = ( \EntityStrobeGen|Equal0~0_combout\ & ( \EntityStrobeGen|Count\(1) & ( (\EntityStrobeGen|Equal0~1_combout\ & (\EntityStrobeGen|Equal0~2_combout\ & (\EntityStrobeGen|Equal0~3_combout\ & \EntityStrobeGen|Count\(0)))) ) 
 -- ) )
 
 -- pragma translate_off
@@ -1249,15 +1314,15 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \EntityStrobeGen|ALT_INV_Equal0~3_combout\,
+	dataa => \EntityStrobeGen|ALT_INV_Equal0~1_combout\,
 	datab => \EntityStrobeGen|ALT_INV_Equal0~2_combout\,
-	datac => \EntityStrobeGen|ALT_INV_Count\(0),
-	datad => \EntityStrobeGen|ALT_INV_Count\(1),
-	datae => \EntityStrobeGen|ALT_INV_Equal0~1_combout\,
-	dataf => \EntityStrobeGen|ALT_INV_Equal0~0_combout\,
+	datac => \EntityStrobeGen|ALT_INV_Equal0~3_combout\,
+	datad => \EntityStrobeGen|ALT_INV_Count\(0),
+	datae => \EntityStrobeGen|ALT_INV_Equal0~0_combout\,
+	dataf => \EntityStrobeGen|ALT_INV_Count\(1),
 	combout => \EntityStrobeGen|Equal0~4_combout\);
 
--- Location: FF_X51_Y2_N13
+-- Location: FF_X52_Y2_N23
 \EntityStrobeGen|oStrobe\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1273,7 +1338,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityStrobeGen|oStrobe~q\);
 
--- Location: FF_X51_Y2_N5
+-- Location: FF_X52_Y2_N8
 \EntityRunningLightCase2P|oState[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1289,23 +1354,27 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityRunningLightCase2P|oState\(2));
 
--- Location: LABCELL_X51_Y2_N6
+-- Location: MLABCELL_X52_Y2_N3
 \EntityRunningLightCase2P|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityRunningLightCase2P|Mux1~0_combout\ = !\EntityRunningLightCase2P|oState\(2) $ (!\EntityRunningLightCase2P|oState\(0))
+-- \EntityRunningLightCase2P|Mux1~0_combout\ = ( \EntitySync|MightMetha\(2) & ( (!\EntityRunningLightCase2P|oState\(0) & (\EntityRunningLightCase2P|oState\(2) & !\EntityRunningLightCase2P|oState\(1))) # (\EntityRunningLightCase2P|oState\(0) & 
+-- (!\EntityRunningLightCase2P|oState\(2) & \EntityRunningLightCase2P|oState\(1))) ) ) # ( !\EntitySync|MightMetha\(2) & ( (!\EntityRunningLightCase2P|oState\(0) & (\EntityRunningLightCase2P|oState\(2) & !\EntityRunningLightCase2P|oState\(1))) # 
+-- (\EntityRunningLightCase2P|oState\(0) & (!\EntityRunningLightCase2P|oState\(2))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101101001011010010110100101101001011010010110100101101001011010",
+	lut_mask => "0101101001010000010110100101000000001010010100000000101001010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \EntityRunningLightCase2P|ALT_INV_oState\(2),
-	datac => \EntityRunningLightCase2P|ALT_INV_oState\(0),
+	dataa => \EntityRunningLightCase2P|ALT_INV_oState\(0),
+	datac => \EntityRunningLightCase2P|ALT_INV_oState\(2),
+	datad => \EntityRunningLightCase2P|ALT_INV_oState\(1),
+	dataf => \EntitySync|ALT_INV_MightMetha\(2),
 	combout => \EntityRunningLightCase2P|Mux1~0_combout\);
 
--- Location: FF_X51_Y2_N8
+-- Location: FF_X52_Y2_N5
 \EntityRunningLightCase2P|oState[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1321,24 +1390,25 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityRunningLightCase2P|oState\(1));
 
--- Location: LABCELL_X51_Y2_N0
+-- Location: MLABCELL_X52_Y2_N0
 \EntityRunningLightCase2P|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityRunningLightCase2P|Mux2~0_combout\ = (!\EntityRunningLightCase2P|oState\(2) & ((\EntityRunningLightCase2P|oState\(0)) # (\EntityRunningLightCase2P|oState\(1))))
+-- \EntityRunningLightCase2P|Mux2~0_combout\ = ( !\EntityRunningLightCase2P|oState\(2) & ( ((!\EntitySync|MightMetha\(2) & \EntityRunningLightCase2P|oState\(0))) # (\EntityRunningLightCase2P|oState\(1)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011000011110000001100001111000000110000111100000011000011110000",
+	lut_mask => "0000111111001111000011111100111100000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \EntityRunningLightCase2P|ALT_INV_oState\(1),
-	datac => \EntityRunningLightCase2P|ALT_INV_oState\(2),
+	datab => \EntitySync|ALT_INV_MightMetha\(2),
+	datac => \EntityRunningLightCase2P|ALT_INV_oState\(1),
 	datad => \EntityRunningLightCase2P|ALT_INV_oState\(0),
+	dataf => \EntityRunningLightCase2P|ALT_INV_oState\(2),
 	combout => \EntityRunningLightCase2P|Mux2~0_combout\);
 
--- Location: FF_X51_Y2_N2
+-- Location: FF_X52_Y2_N2
 \EntityRunningLightCase2P|oState[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1354,7 +1424,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityRunningLightCase2P|oState\(0));
 
--- Location: LABCELL_X30_Y60_N0
+-- Location: LABCELL_X11_Y31_N3
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb
 -- Equation(s):
 

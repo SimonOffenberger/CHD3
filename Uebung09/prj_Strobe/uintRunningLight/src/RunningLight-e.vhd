@@ -22,5 +22,6 @@ entity RunningLight is
   iClk         : in std_ulogic;
   inResetAsync : in std_ulogic;
   iEnable      : in std_ulogic;
+  iOnlyFirstFour : in std_ulogic;
   oState       : out std_ulogic_vector(2 downto 0));
  end RunningLight;

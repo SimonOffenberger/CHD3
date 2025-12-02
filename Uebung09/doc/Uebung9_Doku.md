@@ -414,5 +414,86 @@ Hier wechselt der Zustand alle 1 Sekunde.
 Die asynchronen Signale müssen bevor diese an Bereiche der synchronen Schaltung angelegt werden einsynchronisiert werden.
 Da diese durch ihre asynchrone Eigenschaft Mehrkomponentenübergänge erzeugen können!
 
+### Synchronizer 
+
+Für die Synchronisierung werden 2 Flipflop Stufen verwendet. Hierbei wird versucht, dass etwaige methastabilitäten nicht in den inneren Schaltungsteil vordringen, und zwischen den 2 FlipFlops wieder abklingen bevor eine 2. Taktflanke auftritt. 
+Im wesentlichen handelt es sich hier um ein Schieberegister mit 2 Flipflops. Es können aber auch mehr Flipflops verwendet werden, um die Wahrscheinlichkeit, das das synchronisierte Signal Methastabil ist zu verrinnern.
+
+#### Entity
+>```vhdl
+>library ieee;
+>use ieee.std_logic_1164.all;
+>
+>entity Sync is
+>  generic (
+>    gNumOfFFStages : natural := 2);
+>  port (
+>    iClk : in std_ulogic;
+>    inResetAsync : in std_ulogic;
+>    iAsync : in std_ulogic;
+>    oSync : out std_ulogic);
+>end Sync;
+
+#### Architektur
 
 
+>```vhdl
+>architecture RTL of Sync is
+>  signal MightMetha : std_ulogic_vector(gNumOfFFStages downto 1);
+>begin
+>
+>
+>process (iClk, inResetAsync) is
+>  begin
+>    if (inResetAsync = not('1')) then
+>      MightMetha <= (others => '0');
+>    elsif (rising_edge(iClk)) then
+>      MightMetha <= MightMetha(gNumOfFFStages-1 downto MightMetha'low) & >iAsync;
+>    end if;
+>end process;
+>
+>oSync <= MightMetha(MightMetha'high);
+>
+>end architecture RTL;
+
+### Synthese
+
+Beider Synthese werden gNumOfFFStages an Flipflops erwartet.
+Also mit gNumOfFFStages = 2 werden 2 Flipflops erwartet.
+
+#### Ressource Summery
+
+![RessourceSummery](./images/Sync/Ressource.png)
+
+Hier bestätigt die Synthese die Erwartungen
+
+#### RTL Viewer
+
+![RTL Viewer](./images/Sync/RTL.png)
+
+#### Technologie Map
+
+![Tech Map](./images/Sync/TechMap.png)
+
+### Einzelschritt Taster als Takteingang
+
+In einer der vorherigen Übungen wurde ein Tastersignal als Clock für die Schaltung verwendet. Handelt es sich hierbei nun um ein Asynchrones oder Synchrones Signal?
+
+Asynchron bzw. synchron sind Eigenschaften, die sich immer auf ein globales Clock-Signal beziehen. In der Übung wurde aber das Tastersignal selbst als Clock benutzt. Damit gibt es keinen übergeordneten Takt, zu dem man das Signal einordnen könnte.
+
+Daher macht die Frage in diesem Kontext eigentlich keinen Sinn:
+Wenn der Taster der Clock ist, kann man nicht sinnvoll sagen, ob er asynchron oder synchron zu einem anderen Clock ist – weil es eben keinen anderen gibt. Der Taster ist schlicht der Takt der Schaltung.
+
+### Running Light Only First Four States
+Nun wurde das Lauflicht erweitert, dass beim Tastendruck nur die ersten 4 States durchlaufen werden.
+Hierfür muss dieses Tastensignal einsynchronisiert werden !
+
+#### Ressource Summery
+
+![RessourceSummery](./images/Sync/Ressource_Running.png)
+
+Hier bestätigt die Synthese die Erwartungen
+
+#### RTL Viewer
+
+![RTL Viewer](./images/Sync/RTL_Running.png)

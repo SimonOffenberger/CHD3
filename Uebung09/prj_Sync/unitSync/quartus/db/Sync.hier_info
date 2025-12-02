@@ -1,0 +1,9 @@
+|Sync
+iClk => MightMetha[1].CLK
+iClk => MightMetha[2].CLK
+inResetAsync => MightMetha[1].ACLR
+inResetAsync => MightMetha[2].ACLR
+iAsync => MightMetha[1].DATAIN
+oSync <= MightMetha[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

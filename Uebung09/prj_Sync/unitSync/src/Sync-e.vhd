@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title : Strobe Generator
+-- Title : Sync Stage
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger
@@ -9,21 +9,20 @@
 -------------------------------------------------------------------------------
 -- Description:
 -------------------------------------------------------------------------------
-  
+
 --------------------------------------------------------------------------------
 -- Entity 
 --------------------------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-use work.Global.all;
 
 entity Sync is
   generic (
     gNumOfFFStages : natural := 2);
   port (
     iClk : in std_ulogic;
+    inResetAsync : in std_ulogic;
     iAsync : in std_ulogic;
     oSync : out std_ulogic);
 end Sync;

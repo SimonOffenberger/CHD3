@@ -16,7 +16,7 @@ use ieee.numeric_std.all;
 entity RunningLightWithStrobeOnPCBDe1Soc is
     port (
     CLOCK_50 : in std_ulogic;
-    KEY   : in std_ulogic_vector(0 downto 0); 
+    KEY   : in std_ulogic_vector(1 downto 0); 
     LEDR   : out std_ulogic_vector(2 downto 0)   
     );  
 end RunningLightWithStrobeOnPCBDe1Soc;
