@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "oQ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[6]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[7]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[8]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[9]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[10]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[11]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[12]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[13]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[14]",
+					"strict" : false
+				},
+				{
+					"name" : "oQ[15]",
+					"strict" : false
+				},
+				{
+					"name" : "iD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "iD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "iClk",
+					"strict" : false
+				},
+				{
+					"name" : "inResetAsync",
+					"strict" : false
+				},
+				{
+					"name" : "iD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "iD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "iD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "iD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "iD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "iD[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

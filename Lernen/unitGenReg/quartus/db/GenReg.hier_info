@@ -1,0 +1,47 @@
+|GenReg
+iClk => oQ[8]~reg0.CLK
+iClk => oQ[9]~reg0.CLK
+iClk => oQ[10]~reg0.CLK
+iClk => oQ[11]~reg0.CLK
+iClk => oQ[12]~reg0.CLK
+iClk => oQ[13]~reg0.CLK
+iClk => oQ[14]~reg0.CLK
+iClk => oQ[15]~reg0.CLK
+iClk => oQ[6]$latch.LATCH_ENABLE
+iClk => oQ[7]$latch.LATCH_ENABLE
+iClk => oQ[2]~reg0.CLK
+iClk => oQ[3]~reg0.CLK
+inResetAsync => oQ[2]~reg0.PRESET
+inResetAsync => oQ[3]~reg0.PRESET
+iD[0] => oQ[12]~reg0.DATAIN
+iD[0] => oQ[6]$latch.DATAIN
+iD[1] => oQ[13]~reg0.DATAIN
+iD[1] => oQ[7]$latch.DATAIN
+iD[2] => oQ[14]~reg0.DATAIN
+iD[3] => oQ[15]~reg0.DATAIN
+iD[4] => oQ[8]~reg0.DATAIN
+iD[5] => oQ[9]~reg0.DATAIN
+iD[6] => oQ[10]~reg0.DATAIN
+iD[6] => oQ[0].DATAIN
+iD[6] => oQ[2]~reg0.DATAIN
+iD[7] => oQ[11]~reg0.DATAIN
+iD[7] => oQ[1].DATAIN
+iD[7] => oQ[3]~reg0.DATAIN
+oQ[0] << iD[6].DB_MAX_OUTPUT_PORT_TYPE
+oQ[1] << iD[7].DB_MAX_OUTPUT_PORT_TYPE
+oQ[2] << oQ[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[3] << oQ[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[4] << <GND>
+oQ[5] << <GND>
+oQ[6] << oQ[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+oQ[7] << oQ[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+oQ[8] << oQ[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[9] << oQ[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[10] << oQ[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[11] << oQ[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[12] << oQ[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[13] << oQ[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[14] << oQ[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oQ[15] << oQ[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
