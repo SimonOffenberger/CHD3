@@ -25,7 +25,11 @@ begin
     if (inResetAsync = not('1')) then
       oState <= cStateAllOff;
     elsif (rising_edge(iClk)) then
-      oState <= NextState;
+      if(iEnable = '0') then
+        oState <= oState; -- hold state when not enabled
+      else
+        oState <= NextState;
+      end if;
     end if;
   end process;
 
@@ -33,24 +37,21 @@ begin
   NextStateLogic : process (oState,iEnable,iOnlyFirstFour) is
   begin
 
-    if (iEnable = '0') then
-      NextState <= oState; -- hold state when not enabled
-    else
-      case oState is
-        when "000" => NextState <= "100";
-        when "100" => NextState <= "010";
-        when "010" => NextState <= "001";
-        when "001" => 
-          if(iOnlyFirstFour = '1') then
-            NextState <= "000";
-          else
-            NextState <= "011";
-          end if;
-        when "011" => NextState <= "111";
-        when "111" => NextState <= "000";
-        when others => NextState <= "XXX";
-      end case;
-    end if;
+    case oState is
+      when "000" => NextState <= "100";
+      when "100" => NextState <= "010";
+      when "010" => NextState <= "001";
+      when "001" => 
+        if(iOnlyFirstFour = '1') then
+          NextState <= "000";
+        else
+          NextState <= "011";
+        end if;
+      when "011" => NextState <= "111";
+      when "111" => NextState <= "000";
+      when others => NextState <= "XXX";
+    end case;
+
   end process;
 
 end architecture RTL;

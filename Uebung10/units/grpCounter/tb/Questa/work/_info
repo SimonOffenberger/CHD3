@@ -1,0 +1,193 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 dC:/HSD_SEM_3/CHD3/Uebung07/prj_Counter/uintCounter_TB/Questa
+T_opt
+!s110 1763407784
+VWo6XJ;cjI9gSF[]Z4T]YT3
+Z4 04 10 9 work counter_tb testbench 1
+=6-58cdc910746f-691b77a7-141-6148
+R1
+Z5 !s12b OEM100
+Z6 !s124 OEM10U2 
+Z7 o-quiet -auto_acc_if_foreign -work work +acc
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2023.3;77
+R3
+T_opt1
+!s110 1766234968
+Vf?26Q:HEB91W_86d>3PO83
+R4
+=4-6c1ff719a87b-69469b57-356-2258
+R1
+R5
+R6
+R7
+R8
+n@_opt1
+R9
+Ecounter
+w1766167258
+Z10 DPx4 work 6 global 0 22 oR:YPo=:VC=TkPF?DVS9U2
+Z11 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z12 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z13 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 41
+Z14 dC:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/tb/Questa
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd
+l0
+L22 1
+VkDjBfdk1hW>ZN1Ozh;Hco1
+!s100 >@]EX^ZE@VMEK8b@GUeVd2
+Z15 OL;C;2023.3;77
+33
+Z16 !s110 1766234964
+!i10b 1
+Z17 !s108 1766234964.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd|
+!i113 0
+Z18 o-O0 -work work
+Z19 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
+Artl
+w1766234959
+R10
+R11
+R12
+R13
+Z20 DEx4 work 7 counter 0 22 kDjBfdk1hW>ZN1Ozh;Hco1
+!i122 42
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd
+l17
+L16 36
+VI5ANOPZ>OHbC=P8Ff<b942
+!s100 1EGcT`31mEDklS3i>00[31
+R15
+33
+R16
+!i10b 1
+R17
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd|
+!i113 0
+R18
+R19
+Ecounter_tb
+Z21 w1766234503
+R11
+R12
+R13
+!i122 38
+R14
+Z22 8C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/tb/src/Counter_TB-ea.vhd
+Z23 FC:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/tb/src/Counter_TB-ea.vhd
+l0
+L21 1
+V;0<jH2cS5HFeGGlg0YoS=2
+!s100 ]Tzn=lBnHZ_lg4>I5daZf3
+R15
+33
+Z24 !s110 1766234506
+!i10b 1
+Z25 !s108 1766234506.000000
+Z26 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/tb/src/Counter_TB-ea.vhd|
+Z27 !s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/tb/src/Counter_TB-ea.vhd|
+!i113 0
+R18
+R19
+Atestbench
+R10
+R20
+R11
+R12
+R13
+DEx4 work 10 counter_tb 0 22 ;0<jH2cS5HFeGGlg0YoS=2
+!i122 38
+l31
+L24 38
+VX:jXoN:zfITa1K62?Ez:c2
+!s100 CO6j;Jjk1Y`;45Tbki?D?2
+R15
+33
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R18
+R19
+Pglobal
+R11
+R12
+R13
+!i122 31
+Z28 w1766165180
+R14
+Z29 8C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd
+Z30 FC:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd
+l0
+L20 36
+VoR:YPo=:VC=TkPF?DVS9U2
+!s100 SM2?gbFN`T;m@Vn?AK:9z1
+R15
+33
+b1
+Z31 !s110 1766165921
+!i10b 1
+Z32 !s108 1766165921.000000
+Z33 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd|
+Z34 !s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd|
+!i113 0
+R18
+R19
+Bbody
+R10
+R11
+R12
+R13
+!i122 31
+l0
+L59 20
+VTHNdJ2Klg;?g_:F;Y3gPK2
+!s100 @Uf_<:`I2d0T6eP8;dmZ<2
+R15
+33
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 0
+R18
+R19

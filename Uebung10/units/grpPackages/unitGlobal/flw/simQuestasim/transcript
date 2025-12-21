@@ -1,0 +1,788 @@
+# Reading C:/Program Files/questasim_6.6c/tcl/vsim/pref.tcl 
+# //  QuestaSim 6.6c Aug 23 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do ../../../../flw/simQuestasim/CompSim.do 
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# ** Error: ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd(29): Illegal use of deferred constant "idx" in attribute name "image".
+# ** Error: ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd(29): Attribute "image" requires a parameter.
+# ** Error: ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd(28): Prefix (constant "idx") for attribute "image" is not a type mark.
+# ** Error: ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd(36): VHDL Compiler exiting
+# ** Error: C:/Program Files/questasim_6.6c/win32/vcom failed.
+# Error in macro ./../../../../flw/simQuestasim/CompileVhdlSource.do line 213
+# C:/Program Files/questasim_6.6c/win32/vcom failed.
+#     while executing
+# "vcom -93 -work work ${PathUnitToRoot}/grp${GrpName}/unit${tbUnitName}/src/tb${tbEntityName}-${tbArchitectureName}-a.vhd"
+#     invoked from within
+# "if [file exists ${PathUnitToRoot}/grp${GrpName}/unit${tbUnitName}/src/tb${tbEntityName}-${tbArchitectureName}-a.vhd] then {
+#            		puts "Compili..."
+#     invoked from within
+# "if [file exists ${PathUnitToRoot}/grp${GrpName}/unit${tbUnitName}/src/tb${tbEntityName}-${tbArchitectureName}-ea.vhd] then {
+# 		    puts "Compiling ent..."
+#     ("foreach" body line 9)
+#     invoked from within
+# "foreach {tbUnit} $tbUnits {
+#         set GrpName [lindex ${tbUnit} 0]
+#         set tbUnitName [lindex ${tbUnit} 1]
+#         set tbEntityName [lindex ${tb..."
+#     invoked from within
+# "if [info exists tbUnits] then {
+#     # Testbenches
+#     # Analyze all entities before analyzing the architectures allows any
+#     # ordering of units in ..."
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# 
+# No Testbench was specified!
+# Check Config.tcl!
+# Can't simulate!
+# 
+do ../../../../flw/simQuestasim/CompSim.do
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# vsim work.tbGlobal 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.tbglobal(bhv)#1
+# ** Error: (vish-4014) No objects found matching '*'.
+# Error in macro ././Wave.do line 1
+# (vish-4014) No objects found matching '*'.
+#     while executing
+# "add wave -r *"
+# ** Fatal: (vsim-3421) Value -1 is out of range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Process: /tbglobal/ticklelogdualis File: ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd
+# Fatal error in ForLoop loop at ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd line 27
+# 
+# HDL call sequence:
+# Stopped at ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd 27 ForLoop loop
+# 
+do ../../../../flw/simQuestasim/CompSim.do
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# vsim work.tbGlobal 
+# ** Warning: (vsim-31) Unable to unlink file "C:\pfaff\Lva\Chd3\UebungW10\VhdlDesignsFlw\flw\simQuestasim\work/_opt__lock".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.tbglobal(bhv)#1
+# ** Error: (vish-4014) No objects found matching '*'.
+# Error in macro ././Wave.do line 1
+# (vish-4014) No objects found matching '*'.
+#     while executing
+# "add wave -r *"
+# ** Fatal: (vsim-3421) Value -1 is out of range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Process: /tbglobal/ticklelogdualis File: ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd
+# Fatal error in ForLoop loop at ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd line 28
+# 
+# HDL call sequence:
+# Stopped at ../../../../grpPackages/unitGlobal/src/tbGlobal-Bhv-a.vhd 28 ForLoop loop
+# 
+do ../../../../flw/simQuestasim/CompSim.do
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# vsim work.tbGlobal 
+# ** Warning: (vsim-31) Unable to unlink file "C:\pfaff\Lva\Chd3\UebungW10\VhdlDesignsFlw\flw\simQuestasim\work/_opt__lock".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.tbglobal(bhv)#1
+# ** Error: (vish-4014) No objects found matching '/*'.
+# Error in macro ./../../../../flw/simQuestasim/Wave.do line 29
+# (vish-4014) No objects found matching '/*'.
+#     while executing
+# "add wave -r /*"
+# ** Note: MP: End of test sequence reached.
+#    Time: 0 ns  Iteration: 0  Instance: /tbglobal
+do ../../../../flw/simQuestasim/CompSim.do
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# vsim work.tbGlobal 
+# ** Warning: (vsim-31) Unable to unlink file "C:\pfaff\Lva\Chd3\UebungW10\VhdlDesignsFlw\flw\simQuestasim\work/_opt__lock".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.tbglobal(bhv)#1
+# ** Error: (vish-4014) No objects found matching '/*'.
+# Error in macro ./../../../../flw/simQuestasim/Wave.do line 29
+# (vish-4014) No objects found matching '/*'.
+#     while executing
+# "add wave -r /*"
+# ** Note: MP: End of test sequence reached.
+#    Time: 0 ns  Iteration: 0  Instance: /tbglobal
+do ../../../../flw/simQuestasim/CompSim.do
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# vsim work.tbGlobal 
+# ** Warning: (vsim-31) Unable to unlink file "C:\pfaff\Lva\Chd3\UebungW10\VhdlDesignsFlw\flw\simQuestasim\work/_opt__lock".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.tbglobal(bhv)#1
+# ** Note: MP: End of test sequence reached.
+#    Time: 0 ns  Iteration: 0  Instance: /tbglobal
+do ../../../../flw/simQuestasim/CompSim.do
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# vsim work.tbGlobal 
+# ** Warning: (vsim-31) Unable to unlink file "C:\pfaff\Lva\Chd3\UebungW10\VhdlDesignsFlw\flw\simQuestasim\work/_opt__lock".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.tbglobal(bhv)#1
+# ** Note: MP: End of test sequence reached.
+#    Time: 0 ns  Iteration: 0  Instance: /tbglobal
+do ../../../../flw/simQuestasim/CompSim.do
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# vsim work.tbGlobal 
+# ** Warning: (vsim-31) Unable to unlink file "C:\pfaff\Lva\Chd3\UebungW10\VhdlDesignsFlw\flw\simQuestasim\work/_opt__lock".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.tbglobal(bhv)#1
+# ** Note: MP: End of test sequence reached.
+#    Time: 0 ns  Iteration: 0  Instance: /tbglobal
+do ../../../../flw/simQuestasim/CompSim.do
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Begin script for Modelsim.
+# .
+# ../../../..
+# ../../../../flw/simQuestasim
+# Altera
+# Cyclone II
+# EP2C35
+# F484C
+# F484
+# 8
+# 48
+# 
+# 
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# Starting Compile!
+# Modifying modelsim.ini
+# Compiling package for grpPackages, pkgGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package global
+# -- Compiling package body global
+# -- Loading package global
+# Compiling entity Global of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Compiling entity tbglobal
+# Compiling architecture Bhv of testbench for grpPackages, unitGlobal.
+# QuestaSim vcom 6.6c Compiler 2010.08 Aug 23 2010
+# -- Loading package standard
+# -- Compiling architecture bhv of tbglobal
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package global
+# -- Loading entity tbglobal
+# 0
+# 
+#     {Packages Global}
+# 
+# 
+# 
+# 
+# 
+# 
+#     {Packages Global Bhv}
+# 
+# 100 ms
+# 
+# 
+# vsim work.tbGlobal 
+# ** Warning: (vsim-31) Unable to unlink file "C:\pfaff\Lva\Chd3\UebungW10\VhdlDesignsFlw\flw\simQuestasim\work/_opt__lock".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.global(body)
+# Loading work.tbglobal(bhv)#1
+# ** Note: MP: End of test sequence reached.
+#    Time: 0 ns  Iteration: 0  Instance: /tbglobal

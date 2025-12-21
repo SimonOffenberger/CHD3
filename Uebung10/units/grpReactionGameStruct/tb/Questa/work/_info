@@ -1,0 +1,421 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/tb/Questa
+T_opt
+!s110 1766242492
+VHHBAQELSG@I6I>Od3Zog60
+04 6 9 work fsm_tb testbench 1
+=23-6c1ff719a87b-6946b8bb-328-660c
+R1
+!s12b OEM100
+!s124 OEM10U10 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Ecounter
+w1766167258
+Z3 DPx4 work 6 global 0 22 oR:YPo=:VC=TkPF?DVS9U2
+Z4 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z5 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z6 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 28
+R2
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd
+l0
+Z7 L22 1
+VkDjBfdk1hW>ZN1Ozh;Hco1
+!s100 >@]EX^ZE@VMEK8b@GUeVd2
+Z8 OL;C;2023.3;77
+33
+Z9 !s110 1766242488
+!i10b 1
+Z10 !s108 1766242488.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd|
+!i113 0
+Z11 o-O0 -work work
+Z12 tExplicit 1 DisableOpt 1 NoCoverage 1 CvgOpt 0
+Artl
+w1766242478
+R3
+R4
+R5
+R6
+Z13 DEx4 work 7 counter 0 22 kDjBfdk1hW>ZN1Ozh;Hco1
+!i122 29
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd
+l17
+L16 27
+V2Ga<2jW@b[G=lESCJ@UBQ0
+!s100 H@m66?dWjlS[m=bm=d[>h1
+R8
+33
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd|
+!i113 0
+R11
+R12
+Efsm_tb
+Z14 w1766239985
+R4
+R5
+R6
+!i122 25
+R2
+Z15 8C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/tb/src/ReactionGame_TB-ea.vhd
+Z16 FC:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/tb/src/ReactionGame_TB-ea.vhd
+l0
+Z17 L21 1
+VDj5MzCX9n6=J4[UXNKYkk3
+!s100 27D?57@V`iBUiOWKb7QGe3
+R8
+33
+Z18 !s110 1766241906
+!i10b 1
+Z19 !s108 1766241906.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/tb/src/ReactionGame_TB-ea.vhd|
+Z21 !s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/tb/src/ReactionGame_TB-ea.vhd|
+!i113 0
+R11
+R12
+Atestbench
+R3
+Z22 DEx4 work 18 reactiongamestruct 0 22 J^6I_Ph3NgoJRlzH;3O3G0
+R4
+R5
+R6
+DEx4 work 6 fsm_tb 0 22 Dj5MzCX9n6=J4[UXNKYkk3
+!i122 25
+l33
+L24 70
+VW]e_gczPN1YZgJ`[59c7Z1
+!s100 <L03RT]3P@`iN>ej6C:?:1
+R8
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R11
+R12
+Pglobal
+R4
+R5
+R6
+!i122 0
+Z23 w1766165180
+R2
+Z24 8C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd
+Z25 FC:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd
+l0
+L20 36
+VoR:YPo=:VC=TkPF?DVS9U2
+!s100 SM2?gbFN`T;m@Vn?AK:9z1
+R8
+33
+b1
+Z26 !s110 1766238902
+!i10b 1
+Z27 !s108 1766238902.000000
+Z28 !s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd|
+Z29 !s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd|
+!i113 0
+R11
+R12
+Bbody
+R3
+R4
+R5
+R6
+!i122 0
+l0
+L59 20
+VTHNdJ2Klg;?g_:F;Y3gPK2
+!s100 @Uf_<:`I2d0T6eP8;dmZ<2
+R8
+33
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 0
+R11
+R12
+Ehex2sevensegment
+w1766162550
+R5
+R6
+!i122 3
+R2
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpHexDecoder/rtl/Hex2SevenSegment-e.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpHexDecoder/rtl/Hex2SevenSegment-e.vhd
+l0
+L13 1
+VBTBOkcnO5boZ=_k[GOI203
+!s100 GmiF0?V7Y[1B0llI=SU_]1
+R8
+33
+Z30 !s110 1766238920
+!i10b 1
+Z31 !s108 1766238920.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpHexDecoder/rtl/Hex2SevenSegment-e.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpHexDecoder/rtl/Hex2SevenSegment-e.vhd|
+!i113 0
+R11
+R12
+Artl
+w1766162586
+R5
+R6
+Z32 DEx4 work 16 hex2sevensegment 0 22 BTBOkcnO5boZ=_k[GOI203
+!i122 4
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpHexDecoder/rtl/Hex2SevenSegment-Rtl-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpHexDecoder/rtl/Hex2SevenSegment-Rtl-a.vhd
+l42
+L11 39
+V_jB]7akWRJnGBY01KPD731
+!s100 Sa1@do_b>=`H6o8m[Tk2h2
+R8
+33
+R30
+!i10b 1
+R31
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpHexDecoder/rtl/Hex2SevenSegment-Rtl-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpHexDecoder/rtl/Hex2SevenSegment-Rtl-a.vhd|
+!i113 0
+R11
+R12
+Ereactiongamefsm
+w1766166042
+R4
+R3
+R5
+R6
+!i122 2
+R2
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpFSM/rtl/ReactionTimeGameFSM-e.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpFSM/rtl/ReactionTimeGameFSM-e.vhd
+l0
+R17
+VaLzQGXk@fOgcn5Zfi4UPG3
+!s100 hk`[<^LZ5]gGKfCVoE]WF2
+R8
+33
+Z33 !s110 1766238915
+!i10b 1
+Z34 !s108 1766238915.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpFSM/rtl/ReactionTimeGameFSM-e.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpFSM/rtl/ReactionTimeGameFSM-e.vhd|
+!i113 0
+R11
+R12
+Artl
+w1766236062
+R4
+R3
+R5
+R6
+Z35 DEx4 work 15 reactiongamefsm 0 22 aLzQGXk@fOgcn5Zfi4UPG3
+!i122 3
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpFSM/rtl/ReactionTimeGameFSM-RTL-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpFSM/rtl/ReactionTimeGameFSM-RTL-a.vhd
+l26
+L16 71
+VFd7AgLP1_Bf3gJJLH;Ikg0
+!s100 C>S?<aDPaMYEQnAc4MmF@2
+R8
+33
+R33
+!i10b 1
+R34
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpFSM/rtl/ReactionTimeGameFSM-RTL-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpFSM/rtl/ReactionTimeGameFSM-RTL-a.vhd|
+!i113 0
+R11
+R12
+Ereactiongamestruct
+w1766236825
+R3
+R4
+R5
+R6
+!i122 27
+R2
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/rtl/ReactionTimeGameStruct-e.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/rtl/ReactionTimeGameStruct-e.vhd
+l0
+R7
+VJ^6I_Ph3NgoJRlzH;3O3G0
+!s100 H]bZ=DMlhaH;7>CXX@MD`1
+R8
+33
+!s110 1766242059
+!i10b 1
+Z36 !s108 1766242059.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/rtl/ReactionTimeGameStruct-e.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/rtl/ReactionTimeGameStruct-e.vhd|
+!i113 0
+R11
+R12
+Astruct
+w1766242019
+R32
+R13
+R35
+Z37 DEx4 work 9 strobegen 0 22 H:]HDYgX[A<e``;OiiEN80
+R3
+R4
+R5
+R6
+R22
+!i122 28
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/rtl/ReactionTimeGameStruct-Struct-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/rtl/ReactionTimeGameStruct-Struct-a.vhd
+l35
+L16 100
+V_:Z@nDVmBiknI_Q4<R80i2
+!s100 ^GgJ=0`IOU[8kOIEJO[172
+R8
+33
+!s110 1766242060
+!i10b 1
+R36
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/rtl/ReactionTimeGameStruct-Struct-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpReactionGameStruct/rtl/ReactionTimeGameStruct-Struct-a.vhd|
+!i113 0
+R11
+R12
+Estrobegen
+w1766162664
+R3
+R4
+R5
+R6
+!i122 12
+R2
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpStrobesAndClocks/rtl/StrobeGen-e.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpStrobesAndClocks/rtl/StrobeGen-e.vhd
+l40
+L25 1
+VH:]HDYgX[A<e``;OiiEN80
+!s100 E_4hO1h6T2kE[O^`N3BaK1
+R8
+33
+Z38 !s110 1766239397
+!i10b 1
+Z39 !s108 1766239397.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpStrobesAndClocks/rtl/StrobeGen-e.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpStrobesAndClocks/rtl/StrobeGen-e.vhd|
+!i113 0
+R11
+R12
+Artl
+w1766162906
+R3
+R4
+R5
+R6
+R37
+!i122 13
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpStrobesAndClocks/rtl/StrobeGen-RTL-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpStrobesAndClocks/rtl/StrobeGen-RTL-a.vhd
+l22
+L19 28
+VYGjzfQB>4M5kWLX[]T4?U2
+!s100 3e0`X;dK9f;h]bM^VmW<W1
+R8
+33
+R38
+!i10b 1
+R39
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpStrobesAndClocks/rtl/StrobeGen-RTL-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpStrobesAndClocks/rtl/StrobeGen-RTL-a.vhd|
+!i113 0
+R11
+R12
+Esync
+Z40 w1764660719
+R5
+R6
+!i122 6
+R2
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpSync/rtl/Sync-e.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpSync/rtl/Sync-e.vhd
+l0
+L20 1
+VGcIN`HiKI4O6mUD4`0T??3
+!s100 FQ_LgQBL^cRTaShkFzo0M3
+R8
+33
+Z41 !s110 1766238940
+!i10b 1
+!s108 1766238939.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpSync/rtl/Sync-e.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpSync/rtl/Sync-e.vhd|
+!i113 0
+R11
+R12
+Artl
+R5
+R6
+DEx4 work 4 sync 0 22 GcIN`HiKI4O6mUD4`0T??3
+!i122 7
+8C:/HSD_SEM_3/CHD3/Uebung10/units/grpSync/rtl/Sync-RTL-a.vhd
+FC:/HSD_SEM_3/CHD3/Uebung10/units/grpSync/rtl/Sync-RTL-a.vhd
+l18
+L16 17
+VUV744`HC`AgKnE;n1dPIB1
+!s100 i[N^6ckzI9[@fFandYC]g2
+R8
+33
+R41
+!i10b 1
+!s108 1766238940.000000
+!s90 -reportprogress|300|-work|work|C:/HSD_SEM_3/CHD3/Uebung10/units/grpSync/rtl/Sync-RTL-a.vhd|
+!s107 C:/HSD_SEM_3/CHD3/Uebung10/units/grpSync/rtl/Sync-RTL-a.vhd|
+!i113 0
+R11
+R12

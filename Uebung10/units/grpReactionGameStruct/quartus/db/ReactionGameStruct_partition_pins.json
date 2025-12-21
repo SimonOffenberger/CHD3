@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "oLEDs[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDs[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDs[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDs[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "oHEX3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "iClk",
+					"strict" : false
+				},
+				{
+					"name" : "inResetAsync",
+					"strict" : false
+				},
+				{
+					"name" : "iA_Sync",
+					"strict" : false
+				},
+				{
+					"name" : "iB_Sync",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

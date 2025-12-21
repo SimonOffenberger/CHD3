@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "12/02/2025 09:13:39"
+-- DATE "12/15/2025 13:58:52"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -39,8 +39,8 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	RunningLightWithStrobeOnPCBDe1Soc IS
     PORT (
 	CLOCK_50 : IN std_logic;
-	KEY : IN IEEE.STD_LOGIC_1164.std_ulogic_vector(1 DOWNTO 0);
-	LEDR : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(2 DOWNTO 0)
+	KEY : IN std_logic_vector(1 DOWNTO 0);
+	LEDR : BUFFER std_logic_vector(2 DOWNTO 0)
 	);
 END RunningLightWithStrobeOnPCBDe1Soc;
 
@@ -135,60 +135,60 @@ SIGNAL \EntityRunningLightCase2P|Mux2~0_combout\ : std_logic;
 SIGNAL \EntityStrobeGen|Count\ : std_logic_vector(25 DOWNTO 0);
 SIGNAL \EntityRunningLightCase2P|oState\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \EntitySync|MightMetha\ : std_logic_vector(2 DOWNTO 1);
-SIGNAL \EntityStrobeGen|ALT_INV_Count\ : std_logic_vector(25 DOWNTO 0);
+SIGNAL \EntitySync|ALT_INV_MightMetha\ : std_logic_vector(2 DOWNTO 2);
 SIGNAL \EntityRunningLightCase2P|ALT_INV_oState\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \EntityStrobeGen|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \EntityStrobeGen|ALT_INV_Equal0~1_combout\ : std_logic;
-SIGNAL \EntitySync|ALT_INV_MightMetha\ : std_logic_vector(2 DOWNTO 2);
-SIGNAL \EntityStrobeGen|ALT_INV_Equal0~3_combout\ : std_logic;
 SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
 SIGNAL \EntityStrobeGen|ALT_INV_Equal0~2_combout\ : std_logic;
+SIGNAL \EntityStrobeGen|ALT_INV_Equal0~1_combout\ : std_logic;
 SIGNAL \ALT_INV_KEY[1]~input_o\ : std_logic;
+SIGNAL \EntityStrobeGen|ALT_INV_Equal0~3_combout\ : std_logic;
+SIGNAL \EntityStrobeGen|ALT_INV_Count\ : std_logic_vector(25 DOWNTO 0);
 
 BEGIN
 
 ww_CLOCK_50 <= CLOCK_50;
-ww_KEY <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(KEY);
-LEDR <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_LEDR);
+ww_KEY <= KEY;
+LEDR <= ww_LEDR;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\EntityStrobeGen|ALT_INV_Count\(22) <= NOT \EntityStrobeGen|Count\(22);
-\EntityStrobeGen|ALT_INV_Count\(16) <= NOT \EntityStrobeGen|Count\(16);
-\EntityStrobeGen|ALT_INV_Count\(12) <= NOT \EntityStrobeGen|Count\(12);
-\EntityStrobeGen|ALT_INV_Count\(1) <= NOT \EntityStrobeGen|Count\(1);
-\EntityStrobeGen|ALT_INV_Count\(17) <= NOT \EntityStrobeGen|Count\(17);
-\EntityStrobeGen|ALT_INV_Count\(14) <= NOT \EntityStrobeGen|Count\(14);
-\EntityStrobeGen|ALT_INV_Count\(11) <= NOT \EntityStrobeGen|Count\(11);
-\EntityStrobeGen|ALT_INV_Count\(15) <= NOT \EntityStrobeGen|Count\(15);
-\EntityStrobeGen|ALT_INV_Count\(10) <= NOT \EntityStrobeGen|Count\(10);
-\EntityStrobeGen|ALT_INV_Count\(19) <= NOT \EntityStrobeGen|Count\(19);
-\EntityStrobeGen|ALT_INV_Count\(9) <= NOT \EntityStrobeGen|Count\(9);
-\EntityStrobeGen|ALT_INV_Count\(21) <= NOT \EntityStrobeGen|Count\(21);
-\EntityStrobeGen|ALT_INV_Count\(8) <= NOT \EntityStrobeGen|Count\(8);
-\EntityStrobeGen|ALT_INV_Count\(7) <= NOT \EntityStrobeGen|Count\(7);
-\EntityStrobeGen|ALT_INV_Count\(25) <= NOT \EntityStrobeGen|Count\(25);
-\EntityStrobeGen|ALT_INV_Count\(20) <= NOT \EntityStrobeGen|Count\(20);
-\EntityStrobeGen|ALT_INV_Count\(13) <= NOT \EntityStrobeGen|Count\(13);
-\EntityStrobeGen|ALT_INV_Count\(6) <= NOT \EntityStrobeGen|Count\(6);
-\EntityStrobeGen|ALT_INV_Count\(4) <= NOT \EntityStrobeGen|Count\(4);
-\EntityStrobeGen|ALT_INV_Count\(2) <= NOT \EntityStrobeGen|Count\(2);
-\EntityStrobeGen|ALT_INV_Count\(23) <= NOT \EntityStrobeGen|Count\(23);
-\EntityStrobeGen|ALT_INV_Count\(24) <= NOT \EntityStrobeGen|Count\(24);
-\EntityStrobeGen|ALT_INV_Count\(0) <= NOT \EntityStrobeGen|Count\(0);
-\EntityStrobeGen|ALT_INV_Count\(5) <= NOT \EntityStrobeGen|Count\(5);
-\EntityStrobeGen|ALT_INV_Count\(18) <= NOT \EntityStrobeGen|Count\(18);
-\EntityStrobeGen|ALT_INV_Count\(3) <= NOT \EntityStrobeGen|Count\(3);
-\EntityRunningLightCase2P|ALT_INV_oState\(0) <= NOT \EntityRunningLightCase2P|oState\(0);
+\EntitySync|ALT_INV_MightMetha\(2) <= NOT \EntitySync|MightMetha\(2);
 \EntityRunningLightCase2P|ALT_INV_oState\(1) <= NOT \EntityRunningLightCase2P|oState\(1);
 \EntityStrobeGen|ALT_INV_Equal0~0_combout\ <= NOT \EntityStrobeGen|Equal0~0_combout\;
-\EntityStrobeGen|ALT_INV_Equal0~1_combout\ <= NOT \EntityStrobeGen|Equal0~1_combout\;
-\EntitySync|ALT_INV_MightMetha\(2) <= NOT \EntitySync|MightMetha\(2);
-\EntityStrobeGen|ALT_INV_Equal0~3_combout\ <= NOT \EntityStrobeGen|Equal0~3_combout\;
+\EntityRunningLightCase2P|ALT_INV_oState\(0) <= NOT \EntityRunningLightCase2P|oState\(0);
 \ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
-\EntityStrobeGen|ALT_INV_Equal0~2_combout\ <= NOT \EntityStrobeGen|Equal0~2_combout\;
-\ALT_INV_KEY[1]~input_o\ <= NOT \KEY[1]~input_o\;
 \EntityRunningLightCase2P|ALT_INV_oState\(2) <= NOT \EntityRunningLightCase2P|oState\(2);
+\EntityStrobeGen|ALT_INV_Equal0~2_combout\ <= NOT \EntityStrobeGen|Equal0~2_combout\;
+\EntityStrobeGen|ALT_INV_Equal0~1_combout\ <= NOT \EntityStrobeGen|Equal0~1_combout\;
+\ALT_INV_KEY[1]~input_o\ <= NOT \KEY[1]~input_o\;
+\EntityStrobeGen|ALT_INV_Equal0~3_combout\ <= NOT \EntityStrobeGen|Equal0~3_combout\;
+\EntityStrobeGen|ALT_INV_Count\(9) <= NOT \EntityStrobeGen|Count\(9);
+\EntityStrobeGen|ALT_INV_Count\(4) <= NOT \EntityStrobeGen|Count\(4);
+\EntityStrobeGen|ALT_INV_Count\(8) <= NOT \EntityStrobeGen|Count\(8);
+\EntityStrobeGen|ALT_INV_Count\(3) <= NOT \EntityStrobeGen|Count\(3);
+\EntityStrobeGen|ALT_INV_Count\(20) <= NOT \EntityStrobeGen|Count\(20);
+\EntityStrobeGen|ALT_INV_Count\(7) <= NOT \EntityStrobeGen|Count\(7);
+\EntityStrobeGen|ALT_INV_Count\(23) <= NOT \EntityStrobeGen|Count\(23);
+\EntityStrobeGen|ALT_INV_Count\(2) <= NOT \EntityStrobeGen|Count\(2);
+\EntityStrobeGen|ALT_INV_Count\(25) <= NOT \EntityStrobeGen|Count\(25);
+\EntityStrobeGen|ALT_INV_Count\(14) <= NOT \EntityStrobeGen|Count\(14);
+\EntityStrobeGen|ALT_INV_Count\(5) <= NOT \EntityStrobeGen|Count\(5);
+\EntityStrobeGen|ALT_INV_Count\(0) <= NOT \EntityStrobeGen|Count\(0);
+\EntityStrobeGen|ALT_INV_Count\(21) <= NOT \EntityStrobeGen|Count\(21);
+\EntityStrobeGen|ALT_INV_Count\(17) <= NOT \EntityStrobeGen|Count\(17);
+\EntityStrobeGen|ALT_INV_Count\(13) <= NOT \EntityStrobeGen|Count\(13);
+\EntityStrobeGen|ALT_INV_Count\(15) <= NOT \EntityStrobeGen|Count\(15);
+\EntityStrobeGen|ALT_INV_Count\(19) <= NOT \EntityStrobeGen|Count\(19);
+\EntityStrobeGen|ALT_INV_Count\(11) <= NOT \EntityStrobeGen|Count\(11);
+\EntityStrobeGen|ALT_INV_Count\(12) <= NOT \EntityStrobeGen|Count\(12);
+\EntityStrobeGen|ALT_INV_Count\(24) <= NOT \EntityStrobeGen|Count\(24);
+\EntityStrobeGen|ALT_INV_Count\(16) <= NOT \EntityStrobeGen|Count\(16);
+\EntityStrobeGen|ALT_INV_Count\(10) <= NOT \EntityStrobeGen|Count\(10);
+\EntityStrobeGen|ALT_INV_Count\(18) <= NOT \EntityStrobeGen|Count\(18);
+\EntityStrobeGen|ALT_INV_Count\(1) <= NOT \EntityStrobeGen|Count\(1);
+\EntityStrobeGen|ALT_INV_Count\(22) <= NOT \EntityStrobeGen|Count\(22);
+\EntityStrobeGen|ALT_INV_Count\(6) <= NOT \EntityStrobeGen|Count\(6);
 
 -- Location: IOOBUF_X52_Y0_N2
 \LEDR[0]~output\ : cyclonev_io_obuf

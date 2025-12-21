@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------
+-- Title : FSM For a running light using 2 Processes
+-- Project : Chip Design
+-------------------------------------------------------------------------------
+-- Author : simon Offenberger
+-- Created : 2025-11-11
+-------------------------------------------------------------------------------
+-- Copyright (c) Hagenberg/Austria 2015
+-------------------------------------------------------------------------------
+-- Description:
+-------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+-- Architecure RTL 
+--------------------------------------------------------------------------------
+architecture struct of ReactionGameStruct is
+constant cClockFrequency : natural := 50E6;
+signal KeyPosLogic : std_ulogic_vector(KEY'range);   
+signal StrobeSignal : std_ulogic;
+
+signal A_KeySync : std_ulogic;
+signal B_KeySync : std_ulogic;
+begin
+
+-- Instantiate Entity
+EntityReactionGame : entity work.RunningLight(RTL)
+  generic map (
+    gClockFrequency    : natural := cClockFrequency
+    )
+ port (
+  iClk         => CLOCK_50,
+  inResetAsync => SW,
+  iA_Sync      => A_KeySync,
+  iB_Sync      => B_KeySync,
+  oLEDs        => LEDR,
+  oHEX1        => HEX0,
+  oHEX2        => HEX1,
+  oHEX3        => HEX2,
+  );
+
+-- Instantiate Entity
+EntitySync : entity work.Sync(RTL)
+port map (
+    iClk          => CLOCK_50,         
+    inResetAsync  => SW,    
+    iAsync        => KeyPosLogic(0),        
+    oSync        => A_KeySync
+);
+-- Instantiate Entity
+EntitySync : entity work.Sync(RTL)
+port map (
+    iClk          => CLOCK_50,         
+    inResetAsync  => SW,    
+    iAsync        => KeyPosLogic(1),        
+    oSync         => B_KeySync
+);
+
+
+-- Convert Negative Logic from the board to pos logic
+KeyPosLogic <= not KEY;
+
+end architecture struct;

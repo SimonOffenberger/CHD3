@@ -1,0 +1,19 @@
+|Counter
+iClk => oCount[1]~reg0.CLK
+iClk => oCount[2]~reg0.CLK
+iClk => oCount[3]~reg0.CLK
+iClk => oCount[4]~reg0.CLK
+iEnable => oCount[1]~reg0.ENA
+iEnable => oCount[4]~reg0.ENA
+iEnable => oCount[3]~reg0.ENA
+iEnable => oCount[2]~reg0.ENA
+inResetAsync => oCount[1]~reg0.ACLR
+inResetAsync => oCount[2]~reg0.ACLR
+inResetAsync => oCount[3]~reg0.ACLR
+inResetAsync => oCount[4]~reg0.ACLR
+oCount[1] << oCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[2] << oCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[3] << oCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[4] << oCount[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,7 @@
+
+State Machine - |ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|ReactionGameFSM:EntityReactionFSM|State
+Name State.ShowResult State.CountUpTime State.Unlocked State.Locked 
+State.Locked 0 0 0 0 
+State.Unlocked 0 0 1 1 
+State.CountUpTime 0 1 0 1 
+State.ShowResult 1 0 0 1 

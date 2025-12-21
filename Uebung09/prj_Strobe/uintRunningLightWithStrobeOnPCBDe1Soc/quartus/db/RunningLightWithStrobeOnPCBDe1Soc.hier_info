@@ -6,9 +6,9 @@ KEY[0] => strobegen:EntityStrobeGen.inResetAsync
 KEY[0] => runninglight:EntityRunningLightCase2P.inResetAsync
 KEY[0] => sync:EntitySync.inResetAsync
 KEY[1] => sync:EntitySync.iAsync
-LEDR[0] <= runninglight:EntityRunningLightCase2P.oState[0]
-LEDR[1] <= runninglight:EntityRunningLightCase2P.oState[1]
-LEDR[2] <= runninglight:EntityRunningLightCase2P.oState[2]
+LEDR[0] << runninglight:EntityRunningLightCase2P.oState[0]
+LEDR[1] << runninglight:EntityRunningLightCase2P.oState[1]
+LEDR[2] << runninglight:EntityRunningLightCase2P.oState[2]
 
 
 |RunningLightWithStrobeOnPCBDe1Soc|StrobeGen:EntityStrobeGen

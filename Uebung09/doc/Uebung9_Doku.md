@@ -81,7 +81,6 @@ Hier wird auch klar wie diese Funktion den Base 2 Logarithmus berechnet.
 Es wird eine Schleife solange durchlaufen bis die n-te Potenz der Zahl 2 höher ist als cNumber.
 Somit wird die geringste Potenz die diese Bedingung erfüllt ermittelt.
 Dies entspricht Log Base 2 dessen Ergebnis immer aufgerundet wird.
-Aus der Betrachtung eines Softwareentwicklers wirkt diese Implementierung sehr ineffizient.
 
 #### Warum muss diese Funktion Synthetisierbar sein?
 Diese Funktion muss deswegen synthetisierbare sein, da sie von Synthesetool ausgewertet werden muss.
@@ -89,13 +88,13 @@ Sie soll in Synthesefähigen Code auch verwendet werden können.
 Außerdem muss diese Funktion in Hardware umgesetzt werden wenn keine Konstante als Parameter übergeben wird.
 
 #### Warum muss diese Funktion nicht zwingend in Hardware effizient abbildbar sein?
-Wird diese Funktion nur mit Konstanten verwendet, so wird deren Ergebnis schon im Schritt Alaboration in der Synthese ermittelt. Somit wird nur noch das Ergebnis dieser Funktion in der Synthese verwendet.
+Wird diese Funktion nur mit Konstanten verwendet, so wird deren Ergebnis schon im Schritt Elaboration in der Synthese ermittelt. Somit wird nur noch das Ergebnis dieser Funktion in der Synthese verwendet.
 Dies ist möglich, da sich der Ergebnis Wert während dem Betrieb der Schaltung nicht mehr verändern kann!
 
 #### Gibt es einen Unterschied zwischen Aufruf mit Konstanten zum Aufruf mit einem Signal?
 Ja!
 Wie oben schon beschrieben wird beim Aufruf mit einer Konstante der Wert schon während der Synthese ermittelt. 
-Wird stattdessen diese Funktion mit einem Signal aufgerufen so kann dieser Schritt nicht während der Synthese vollzogen werden. Dies heist die Funktion muss in Hardware abgebildet werden, da sich dessen Ergebniss während dem Betrieb der Schaltung ändern kann.
+Wird stattdessen diese Funktion mit einem Signal aufgerufen so kann dieser Schritt nicht während der Synthese vollzogen werden. Das heist die Funktion muss in Hardware abgebildet werden, da sich dessen Ergebnis während dem Betrieb der Schaltung ändern kann.
 
 ### Simulation und Verifikation
 
@@ -226,7 +225,11 @@ An diesem Eingang wird später das Strobsignal angelegt.
 >    if (inResetAsync = not('1')) then
 >      oState <= cStateAllOff;
 >    elsif (rising_edge(iClk)) then
->      oState <= NextState;
+>      if(iEnable = '0') then
+>        oState <= oState; -- hold state when not enabled
+>      else
+>        oState <= NextState;
+>      end if;
 >    end if;
 >  end process;
 >
@@ -234,19 +237,15 @@ An diesem Eingang wird später das Strobsignal angelegt.
 >  NextStateLogic : process (oState,iEnable) is
 >  begin
 >
->    if (iEnable = '0') then
->      NextState <= oState; -- hold state when not enabled
->    else
->      case oState is
->        when "000" => NextState <= "100";
->        when "100" => NextState <= "010";
->        when "010" => NextState <= "001";
->        when "001" => NextState <= "011";
->        when "011" => NextState <= "111";
->        when "111" => NextState <= "000";
->        when others => NextState <= "XXX";
->      end case;
->    end if;
+>    case oState is
+>      when "000" => NextState <= "100";
+>      when "100" => NextState <= "010";
+>      when "010" => NextState <= "001";
+>      when "001" => NextState <= "011";
+>      when "011" => NextState <= "111";
+>      when "111" => NextState <= "000";
+>      when others => NextState <= "XXX";
+>    end case;
 >  end process;
 >
 >end architecture RTL;
@@ -417,7 +416,7 @@ Da diese durch ihre asynchrone Eigenschaft Mehrkomponentenübergänge erzeugen k
 ### Synchronizer 
 
 Für die Synchronisierung werden 2 Flipflop Stufen verwendet. Hierbei wird versucht, dass etwaige methastabilitäten nicht in den inneren Schaltungsteil vordringen, und zwischen den 2 FlipFlops wieder abklingen bevor eine 2. Taktflanke auftritt. 
-Im wesentlichen handelt es sich hier um ein Schieberegister mit 2 Flipflops. Es können aber auch mehr Flipflops verwendet werden, um die Wahrscheinlichkeit, das das synchronisierte Signal Methastabil ist zu verrinnern.
+Im wesentlichen handelt es sich hier um ein Schieberegister mit 2 Flipflops. Es können aber auch mehr Flipflops verwendet werden, um die Wahrscheinlichkeit, das das synchronisierte Signal methastabil ist zu verringern.
 
 #### Entity
 >```vhdl
@@ -448,7 +447,7 @@ Im wesentlichen handelt es sich hier um ein Schieberegister mit 2 Flipflops. Es 
 >    if (inResetAsync = not('1')) then
 >      MightMetha <= (others => '0');
 >    elsif (rising_edge(iClk)) then
->      MightMetha <= MightMetha(gNumOfFFStages-1 downto MightMetha'low) & >iAsync;
+>      MightMetha <= MightMetha(gNumOfFFStages-1 downto MightMetha'low) & iAsync;
 >    end if;
 >end process;
 >
@@ -458,7 +457,7 @@ Im wesentlichen handelt es sich hier um ein Schieberegister mit 2 Flipflops. Es 
 
 ### Synthese
 
-Beider Synthese werden gNumOfFFStages an Flipflops erwartet.
+Bei der Synthese werden gNumOfFFStages an Flipflops erwartet.
 Also mit gNumOfFFStages = 2 werden 2 Flipflops erwartet.
 
 #### Ressource Summery
@@ -488,12 +487,61 @@ Wenn der Taster der Clock ist, kann man nicht sinnvoll sagen, ob er asynchron od
 Nun wurde das Lauflicht erweitert, dass beim Tastendruck nur die ersten 4 States durchlaufen werden.
 Hierfür muss dieses Tastensignal einsynchronisiert werden !
 
+#### Erweiterung der Architektur
+
+>```vhdl
+>architecture RTL of RunningLight is
+>  signal NextState : std_ulogic_vector(oState'range);
+>  -- init state 
+>  constant cStateAllOff : std_ulogic_vector(oState'range) := (others => '0');
+>begin
+>
+>  -- State Register
+>  process (iClk, inResetAsync) is
+>  begin
+>    if (inResetAsync = not('1')) then
+>      oState <= cStateAllOff;
+>    elsif (rising_edge(iClk)) then
+>      if(iEnable = '0') then
+>        oState <= oState; -- hold state when not enabled
+>      else
+>        oState <= NextState;
+>      end if;
+>    end if;
+>  end process;
+>
+>  -- State Transition Process
+>  NextStateLogic : process (oState,iEnable,iOnlyFirstFour) is
+>  begin
+>
+>    case oState is
+>      when "000" => NextState <= "100";
+>      when "100" => NextState <= "010";
+>      when "010" => NextState <= "001";
+>      when "001" => 
+>        if(iOnlyFirstFour = '1') then
+>          NextState <= "000"; -- continue with the First State
+>        else
+>          NextState <= "011"; -- continue with next State
+>        end if;
+>      when "011" => NextState <= "111";
+>      when "111" => NextState <= "000";
+>      when others => NextState <= "XXX";
+>    end case;
+>
+>  end process;
+>
+>end architecture RTL;
+
+
 #### Ressource Summery
 
 ![RessourceSummery](./images/Sync/Ressource_Running.png)
 
-Hier bestätigt die Synthese die Erwartungen
+Durch die Erweiterung um den Eingang iOnlyFirstFour wird die Anzahl der Flipflops nicht beeinflusst.
+Aus diesem Grund wird hier auch mit 32 Flipflops gerechnet.
 
 #### RTL Viewer
 
 ![RTL Viewer](./images/Sync/RTL_Running.png)
+

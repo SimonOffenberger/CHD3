@@ -1,0 +1,373 @@
+|ReactionGameOnDE1SOC
+CLOCK_50 => reactiongamestruct:EntityReactionGame.iClk
+CLOCK_50 => sync:EntitySyncB.iClk
+CLOCK_50 => sync:EntitySyncA.iClk
+SW[0] => reactiongamestruct:EntityReactionGame.inResetAsync
+SW[0] => sync:EntitySyncB.inResetAsync
+SW[0] => sync:EntitySyncA.inResetAsync
+KEY[0] => sync:EntitySyncB.iAsync
+KEY[1] => sync:EntitySyncA.iAsync
+LEDR[0] << reactiongamestruct:EntityReactionGame.oLEDs[0]
+LEDR[1] << reactiongamestruct:EntityReactionGame.oLEDs[1]
+LEDR[2] << reactiongamestruct:EntityReactionGame.oLEDs[2]
+LEDR[3] << reactiongamestruct:EntityReactionGame.oLEDs[3]
+HEX0[0] << reactiongamestruct:EntityReactionGame.oHEX1[0]
+HEX0[1] << reactiongamestruct:EntityReactionGame.oHEX1[1]
+HEX0[2] << reactiongamestruct:EntityReactionGame.oHEX1[2]
+HEX0[3] << reactiongamestruct:EntityReactionGame.oHEX1[3]
+HEX0[4] << reactiongamestruct:EntityReactionGame.oHEX1[4]
+HEX0[5] << reactiongamestruct:EntityReactionGame.oHEX1[5]
+HEX0[6] << reactiongamestruct:EntityReactionGame.oHEX1[6]
+HEX1[0] << reactiongamestruct:EntityReactionGame.oHEX2[0]
+HEX1[1] << reactiongamestruct:EntityReactionGame.oHEX2[1]
+HEX1[2] << reactiongamestruct:EntityReactionGame.oHEX2[2]
+HEX1[3] << reactiongamestruct:EntityReactionGame.oHEX2[3]
+HEX1[4] << reactiongamestruct:EntityReactionGame.oHEX2[4]
+HEX1[5] << reactiongamestruct:EntityReactionGame.oHEX2[5]
+HEX1[6] << reactiongamestruct:EntityReactionGame.oHEX2[6]
+HEX2[0] << reactiongamestruct:EntityReactionGame.oHEX3[0]
+HEX2[1] << reactiongamestruct:EntityReactionGame.oHEX3[1]
+HEX2[2] << reactiongamestruct:EntityReactionGame.oHEX3[2]
+HEX2[3] << reactiongamestruct:EntityReactionGame.oHEX3[3]
+HEX2[4] << reactiongamestruct:EntityReactionGame.oHEX3[4]
+HEX2[5] << reactiongamestruct:EntityReactionGame.oHEX3[5]
+HEX2[6] << reactiongamestruct:EntityReactionGame.oHEX3[6]
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame
+iClk => edgedetection:EdgeDetectionA.iClk
+iClk => edgedetection:EdgeDetectionB.iClk
+iClk => strobegen:StrobeGen.iClk
+iClk => reactiongamefsm:EntityReactionFSM.iClk
+iClk => counter:CounterLow.iClk
+iClk => counter:CounterMid.iClk
+iClk => counter:CounterHigh.iClk
+inResetAsync => edgedetection:EdgeDetectionA.inResetAsync
+inResetAsync => edgedetection:EdgeDetectionB.inResetAsync
+inResetAsync => strobegen:StrobeGen.inResetAsync
+inResetAsync => reactiongamefsm:EntityReactionFSM.inResetAsync
+inResetAsync => counter:CounterLow.inResetAsync
+inResetAsync => counter:CounterMid.inResetAsync
+inResetAsync => counter:CounterHigh.inResetAsync
+iA_Sync => edgedetection:EdgeDetectionA.iSync
+iB_Sync => edgedetection:EdgeDetectionB.iSync
+oLEDs[0] <= reactiongamefsm:EntityReactionFSM.oLEDs[0]
+oLEDs[1] <= reactiongamefsm:EntityReactionFSM.oLEDs[1]
+oLEDs[2] <= reactiongamefsm:EntityReactionFSM.oLEDs[2]
+oLEDs[3] <= reactiongamefsm:EntityReactionFSM.oLEDs[3]
+oHEX1[0] <= hex2sevensegment:HexDecoderLow.o7SegCode[0]
+oHEX1[1] <= hex2sevensegment:HexDecoderLow.o7SegCode[1]
+oHEX1[2] <= hex2sevensegment:HexDecoderLow.o7SegCode[2]
+oHEX1[3] <= hex2sevensegment:HexDecoderLow.o7SegCode[3]
+oHEX1[4] <= hex2sevensegment:HexDecoderLow.o7SegCode[4]
+oHEX1[5] <= hex2sevensegment:HexDecoderLow.o7SegCode[5]
+oHEX1[6] <= hex2sevensegment:HexDecoderLow.o7SegCode[6]
+oHEX2[0] <= hex2sevensegment:HexDecoderMid.o7SegCode[0]
+oHEX2[1] <= hex2sevensegment:HexDecoderMid.o7SegCode[1]
+oHEX2[2] <= hex2sevensegment:HexDecoderMid.o7SegCode[2]
+oHEX2[3] <= hex2sevensegment:HexDecoderMid.o7SegCode[3]
+oHEX2[4] <= hex2sevensegment:HexDecoderMid.o7SegCode[4]
+oHEX2[5] <= hex2sevensegment:HexDecoderMid.o7SegCode[5]
+oHEX2[6] <= hex2sevensegment:HexDecoderMid.o7SegCode[6]
+oHEX3[0] <= hex2sevensegment:HexDecoderHigh.o7SegCode[0]
+oHEX3[1] <= hex2sevensegment:HexDecoderHigh.o7SegCode[1]
+oHEX3[2] <= hex2sevensegment:HexDecoderHigh.o7SegCode[2]
+oHEX3[3] <= hex2sevensegment:HexDecoderHigh.o7SegCode[3]
+oHEX3[4] <= hex2sevensegment:HexDecoderHigh.o7SegCode[4]
+oHEX3[5] <= hex2sevensegment:HexDecoderHigh.o7SegCode[5]
+oHEX3[6] <= hex2sevensegment:HexDecoderHigh.o7SegCode[6]
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|EdgeDetection:EdgeDetectionA
+iClk => SyncPrev.CLK
+inResetAsync => SyncPrev.ACLR
+iEnable => SyncPrev.ENA
+iSync => oEdge.IN1
+iSync => SyncPrev.DATAIN
+oEdge <= oEdge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|EdgeDetection:EdgeDetectionB
+iClk => SyncPrev.CLK
+inResetAsync => SyncPrev.ACLR
+iEnable => SyncPrev.ENA
+iSync => oEdge.IN1
+iSync => SyncPrev.DATAIN
+oEdge <= oEdge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|StrobeGen:StrobeGen
+iClk => oStrobe~reg0.CLK
+iClk => Count[0].CLK
+iClk => Count[1].CLK
+iClk => Count[2].CLK
+iClk => Count[3].CLK
+iClk => Count[4].CLK
+iClk => Count[5].CLK
+iClk => Count[6].CLK
+iClk => Count[7].CLK
+iClk => Count[8].CLK
+iClk => Count[9].CLK
+iClk => Count[10].CLK
+iClk => Count[11].CLK
+iClk => Count[12].CLK
+iClk => Count[13].CLK
+iClk => Count[14].CLK
+iClk => Count[15].CLK
+inResetAsync => oStrobe~reg0.ACLR
+inResetAsync => Count[0].ACLR
+inResetAsync => Count[1].ACLR
+inResetAsync => Count[2].ACLR
+inResetAsync => Count[3].ACLR
+inResetAsync => Count[4].ACLR
+inResetAsync => Count[5].ACLR
+inResetAsync => Count[6].ACLR
+inResetAsync => Count[7].ACLR
+inResetAsync => Count[8].ACLR
+inResetAsync => Count[9].ACLR
+inResetAsync => Count[10].ACLR
+inResetAsync => Count[11].ACLR
+inResetAsync => Count[12].ACLR
+inResetAsync => Count[13].ACLR
+inResetAsync => Count[14].ACLR
+inResetAsync => Count[15].ACLR
+oStrobe <= oStrobe~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|ReactionGameFSM:EntityReactionFSM
+iClk => State~5.DATAIN
+inResetAsync => State~7.DATAIN
+iEnable => State.OUTPUTSELECT
+iEnable => State.OUTPUTSELECT
+iEnable => State.OUTPUTSELECT
+iEnable => State.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+oLEDs[0] <= oLEDs[0].DB_MAX_OUTPUT_PORT_TYPE
+oLEDs[1] <= oLEDs[1].DB_MAX_OUTPUT_PORT_TYPE
+oLEDs[2] <= oLEDs[2].DB_MAX_OUTPUT_PORT_TYPE
+oLEDs[3] <= oLEDs[3].DB_MAX_OUTPUT_PORT_TYPE
+oZero <= oZero.DB_MAX_OUTPUT_PORT_TYPE
+oEnableCounter <= oEnableCounter.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|Counter:CounterLow
+iClk => oCount[1]~reg0.CLK
+iClk => oCount[2]~reg0.CLK
+iClk => oCount[3]~reg0.CLK
+iClk => oCount[4]~reg0.CLK
+iEnable => oOverflow.IN0
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+inResetAsync => oCount[1]~reg0.ACLR
+inResetAsync => oCount[2]~reg0.ACLR
+inResetAsync => oCount[3]~reg0.ACLR
+inResetAsync => oCount[4]~reg0.ACLR
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oOverflow.IN1
+oOverflow <= oOverflow.DB_MAX_OUTPUT_PORT_TYPE
+oCount[1] <= oCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[2] <= oCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[3] <= oCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[4] <= oCount[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|Counter:CounterMid
+iClk => oCount[1]~reg0.CLK
+iClk => oCount[2]~reg0.CLK
+iClk => oCount[3]~reg0.CLK
+iClk => oCount[4]~reg0.CLK
+iEnable => oOverflow.IN0
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+inResetAsync => oCount[1]~reg0.ACLR
+inResetAsync => oCount[2]~reg0.ACLR
+inResetAsync => oCount[3]~reg0.ACLR
+inResetAsync => oCount[4]~reg0.ACLR
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oOverflow.IN1
+oOverflow <= oOverflow.DB_MAX_OUTPUT_PORT_TYPE
+oCount[1] <= oCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[2] <= oCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[3] <= oCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[4] <= oCount[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|Counter:CounterHigh
+iClk => oCount[1]~reg0.CLK
+iClk => oCount[2]~reg0.CLK
+iClk => oCount[3]~reg0.CLK
+iClk => oCount[4]~reg0.CLK
+iEnable => oOverflow.IN0
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+iEnable => oCount.OUTPUTSELECT
+inResetAsync => oCount[1]~reg0.ACLR
+inResetAsync => oCount[2]~reg0.ACLR
+inResetAsync => oCount[3]~reg0.ACLR
+inResetAsync => oCount[4]~reg0.ACLR
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oCount.OUTPUTSELECT
+iZero => oOverflow.IN1
+oOverflow <= oOverflow.DB_MAX_OUTPUT_PORT_TYPE
+oCount[1] <= oCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[2] <= oCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[3] <= oCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+oCount[4] <= oCount[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|Hex2SevenSegment:HexDecoderLow
+iHexValue[0] => Mux0.IN19
+iHexValue[0] => Mux1.IN19
+iHexValue[0] => Mux2.IN19
+iHexValue[0] => Mux3.IN19
+iHexValue[0] => Mux4.IN19
+iHexValue[0] => Mux5.IN19
+iHexValue[0] => Mux6.IN19
+iHexValue[1] => Mux0.IN18
+iHexValue[1] => Mux1.IN18
+iHexValue[1] => Mux2.IN18
+iHexValue[1] => Mux3.IN18
+iHexValue[1] => Mux4.IN18
+iHexValue[1] => Mux5.IN18
+iHexValue[1] => Mux6.IN18
+iHexValue[2] => Mux0.IN17
+iHexValue[2] => Mux1.IN17
+iHexValue[2] => Mux2.IN17
+iHexValue[2] => Mux3.IN17
+iHexValue[2] => Mux4.IN17
+iHexValue[2] => Mux5.IN17
+iHexValue[2] => Mux6.IN17
+iHexValue[3] => Mux0.IN16
+iHexValue[3] => Mux1.IN16
+iHexValue[3] => Mux2.IN16
+iHexValue[3] => Mux3.IN16
+iHexValue[3] => Mux4.IN16
+iHexValue[3] => Mux5.IN16
+iHexValue[3] => Mux6.IN16
+o7SegCode[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|Hex2SevenSegment:HexDecoderMid
+iHexValue[0] => Mux0.IN19
+iHexValue[0] => Mux1.IN19
+iHexValue[0] => Mux2.IN19
+iHexValue[0] => Mux3.IN19
+iHexValue[0] => Mux4.IN19
+iHexValue[0] => Mux5.IN19
+iHexValue[0] => Mux6.IN19
+iHexValue[1] => Mux0.IN18
+iHexValue[1] => Mux1.IN18
+iHexValue[1] => Mux2.IN18
+iHexValue[1] => Mux3.IN18
+iHexValue[1] => Mux4.IN18
+iHexValue[1] => Mux5.IN18
+iHexValue[1] => Mux6.IN18
+iHexValue[2] => Mux0.IN17
+iHexValue[2] => Mux1.IN17
+iHexValue[2] => Mux2.IN17
+iHexValue[2] => Mux3.IN17
+iHexValue[2] => Mux4.IN17
+iHexValue[2] => Mux5.IN17
+iHexValue[2] => Mux6.IN17
+iHexValue[3] => Mux0.IN16
+iHexValue[3] => Mux1.IN16
+iHexValue[3] => Mux2.IN16
+iHexValue[3] => Mux3.IN16
+iHexValue[3] => Mux4.IN16
+iHexValue[3] => Mux5.IN16
+iHexValue[3] => Mux6.IN16
+o7SegCode[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|ReactionGameStruct:EntityReactionGame|Hex2SevenSegment:HexDecoderHigh
+iHexValue[0] => Mux0.IN19
+iHexValue[0] => Mux1.IN19
+iHexValue[0] => Mux2.IN19
+iHexValue[0] => Mux3.IN19
+iHexValue[0] => Mux4.IN19
+iHexValue[0] => Mux5.IN19
+iHexValue[0] => Mux6.IN19
+iHexValue[1] => Mux0.IN18
+iHexValue[1] => Mux1.IN18
+iHexValue[1] => Mux2.IN18
+iHexValue[1] => Mux3.IN18
+iHexValue[1] => Mux4.IN18
+iHexValue[1] => Mux5.IN18
+iHexValue[1] => Mux6.IN18
+iHexValue[2] => Mux0.IN17
+iHexValue[2] => Mux1.IN17
+iHexValue[2] => Mux2.IN17
+iHexValue[2] => Mux3.IN17
+iHexValue[2] => Mux4.IN17
+iHexValue[2] => Mux5.IN17
+iHexValue[2] => Mux6.IN17
+iHexValue[3] => Mux0.IN16
+iHexValue[3] => Mux1.IN16
+iHexValue[3] => Mux2.IN16
+iHexValue[3] => Mux3.IN16
+iHexValue[3] => Mux4.IN16
+iHexValue[3] => Mux5.IN16
+iHexValue[3] => Mux6.IN16
+o7SegCode[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o7SegCode[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|Sync:EntitySyncB
+iClk => MightMetha[1].CLK
+iClk => MightMetha[2].CLK
+inResetAsync => MightMetha[1].ACLR
+inResetAsync => MightMetha[2].ACLR
+iAsync => MightMetha[1].DATAIN
+oSync <= MightMetha[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameOnDE1SOC|Sync:EntitySyncA
+iClk => MightMetha[1].CLK
+iClk => MightMetha[2].CLK
+inResetAsync => MightMetha[1].ACLR
+inResetAsync => MightMetha[2].ACLR
+iAsync => MightMetha[1].DATAIN
+oSync <= MightMetha[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
