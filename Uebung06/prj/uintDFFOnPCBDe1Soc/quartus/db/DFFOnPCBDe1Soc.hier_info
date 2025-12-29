@@ -10,11 +10,16 @@ LEDR[1] << d_ff:Entity_DFF.onQ
 
 |DFFOnPCBDe1Soc|D_FF:Entity_DFF
 iD => oQ.DATAB
+iD => onQ.DATAB
+iClk => onQ~reg0.CLK
 iClk => oQ~reg0.CLK
+inResetAsync => onQ~reg0.PRESET
 inResetAsync => oQ~reg0.ACLR
 iSet => oQ.OUTPUTSELECT
+iSet => onQ.OUTPUTSELECT
 iEnable => oQ.OUTPUTSELECT
+iEnable => onQ.OUTPUTSELECT
 oQ <= oQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
-onQ <= oQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
+onQ <= onQ~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

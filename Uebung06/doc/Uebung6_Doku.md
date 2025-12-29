@@ -150,7 +150,6 @@ Hier muss es sich um 2 Latches handeln, dann die beiden Zuweisungen D gets G und
 >      oQ_H    <= H;
 >    end if;
 >  end process FF_or_Latch_H; 
->```
 #### RTL Viewer
 ![RTL Viewer](./images/ArchH/RTL.png)
 
