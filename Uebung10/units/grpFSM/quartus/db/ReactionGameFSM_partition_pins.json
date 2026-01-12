@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "oLEDs[0]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDs[1]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDs[2]",
+					"strict" : false
+				},
+				{
+					"name" : "oLEDs[3]",
+					"strict" : false
+				},
+				{
+					"name" : "oZero",
+					"strict" : false
+				},
+				{
+					"name" : "oEnableCounter",
+					"strict" : false
+				},
+				{
+					"name" : "iClk",
+					"strict" : false
+				},
+				{
+					"name" : "inResetAsync",
+					"strict" : false
+				},
+				{
+					"name" : "iEnable",
+					"strict" : false
+				},
+				{
+					"name" : "iB_Sync",
+					"strict" : false
+				},
+				{
+					"name" : "iA_Sync",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

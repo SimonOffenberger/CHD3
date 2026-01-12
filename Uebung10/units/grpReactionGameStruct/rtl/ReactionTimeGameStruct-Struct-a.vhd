@@ -1,42 +1,46 @@
 -------------------------------------------------------------------------------
--- Title : FSM For a running light using 2 Processes
+-- Title : Structure of the Reaction Game
 -- Project : Chip Design
 -------------------------------------------------------------------------------
--- Author : simon Offenberger
+-- Author : Simon Offenberger
 -- Created : 2025-11-11
 -------------------------------------------------------------------------------
 -- Copyright (c) Hagenberg/Austria 2015
 -------------------------------------------------------------------------------
--- Description:
+-- Description: Interconnects the submodules of the Reaction Game
 -------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
 -- Architecure RTL 
 --------------------------------------------------------------------------------
 architecture struct of ReactionGameStruct is
-  signal AEdge : std_ulogic;
-  signal BEdge : std_ulogic;
-  signal nResetAsync: std_logic;
-  signal Clk: std_logic;
-  signal Enable: std_logic;
-  signal StrobeEnable: std_logic;
-  
-  signal Zero: std_logic;
-  signal EnableCounter: std_logic;
 
-  signal CounterOutputLow : unsigned(3 downto 0);
-  signal CounterOutputMid : unsigned(3 downto 0);
+ constant cCounterFrequency : natural := 1E3; -- 1 kHz Counter Frequency
+ 
+  -- Edge Detection for the A and B Key
+  signal AEdge          : std_ulogic;
+  signal BEdge          : std_ulogic;
+
+  signal nResetAsync    : std_logic;
+  signal Clk            : std_logic;
+  signal Enable         : std_logic;
+  signal StrobeEnable   : std_logic;
+  
+  signal Zero           : std_logic;
+  signal EnableCounter  : std_logic;
+
+  signal CounterOutputLow  : unsigned(3 downto 0);
+  signal CounterOutputMid  : unsigned(3 downto 0);
   signal CounterOutputHigh : unsigned(3 downto 0);
 
-  signal CounterLowOverflow : std_ulogic;
-  signal CounterMidOverflow : std_ulogic;
+  -- Overflow Signals for cascaded counters
+  signal CounterLowOverflow  : std_ulogic;
+  signal CounterMidOverflow  : std_ulogic;
   signal CounterHighOverflow : std_ulogic;
 
 begin
 
 nResetAsync <= inResetAsync;
-Clk <= iClk;
-Enable <= StrobeEnable;--iEnable;
+Clk         <= iClk;
+Enable      <= StrobeEnable;
 
 EdgeDetectionA : entity work.EdgeDetection(RTL)
   port map (
@@ -45,7 +49,7 @@ EdgeDetectionA : entity work.EdgeDetection(RTL)
     iEnable => StrobeEnable,
     iSync => iA_Sync,
     oEdge => AEdge
-  );
+);
 
 EdgeDetectionB : entity work.EdgeDetection(RTL)
   port map (
@@ -56,12 +60,10 @@ EdgeDetectionB : entity work.EdgeDetection(RTL)
     oEdge => BEdge
   );
 
-
-
 StrobeGen : entity work.StrobeGen(RTL)
   generic map(
     gClkFrequency    => gClockFrequency,
-    gStrobeFrequency => 1E3
+    gStrobeFrequency => cCounterFrequency
   )
   port map (
     iClk         => Clk,
@@ -72,8 +74,8 @@ StrobeGen : entity work.StrobeGen(RTL)
 -- Instantiate Entity
 EntityReactionFSM : entity work.ReactionGameFSM(RTL)
 port map (
-    iClk          => Clk,         
-    inResetAsync  => nResetAsync,    
+    iClk           => Clk,         
+    inResetAsync   => nResetAsync,    
     iA_Sync        => AEdge,        
     iB_Sync        => BEdge,        
     iEnable        => Enable,
@@ -83,16 +85,16 @@ port map (
 );
 
 CounterLow: entity work.Counter(RTL)
-port map (
-  iClk         => Clk,
-  iEnable      => EnableCounter and Enable,
-  inResetAsync => nResetAsync,
-  iZero        => Zero,
-  oCount       => CounterOutputLow,
-  oOverflow    => CounterLowOverflow
-  );
+  port map (
+    iClk         => Clk,
+    iEnable      => EnableCounter and Enable,
+    inResetAsync => nResetAsync,
+    iZero        => Zero,
+    oCount       => CounterOutputLow,
+    oOverflow    => CounterLowOverflow
+);
   
-  CounterMid: entity work.Counter(RTL)
+CounterMid: entity work.Counter(RTL)
   port map (
     iClk         => Clk,
     iEnable      => CounterLowOverflow  and EnableCounter,
@@ -102,7 +104,7 @@ port map (
     oOverflow    => CounterMidOverflow
 );
 
-  CounterHigh: entity work.Counter(RTL)
+CounterHigh: entity work.Counter(RTL)
   port map (
     iClk         => Clk,
     iEnable      => CounterMidOverflow  and EnableCounter,

@@ -25,7 +25,7 @@ architecture Testbench of Counter_TB is
     signal Clk           : std_ulogic := '0';
     signal nResetAsync   : std_ulogic;
     signal Zero          : std_ulogic := '0';
-    signal Enable          : std_ulogic := '1';
+    signal Enable        : std_ulogic := '1';
     signal Overflow      : std_ulogic;
     signal Counter       : unsigned(3 downto 0);
 begin

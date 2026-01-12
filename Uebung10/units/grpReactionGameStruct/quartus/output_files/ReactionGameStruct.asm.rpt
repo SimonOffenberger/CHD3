@@ -1,5 +1,5 @@
 Assembler report for ReactionGameStruct
-Fri Dec 19 19:24:44 2025
+Thu Jan  8 11:34:24 2026
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Dec 19 19:24:44 2025 ;
+; Assembler Status      ; Successful - Thu Jan  8 11:34:24 2026 ;
 ; Revision Name         ; ReactionGameStruct                    ;
 ; Top-level Entity Name ; ReactionGameStruct                    ;
 ; Family                ; Cyclone V                             ;
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+-------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                     ;
 +----------------+-------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00B07BF1                                                                                                  ;
-; Checksum       ; 0x00B07BF1                                                                                                  ;
+; JTAG usercode  ; 0x00B06F5D                                                                                                  ;
+; Checksum       ; 0x00B06F5D                                                                                                  ;
 +----------------+-------------------------------------------------------------------------------------------------------------+
 
 
@@ -78,13 +78,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Dec 19 19:24:40 2025
+    Info: Processing started: Thu Jan  8 11:34:21 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ReactionGameStruct -c ReactionGameStruct
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 5220 megabytes
-    Info: Processing ended: Fri Dec 19 19:24:44 2025
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Thu Jan  8 11:34:24 2026
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

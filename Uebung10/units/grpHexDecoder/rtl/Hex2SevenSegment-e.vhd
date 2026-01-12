@@ -1,11 +1,9 @@
 ---------------------------------------------------------------------------
 -- Title      : Hex-To-Seven-Segment-Decoder
--- Project    : HelloDE1
 -- Company    : FH OOe Hagenberg/A, Copyright (c) 2015
 -------------------------------------------------------------------------------
 -- Author         : Simon Offenberger
--- Date           : 30.4.2015
--- Authors
+-- Date           : 07.01.2026
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;

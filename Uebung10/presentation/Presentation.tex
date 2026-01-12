@@ -1,0 +1,211 @@
+% ======================================================================
+%  Code Review Presentation Template – CHD3 (University)
+%  Author: Simon Offenberger
+%  Date: \today
+% ======================================================================
+
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% =======================
+%   THEMES & PACKAGES
+% =======================
+\usetheme{metropolis} % clean, professional theme
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{pdfpages}
+
+
+% =======================
+%   DESIGN SETTINGS
+% =======================
+\definecolor{uniBlue}{RGB}{0,68,136}
+\definecolor{lightGray}{RGB}{245,245,245}
+\setbeamercolor{frametitle}{bg=uniBlue, fg=white}
+\setbeamercolor{title}{fg=uniBlue}
+\setbeamercolor{progress bar}{use=alerted text, fg=uniBlue}
+
+% =======================
+%   CODE LISTINGS STYLE
+% =======================
+\lstdefinelanguage{VHDL}{
+  morekeywords=[1]{
+    architecture,begin,block,body,buffer,bus,case,component,configuration,
+    constant,disconnect,downto,else,elsif,end,entity,exit,file,for,function,
+    generate,generic,group,guarded,if,in,inertial,inout,is,label,library,linkage,
+    literal,loop,map,mod,nand,new,next,nor,not,null,of,on,open,or,others,out,
+    package,port,postponed,procedure,process,pure,range,record,register,reject,
+    rem,report,return,rol,ror,select,severity,signal,shared,sla,sll,sra,srl,
+    subtype,then,to,transport,type,unaffected,units,until,use,variable,wait,
+    when,while,with,xnor,xor
+  },
+  morekeywords=[2]{std_logic,std_logic_vector,signed,unsigned,integer,boolean,natural,positive,time,real,bit,bit_vector},
+  morekeywords=[3]{ieee,std,work,math_real,numeric_std,std_logic_1164},
+  sensitive=false, % VHDL is case-insensitive
+  morecomment=[l]--,
+  morecomment=[s]{/*}{*/}, % optional (non-standard in VHDL, but sometimes used in docs)
+  morestring=[b]",
+  alsoletter={._}, % treat dot/underscore as part of identifiers (ieee.std_logic_1164)
+}
+
+\lstdefinestyle{vhdl}{
+  language=VHDL,
+  basicstyle=\ttfamily\tiny,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  breaklines=true,
+  tabsize=2,
+  commentstyle=\itshape\color{gray!70},
+  stringstyle=\color{orange!70!black},
+  keywordstyle=[1]\bfseries\color{blue!70!black},
+  keywordstyle=[2]\bfseries\color{teal!70!black},
+  keywordstyle=[3]\bfseries\color{purple!70!black},
+  numbers=left,
+  numberstyle=\tiny\color{gray!70},
+  numbersep=8pt,
+  frame=single,
+  rulecolor=\color{black!20},
+  captionpos=b
+}
+
+% =======================
+%   TITLE INFORMATION
+% =======================
+\title[CHD3 Übung 10]{Übung 10, Aufgabe 2}
+\subtitle{Reaktionszeit-Spiel fuer zwei Personen} 
+\author{Simon Offenberger S2410306027@fhooe.at} 
+\institute{FH Hagenberg}
+\date{\today}
+
+% =======================
+%   FOOTLINE ANPASSUNG
+% =======================
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.8\paperwidth,ht=2.5ex,dp=1.5ex,leftskip=1em]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.5ex,dp=1.5ex,rightskip=1em plus1fil]{date in head/foot}%
+      \usebeamerfont{date in head/foot} \hfill  \insertframenumber{} / \inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}
+
+\setbeamertemplate{navigation symbols}{} % entfernt die Navigationssymbole
+
+% =======================
+%   DOCUMENT
+% =======================
+\begin{document}
+
+% -----------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% -----------------------
+\begin{frame}{Agenda}
+    \begin{itemize}
+      \item Decoupling - Spannungsstabilisierung
+      \item GPIO - Schutzbeschaltung
+      \item IR-Emitter
+      \item Spannungsversorgung
+  \end{itemize}
+\end{frame}
+
+% -----------------------
+\begin{frame}{Finite State Machine  Moore}
+\includegraphics[width= 11 cm]{./../doc/images/Aufgabe2/FSM.png}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}[fragile]{State Register}
+\begin{lstlisting}[style=vhdl]
+  -- State Register
+  process (iClk, inResetAsync) is
+  begin
+    if (inResetAsync = not('1')) then
+      State <= Locked;
+    elsif (rising_edge(iClk)) then
+      if(iEnable = '0') then
+        State <= State; -- hold state when not enabled
+      else
+        State <= NextState;
+      end if;
+    end if;
+  end process;
+\end{lstlisting}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}[fragile]{Next State Logic}
+\begin{columns}[T,onlytextwidth]
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+-- State Transition Process
+NextStateLogic : process (State,iEnable,iA_Sync,iB_Sync) is
+begin
+
+  NextState <= State;    -- default hold state
+  oLeds <= cLEDOFF;      -- default all leds off
+  oZero <= '0';          -- default zero off
+  oEnableCounter <= '0'; -- default counter disabled
+
+  case State is
+    when Locked => 
+      if(iA_Sync = '1') then
+        NextState <= Unlocked;
+      end if;
+      oZero <= '1';                    -- reset counters
+      oLeds(cLED_LOCKED_INDEX) <= '1'; -- indicate locked state
+      
+    when Unlocked =>
+      if(iB_Sync = '1') then
+        NextState <= CountUpTime;
+      end if;
+      oLeds(cLED_UNLOCKED_INDEX) <= '1'; -- indicate locked state
+  \end{lstlisting}
+
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+    when CountUpTime =>
+      oEnableCounter <= '1'; -- enable counter
+      if(iA_Sync = '1') then
+        NextState <= ShowResult;
+      end if;
+      oLeds(cLED_COUNTUP_INDEX) <= '1'; -- indicate locked state
+      
+    when ShowResult =>
+      if(iB_Sync = '1') then
+        NextState <= Locked;
+      end if;
+      oLeds(cLED_SHOWRESULT_INDEX) <= '1'; -- indicate locked state
+      
+    when others =>
+      NextState <= cStateAllOff;
+  end case;
+
+end process;
+  \end{lstlisting}
+\end{columns}
+\end{frame}
+% -----------------------
+
+
+% -----------------------
+\begin{frame}[standout]
+  Fragen?
+\end{frame}
+
+\end{document}

@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title : Counter
+-- Title : Edge Detection Entity
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger
@@ -7,7 +7,7 @@
 -------------------------------------------------------------------------------
 -- Copyright (c) Hagenberg/Austria 2015
 -------------------------------------------------------------------------------
--- Description:
+-- Description: Edge Detection Entity to detect rising edges on a sync signal
 -------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
@@ -19,8 +19,10 @@ begin
 
 process (iClk, inResetAsync) is
   begin
+    -- asynchronous reset
     if (inResetAsync = not('1')) then
       SyncPrev <= '0';
+
     elsif (rising_edge(iClk)) then
       if(iEnable = '1') then
         SyncPrev <= iSync;
@@ -30,6 +32,7 @@ process (iClk, inResetAsync) is
     end if;
 end process;
 
+-- combinational logic for edge detection
 oEdge <= '1' when (iSync = '1' and SyncPrev = '0') else '0';
 
 end architecture RTL;

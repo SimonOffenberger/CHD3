@@ -50,8 +50,7 @@ package Global is
                                       CountUpTime,
                                       ShowResult);
   
-
-
+  
 end Global;
 
 

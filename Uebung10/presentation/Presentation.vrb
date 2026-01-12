@@ -1,0 +1,52 @@
+\frametitle{Next State Logic}
+\begin{columns}[T,onlytextwidth]
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+-- State Transition Process
+NextStateLogic : process (State,iEnable,iA_Sync,iB_Sync) is
+begin
+
+  NextState <= State;    -- default hold state
+  oLeds <= cLEDOFF;      -- default all leds off
+  oZero <= '0';          -- default zero off
+  oEnableCounter <= '0'; -- default counter disabled
+
+  case State is
+    when Locked =>
+      if(iA_Sync = '1') then
+        NextState <= Unlocked;
+      end if;
+      oZero <= '1';                    -- reset counters
+      oLeds(cLED_LOCKED_INDEX) <= '1'; -- indicate locked state
+
+    when Unlocked =>
+      if(iB_Sync = '1') then
+        NextState <= CountUpTime;
+      end if;
+      oLeds(cLED_UNLOCKED_INDEX) <= '1'; -- indicate locked state
+  \end{lstlisting}
+
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+    when CountUpTime =>
+      oEnableCounter <= '1'; -- enable counter
+      if(iA_Sync = '1') then
+        NextState <= ShowResult;
+      end if;
+      oLeds(cLED_COUNTUP_INDEX) <= '1'; -- indicate locked state
+
+    when ShowResult =>
+      if(iB_Sync = '1') then
+        NextState <= Locked;
+      end if;
+      oLeds(cLED_SHOWRESULT_INDEX) <= '1'; -- indicate locked state
+
+    when others =>
+      NextState <= cStateAllOff;
+  end case;
+
+end process;
+  \end{lstlisting}
+\end{columns}

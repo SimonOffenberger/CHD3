@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Counter
-Mon Dec 15 15:16:50 2025
+Thu Jan  8 10:58:55 2026
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -14,8 +14,8 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |Counter
- 10. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Counter
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
  13. Analysis & Synthesis Messages
@@ -45,14 +45,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Dec 15 15:16:50 2025          ;
+; Analysis & Synthesis Status     ; Successful - Thu Jan  8 10:58:55 2026          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Counter                                        ;
 ; Top-level Entity Name           ; Counter                                        ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 4                                              ;
-; Total pins                      ; 7                                              ;
+; Total pins                      ; 9                                              ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -171,22 +171,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
-; ../../grpPackages/pkgGlobal/rtl/Global-p.vhd ; yes             ; User VHDL File               ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd        ;         ;
-; ../rtl/Counter-Rtl-a.vhd                     ; yes             ; User VHDL File               ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd              ;         ;
-; ../rtl/Counter-e.vhd                         ; yes             ; User VHDL File               ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd                  ;         ;
-; lpm_divide.tdf                               ; yes             ; Megafunction                 ; c:/intelfpga/23.1lite/quartus/libraries/megafunctions/lpm_divide.tdf           ;         ;
-; abs_divider.inc                              ; yes             ; Megafunction                 ; c:/intelfpga/23.1lite/quartus/libraries/megafunctions/abs_divider.inc          ;         ;
-; sign_div_unsign.inc                          ; yes             ; Megafunction                 ; c:/intelfpga/23.1lite/quartus/libraries/megafunctions/sign_div_unsign.inc      ;         ;
-; aglobal231.inc                               ; yes             ; Megafunction                 ; c:/intelfpga/23.1lite/quartus/libraries/megafunctions/aglobal231.inc           ;         ;
-; db/lpm_divide_42m.tdf                        ; yes             ; Auto-Generated Megafunction  ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/quartus/db/lpm_divide_42m.tdf      ;         ;
-; db/sign_div_unsign_7kh.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/quartus/db/sign_div_unsign_7kh.tdf ;         ;
-; db/alt_u_div_kse.tdf                         ; yes             ; Auto-Generated Megafunction  ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/quartus/db/alt_u_div_kse.tdf       ;         ;
-+----------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; ../../grpPackages/pkgGlobal/rtl/Global-p.vhd ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd ;         ;
+; ../rtl/Counter-Rtl-a.vhd                     ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd       ;         ;
+; ../rtl/Counter-e.vhd                         ; yes             ; User VHDL File  ; C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd           ;         ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -194,39 +187,35 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 5              ;
+; Estimate of Logic utilization (ALMs needed) ; 4              ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 10             ;
+; Combinational ALUT usage for logic          ; 6              ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 0              ;
-;     -- 5 input functions                    ; 0              ;
-;     -- 4 input functions                    ; 2              ;
-;     -- <=3 input functions                  ; 8              ;
+;     -- 6 input functions                    ; 1              ;
+;     -- 5 input functions                    ; 2              ;
+;     -- 4 input functions                    ; 1              ;
+;     -- <=3 input functions                  ; 2              ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 4              ;
 ;                                             ;                ;
-; I/O pins                                    ; 7              ;
+; I/O pins                                    ; 9              ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; oCount[1]~reg0 ;
-; Maximum fan-out                             ; 9              ;
-; Total fan-out                               ; 60             ;
-; Average fan-out                             ; 2.14           ;
+; Maximum fan-out                             ; 6              ;
+; Total fan-out                               ; 54             ;
+; Average fan-out                             ; 1.93           ;
 +---------------------------------------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                             ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                      ; Entity Name         ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Counter                               ; 10 (4)              ; 4 (4)                     ; 0                 ; 0          ; 7    ; 0            ; |Counter                                                                                                 ; Counter             ; work         ;
-;    |lpm_divide:Mod0|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Counter|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_42m:auto_generated|  ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Counter|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
-;          |sign_div_unsign_7kh:divider| ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Counter|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;             |alt_u_div_kse:divider|    ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Counter|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |Counter                   ; 6 (6)               ; 4 (4)                     ; 0                 ; 0          ; 9    ; 0            ; |Counter            ; Counter     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -237,12 +226,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 4     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Counter|oCount[1]~reg0    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -255,52 +253,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 4                           ;
-;     ENA CLR SLD       ; 4                           ;
-; arriav_lcell_comb     ; 10                          ;
-;     arith             ; 6                           ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
+;     ENA CLR           ; 4                           ;
+; arriav_lcell_comb     ; 6                           ;
+;     normal            ; 6                           ;
+;         2 data inputs ; 2                           ;
 ;         4 data inputs ; 1                           ;
-;     normal            ; 4                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 1                           ;
-; boundary_port         ; 7                           ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 1                           ;
+; boundary_port         ; 9                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.40                        ;
-; Average LUT depth     ; 1.01                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -319,42 +288,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Dec 15 15:16:44 2025
+    Info: Processing started: Thu Jan  8 10:58:35 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Counter -c Counter
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
 Info (12021): Found 2 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung10/units/grppackages/pkgglobal/rtl/global-p.vhd
     Info (12022): Found design unit 1: Global File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd Line: 20
-    Info (12022): Found design unit 2: Global-body File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd Line: 53
+    Info (12022): Found design unit 2: Global-body File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpPackages/pkgGlobal/rtl/Global-p.vhd Line: 58
 Info (12021): Found 1 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung10/units/grpcounter/rtl/counter-rtl-a.vhd
     Info (12022): Found design unit 1: Counter-RTL File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file /hsd_sem_3/chd3/uebung10/units/grpcounter/rtl/counter-e.vhd
-    Info (12023): Found entity 1: Counter File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd Line: 22
+    Info (12023): Found entity 1: Counter File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-e.vhd Line: 20
 Info (12127): Elaborating entity "Counter" for the top level hierarchy
-Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd Line: 27
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd Line: 27
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/rtl/Counter-Rtl-a.vhd Line: 27
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_42m.tdf
-    Info (12023): Found entity 1: lpm_divide_42m File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/quartus/db/lpm_divide_42m.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/quartus/db/sign_div_unsign_7kh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
-    Info (12023): Found entity 1: alt_u_div_kse File: C:/HSD_SEM_3/CHD3/Uebung10/units/grpCounter/quartus/db/alt_u_div_kse.tdf Line: 23
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 10 logic cells
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4959 megabytes
-    Info: Processing ended: Mon Dec 15 15:16:50 2025
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 4957 megabytes
+    Info: Processing ended: Thu Jan  8 10:58:55 2026
+    Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:14
 
 

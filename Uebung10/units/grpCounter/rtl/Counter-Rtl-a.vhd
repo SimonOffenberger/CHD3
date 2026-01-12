@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Title : Shift Register
+-- Title : Counter Entity
 -- Project : Chip Design
 -------------------------------------------------------------------------------
 -- Author : simon Offenberger
@@ -7,21 +7,21 @@
 -------------------------------------------------------------------------------
 -- Copyright (c) Hagenberg/Austria 2015
 -------------------------------------------------------------------------------
--- Description:
+-- Description: Counter Entity with a Overflow Output for Cascading
 -------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
--- Architecure RTL 
+-- Architecture RTL 
 --------------------------------------------------------------------------------
 architecture RTL of Counter is
 begin
 
-  -- Kombinatorisches Carry für die Kaskade (1 wenn dieser Zähler JETZT überlaufen würde)
+  -- combinational logic for overflow output
   oOverflow <= '1' when (iEnable = '1' and iZero = '0' and oCount = gCounterOverflowVal - 1) else '0';
 
   process(iClk, inResetAsync) is
   begin
-    -- asynchroner Reset (angenommen aktiv-low)
+    -- asynchronous reset
     if inResetAsync = not('1') then
       oCount    <= (others => '0');
 
@@ -37,6 +37,7 @@ begin
           oCount <= oCount + 1;
         end if;
       end if;
+      
     end if;
   end process;
 end architecture RTL;

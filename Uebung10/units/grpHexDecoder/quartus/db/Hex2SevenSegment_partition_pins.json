@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o7SegCode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o7SegCode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o7SegCode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o7SegCode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o7SegCode[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o7SegCode[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o7SegCode[6]",
+					"strict" : false
+				},
+				{
+					"name" : "iHexValue[0]",
+					"strict" : false
+				},
+				{
+					"name" : "iHexValue[1]",
+					"strict" : false
+				},
+				{
+					"name" : "iHexValue[2]",
+					"strict" : false
+				},
+				{
+					"name" : "iHexValue[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

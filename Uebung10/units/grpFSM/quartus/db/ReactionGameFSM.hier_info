@@ -1,0 +1,27 @@
+|ReactionGameFSM
+iClk => State~5.DATAIN
+inResetAsync => State~7.DATAIN
+iEnable => State.OUTPUTSELECT
+iEnable => State.OUTPUTSELECT
+iEnable => State.OUTPUTSELECT
+iEnable => State.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+iB_Sync => NextState.OUTPUTSELECT
+oLEDs[0] << oLEDs[0].DB_MAX_OUTPUT_PORT_TYPE
+oLEDs[1] << oLEDs[1].DB_MAX_OUTPUT_PORT_TYPE
+oLEDs[2] << oLEDs[2].DB_MAX_OUTPUT_PORT_TYPE
+oLEDs[3] << oLEDs[3].DB_MAX_OUTPUT_PORT_TYPE
+oZero << oZero.DB_MAX_OUTPUT_PORT_TYPE
+oEnableCounter << oEnableCounter.DB_MAX_OUTPUT_PORT_TYPE
+
+

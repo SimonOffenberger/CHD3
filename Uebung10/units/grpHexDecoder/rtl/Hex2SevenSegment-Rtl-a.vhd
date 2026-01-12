@@ -4,8 +4,7 @@
 -- Company    : FH OOe Hagenberg/A, Copyright (c) 2015
 -------------------------------------------------------------------------------
 -- Author         : Simon Offenberger
--- Date           : 30.4.2015
--- Authors are
+-- Date           : 07.01.2026
 -------------------------------------------------------------------------------
 
 architecture Rtl of Hex2SevenSegment is

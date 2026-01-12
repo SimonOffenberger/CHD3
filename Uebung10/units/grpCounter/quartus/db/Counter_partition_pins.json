@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "oOverflow",
+					"strict" : false
+				},
+				{
 					"name" : "oCount[1]",
 					"strict" : false
 				},
@@ -20,15 +24,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "iEnable",
+					"strict" : false
+				},
+				{
+					"name" : "iZero",
+					"strict" : false
+				},
+				{
 					"name" : "iClk",
 					"strict" : false
 				},
 				{
 					"name" : "inResetAsync",
-					"strict" : false
-				},
-				{
-					"name" : "iEnable",
 					"strict" : false
 				}
 			]

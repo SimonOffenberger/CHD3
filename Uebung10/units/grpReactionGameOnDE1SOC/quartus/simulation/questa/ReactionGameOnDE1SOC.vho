@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "12/20/2025 16:46:17"
+-- DATE "01/08/2026 12:02:06"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -39,12 +39,12 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	ReactionGameOnDE1SOC IS
     PORT (
 	CLOCK_50 : IN std_logic;
-	SW : IN std_logic_vector(0 DOWNTO 0);
-	KEY : IN std_logic_vector(1 DOWNTO 0);
-	LEDR : BUFFER std_logic_vector(3 DOWNTO 0);
-	HEX0 : BUFFER std_logic_vector(6 DOWNTO 0);
-	HEX1 : BUFFER std_logic_vector(6 DOWNTO 0);
-	HEX2 : BUFFER std_logic_vector(6 DOWNTO 0)
+	SW : IN IEEE.STD_LOGIC_1164.std_ulogic_vector(0 DOWNTO 0);
+	KEY : IN IEEE.STD_LOGIC_1164.std_ulogic_vector(1 DOWNTO 0);
+	LEDR : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(3 DOWNTO 0);
+	HEX0 : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(6 DOWNTO 0);
+	HEX1 : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(6 DOWNTO 0);
+	HEX2 : OUT IEEE.STD_LOGIC_1164.std_ulogic_vector(6 DOWNTO 0)
 	);
 END ReactionGameOnDE1SOC;
 
@@ -103,7 +103,7 @@ SIGNAL \CLOCK_50~inputCLKENA0_outclk\ : std_logic;
 SIGNAL \EntityReactionGame|EntityReactionFSM|State.Unlocked~0_combout\ : std_logic;
 SIGNAL \SW[0]~input_o\ : std_logic;
 SIGNAL \KEY[1]~input_o\ : std_logic;
-SIGNAL \EntitySyncA|MightMetha[1]~0_combout\ : std_logic;
+SIGNAL \EntitySyncB|MightMetha[1]~0_combout\ : std_logic;
 SIGNAL \EntityReactionGame|StrobeGen|Add0~61_sumout\ : std_logic;
 SIGNAL \EntityReactionGame|StrobeGen|Add0~62\ : std_logic;
 SIGNAL \EntityReactionGame|StrobeGen|Add0~57_sumout\ : std_logic;
@@ -149,7 +149,7 @@ SIGNAL \EntityReactionGame|StrobeGen|oStrobe~q\ : std_logic;
 SIGNAL \EntityReactionGame|EdgeDetectionB|SyncPrev~q\ : std_logic;
 SIGNAL \EntityReactionGame|EntityReactionFSM|State~14_combout\ : std_logic;
 SIGNAL \KEY[0]~input_o\ : std_logic;
-SIGNAL \EntitySyncB|MightMetha[1]~0_combout\ : std_logic;
+SIGNAL \EntitySyncA|MightMetha[1]~0_combout\ : std_logic;
 SIGNAL \EntityReactionGame|EdgeDetectionA|SyncPrev~q\ : std_logic;
 SIGNAL \EntityReactionGame|EntityReactionFSM|State~15_combout\ : std_logic;
 SIGNAL \EntityReactionGame|EntityReactionFSM|State.Unlocked~q\ : std_logic;
@@ -203,120 +203,120 @@ SIGNAL \EntityReactionGame|HexDecoderHigh|Mux2~0_combout\ : std_logic;
 SIGNAL \EntityReactionGame|HexDecoderHigh|Mux1~0_combout\ : std_logic;
 SIGNAL \EntityReactionGame|HexDecoderHigh|Mux0~0_combout\ : std_logic;
 SIGNAL \EntityReactionGame|StrobeGen|Count\ : std_logic_vector(15 DOWNTO 0);
-SIGNAL \EntitySyncA|MightMetha\ : std_logic_vector(2 DOWNTO 1);
-SIGNAL \EntityReactionGame|CounterLow|oCount\ : std_logic_vector(4 DOWNTO 1);
 SIGNAL \EntitySyncB|MightMetha\ : std_logic_vector(2 DOWNTO 1);
+SIGNAL \EntityReactionGame|CounterLow|oCount\ : std_logic_vector(4 DOWNTO 1);
+SIGNAL \EntitySyncA|MightMetha\ : std_logic_vector(2 DOWNTO 1);
 SIGNAL \EntityReactionGame|CounterMid|oCount\ : std_logic_vector(4 DOWNTO 1);
 SIGNAL \EntityReactionGame|CounterHigh|oCount\ : std_logic_vector(4 DOWNTO 1);
 SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count\ : std_logic_vector(15 DOWNTO 0);
-SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State.Unlocked~q\ : std_logic;
-SIGNAL \EntityReactionGame|HexDecoderLow|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State.Locked~q\ : std_logic;
+SIGNAL \EntityReactionGame|CounterHigh|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
+SIGNAL \EntitySyncB|ALT_INV_MightMetha\ : std_logic_vector(2 DOWNTO 2);
+SIGNAL \EntityReactionGame|CounterMid|ALT_INV_Equal0~0_combout\ : std_logic;
 SIGNAL \EntityReactionGame|CounterLow|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
 SIGNAL \EntityReactionGame|CounterMid|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
-SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State.Locked~q\ : std_logic;
-SIGNAL \EntityReactionGame|HexDecoderMid|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \EntityReactionGame|CounterHigh|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
-SIGNAL \EntityReactionGame|HexDecoderHigh|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State.CountUpTime~q\ : std_logic;
-SIGNAL \EntityReactionGame|EdgeDetectionB|ALT_INV_SyncPrev~q\ : std_logic;
-SIGNAL \EntitySyncA|ALT_INV_MightMetha\ : std_logic_vector(2 DOWNTO 2);
-SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State.ShowResult~q\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[2]~DUPLICATE_q\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[11]~DUPLICATE_q\ : std_logic;
-SIGNAL \EntitySyncB|ALT_INV_MightMetha\ : std_logic_vector(2 DOWNTO 2);
-SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[15]~DUPLICATE_q\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[1]~DUPLICATE_q\ : std_logic;
-SIGNAL \EntityReactionGame|CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\ : std_logic;
-SIGNAL \EntityReactionGame|CounterMid|ALT_INV_oCount[3]~DUPLICATE_q\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_oStrobe~q\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Equal0~1_combout\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Equal0~2_combout\ : std_logic;
-SIGNAL \EntityReactionGame|CounterLow|ALT_INV_oCount[3]~DUPLICATE_q\ : std_logic;
-SIGNAL \EntityReactionGame|CounterLow|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \ALT_INV_KEY[1]~input_o\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[3]~DUPLICATE_q\ : std_logic;
 SIGNAL \EntityReactionGame|EdgeDetectionA|ALT_INV_SyncPrev~q\ : std_logic;
-SIGNAL \EntityReactionGame|CounterMid|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \EntityReactionGame|CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \EntityReactionGame|CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|HexDecoderLow|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State.ShowResult~q\ : std_logic;
+SIGNAL \EntityReactionGame|HexDecoderHigh|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \EntityReactionGame|EdgeDetectionB|ALT_INV_SyncPrev~q\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_oStrobe~q\ : std_logic;
+SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State.CountUpTime~q\ : std_logic;
+SIGNAL \EntityReactionGame|HexDecoderMid|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \EntitySyncA|ALT_INV_MightMetha\ : std_logic_vector(2 DOWNTO 2);
 SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State~12_combout\ : std_logic;
-SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[12]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|CounterLow|ALT_INV_Equal0~0_combout\ : std_logic;
+SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State.Unlocked~q\ : std_logic;
 SIGNAL \EntityReactionGame|EntityReactionFSM|ALT_INV_State~14_combout\ : std_logic;
+SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[12]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[1]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|CounterMid|ALT_INV_oCount[3]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Equal0~1_combout\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[11]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|CounterLow|ALT_INV_oCount[3]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\ : std_logic;
+SIGNAL \ALT_INV_KEY[1]~input_o\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Equal0~0_combout\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[2]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[3]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Equal0~2_combout\ : std_logic;
+SIGNAL \EntityReactionGame|StrobeGen|ALT_INV_Count[15]~DUPLICATE_q\ : std_logic;
+SIGNAL \EntityReactionGame|CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\ : std_logic;
 
 BEGIN
 
 ww_CLOCK_50 <= CLOCK_50;
-ww_SW <= SW;
-ww_KEY <= KEY;
-LEDR <= ww_LEDR;
-HEX0 <= ww_HEX0;
-HEX1 <= ww_HEX1;
-HEX2 <= ww_HEX2;
+ww_SW <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(SW);
+ww_KEY <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(KEY);
+LEDR <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_LEDR);
+HEX0 <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_HEX0);
+HEX1 <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_HEX1);
+HEX2 <= IEEE.STD_LOGIC_1164.TO_STDULOGICVECTOR(ww_HEX2);
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(4) <= NOT \EntityReactionGame|StrobeGen|Count\(4);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(14) <= NOT \EntityReactionGame|StrobeGen|Count\(14);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(2) <= NOT \EntityReactionGame|StrobeGen|Count\(2);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(13) <= NOT \EntityReactionGame|StrobeGen|Count\(13);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(10) <= NOT \EntityReactionGame|StrobeGen|Count\(10);
 \EntityReactionGame|StrobeGen|ALT_INV_Count\(15) <= NOT \EntityReactionGame|StrobeGen|Count\(15);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(7) <= NOT \EntityReactionGame|StrobeGen|Count\(7);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(6) <= NOT \EntityReactionGame|StrobeGen|Count\(6);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(8) <= NOT \EntityReactionGame|StrobeGen|Count\(8);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(14) <= NOT \EntityReactionGame|StrobeGen|Count\(14);
 \EntityReactionGame|StrobeGen|ALT_INV_Count\(5) <= NOT \EntityReactionGame|StrobeGen|Count\(5);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(3) <= NOT \EntityReactionGame|StrobeGen|Count\(3);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(1) <= NOT \EntityReactionGame|StrobeGen|Count\(1);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(11) <= NOT \EntityReactionGame|StrobeGen|Count\(11);
-\EntityReactionGame|StrobeGen|ALT_INV_Count\(0) <= NOT \EntityReactionGame|StrobeGen|Count\(0);
 \EntityReactionGame|StrobeGen|ALT_INV_Count\(12) <= NOT \EntityReactionGame|StrobeGen|Count\(12);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(1) <= NOT \EntityReactionGame|StrobeGen|Count\(1);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(13) <= NOT \EntityReactionGame|StrobeGen|Count\(13);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(8) <= NOT \EntityReactionGame|StrobeGen|Count\(8);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(4) <= NOT \EntityReactionGame|StrobeGen|Count\(4);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(6) <= NOT \EntityReactionGame|StrobeGen|Count\(6);
 \EntityReactionGame|StrobeGen|ALT_INV_Count\(9) <= NOT \EntityReactionGame|StrobeGen|Count\(9);
-\EntityReactionGame|EntityReactionFSM|ALT_INV_State.Unlocked~q\ <= NOT \EntityReactionGame|EntityReactionFSM|State.Unlocked~q\;
-\EntityReactionGame|HexDecoderLow|ALT_INV_Mux0~0_combout\ <= NOT \EntityReactionGame|HexDecoderLow|Mux0~0_combout\;
-\EntityReactionGame|CounterLow|ALT_INV_oCount\(1) <= NOT \EntityReactionGame|CounterLow|oCount\(1);
-\EntityReactionGame|CounterLow|ALT_INV_oCount\(3) <= NOT \EntityReactionGame|CounterLow|oCount\(3);
-\EntityReactionGame|CounterLow|ALT_INV_oCount\(4) <= NOT \EntityReactionGame|CounterLow|oCount\(4);
-\EntityReactionGame|CounterMid|ALT_INV_oCount\(4) <= NOT \EntityReactionGame|CounterMid|oCount\(4);
-\EntityReactionGame|CounterMid|ALT_INV_oCount\(2) <= NOT \EntityReactionGame|CounterMid|oCount\(2);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(2) <= NOT \EntityReactionGame|StrobeGen|Count\(2);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(3) <= NOT \EntityReactionGame|StrobeGen|Count\(3);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(11) <= NOT \EntityReactionGame|StrobeGen|Count\(11);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(10) <= NOT \EntityReactionGame|StrobeGen|Count\(10);
 \EntityReactionGame|EntityReactionFSM|ALT_INV_State.Locked~q\ <= NOT \EntityReactionGame|EntityReactionFSM|State.Locked~q\;
-\EntityReactionGame|HexDecoderMid|ALT_INV_Mux0~0_combout\ <= NOT \EntityReactionGame|HexDecoderMid|Mux0~0_combout\;
-\EntityReactionGame|CounterHigh|ALT_INV_oCount\(1) <= NOT \EntityReactionGame|CounterHigh|oCount\(1);
-\EntityReactionGame|CounterHigh|ALT_INV_oCount\(2) <= NOT \EntityReactionGame|CounterHigh|oCount\(2);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(0) <= NOT \EntityReactionGame|StrobeGen|Count\(0);
+\EntityReactionGame|StrobeGen|ALT_INV_Count\(7) <= NOT \EntityReactionGame|StrobeGen|Count\(7);
 \EntityReactionGame|CounterHigh|ALT_INV_oCount\(3) <= NOT \EntityReactionGame|CounterHigh|oCount\(3);
-\EntityReactionGame|CounterHigh|ALT_INV_oCount\(4) <= NOT \EntityReactionGame|CounterHigh|oCount\(4);
-\EntityReactionGame|CounterMid|ALT_INV_oCount\(3) <= NOT \EntityReactionGame|CounterMid|oCount\(3);
-\EntityReactionGame|CounterMid|ALT_INV_oCount\(1) <= NOT \EntityReactionGame|CounterMid|oCount\(1);
-\EntityReactionGame|HexDecoderHigh|ALT_INV_Mux0~0_combout\ <= NOT \EntityReactionGame|HexDecoderHigh|Mux0~0_combout\;
-\EntityReactionGame|EntityReactionFSM|ALT_INV_State.CountUpTime~q\ <= NOT \EntityReactionGame|EntityReactionFSM|State.CountUpTime~q\;
-\EntityReactionGame|EdgeDetectionB|ALT_INV_SyncPrev~q\ <= NOT \EntityReactionGame|EdgeDetectionB|SyncPrev~q\;
-\EntitySyncA|ALT_INV_MightMetha\(2) <= NOT \EntitySyncA|MightMetha\(2);
-\EntityReactionGame|EntityReactionFSM|ALT_INV_State.ShowResult~q\ <= NOT \EntityReactionGame|EntityReactionFSM|State.ShowResult~q\;
-\EntityReactionGame|CounterLow|ALT_INV_oCount\(2) <= NOT \EntityReactionGame|CounterLow|oCount\(2);
-\EntityReactionGame|StrobeGen|ALT_INV_Count[2]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[2]~DUPLICATE_q\;
-\EntityReactionGame|StrobeGen|ALT_INV_Count[11]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[11]~DUPLICATE_q\;
 \EntitySyncB|ALT_INV_MightMetha\(2) <= NOT \EntitySyncB|MightMetha\(2);
-\ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
-\EntityReactionGame|StrobeGen|ALT_INV_Count[15]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[15]~DUPLICATE_q\;
-\EntityReactionGame|StrobeGen|ALT_INV_Count[1]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[1]~DUPLICATE_q\;
-\EntityReactionGame|CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterHigh|oCount[3]~DUPLICATE_q\;
-\EntityReactionGame|CounterMid|ALT_INV_oCount[3]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterMid|oCount[3]~DUPLICATE_q\;
-\EntityReactionGame|StrobeGen|ALT_INV_oStrobe~q\ <= NOT \EntityReactionGame|StrobeGen|oStrobe~q\;
-\EntityReactionGame|StrobeGen|ALT_INV_Equal0~1_combout\ <= NOT \EntityReactionGame|StrobeGen|Equal0~1_combout\;
-\EntityReactionGame|StrobeGen|ALT_INV_Equal0~2_combout\ <= NOT \EntityReactionGame|StrobeGen|Equal0~2_combout\;
-\EntityReactionGame|CounterLow|ALT_INV_oCount[3]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterLow|oCount[3]~DUPLICATE_q\;
-\EntityReactionGame|CounterLow|ALT_INV_Equal0~0_combout\ <= NOT \EntityReactionGame|CounterLow|Equal0~0_combout\;
-\ALT_INV_KEY[1]~input_o\ <= NOT \KEY[1]~input_o\;
-\EntityReactionGame|StrobeGen|ALT_INV_Count[3]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[3]~DUPLICATE_q\;
-\EntityReactionGame|EdgeDetectionA|ALT_INV_SyncPrev~q\ <= NOT \EntityReactionGame|EdgeDetectionA|SyncPrev~q\;
 \EntityReactionGame|CounterMid|ALT_INV_Equal0~0_combout\ <= NOT \EntityReactionGame|CounterMid|Equal0~0_combout\;
-\EntityReactionGame|CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterLow|oCount[1]~DUPLICATE_q\;
-\EntityReactionGame|StrobeGen|ALT_INV_Equal0~0_combout\ <= NOT \EntityReactionGame|StrobeGen|Equal0~0_combout\;
-\EntityReactionGame|CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterMid|oCount[1]~DUPLICATE_q\;
+\EntityReactionGame|CounterLow|ALT_INV_oCount\(1) <= NOT \EntityReactionGame|CounterLow|oCount\(1);
+\EntityReactionGame|CounterMid|ALT_INV_oCount\(4) <= NOT \EntityReactionGame|CounterMid|oCount\(4);
+\EntityReactionGame|EdgeDetectionA|ALT_INV_SyncPrev~q\ <= NOT \EntityReactionGame|EdgeDetectionA|SyncPrev~q\;
+\EntityReactionGame|CounterMid|ALT_INV_oCount\(1) <= NOT \EntityReactionGame|CounterMid|oCount\(1);
+\EntityReactionGame|HexDecoderLow|ALT_INV_Mux0~0_combout\ <= NOT \EntityReactionGame|HexDecoderLow|Mux0~0_combout\;
+\EntityReactionGame|CounterHigh|ALT_INV_oCount\(1) <= NOT \EntityReactionGame|CounterHigh|oCount\(1);
+\EntityReactionGame|EntityReactionFSM|ALT_INV_State.ShowResult~q\ <= NOT \EntityReactionGame|EntityReactionFSM|State.ShowResult~q\;
+\EntityReactionGame|CounterMid|ALT_INV_oCount\(2) <= NOT \EntityReactionGame|CounterMid|oCount\(2);
+\EntityReactionGame|CounterLow|ALT_INV_oCount\(3) <= NOT \EntityReactionGame|CounterLow|oCount\(3);
+\EntityReactionGame|HexDecoderHigh|ALT_INV_Mux0~0_combout\ <= NOT \EntityReactionGame|HexDecoderHigh|Mux0~0_combout\;
+\EntityReactionGame|CounterHigh|ALT_INV_oCount\(2) <= NOT \EntityReactionGame|CounterHigh|oCount\(2);
+\EntityReactionGame|EdgeDetectionB|ALT_INV_SyncPrev~q\ <= NOT \EntityReactionGame|EdgeDetectionB|SyncPrev~q\;
+\EntityReactionGame|StrobeGen|ALT_INV_oStrobe~q\ <= NOT \EntityReactionGame|StrobeGen|oStrobe~q\;
+\EntityReactionGame|EntityReactionFSM|ALT_INV_State.CountUpTime~q\ <= NOT \EntityReactionGame|EntityReactionFSM|State.CountUpTime~q\;
+\EntityReactionGame|HexDecoderMid|ALT_INV_Mux0~0_combout\ <= NOT \EntityReactionGame|HexDecoderMid|Mux0~0_combout\;
+\EntitySyncA|ALT_INV_MightMetha\(2) <= NOT \EntitySyncA|MightMetha\(2);
 \EntityReactionGame|EntityReactionFSM|ALT_INV_State~12_combout\ <= NOT \EntityReactionGame|EntityReactionFSM|State~12_combout\;
-\EntityReactionGame|StrobeGen|ALT_INV_Count[12]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[12]~DUPLICATE_q\;
+\EntityReactionGame|CounterMid|ALT_INV_oCount\(3) <= NOT \EntityReactionGame|CounterMid|oCount\(3);
+\EntityReactionGame|CounterLow|ALT_INV_Equal0~0_combout\ <= NOT \EntityReactionGame|CounterLow|Equal0~0_combout\;
+\EntityReactionGame|CounterLow|ALT_INV_oCount\(4) <= NOT \EntityReactionGame|CounterLow|oCount\(4);
+\EntityReactionGame|EntityReactionFSM|ALT_INV_State.Unlocked~q\ <= NOT \EntityReactionGame|EntityReactionFSM|State.Unlocked~q\;
+\EntityReactionGame|CounterHigh|ALT_INV_oCount\(4) <= NOT \EntityReactionGame|CounterHigh|oCount\(4);
 \EntityReactionGame|EntityReactionFSM|ALT_INV_State~14_combout\ <= NOT \EntityReactionGame|EntityReactionFSM|State~14_combout\;
+\EntityReactionGame|CounterLow|ALT_INV_oCount\(2) <= NOT \EntityReactionGame|CounterLow|oCount\(2);
+\ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
+\EntityReactionGame|StrobeGen|ALT_INV_Count[12]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[12]~DUPLICATE_q\;
+\EntityReactionGame|StrobeGen|ALT_INV_Count[1]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[1]~DUPLICATE_q\;
+\EntityReactionGame|CounterMid|ALT_INV_oCount[3]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterMid|oCount[3]~DUPLICATE_q\;
+\EntityReactionGame|CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterHigh|oCount[3]~DUPLICATE_q\;
+\EntityReactionGame|StrobeGen|ALT_INV_Equal0~1_combout\ <= NOT \EntityReactionGame|StrobeGen|Equal0~1_combout\;
+\EntityReactionGame|StrobeGen|ALT_INV_Count[11]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[11]~DUPLICATE_q\;
+\EntityReactionGame|CounterLow|ALT_INV_oCount[3]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterLow|oCount[3]~DUPLICATE_q\;
+\EntityReactionGame|CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterMid|oCount[1]~DUPLICATE_q\;
+\ALT_INV_KEY[1]~input_o\ <= NOT \KEY[1]~input_o\;
+\EntityReactionGame|StrobeGen|ALT_INV_Equal0~0_combout\ <= NOT \EntityReactionGame|StrobeGen|Equal0~0_combout\;
+\EntityReactionGame|StrobeGen|ALT_INV_Count[2]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[2]~DUPLICATE_q\;
+\EntityReactionGame|StrobeGen|ALT_INV_Count[3]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[3]~DUPLICATE_q\;
+\EntityReactionGame|StrobeGen|ALT_INV_Equal0~2_combout\ <= NOT \EntityReactionGame|StrobeGen|Equal0~2_combout\;
+\EntityReactionGame|StrobeGen|ALT_INV_Count[15]~DUPLICATE_q\ <= NOT \EntityReactionGame|StrobeGen|Count[15]~DUPLICATE_q\;
+\EntityReactionGame|CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\ <= NOT \EntityReactionGame|CounterLow|oCount[1]~DUPLICATE_q\;
 
 -- Location: IOOBUF_X52_Y0_N2
 \LEDR[0]~output\ : cyclonev_io_obuf
@@ -706,9 +706,9 @@ PORT MAP (
 	o => \KEY[1]~input_o\);
 
 -- Location: LABCELL_X42_Y2_N15
-\EntitySyncA|MightMetha[1]~0\ : cyclonev_lcell_comb
+\EntitySyncB|MightMetha[1]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntitySyncA|MightMetha[1]~0_combout\ = ( !\KEY[1]~input_o\ )
+-- \EntitySyncB|MightMetha[1]~0_combout\ = ( !\KEY[1]~input_o\ )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -718,10 +718,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataf => \ALT_INV_KEY[1]~input_o\,
-	combout => \EntitySyncA|MightMetha[1]~0_combout\);
+	combout => \EntitySyncB|MightMetha[1]~0_combout\);
 
 -- Location: FF_X42_Y2_N17
-\EntitySyncA|MightMetha[1]\ : dffeas
+\EntitySyncB|MightMetha[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -729,14 +729,14 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~inputCLKENA0_outclk\,
-	d => \EntitySyncA|MightMetha[1]~0_combout\,
+	d => \EntitySyncB|MightMetha[1]~0_combout\,
 	clrn => \SW[0]~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \EntitySyncA|MightMetha\(1));
+	q => \EntitySyncB|MightMetha\(1));
 
 -- Location: FF_X42_Y2_N5
-\EntitySyncA|MightMetha[2]\ : dffeas
+\EntitySyncB|MightMetha[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -744,12 +744,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~inputCLKENA0_outclk\,
-	asdata => \EntitySyncA|MightMetha\(1),
+	asdata => \EntitySyncB|MightMetha\(1),
 	clrn => \SW[0]~input_o\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \EntitySyncA|MightMetha\(2));
+	q => \EntitySyncB|MightMetha\(2));
 
 -- Location: MLABCELL_X78_Y3_N0
 \EntityReactionGame|StrobeGen|Add0~61\ : cyclonev_lcell_comb
@@ -1493,7 +1493,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~inputCLKENA0_outclk\,
-	asdata => \EntitySyncA|MightMetha\(2),
+	asdata => \EntitySyncB|MightMetha\(2),
 	clrn => \SW[0]~input_o\,
 	sload => VCC,
 	ena => \EntityReactionGame|StrobeGen|oStrobe~q\,
@@ -1504,8 +1504,8 @@ PORT MAP (
 -- Location: LABCELL_X64_Y2_N6
 \EntityReactionGame|EntityReactionFSM|State~14\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityReactionGame|EntityReactionFSM|State~14_combout\ = ( \EntityReactionGame|StrobeGen|oStrobe~q\ & ( \EntityReactionGame|EntityReactionFSM|State.Unlocked~q\ & ( (!\EntityReactionGame|EdgeDetectionB|SyncPrev~q\ & \EntitySyncA|MightMetha\(2)) ) ) ) # ( 
--- \EntityReactionGame|StrobeGen|oStrobe~q\ & ( !\EntityReactionGame|EntityReactionFSM|State.Unlocked~q\ & ( (!\EntityReactionGame|EntityReactionFSM|State.ShowResult~q\) # ((!\EntityReactionGame|EdgeDetectionB|SyncPrev~q\ & \EntitySyncA|MightMetha\(2))) ) ) 
+-- \EntityReactionGame|EntityReactionFSM|State~14_combout\ = ( \EntityReactionGame|StrobeGen|oStrobe~q\ & ( \EntityReactionGame|EntityReactionFSM|State.Unlocked~q\ & ( (!\EntityReactionGame|EdgeDetectionB|SyncPrev~q\ & \EntitySyncB|MightMetha\(2)) ) ) ) # ( 
+-- \EntityReactionGame|StrobeGen|oStrobe~q\ & ( !\EntityReactionGame|EntityReactionFSM|State.Unlocked~q\ & ( (!\EntityReactionGame|EntityReactionFSM|State.ShowResult~q\) # ((!\EntityReactionGame|EdgeDetectionB|SyncPrev~q\ & \EntitySyncB|MightMetha\(2))) ) ) 
 -- )
 
 -- pragma translate_off
@@ -1517,7 +1517,7 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \EntityReactionGame|EntityReactionFSM|ALT_INV_State.ShowResult~q\,
 	datab => \EntityReactionGame|EdgeDetectionB|ALT_INV_SyncPrev~q\,
-	datac => \EntitySyncA|ALT_INV_MightMetha\(2),
+	datac => \EntitySyncB|ALT_INV_MightMetha\(2),
 	datae => \EntityReactionGame|StrobeGen|ALT_INV_oStrobe~q\,
 	dataf => \EntityReactionGame|EntityReactionFSM|ALT_INV_State.Unlocked~q\,
 	combout => \EntityReactionGame|EntityReactionFSM|State~14_combout\);
@@ -1534,9 +1534,9 @@ PORT MAP (
 	o => \KEY[0]~input_o\);
 
 -- Location: LABCELL_X42_Y2_N18
-\EntitySyncB|MightMetha[1]~0\ : cyclonev_lcell_comb
+\EntitySyncA|MightMetha[1]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntitySyncB|MightMetha[1]~0_combout\ = ( !\KEY[0]~input_o\ )
+-- \EntitySyncA|MightMetha[1]~0_combout\ = ( !\KEY[0]~input_o\ )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1546,10 +1546,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataf => \ALT_INV_KEY[0]~input_o\,
-	combout => \EntitySyncB|MightMetha[1]~0_combout\);
+	combout => \EntitySyncA|MightMetha[1]~0_combout\);
 
 -- Location: FF_X42_Y2_N20
-\EntitySyncB|MightMetha[1]\ : dffeas
+\EntitySyncA|MightMetha[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1557,14 +1557,14 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~inputCLKENA0_outclk\,
-	d => \EntitySyncB|MightMetha[1]~0_combout\,
+	d => \EntitySyncA|MightMetha[1]~0_combout\,
 	clrn => \SW[0]~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \EntitySyncB|MightMetha\(1));
+	q => \EntitySyncA|MightMetha\(1));
 
 -- Location: FF_X42_Y2_N38
-\EntitySyncB|MightMetha[2]\ : dffeas
+\EntitySyncA|MightMetha[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1572,12 +1572,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~inputCLKENA0_outclk\,
-	asdata => \EntitySyncB|MightMetha\(1),
+	asdata => \EntitySyncA|MightMetha\(1),
 	clrn => \SW[0]~input_o\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \EntitySyncB|MightMetha\(2));
+	q => \EntitySyncA|MightMetha\(2));
 
 -- Location: FF_X64_Y2_N14
 \EntityReactionGame|EdgeDetectionA|SyncPrev\ : dffeas
@@ -1588,7 +1588,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK_50~inputCLKENA0_outclk\,
-	asdata => \EntitySyncB|MightMetha\(2),
+	asdata => \EntitySyncA|MightMetha\(2),
 	clrn => \SW[0]~input_o\,
 	sload => VCC,
 	ena => \EntityReactionGame|StrobeGen|oStrobe~q\,
@@ -1599,8 +1599,8 @@ PORT MAP (
 -- Location: LABCELL_X61_Y2_N33
 \EntityReactionGame|EntityReactionFSM|State~15\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityReactionGame|EntityReactionFSM|State~15_combout\ = ( \EntitySyncB|MightMetha\(2) & ( (\EntityReactionGame|EntityReactionFSM|State~14_combout\ & (((!\EntityReactionGame|EdgeDetectionA|SyncPrev~q\) # 
--- (\EntityReactionGame|EntityReactionFSM|State.ShowResult~q\)) # (\EntityReactionGame|EntityReactionFSM|State.Unlocked~q\))) ) ) # ( !\EntitySyncB|MightMetha\(2) & ( (\EntityReactionGame|EntityReactionFSM|State~14_combout\ & 
+-- \EntityReactionGame|EntityReactionFSM|State~15_combout\ = ( \EntitySyncA|MightMetha\(2) & ( (\EntityReactionGame|EntityReactionFSM|State~14_combout\ & (((!\EntityReactionGame|EdgeDetectionA|SyncPrev~q\) # 
+-- (\EntityReactionGame|EntityReactionFSM|State.ShowResult~q\)) # (\EntityReactionGame|EntityReactionFSM|State.Unlocked~q\))) ) ) # ( !\EntitySyncA|MightMetha\(2) & ( (\EntityReactionGame|EntityReactionFSM|State~14_combout\ & 
 -- ((\EntityReactionGame|EntityReactionFSM|State.ShowResult~q\) # (\EntityReactionGame|EntityReactionFSM|State.Unlocked~q\))) ) )
 
 -- pragma translate_off
@@ -1614,7 +1614,7 @@ PORT MAP (
 	datab => \EntityReactionGame|EntityReactionFSM|ALT_INV_State~14_combout\,
 	datac => \EntityReactionGame|EdgeDetectionA|ALT_INV_SyncPrev~q\,
 	datad => \EntityReactionGame|EntityReactionFSM|ALT_INV_State.ShowResult~q\,
-	dataf => \EntitySyncB|ALT_INV_MightMetha\(2),
+	dataf => \EntitySyncA|ALT_INV_MightMetha\(2),
 	combout => \EntityReactionGame|EntityReactionFSM|State~15_combout\);
 
 -- Location: FF_X61_Y2_N31
@@ -1636,9 +1636,9 @@ PORT MAP (
 -- Location: LABCELL_X64_Y2_N12
 \EntityReactionGame|EntityReactionFSM|State~12\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityReactionGame|EntityReactionFSM|State~12_combout\ = ( \EntitySyncB|MightMetha\(2) & ( \EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( (\EntityReactionGame|StrobeGen|oStrobe~q\ & 
--- ((!\EntityReactionGame|EntityReactionFSM|State.CountUpTime~q\) # (!\EntityReactionGame|EdgeDetectionA|SyncPrev~q\))) ) ) ) # ( !\EntitySyncB|MightMetha\(2) & ( \EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( 
--- (!\EntityReactionGame|EntityReactionFSM|State.CountUpTime~q\ & \EntityReactionGame|StrobeGen|oStrobe~q\) ) ) ) # ( \EntitySyncB|MightMetha\(2) & ( !\EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( (!\EntityReactionGame|EdgeDetectionA|SyncPrev~q\ 
+-- \EntityReactionGame|EntityReactionFSM|State~12_combout\ = ( \EntitySyncA|MightMetha\(2) & ( \EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( (\EntityReactionGame|StrobeGen|oStrobe~q\ & 
+-- ((!\EntityReactionGame|EntityReactionFSM|State.CountUpTime~q\) # (!\EntityReactionGame|EdgeDetectionA|SyncPrev~q\))) ) ) ) # ( !\EntitySyncA|MightMetha\(2) & ( \EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( 
+-- (!\EntityReactionGame|EntityReactionFSM|State.CountUpTime~q\ & \EntityReactionGame|StrobeGen|oStrobe~q\) ) ) ) # ( \EntitySyncA|MightMetha\(2) & ( !\EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( (!\EntityReactionGame|EdgeDetectionA|SyncPrev~q\ 
 -- & \EntityReactionGame|StrobeGen|oStrobe~q\) ) ) )
 
 -- pragma translate_off
@@ -1651,14 +1651,14 @@ PORT MAP (
 	dataa => \EntityReactionGame|EntityReactionFSM|ALT_INV_State.CountUpTime~q\,
 	datab => \EntityReactionGame|EdgeDetectionA|ALT_INV_SyncPrev~q\,
 	datac => \EntityReactionGame|StrobeGen|ALT_INV_oStrobe~q\,
-	datae => \EntitySyncB|ALT_INV_MightMetha\(2),
+	datae => \EntitySyncA|ALT_INV_MightMetha\(2),
 	dataf => \EntityReactionGame|EntityReactionFSM|ALT_INV_State.Locked~q\,
 	combout => \EntityReactionGame|EntityReactionFSM|State~12_combout\);
 
 -- Location: LABCELL_X64_Y2_N33
 \EntityReactionGame|EntityReactionFSM|State~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityReactionGame|EntityReactionFSM|State~13_combout\ = ( \EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( (\EntityReactionGame|EntityReactionFSM|State~12_combout\ & (((\EntitySyncA|MightMetha\(2) & 
+-- \EntityReactionGame|EntityReactionFSM|State~13_combout\ = ( \EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( (\EntityReactionGame|EntityReactionFSM|State~12_combout\ & (((\EntitySyncB|MightMetha\(2) & 
 -- !\EntityReactionGame|EdgeDetectionB|SyncPrev~q\)) # (\EntityReactionGame|EntityReactionFSM|State.CountUpTime~q\))) ) ) # ( !\EntityReactionGame|EntityReactionFSM|State.Locked~q\ & ( \EntityReactionGame|EntityReactionFSM|State~12_combout\ ) )
 
 -- pragma translate_off
@@ -1668,7 +1668,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \EntitySyncA|ALT_INV_MightMetha\(2),
+	dataa => \EntitySyncB|ALT_INV_MightMetha\(2),
 	datab => \EntityReactionGame|EntityReactionFSM|ALT_INV_State~12_combout\,
 	datac => \EntityReactionGame|EdgeDetectionB|ALT_INV_SyncPrev~q\,
 	datad => \EntityReactionGame|EntityReactionFSM|ALT_INV_State.CountUpTime~q\,

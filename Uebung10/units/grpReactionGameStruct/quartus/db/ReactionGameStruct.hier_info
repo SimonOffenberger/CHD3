@@ -1,17 +1,20 @@
 |ReactionGameStruct
+iClk => edgedetection:EdgeDetectionA.iClk
+iClk => edgedetection:EdgeDetectionB.iClk
 iClk => strobegen:StrobeGen.iClk
 iClk => reactiongamefsm:EntityReactionFSM.iClk
 iClk => counter:CounterLow.iClk
 iClk => counter:CounterMid.iClk
 iClk => counter:CounterHigh.iClk
+inResetAsync => edgedetection:EdgeDetectionA.inResetAsync
+inResetAsync => edgedetection:EdgeDetectionB.inResetAsync
 inResetAsync => strobegen:StrobeGen.inResetAsync
 inResetAsync => reactiongamefsm:EntityReactionFSM.inResetAsync
 inResetAsync => counter:CounterLow.inResetAsync
 inResetAsync => counter:CounterMid.inResetAsync
 inResetAsync => counter:CounterHigh.inResetAsync
-iEnable => ~NO_FANOUT~
-iA_Sync => reactiongamefsm:EntityReactionFSM.iA_Sync
-iB_Sync => reactiongamefsm:EntityReactionFSM.iB_Sync
+iA_Sync => edgedetection:EdgeDetectionA.iSync
+iB_Sync => edgedetection:EdgeDetectionB.iSync
 oLEDs[0] << reactiongamefsm:EntityReactionFSM.oLEDs[0]
 oLEDs[1] << reactiongamefsm:EntityReactionFSM.oLEDs[1]
 oLEDs[2] << reactiongamefsm:EntityReactionFSM.oLEDs[2]
@@ -37,6 +40,24 @@ oHEX3[3] << hex2sevensegment:HexDecoderHigh.o7SegCode[3]
 oHEX3[4] << hex2sevensegment:HexDecoderHigh.o7SegCode[4]
 oHEX3[5] << hex2sevensegment:HexDecoderHigh.o7SegCode[5]
 oHEX3[6] << hex2sevensegment:HexDecoderHigh.o7SegCode[6]
+
+
+|ReactionGameStruct|EdgeDetection:EdgeDetectionA
+iClk => SyncPrev.CLK
+inResetAsync => SyncPrev.ACLR
+iEnable => SyncPrev.ENA
+iSync => oEdge.IN1
+iSync => SyncPrev.DATAIN
+oEdge <= oEdge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ReactionGameStruct|EdgeDetection:EdgeDetectionB
+iClk => SyncPrev.CLK
+inResetAsync => SyncPrev.ACLR
+iEnable => SyncPrev.ENA
+iSync => oEdge.IN1
+iSync => SyncPrev.DATAIN
+oEdge <= oEdge.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ReactionGameStruct|StrobeGen:StrobeGen
@@ -88,6 +109,8 @@ iA_Sync => NextState.OUTPUTSELECT
 iA_Sync => NextState.OUTPUTSELECT
 iA_Sync => NextState.OUTPUTSELECT
 iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
+iA_Sync => NextState.OUTPUTSELECT
 iB_Sync => NextState.OUTPUTSELECT
 iB_Sync => NextState.OUTPUTSELECT
 iB_Sync => NextState.OUTPUTSELECT
@@ -103,27 +126,25 @@ oEnableCounter <= oEnableCounter.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ReactionGameStruct|Counter:CounterLow
-iClk => oOverflow~reg0.CLK
 iClk => oCount[1]~reg0.CLK
 iClk => oCount[2]~reg0.CLK
 iClk => oCount[3]~reg0.CLK
 iClk => oCount[4]~reg0.CLK
+iEnable => oOverflow.IN0
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
-iEnable => oOverflow.OUTPUTSELECT
 inResetAsync => oCount[1]~reg0.ACLR
 inResetAsync => oCount[2]~reg0.ACLR
 inResetAsync => oCount[3]~reg0.ACLR
 inResetAsync => oCount[4]~reg0.ACLR
-inResetAsync => oOverflow~reg0.ENA
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
-iZero => oOverflow.OUTPUTSELECT
-oOverflow <= oOverflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
+iZero => oOverflow.IN1
+oOverflow <= oOverflow.DB_MAX_OUTPUT_PORT_TYPE
 oCount[1] <= oCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oCount[2] <= oCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oCount[3] <= oCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -131,27 +152,25 @@ oCount[4] <= oCount[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ReactionGameStruct|Counter:CounterMid
-iClk => oOverflow~reg0.CLK
 iClk => oCount[1]~reg0.CLK
 iClk => oCount[2]~reg0.CLK
 iClk => oCount[3]~reg0.CLK
 iClk => oCount[4]~reg0.CLK
+iEnable => oOverflow.IN0
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
-iEnable => oOverflow.OUTPUTSELECT
 inResetAsync => oCount[1]~reg0.ACLR
 inResetAsync => oCount[2]~reg0.ACLR
 inResetAsync => oCount[3]~reg0.ACLR
 inResetAsync => oCount[4]~reg0.ACLR
-inResetAsync => oOverflow~reg0.ENA
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
-iZero => oOverflow.OUTPUTSELECT
-oOverflow <= oOverflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
+iZero => oOverflow.IN1
+oOverflow <= oOverflow.DB_MAX_OUTPUT_PORT_TYPE
 oCount[1] <= oCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oCount[2] <= oCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oCount[3] <= oCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -159,27 +178,25 @@ oCount[4] <= oCount[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ReactionGameStruct|Counter:CounterHigh
-iClk => oOverflow~reg0.CLK
 iClk => oCount[1]~reg0.CLK
 iClk => oCount[2]~reg0.CLK
 iClk => oCount[3]~reg0.CLK
 iClk => oCount[4]~reg0.CLK
+iEnable => oOverflow.IN0
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
 iEnable => oCount.OUTPUTSELECT
-iEnable => oOverflow.OUTPUTSELECT
 inResetAsync => oCount[1]~reg0.ACLR
 inResetAsync => oCount[2]~reg0.ACLR
 inResetAsync => oCount[3]~reg0.ACLR
 inResetAsync => oCount[4]~reg0.ACLR
-inResetAsync => oOverflow~reg0.ENA
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
 iZero => oCount.OUTPUTSELECT
-iZero => oOverflow.OUTPUTSELECT
-oOverflow <= oOverflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
+iZero => oOverflow.IN1
+oOverflow <= oOverflow.DB_MAX_OUTPUT_PORT_TYPE
 oCount[1] <= oCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oCount[2] <= oCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oCount[3] <= oCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE

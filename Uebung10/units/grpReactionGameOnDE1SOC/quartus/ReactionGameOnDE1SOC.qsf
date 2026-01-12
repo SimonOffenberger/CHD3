@@ -170,6 +170,12 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to *
 set_instance_assignment -name SLEW_RATE 0 -to LEDR
 set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to LEDR
+set_instance_assignment -name SLEW_RATE 0 -to HEX0
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to HEX0
+set_instance_assignment -name SLEW_RATE 0 -to HEX1
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to HEX1
+set_instance_assignment -name SLEW_RATE 0 -to HEX2
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to HEX2
 
 	# start DESIGN_PARTITION(Top)
 	# ---------------------------
