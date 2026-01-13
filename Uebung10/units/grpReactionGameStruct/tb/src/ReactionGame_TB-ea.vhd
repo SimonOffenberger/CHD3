@@ -22,7 +22,7 @@ entity FSM_TB is
 end FSM_TB;
 
 architecture Testbench of FSM_TB is
-    signal Clk           : std_ulogic := '0';
+    signal clk           : std_ulogic := '0';
     signal A_Sync        : std_ulogic := '0';
     signal B_Sync        : std_ulogic := '0';
     signal nResetAsync   : std_ulogic;
@@ -31,8 +31,6 @@ architecture Testbench of FSM_TB is
     signal HEX1          : std_ulogic_vector(6 downto 0);
     signal HEX2          : std_ulogic_vector(6 downto 0);
 begin
-
-
 
 Entity_FSM : entity work.ReactionGameStruct(struct)
   generic map(

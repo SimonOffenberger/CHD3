@@ -19,6 +19,8 @@
 \usepackage{listings}
 \usepackage{pdfpages}
 \usepackage{tikz}
+\usepackage{hyperref}
+
 
 
 % =======================
@@ -114,10 +116,13 @@
 % -----------------------
 \begin{frame}{Agenda}
     \begin{itemize}
-      \item Decoupling - Spannungsstabilisierung
-      \item GPIO - Schutzbeschaltung
-      \item IR-Emitter
-      \item Spannungsversorgung
+      \item Struktur des Reaktionszeit-Spiels
+      \item Edge Detection
+      \item Finite State Machine
+      \item Counter
+      \item Hex to 7-Segment Decoder
+      \item Simulation Reaction Time Game
+      \item Ressource Summary
   \end{itemize}
 \end{frame}
 
@@ -285,12 +290,24 @@ end process;
     % Zweites Bild unten rechts darüber
     \node[anchor=south east, xshift=-5mm, yshift=5mm]
       at (current page.south east) {
-        \includegraphics[width=5cm]{./../doc/images/Aufgabe2/StateMachineViewer (1).png}
+        \includegraphics[width=7cm]{./../doc/images/Aufgabe2/StateMachineViewer (1).png}
       };
   \end{tikzpicture}
 \end{frame}
 % -----------------------
 
+% -----------------------
+\begin{frame}[fragile]{Finite State Machine RTL-Viewer}
+  \begin{columns}[T,onlytextwidth]
+    \scriptsize
+    \column{0.49\textwidth}
+    \includegraphics[height=6cm]{./../doc/images/Aufgabe2/FSM_Ressource.png}
+      \scriptsize
+  \column{0.45\textwidth}
+  \includegraphics[width=6cm]{./../doc/images/Aufgabe2/FSM_F_Max.png}
+\end{columns}
+\end{frame}
+% -----------------------
 
 % -----------------------
 \begin{frame}[fragile]{Counter}
@@ -323,15 +340,11 @@ begin
 
   process(iClk, inResetAsync) is
   begin
-    -- asynchronous reset
     if inResetAsync = not('1') then
       oCount    <= (others => '0');
-
     elsif rising_edge(iClk) then
-
       if iZero = '1' then
         oCount <= (others => '0');
-
       elsif iEnable = '1' then
         if oCount = gCounterOverflowVal - 1 then
           oCount    <= (others => '0');
@@ -339,7 +352,6 @@ begin
           oCount <= oCount + 1;
         end if;
       end if;
-      
     end if;
   end process;
 end architecture RTL;
@@ -401,21 +413,54 @@ end Rtl;
 \end{frame}
 % -----------------------
 
+\begin{frame}{Simulation Reaction Time Game}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/GameWave (2).png}
+\end{frame}
+% -----------------------
+
+\begin{frame}{Simulation Reaction Time Game}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/GameWave (1).png}
+\end{frame}
+
+
+\begin{frame}{PCB Adapter}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/PCB_Adapter_RTL_Cropped.png}
+\end{frame}
+
+
 % -----------------------
 \begin{frame}{Ressource Summery}
-\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/PCB_Adapter_Ressource.png}
+  \begin{itemize}
+    \item SyncStage: 2 x 2 Flip-Flops 
+    \item EdgeDetection: 2 x 1 Flip-Flops 
+    \item StrobeGen: 17 Flip-Flops 
+    \item FSM:       4 Flip-Flops 
+    \item Counter: 3 x 4 Flip-Flops 
+  \end{itemize}
+  Gesamt Anzahl Flip-Flops: 39
 \end{frame}
 % -----------------------
 
 % -----------------------
 \begin{frame}{Ressource Summery}
-\begin{itemize}
-  \item SyncStage: 2 x 2 Flip-Flops 
-  \item EdgeDetection: 2 x 1 Flip-Flops 
-  \item StrobeGen: 17 Flip-Flops 
-  \item FSM:       4 Flip-Flops 
-  \item Counter: 3 x 4 Flip-Flops 
-\end{itemize}
+  \begin{columns}[T,onlytextwidth]
+    \scriptsize
+    \column{0.49\textwidth}
+    \includegraphics[width=7cm]{./../doc/images/Aufgabe2/PCB_Adapter_Ressource.png}
+      \scriptsize
+  \column{0.45\textwidth}
+  \includegraphics[width=6cm]{./../doc/images/Aufgabe2/PCB_Adapter_FMAX.png}
+\end{columns}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}{Test am DE1 SOC FPGA Board}
+
+% ...
+
+\href{./ReactionTimeGame.MOV}{\beamergotobutton{Video öffnen}}
+
 \end{frame}
 % -----------------------
 

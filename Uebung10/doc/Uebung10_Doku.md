@@ -1,7 +1,7 @@
 # Übung 10 Simon Offenberger S2410306027  
 ## Aufgabe 1 Generierte Taktsignale
 
-### Die Flanken des generierten Taktes werden stets zeitlich hinter den Flanken des ursprünglichen Taktes liegen. Warum?
+#### Die Flanken des generierten Taktes werden stets zeitlich hinter den Flanken des ursprünglichen Taktes liegen. Warum?
 Um diese Frage zu beantworten muss zurest verstanden werden wie ein abgeleiteter Takt erzeugt wird.
 Hier gibt es die Möglichkeit zur Taktteilung mittels eines Counter.
 
@@ -26,10 +26,7 @@ weisen.
 
 ### Timing Diagramm Aufgabe 1.2
 
->Besonders problematisch ist jedoch der Umstand zu sehen, dass die Taktflanken des sen-
->denden Systems nun knapp vor denen des empfangenden Systems liegen. Wie kann es
->hierdurch zu Problemen kommen? Verwenden Sie ein Timing-Diagramm zur Verdeutli-
->chung!
+>Besonders problematisch ist jedoch der Umstand zu sehen, dass die Taktflanken des sendenden Systems nun knapp vor denen des empfangenden Systems liegen. Wie kann eshierdurch zu Problemen kommen? Verwenden Sie ein Timing-Diagramm zur Verdeutlichung!
 
 ![Timing Diagramm](./images/Aufgabe1/TimingDiagramm.png)
 
@@ -72,7 +69,7 @@ Da die Ausgänge in Abhängigkeit von den Zuständen beschalten werden, somit gi
 >  signal State          : T_REACTION_TIME_GAME_STATE;  -- current state
 >  constant cStateAllOff : T_REACTION_TIME_GAME_STATE := Locked; -- all leds off
 >
->  constant cLEDOFF               : std_ulogic_vector>(oLEDs'range) := (others => '0');
+>  constant cLEDOFF               : std_ulogic_vector(oLEDs'range) := (others => '0');
 >  constant cLED_LOCKED_INDEX     : integer := 0;
 >  constant cLED_UNLOCKED_INDEX   : integer := 1;
 >  constant cLED_COUNTUP_INDEX    : integer := 2;
@@ -94,7 +91,7 @@ Da die Ausgänge in Abhängigkeit von den Zuständen beschalten werden, somit gi
 >  end process;
 >
 >  -- State Transition Process
->  NextStateLogic : process (State,iEnable,iA_Sync,iB_Sync) >is
+>  NextStateLogic : process (State,iEnable,iA_Sync,iB_Sync) is
 >  begin
 >
 >    NextState <= State;    -- default hold state
@@ -139,6 +136,15 @@ Da die Ausgänge in Abhängigkeit von den Zuständen beschalten werden, somit gi
 
 Hier wurde die FSM mittels 2 Processes realisiert, somit entsteht eine klare Trennung zwischen StateRegister und NextState und Output Logik.
 Für die Abbildung des States wurde ein Enum verwendet.
+
+#### Enumeration für State
+
+>```vhdl
+>  type T_REACTION_TIME_GAME_STATE is (Locked,
+>                                      Unlocked,
+>                                      CountUpTime,
+>                                      ShowResult);
+
 
 Auch in der Implementierung handelt es sich um eine Moor FSM.
 (Output = f(State))
@@ -311,9 +317,9 @@ Hier werden 4 Register benötigt, für die 4 Bits zur Abbildung des maximalen Z�
 
 ![Counter-Ressource](./images/Aufgabe2/CounterRessource%20(1).png)
 
-#### FMAX FSM
+#### FMAX Counter
 
-![FSM-FMAX](./images/Aufgabe2/FSM_F_Max.png)
+![FSM-FMAX](./images/Aufgabe2/Counter%20FMAX.png)
 
 #### Ressourcen Verbrauch Hex Decoder
 
@@ -413,13 +419,13 @@ Nun wurden alle Komponenten des Reaktionszeitspiels in eine Struktur zusammengef
 >  signal AEdge          : std_ulogic;
 >  signal BEdge          : std_ulogic;
 >
->  signal nResetAsync    : std_logic;
->  signal Clk            : std_logic;
->  signal Enable         : std_logic;
->  signal StrobeEnable   : std_logic;
+>  signal nResetAsync    : std_ulogic;
+>  signal Clk            : std_ulogic;
+>  signal Enable         : std_ulogic;
+>  signal StrobeEnable   : std_ulogic;
 >  
->  signal Zero           : std_logic;
->  signal EnableCounter  : std_logic;
+>  signal Zero           : std_ulogic;
+>  signal EnableCounter  : std_ulogic;
 >
 >  signal CounterOutputLow  : unsigned(3 downto 0);
 >  signal CounterOutputMid  : unsigned(3 downto 0);
@@ -531,8 +537,8 @@ Nun wurden alle Komponenten des Reaktionszeitspiels in eine Struktur zusammengef
 
 #### Simulation
 
-![Wave](./images/Aufgabe2/GameWave%20(1).png)
 ![Wave](./images/Aufgabe2/GameWave%20(2).png)
+![Wave](./images/Aufgabe2/GameWave%20(1).png)
 
 Mittels Analyse der Waveform wurde die Funktion des Spiels nachgewiesen.
 
@@ -548,7 +554,7 @@ Mittels Analyse der Waveform wurde die Funktion des Spiels nachgewiesen.
 
 ![Counter-Ressource](./images/Aufgabe2/Game_Struct_Ressource.png)
 
-#### FMAX FSM
+#### FMAX Game Struct
 
 ![FSM-FMAX](./images/Aufgabe2/Game_Struct_FMAX.png)
 
@@ -649,3 +655,9 @@ Mittels Analyse der Waveform wurde die Funktion des Spiels nachgewiesen.
 #### FMAX FSM
 
 ![FSM-FMAX](./images/Aufgabe2/PCB_Adapter_FMAX.png)
+
+#### Upload to DE1 SOC
+
+![Board](./images/Aufgabe2/Board.jpeg)
+
+

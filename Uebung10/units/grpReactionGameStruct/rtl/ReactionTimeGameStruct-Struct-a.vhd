@@ -19,13 +19,13 @@ architecture struct of ReactionGameStruct is
   signal AEdge          : std_ulogic;
   signal BEdge          : std_ulogic;
 
-  signal nResetAsync    : std_logic;
-  signal Clk            : std_logic;
-  signal Enable         : std_logic;
-  signal StrobeEnable   : std_logic;
+  signal nResetAsync    : std_ulogic;
+  signal Clk            : std_ulogic;
+  signal Enable         : std_ulogic;
+  signal StrobeEnable   : std_ulogic;
   
-  signal Zero           : std_logic;
-  signal EnableCounter  : std_logic;
+  signal Zero           : std_ulogic;
+  signal EnableCounter  : std_ulogic;
 
   signal CounterOutputLow  : unsigned(3 downto 0);
   signal CounterOutputMid  : unsigned(3 downto 0);

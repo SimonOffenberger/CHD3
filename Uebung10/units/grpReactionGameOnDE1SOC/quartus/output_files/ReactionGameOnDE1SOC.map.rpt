@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ReactionGameOnDE1SOC
-Tue Jan 13 09:33:56 2026
+Tue Jan 13 19:55:38 2026
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jan 13 09:33:56 2026          ;
+; Analysis & Synthesis Status     ; Successful - Tue Jan 13 19:55:38 2026          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; ReactionGameOnDE1SOC                           ;
 ; Top-level Entity Name           ; ReactionGameOnDE1SOC                           ;
@@ -416,7 +416,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -426,7 +426,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Jan 13 09:33:45 2026
+    Info: Processing started: Tue Jan 13 19:55:24 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ReactionGameOnDE1SOC -c ReactionGameOnDE1SOC
 Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file /hsd_sem_3/chd3/uebung10/units/grpedgedetection/rtl/edgedetection-rtl-a.vhd
@@ -481,9 +481,9 @@ Info (21057): Implemented 102 device resources after synthesis - the final resou
     Info (21059): Implemented 25 output pins
     Info (21061): Implemented 73 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4957 megabytes
-    Info: Processing ended: Tue Jan 13 09:33:56 2026
-    Info: Elapsed time: 00:00:11
+    Info: Peak virtual memory: 4949 megabytes
+    Info: Processing ended: Tue Jan 13 19:55:38 2026
+    Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:24
 
 

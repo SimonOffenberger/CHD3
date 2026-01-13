@@ -498,6 +498,24 @@ OUTPUT Presentation.vrb
 INPUT .\Presentation.vrb
 INPUT .\Presentation.vrb
 INPUT Presentation.vrb
+INPUT .\..\doc\images\Aufgabe2\FSM_Ressource.png
+INPUT .\..\doc\images\Aufgabe2\FSM_Ressource.png
+INPUT .\..\doc\images\Aufgabe2\FSM_Ressource.png
+INPUT .\..\doc\images\Aufgabe2\FSM_Ressource.png
+INPUT .\..\doc\images\Aufgabe2\FSM_Ressource.png
+INPUT .\..\doc\images\Aufgabe2\FSM_Ressource.png
+INPUT .\..\doc\images\Aufgabe2\FSM_Ressource.png
+INPUT .\..\doc\images\Aufgabe2\FSM_F_Max.png
+INPUT .\..\doc\images\Aufgabe2\FSM_F_Max.png
+INPUT .\..\doc\images\Aufgabe2\FSM_F_Max.png
+INPUT .\..\doc\images\Aufgabe2\FSM_F_Max.png
+INPUT .\..\doc\images\Aufgabe2\FSM_F_Max.png
+INPUT .\..\doc\images\Aufgabe2\FSM_F_Max.png
+INPUT .\..\doc\images\Aufgabe2\FSM_F_Max.png
+OUTPUT Presentation.vrb
+INPUT .\Presentation.vrb
+INPUT .\Presentation.vrb
+INPUT Presentation.vrb
 INPUT .\..\doc\images\Aufgabe2\Counter RTL.png
 INPUT .\..\doc\images\Aufgabe2\Counter RTL.png
 INPUT .\..\doc\images\Aufgabe2\Counter RTL.png
@@ -509,6 +527,27 @@ OUTPUT Presentation.vrb
 INPUT .\Presentation.vrb
 INPUT .\Presentation.vrb
 INPUT Presentation.vrb
+INPUT .\..\doc\images\Aufgabe2\GameWave (2).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (2).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (2).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (2).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (2).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (2).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (2).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (1).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (1).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (1).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (1).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (1).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (1).png
+INPUT .\..\doc\images\Aufgabe2\GameWave (1).png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_RTL_Cropped.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_RTL_Cropped.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_RTL_Cropped.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_RTL_Cropped.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_RTL_Cropped.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_RTL_Cropped.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_RTL_Cropped.png
 INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_Ressource.png
 INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_Ressource.png
 INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_Ressource.png
@@ -516,6 +555,13 @@ INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_Ressource.png
 INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_Ressource.png
 INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_Ressource.png
 INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_Ressource.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_FMAX.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_FMAX.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_FMAX.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_FMAX.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_FMAX.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_FMAX.png
+INPUT .\..\doc\images\Aufgabe2\PCB_Adapter_FMAX.png
 OUTPUT Presentation.nav
 OUTPUT Presentation.toc
 OUTPUT Presentation.snm
