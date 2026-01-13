@@ -1,52 +1,43 @@
-\frametitle{Next State Logic}
+\frametitle{Hex to 7-Segment Decoder}
 \begin{columns}[T,onlytextwidth]
   \column{0.49\textwidth}
   \scriptsize
   \begin{lstlisting}[style=vhdl]
--- State Transition Process
-NextStateLogic : process (State,iEnable,iA_Sync,iB_Sync) is
-begin
+architecture Rtl of Hex2SevenSegment is
 
-  NextState <= State;    -- default hold state
-  oLeds <= cLEDOFF;      -- default all leds off
-  oZero <= '0';          -- default zero off
-  oEnableCounter <= '0'; -- default counter disabled
-
-  case State is
-    when Locked =>
-      if(iA_Sync = '1') then
-        NextState <= Unlocked;
-      end if;
-      oZero <= '1';                    -- reset counters
-      oLeds(cLED_LOCKED_INDEX) <= '1'; -- indicate locked state
-
-    when Unlocked =>
-      if(iB_Sync = '1') then
-        NextState <= CountUpTime;
-      end if;
-      oLeds(cLED_UNLOCKED_INDEX) <= '1'; -- indicate locked state
+  function ToSevSeg(cValue : std_ulogic_vector(3 downto 0))
+    return std_ulogic_vector is
+  begin
+    case cValue(3 downto 0) is
+      when "0000" => return "0111111";
+      when "0001" => return "0000110";
+      when "0010" => return "1011011";
+      when "0011" => return "1001111";
+      when "0100" => return "1100110";
+      when "0101" => return "1101101";
+      when "0110" => return "1111101";
+      when "0111" => return "0000111";
+      when "1000" => return "1111111";
+      when "1001" => return "1101111";
+      when "1010" => return "1110111";
+      when "1011" => return "1111100";
+      when "1100" => return "0111001";
+      when "1101" => return "1011110";
+      when "1110" => return "1111001";
+      when "1111" => return "1110001";
+      when others => return "XXXXXXX";
+    end case;
+  end ToSevSeg;
   \end{lstlisting}
 
   \column{0.49\textwidth}
   \scriptsize
   \begin{lstlisting}[style=vhdl]
-    when CountUpTime =>
-      oEnableCounter <= '1'; -- enable counter
-      if(iA_Sync = '1') then
-        NextState <= ShowResult;
-      end if;
-      oLeds(cLED_COUNTUP_INDEX) <= '1'; -- indicate locked state
+begin
 
-    when ShowResult =>
-      if(iB_Sync = '1') then
-        NextState <= Locked;
-      end if;
-      oLeds(cLED_SHOWRESULT_INDEX) <= '1'; -- indicate locked state
+  o7SegCode <= ToSevSeg(iHexValue);
 
-    when others =>
-      NextState <= cStateAllOff;
-  end case;
-
-end process;
+end Rtl;
   \end{lstlisting}
 \end{columns}
+

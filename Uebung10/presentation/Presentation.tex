@@ -18,6 +18,7 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{pdfpages}
+\usepackage{tikz}
 
 
 % =======================
@@ -121,6 +122,71 @@
 \end{frame}
 
 % -----------------------
+\begin{frame}{Struktur des Reaktionszeit-Spiels}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/Game_Struct_RTL (1).png}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}{Struktur des Reaktionszeit-Spiels}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/Game_Struct_RTL (2).png}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}[fragile]{Edge Detection}
+\begin{columns}[T,onlytextwidth]
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+    entity EdgeDetection is
+    port (
+      iClk : in std_ulogic;
+      inResetAsync : in std_ulogic;
+      iEnable : in std_ulogic;
+      iSync : in std_ulogic;
+      oEdge : out std_ulogic);
+  end EdgeDetection;
+  \end{lstlisting}
+
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+architecture RTL of EdgeDetection is
+  signal SyncPrev : std_ulogic;
+begin
+
+process (iClk, inResetAsync) is
+  begin
+    -- asynchronous reset
+    if (inResetAsync = not('1')) then
+      SyncPrev <= '0';
+
+    elsif (rising_edge(iClk)) then
+      if(iEnable = '1') then
+        SyncPrev <= iSync;
+      else
+        SyncPrev <= SyncPrev;
+      end if;
+    end if;
+end process;
+
+-- combinational logic for edge detection
+oEdge <= '1' when (iSync = '1' and SyncPrev = '0') else '0';
+
+end architecture RTL;
+  \end{lstlisting}
+\end{columns}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}{Edge Detection RTL Viewer}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/EdgeDetection_RTL.png}
+\end{frame}
+% -----------------------
+
+% -----------------------
 \begin{frame}{Finite State Machine  Moore}
 \includegraphics[width= 11 cm]{./../doc/images/Aufgabe2/FSM.png}
 \end{frame}
@@ -202,6 +268,156 @@ end process;
 \end{frame}
 % -----------------------
 
+% -----------------------
+\begin{frame}{Finite State Machine RTL-Viewer}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/FSM_RTL.png}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}[plain]{Finite State Machine State Machine Viewer}
+  % Hintergrundbild über die ganze Folie
+  \begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.center) {
+      \includegraphics[width=\paperwidth]{./../doc/images/Aufgabe2/StateMachineViewer (2).png}
+    };
+
+    % Zweites Bild unten rechts darüber
+    \node[anchor=south east, xshift=-5mm, yshift=5mm]
+      at (current page.south east) {
+        \includegraphics[width=5cm]{./../doc/images/Aufgabe2/StateMachineViewer (1).png}
+      };
+  \end{tikzpicture}
+\end{frame}
+% -----------------------
+
+
+% -----------------------
+\begin{frame}[fragile]{Counter}
+\begin{columns}[T,onlytextwidth]
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+entity Counter is
+  generic(
+    gCounterOverflowVal : natural := 10
+  );
+  port (
+  iClk         : in  std_ulogic;
+  iEnable      : in  std_ulogic;
+  inResetAsync : in  std_ulogic;
+  iZero        : in  std_ulogic;
+  oOverflow    : out std_ulogic;
+  oCount       : out unsigned(LogDualis(gCounterOverflowVal) downto 1));
+end Counter;
+  \end{lstlisting}
+
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+architecture RTL of Counter is
+begin
+
+  -- combinational logic for overflow output
+  oOverflow <= '1' when (iEnable = '1' and iZero = '0' and oCount = gCounterOverflowVal - 1) else '0';
+
+  process(iClk, inResetAsync) is
+  begin
+    -- asynchronous reset
+    if inResetAsync = not('1') then
+      oCount    <= (others => '0');
+
+    elsif rising_edge(iClk) then
+
+      if iZero = '1' then
+        oCount <= (others => '0');
+
+      elsif iEnable = '1' then
+        if oCount = gCounterOverflowVal - 1 then
+          oCount    <= (others => '0');
+        else
+          oCount <= oCount + 1;
+        end if;
+      end if;
+      
+    end if;
+  end process;
+end architecture RTL;
+  \end{lstlisting}
+\end{columns}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}{Counter RTL Viewer}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/Counter RTL.png}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}[fragile]{Hex to 7-Segment Decoder}
+\begin{columns}[T,onlytextwidth]
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+architecture Rtl of Hex2SevenSegment is
+
+  function ToSevSeg(cValue : std_ulogic_vector(3 downto 0))
+    return std_ulogic_vector is
+  begin
+    case cValue(3 downto 0) is
+      when "0000" => return "0111111";
+      when "0001" => return "0000110";
+      when "0010" => return "1011011";
+      when "0011" => return "1001111";
+      when "0100" => return "1100110";
+      when "0101" => return "1101101";
+      when "0110" => return "1111101";
+      when "0111" => return "0000111";
+      when "1000" => return "1111111";
+      when "1001" => return "1101111";
+      when "1010" => return "1110111";
+      when "1011" => return "1111100";
+      when "1100" => return "0111001";
+      when "1101" => return "1011110";
+      when "1110" => return "1111001";
+      when "1111" => return "1110001";
+      when others => return "XXXXXXX";
+    end case;
+  end ToSevSeg;
+  \end{lstlisting}
+
+  \column{0.49\textwidth}
+  \scriptsize
+  \begin{lstlisting}[style=vhdl]
+begin
+
+  o7SegCode <= ToSevSeg(iHexValue);
+
+end Rtl;
+  \end{lstlisting}
+\end{columns}
+
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}{Ressource Summery}
+\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/PCB_Adapter_Ressource.png}
+\end{frame}
+% -----------------------
+
+% -----------------------
+\begin{frame}{Ressource Summery}
+\begin{itemize}
+  \item SyncStage: 2 x 2 Flip-Flops 
+  \item EdgeDetection: 2 x 1 Flip-Flops 
+  \item StrobeGen: 17 Flip-Flops 
+  \item FSM:       4 Flip-Flops 
+  \item Counter: 3 x 4 Flip-Flops 
+\end{itemize}
+\end{frame}
+% -----------------------
 
 % -----------------------
 \begin{frame}[standout]

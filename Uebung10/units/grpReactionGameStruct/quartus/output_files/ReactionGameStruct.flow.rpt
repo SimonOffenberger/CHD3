@@ -1,5 +1,5 @@
 Flow report for ReactionGameStruct
-Thu Jan  8 11:34:29 2026
+Tue Jan 13 09:40:08 2026
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Thu Jan  8 11:34:29 2026          ;
+; Flow Status                     ; Successful - Tue Jan 13 09:40:08 2026          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; ReactionGameStruct                             ;
 ; Top-level Entity Name           ; ReactionGameStruct                             ;
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CSEMA5F31C6                                   ;
 ; Timing Models                   ; Final                                          ;
 ; Logic utilization (in ALMs)     ; 34 / 32,070 ( < 1 % )                          ;
-; Total registers                 ; 43                                             ;
+; Total registers                 ; 35                                             ;
 ; Total pins                      ; 29 / 457 ( 6 % )                               ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                          ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/08/2026 11:33:24 ;
+; Start date & time ; 01/13/2026 09:38:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ReactionGameStruct  ;
 +-------------------+---------------------+
@@ -79,7 +79,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 99839888086095.176786840431620         ; --            ; --          ; --                                ;
+; ALLOW_REGISTER_DUPLICATION          ; Off                                    ; On            ; --          ; --                                ;
+; ALLOW_REGISTER_RETIMING             ; Off                                    ; On            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 99839888086095.176829350505172         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -96,6 +98,7 @@ https://fpgasoftware.intel.com/eula.
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
+; ROUTER_REGISTER_DUPLICATION         ; Off                                    ; Auto          ; --          ; --                                ;
 ; VHDL_INPUT_VERSION                  ; VHDL_2008                              ; VHDL_1993     ; --          ; --                                ;
 ; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                    ; --            ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
@@ -106,12 +109,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4949 MB             ; 00:00:12                           ;
-; Fitter               ; 00:00:49     ; 1.0                     ; 8043 MB             ; 00:05:43                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 5219 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 5405 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4747 MB             ; 00:00:00                           ;
-; Total                ; 00:01:00     ; --                      ; --                  ; 00:06:01                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4957 MB             ; 00:00:23                           ;
+; Fitter               ; 00:01:14     ; 1.0                     ; 7951 MB             ; 00:07:41                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 5219 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.2                     ; 5405 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4747 MB             ; 00:00:02                           ;
+; Total                ; 00:01:36     ; --                      ; --                  ; 00:08:16                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  12 JAN 2026 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  13 JAN 2026 09:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -731,24 +731,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (Presentation.aux)
 \openout1 = `Presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -803,64 +803,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 106.
+Package hyperref Info: Link coloring OFF on input line 107.
  (Presentation.out) (Presentation.out)
 \@outlinefile=\write5
 \openout5 = `Presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 106.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 106.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 107.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 106.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 106.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 106.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 106.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 106.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 106.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 106.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 106.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 106.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 106.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 106.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 106.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 106.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 106.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 106.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 106.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 106.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 106.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 106.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 106.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 106.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 107.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 107.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 106.
+(Font)              `pureletters' in the math version `normal' on input line 107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 106.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 107.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 106.
+(Font)              `pureletters' in the math version `bold' on input line 107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 106.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 106.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 107.
  (C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
@@ -884,51 +884,145 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )) (Presentation.nav)
-Overfull \vbox (31.31319pt too high) detected at line 111
+Overfull \vbox (31.31319pt too high) detected at line 112
  []
 
 [1
 
 {C:/Users/Simon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 121.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 122.
  (C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [2
 
 ]
-<./../doc/images/Aufgabe2/FSM.png, id=31, 1121.69063pt x 791.95876pt>
-File: ./../doc/images/Aufgabe2/FSM.png Graphic file (type png)
-<use ./../doc/images/Aufgabe2/FSM.png>
-Package pdftex.def Info: ./../doc/images/Aufgabe2/FSM.png  used on input line 126.
-(pdftex.def)             Requested size: 312.9803pt x 220.97354pt.
+<./../doc/images/Aufgabe2/Game_Struct_RTL (1).png, id=31, 1751.04187pt x 624.83438pt>
+File: ./../doc/images/Aufgabe2/Game_Struct_RTL (1).png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/Game_Struct_RTL (1).png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/Game_Struct_RTL (1).png  used on input line 127.
+(pdftex.def)             Requested size: 398.3386pt x 142.13574pt.
+ [3
 
-Overfull \vbox (13.03654pt too high) detected at line 126
- []
+ <./../doc/images/Aufgabe2/Game_Struct_RTL (1).png>]
+<./../doc/images/Aufgabe2/Game_Struct_RTL (2).png, id=39, 1863.96375pt x 493.845pt>
+File: ./../doc/images/Aufgabe2/Game_Struct_RTL (2).png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/Game_Struct_RTL (2).png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/Game_Struct_RTL (2).png  used on input line 133.
+(pdftex.def)             Requested size: 398.3386pt x 105.53409pt.
+ [4
 
-[3
-
- <./../doc/images/Aufgabe2/FSM.png>]
+ <./../doc/images/Aufgabe2/Game_Struct_RTL (2).png>]
 \openout4 = `Presentation.vrb'.
 
  (Presentation.vrb
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5.
  (C:\Users\Simon\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <6> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 4.
-) [4
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 6.
+)
+Overfull \vbox (4.70987pt too high) detected at line 180
+ []
+
+[5
+
+]
+<./../doc/images/Aufgabe2/EdgeDetection_RTL.png, id=53, 1260.20813pt x 645.91313pt>
+File: ./../doc/images/Aufgabe2/EdgeDetection_RTL.png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/EdgeDetection_RTL.png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/EdgeDetection_RTL.png  used on input line 186.
+(pdftex.def)             Requested size: 398.3386pt x 204.16347pt.
+ [6
+
+ <./../doc/images/Aufgabe2/EdgeDetection_RTL.png>]
+<./../doc/images/Aufgabe2/FSM.png, id=60, 918.43124pt x 683.55376pt>
+File: ./../doc/images/Aufgabe2/FSM.png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/FSM.png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/FSM.png  used on input line 192.
+(pdftex.def)             Requested size: 312.9803pt x 232.93713pt.
+
+Overfull \vbox (25.00014pt too high) detected at line 192
+ []
+
+[7
+
+ <./../doc/images/Aufgabe2/FSM.png>]
+\openout4 = `Presentation.vrb'.
+
+ (Presentation.vrb) [8
 
 ]
 \openout4 = `Presentation.vrb'.
 
  (Presentation.vrb)
-Overfull \vbox (12.75981pt too high) detected at line 202
+Overfull \vbox (12.75981pt too high) detected at line 268
  []
 
-[5
+[9
 
-] [6
+]
+<./../doc/images/Aufgabe2/FSM_RTL.png, id=78, 2077.7625pt x 582.67688pt>
+File: ./../doc/images/Aufgabe2/FSM_RTL.png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/FSM_RTL.png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/FSM_RTL.png  used on input line 274.
+(pdftex.def)             Requested size: 398.3386pt x 111.70554pt.
+ [10
+
+ <./../doc/images/Aufgabe2/FSM_RTL.png>]
+<./../doc/images/Aufgabe2/StateMachineViewer (2).png, id=85, 1604.99625pt x 531.48563pt>
+File: ./../doc/images/Aufgabe2/StateMachineViewer (2).png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/StateMachineViewer (2).png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/StateMachineViewer (2).png  used on input line 291.
+(pdftex.def)             Requested size: 455.24408pt x 150.7532pt.
+<./../doc/images/Aufgabe2/StateMachineViewer (1).png, id=86, 576.65437pt x 286.06876pt>
+File: ./../doc/images/Aufgabe2/StateMachineViewer (1).png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/StateMachineViewer (1).png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/StateMachineViewer (1).png  used on input line 291.
+(pdftex.def)             Requested size: 142.26378pt x 70.57416pt.
+ [11
+
+ <./../doc/images/Aufgabe2/StateMachineViewer (2).png> <./../doc/images/Aufgabe2/StateMachineViewer (1).png>]
+\openout4 = `Presentation.vrb'.
+
+ (Presentation.vrb)
+Overfull \vbox (53.00952pt too high) detected at line 348
+ []
+
+[12
+
+]
+<./../doc/images/Aufgabe2/Counter RTL.png, id=99, 2096.58281pt x 587.19376pt>
+File: ./../doc/images/Aufgabe2/Counter RTL.png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/Counter RTL.png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/Counter RTL.png  used on input line 354.
+(pdftex.def)             Requested size: 398.3386pt x 111.559pt.
+ [13
+
+ <./../doc/images/Aufgabe2/Counter RTL.png>]
+\openout4 = `Presentation.vrb'.
+
+ (Presentation.vrb)
+Overfull \vbox (20.80975pt too high) detected at line 401
+ []
+
+[14
+
+]
+<./../doc/images/Aufgabe2/PCB_Adapter_Ressource.png, id=112, 749.80125pt x 623.32875pt>
+File: ./../doc/images/Aufgabe2/PCB_Adapter_Ressource.png Graphic file (type png)
+<use ./../doc/images/Aufgabe2/PCB_Adapter_Ressource.png>
+Package pdftex.def Info: ./../doc/images/Aufgabe2/PCB_Adapter_Ressource.png  used on input line 407.
+(pdftex.def)             Requested size: 398.3386pt x 331.15208pt.
+
+Overfull \vbox (123.21509pt too high) detected at line 407
+ []
+
+[15
+
+ <./../doc/images/Aufgabe2/PCB_Adapter_Ressource.png>] [16
+
+] [17
 
 ]
 \tf@nav=\write6
@@ -949,17 +1043,17 @@ Package rerunfilecheck Info: File `Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28977 strings out of 474486
- 571725 string characters out of 5743755
- 2401542 words of memory out of 5000000
- 50676 multiletter control sequences out of 15000+600000
+ 29141 strings out of 474486
+ 576505 string characters out of 5743755
+ 2402542 words of memory out of 5000000
+ 50812 multiletter control sequences out of 15000+600000
  567196 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,1947b,1618s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ectt0800.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecit0800.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk>
-Output written on Presentation.pdf (6 pages, 145144 bytes).
+ 128i,15n,123p,1947b,1742s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecit0800.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ectt0800.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\Simon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk>
+Output written on Presentation.pdf (17 pages, 390448 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

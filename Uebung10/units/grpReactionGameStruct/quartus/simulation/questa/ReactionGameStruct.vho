@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "01/08/2026 11:34:29"
+-- DATE "01/13/2026 09:40:08"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -104,6 +104,7 @@ SIGNAL \iClk~input_o\ : std_logic;
 SIGNAL \iClk~inputCLKENA0_outclk\ : std_logic;
 SIGNAL \EntityReactionFSM|State.Unlocked~0_combout\ : std_logic;
 SIGNAL \inResetAsync~input_o\ : std_logic;
+SIGNAL \iA_Sync~input_o\ : std_logic;
 SIGNAL \StrobeGen|Add0~61_sumout\ : std_logic;
 SIGNAL \StrobeGen|Add0~62\ : std_logic;
 SIGNAL \StrobeGen|Add0~57_sumout\ : std_logic;
@@ -125,9 +126,7 @@ SIGNAL \StrobeGen|Add0~34\ : std_logic;
 SIGNAL \StrobeGen|Add0~29_sumout\ : std_logic;
 SIGNAL \StrobeGen|Add0~30\ : std_logic;
 SIGNAL \StrobeGen|Add0~1_sumout\ : std_logic;
-SIGNAL \StrobeGen|Count[4]~DUPLICATE_q\ : std_logic;
 SIGNAL \StrobeGen|Equal0~1_combout\ : std_logic;
-SIGNAL \StrobeGen|Count[2]~DUPLICATE_q\ : std_logic;
 SIGNAL \StrobeGen|Equal0~2_combout\ : std_logic;
 SIGNAL \StrobeGen|Add0~2\ : std_logic;
 SIGNAL \StrobeGen|Add0~25_sumout\ : std_logic;
@@ -145,7 +144,6 @@ SIGNAL \StrobeGen|oStrobe~q\ : std_logic;
 SIGNAL \iB_Sync~input_o\ : std_logic;
 SIGNAL \EdgeDetectionB|SyncPrev~feeder_combout\ : std_logic;
 SIGNAL \EdgeDetectionB|SyncPrev~q\ : std_logic;
-SIGNAL \iA_Sync~input_o\ : std_logic;
 SIGNAL \EdgeDetectionA|SyncPrev~feeder_combout\ : std_logic;
 SIGNAL \EdgeDetectionA|SyncPrev~q\ : std_logic;
 SIGNAL \EntityReactionFSM|State~14_combout\ : std_logic;
@@ -160,11 +158,9 @@ SIGNAL \EntityReactionFSM|State.Locked~0_combout\ : std_logic;
 SIGNAL \EntityReactionFSM|State.Locked~q\ : std_logic;
 SIGNAL \CounterLow|oCount~0_combout\ : std_logic;
 SIGNAL \CounterLow|oCount[4]~1_combout\ : std_logic;
-SIGNAL \CounterLow|oCount~4_combout\ : std_logic;
-SIGNAL \CounterLow|oCount[4]~DUPLICATE_q\ : std_logic;
 SIGNAL \CounterLow|oCount~2_combout\ : std_logic;
 SIGNAL \CounterLow|oCount~3_combout\ : std_logic;
-SIGNAL \CounterLow|oCount[1]~DUPLICATE_q\ : std_logic;
+SIGNAL \CounterLow|oCount~4_combout\ : std_logic;
 SIGNAL \HexDecoderLow|Mux6~0_combout\ : std_logic;
 SIGNAL \HexDecoderLow|Mux5~0_combout\ : std_logic;
 SIGNAL \HexDecoderLow|Mux4~0_combout\ : std_logic;
@@ -172,29 +168,25 @@ SIGNAL \HexDecoderLow|Mux3~0_combout\ : std_logic;
 SIGNAL \HexDecoderLow|Mux2~0_combout\ : std_logic;
 SIGNAL \HexDecoderLow|Mux1~0_combout\ : std_logic;
 SIGNAL \HexDecoderLow|Mux0~0_combout\ : std_logic;
+SIGNAL \CounterMid|oCount~0_combout\ : std_logic;
 SIGNAL \CounterLow|Equal0~0_combout\ : std_logic;
 SIGNAL \CounterMid|oCount[4]~1_combout\ : std_logic;
-SIGNAL \CounterMid|oCount~0_combout\ : std_logic;
-SIGNAL \CounterMid|oCount[1]~DUPLICATE_q\ : std_logic;
-SIGNAL \CounterMid|oCount~4_combout\ : std_logic;
 SIGNAL \CounterMid|oCount~2_combout\ : std_logic;
 SIGNAL \CounterMid|oCount~3_combout\ : std_logic;
+SIGNAL \CounterMid|oCount~4_combout\ : std_logic;
 SIGNAL \HexDecoderMid|Mux6~0_combout\ : std_logic;
-SIGNAL \CounterMid|oCount[2]~DUPLICATE_q\ : std_logic;
 SIGNAL \HexDecoderMid|Mux5~0_combout\ : std_logic;
 SIGNAL \HexDecoderMid|Mux4~0_combout\ : std_logic;
 SIGNAL \HexDecoderMid|Mux3~0_combout\ : std_logic;
 SIGNAL \HexDecoderMid|Mux2~0_combout\ : std_logic;
 SIGNAL \HexDecoderMid|Mux1~0_combout\ : std_logic;
 SIGNAL \HexDecoderMid|Mux0~0_combout\ : std_logic;
+SIGNAL \CounterHigh|oCount~0_combout\ : std_logic;
 SIGNAL \CounterMid|Equal0~0_combout\ : std_logic;
 SIGNAL \CounterHigh|oCount[4]~1_combout\ : std_logic;
-SIGNAL \CounterHigh|oCount~0_combout\ : std_logic;
-SIGNAL \CounterHigh|oCount[1]~DUPLICATE_q\ : std_logic;
-SIGNAL \CounterHigh|oCount~2_combout\ : std_logic;
 SIGNAL \CounterHigh|oCount~3_combout\ : std_logic;
 SIGNAL \CounterHigh|oCount~4_combout\ : std_logic;
-SIGNAL \CounterHigh|oCount[3]~DUPLICATE_q\ : std_logic;
+SIGNAL \CounterHigh|oCount~2_combout\ : std_logic;
 SIGNAL \HexDecoderHigh|Mux6~0_combout\ : std_logic;
 SIGNAL \HexDecoderHigh|Mux5~0_combout\ : std_logic;
 SIGNAL \HexDecoderHigh|Mux4~0_combout\ : std_logic;
@@ -207,51 +199,43 @@ SIGNAL \StrobeGen|Count\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \CounterLow|oCount\ : std_logic_vector(4 DOWNTO 1);
 SIGNAL \CounterHigh|oCount\ : std_logic_vector(4 DOWNTO 1);
 SIGNAL \StrobeGen|ALT_INV_Count\ : std_logic_vector(15 DOWNTO 0);
-SIGNAL \CounterMid|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
-SIGNAL \EntityReactionFSM|ALT_INV_State.Unlocked~q\ : std_logic;
+SIGNAL \EntityReactionFSM|ALT_INV_State.Locked~q\ : std_logic;
 SIGNAL \EntityReactionFSM|ALT_INV_State.CountUpTime~q\ : std_logic;
 SIGNAL \CounterLow|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
+SIGNAL \EntityReactionFSM|ALT_INV_State.ShowResult~q\ : std_logic;
 SIGNAL \HexDecoderLow|ALT_INV_Mux6~0_combout\ : std_logic;
 SIGNAL \HexDecoderLow|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \EntityReactionFSM|ALT_INV_State.Locked~q\ : std_logic;
-SIGNAL \EntityReactionFSM|ALT_INV_State.ShowResult~q\ : std_logic;
 SIGNAL \HexDecoderLow|ALT_INV_Mux4~0_combout\ : std_logic;
 SIGNAL \HexDecoderLow|ALT_INV_Mux3~0_combout\ : std_logic;
+SIGNAL \EntityReactionFSM|ALT_INV_State.Unlocked~q\ : std_logic;
+SIGNAL \CounterMid|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
 SIGNAL \HexDecoderLow|ALT_INV_Mux2~0_combout\ : std_logic;
 SIGNAL \HexDecoderLow|ALT_INV_Mux1~0_combout\ : std_logic;
-SIGNAL \CounterHigh|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
-SIGNAL \EntityReactionFSM|ALT_INV_State~14_combout\ : std_logic;
-SIGNAL \StrobeGen|ALT_INV_Equal0~1_combout\ : std_logic;
+SIGNAL \HexDecoderMid|ALT_INV_Mux6~0_combout\ : std_logic;
 SIGNAL \HexDecoderMid|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \EdgeDetectionB|ALT_INV_SyncPrev~q\ : std_logic;
-SIGNAL \StrobeGen|ALT_INV_oStrobe~q\ : std_logic;
-SIGNAL \EdgeDetectionA|ALT_INV_SyncPrev~q\ : std_logic;
-SIGNAL \HexDecoderHigh|ALT_INV_Mux3~0_combout\ : std_logic;
-SIGNAL \CounterMid|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \HexDecoderHigh|ALT_INV_Mux6~0_combout\ : std_logic;
-SIGNAL \HexDecoderHigh|ALT_INV_Mux4~0_combout\ : std_logic;
-SIGNAL \StrobeGen|ALT_INV_Equal0~2_combout\ : std_logic;
+SIGNAL \EntityReactionFSM|ALT_INV_State~14_combout\ : std_logic;
 SIGNAL \ALT_INV_iA_Sync~input_o\ : std_logic;
 SIGNAL \ALT_INV_iB_Sync~input_o\ : std_logic;
-SIGNAL \HexDecoderMid|ALT_INV_Mux6~0_combout\ : std_logic;
-SIGNAL \HexDecoderHigh|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \StrobeGen|ALT_INV_Count[4]~DUPLICATE_q\ : std_logic;
-SIGNAL \StrobeGen|ALT_INV_Count[2]~DUPLICATE_q\ : std_logic;
-SIGNAL \HexDecoderHigh|ALT_INV_Mux1~0_combout\ : std_logic;
-SIGNAL \HexDecoderMid|ALT_INV_Mux4~0_combout\ : std_logic;
-SIGNAL \HexDecoderMid|ALT_INV_Mux3~0_combout\ : std_logic;
-SIGNAL \CounterLow|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \HexDecoderHigh|ALT_INV_Mux2~0_combout\ : std_logic;
-SIGNAL \HexDecoderMid|ALT_INV_Mux2~0_combout\ : std_logic;
-SIGNAL \EntityReactionFSM|ALT_INV_State~12_combout\ : std_logic;
+SIGNAL \CounterHigh|ALT_INV_oCount\ : std_logic_vector(4 DOWNTO 1);
+SIGNAL \HexDecoderHigh|ALT_INV_Mux6~0_combout\ : std_logic;
+SIGNAL \EdgeDetectionA|ALT_INV_SyncPrev~q\ : std_logic;
 SIGNAL \StrobeGen|ALT_INV_Equal0~0_combout\ : std_logic;
+SIGNAL \EntityReactionFSM|ALT_INV_State~12_combout\ : std_logic;
+SIGNAL \StrobeGen|ALT_INV_Equal0~2_combout\ : std_logic;
+SIGNAL \HexDecoderHigh|ALT_INV_Mux2~0_combout\ : std_logic;
+SIGNAL \HexDecoderHigh|ALT_INV_Mux4~0_combout\ : std_logic;
+SIGNAL \HexDecoderHigh|ALT_INV_Mux1~0_combout\ : std_logic;
+SIGNAL \CounterLow|ALT_INV_Equal0~0_combout\ : std_logic;
 SIGNAL \HexDecoderMid|ALT_INV_Mux1~0_combout\ : std_logic;
-SIGNAL \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\ : std_logic;
-SIGNAL \CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\ : std_logic;
-SIGNAL \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\ : std_logic;
-SIGNAL \CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\ : std_logic;
-SIGNAL \CounterMid|ALT_INV_oCount[2]~DUPLICATE_q\ : std_logic;
-SIGNAL \CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\ : std_logic;
+SIGNAL \HexDecoderMid|ALT_INV_Mux4~0_combout\ : std_logic;
+SIGNAL \EdgeDetectionB|ALT_INV_SyncPrev~q\ : std_logic;
+SIGNAL \CounterMid|ALT_INV_Equal0~0_combout\ : std_logic;
+SIGNAL \StrobeGen|ALT_INV_Equal0~1_combout\ : std_logic;
+SIGNAL \HexDecoderMid|ALT_INV_Mux2~0_combout\ : std_logic;
+SIGNAL \HexDecoderHigh|ALT_INV_Mux5~0_combout\ : std_logic;
+SIGNAL \StrobeGen|ALT_INV_oStrobe~q\ : std_logic;
+SIGNAL \HexDecoderMid|ALT_INV_Mux3~0_combout\ : std_logic;
+SIGNAL \HexDecoderHigh|ALT_INV_Mux3~0_combout\ : std_logic;
 
 BEGIN
 
@@ -266,76 +250,68 @@ oHEX3 <= ww_oHEX3;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\StrobeGen|ALT_INV_Count\(10) <= NOT \StrobeGen|Count\(10);
-\StrobeGen|ALT_INV_Count\(9) <= NOT \StrobeGen|Count\(9);
-\CounterMid|ALT_INV_oCount\(1) <= NOT \CounterMid|oCount\(1);
-\EntityReactionFSM|ALT_INV_State.Unlocked~q\ <= NOT \EntityReactionFSM|State.Unlocked~q\;
-\StrobeGen|ALT_INV_Count\(8) <= NOT \StrobeGen|Count\(8);
-\StrobeGen|ALT_INV_Count\(2) <= NOT \StrobeGen|Count\(2);
-\StrobeGen|ALT_INV_Count\(11) <= NOT \StrobeGen|Count\(11);
-\StrobeGen|ALT_INV_Count\(4) <= NOT \StrobeGen|Count\(4);
-\StrobeGen|ALT_INV_Count\(13) <= NOT \StrobeGen|Count\(13);
-\EntityReactionFSM|ALT_INV_State.CountUpTime~q\ <= NOT \EntityReactionFSM|State.CountUpTime~q\;
-\StrobeGen|ALT_INV_Count\(6) <= NOT \StrobeGen|Count\(6);
-\StrobeGen|ALT_INV_Count\(14) <= NOT \StrobeGen|Count\(14);
-\StrobeGen|ALT_INV_Count\(1) <= NOT \StrobeGen|Count\(1);
-\StrobeGen|ALT_INV_Count\(3) <= NOT \StrobeGen|Count\(3);
 \StrobeGen|ALT_INV_Count\(12) <= NOT \StrobeGen|Count\(12);
-\CounterLow|ALT_INV_oCount\(3) <= NOT \CounterLow|oCount\(3);
-\HexDecoderLow|ALT_INV_Mux6~0_combout\ <= NOT \HexDecoderLow|Mux6~0_combout\;
-\CounterLow|ALT_INV_oCount\(2) <= NOT \CounterLow|oCount\(2);
-\StrobeGen|ALT_INV_Count\(5) <= NOT \StrobeGen|Count\(5);
-\HexDecoderLow|ALT_INV_Mux5~0_combout\ <= NOT \HexDecoderLow|Mux5~0_combout\;
-\EntityReactionFSM|ALT_INV_State.Locked~q\ <= NOT \EntityReactionFSM|State.Locked~q\;
-\StrobeGen|ALT_INV_Count\(0) <= NOT \StrobeGen|Count\(0);
+\StrobeGen|ALT_INV_Count\(10) <= NOT \StrobeGen|Count\(10);
+\StrobeGen|ALT_INV_Count\(4) <= NOT \StrobeGen|Count\(4);
 \StrobeGen|ALT_INV_Count\(15) <= NOT \StrobeGen|Count\(15);
-\EntityReactionFSM|ALT_INV_State.ShowResult~q\ <= NOT \EntityReactionFSM|State.ShowResult~q\;
+\StrobeGen|ALT_INV_Count\(14) <= NOT \StrobeGen|Count\(14);
+\StrobeGen|ALT_INV_Count\(13) <= NOT \StrobeGen|Count\(13);
+\StrobeGen|ALT_INV_Count\(8) <= NOT \StrobeGen|Count\(8);
+\StrobeGen|ALT_INV_Count\(6) <= NOT \StrobeGen|Count\(6);
+\StrobeGen|ALT_INV_Count\(5) <= NOT \StrobeGen|Count\(5);
+\StrobeGen|ALT_INV_Count\(2) <= NOT \StrobeGen|Count\(2);
+\StrobeGen|ALT_INV_Count\(0) <= NOT \StrobeGen|Count\(0);
+\EntityReactionFSM|ALT_INV_State.Locked~q\ <= NOT \EntityReactionFSM|State.Locked~q\;
+\EntityReactionFSM|ALT_INV_State.CountUpTime~q\ <= NOT \EntityReactionFSM|State.CountUpTime~q\;
 \CounterLow|ALT_INV_oCount\(1) <= NOT \CounterLow|oCount\(1);
+\EntityReactionFSM|ALT_INV_State.ShowResult~q\ <= NOT \EntityReactionFSM|State.ShowResult~q\;
+\CounterLow|ALT_INV_oCount\(3) <= NOT \CounterLow|oCount\(3);
+\CounterLow|ALT_INV_oCount\(4) <= NOT \CounterLow|oCount\(4);
+\HexDecoderLow|ALT_INV_Mux6~0_combout\ <= NOT \HexDecoderLow|Mux6~0_combout\;
+\StrobeGen|ALT_INV_Count\(11) <= NOT \StrobeGen|Count\(11);
+\StrobeGen|ALT_INV_Count\(3) <= NOT \StrobeGen|Count\(3);
+\StrobeGen|ALT_INV_Count\(1) <= NOT \StrobeGen|Count\(1);
+\StrobeGen|ALT_INV_Count\(9) <= NOT \StrobeGen|Count\(9);
+\HexDecoderLow|ALT_INV_Mux5~0_combout\ <= NOT \HexDecoderLow|Mux5~0_combout\;
 \HexDecoderLow|ALT_INV_Mux4~0_combout\ <= NOT \HexDecoderLow|Mux4~0_combout\;
 \HexDecoderLow|ALT_INV_Mux3~0_combout\ <= NOT \HexDecoderLow|Mux3~0_combout\;
 \StrobeGen|ALT_INV_Count\(7) <= NOT \StrobeGen|Count\(7);
-\CounterLow|ALT_INV_oCount\(4) <= NOT \CounterLow|oCount\(4);
+\EntityReactionFSM|ALT_INV_State.Unlocked~q\ <= NOT \EntityReactionFSM|State.Unlocked~q\;
+\CounterMid|ALT_INV_oCount\(1) <= NOT \CounterMid|oCount\(1);
 \HexDecoderLow|ALT_INV_Mux2~0_combout\ <= NOT \HexDecoderLow|Mux2~0_combout\;
-\HexDecoderLow|ALT_INV_Mux1~0_combout\ <= NOT \HexDecoderLow|Mux1~0_combout\;
-\CounterHigh|ALT_INV_oCount\(2) <= NOT \CounterHigh|oCount\(2);
-\CounterHigh|ALT_INV_oCount\(3) <= NOT \CounterHigh|oCount\(3);
-\EntityReactionFSM|ALT_INV_State~14_combout\ <= NOT \EntityReactionFSM|State~14_combout\;
-\StrobeGen|ALT_INV_Equal0~1_combout\ <= NOT \StrobeGen|Equal0~1_combout\;
-\HexDecoderMid|ALT_INV_Mux5~0_combout\ <= NOT \HexDecoderMid|Mux5~0_combout\;
-\EdgeDetectionB|ALT_INV_SyncPrev~q\ <= NOT \EdgeDetectionB|SyncPrev~q\;
-\StrobeGen|ALT_INV_oStrobe~q\ <= NOT \StrobeGen|oStrobe~q\;
-\EdgeDetectionA|ALT_INV_SyncPrev~q\ <= NOT \EdgeDetectionA|SyncPrev~q\;
-\HexDecoderHigh|ALT_INV_Mux3~0_combout\ <= NOT \HexDecoderHigh|Mux3~0_combout\;
-\CounterMid|ALT_INV_Equal0~0_combout\ <= NOT \CounterMid|Equal0~0_combout\;
-\HexDecoderHigh|ALT_INV_Mux6~0_combout\ <= NOT \HexDecoderHigh|Mux6~0_combout\;
 \CounterMid|ALT_INV_oCount\(2) <= NOT \CounterMid|oCount\(2);
-\HexDecoderHigh|ALT_INV_Mux4~0_combout\ <= NOT \HexDecoderHigh|Mux4~0_combout\;
-\StrobeGen|ALT_INV_Equal0~2_combout\ <= NOT \StrobeGen|Equal0~2_combout\;
-\ALT_INV_iA_Sync~input_o\ <= NOT \iA_Sync~input_o\;
-\CounterHigh|ALT_INV_oCount\(1) <= NOT \CounterHigh|oCount\(1);
-\ALT_INV_iB_Sync~input_o\ <= NOT \iB_Sync~input_o\;
-\HexDecoderMid|ALT_INV_Mux6~0_combout\ <= NOT \HexDecoderMid|Mux6~0_combout\;
-\HexDecoderHigh|ALT_INV_Mux5~0_combout\ <= NOT \HexDecoderHigh|Mux5~0_combout\;
-\StrobeGen|ALT_INV_Count[4]~DUPLICATE_q\ <= NOT \StrobeGen|Count[4]~DUPLICATE_q\;
-\StrobeGen|ALT_INV_Count[2]~DUPLICATE_q\ <= NOT \StrobeGen|Count[2]~DUPLICATE_q\;
-\HexDecoderHigh|ALT_INV_Mux1~0_combout\ <= NOT \HexDecoderHigh|Mux1~0_combout\;
-\HexDecoderMid|ALT_INV_Mux4~0_combout\ <= NOT \HexDecoderMid|Mux4~0_combout\;
-\HexDecoderMid|ALT_INV_Mux3~0_combout\ <= NOT \HexDecoderMid|Mux3~0_combout\;
-\CounterLow|ALT_INV_Equal0~0_combout\ <= NOT \CounterLow|Equal0~0_combout\;
-\HexDecoderHigh|ALT_INV_Mux2~0_combout\ <= NOT \HexDecoderHigh|Mux2~0_combout\;
-\HexDecoderMid|ALT_INV_Mux2~0_combout\ <= NOT \HexDecoderMid|Mux2~0_combout\;
 \CounterMid|ALT_INV_oCount\(3) <= NOT \CounterMid|oCount\(3);
-\CounterHigh|ALT_INV_oCount\(4) <= NOT \CounterHigh|oCount\(4);
-\EntityReactionFSM|ALT_INV_State~12_combout\ <= NOT \EntityReactionFSM|State~12_combout\;
-\StrobeGen|ALT_INV_Equal0~0_combout\ <= NOT \StrobeGen|Equal0~0_combout\;
+\HexDecoderLow|ALT_INV_Mux1~0_combout\ <= NOT \HexDecoderLow|Mux1~0_combout\;
 \CounterMid|ALT_INV_oCount\(4) <= NOT \CounterMid|oCount\(4);
+\HexDecoderMid|ALT_INV_Mux6~0_combout\ <= NOT \HexDecoderMid|Mux6~0_combout\;
+\HexDecoderMid|ALT_INV_Mux5~0_combout\ <= NOT \HexDecoderMid|Mux5~0_combout\;
+\CounterLow|ALT_INV_oCount\(2) <= NOT \CounterLow|oCount\(2);
+\EntityReactionFSM|ALT_INV_State~14_combout\ <= NOT \EntityReactionFSM|State~14_combout\;
+\ALT_INV_iA_Sync~input_o\ <= NOT \iA_Sync~input_o\;
+\ALT_INV_iB_Sync~input_o\ <= NOT \iB_Sync~input_o\;
+\CounterHigh|ALT_INV_oCount\(3) <= NOT \CounterHigh|oCount\(3);
+\HexDecoderHigh|ALT_INV_Mux6~0_combout\ <= NOT \HexDecoderHigh|Mux6~0_combout\;
+\EdgeDetectionA|ALT_INV_SyncPrev~q\ <= NOT \EdgeDetectionA|SyncPrev~q\;
+\StrobeGen|ALT_INV_Equal0~0_combout\ <= NOT \StrobeGen|Equal0~0_combout\;
+\EntityReactionFSM|ALT_INV_State~12_combout\ <= NOT \EntityReactionFSM|State~12_combout\;
+\CounterHigh|ALT_INV_oCount\(2) <= NOT \CounterHigh|oCount\(2);
+\StrobeGen|ALT_INV_Equal0~2_combout\ <= NOT \StrobeGen|Equal0~2_combout\;
+\HexDecoderHigh|ALT_INV_Mux2~0_combout\ <= NOT \HexDecoderHigh|Mux2~0_combout\;
+\HexDecoderHigh|ALT_INV_Mux4~0_combout\ <= NOT \HexDecoderHigh|Mux4~0_combout\;
+\HexDecoderHigh|ALT_INV_Mux1~0_combout\ <= NOT \HexDecoderHigh|Mux1~0_combout\;
+\CounterLow|ALT_INV_Equal0~0_combout\ <= NOT \CounterLow|Equal0~0_combout\;
 \HexDecoderMid|ALT_INV_Mux1~0_combout\ <= NOT \HexDecoderMid|Mux1~0_combout\;
-\CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\ <= NOT \CounterLow|oCount[4]~DUPLICATE_q\;
-\CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\ <= NOT \CounterLow|oCount[1]~DUPLICATE_q\;
-\CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\ <= NOT \CounterHigh|oCount[1]~DUPLICATE_q\;
-\CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\ <= NOT \CounterHigh|oCount[3]~DUPLICATE_q\;
-\CounterMid|ALT_INV_oCount[2]~DUPLICATE_q\ <= NOT \CounterMid|oCount[2]~DUPLICATE_q\;
-\CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\ <= NOT \CounterMid|oCount[1]~DUPLICATE_q\;
+\HexDecoderMid|ALT_INV_Mux4~0_combout\ <= NOT \HexDecoderMid|Mux4~0_combout\;
+\EdgeDetectionB|ALT_INV_SyncPrev~q\ <= NOT \EdgeDetectionB|SyncPrev~q\;
+\CounterHigh|ALT_INV_oCount\(1) <= NOT \CounterHigh|oCount\(1);
+\CounterMid|ALT_INV_Equal0~0_combout\ <= NOT \CounterMid|Equal0~0_combout\;
+\StrobeGen|ALT_INV_Equal0~1_combout\ <= NOT \StrobeGen|Equal0~1_combout\;
+\HexDecoderMid|ALT_INV_Mux2~0_combout\ <= NOT \HexDecoderMid|Mux2~0_combout\;
+\CounterHigh|ALT_INV_oCount\(4) <= NOT \CounterHigh|oCount\(4);
+\HexDecoderHigh|ALT_INV_Mux5~0_combout\ <= NOT \HexDecoderHigh|Mux5~0_combout\;
+\StrobeGen|ALT_INV_oStrobe~q\ <= NOT \StrobeGen|oStrobe~q\;
+\HexDecoderMid|ALT_INV_Mux3~0_combout\ <= NOT \HexDecoderMid|Mux3~0_combout\;
+\HexDecoderHigh|ALT_INV_Mux3~0_combout\ <= NOT \HexDecoderHigh|Mux3~0_combout\;
 
 -- Location: IOOBUF_X89_Y9_N5
 \oLEDs[0]~output\ : cyclonev_io_obuf
@@ -713,6 +689,17 @@ PORT MAP (
 	i => ww_inResetAsync,
 	o => \inResetAsync~input_o\);
 
+-- Location: IOIBUF_X89_Y8_N55
+\iA_Sync~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_iA_Sync,
+	o => \iA_Sync~input_o\);
+
 -- Location: LABCELL_X83_Y8_N0
 \StrobeGen|Add0~61\ : cyclonev_lcell_comb
 -- Equation(s):
@@ -790,16 +777,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	lut_mask => "0000000000000000111111111111111100000000000000000011001100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \StrobeGen|ALT_INV_Count\(2),
+	datab => \StrobeGen|ALT_INV_Count\(2),
 	cin => \StrobeGen|Add0~58\,
 	sumout => \StrobeGen|Add0~53_sumout\,
 	cout => \StrobeGen|Add0~54\);
 
--- Location: FF_X83_Y8_N7
+-- Location: FF_X83_Y8_N8
 \StrobeGen|Count[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1062,16 +1049,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000000000000000111100001111",
+	lut_mask => "0000000000000000111111111111111100000000000000000011001100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \StrobeGen|ALT_INV_Count\(10),
+	datab => \StrobeGen|ALT_INV_Count\(10),
 	cin => \StrobeGen|Add0~30\,
 	sumout => \StrobeGen|Add0~1_sumout\,
 	cout => \StrobeGen|Add0~2\);
 
--- Location: FF_X83_Y8_N31
+-- Location: FF_X83_Y8_N32
 \StrobeGen|Count[10]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1087,61 +1074,29 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \StrobeGen|Count\(10));
 
--- Location: FF_X83_Y8_N13
-\StrobeGen|Count[4]~DUPLICATE\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \iClk~inputCLKENA0_outclk\,
-	d => \StrobeGen|Add0~5_sumout\,
-	clrn => \inResetAsync~input_o\,
-	sclr => \StrobeGen|Equal0~3_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \StrobeGen|Count[4]~DUPLICATE_q\);
-
 -- Location: LABCELL_X83_Y8_N48
 \StrobeGen|Equal0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \StrobeGen|Equal0~1_combout\ = ( \StrobeGen|Count\(9) & ( \StrobeGen|Count\(8) & ( (!\StrobeGen|Count\(7) & (\StrobeGen|Count\(6) & !\StrobeGen|Count\(5))) ) ) )
+-- \StrobeGen|Equal0~1_combout\ = ( \StrobeGen|Count\(9) & ( \StrobeGen|Count\(8) & ( (\StrobeGen|Count\(6) & (!\StrobeGen|Count\(7) & !\StrobeGen|Count\(5))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000000101000000000",
+	lut_mask => "0000000000000000000000000000000000000000000000000101000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \StrobeGen|ALT_INV_Count\(7),
-	datac => \StrobeGen|ALT_INV_Count\(6),
+	dataa => \StrobeGen|ALT_INV_Count\(6),
+	datac => \StrobeGen|ALT_INV_Count\(7),
 	datad => \StrobeGen|ALT_INV_Count\(5),
 	datae => \StrobeGen|ALT_INV_Count\(9),
 	dataf => \StrobeGen|ALT_INV_Count\(8),
 	combout => \StrobeGen|Equal0~1_combout\);
 
--- Location: FF_X83_Y8_N8
-\StrobeGen|Count[2]~DUPLICATE\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \iClk~inputCLKENA0_outclk\,
-	d => \StrobeGen|Add0~53_sumout\,
-	clrn => \inResetAsync~input_o\,
-	sclr => \StrobeGen|Equal0~3_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \StrobeGen|Count[2]~DUPLICATE_q\);
-
 -- Location: MLABCELL_X82_Y8_N42
 \StrobeGen|Equal0~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \StrobeGen|Equal0~2_combout\ = ( \StrobeGen|Count\(3) & ( \StrobeGen|Count[2]~DUPLICATE_q\ & ( (\StrobeGen|Count\(0) & \StrobeGen|Count\(1)) ) ) )
+-- \StrobeGen|Equal0~2_combout\ = ( \StrobeGen|Count\(3) & ( \StrobeGen|Count\(2) & ( (\StrobeGen|Count\(0) & \StrobeGen|Count\(1)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1153,7 +1108,7 @@ PORT MAP (
 	dataa => \StrobeGen|ALT_INV_Count\(0),
 	datac => \StrobeGen|ALT_INV_Count\(1),
 	datae => \StrobeGen|ALT_INV_Count\(3),
-	dataf => \StrobeGen|ALT_INV_Count[2]~DUPLICATE_q\,
+	dataf => \StrobeGen|ALT_INV_Count\(2),
 	combout => \StrobeGen|Equal0~2_combout\);
 
 -- Location: LABCELL_X83_Y8_N33
@@ -1324,7 +1279,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \StrobeGen|Count\(15));
 
--- Location: MLABCELL_X82_Y8_N15
+-- Location: MLABCELL_X82_Y8_N3
 \StrobeGen|Equal0~0\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \StrobeGen|Equal0~0_combout\ = ( \StrobeGen|Count\(14) & ( !\StrobeGen|Count\(11) & ( (!\StrobeGen|Count\(13) & (!\StrobeGen|Count\(12) & \StrobeGen|Count\(15))) ) ) )
@@ -1346,23 +1301,23 @@ PORT MAP (
 -- Location: LABCELL_X83_Y8_N57
 \StrobeGen|Equal0~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \StrobeGen|Equal0~3_combout\ = ( \StrobeGen|Equal0~2_combout\ & ( \StrobeGen|Equal0~0_combout\ & ( (!\StrobeGen|Count\(10) & (!\StrobeGen|Count[4]~DUPLICATE_q\ & \StrobeGen|Equal0~1_combout\)) ) ) )
+-- \StrobeGen|Equal0~3_combout\ = ( \StrobeGen|Equal0~2_combout\ & ( \StrobeGen|Equal0~0_combout\ & ( (!\StrobeGen|Count\(10) & (!\StrobeGen|Count\(4) & \StrobeGen|Equal0~1_combout\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000000000010100000",
+	lut_mask => "0000000000000000000000000000000000000000000000000000000011000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \StrobeGen|ALT_INV_Count\(10),
-	datac => \StrobeGen|ALT_INV_Count[4]~DUPLICATE_q\,
+	datab => \StrobeGen|ALT_INV_Count\(10),
+	datac => \StrobeGen|ALT_INV_Count\(4),
 	datad => \StrobeGen|ALT_INV_Equal0~1_combout\,
 	datae => \StrobeGen|ALT_INV_Equal0~2_combout\,
 	dataf => \StrobeGen|ALT_INV_Equal0~0_combout\,
 	combout => \StrobeGen|Equal0~3_combout\);
 
--- Location: FF_X82_Y8_N35
+-- Location: FF_X82_Y8_N11
 \StrobeGen|oStrobe\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1389,7 +1344,7 @@ PORT MAP (
 	i => ww_iB_Sync,
 	o => \iB_Sync~input_o\);
 
--- Location: LABCELL_X79_Y8_N27
+-- Location: LABCELL_X79_Y8_N3
 \EdgeDetectionB|SyncPrev~feeder\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EdgeDetectionB|SyncPrev~feeder_combout\ = ( \iB_Sync~input_o\ )
@@ -1404,7 +1359,7 @@ PORT MAP (
 	dataf => \ALT_INV_iB_Sync~input_o\,
 	combout => \EdgeDetectionB|SyncPrev~feeder_combout\);
 
--- Location: FF_X79_Y8_N29
+-- Location: FF_X79_Y8_N5
 \EdgeDetectionB|SyncPrev\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1420,18 +1375,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EdgeDetectionB|SyncPrev~q\);
 
--- Location: IOIBUF_X89_Y8_N55
-\iA_Sync~input\ : cyclonev_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_iA_Sync,
-	o => \iA_Sync~input_o\);
-
--- Location: LABCELL_X79_Y8_N51
+-- Location: LABCELL_X79_Y8_N27
 \EdgeDetectionA|SyncPrev~feeder\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EdgeDetectionA|SyncPrev~feeder_combout\ = ( \iA_Sync~input_o\ )
@@ -1446,7 +1390,7 @@ PORT MAP (
 	dataf => \ALT_INV_iA_Sync~input_o\,
 	combout => \EdgeDetectionA|SyncPrev~feeder_combout\);
 
--- Location: FF_X79_Y8_N53
+-- Location: FF_X79_Y8_N29
 \EdgeDetectionA|SyncPrev\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1462,7 +1406,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EdgeDetectionA|SyncPrev~q\);
 
--- Location: MLABCELL_X82_Y8_N48
+-- Location: MLABCELL_X82_Y8_N12
 \EntityReactionFSM|State~14\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityReactionFSM|State~14_combout\ = ( !\EntityReactionFSM|State.ShowResult~q\ & ( !\EntityReactionFSM|State.Unlocked~q\ ) )
@@ -1481,21 +1425,21 @@ PORT MAP (
 -- Location: MLABCELL_X82_Y8_N54
 \EntityReactionFSM|State~15\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityReactionFSM|State~15_combout\ = ( \iA_Sync~input_o\ & ( \EntityReactionFSM|State~14_combout\ & ( (\StrobeGen|oStrobe~q\ & !\EdgeDetectionA|SyncPrev~q\) ) ) ) # ( \iA_Sync~input_o\ & ( !\EntityReactionFSM|State~14_combout\ & ( (\StrobeGen|oStrobe~q\ 
--- & (!\EdgeDetectionB|SyncPrev~q\ & \iB_Sync~input_o\)) ) ) ) # ( !\iA_Sync~input_o\ & ( !\EntityReactionFSM|State~14_combout\ & ( (\StrobeGen|oStrobe~q\ & (!\EdgeDetectionB|SyncPrev~q\ & \iB_Sync~input_o\)) ) ) )
+-- \EntityReactionFSM|State~15_combout\ = ( !\EdgeDetectionA|SyncPrev~q\ & ( \EntityReactionFSM|State~14_combout\ & ( (\iA_Sync~input_o\ & \StrobeGen|oStrobe~q\) ) ) ) # ( \EdgeDetectionA|SyncPrev~q\ & ( !\EntityReactionFSM|State~14_combout\ & ( 
+-- (\StrobeGen|oStrobe~q\ & (\iB_Sync~input_o\ & !\EdgeDetectionB|SyncPrev~q\)) ) ) ) # ( !\EdgeDetectionA|SyncPrev~q\ & ( !\EntityReactionFSM|State~14_combout\ & ( (\StrobeGen|oStrobe~q\ & (\iB_Sync~input_o\ & !\EdgeDetectionB|SyncPrev~q\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010000000100000001000000010000000000000000000101010100000000",
+	lut_mask => "0000001100000000000000110000000000010001000100010000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \StrobeGen|ALT_INV_oStrobe~q\,
-	datab => \EdgeDetectionB|ALT_INV_SyncPrev~q\,
+	dataa => \ALT_INV_iA_Sync~input_o\,
+	datab => \StrobeGen|ALT_INV_oStrobe~q\,
 	datac => \ALT_INV_iB_Sync~input_o\,
-	datad => \EdgeDetectionA|ALT_INV_SyncPrev~q\,
-	datae => \ALT_INV_iA_Sync~input_o\,
+	datad => \EdgeDetectionB|ALT_INV_SyncPrev~q\,
+	datae => \EdgeDetectionA|ALT_INV_SyncPrev~q\,
 	dataf => \EntityReactionFSM|ALT_INV_State~14_combout\,
 	combout => \EntityReactionFSM|State~15_combout\);
 
@@ -1533,34 +1477,34 @@ PORT MAP (
 -- Location: LABCELL_X79_Y8_N30
 \EntityReactionFSM|State~12\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityReactionFSM|State~12_combout\ = ( \EntityReactionFSM|State.Locked~q\ & ( !\EntityReactionFSM|State.CountUpTime~q\ ) )
+-- \EntityReactionFSM|State~12_combout\ = ( !\EntityReactionFSM|State.CountUpTime~q\ & ( \EntityReactionFSM|State.Locked~q\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000011111111000000001111111100000000",
+	lut_mask => "0000111100001111000011110000111100000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \EntityReactionFSM|ALT_INV_State.CountUpTime~q\,
-	dataf => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	datac => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	dataf => \EntityReactionFSM|ALT_INV_State.CountUpTime~q\,
 	combout => \EntityReactionFSM|State~12_combout\);
 
--- Location: LABCELL_X79_Y8_N54
+-- Location: LABCELL_X79_Y8_N18
 \EntityReactionFSM|State~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \EntityReactionFSM|State~13_combout\ = ( \EdgeDetectionB|SyncPrev~q\ & ( \StrobeGen|oStrobe~q\ & ( (!\EdgeDetectionA|SyncPrev~q\ & (\iA_Sync~input_o\ & !\EntityReactionFSM|State~12_combout\)) ) ) ) # ( !\EdgeDetectionB|SyncPrev~q\ & ( 
--- \StrobeGen|oStrobe~q\ & ( (!\EntityReactionFSM|State~12_combout\ & (!\EdgeDetectionA|SyncPrev~q\ & (\iA_Sync~input_o\))) # (\EntityReactionFSM|State~12_combout\ & (((\iB_Sync~input_o\)))) ) ) )
+-- \EntityReactionFSM|State~13_combout\ = ( \EdgeDetectionB|SyncPrev~q\ & ( \StrobeGen|oStrobe~q\ & ( (\iA_Sync~input_o\ & (!\EdgeDetectionA|SyncPrev~q\ & !\EntityReactionFSM|State~12_combout\)) ) ) ) # ( !\EdgeDetectionB|SyncPrev~q\ & ( 
+-- \StrobeGen|oStrobe~q\ & ( (!\EntityReactionFSM|State~12_combout\ & (\iA_Sync~input_o\ & (!\EdgeDetectionA|SyncPrev~q\))) # (\EntityReactionFSM|State~12_combout\ & (((\iB_Sync~input_o\)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000100010000011110010001000000000",
+	lut_mask => "0000000000000000000000000000000001000100000011110100010000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \EdgeDetectionA|ALT_INV_SyncPrev~q\,
-	datab => \ALT_INV_iA_Sync~input_o\,
+	dataa => \ALT_INV_iA_Sync~input_o\,
+	datab => \EdgeDetectionA|ALT_INV_SyncPrev~q\,
 	datac => \ALT_INV_iB_Sync~input_o\,
 	datad => \EntityReactionFSM|ALT_INV_State~12_combout\,
 	datae => \EdgeDetectionB|ALT_INV_SyncPrev~q\,
@@ -1600,7 +1544,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityReactionFSM|State.ShowResult~q\);
 
--- Location: LABCELL_X79_Y8_N39
+-- Location: LABCELL_X79_Y8_N51
 \EntityReactionFSM|State.Locked~0\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \EntityReactionFSM|State.Locked~0_combout\ = ( !\EntityReactionFSM|State.ShowResult~q\ )
@@ -1615,7 +1559,7 @@ PORT MAP (
 	dataf => \EntityReactionFSM|ALT_INV_State.ShowResult~q\,
 	combout => \EntityReactionFSM|State.Locked~0_combout\);
 
--- Location: FF_X79_Y8_N41
+-- Location: FF_X79_Y8_N53
 \EntityReactionFSM|State.Locked\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1631,7 +1575,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \EntityReactionFSM|State.Locked~q\);
 
--- Location: LABCELL_X80_Y8_N15
+-- Location: LABCELL_X80_Y8_N3
 \CounterLow|oCount~0\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CounterLow|oCount~0_combout\ = (\EntityReactionFSM|State.Locked~q\ & !\CounterLow|oCount\(1))
@@ -1655,16 +1599,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1111111100000000111111110000000011111111001100111111111100110011",
+	lut_mask => "1111000011110000111100001111000011110011111100111111001111110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	datab => \EntityReactionFSM|ALT_INV_State.CountUpTime~q\,
-	datad => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	datac => \EntityReactionFSM|ALT_INV_State.Locked~q\,
 	dataf => \StrobeGen|ALT_INV_oStrobe~q\,
 	combout => \CounterLow|oCount[4]~1_combout\);
 
--- Location: FF_X80_Y8_N17
+-- Location: FF_X80_Y8_N5
 \CounterLow|oCount[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1680,79 +1624,27 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CounterLow|oCount\(1));
 
--- Location: FF_X80_Y8_N56
-\CounterLow|oCount[4]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterLow|oCount~4_combout\,
-	clrn => \inResetAsync~input_o\,
-	ena => \CounterLow|oCount[4]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CounterLow|oCount\(4));
-
--- Location: LABCELL_X80_Y8_N54
-\CounterLow|oCount~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \CounterLow|oCount~4_combout\ = ( \CounterLow|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterLow|oCount\(4) $ (((!\CounterLow|oCount\(1)) # (!\CounterLow|oCount\(3)))))) ) ) # ( !\CounterLow|oCount\(2) & ( 
--- (\EntityReactionFSM|State.Locked~q\ & (\CounterLow|oCount\(4) & ((!\CounterLow|oCount\(1)) # (\CounterLow|oCount\(3))))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000001000101000000000100010100000001010101000000000101010100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datab => \CounterLow|ALT_INV_oCount\(1),
-	datac => \CounterLow|ALT_INV_oCount\(3),
-	datad => \CounterLow|ALT_INV_oCount\(4),
-	dataf => \CounterLow|ALT_INV_oCount\(2),
-	combout => \CounterLow|oCount~4_combout\);
-
--- Location: FF_X80_Y8_N55
-\CounterLow|oCount[4]~DUPLICATE\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterLow|oCount~4_combout\,
-	clrn => \inResetAsync~input_o\,
-	ena => \CounterLow|oCount[4]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CounterLow|oCount[4]~DUPLICATE_q\);
-
--- Location: LABCELL_X80_Y8_N57
+-- Location: LABCELL_X80_Y8_N9
 \CounterLow|oCount~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CounterLow|oCount~2_combout\ = ( \CounterLow|oCount\(3) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterLow|oCount\(1) $ (!\CounterLow|oCount\(2)))) ) ) # ( !\CounterLow|oCount\(3) & ( (\EntityReactionFSM|State.Locked~q\ & ((!\CounterLow|oCount\(1) & 
--- ((\CounterLow|oCount\(2)))) # (\CounterLow|oCount\(1) & (!\CounterLow|oCount[4]~DUPLICATE_q\ & !\CounterLow|oCount\(2))))) ) )
+-- \CounterLow|oCount~2_combout\ = ( \CounterLow|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterLow|oCount\(2) & ((!\CounterLow|oCount\(4)) # (\CounterLow|oCount\(3))))) ) ) # ( !\CounterLow|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ 
+-- & \CounterLow|oCount\(2)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000001000100000100000100010000010001010001000001000101000100",
+	lut_mask => "0000000001010101000000000101010101010001000000000101000100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datab => \CounterLow|ALT_INV_oCount\(1),
-	datac => \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\,
+	datab => \CounterLow|ALT_INV_oCount\(3),
+	datac => \CounterLow|ALT_INV_oCount\(4),
 	datad => \CounterLow|ALT_INV_oCount\(2),
-	dataf => \CounterLow|ALT_INV_oCount\(3),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \CounterLow|oCount~2_combout\);
 
--- Location: FF_X80_Y8_N58
+-- Location: FF_X80_Y8_N11
 \CounterLow|oCount[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1768,25 +1660,25 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CounterLow|oCount\(2));
 
--- Location: LABCELL_X80_Y8_N51
+-- Location: LABCELL_X80_Y8_N39
 \CounterLow|oCount~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CounterLow|oCount~3_combout\ = ( \CounterLow|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterLow|oCount\(1) $ (!\CounterLow|oCount\(3)))) ) ) # ( !\CounterLow|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & \CounterLow|oCount\(3)) ) )
+-- \CounterLow|oCount~3_combout\ = ( \CounterLow|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterLow|oCount\(2) $ (!\CounterLow|oCount\(3)))) ) ) # ( !\CounterLow|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ & \CounterLow|oCount\(3)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000110011000000000011001100000011001100000000001100110000",
+	lut_mask => "0000000001010101000000000101010100000101010100000000010101010000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datac => \CounterLow|ALT_INV_oCount\(1),
+	dataa => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	datac => \CounterLow|ALT_INV_oCount\(2),
 	datad => \CounterLow|ALT_INV_oCount\(3),
-	dataf => \CounterLow|ALT_INV_oCount\(2),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \CounterLow|oCount~3_combout\);
 
--- Location: FF_X80_Y8_N53
+-- Location: FF_X80_Y8_N41
 \CounterLow|oCount[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1802,8 +1694,28 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CounterLow|oCount\(3));
 
--- Location: FF_X80_Y8_N16
-\CounterLow|oCount[1]~DUPLICATE\ : dffeas
+-- Location: LABCELL_X80_Y8_N6
+\CounterLow|oCount~4\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CounterLow|oCount~4_combout\ = ( \CounterLow|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterLow|oCount\(4) $ (((!\CounterLow|oCount\(3)) # (!\CounterLow|oCount\(1)))))) ) ) # ( !\CounterLow|oCount\(2) & ( 
+-- (\EntityReactionFSM|State.Locked~q\ & (\CounterLow|oCount\(4) & ((!\CounterLow|oCount\(1)) # (\CounterLow|oCount\(3))))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000001010001000000000101000100000001010101000000000101010100",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	datab => \CounterLow|ALT_INV_oCount\(3),
+	datac => \CounterLow|ALT_INV_oCount\(1),
+	datad => \CounterLow|ALT_INV_oCount\(4),
+	dataf => \CounterLow|ALT_INV_oCount\(2),
+	combout => \CounterLow|oCount~4_combout\);
+
+-- Location: FF_X80_Y8_N8
+\CounterLow|oCount[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1811,185 +1723,201 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterLow|oCount~0_combout\,
+	d => \CounterLow|oCount~4_combout\,
 	clrn => \inResetAsync~input_o\,
 	ena => \CounterLow|oCount[4]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \CounterLow|oCount[1]~DUPLICATE_q\);
+	q => \CounterLow|oCount\(4));
 
 -- Location: LABCELL_X85_Y8_N36
 \HexDecoderLow|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderLow|Mux6~0_combout\ = ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount[1]~DUPLICATE_q\ & ( !\CounterLow|oCount\(3) $ (!\CounterLow|oCount\(2)) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount[1]~DUPLICATE_q\ & ( 
--- (!\CounterLow|oCount\(3) & !\CounterLow|oCount\(2)) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount[1]~DUPLICATE_q\ & ( (\CounterLow|oCount\(3) & !\CounterLow|oCount\(2)) ) ) )
+-- \HexDecoderLow|Mux6~0_combout\ = ( \CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( (\CounterLow|oCount\(4) & !\CounterLow|oCount\(2)) ) ) ) # ( !\CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( !\CounterLow|oCount\(4) $ (\CounterLow|oCount\(2)) 
+-- ) ) ) # ( \CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (!\CounterLow|oCount\(4) & !\CounterLow|oCount\(2)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101000001010000000000000000000010100000101000000101101001011010",
+	lut_mask => "0000000000000000110000001100000011000011110000110011000000110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterLow|ALT_INV_oCount\(3),
+	datab => \CounterLow|ALT_INV_oCount\(4),
 	datac => \CounterLow|ALT_INV_oCount\(2),
-	datae => \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\,
-	dataf => \CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\,
+	datae => \CounterLow|ALT_INV_oCount\(3),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \HexDecoderLow|Mux6~0_combout\);
 
 -- Location: LABCELL_X85_Y8_N9
 \HexDecoderLow|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderLow|Mux5~0_combout\ = ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount\(2) & ( (\CounterLow|oCount[1]~DUPLICATE_q\) # (\CounterLow|oCount\(3)) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount\(2) & ( 
--- (\CounterLow|oCount\(3) & !\CounterLow|oCount[1]~DUPLICATE_q\) ) ) ) # ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount\(2) & ( (\CounterLow|oCount\(3) & !\CounterLow|oCount[1]~DUPLICATE_q\) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( 
--- !\CounterLow|oCount\(2) & ( (\CounterLow|oCount\(3) & \CounterLow|oCount[1]~DUPLICATE_q\) ) ) )
+-- \HexDecoderLow|Mux5~0_combout\ = ( \CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( !\CounterLow|oCount\(2) $ (\CounterLow|oCount\(4)) ) ) ) # ( !\CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( (\CounterLow|oCount\(2) & \CounterLow|oCount\(4)) 
+-- ) ) ) # ( \CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (\CounterLow|oCount\(4)) # (\CounterLow|oCount\(2)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0001000100010001010001000100010001000100010001000111011101110111",
+	lut_mask => "0000000000000000010111110101111100000101000001011010010110100101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterLow|ALT_INV_oCount\(3),
-	datab => \CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datae => \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\,
-	dataf => \CounterLow|ALT_INV_oCount\(2),
+	dataa => \CounterLow|ALT_INV_oCount\(2),
+	datac => \CounterLow|ALT_INV_oCount\(4),
+	datae => \CounterLow|ALT_INV_oCount\(3),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \HexDecoderLow|Mux5~0_combout\);
 
 -- Location: LABCELL_X85_Y8_N48
 \HexDecoderLow|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderLow|Mux4~0_combout\ = ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount[1]~DUPLICATE_q\ & ( (\CounterLow|oCount\(3) & \CounterLow|oCount\(2)) ) ) ) # ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount[1]~DUPLICATE_q\ & ( 
--- \CounterLow|oCount\(3) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount[1]~DUPLICATE_q\ & ( (!\CounterLow|oCount\(3) & \CounterLow|oCount\(2)) ) ) )
+-- \HexDecoderLow|Mux4~0_combout\ = ( \CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( (\CounterLow|oCount\(4) & \CounterLow|oCount\(2)) ) ) ) # ( \CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( \CounterLow|oCount\(4) ) ) ) # ( 
+-- !\CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (!\CounterLow|oCount\(4) & \CounterLow|oCount\(2)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000001010010101010101010100000000000000000000010100000101",
+	lut_mask => "0000110000001100001100110011001100000000000000000000001100000011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterLow|ALT_INV_oCount\(3),
+	datab => \CounterLow|ALT_INV_oCount\(4),
 	datac => \CounterLow|ALT_INV_oCount\(2),
-	datae => \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\,
-	dataf => \CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\,
+	datae => \CounterLow|ALT_INV_oCount\(3),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \HexDecoderLow|Mux4~0_combout\);
 
 -- Location: LABCELL_X85_Y8_N57
 \HexDecoderLow|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderLow|Mux3~0_combout\ = ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount\(2) & ( !\CounterLow|oCount\(3) $ (\CounterLow|oCount[1]~DUPLICATE_q\) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount\(2) & ( 
--- (\CounterLow|oCount\(3) & \CounterLow|oCount[1]~DUPLICATE_q\) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount\(2) & ( !\CounterLow|oCount\(3) $ (!\CounterLow|oCount[1]~DUPLICATE_q\) ) ) )
+-- \HexDecoderLow|Mux3~0_combout\ = ( \CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( \CounterLow|oCount\(2) ) ) ) # ( !\CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( (!\CounterLow|oCount\(2) & !\CounterLow|oCount\(4)) ) ) ) # ( 
+-- \CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (!\CounterLow|oCount\(2) & !\CounterLow|oCount\(4)) ) ) ) # ( !\CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (\CounterLow|oCount\(2) & \CounterLow|oCount\(4)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0110011001100110000000000000000000010001000100011001100110011001",
+	lut_mask => "0000010100000101101000001010000010100000101000000101010101010101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterLow|ALT_INV_oCount\(3),
-	datab => \CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datae => \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\,
-	dataf => \CounterLow|ALT_INV_oCount\(2),
+	dataa => \CounterLow|ALT_INV_oCount\(2),
+	datac => \CounterLow|ALT_INV_oCount\(4),
+	datae => \CounterLow|ALT_INV_oCount\(3),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \HexDecoderLow|Mux3~0_combout\);
 
 -- Location: LABCELL_X85_Y8_N0
 \HexDecoderLow|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderLow|Mux2~0_combout\ = ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount[1]~DUPLICATE_q\ & ( (!\CounterLow|oCount\(3) & !\CounterLow|oCount\(2)) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount[1]~DUPLICATE_q\ ) ) # 
--- ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount[1]~DUPLICATE_q\ & ( (\CounterLow|oCount\(3) & !\CounterLow|oCount\(2)) ) ) )
+-- \HexDecoderLow|Mux2~0_combout\ = ( \CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( !\CounterLow|oCount\(4) ) ) ) # ( !\CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( (!\CounterLow|oCount\(4)) # (!\CounterLow|oCount\(2)) ) ) ) # ( 
+-- \CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (!\CounterLow|oCount\(4) & !\CounterLow|oCount\(2)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101000001010000000000000000000011111111111111111010000010100000",
+	lut_mask => "0000000000000000110000001100000011111100111111001100110011001100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterLow|ALT_INV_oCount\(3),
+	datab => \CounterLow|ALT_INV_oCount\(4),
 	datac => \CounterLow|ALT_INV_oCount\(2),
-	datae => \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\,
-	dataf => \CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\,
+	datae => \CounterLow|ALT_INV_oCount\(3),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \HexDecoderLow|Mux2~0_combout\);
 
 -- Location: LABCELL_X85_Y8_N45
 \HexDecoderLow|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderLow|Mux1~0_combout\ = ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount\(2) & ( (!\CounterLow|oCount\(3)) # (\CounterLow|oCount[1]~DUPLICATE_q\) ) ) ) # ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount\(2) & ( 
--- (\CounterLow|oCount\(3) & \CounterLow|oCount[1]~DUPLICATE_q\) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount\(2) & ( (!\CounterLow|oCount\(3) & \CounterLow|oCount[1]~DUPLICATE_q\) ) ) )
+-- \HexDecoderLow|Mux1~0_combout\ = ( \CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( !\CounterLow|oCount\(2) $ (!\CounterLow|oCount\(4)) ) ) ) # ( !\CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( !\CounterLow|oCount\(4) ) ) ) # ( 
+-- !\CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (\CounterLow|oCount\(2) & !\CounterLow|oCount\(4)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010001000100010000100010001000110111011101110110000000000000000",
+	lut_mask => "0101000001010000000000000000000011110000111100000101101001011010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterLow|ALT_INV_oCount\(3),
-	datab => \CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datae => \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\,
-	dataf => \CounterLow|ALT_INV_oCount\(2),
+	dataa => \CounterLow|ALT_INV_oCount\(2),
+	datac => \CounterLow|ALT_INV_oCount\(4),
+	datae => \CounterLow|ALT_INV_oCount\(3),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \HexDecoderLow|Mux1~0_combout\);
 
 -- Location: LABCELL_X85_Y8_N24
 \HexDecoderLow|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderLow|Mux0~0_combout\ = ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount[1]~DUPLICATE_q\ ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( \CounterLow|oCount[1]~DUPLICATE_q\ & ( !\CounterLow|oCount\(3) $ (!\CounterLow|oCount\(2)) ) ) ) # 
--- ( \CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount[1]~DUPLICATE_q\ & ( (!\CounterLow|oCount\(3)) # (\CounterLow|oCount\(2)) ) ) ) # ( !\CounterLow|oCount[4]~DUPLICATE_q\ & ( !\CounterLow|oCount[1]~DUPLICATE_q\ & ( (\CounterLow|oCount\(2)) # 
--- (\CounterLow|oCount\(3)) ) ) )
+-- \HexDecoderLow|Mux0~0_combout\ = ( \CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( (!\CounterLow|oCount\(2)) # (\CounterLow|oCount\(4)) ) ) ) # ( !\CounterLow|oCount\(3) & ( \CounterLow|oCount\(1) & ( (\CounterLow|oCount\(2)) # 
+-- (\CounterLow|oCount\(4)) ) ) ) # ( \CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (!\CounterLow|oCount\(4)) # (\CounterLow|oCount\(2)) ) ) ) # ( !\CounterLow|oCount\(3) & ( !\CounterLow|oCount\(1) & ( (\CounterLow|oCount\(2)) # 
+-- (\CounterLow|oCount\(4)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101111101011111101011111010111101011010010110101111111111111111",
+	lut_mask => "0011111100111111110011111100111100111111001111111111001111110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterLow|ALT_INV_oCount\(3),
+	datab => \CounterLow|ALT_INV_oCount\(4),
 	datac => \CounterLow|ALT_INV_oCount\(2),
-	datae => \CounterLow|ALT_INV_oCount[4]~DUPLICATE_q\,
-	dataf => \CounterLow|ALT_INV_oCount[1]~DUPLICATE_q\,
+	datae => \CounterLow|ALT_INV_oCount\(3),
+	dataf => \CounterLow|ALT_INV_oCount\(1),
 	combout => \HexDecoderLow|Mux0~0_combout\);
 
--- Location: LABCELL_X80_Y8_N36
-\CounterLow|Equal0~0\ : cyclonev_lcell_comb
+-- Location: LABCELL_X80_Y8_N33
+\CounterMid|oCount~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CounterLow|Equal0~0_combout\ = ( !\CounterLow|oCount\(2) & ( (\CounterLow|oCount\(1) & (!\CounterLow|oCount\(3) & \CounterLow|oCount\(4))) ) )
+-- \CounterMid|oCount~0_combout\ = ( \EntityReactionFSM|State.Locked~q\ & ( !\CounterMid|oCount\(1) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000110000000000000011000000000000000000000000000000000000",
+	lut_mask => "0000000000000000000000000000000011111111000000001111111100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \CounterLow|ALT_INV_oCount\(1),
-	datac => \CounterLow|ALT_INV_oCount\(3),
+	datad => \CounterMid|ALT_INV_oCount\(1),
+	dataf => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	combout => \CounterMid|oCount~0_combout\);
+
+-- Location: LABCELL_X80_Y8_N48
+\CounterLow|Equal0~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CounterLow|Equal0~0_combout\ = ( !\CounterLow|oCount\(2) & ( (!\CounterLow|oCount\(3) & (\CounterLow|oCount\(1) & \CounterLow|oCount\(4))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000001100000000000000110000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datab => \CounterLow|ALT_INV_oCount\(3),
+	datac => \CounterLow|ALT_INV_oCount\(1),
 	datad => \CounterLow|ALT_INV_oCount\(4),
 	dataf => \CounterLow|ALT_INV_oCount\(2),
 	combout => \CounterLow|Equal0~0_combout\);
 
--- Location: LABCELL_X80_Y8_N3
+-- Location: LABCELL_X80_Y8_N27
 \CounterMid|oCount[4]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CounterMid|oCount[4]~1_combout\ = ( \StrobeGen|oStrobe~q\ & ( (!\EntityReactionFSM|State.Locked~q\) # ((\EntityReactionFSM|State.CountUpTime~q\ & \CounterLow|Equal0~0_combout\)) ) ) # ( !\StrobeGen|oStrobe~q\ & ( !\EntityReactionFSM|State.Locked~q\ ) )
+-- \CounterMid|oCount[4]~1_combout\ = ( \CounterLow|Equal0~0_combout\ & ( (!\EntityReactionFSM|State.Locked~q\) # ((\EntityReactionFSM|State.CountUpTime~q\ & \StrobeGen|oStrobe~q\)) ) ) # ( !\CounterLow|Equal0~0_combout\ & ( 
+-- !\EntityReactionFSM|State.Locked~q\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1111000011110000111100001111000011110000111101011111000011110101",
+	lut_mask => "1010101010101010101010101010101010101010101011111010101010101111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \EntityReactionFSM|ALT_INV_State.CountUpTime~q\,
-	datac => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datad => \CounterLow|ALT_INV_Equal0~0_combout\,
-	dataf => \StrobeGen|ALT_INV_oStrobe~q\,
+	dataa => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	datac => \EntityReactionFSM|ALT_INV_State.CountUpTime~q\,
+	datad => \StrobeGen|ALT_INV_oStrobe~q\,
+	dataf => \CounterLow|ALT_INV_Equal0~0_combout\,
 	combout => \CounterMid|oCount[4]~1_combout\);
 
--- Location: FF_X80_Y8_N23
+-- Location: FF_X80_Y8_N35
 \CounterMid|oCount[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2005,95 +1933,27 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CounterMid|oCount\(1));
 
--- Location: LABCELL_X80_Y8_N21
-\CounterMid|oCount~0\ : cyclonev_lcell_comb
+-- Location: LABCELL_X80_Y8_N12
+\CounterMid|oCount~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CounterMid|oCount~0_combout\ = (\EntityReactionFSM|State.Locked~q\ & !\CounterMid|oCount\(1))
+-- \CounterMid|oCount~2_combout\ = ( \CounterMid|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterMid|oCount\(2) & ((!\CounterMid|oCount\(4)) # (\CounterMid|oCount\(3))))) ) ) # ( !\CounterMid|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ 
+-- & \CounterMid|oCount\(2)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011001100000000001100110000000000110011000000000011001100000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datab => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datad => \CounterMid|ALT_INV_oCount\(1),
-	combout => \CounterMid|oCount~0_combout\);
-
--- Location: FF_X80_Y8_N22
-\CounterMid|oCount[1]~DUPLICATE\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterMid|oCount~0_combout\,
-	clrn => \inResetAsync~input_o\,
-	ena => \CounterMid|oCount[4]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CounterMid|oCount[1]~DUPLICATE_q\);
-
--- Location: LABCELL_X80_Y8_N18
-\CounterMid|oCount~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \CounterMid|oCount~4_combout\ = ( \CounterMid|oCount[1]~DUPLICATE_q\ & ( (\EntityReactionFSM|State.Locked~q\ & ((!\CounterMid|oCount\(3) & (\CounterMid|oCount\(2) & \CounterMid|oCount\(4))) # (\CounterMid|oCount\(3) & (!\CounterMid|oCount\(2) $ 
--- (!\CounterMid|oCount\(4)))))) ) ) # ( !\CounterMid|oCount[1]~DUPLICATE_q\ & ( (\EntityReactionFSM|State.Locked~q\ & \CounterMid|oCount\(4)) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000110011000000000011001100000001000100100000000100010010",
+	lut_mask => "0000000000001111000000000000111100001101000000000000110100000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CounterMid|ALT_INV_oCount\(3),
-	datab => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datac => \CounterMid|ALT_INV_oCount\(2),
-	datad => \CounterMid|ALT_INV_oCount\(4),
-	dataf => \CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\,
-	combout => \CounterMid|oCount~4_combout\);
-
--- Location: FF_X80_Y8_N20
-\CounterMid|oCount[4]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterMid|oCount~4_combout\,
-	clrn => \inResetAsync~input_o\,
-	ena => \CounterMid|oCount[4]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CounterMid|oCount\(4));
-
--- Location: LABCELL_X80_Y8_N24
-\CounterMid|oCount~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \CounterMid|oCount~2_combout\ = ( \CounterMid|oCount[1]~DUPLICATE_q\ & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterMid|oCount\(2) & ((!\CounterMid|oCount\(4)) # (\CounterMid|oCount\(3))))) ) ) # ( !\CounterMid|oCount[1]~DUPLICATE_q\ & ( 
--- (\EntityReactionFSM|State.Locked~q\ & \CounterMid|oCount\(2)) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000110011000000000011001100100011000000000010001100000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CounterMid|ALT_INV_oCount\(4),
-	datab => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datac => \CounterMid|ALT_INV_oCount\(3),
+	datab => \CounterMid|ALT_INV_oCount\(4),
+	datac => \EntityReactionFSM|ALT_INV_State.Locked~q\,
 	datad => \CounterMid|ALT_INV_oCount\(2),
-	dataf => \CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\,
+	dataf => \CounterMid|ALT_INV_oCount\(1),
 	combout => \CounterMid|oCount~2_combout\);
 
--- Location: FF_X80_Y8_N26
+-- Location: FF_X80_Y8_N14
 \CounterMid|oCount[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2109,11 +1969,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CounterMid|oCount\(2));
 
--- Location: LABCELL_X80_Y8_N33
+-- Location: LABCELL_X80_Y8_N21
 \CounterMid|oCount~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CounterMid|oCount~3_combout\ = ( \CounterMid|oCount[1]~DUPLICATE_q\ & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterMid|oCount\(2) $ (!\CounterMid|oCount\(3)))) ) ) # ( !\CounterMid|oCount[1]~DUPLICATE_q\ & ( (\EntityReactionFSM|State.Locked~q\ & 
--- \CounterMid|oCount\(3)) ) )
+-- \CounterMid|oCount~3_combout\ = ( \CounterMid|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterMid|oCount\(1) $ (!\CounterMid|oCount\(3)))) ) ) # ( !\CounterMid|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & \CounterMid|oCount\(3)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2122,13 +1981,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterMid|ALT_INV_oCount\(2),
+	dataa => \CounterMid|ALT_INV_oCount\(1),
 	datac => \EntityReactionFSM|ALT_INV_State.Locked~q\,
 	datad => \CounterMid|ALT_INV_oCount\(3),
-	dataf => \CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\,
+	dataf => \CounterMid|ALT_INV_oCount\(2),
 	combout => \CounterMid|oCount~3_combout\);
 
--- Location: FF_X80_Y8_N35
+-- Location: FF_X80_Y8_N23
 \CounterMid|oCount[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2144,27 +2003,28 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CounterMid|oCount\(3));
 
--- Location: LABCELL_X80_Y8_N48
-\HexDecoderMid|Mux6~0\ : cyclonev_lcell_comb
+-- Location: LABCELL_X80_Y8_N30
+\CounterMid|oCount~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderMid|Mux6~0_combout\ = ( \CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(3) & (\CounterMid|oCount\(4) & \CounterMid|oCount\(1))) ) ) # ( !\CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(3) & (!\CounterMid|oCount\(4) & \CounterMid|oCount\(1))) 
--- # (\CounterMid|oCount\(3) & (!\CounterMid|oCount\(4) $ (\CounterMid|oCount\(1)))) ) )
+-- \CounterMid|oCount~4_combout\ = ( \CounterMid|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterMid|oCount\(4) $ (((!\CounterMid|oCount\(3)) # (!\CounterMid|oCount\(1)))))) ) ) # ( !\CounterMid|oCount\(2) & ( 
+-- (\EntityReactionFSM|State.Locked~q\ & (\CounterMid|oCount\(4) & ((!\CounterMid|oCount\(1)) # (\CounterMid|oCount\(3))))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101000010100101010100001010010100000000000010100000000000001010",
+	lut_mask => "0000000000110001000000000011000100000001001100100000000100110010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CounterMid|ALT_INV_oCount\(3),
-	datac => \CounterMid|ALT_INV_oCount\(4),
-	datad => \CounterMid|ALT_INV_oCount\(1),
+	datab => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	datac => \CounterMid|ALT_INV_oCount\(1),
+	datad => \CounterMid|ALT_INV_oCount\(4),
 	dataf => \CounterMid|ALT_INV_oCount\(2),
-	combout => \HexDecoderMid|Mux6~0_combout\);
+	combout => \CounterMid|oCount~4_combout\);
 
--- Location: FF_X80_Y8_N25
-\CounterMid|oCount[2]~DUPLICATE\ : dffeas
+-- Location: FF_X80_Y8_N32
+\CounterMid|oCount[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -2172,183 +2032,147 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterMid|oCount~2_combout\,
+	d => \CounterMid|oCount~4_combout\,
 	clrn => \inResetAsync~input_o\,
 	ena => \CounterMid|oCount[4]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \CounterMid|oCount[2]~DUPLICATE_q\);
+	q => \CounterMid|oCount\(4));
 
--- Location: LABCELL_X80_Y8_N27
+-- Location: LABCELL_X80_Y8_N36
+\HexDecoderMid|Mux6~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \HexDecoderMid|Mux6~0_combout\ = ( \CounterMid|oCount\(2) & ( (\CounterMid|oCount\(4) & (\CounterMid|oCount\(1) & !\CounterMid|oCount\(3))) ) ) # ( !\CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(4) & (!\CounterMid|oCount\(1) $ 
+-- (!\CounterMid|oCount\(3)))) # (\CounterMid|oCount\(4) & (\CounterMid|oCount\(1) & \CounterMid|oCount\(3))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000110011000011000011001100001100000011000000000000001100000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datab => \CounterMid|ALT_INV_oCount\(4),
+	datac => \CounterMid|ALT_INV_oCount\(1),
+	datad => \CounterMid|ALT_INV_oCount\(3),
+	dataf => \CounterMid|ALT_INV_oCount\(2),
+	combout => \HexDecoderMid|Mux6~0_combout\);
+
+-- Location: LABCELL_X80_Y8_N15
 \HexDecoderMid|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderMid|Mux5~0_combout\ = ( \CounterMid|oCount\(3) & ( (!\CounterMid|oCount\(4) & (!\CounterMid|oCount[2]~DUPLICATE_q\ $ (!\CounterMid|oCount\(1)))) # (\CounterMid|oCount\(4) & ((!\CounterMid|oCount\(1)) # (\CounterMid|oCount[2]~DUPLICATE_q\))) ) ) 
--- # ( !\CounterMid|oCount\(3) & ( (\CounterMid|oCount\(4) & (\CounterMid|oCount[2]~DUPLICATE_q\ & \CounterMid|oCount\(1))) ) )
+-- \HexDecoderMid|Mux5~0_combout\ = ( \CounterMid|oCount\(1) & ( (!\CounterMid|oCount\(4) & (\CounterMid|oCount\(3) & !\CounterMid|oCount\(2))) # (\CounterMid|oCount\(4) & ((\CounterMid|oCount\(2)))) ) ) # ( !\CounterMid|oCount\(1) & ( 
+-- (\CounterMid|oCount\(3) & ((\CounterMid|oCount\(2)) # (\CounterMid|oCount\(4)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000101000000000000010101011111101001010101111110100101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CounterMid|ALT_INV_oCount\(4),
-	datac => \CounterMid|ALT_INV_oCount[2]~DUPLICATE_q\,
-	datad => \CounterMid|ALT_INV_oCount\(1),
-	dataf => \CounterMid|ALT_INV_oCount\(3),
-	combout => \HexDecoderMid|Mux5~0_combout\);
-
--- Location: LABCELL_X80_Y8_N30
-\HexDecoderMid|Mux4~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \HexDecoderMid|Mux4~0_combout\ = ( \CounterMid|oCount\(3) & ( (\CounterMid|oCount\(4) & ((!\CounterMid|oCount\(1)) # (\CounterMid|oCount[2]~DUPLICATE_q\))) ) ) # ( !\CounterMid|oCount\(3) & ( (\CounterMid|oCount[2]~DUPLICATE_q\ & (!\CounterMid|oCount\(4) 
--- & !\CounterMid|oCount\(1))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0011000000000000001100000000000000001111000000110000111100000011",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datab => \CounterMid|ALT_INV_oCount[2]~DUPLICATE_q\,
-	datac => \CounterMid|ALT_INV_oCount\(4),
-	datad => \CounterMid|ALT_INV_oCount\(1),
-	dataf => \CounterMid|ALT_INV_oCount\(3),
-	combout => \HexDecoderMid|Mux4~0_combout\);
-
--- Location: LABCELL_X80_Y8_N12
-\HexDecoderMid|Mux3~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \HexDecoderMid|Mux3~0_combout\ = (!\CounterMid|oCount[2]~DUPLICATE_q\ & (!\CounterMid|oCount\(4) & (!\CounterMid|oCount\(3) $ (!\CounterMid|oCount\(1))))) # (\CounterMid|oCount[2]~DUPLICATE_q\ & ((!\CounterMid|oCount\(3) & (\CounterMid|oCount\(4) & 
--- !\CounterMid|oCount\(1))) # (\CounterMid|oCount\(3) & ((\CounterMid|oCount\(1))))))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100001010010001010000101001000101000010100100010100001010010001",
+	lut_mask => "0001010100010101000101010001010101000011010000110100001101000011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \CounterMid|ALT_INV_oCount\(3),
-	datab => \CounterMid|ALT_INV_oCount[2]~DUPLICATE_q\,
-	datac => \CounterMid|ALT_INV_oCount\(4),
-	datad => \CounterMid|ALT_INV_oCount\(1),
-	combout => \HexDecoderMid|Mux3~0_combout\);
+	datab => \CounterMid|ALT_INV_oCount\(4),
+	datac => \CounterMid|ALT_INV_oCount\(2),
+	dataf => \CounterMid|ALT_INV_oCount\(1),
+	combout => \HexDecoderMid|Mux5~0_combout\);
+
+-- Location: LABCELL_X80_Y8_N18
+\HexDecoderMid|Mux4~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \HexDecoderMid|Mux4~0_combout\ = ( \CounterMid|oCount\(4) & ( (\CounterMid|oCount\(3) & ((!\CounterMid|oCount\(1)) # (\CounterMid|oCount\(2)))) ) ) # ( !\CounterMid|oCount\(4) & ( (\CounterMid|oCount\(2) & (!\CounterMid|oCount\(1) & 
+-- !\CounterMid|oCount\(3))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0011000000000000001100000000000000000000111100110000000011110011",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datab => \CounterMid|ALT_INV_oCount\(2),
+	datac => \CounterMid|ALT_INV_oCount\(1),
+	datad => \CounterMid|ALT_INV_oCount\(3),
+	dataf => \CounterMid|ALT_INV_oCount\(4),
+	combout => \HexDecoderMid|Mux4~0_combout\);
 
 -- Location: LABCELL_X80_Y8_N0
+\HexDecoderMid|Mux3~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \HexDecoderMid|Mux3~0_combout\ = ( \CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(3) & (\CounterMid|oCount\(4) & !\CounterMid|oCount\(1))) # (\CounterMid|oCount\(3) & ((\CounterMid|oCount\(1)))) ) ) # ( !\CounterMid|oCount\(2) & ( 
+-- (!\CounterMid|oCount\(4) & (!\CounterMid|oCount\(3) $ (!\CounterMid|oCount\(1)))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100100001001000010010000100100000100101001001010010010100100101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \CounterMid|ALT_INV_oCount\(3),
+	datab => \CounterMid|ALT_INV_oCount\(4),
+	datac => \CounterMid|ALT_INV_oCount\(1),
+	dataf => \CounterMid|ALT_INV_oCount\(2),
+	combout => \HexDecoderMid|Mux3~0_combout\);
+
+-- Location: LABCELL_X80_Y8_N24
 \HexDecoderMid|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderMid|Mux2~0_combout\ = ( \CounterMid|oCount\(3) & ( (!\CounterMid|oCount\(4) & ((!\CounterMid|oCount[2]~DUPLICATE_q\) # (\CounterMid|oCount\(1)))) ) ) # ( !\CounterMid|oCount\(3) & ( (\CounterMid|oCount\(1) & 
--- ((!\CounterMid|oCount[2]~DUPLICATE_q\) # (!\CounterMid|oCount\(4)))) ) )
+-- \HexDecoderMid|Mux2~0_combout\ = ( \CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(4) & \CounterMid|oCount\(1)) ) ) # ( !\CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(3) & ((\CounterMid|oCount\(1)))) # (\CounterMid|oCount\(3) & 
+-- (!\CounterMid|oCount\(4))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000011111100000000001111110011000000111100001100000011110000",
+	lut_mask => "0000111111001100000011111100110000001100000011000000110000001100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \CounterMid|ALT_INV_oCount[2]~DUPLICATE_q\,
-	datac => \CounterMid|ALT_INV_oCount\(4),
-	datad => \CounterMid|ALT_INV_oCount\(1),
-	dataf => \CounterMid|ALT_INV_oCount\(3),
+	datab => \CounterMid|ALT_INV_oCount\(4),
+	datac => \CounterMid|ALT_INV_oCount\(1),
+	datad => \CounterMid|ALT_INV_oCount\(3),
+	dataf => \CounterMid|ALT_INV_oCount\(2),
 	combout => \HexDecoderMid|Mux2~0_combout\);
 
--- Location: LABCELL_X80_Y8_N9
+-- Location: LABCELL_X80_Y8_N57
 \HexDecoderMid|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderMid|Mux1~0_combout\ = ( \CounterMid|oCount\(3) & ( (\CounterMid|oCount[1]~DUPLICATE_q\ & (!\CounterMid|oCount\(4) $ (!\CounterMid|oCount[2]~DUPLICATE_q\))) ) ) # ( !\CounterMid|oCount\(3) & ( (!\CounterMid|oCount\(4) & 
--- ((\CounterMid|oCount[1]~DUPLICATE_q\) # (\CounterMid|oCount[2]~DUPLICATE_q\))) ) )
+-- \HexDecoderMid|Mux1~0_combout\ = ( \CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(4) & ((!\CounterMid|oCount\(3)) # (\CounterMid|oCount\(1)))) ) ) # ( !\CounterMid|oCount\(2) & ( (\CounterMid|oCount\(1) & (!\CounterMid|oCount\(4) $ 
+-- (\CounterMid|oCount\(3)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010101000101010001010100010101000000110000001100000011000000110",
+	lut_mask => "0100010000010001010001000001000111001100010001001100110001000100",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterMid|ALT_INV_oCount\(4),
-	datab => \CounterMid|ALT_INV_oCount[2]~DUPLICATE_q\,
-	datac => \CounterMid|ALT_INV_oCount[1]~DUPLICATE_q\,
-	dataf => \CounterMid|ALT_INV_oCount\(3),
+	dataa => \CounterMid|ALT_INV_oCount\(1),
+	datab => \CounterMid|ALT_INV_oCount\(4),
+	datad => \CounterMid|ALT_INV_oCount\(3),
+	dataf => \CounterMid|ALT_INV_oCount\(2),
 	combout => \HexDecoderMid|Mux1~0_combout\);
 
--- Location: LABCELL_X80_Y8_N39
+-- Location: LABCELL_X80_Y8_N51
 \HexDecoderMid|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderMid|Mux0~0_combout\ = ( \CounterMid|oCount\(3) & ( (!\CounterMid|oCount\(4) & ((!\CounterMid|oCount[2]~DUPLICATE_q\) # (!\CounterMid|oCount\(1)))) # (\CounterMid|oCount\(4) & ((\CounterMid|oCount\(1)) # (\CounterMid|oCount[2]~DUPLICATE_q\))) ) 
--- ) # ( !\CounterMid|oCount\(3) & ( (\CounterMid|oCount[2]~DUPLICATE_q\) # (\CounterMid|oCount\(4)) ) )
+-- \HexDecoderMid|Mux0~0_combout\ = ( \CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(1)) # ((!\CounterMid|oCount\(3)) # (\CounterMid|oCount\(4))) ) ) # ( !\CounterMid|oCount\(2) & ( (!\CounterMid|oCount\(4) & ((\CounterMid|oCount\(3)))) # 
+-- (\CounterMid|oCount\(4) & ((!\CounterMid|oCount\(3)) # (\CounterMid|oCount\(1)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101111101011111010111110101111110101111111101011010111111110101",
+	lut_mask => "0000111111110101000011111111010111111111101011111111111110101111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterMid|ALT_INV_oCount\(4),
-	datac => \CounterMid|ALT_INV_oCount[2]~DUPLICATE_q\,
-	datad => \CounterMid|ALT_INV_oCount\(1),
-	dataf => \CounterMid|ALT_INV_oCount\(3),
+	dataa => \CounterMid|ALT_INV_oCount\(1),
+	datac => \CounterMid|ALT_INV_oCount\(4),
+	datad => \CounterMid|ALT_INV_oCount\(3),
+	dataf => \CounterMid|ALT_INV_oCount\(2),
 	combout => \HexDecoderMid|Mux0~0_combout\);
 
--- Location: LABCELL_X80_Y8_N6
-\CounterMid|Equal0~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \CounterMid|Equal0~0_combout\ = ( !\CounterMid|oCount\(3) & ( (\CounterMid|oCount\(4) & (!\CounterMid|oCount\(2) & \CounterMid|oCount\(1))) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000001010000000000000101000000000000000000000000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \CounterMid|ALT_INV_oCount\(4),
-	datac => \CounterMid|ALT_INV_oCount\(2),
-	datad => \CounterMid|ALT_INV_oCount\(1),
-	dataf => \CounterMid|ALT_INV_oCount\(3),
-	combout => \CounterMid|Equal0~0_combout\);
-
--- Location: LABCELL_X80_Y8_N45
-\CounterHigh|oCount[4]~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \CounterHigh|oCount[4]~1_combout\ = ( \CounterLow|Equal0~0_combout\ & ( \CounterMid|Equal0~0_combout\ & ( (!\EntityReactionFSM|State.Locked~q\) # ((\EntityReactionFSM|State.CountUpTime~q\ & \StrobeGen|oStrobe~q\)) ) ) ) # ( !\CounterLow|Equal0~0_combout\ 
--- & ( \CounterMid|Equal0~0_combout\ & ( !\EntityReactionFSM|State.Locked~q\ ) ) ) # ( \CounterLow|Equal0~0_combout\ & ( !\CounterMid|Equal0~0_combout\ & ( !\EntityReactionFSM|State.Locked~q\ ) ) ) # ( !\CounterLow|Equal0~0_combout\ & ( 
--- !\CounterMid|Equal0~0_combout\ & ( !\EntityReactionFSM|State.Locked~q\ ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1100110011001100110011001100110011001100110011001100110011011101",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \EntityReactionFSM|ALT_INV_State.CountUpTime~q\,
-	datab => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datad => \StrobeGen|ALT_INV_oStrobe~q\,
-	datae => \CounterLow|ALT_INV_Equal0~0_combout\,
-	dataf => \CounterMid|ALT_INV_Equal0~0_combout\,
-	combout => \CounterHigh|oCount[4]~1_combout\);
-
--- Location: FF_X81_Y8_N26
-\CounterHigh|oCount[1]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterHigh|oCount~0_combout\,
-	clrn => \inResetAsync~input_o\,
-	ena => \CounterHigh|oCount[4]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CounterHigh|oCount\(1));
-
--- Location: LABCELL_X81_Y8_N24
+-- Location: LABCELL_X81_Y8_N48
 \CounterHigh|oCount~0\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \CounterHigh|oCount~0_combout\ = ( !\CounterHigh|oCount\(1) & ( \EntityReactionFSM|State.Locked~q\ ) )
@@ -2364,8 +2188,47 @@ PORT MAP (
 	datae => \CounterHigh|ALT_INV_oCount\(1),
 	combout => \CounterHigh|oCount~0_combout\);
 
--- Location: FF_X81_Y8_N25
-\CounterHigh|oCount[1]~DUPLICATE\ : dffeas
+-- Location: LABCELL_X80_Y8_N54
+\CounterMid|Equal0~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CounterMid|Equal0~0_combout\ = ( !\CounterMid|oCount\(2) & ( (\CounterMid|oCount\(4) & (\CounterMid|oCount\(1) & !\CounterMid|oCount\(3))) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000001100000000000000110000000000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datab => \CounterMid|ALT_INV_oCount\(4),
+	datac => \CounterMid|ALT_INV_oCount\(1),
+	datad => \CounterMid|ALT_INV_oCount\(3),
+	dataf => \CounterMid|ALT_INV_oCount\(2),
+	combout => \CounterMid|Equal0~0_combout\);
+
+-- Location: LABCELL_X80_Y8_N45
+\CounterHigh|oCount[4]~1\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CounterHigh|oCount[4]~1_combout\ = ( \CounterMid|Equal0~0_combout\ & ( \CounterLow|Equal0~0_combout\ & ( (!\EntityReactionFSM|State.Locked~q\) # ((\StrobeGen|oStrobe~q\ & \EntityReactionFSM|State.CountUpTime~q\)) ) ) ) # ( !\CounterMid|Equal0~0_combout\ 
+-- & ( \CounterLow|Equal0~0_combout\ & ( !\EntityReactionFSM|State.Locked~q\ ) ) ) # ( \CounterMid|Equal0~0_combout\ & ( !\CounterLow|Equal0~0_combout\ & ( !\EntityReactionFSM|State.Locked~q\ ) ) ) # ( !\CounterMid|Equal0~0_combout\ & ( 
+-- !\CounterLow|Equal0~0_combout\ & ( !\EntityReactionFSM|State.Locked~q\ ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1111000011110000111100001111000011110000111100001111000111110001",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \StrobeGen|ALT_INV_oStrobe~q\,
+	datab => \EntityReactionFSM|ALT_INV_State.CountUpTime~q\,
+	datac => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	datae => \CounterMid|ALT_INV_Equal0~0_combout\,
+	dataf => \CounterLow|ALT_INV_Equal0~0_combout\,
+	combout => \CounterHigh|oCount[4]~1_combout\);
+
+-- Location: FF_X81_Y8_N50
+\CounterHigh|oCount[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -2378,49 +2241,13 @@ PORT MAP (
 	ena => \CounterHigh|oCount[4]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \CounterHigh|oCount[1]~DUPLICATE_q\);
+	q => \CounterHigh|oCount\(1));
 
--- Location: LABCELL_X81_Y8_N57
-\CounterHigh|oCount~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \CounterHigh|oCount~2_combout\ = ( !\CounterHigh|oCount\(2) & ( \CounterHigh|oCount[1]~DUPLICATE_q\ & ( (\EntityReactionFSM|State.Locked~q\ & ((!\CounterHigh|oCount\(4)) # (\CounterHigh|oCount\(3)))) ) ) ) # ( \CounterHigh|oCount\(2) & ( 
--- !\CounterHigh|oCount[1]~DUPLICATE_q\ & ( \EntityReactionFSM|State.Locked~q\ ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000001100110011001100110011000000110000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datab => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datac => \CounterHigh|ALT_INV_oCount\(3),
-	datad => \CounterHigh|ALT_INV_oCount\(4),
-	datae => \CounterHigh|ALT_INV_oCount\(2),
-	dataf => \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\,
-	combout => \CounterHigh|oCount~2_combout\);
-
--- Location: FF_X81_Y8_N58
-\CounterHigh|oCount[2]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterHigh|oCount~2_combout\,
-	clrn => \inResetAsync~input_o\,
-	ena => \CounterHigh|oCount[4]~1_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \CounterHigh|oCount\(2));
-
--- Location: LABCELL_X81_Y8_N15
+-- Location: LABCELL_X81_Y8_N39
 \CounterHigh|oCount~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CounterHigh|oCount~3_combout\ = ( \CounterHigh|oCount\(3) & ( \CounterHigh|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & !\CounterHigh|oCount\(1)) ) ) ) # ( !\CounterHigh|oCount\(3) & ( \CounterHigh|oCount\(2) & ( 
--- (\EntityReactionFSM|State.Locked~q\ & \CounterHigh|oCount\(1)) ) ) ) # ( \CounterHigh|oCount\(3) & ( !\CounterHigh|oCount\(2) & ( \EntityReactionFSM|State.Locked~q\ ) ) )
+-- \CounterHigh|oCount~3_combout\ = ( \CounterHigh|oCount\(3) & ( \CounterHigh|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ & !\CounterHigh|oCount\(2)) ) ) ) # ( !\CounterHigh|oCount\(3) & ( \CounterHigh|oCount\(1) & ( 
+-- (\EntityReactionFSM|State.Locked~q\ & \CounterHigh|oCount\(2)) ) ) ) # ( \CounterHigh|oCount\(3) & ( !\CounterHigh|oCount\(1) & ( \EntityReactionFSM|State.Locked~q\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2430,12 +2257,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datac => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datad => \CounterHigh|ALT_INV_oCount\(1),
+	datad => \CounterHigh|ALT_INV_oCount\(2),
 	datae => \CounterHigh|ALT_INV_oCount\(3),
-	dataf => \CounterHigh|ALT_INV_oCount\(2),
+	dataf => \CounterHigh|ALT_INV_oCount\(1),
 	combout => \CounterHigh|oCount~3_combout\);
 
--- Location: FF_X81_Y8_N17
+-- Location: FF_X81_Y8_N41
 \CounterHigh|oCount[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2451,28 +2278,27 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CounterHigh|oCount\(3));
 
--- Location: LABCELL_X81_Y8_N30
+-- Location: LABCELL_X81_Y8_N6
 \CounterHigh|oCount~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \CounterHigh|oCount~4_combout\ = ( \CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & ((!\CounterHigh|oCount\(1)) # (!\CounterHigh|oCount\(3)))) ) ) ) # ( !\CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) & ( 
--- (\EntityReactionFSM|State.Locked~q\ & (\CounterHigh|oCount\(1) & \CounterHigh|oCount\(3))) ) ) ) # ( \CounterHigh|oCount\(4) & ( !\CounterHigh|oCount\(2) & ( (\EntityReactionFSM|State.Locked~q\ & ((!\CounterHigh|oCount\(1)) # (\CounterHigh|oCount\(3)))) ) 
--- ) )
+-- \CounterHigh|oCount~4_combout\ = ( \CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ & (!\CounterHigh|oCount\(2) $ (!\CounterHigh|oCount\(3)))) ) ) ) # ( !\CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(1) & ( 
+-- (\EntityReactionFSM|State.Locked~q\ & (\CounterHigh|oCount\(2) & \CounterHigh|oCount\(3))) ) ) ) # ( \CounterHigh|oCount\(4) & ( !\CounterHigh|oCount\(1) & ( \EntityReactionFSM|State.Locked~q\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000001100000011001100000000000000110011001100110000",
+	lut_mask => "0000000000000000001100110011001100000000000000110000001100110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	datab => \EntityReactionFSM|ALT_INV_State.Locked~q\,
-	datac => \CounterHigh|ALT_INV_oCount\(1),
+	datac => \CounterHigh|ALT_INV_oCount\(2),
 	datad => \CounterHigh|ALT_INV_oCount\(3),
 	datae => \CounterHigh|ALT_INV_oCount\(4),
-	dataf => \CounterHigh|ALT_INV_oCount\(2),
+	dataf => \CounterHigh|ALT_INV_oCount\(1),
 	combout => \CounterHigh|oCount~4_combout\);
 
--- Location: FF_X81_Y8_N31
+-- Location: FF_X81_Y8_N8
 \CounterHigh|oCount[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2488,8 +2314,28 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \CounterHigh|oCount\(4));
 
--- Location: FF_X81_Y8_N16
-\CounterHigh|oCount[3]~DUPLICATE\ : dffeas
+-- Location: LABCELL_X81_Y8_N33
+\CounterHigh|oCount~2\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \CounterHigh|oCount~2_combout\ = ( !\CounterHigh|oCount\(2) & ( \CounterHigh|oCount\(1) & ( (\EntityReactionFSM|State.Locked~q\ & ((!\CounterHigh|oCount\(4)) # (\CounterHigh|oCount\(3)))) ) ) ) # ( \CounterHigh|oCount\(2) & ( !\CounterHigh|oCount\(1) & ( 
+-- \EntityReactionFSM|State.Locked~q\ ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000010101010101010101000101010001010000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \EntityReactionFSM|ALT_INV_State.Locked~q\,
+	datab => \CounterHigh|ALT_INV_oCount\(4),
+	datac => \CounterHigh|ALT_INV_oCount\(3),
+	datae => \CounterHigh|ALT_INV_oCount\(2),
+	dataf => \CounterHigh|ALT_INV_oCount\(1),
+	combout => \CounterHigh|oCount~2_combout\);
+
+-- Location: FF_X81_Y8_N35
+\CounterHigh|oCount[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -2497,145 +2343,144 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \iClk~inputCLKENA0_outclk\,
-	d => \CounterHigh|oCount~3_combout\,
+	d => \CounterHigh|oCount~2_combout\,
 	clrn => \inResetAsync~input_o\,
 	ena => \CounterHigh|oCount[4]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \CounterHigh|oCount[3]~DUPLICATE_q\);
+	q => \CounterHigh|oCount\(2));
 
 -- Location: MLABCELL_X78_Y4_N51
 \HexDecoderHigh|Mux6~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderHigh|Mux6~0_combout\ = ( \CounterHigh|oCount[3]~DUPLICATE_q\ & ( (!\CounterHigh|oCount\(2) & (!\CounterHigh|oCount[1]~DUPLICATE_q\ $ (\CounterHigh|oCount\(4)))) ) ) # ( !\CounterHigh|oCount[3]~DUPLICATE_q\ & ( 
--- (\CounterHigh|oCount[1]~DUPLICATE_q\ & (!\CounterHigh|oCount\(4) $ (\CounterHigh|oCount\(2)))) ) )
+-- \HexDecoderHigh|Mux6~0_combout\ = ( \CounterHigh|oCount\(4) & ( (\CounterHigh|oCount\(1) & (!\CounterHigh|oCount\(2) $ (!\CounterHigh|oCount\(3)))) ) ) # ( !\CounterHigh|oCount\(4) & ( (!\CounterHigh|oCount\(2) & (!\CounterHigh|oCount\(3) $ 
+-- (!\CounterHigh|oCount\(1)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0100000101000001100100001001000001000001010000011001000010010000",
+	lut_mask => "0010100000101000000001100000011000101000001010000000011000000110",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datab => \CounterHigh|ALT_INV_oCount\(4),
-	datac => \CounterHigh|ALT_INV_oCount\(2),
-	datae => \CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\,
+	dataa => \CounterHigh|ALT_INV_oCount\(2),
+	datab => \CounterHigh|ALT_INV_oCount\(3),
+	datac => \CounterHigh|ALT_INV_oCount\(1),
+	datae => \CounterHigh|ALT_INV_oCount\(4),
 	combout => \HexDecoderHigh|Mux6~0_combout\);
 
 -- Location: MLABCELL_X78_Y4_N54
 \HexDecoderHigh|Mux5~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderHigh|Mux5~0_combout\ = ( \CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) & ( (\CounterHigh|oCount[1]~DUPLICATE_q\) # (\CounterHigh|oCount[3]~DUPLICATE_q\) ) ) ) # ( !\CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) & ( 
--- (\CounterHigh|oCount[3]~DUPLICATE_q\ & !\CounterHigh|oCount[1]~DUPLICATE_q\) ) ) ) # ( \CounterHigh|oCount\(4) & ( !\CounterHigh|oCount\(2) & ( (\CounterHigh|oCount[3]~DUPLICATE_q\ & !\CounterHigh|oCount[1]~DUPLICATE_q\) ) ) ) # ( !\CounterHigh|oCount\(4) 
--- & ( !\CounterHigh|oCount\(2) & ( (\CounterHigh|oCount[3]~DUPLICATE_q\ & \CounterHigh|oCount[1]~DUPLICATE_q\) ) ) )
+-- \HexDecoderHigh|Mux5~0_combout\ = ( \CounterHigh|oCount\(3) & ( (!\CounterHigh|oCount\(4) & (!\CounterHigh|oCount\(1) $ (!\CounterHigh|oCount\(2)))) # (\CounterHigh|oCount\(4) & ((!\CounterHigh|oCount\(1)) # (\CounterHigh|oCount\(2)))) ) ) # ( 
+-- !\CounterHigh|oCount\(3) & ( (\CounterHigh|oCount\(4) & (\CounterHigh|oCount\(1) & \CounterHigh|oCount\(2))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000010100000101010100000101000001010000010100000101111101011111",
+	lut_mask => "0000000100000001011011010110110100000001000000010110110101101101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\,
-	datac => \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datae => \CounterHigh|ALT_INV_oCount\(4),
-	dataf => \CounterHigh|ALT_INV_oCount\(2),
+	dataa => \CounterHigh|ALT_INV_oCount\(4),
+	datab => \CounterHigh|ALT_INV_oCount\(1),
+	datac => \CounterHigh|ALT_INV_oCount\(2),
+	datae => \CounterHigh|ALT_INV_oCount\(3),
 	combout => \HexDecoderHigh|Mux5~0_combout\);
 
 -- Location: MLABCELL_X78_Y4_N24
 \HexDecoderHigh|Mux4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderHigh|Mux4~0_combout\ = ( \CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) & ( \CounterHigh|oCount[3]~DUPLICATE_q\ ) ) ) # ( !\CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) & ( (!\CounterHigh|oCount[3]~DUPLICATE_q\ & 
--- !\CounterHigh|oCount[1]~DUPLICATE_q\) ) ) ) # ( \CounterHigh|oCount\(4) & ( !\CounterHigh|oCount\(2) & ( (\CounterHigh|oCount[3]~DUPLICATE_q\ & !\CounterHigh|oCount[1]~DUPLICATE_q\) ) ) )
+-- \HexDecoderHigh|Mux4~0_combout\ = ( \CounterHigh|oCount\(3) & ( (\CounterHigh|oCount\(4) & ((!\CounterHigh|oCount\(1)) # (\CounterHigh|oCount\(2)))) ) ) # ( !\CounterHigh|oCount\(3) & ( (!\CounterHigh|oCount\(4) & (!\CounterHigh|oCount\(1) & 
+-- \CounterHigh|oCount\(2))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000010100000101000010100000101000000101010101010101",
+	lut_mask => "0000100000001000010001010100010100001000000010000100010101000101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\,
-	datac => \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datae => \CounterHigh|ALT_INV_oCount\(4),
-	dataf => \CounterHigh|ALT_INV_oCount\(2),
+	dataa => \CounterHigh|ALT_INV_oCount\(4),
+	datab => \CounterHigh|ALT_INV_oCount\(1),
+	datac => \CounterHigh|ALT_INV_oCount\(2),
+	datae => \CounterHigh|ALT_INV_oCount\(3),
 	combout => \HexDecoderHigh|Mux4~0_combout\);
 
 -- Location: MLABCELL_X78_Y4_N33
 \HexDecoderHigh|Mux3~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderHigh|Mux3~0_combout\ = ( \CounterHigh|oCount[3]~DUPLICATE_q\ & ( (!\CounterHigh|oCount[1]~DUPLICATE_q\ & (!\CounterHigh|oCount\(4) & !\CounterHigh|oCount\(2))) # (\CounterHigh|oCount[1]~DUPLICATE_q\ & ((\CounterHigh|oCount\(2)))) ) ) # ( 
--- !\CounterHigh|oCount[3]~DUPLICATE_q\ & ( (!\CounterHigh|oCount[1]~DUPLICATE_q\ & (\CounterHigh|oCount\(4) & \CounterHigh|oCount\(2))) # (\CounterHigh|oCount[1]~DUPLICATE_q\ & (!\CounterHigh|oCount\(4) & !\CounterHigh|oCount\(2))) ) )
+-- \HexDecoderHigh|Mux3~0_combout\ = ( \CounterHigh|oCount\(4) & ( (\CounterHigh|oCount\(2) & (!\CounterHigh|oCount\(3) $ (\CounterHigh|oCount\(1)))) ) ) # ( !\CounterHigh|oCount\(4) & ( (!\CounterHigh|oCount\(2) & (!\CounterHigh|oCount\(3) $ 
+-- (!\CounterHigh|oCount\(1)))) # (\CounterHigh|oCount\(2) & (\CounterHigh|oCount\(3) & \CounterHigh|oCount\(1))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0100001001000010100001011000010101000010010000101000010110000101",
+	lut_mask => "0010100100101001010000010100000100101001001010010100000101000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datab => \CounterHigh|ALT_INV_oCount\(4),
-	datac => \CounterHigh|ALT_INV_oCount\(2),
-	datae => \CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\,
+	dataa => \CounterHigh|ALT_INV_oCount\(2),
+	datab => \CounterHigh|ALT_INV_oCount\(3),
+	datac => \CounterHigh|ALT_INV_oCount\(1),
+	datae => \CounterHigh|ALT_INV_oCount\(4),
 	combout => \HexDecoderHigh|Mux3~0_combout\);
 
--- Location: MLABCELL_X78_Y4_N0
+-- Location: MLABCELL_X78_Y4_N36
 \HexDecoderHigh|Mux2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderHigh|Mux2~0_combout\ = ( !\CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) & ( \CounterHigh|oCount[1]~DUPLICATE_q\ ) ) ) # ( \CounterHigh|oCount\(4) & ( !\CounterHigh|oCount\(2) & ( (!\CounterHigh|oCount[3]~DUPLICATE_q\ & 
--- \CounterHigh|oCount[1]~DUPLICATE_q\) ) ) ) # ( !\CounterHigh|oCount\(4) & ( !\CounterHigh|oCount\(2) & ( (\CounterHigh|oCount[1]~DUPLICATE_q\) # (\CounterHigh|oCount[3]~DUPLICATE_q\) ) ) )
+-- \HexDecoderHigh|Mux2~0_combout\ = ( \CounterHigh|oCount\(3) & ( (!\CounterHigh|oCount\(4) & ((!\CounterHigh|oCount\(2)) # (\CounterHigh|oCount\(1)))) ) ) # ( !\CounterHigh|oCount\(3) & ( (\CounterHigh|oCount\(1) & ((!\CounterHigh|oCount\(4)) # 
+-- (!\CounterHigh|oCount\(2)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101111101011111000010100000101000001111000011110000000000000000",
+	lut_mask => "0011001000110010101000101010001000110010001100101010001010100010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\,
-	datac => \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datae => \CounterHigh|ALT_INV_oCount\(4),
-	dataf => \CounterHigh|ALT_INV_oCount\(2),
+	dataa => \CounterHigh|ALT_INV_oCount\(4),
+	datab => \CounterHigh|ALT_INV_oCount\(1),
+	datac => \CounterHigh|ALT_INV_oCount\(2),
+	datae => \CounterHigh|ALT_INV_oCount\(3),
 	combout => \HexDecoderHigh|Mux2~0_combout\);
 
 -- Location: MLABCELL_X78_Y4_N21
 \HexDecoderHigh|Mux1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderHigh|Mux1~0_combout\ = ( \CounterHigh|oCount[3]~DUPLICATE_q\ & ( (\CounterHigh|oCount[1]~DUPLICATE_q\ & (!\CounterHigh|oCount\(4) $ (!\CounterHigh|oCount\(2)))) ) ) # ( !\CounterHigh|oCount[3]~DUPLICATE_q\ & ( (!\CounterHigh|oCount\(4) & 
--- ((\CounterHigh|oCount\(2)) # (\CounterHigh|oCount[1]~DUPLICATE_q\))) ) )
+-- \HexDecoderHigh|Mux1~0_combout\ = ( \CounterHigh|oCount\(4) & ( (!\CounterHigh|oCount\(2) & (\CounterHigh|oCount\(3) & \CounterHigh|oCount\(1))) ) ) # ( !\CounterHigh|oCount\(4) & ( (!\CounterHigh|oCount\(2) & (!\CounterHigh|oCount\(3) & 
+-- \CounterHigh|oCount\(1))) # (\CounterHigh|oCount\(2) & ((!\CounterHigh|oCount\(3)) # (\CounterHigh|oCount\(1)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0100110001001100000101000001010001001100010011000001010000010100",
+	lut_mask => "0100110101001101000000100000001001001101010011010000001000000010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datab => \CounterHigh|ALT_INV_oCount\(4),
-	datac => \CounterHigh|ALT_INV_oCount\(2),
-	datae => \CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\,
+	dataa => \CounterHigh|ALT_INV_oCount\(2),
+	datab => \CounterHigh|ALT_INV_oCount\(3),
+	datac => \CounterHigh|ALT_INV_oCount\(1),
+	datae => \CounterHigh|ALT_INV_oCount\(4),
 	combout => \HexDecoderHigh|Mux1~0_combout\);
 
--- Location: MLABCELL_X78_Y4_N36
+-- Location: MLABCELL_X78_Y4_N0
 \HexDecoderHigh|Mux0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \HexDecoderHigh|Mux0~0_combout\ = ( \CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) ) ) # ( !\CounterHigh|oCount\(4) & ( \CounterHigh|oCount\(2) & ( (!\CounterHigh|oCount[3]~DUPLICATE_q\) # (!\CounterHigh|oCount[1]~DUPLICATE_q\) ) ) ) # ( 
--- \CounterHigh|oCount\(4) & ( !\CounterHigh|oCount\(2) & ( (!\CounterHigh|oCount[3]~DUPLICATE_q\) # (\CounterHigh|oCount[1]~DUPLICATE_q\) ) ) ) # ( !\CounterHigh|oCount\(4) & ( !\CounterHigh|oCount\(2) & ( \CounterHigh|oCount[3]~DUPLICATE_q\ ) ) )
+-- \HexDecoderHigh|Mux0~0_combout\ = ( \CounterHigh|oCount\(3) & ( (!\CounterHigh|oCount\(4) & ((!\CounterHigh|oCount\(1)) # (!\CounterHigh|oCount\(2)))) # (\CounterHigh|oCount\(4) & ((\CounterHigh|oCount\(2)) # (\CounterHigh|oCount\(1)))) ) ) # ( 
+-- !\CounterHigh|oCount\(3) & ( (\CounterHigh|oCount\(2)) # (\CounterHigh|oCount\(4)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0101010101010101101011111010111111111010111110101111111111111111",
+	lut_mask => "0101111101011111101111011011110101011111010111111011110110111101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \CounterHigh|ALT_INV_oCount[3]~DUPLICATE_q\,
-	datac => \CounterHigh|ALT_INV_oCount[1]~DUPLICATE_q\,
-	datae => \CounterHigh|ALT_INV_oCount\(4),
-	dataf => \CounterHigh|ALT_INV_oCount\(2),
+	dataa => \CounterHigh|ALT_INV_oCount\(4),
+	datab => \CounterHigh|ALT_INV_oCount\(1),
+	datac => \CounterHigh|ALT_INV_oCount\(2),
+	datae => \CounterHigh|ALT_INV_oCount\(3),
 	combout => \HexDecoderHigh|Mux0~0_combout\);
 
 -- Location: LABCELL_X48_Y2_N0

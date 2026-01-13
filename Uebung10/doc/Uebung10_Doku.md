@@ -644,7 +644,7 @@ Mittels Analyse der Waveform wurde die Funktion des Spiels nachgewiesen.
 
 #### Ressource Summery
 
-![Counter-Ressource](./images/Aufgabe2/PCB_Adapter_RTL.png)
+![Counter-Ressource](./images/Aufgabe2/PCB_Adapter_Ressource.png)
 
 #### FMAX FSM
 
