@@ -144,56 +144,40 @@
   \column{0.49\textwidth}
   \scriptsize
   \begin{lstlisting}[style=vhdl]
-    entity EdgeDetection is
-    port (
-      iClk : in std_ulogic;
-      inResetAsync : in std_ulogic;
-      iEnable : in std_ulogic;
-      iSync : in std_ulogic;
-      oEdge : out std_ulogic);
-  end EdgeDetection;
-  \end{lstlisting}
-
-  \column{0.49\textwidth}
-  \scriptsize
-  \begin{lstlisting}[style=vhdl]
-architecture RTL of EdgeDetection is
-  signal SyncPrev : std_ulogic;
-begin
-
-process (iClk, inResetAsync) is
-  begin
+    architecture RTL of EdgeDetection is
+    signal SyncPrev : std_ulogic;
+    begin
+    
+    process (iClk, inResetAsync) is
+    begin
     -- asynchronous reset
     if (inResetAsync = not('1')) then
-      SyncPrev <= '0';
-
+    SyncPrev <= '0';
+    
     elsif (rising_edge(iClk)) then
-      if(iEnable = '1') then
-        SyncPrev <= iSync;
-      else
-        SyncPrev <= SyncPrev;
-      end if;
+    if(iEnable = '1') then
+    SyncPrev <= iSync;
+    else
+    SyncPrev <= SyncPrev;
     end if;
-end process;
-
--- combinational logic for edge detection
-oEdge <= '1' when (iSync = '1' and SyncPrev = '0') else '0';
-
-end architecture RTL;
+    end if;
+    end process;
+    
+    -- combinational logic for edge detection
+    oEdge <= '1' when (iSync = '1' and SyncPrev = '0') else '0';
+    
+    end architecture RTL;
   \end{lstlisting}
+  \column{0.49\textwidth}
+  \scriptsize
+  \includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/EdgeDetection_RTL.png}
 \end{columns}
 \end{frame}
 % -----------------------
 
 % -----------------------
-\begin{frame}{Edge Detection RTL Viewer}
-\includegraphics[width=\textwidth]{./../doc/images/Aufgabe2/EdgeDetection_RTL.png}
-\end{frame}
-% -----------------------
-
-% -----------------------
 \begin{frame}{Finite State Machine  Moore}
-\includegraphics[width= 11 cm]{./../doc/images/Aufgabe2/FSM.png}
+  \includegraphics[width= 11 cm]{./../doc/images/Aufgabe2/FSM.png}
 \end{frame}
 % -----------------------
 
